@@ -25,7 +25,7 @@
 
     <uses-sdk
         android:minSdkVersion="24"
-        android:targetSdkVersion="24"/>
+        android:targetSdkVersion="29"/>
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -124,6 +124,18 @@
         </activity>
 
         <activity
+            android:name=".common.CarSettingActivities$RingtonePickerActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:finishOnTaskLaunch="true"
+            android:exported="true">
+            <intent-filter android:priority="1">
+                <action android:name="android.intent.action.RINGTONE_PICKER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="distractionOptimized" android:value="true"/>
+        </activity>
+
+        <activity
             android:name=".common.CarSettingActivities$NetworkAndInternetActivity"
             android:windowSoftInputMode="adjustPan"
             android:exported="true">
@@ -187,7 +199,6 @@
         <activity
             android:name=".common.CarSettingActivities$UserDetailsActivity"
             android:excludeFromRecents="true"
-            android:launchMode="singleInstance"
             android:exported="true">
             <intent-filter android:priority="1">
                 <action android:name="android.settings.USER_SETTINGS" />
