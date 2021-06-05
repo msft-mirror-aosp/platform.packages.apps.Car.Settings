@@ -21,7 +21,7 @@
     <string name="more_settings_label" msgid="3867559443480110616">"ज़्यादा"</string>
     <string name="display_settings" msgid="5325515247739279185">"डिसप्ले"</string>
     <string name="brightness" msgid="2919605130898772866">"स्क्रीन की रोशनी का लेवल"</string>
-    <string name="auto_brightness_title" msgid="9124647862844666581">"रोशनी के हिसाब से स्क्रीन की चमक"</string>
+    <string name="auto_brightness_title" msgid="9124647862844666581">"आस-पास की रोशनी के हिसाब से स्क्रीन की चमक"</string>
     <string name="auto_brightness_summary" msgid="4741887033140384352">"आस-पास मौजूद रोशनी के हिसाब से स्क्रीन की चमक कम या ज़्यादा करें"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"नाइट लाइट चालू है"</string>
     <string name="keywords_display" msgid="3978416985146943922">"स्क्रीन, टचस्क्रीन"</string>
@@ -49,7 +49,7 @@
     <string name="sim_change_data_ok" msgid="2348804996223271081">"<xliff:g id="CARRIER">%1$s</xliff:g> का इस्तेमाल करें"</string>
     <string name="roaming_title" msgid="6218635014519017734">"रोमिंग"</string>
     <string name="roaming_summary" msgid="7476127740259728901">"रोमिंग के समय डेटा सेवाएं कनेक्ट करें"</string>
-    <string name="roaming_alert_title" msgid="4433901635766775763">"डेटा रोमिंग की अनुमति दें?"</string>
+    <string name="roaming_alert_title" msgid="4433901635766775763">"डेटा रोमिंग की अनुमति देना चाहते हैं?"</string>
     <string name="roaming_warning" msgid="4908184914868720704">"रोमिंग शुल्क लागू हो सकते हैं."</string>
     <string name="data_usage_settings" msgid="7877132994777987848">"डेटा खर्च"</string>
     <string name="data_usage_title" msgid="2923515974389203812">"प्राइमरी डेटा"</string>
@@ -499,7 +499,7 @@
     <string name="storage_total_size_label" msgid="3892138268243791912">"कुल"</string>
     <string name="storage_clear_user_data_text" msgid="8787615136779130680">"मेमोरी खाली करें"</string>
     <string name="storage_clear_cache_btn_text" msgid="8449547925966775612">"कैश मिटाएं"</string>
-    <string name="storage_clear_data_dlg_title" msgid="5863775997588969879">"ऐप्लिकेशन डेटा मिटाएं?"</string>
+    <string name="storage_clear_data_dlg_title" msgid="5863775997588969879">"ऐप्लिकेशन डेटा मिटाना चाहते हैं?"</string>
     <string name="storage_clear_data_dlg_text" msgid="795055288575727801">"इस ऐप्लिकेशन का पूरा डेटा हमेशा के लिए मिटा दिया जाएगा. इसमें सभी फ़ाइलें, सेटिंग, खाते, डेटाबेस वगैरह शामिल हैं."</string>
     <string name="storage_clear_failed_dlg_text" msgid="6710485971686866306">"ऐप्लिकेशन के लिए मेमोरी खाली नहीं की जा सकी."</string>
     <string name="storage_unmount_success" msgid="1553591517580407021">"<xliff:g id="NAME">%1$s</xliff:g> को सुरक्षित रूप से निकाला गया"</string>
