@@ -123,7 +123,7 @@
     <string name="wifi_ip_address_title" msgid="300539799594024884">"IP एड्रेस"</string>
     <string name="wifi_subnet_mask" msgid="6238171812379380608">"सबनेट मास्क"</string>
     <string name="wifi_dns" msgid="1841448353154932801">"DNS"</string>
-    <string name="wifi_details_ipv6_address_header" msgid="4707181386646531890">"IPv6 ठेगानाहरू"</string>
+    <string name="wifi_details_ipv6_address_header" msgid="4707181386646531890">"IPv6 एड्रेसहरू"</string>
     <string name="wifi_gateway" msgid="4975799192860431013">"गेटवे"</string>
     <string name="wifi_preferences_title" msgid="772788844257225510">"Wi‑Fi का प्राथमिकताहरू"</string>
     <string name="wifi_wakeup" msgid="7451825226044542000">"Wi‑Fi स्वतः अन गरियोस्"</string>
@@ -170,7 +170,7 @@
     <string name="bluetooth_rename_vehicle" msgid="5769424875066563154">"यो सवारी साधनको पुनः नामकरण गर्नुहोस्"</string>
     <string name="bluetooth_rename_device" msgid="8406868875363878712">"यन्त्रको पुनः नामकरण गर्नुहोस्"</string>
     <string name="bluetooth_rename_button" msgid="2397892174725986383">"पुनः नामकरण गर्नुहोस्"</string>
-    <string name="bluetooth_available_devices" msgid="1854446368146061448">"उपलब्ध यन्त्रहरू"</string>
+    <string name="bluetooth_available_devices" msgid="1854446368146061448">"उपलब्ध डिभाइस"</string>
     <string name="bluetooth_profiles" msgid="5580372290862835951">"प्रोफाइलहरू"</string>
     <string name="bluetooth_error_title" msgid="2341600997536511742"></string>
     <string name="bluetooth_turning_on" msgid="7046983059601710414">"ब्लुटुथ सक्रिय गर्दै…"</string>
@@ -184,7 +184,7 @@
     <string name="bluetooth_ask_enablement_and_discovery" msgid="5487502083015708674">"<xliff:g id="APP_NAME">%1$s</xliff:g> ब्लुटुथ सक्रिय गर्न र <xliff:g id="TIMEOUT">%2$d</xliff:g> सेकेन्डसम्म अन्य यन्त्रहरूले तपाईंको हेडयुनिट देख्न सक्ने बनाउन चाहन्छ।"</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" msgid="907153034209916282">"एउटा एप ब्लुटुथ सक्रिय गर्न र <xliff:g id="TIMEOUT">%1$d</xliff:g> सेकेन्डसम्म अन्य यन्त्रहरूले तपाईंको हेडयुनिट देख्न सक्ने बनाउन चाहन्छ।"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"ब्लुटुथसँग जोडा बनाउने अनुरोध"</string>
-    <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"जोडा बनाउनुहोस् र जडान गर्नुहोस्"</string>
+    <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"जोडा बनाउनुहोस् र कनेक्ट गर्नुहोस्"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"ब्लुटुथसँग जोडा बनाउने कोड"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="1636575922217263060">"PIN मा अक्षर वा प्रतीकहरू समाविष्ट हुन्छन्"</string>
     <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"जोडा मिलाउने कोड टाइप गर्नुहोस् त्यसपछि फिर्ता गर्नुहोस् वा प्रविष्टि गर्नुहोस् नामक बटन थिच्नुहोस्"</string>
@@ -321,14 +321,14 @@
     <string name="auto_launch_disable_text" msgid="3595315315092716391">"कुनै डिफल्ट मान सेट गरिएको छैन।"</string>
     <string name="auto_launch_enable_text" msgid="7230832269574106901">"तपाईंले केही कारवाहीका लागि यो एप पूर्वनिर्धारति रूपमा छनौट गर्नुभएको छ।"</string>
     <string name="auto_launch_reset_text" msgid="590439611312092392">"डिफल्ट मानहरू हटाउनुहोस्"</string>
-    <string name="app_launch_open_domain_urls_title" msgid="4705344946367759393">"समर्थित लिंकहरू खोल्नुहोस्"</string>
-    <string name="app_link_open_always" msgid="5783167184335545230">"यो अनुप्रयोगमा खोल्नुहोस्"</string>
+    <string name="app_launch_open_domain_urls_title" msgid="4705344946367759393">"खोल्न मिल्ने लिंक खोल्न सकियोस्"</string>
+    <string name="app_link_open_always" msgid="5783167184335545230">"यो एपमा खोल्नुहोस्"</string>
     <string name="app_link_open_ask" msgid="7242075065136237456">"प्रत्येक पटक सोधियोस्"</string>
-    <string name="app_link_open_never" msgid="2173174327831792316">"यो अनुप्रयोगमा नखोल्नुहोस्"</string>
+    <string name="app_link_open_never" msgid="2173174327831792316">"यो एपमा नखोल्नुहोस्"</string>
     <string name="app_launch_supported_domain_urls_title" msgid="7345116365785981158">"समर्थित लिंकहरू"</string>
     <string name="special_access" msgid="5730278220917123811">"विशेष अनुप्रयोगमाथिको पहुँच"</string>
-    <string name="show_system" msgid="4401355756969485287">"सिस्टम देखाउनुहोस्"</string>
-    <string name="hide_system" msgid="8845453295584638040">"सिस्टम लुकाउनुहोस्"</string>
+    <string name="show_system" msgid="4401355756969485287">"सिस्टम देखाइयोस्"</string>
+    <string name="hide_system" msgid="8845453295584638040">"सिस्टम लुकाइयोस्"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"प्रणालीसम्बन्धी सेटिङ परिमार्जन गर्नुहोस्"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"यस अनुमतिले एपलाई प्रणालीको सेटिङ परिमार्जन गर्न दिन्छ।"</string>
     <string name="notification_access_title" msgid="1467340098885813473">"सूचनामाथिको पहुँच"</string>
@@ -341,7 +341,7 @@
     <string name="premium_sms_access_description" msgid="7119026067677052169">"प्रिमियम SMS सुविधा सक्रिय गर्नाले तपाईंलाई पैसा लाग्न सक्छ र उक्त लागत तपाईंको सेवा प्रदायकलाई तिर्नु पर्ने बिलमा जोडिने छ। तपाईंले एपका लागि अनुमति सक्षम पार्नुभएका खण्डमा तपाईं त्यस एपको प्रयोग गरेर प्रिमियम SMS पठाउन सक्नु हुने छ।"</string>
     <string name="usage_access_title" msgid="7153427122072303254">"प्रयोग गर्ने अनुमति"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"प्रयोगको पहुँचले एपलाई तपाईंले आफ्नो सेवा प्रदायक, भाषासम्बन्धी सेटिङ र अन्य विवरणहरूसहित अन्य कुन कुन एपहरू गरिरहनुभएको छ र कत्तिको प्रयोग गर्नुहुन्छ भन्ने कुरा ट्र्याक गर्न दिन्छ।"</string>
-    <string name="wifi_control_title" msgid="5660436566907731929">"Wi-Fi को नियन्त्रण"</string>
+    <string name="wifi_control_title" msgid="5660436566907731929">"Wi-Fi कन्ट्रोल"</string>
     <string name="wifi_control_description" msgid="6021926850423169261">"Wi-Fi नियन्त्रकले एपलाई Wi-Fi सक्रिय गर्ने वा निष्क्रिय पार्ने, स्क्यान गरी Wi-Fi नेटवर्कमा जडान गर्ने, नेटवर्कहरू थप्ने वा हटाउने, वा स्थानीय रूपमा मात्र प्रयोग गर्न मिल्ने हटस्पट सुरु गर्ने अनुमति दिन्छ।"</string>
     <string name="more_special_access_title" msgid="166115485446645971">"थप"</string>
     <string name="location_settings_title" msgid="901334356682423679">"स्थान"</string>
@@ -423,21 +423,21 @@
     <string name="master_clear_progress_title" msgid="7087480656932674774">"मेटाउँदै"</string>
     <string name="master_clear_progress_text" msgid="3440789441935303176">"कृपया प्रतीक्षा गर्नुहोला..."</string>
     <string name="date_and_time_settings_title" msgid="4058492663544475485">"मिति र समय"</string>
-    <string name="date_and_time_settings_summary" msgid="7669856855390804666">"मिति, समय, समय क्षेत्र र प्रारूपहरू सेट गर्नुहोस्"</string>
+    <string name="date_and_time_settings_summary" msgid="7669856855390804666">"मिति, समय, प्रामाणिक समय र प्रारूपहरू सेट गर्नुहोस्"</string>
     <string name="date_time_auto" msgid="3570339569471779767">"स्वचालित मिति र समय"</string>
     <string name="date_time_auto_summary" msgid="3311706425095342759">"नेटवर्कद्वारा उपलब्ध गराइएको समय प्रयोग गर्नुहोस्"</string>
-    <string name="zone_auto" msgid="3701878581920206160">"स्वचालित समय क्षेत्र"</string>
-    <string name="zone_auto_summary" msgid="4345856882906981864">"नेटवर्कले उपलव्ध गराएको समय क्षेत्र प्रयोग गर्नुहोस्"</string>
+    <string name="zone_auto" msgid="3701878581920206160">"स्वचालित प्रामाणिक समय"</string>
+    <string name="zone_auto_summary" msgid="4345856882906981864">"नेटवर्कले उपलव्ध गराएको प्रामाणिक समय प्रयोग गर्नुहोस्"</string>
     <string name="date_time_24hour_title" msgid="3025576547136168692">"२४ घन्टे ढाँचा"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"२४-घन्टे ढाँचा प्रयोग गर्नुहोस्"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"समय"</string>
     <string name="date_time_set_time" msgid="6449555153906058248">"समय सेट गर्नुहोस्"</string>
-    <string name="date_time_set_timezone_title" msgid="3001779256157093425">"समय क्षेत्र"</string>
-    <string name="date_time_set_timezone" msgid="4759353576185916944">"समय क्षेत्र चयन गर्नुहोस्"</string>
+    <string name="date_time_set_timezone_title" msgid="3001779256157093425">"प्रामाणिक समय"</string>
+    <string name="date_time_set_timezone" msgid="4759353576185916944">"प्रामाणिक समय चयन गर्नुहोस्"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"मिति"</string>
     <string name="date_time_set_date" msgid="2537494485643283230">"मिति सेट गर्नुहोस्"</string>
     <string name="zone_list_menu_sort_alphabetically" msgid="7041628618528523514">"वर्णानुक्रममा क्रमबद्ध गर्नुहोस्"</string>
-    <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"समय क्षेत्रका आधारमा क्रमबद्ध गर्नुहोस्"</string>
+    <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"प्रामाणिक समयका आधारमा क्रमबद्ध गर्नुहोस्"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"मिति"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"समय"</string>
     <string name="user_admin" msgid="1535484812908584809">"प्रशासक"</string>
@@ -562,7 +562,7 @@
     <string name="lockpattern_recording_intro_header" msgid="7864149726033694408">"अनलक प्याटर्न बनाउनुहोस्"</string>
     <string name="lockpattern_recording_inprogress" msgid="1575019990484725964">"सकिएपछि औँला उचाल्नुहोस्"</string>
     <string name="lockpattern_pattern_entered" msgid="6103071005285320575">"प्याटर्न रेकर्ड गरियो"</string>
-    <string name="lockpattern_need_to_confirm" msgid="4648070076022940382">"पुष्टि गर्न प्याटर्न फेरि बनाउनुहोस्"</string>
+    <string name="lockpattern_need_to_confirm" msgid="4648070076022940382">"पुष्टि गर्न फेरि प्याटर्न हाल्नुहोस्"</string>
     <string name="lockpattern_recording_incorrect_too_short" msgid="2417932185815083082">"कम्तीमा ४ वटा थोप्लाहरू जोड्नुहोस्। फेरि प्रयास गर्नुहोस्।"</string>
     <string name="lockpattern_pattern_wrong" msgid="929223969555399363">"प्याटर्न मिलेन"</string>
     <string name="lockpattern_settings_help_how_to_record" msgid="4436556875843192284">"अनलक शैली कोर्ने तरिका"</string>
@@ -629,10 +629,10 @@
     <string name="credentials_reset" msgid="873900550885788639">"प्रमाणहरू मेट्नुहोस्"</string>
     <string name="credentials_reset_summary" msgid="6067911547500459637">"सबै प्रमाणहरू हटाउनुहोस्"</string>
     <string name="credentials_reset_hint" msgid="3459271621754137661">"सम्पूर्ण सामग्री हटाउने हो?"</string>
-    <string name="credentials_erased" msgid="2515915439705550379">"प्रमाणको भण्डारण मेटियो।"</string>
-    <string name="credentials_not_erased" msgid="6118567459076742720">"प्रमाणको भण्डारण मेटाउन सकिएन।"</string>
+    <string name="credentials_erased" msgid="2515915439705550379">"क्रिडेन्सियलको भण्डारण मेटियो।"</string>
+    <string name="credentials_not_erased" msgid="6118567459076742720">"क्रिडेन्सियलको भण्डारण मेटाउन सकिएन।"</string>
     <string name="forget" msgid="3971143908183848527">"बिर्सनुहोस्"</string>
-    <string name="connect" msgid="5861699594602380150">"जडान गर्नुहोस्"</string>
+    <string name="connect" msgid="5861699594602380150">"कनेक्ट गर्नुहोस्"</string>
     <string name="disconnect" msgid="6140789953324820336">"विच्छेद गर्नुहोस्"</string>
     <string name="delete_button" msgid="5840500432614610850">"मेट्नुहोस्"</string>
     <string name="remove_button" msgid="6664656962868194178">"हटाउनुहोस्"</string>
