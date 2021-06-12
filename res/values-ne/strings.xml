@@ -302,7 +302,7 @@
     <string name="assist_app_settings" msgid="9085261410166776497">"सहायक एप"</string>
     <string name="assist_access_context_title" msgid="8034851731390785301">"स्क्रिनमा रहेको पाठ प्रयोग गर्नुहोस्"</string>
     <string name="assist_access_context_summary" msgid="2374281280599443774">"सहायक एपलाई स्क्रिनमा रहेको कुनै सामग्रीमाथि पाठका रूपमा पहुँच राख्ने अनुमति दिनुहोस्"</string>
-    <string name="assist_access_screenshot_title" msgid="2855956879971465044">"स्क्रिसट प्रयोग गर्नुहोस्"</string>
+    <string name="assist_access_screenshot_title" msgid="2855956879971465044">"स्क्रिनसट प्रयोग गरियोस्"</string>
     <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"सहायक एपलाई स्क्रिनमा रहेको कुनै छविमाथि पहुँच राख्ने अनुमति दिनुहोस्"</string>
     <string name="voice_input_settings_title" msgid="3238707827815647526">"आवाज संलग्न इनपुट"</string>
     <string name="autofill_settings_title" msgid="1188754272680049972">"अटोफिल सेवा"</string>
@@ -341,7 +341,7 @@
     <string name="premium_sms_access_description" msgid="7119026067677052169">"प्रिमियम SMS सुविधा सक्रिय गर्नाले तपाईंलाई पैसा लाग्न सक्छ र उक्त लागत तपाईंको सेवा प्रदायकलाई तिर्नु पर्ने बिलमा जोडिने छ। तपाईंले एपका लागि अनुमति सक्षम पार्नुभएका खण्डमा तपाईं त्यस एपको प्रयोग गरेर प्रिमियम SMS पठाउन सक्नु हुने छ।"</string>
     <string name="usage_access_title" msgid="7153427122072303254">"प्रयोग गर्ने अनुमति"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"प्रयोगको पहुँचले एपलाई तपाईंले आफ्नो सेवा प्रदायक, भाषासम्बन्धी सेटिङ र अन्य विवरणहरूसहित अन्य कुन कुन एपहरू गरिरहनुभएको छ र कत्तिको प्रयोग गर्नुहुन्छ भन्ने कुरा ट्र्याक गर्न दिन्छ।"</string>
-    <string name="wifi_control_title" msgid="5660436566907731929">"Wi-Fi को नियन्त्रण"</string>
+    <string name="wifi_control_title" msgid="5660436566907731929">"Wi-Fi कन्ट्रोल"</string>
     <string name="wifi_control_description" msgid="6021926850423169261">"Wi-Fi नियन्त्रकले एपलाई Wi-Fi सक्रिय गर्ने वा निष्क्रिय पार्ने, स्क्यान गरी Wi-Fi नेटवर्कमा जडान गर्ने, नेटवर्कहरू थप्ने वा हटाउने, वा स्थानीय रूपमा मात्र प्रयोग गर्न मिल्ने हटस्पट सुरु गर्ने अनुमति दिन्छ।"</string>
     <string name="more_special_access_title" msgid="166115485446645971">"थप"</string>
     <string name="location_settings_title" msgid="901334356682423679">"स्थान"</string>
