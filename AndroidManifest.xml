@@ -25,7 +25,7 @@
 
     <uses-sdk
         android:minSdkVersion="24"
-        android:targetSdkVersion="29"/>
+        android:targetSdkVersion="32"/>
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -890,7 +890,8 @@
             android:label=""
             android:screenOrientation="nosensor"
             android:exported="true"
-            android:theme="@style/FallbackHome">
+            android:theme="@style/FallbackHome"
+            android:configChanges="keyboardHidden">
             <intent-filter android:priority="-900">
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.HOME" />
