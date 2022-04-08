@@ -241,7 +241,7 @@
     <string name="units_unit_name_kilometer" msgid="4351417123421381297">"કિલોમીટર"</string>
     <string name="units_unit_name_mile" msgid="8337486880403419613">"માઇલ"</string>
     <string name="units_unit_name_celsius" msgid="1642787068882598698">"સેલ્સિયસ"</string>
-    <string name="units_unit_name_fahrenheit" msgid="7617395181535026095">"ફેરનહીટ"</string>
+    <string name="units_unit_name_fahrenheit" msgid="7617395181535026095">"ફૅરન્હાઇટ"</string>
     <string name="units_unit_name_kelvin" msgid="4043908998904418360">"કેલ્વિન"</string>
     <string name="units_unit_name_milliliter" msgid="2735564290593738653">"મિલીલીટર"</string>
     <string name="units_unit_name_liter" msgid="2682609997247920434">"લીટર"</string>
@@ -288,7 +288,7 @@
     <string name="storage_application_label" msgid="5911779903670978586">"સ્ટોરેજ અને કૅશ મેમરી"</string>
     <string name="application_version_label" msgid="8556889839783311649">"વર્ઝન: %1$s"</string>
     <string name="runtime_permissions_summary_no_permissions_granted" msgid="6001439205270250021">"કોઈ પરવાનગીઓ આપેલ નથી"</string>
-    <string name="runtime_permissions_summary_no_permissions_requested" msgid="4074220596273432442">"કોઈ પરવાનગીઓની વિનંતી કરેલ નથી"</string>
+    <string name="runtime_permissions_summary_no_permissions_requested" msgid="4074220596273432442">"કોઈ પરવાનગીઓની વિનંતી કરી નથી"</string>
     <string name="storage_type_internal" msgid="8918688427078709570">"%s આંતરિક સ્ટોરેજમાં"</string>
     <string name="data_usage_summary_title" msgid="4368024763485916986">"ડેટા વપરાશ"</string>
     <string name="data_usage_app_summary_title" msgid="5012851696585421420">"ઍપ ડેટા વપરાશ"</string>
@@ -370,7 +370,7 @@
     <string name="legal_information" msgid="1838443759229784762">"કાનૂની માહિતી"</string>
     <string name="contributors_title" msgid="7698463793409916113">"સહયોગકર્તાઓ"</string>
     <string name="manual" msgid="4819839169843240804">"મૅન્યુઅલ"</string>
-    <string name="regulatory_labels" msgid="3165587388499646779">"નિયમનકારી લેબલો"</string>
+    <string name="regulatory_labels" msgid="3165587388499646779">"નિયમનકારી લેબલ"</string>
     <string name="safety_and_regulatory_info" msgid="1204127697132067734">"સુરક્ષા અને નિયમન મૅન્યુઅલ"</string>
     <string name="copyright_title" msgid="4220237202917417876">"કૉપિરાઇટ"</string>
     <string name="license_title" msgid="936705938435249965">"લાઇસન્સ"</string>
@@ -382,7 +382,7 @@
     <string name="status_serial_number" msgid="9158889113131907656">"અનુક્રમ નંબર"</string>
     <string name="hardware_revision" msgid="5713759927934872874">"હાર્ડવેરનું વર્ઝન"</string>
     <string name="regulatory_info_text" msgid="8890339124198005428"></string>
-    <string name="settings_license_activity_title" msgid="8499293744313077709">"તૃતીય-પક્ષ લાઇસન્સ"</string>
+    <string name="settings_license_activity_title" msgid="8499293744313077709">"ત્રીજા પક્ષના લાઇસન્સ"</string>
     <string name="settings_license_activity_unavailable" msgid="6104592821991010350">"લાઇસન્સ લોડ કરવામાં સમસ્યા છે."</string>
     <string name="settings_license_activity_loading" msgid="6163263123009681841">"લોડ કરી રહ્યાં છીએ…"</string>
     <plurals name="show_dev_countdown" formatted="false" msgid="2968627665608969405">
@@ -488,7 +488,7 @@
     <string name="storage_settings_title" msgid="8957054192781341797">"સ્ટોરેજ"</string>
     <string name="storage_music_audio" msgid="7827147379976134040">"મ્યુઝિક અને ઑડિયો"</string>
     <string name="storage_other_apps" msgid="945509804756782640">"અન્ય ઍપ"</string>
-    <string name="storage_files" msgid="6382081694781340364">"Files"</string>
+    <string name="storage_files" msgid="6382081694781340364">"ફાઇલો"</string>
     <string name="storage_system" msgid="1271345630248014010">"સિસ્ટમ"</string>
     <string name="storage_detail_dialog_system" msgid="796365720531622361">"સિસ્ટમમાં Androidનું <xliff:g id="VERSION">%s</xliff:g> વર્ઝન ચલાવવા માટે ઉપયોગી ફાઇલોનો સમાવેશ છે"</string>
     <string name="storage_audio_files_title" msgid="5183170457027181700">"ઑડિયોની ફાઇલો"</string>
@@ -648,5 +648,5 @@
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"છોડી દો"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"ડ્રાઇવિંગ કરતી વખતે આ સુવિધા ઉપલબ્ધ નથી"</string>
     <string name="add_user_restricted_while_driving" msgid="4754946754222453656">"ડ્રાઇવ કરતી વખતે વપરાશકર્તાને ઉમેરી શકાતા નથી"</string>
-    <string name="default_search_query" msgid="3137420627428857068">"Search"</string>
+    <string name="default_search_query" msgid="3137420627428857068">"શોધ"</string>
 </resources>

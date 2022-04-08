@@ -39,11 +39,11 @@
     </plurals>
     <string name="mobile_network_active_sim" msgid="1901674954229832811">"Aktivní / SIM karta"</string>
     <string name="mobile_network_inactive_sim" msgid="3644984830926224318">"Neaktivní / SIM karta"</string>
-    <string name="mobile_network_active_esim" msgid="5864100786496761032">"Aktivní / stažená SIM karta"</string>
-    <string name="mobile_network_inactive_esim" msgid="1397332352238119032">"Neaktivní / stažená SIM karta"</string>
+    <string name="mobile_network_active_esim" msgid="5864100786496761032">"Aktivní stažená SIM karta"</string>
+    <string name="mobile_network_inactive_esim" msgid="1397332352238119032">"Neaktivní stažená SIM karta"</string>
     <string name="mobile_network_list_add_more" msgid="6174294462747070655">"Přidat další"</string>
     <string name="mobile_network_toggle_title" msgid="3515647310810280063">"Mobilní data"</string>
-    <string name="mobile_network_toggle_summary" msgid="8698267487987697148">"Přistupovat k datům přes mobilní síť"</string>
+    <string name="mobile_network_toggle_summary" msgid="8698267487987697148">"Používat datové připojení přes mobilní síť"</string>
     <string name="confirm_mobile_data_disable" msgid="826493998804496639">"Vypnout mobilní data?"</string>
     <string name="sim_selection_required_pref" msgid="6599562910262785784">"Je vyžadován výběr"</string>
     <string name="sim_change_data_title" msgid="6677115745127365131">"Používat pro mobilní data <xliff:g id="CARRIER">%1$s</xliff:g>?"</string>
@@ -509,7 +509,7 @@
     <string name="storage_total_size_label" msgid="3892138268243791912">"Celkem"</string>
     <string name="storage_clear_user_data_text" msgid="8787615136779130680">"Vymazat úložiště"</string>
     <string name="storage_clear_cache_btn_text" msgid="8449547925966775612">"Vymazat mezipaměť"</string>
-    <string name="storage_clear_data_dlg_title" msgid="5863775997588969879">"Vymazat data aplikace?"</string>
+    <string name="storage_clear_data_dlg_title" msgid="5863775997588969879">"Smazat data aplikace?"</string>
     <string name="storage_clear_data_dlg_text" msgid="795055288575727801">"Veškerá data (všechny soubory, nastavení, účty, databáze apod.) této aplikace budou trvale vymazána."</string>
     <string name="storage_clear_failed_dlg_text" msgid="6710485971686866306">"Data aplikace v úložišti se nepodařilo vymazat."</string>
     <string name="storage_unmount_success" msgid="1553591517580407021">"Úložiště <xliff:g id="NAME">%1$s</xliff:g> bylo bezpečně odpojeno"</string>

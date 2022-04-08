@@ -28,7 +28,7 @@
     <string name="keywords_display_brightness_level" msgid="3956411572536209195">"scherm dimmen, touchscreen, batterij"</string>
     <string name="keywords_display_auto_brightness" msgid="2700310050333468752">"scherm dimmen, touchscreen, batterij"</string>
     <string name="keywords_display_night_display" msgid="2922294576679769957">"scherm dimmen, nacht, tint"</string>
-    <string name="night_mode_tile_label" msgid="6603597795502131664">"Nachtmodus"</string>
+    <string name="night_mode_tile_label" msgid="6603597795502131664">"Nachtstand"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Netwerk en internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mobiel netwerk"</string>
     <plurals name="mobile_network_summary_count" formatted="false" msgid="6917348330386831454">
@@ -38,7 +38,7 @@
     <string name="mobile_network_active_sim" msgid="1901674954229832811">"Actief/simkaart"</string>
     <string name="mobile_network_inactive_sim" msgid="3644984830926224318">"Inactief/simkaart"</string>
     <string name="mobile_network_active_esim" msgid="5864100786496761032">"Actief, gedownloade simkaart"</string>
-    <string name="mobile_network_inactive_esim" msgid="1397332352238119032">"Inactief/gedownloade simkaart"</string>
+    <string name="mobile_network_inactive_esim" msgid="1397332352238119032">"Inactief, gedownloade simkaart"</string>
     <string name="mobile_network_list_add_more" msgid="6174294462747070655">"Meer toevoegen"</string>
     <string name="mobile_network_toggle_title" msgid="3515647310810280063">"Mobiele data"</string>
     <string name="mobile_network_toggle_summary" msgid="8698267487987697148">"Datatoegang via mobiel netwerk"</string>
@@ -80,7 +80,7 @@
     <string name="set_data_limit" msgid="7136539812414500084">"Datalimiet instellen"</string>
     <string name="data_limit" msgid="227338836292511425">"Datalimiet"</string>
     <string name="data_usage_limit_dialog_title" msgid="1864716658371721883">"Datagebruik beperken"</string>
-    <string name="data_usage_limit_dialog_mobile" msgid="3633960011913085089">"De hoofdeenheid van je voertuig schakelt mobiele data uit zodra je de ingestelde limiet bereikt.\n\nAangezien het datagebruik wordt gemeten door de hoofdeenheid en je provider het gebruik op een andere manier kan berekenen, kun je overwegen een conservatieve limiet in te stellen."</string>
+    <string name="data_usage_limit_dialog_mobile" msgid="3633960011913085089">"De hoofdeenheid van je voertuig schakelt mobiele data uit zodra je de ingestelde limiet bereikt.\n\nAangezien het datagebruik wordt gemeten door de hoofdeenheid, en je provider tot een ander totaal kan komen, kun je het beste een voorzichtige limiet instellen."</string>
     <string name="data_usage_warning_editor_title" msgid="2041517150169038813">"Waarschuwing voor datagebruik instellen"</string>
     <string name="data_usage_limit_editor_title" msgid="133468242379286689">"Limiet voor datagebruik instellen"</string>
     <string name="usage_bytes_threshold_picker_positive_button" msgid="4625479840977965519">"Instellen"</string>
@@ -94,7 +94,7 @@
     <string name="wifi_setup_add_network" msgid="3660498520389954620">"Netwerk toevoegen"</string>
     <string name="wifi_setup_connect" msgid="3512399573397979101">"Connect"</string>
     <string name="wifi_password" msgid="5565632142720292397">"Wachtwoord"</string>
-    <string name="wifi_show_password" msgid="8423293211933521097">"Wachtwoord weergeven"</string>
+    <string name="wifi_show_password" msgid="8423293211933521097">"Wachtwoord tonen"</string>
     <string name="wifi_no_network_name" msgid="6819604337231313594">"Geef een netwerknaam op"</string>
     <string name="wifi_ssid" msgid="488604828159458741">"Netwerknaam"</string>
     <string name="wifi_ssid_hint" msgid="3170608752313710099">"Geef de SSID op"</string>
@@ -104,7 +104,7 @@
     <string name="wifi_speed" msgid="1650692446731850781">"Linksnelheid"</string>
     <string name="wifi_frequency" msgid="8951455949682864922">"Frequentie"</string>
     <string name="wifi_ip_address" msgid="3128140627890954061">"IP-adres"</string>
-    <string name="show_password" msgid="2074628020371139240">"Wachtwoord weergeven"</string>
+    <string name="show_password" msgid="2074628020371139240">"Wachtwoord tonen"</string>
     <string name="default_network_name_summary" msgid="8148402439232464276">"Netwerknaam opgeven"</string>
     <string name="default_password_summary" msgid="8789594645836902982">"Wachtwoord opgeven"</string>
     <string name="access_point_tag_key" msgid="1517143378973053337">"access_point_tag_key"</string>

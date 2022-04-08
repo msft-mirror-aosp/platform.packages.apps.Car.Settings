@@ -16,6 +16,8 @@
 
 package com.android.car.settings.security;
 
+import static android.view.WindowManager.LayoutParams.SYSTEM_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -65,6 +67,7 @@ public class CredentialStorageActivity extends FragmentActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().addSystemFlags(SYSTEM_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS);
         mUserManager = UserManager.get(getApplicationContext());
         mUtils = new LockPatternUtils(this);
     }
@@ -84,7 +87,7 @@ public class CredentialStorageActivity extends FragmentActivity {
 
         Intent intent = getIntent();
         String action = intent.getAction();
-        if (ACTION_RESET.equals(action)) {
+        if (ACTION_RESET.equals(action) && checkCallerIsSelf()) {
             showResetConfirmationDialog();
         } else if (ACTION_INSTALL.equals(action) && checkCallerIsCertInstallerOrSelfInProfile()) {
             Bundle installBundle = intent.getExtras();
@@ -123,6 +126,19 @@ public class CredentialStorageActivity extends FragmentActivity {
             } else {
                 finish();
             }
+        }
+    }
+
+    /**
+     * Check that the caller is Settings.
+     */
+    private boolean checkCallerIsSelf() {
+        try {
+            return Process.myUid() == android.app.ActivityManager.getService()
+                    .getLaunchedFromUid(getActivityToken());
+        } catch (RemoteException re) {
+            // Error talking to ActivityManager, just give up
+            return false;
         }
     }
 

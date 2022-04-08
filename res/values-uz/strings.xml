@@ -203,8 +203,8 @@
     <string name="language_picker_list_all_header" msgid="1577387973934368428">"Barcha tillar"</string>
     <string name="keyboard_settings" msgid="1959697870618278081">"Klaviatura"</string>
     <string name="manage_keyboard" msgid="4045394766282200132">"Klaviaturalar boshqaruvi"</string>
-    <string name="text_to_speech_settings" msgid="811985746199507343">"Matnni nutqqa aylantirish vositasi"</string>
-    <string name="text_to_speech_preferred_engine_settings" msgid="2766782925699132256">"Standart sintezator"</string>
+    <string name="text_to_speech_settings" msgid="811985746199507343">"Matnni nutqqa aylantirish"</string>
+    <string name="text_to_speech_preferred_engine_settings" msgid="2766782925699132256">"Asosiy vosita"</string>
     <string name="text_to_speech_current_engine" msgid="8133107484909612597">"Joriy sintezator"</string>
     <string name="tts_speech_rate" msgid="4512944877291943133">"Nutq tezligi"</string>
     <string name="tts_pitch" msgid="2389171233852604923">"Ohang"</string>
@@ -331,13 +331,13 @@
     <string name="hide_system" msgid="8845453295584638040">"Tizimga oid jarayonlarni berkitish"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Tizim sozlamalarini almashtirish"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Bu ruxsatnoma ilovaga tizim sozlamalarini oʻzgaritish uchun ruxsat beradi."</string>
-    <string name="notification_access_title" msgid="1467340098885813473">"Bildirishnomalarga kirish"</string>
+    <string name="notification_access_title" msgid="1467340098885813473">"Bildirishnomalarga ruxsat"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"<xliff:g id="SERVICE">%1$s</xliff:g> uchun bildirishnomadan foydalanish ruxsati berilsinmi?"</string>
     <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> barcha bildirishnomalarni, jumladan, kontakt ismlari va siz qabul qilgan xabarlar matni kabi shaxsiy maʼlumotlarni oʻqiy oladi. Shuningdek, u bildirishnomalarni yopishi yoki ulardagi turli amal tugmalarini ishga tushira oladi.\n\nIlova Bezovta qilinmasin rejimini yoqish va oʻchirish hamda shu bilan bogʻliq sozlamalarni ham oʻzgartirishi mumkin."</string>
     <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"Agar <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> uchun bildirishnomalar ruxsati faolsizlantirilganda, Bezovta qilinmasin ruxsati ham faolsizlantirilishi mumkin."</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"Ha"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Bekor qilish"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Pulli SMS xabarlarga ruxsat"</string>
+    <string name="premium_sms_access_title" msgid="1409118461646148686">"Pulli SMS yuborish"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"SMS uchun sizdan haq olinishi va operatorga qoʻshimcha to‘lov amalga oshirilishi mumkin. Agar ilova uchun ruxsatnoma taqdim etsangiz, oʻsha ilovadan SMS yuborishingiz mumkin boʻladi."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Foydalanish tarixiga kirish"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Foydalanish tarixiga kirish huquqi qanday ilovalardan va qancha muddatda foydalanishingiz, shuningdek, tarmoq operatori, til va boshqa parametrlarni kuzatish imkonini beradi."</string>

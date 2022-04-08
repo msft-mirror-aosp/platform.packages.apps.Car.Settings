@@ -70,7 +70,7 @@
     <string name="launch_manage_plan_text" msgid="906657488611815787">"Lihat paket"</string>
     <string name="app_data_usage" msgid="3878609885080232877">"Penggunaan kuota aplikasi"</string>
     <string name="data_usage_app_restricted" msgid="4570970078120010951">"terbatas"</string>
-    <string name="cycle_reset_day_of_month_picker_title" msgid="1374568502823735361">"Tanggal peresetan siklus penggunaan"</string>
+    <string name="cycle_reset_day_of_month_picker_title" msgid="1374568502823735361">"Tanggal reset siklus penggunaan"</string>
     <string name="cycle_reset_day_of_month_picker_subtitle" msgid="5361061448258189846">"Tanggal setiap bulannya:"</string>
     <string name="cycle_reset_day_of_month_picker_positive_button" msgid="6919858010423269305">"Setel"</string>
     <string name="data_warning_limit_title" msgid="4950868241810828601">"Peringatan &amp; batas data"</string>
@@ -126,7 +126,7 @@
     <string name="wifi_details_ipv6_address_header" msgid="4707181386646531890">"Alamat IPv6"</string>
     <string name="wifi_gateway" msgid="4975799192860431013">"Gateway"</string>
     <string name="wifi_preferences_title" msgid="772788844257225510">"Preferensi Wi‑Fi"</string>
-    <string name="wifi_wakeup" msgid="7451825226044542000">"Aktifkan Wi‑Fi secara otomatis"</string>
+    <string name="wifi_wakeup" msgid="7451825226044542000">"Otomatis aktifkan Wi‑Fi"</string>
     <string name="wifi_wakeup_summary" msgid="7237521683331291414">"Wi-Fi aktif lagi dekat jaringan tersimpan berkualitas tinggi, mis. jaringan rumah"</string>
     <string name="wifi_wakeup_summary_no_location" msgid="2821576525488435259">"Tidak tersedia karena lokasi dinonaktifkan. Aktifkan "<annotation id="link">"lokasi"</annotation>"."</string>
     <string name="wifi_settings_scanning_required_title" msgid="2726782203331704928">"Aktifkan pemindaian Wi-Fi?"</string>
@@ -159,7 +159,7 @@
     <string name="wifi_error" msgid="3105105447117289410">"Error"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"Perangkat tanpa nama"</string>
-    <string name="bluetooth_paired_devices" msgid="6463199569164652410">"Perangkat yang tersambung"</string>
+    <string name="bluetooth_paired_devices" msgid="6463199569164652410">"Perangkat yang terhubung"</string>
     <string name="bluetooth_pair_new_device" msgid="6948753485443263095">"Hubungkan perangkat baru"</string>
     <string name="bluetooth_pair_new_device_summary" msgid="2497221247690369031">"Bluetooth akan diaktifkan untuk menghubungkan"</string>
     <string name="bluetooth_disconnect_title" msgid="7675271355910637528">"Putuskan hubungan perangkat?"</string>
@@ -203,7 +203,7 @@
     <string name="language_picker_list_all_header" msgid="1577387973934368428">"Semua bahasa"</string>
     <string name="keyboard_settings" msgid="1959697870618278081">"Keyboard"</string>
     <string name="manage_keyboard" msgid="4045394766282200132">"Kelola keyboard"</string>
-    <string name="text_to_speech_settings" msgid="811985746199507343">"Keluaran text-to-speech"</string>
+    <string name="text_to_speech_settings" msgid="811985746199507343">"Output text-to-speech"</string>
     <string name="text_to_speech_preferred_engine_settings" msgid="2766782925699132256">"Mesin yang dipilih"</string>
     <string name="text_to_speech_current_engine" msgid="8133107484909612597">"Mesin saat ini"</string>
     <string name="tts_speech_rate" msgid="4512944877291943133">"Kecepatan Ucapan"</string>
@@ -357,7 +357,7 @@
     <string name="hardware_info_summary" msgid="8262576443254075921">"Model: <xliff:g id="MODEL">%1$s</xliff:g>"</string>
     <string name="baseband_version" msgid="2370088062235041897">"Versi pita basis"</string>
     <string name="kernel_version" msgid="7327212934187011508">"Versi kernel"</string>
-    <string name="build_number" msgid="3997326631001009102">"Nomor versi"</string>
+    <string name="build_number" msgid="3997326631001009102">"Nomor build"</string>
     <string name="bluetooth_mac_address" msgid="7641425947941688072">"Alamat bluetooth"</string>
     <string name="device_info_not_available" msgid="2095601973977376655">"Tidak tersedia"</string>
     <string name="device_status_activity_title" msgid="4083567497305368200">"Status"</string>
@@ -559,7 +559,7 @@
     <string name="lockpattern_retry_button_text" msgid="4655398824001857843">"Hapus"</string>
     <string name="lockpattern_cancel_button_text" msgid="4068764595622381766">"Batal"</string>
     <string name="lockpattern_pattern_confirmed" msgid="5984306638250515385">"Pola pembuka kunci baru Anda"</string>
-    <string name="lockpattern_recording_intro_header" msgid="7864149726033694408">"Buat pola pembuka kunci"</string>
+    <string name="lockpattern_recording_intro_header" msgid="7864149726033694408">"Gambar pola pembuka kunci"</string>
     <string name="lockpattern_recording_inprogress" msgid="1575019990484725964">"Angkat jari ketika selesai"</string>
     <string name="lockpattern_pattern_entered" msgid="6103071005285320575">"Pola direkam"</string>
     <string name="lockpattern_need_to_confirm" msgid="4648070076022940382">"Gambar pola lagi untuk mengonfirmasi"</string>
@@ -633,7 +633,7 @@
     <string name="credentials_not_erased" msgid="6118567459076742720">"Penyimpanan kredensial tidak dapat dihapus."</string>
     <string name="forget" msgid="3971143908183848527">"Lupakan"</string>
     <string name="connect" msgid="5861699594602380150">"Hubungkan"</string>
-    <string name="disconnect" msgid="6140789953324820336">"Putuskan hubungan"</string>
+    <string name="disconnect" msgid="6140789953324820336">"Putuskan koneksi"</string>
     <string name="delete_button" msgid="5840500432614610850">"Hapus"</string>
     <string name="remove_button" msgid="6664656962868194178">"Hapus"</string>
     <string name="cancel" msgid="750286395700355455">"Batal"</string>
