@@ -373,7 +373,7 @@
     <string name="app_link_open_never" msgid="2173174327831792316">"Jangan buka di aplikasi ini"</string>
     <string name="app_launch_supported_domain_urls_title" msgid="7345116365785981158">"Link yang didukung"</string>
     <string name="apps_settings_title" msgid="3982535942394315336">"Aplikasi"</string>
-    <string name="apps_recently_opened" msgid="5320377037971195984">"Baru-baru ini dibuka"</string>
+    <string name="apps_recently_opened" msgid="5320377037971195984">"Baru Dibuka"</string>
     <string name="apps_view_all_apps_title" msgid="2322120325505230530">"Lihat %1$d aplikasi"</string>
     <string name="apps_permission_manager_title" msgid="8776335943862484131">"Pengelola izin"</string>
     <string name="apps_permission_manager_summary" msgid="4180424218228141274">"Mengontrol akses aplikasi ke data Anda"</string>
@@ -549,8 +549,6 @@
     <string name="choose_new_admin_title" msgid="1915428454917699587">"Pilih admin baru"</string>
     <string name="choose_new_admin_message" msgid="7468286545352043354">"Anda memerlukan minimal satu admin. Untuk menghapus admin ini, terlebih dahulu pilih pengganti."</string>
     <string name="choose_new_admin_label" msgid="5987653639387437939">"Pilih admin"</string>
-    <string name="user_guest" msgid="3465399481257448601">"Tamu"</string>
-    <string name="start_guest_session" msgid="4438752398760283201">"Tamu"</string>
     <string name="user_switch" msgid="6544839750534690781">"Ganti"</string>
     <string name="current_user_name" msgid="3813671533249316823">"Anda (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"Nama"</string>

@@ -179,8 +179,8 @@
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"Nomsiz qurilma"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"Ulangan qurilmalar"</string>
-    <string name="bluetooth_pair_new_device" msgid="6948753485443263095">"Yangi qurilmani ulash"</string>
-    <string name="bluetooth_pair_new_device_summary" msgid="2497221247690369031">"Ulanish uchun Bluetooth yoqiladi"</string>
+    <string name="bluetooth_pair_new_device" msgid="6948753485443263095">"Yangi qurilmani juftlash"</string>
+    <string name="bluetooth_pair_new_device_summary" msgid="2497221247690369031">"Juftlash uchun Bluetooth yoqiladi"</string>
     <string name="bluetooth_disconnect_title" msgid="7675271355910637528">"Qurilma uzilsinmi?"</string>
     <string name="bluetooth_disconnect_all_profiles" msgid="2017519733701757244">"Avtomobilingiz <xliff:g id="DEVICE_NAME">%1$s</xliff:g> qurilmasidan uziladi."</string>
     <string name="bluetooth_vehicle_mac_address" msgid="7069234636525805937">"Avtomobilning Bluetooth manzili: <xliff:g id="ADDRESS">%1$s</xliff:g>"</string>
@@ -549,8 +549,6 @@
     <string name="choose_new_admin_title" msgid="1915428454917699587">"Yangi adminisratorni tanlang"</string>
     <string name="choose_new_admin_message" msgid="7468286545352043354">"Kamida bitta administrator lozim. Bunisini olib tashlasangiz, o‘rniga boshqasini tayinlang."</string>
     <string name="choose_new_admin_label" msgid="5987653639387437939">"Administratorni tanlang"</string>
-    <string name="user_guest" msgid="3465399481257448601">"Mehmon"</string>
-    <string name="start_guest_session" msgid="4438752398760283201">"Mehmon"</string>
     <string name="user_switch" msgid="6544839750534690781">"Almashtirish"</string>
     <string name="current_user_name" msgid="3813671533249316823">"Siz (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"Ism"</string>

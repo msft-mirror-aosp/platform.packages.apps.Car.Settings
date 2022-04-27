@@ -549,8 +549,6 @@
     <string name="choose_new_admin_title" msgid="1915428454917699587">"Odaberite novog administratora"</string>
     <string name="choose_new_admin_message" msgid="7468286545352043354">"Treba vam najmanje jedan administrator. Da biste izbrisali ovog, prvo odaberite zamenu."</string>
     <string name="choose_new_admin_label" msgid="5987653639387437939">"Odaberite administratora"</string>
-    <string name="user_guest" msgid="3465399481257448601">"Gost"</string>
-    <string name="start_guest_session" msgid="4438752398760283201">"Gost"</string>
     <string name="user_switch" msgid="6544839750534690781">"Prebacite na drugog korisnika"</string>
     <string name="current_user_name" msgid="3813671533249316823">"Vi (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"Ime"</string>
@@ -857,8 +855,8 @@
     <string name="captions_settings_text_size_very_large" msgid="949511539689307969">"Veoma veliko"</string>
     <string name="captions_text_style_title" msgid="8547777957403577760">"Stil titla"</string>
     <string name="captions_settings_text_style_by_app" msgid="7014882290456996444">"Podešava aplikacija"</string>
-    <string name="captions_settings_text_style_white_on_black" msgid="5758084000323596070">"Belo na crno"</string>
-    <string name="captions_settings_text_style_black_on_white" msgid="3906140601916221220">"Crno na belo"</string>
+    <string name="captions_settings_text_style_white_on_black" msgid="5758084000323596070">"Belo na crnom"</string>
+    <string name="captions_settings_text_style_black_on_white" msgid="3906140601916221220">"Crno na belom"</string>
     <string name="captions_settings_text_style_yellow_on_black" msgid="4681565950104511943">"Žuto na crno"</string>
     <string name="captions_settings_text_style_yellow_on_blue" msgid="5072521958156112239">"Žuto na plavo"</string>
     <string name="accessibility_settings_screen_reader_title" msgid="5113265553157624836">"Čitač ekrana"</string>

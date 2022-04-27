@@ -549,8 +549,6 @@
     <string name="choose_new_admin_title" msgid="1915428454917699587">"ಹೊಸ ನಿರ್ವಾಹಕವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"</string>
     <string name="choose_new_admin_message" msgid="7468286545352043354">"ನಿಮಗೆ ಕನಿಷ್ಟ ಒಂದು ನಿರ್ವಾಹಕ ಅಗತ್ಯವಿರುತ್ತದೆ. ಇದನ್ನು ಅಳಿಸಲು, ಮೊದಲು ಬದಲಿ ಆಯ್ಕೆ ಮಾಡಿ."</string>
     <string name="choose_new_admin_label" msgid="5987653639387437939">"ನಿರ್ವಾಹಕವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"</string>
-    <string name="user_guest" msgid="3465399481257448601">"ಅತಿಥಿ"</string>
-    <string name="start_guest_session" msgid="4438752398760283201">"ಅತಿಥಿ"</string>
     <string name="user_switch" msgid="6544839750534690781">"ಬದಲಿಸಿ"</string>
     <string name="current_user_name" msgid="3813671533249316823">"ನೀವು (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"ಹೆಸರು"</string>
@@ -646,7 +644,7 @@
     <string name="lockpattern_cancel_button_text" msgid="4068764595622381766">"ರದ್ದುಮಾಡಿ"</string>
     <string name="lockpattern_pattern_confirmed" msgid="5984306638250515385">"ನಿಮ್ಮ ಹೊಸ ಅನ್‌ಲಾಕ್‌ ಪ್ಯಾಟರ್ನ್"</string>
     <string name="lockpattern_recording_intro_header" msgid="7864149726033694408">"ಅನ್‌ಲಾಕ್‌ ಪ್ಯಾಟರ್ನ್ ಚಿತ್ರಿಸಿ"</string>
-    <string name="lockpattern_recording_inprogress" msgid="1575019990484725964">"ಬಳಿಕ ಬೆರಳು ತೆಗೆಯಿರಿ"</string>
+    <string name="lockpattern_recording_inprogress" msgid="1575019990484725964">"ಬಳಿಕ ಬೆರಳನ್ನು ಬಿಟ್ಟುಬಿಡಿ"</string>
     <string name="lockpattern_pattern_entered" msgid="6103071005285320575">"ಪ್ಯಾಟರ್ನ್ ಅನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡಲಾಗಿದೆ"</string>
     <string name="lockpattern_need_to_confirm" msgid="4648070076022940382">"ಖಚಿತಪಡಿಸಲು ಪ್ಯಾಟರ್ನ್ ಚಿತ್ರಿಸಿ"</string>
     <string name="lockpattern_recording_incorrect_too_short" msgid="2417932185815083082">"ಕನಿಷ್ಠ 4 ಡಾಟ್‌ಗಳನ್ನು ಕನೆಕ್ಟ್ ಮಾಡಿ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."</string>
