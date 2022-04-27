@@ -148,10 +148,8 @@
     <string name="wifi_hotspot_name_summary_connected" msgid="7421325340822195506">"D\'autres appareils peuvent se connecter à <xliff:g id="WIFI_HOTSPOT_NAME">%1$s</xliff:g>"</string>
     <string name="wifi_hotspot_password_title" msgid="4103948315849351988">"Mot de passe du point d\'accès"</string>
     <string name="wifi_hotspot_security_title" msgid="2299925790743587725">"Sécurité"</string>
-    <!-- no translation found for wifi_hotspot_wpa3_sae (4752416911592950174) -->
-    <skip />
-    <!-- no translation found for wifi_security_psk_sae (8738371461215752280) -->
-    <skip />
+    <string name="wifi_hotspot_wpa3_sae" msgid="4752416911592950174">"WPA3-Personal"</string>
+    <string name="wifi_security_psk_sae" msgid="8738371461215752280">"WPA2/WPA3-Personal"</string>
     <string name="wifi_hotspot_wpa2_personal" msgid="7135181212837798318">"WPA2 Personnel"</string>
     <string name="wifi_hotspot_security_none" msgid="2514844105085054386">"Aucun"</string>
     <string name="wifi_hotspot_ap_band_title" msgid="7685279281668988593">"Bande du PA"</string>
@@ -401,7 +399,7 @@
     <string name="wifi_control_description" msgid="6021926850423169261">"Le contrôle Wi-Fi permet d\'autoriser une application à activer ou à désactiver le Wi-Fi, à rechercher les réseaux Wi-Fi et à s\'y connecter, à ajouter ou supprimer des réseaux, ou à lancer un point d\'accès local."</string>
     <string name="more_special_access_title" msgid="166115485446645971">"Plus"</string>
     <string name="location_settings_title" msgid="901334356682423679">"Position"</string>
-    <string name="location_toggle_title" msgid="836779750812064601">"Utiliser la position"</string>
+    <string name="location_toggle_title" msgid="836779750812064601">"Utiliser la localisation"</string>
     <string name="location_toggle_summary" msgid="7977868708102299495">"Autoriser applis spécifiées à accéder à position"</string>
     <string name="location_toggle_off_warning" msgid="8396854289251143748">"Si vous désactivez cela, l\'accès à la position sera supprimé pour toutes les applis, sauf les applis d\'aide à la conduite."</string>
     <string name="location_driver_assistance_toggle_title" msgid="9201622805420459957">"Utiliser position pour aide à conduite"</string>
@@ -415,7 +413,7 @@
     <string name="location_settings_recent_requests_empty_message" msgid="7789667070033674910">"Aucune demande de localisation récente"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"Autorisations des applis"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"Services de localisation"</string>
-    <string name="location_use_location_title" msgid="117735895374606680">"Utiliser ma position"</string>
+    <string name="location_use_location_title" msgid="117735895374606680">"Utiliser la localisation"</string>
     <string name="location_settings_footer" msgid="296892848338100051">"Les services de localisation peuvent utiliser des sources telles que le GPS, le Wi-Fi, les réseaux mobiles et les capteurs pour estimer la position de votre appareil."</string>
     <string name="driver_assistance_settings_title" msgid="4915804073177128915">"Aide à la conduite"</string>
     <string name="adas_settings_footer" msgid="5128483877858058534">"Les informations de localisation envoyées aux applis d\'aide à la conduite ne contiennent aucun détail vous identifiant. Elles sont stockées pendant deux jours au maximum, puis supprimées."</string>
@@ -551,8 +549,6 @@
     <string name="choose_new_admin_title" msgid="1915428454917699587">"Sélectionner un nouvel administrateur"</string>
     <string name="choose_new_admin_message" msgid="7468286545352043354">"Vous devez disposer d\'au moins un administrateur. Pour supprimer ce profil, choisissez d\'abord un autre administrateur."</string>
     <string name="choose_new_admin_label" msgid="5987653639387437939">"Sélect. administrateur"</string>
-    <string name="user_guest" msgid="3465399481257448601">"Invité"</string>
-    <string name="start_guest_session" msgid="4438752398760283201">"Invité"</string>
     <string name="user_switch" msgid="6544839750534690781">"Changer"</string>
     <string name="current_user_name" msgid="3813671533249316823">"Vous (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"Nom"</string>
@@ -575,8 +571,8 @@
     <string name="storage_data_size_label" msgid="7986110464268960652">"Données de profil"</string>
     <string name="storage_cache_size_label" msgid="6361308766707419555">"Cache"</string>
     <string name="storage_total_size_label" msgid="3892138268243791912">"Total"</string>
-    <string name="storage_clear_user_data_text" msgid="8787615136779130680">"Effacer les données"</string>
-    <string name="storage_clear_cache_btn_text" msgid="8449547925966775612">"Vider le cache"</string>
+    <string name="storage_clear_user_data_text" msgid="8787615136779130680">"Effacer du stockage"</string>
+    <string name="storage_clear_cache_btn_text" msgid="8449547925966775612">"Effacer du cache"</string>
     <string name="storage_clear_data_dlg_title" msgid="5863775997588969879">"Supprimer les données ?"</string>
     <string name="storage_clear_data_dlg_text" msgid="795055288575727801">"Les données de cette application (fichiers, paramètres, comptes, bases de données, etc.) seront définitivement supprimées."</string>
     <string name="storage_clear_failed_dlg_text" msgid="6710485971686866306">"Impossible d\'effacer les données de l\'application."</string>
@@ -775,6 +771,15 @@
     <string name="work_policy_privacy_settings" msgid="5263835989260149968">"Règlement <xliff:g id="ORGANIZATION_NAME">%1$s</xliff:g> concernant les véhicules"</string>
     <string name="work_policy_privacy_settings_summary" msgid="5321618399949880194">"Paramètres gérés par le gestionnaire de l\'organisation"</string>
     <string name="footer_learn_more_content_description" msgid="7749452309729272078">"En savoir plus sur <xliff:g id="SERVICE">%1$s</xliff:g>"</string>
+    <string name="enterprise_privacy_settings" msgid="6496900796150572727">"Infos sur le véhicule géré"</string>
+    <string name="enterprise_privacy_settings_summary_generic" msgid="5850991363779957797">"Paramètres gérés par l\'administrateur de flotte"</string>
+    <string name="enterprise_privacy_header" msgid="4652489109303330306">"Pour autoriser l\'accès aux données de ce véhicule géré, l\'administrateur de flotte peut modifier les paramètres et installer un logiciel sur le système d\'infoloisirs.\n\nPour plus d\'informations, contactez votre administrateur de flotte."</string>
+    <string name="enterprise_privacy_exposure_category" msgid="4870494030035008520">"Infos auxquelles votre administrateur de flotte a accès"</string>
+    <string name="enterprise_privacy_exposure_changes_category" msgid="8837106430193547177">"Modifications effectuées par l\'administrateur de flotte"</string>
+    <string name="enterprise_privacy_exposure_desc" msgid="7962571201715956427">" "<li>"Données associées au compte de votre véhicule géré"</li>\n" "<li>"Liste des applis de votre véhicule géré"</li>\n" "<li>"Temps passé et quantité de données utilisée pour chaque appli"</li></string>
+    <string name="enterprise_privacy_device_access_category" msgid="5820180227429886857">"Votre accès au système d\'infoloisirs"</string>
+    <string name="enterprise_privacy_installed_packages" msgid="1069862734971848156">"Liste des applis de votre véhicule"</string>
+    <string name="enterprise_privacy_apps_count_estimation_info" msgid="2684195229249659340">"Le nombre d\'applis est une estimation. Il est possible qu\'il n\'inclue pas les applis installées sans passer par le Play Store."</string>
     <plurals name="enterprise_privacy_number_packages_lower_bound" formatted="false" msgid="1628398874478431488">
       <item quantity="one">Au moins <xliff:g id="COUNT_1">%d</xliff:g> appli</item>
       <item quantity="other">Au moins <xliff:g id="COUNT_1">%d</xliff:g> applis</item>
@@ -783,6 +788,22 @@
       <item quantity="one"><xliff:g id="COUNT_1">%d</xliff:g> appli</item>
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> applis</item>
     </plurals>
+    <string name="enterprise_privacy_network_logs" msgid="5093305105565608542">"Dernier journal du trafic réseau"</string>
+    <string name="enterprise_privacy_bug_reports" msgid="9197432120122370521">"Dernier rapport de bug"</string>
+    <string name="enterprise_privacy_security_logs" msgid="7375479062062113231">"Dernier journal de sécurité"</string>
+    <string name="enterprise_privacy_none" msgid="2566653655908700748">"Aucune"</string>
+    <string name="enterprise_privacy_enterprise_installed_packages" msgid="7798942534994638670">"Applis installées"</string>
+    <string name="enterprise_privacy_location_access" msgid="3132799413005627076">"Autorisations d\'accéder à la position"</string>
+    <string name="enterprise_privacy_microphone_access" msgid="4094467062253345379">"Autorisations d\'accès au micro"</string>
+    <string name="enterprise_privacy_camera_access" msgid="8895281017339143744">"Autorisations d\'accès à l\'appareil photo"</string>
+    <string name="enterprise_privacy_enterprise_set_default_apps" msgid="3386806357685549519">"Applis par défaut"</string>
+    <string name="enterprise_privacy_input_method" msgid="5062395693747004531">"Clavier par défaut"</string>
+    <string name="enterprise_privacy_input_method_name" msgid="2027313786295077607">"Défini sur <xliff:g id="APP_LABEL">%s</xliff:g>"</string>
+    <string name="enterprise_privacy_global_http_proxy" msgid="1366593928008294049">"Proxy HTTP global défini"</string>
+    <string name="enterprise_privacy_ca_certs_personal" msgid="5677098981429650665">"Identifiants de confiance dans votre profil personnel"</string>
+    <string name="enterprise_privacy_device_access_desc" msgid="3442555102576036038">" "<li>"L\'administrateur peut verrouiller le système d\'infoloisirs et réinitialiser le mot de passe"</li>\n" "<li>"L\'administrateur peut supprimer des données du système d\'infoloisirs"</li></string>
+    <string name="enterprise_privacy_failed_password_wipe_device" msgid="4768743631260876559">"Tentatives de saisie du mot de passe avant la suppression de toutes les données du système d\'infoloisirs"</string>
+    <string name="enterprise_privacy_failed_password_wipe_current_user" msgid="786246192213446835">"Tentatives de saisie du mot de passe avant la suppression des données du profil"</string>
     <plurals name="enterprise_privacy_number_failed_password_wipe" formatted="false" msgid="445847844239023816">
       <item quantity="one"><xliff:g id="COUNT_1">%d</xliff:g> tentative</item>
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> tentatives</item>
