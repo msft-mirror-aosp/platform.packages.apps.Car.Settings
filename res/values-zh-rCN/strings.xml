@@ -21,7 +21,7 @@
     <string name="more_settings_label" msgid="3867559443480110616">"更多"</string>
     <string name="display_settings" msgid="5325515247739279185">"显示"</string>
     <string name="brightness" msgid="2919605130898772866">"亮度"</string>
-    <string name="auto_brightness_title" msgid="9124647862844666581">"自动调节亮度"</string>
+    <string name="auto_brightness_title" msgid="9124647862844666581">"自适应亮度"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"根据环境调节屏幕亮度"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"“护眼模式”已开启"</string>
     <string name="night_mode_tile_label" msgid="6603597795502131664">"夜间模式"</string>
@@ -75,7 +75,7 @@
     <string name="data_limit" msgid="227338836292511425">"数据流量上限"</string>
     <string name="data_usage_limit_dialog_title" msgid="1864716658371721883">"限制流量用量"</string>
     <string name="data_usage_limit_dialog_mobile" msgid="3633960011913085089">"当移动数据流量的用量达到您设置的上限时，您汽车的音响主机将关闭移动数据网络。\n\n由于流量用量是由音响主机计算的，而您的运营商对流量用量的计算方式可能有所不同，因此建议您设置一个保守的上限值。"</string>
-    <string name="data_usage_warning_editor_title" msgid="2041517150169038813">"设置流量用量警告"</string>
+    <string name="data_usage_warning_editor_title" msgid="2041517150169038813">"设置流量消耗警告"</string>
     <string name="data_usage_limit_editor_title" msgid="133468242379286689">"设置流量使用上限"</string>
     <string name="data_usage_settings_footer" msgid="681881387909678237">"流量消耗是由您的设备测得的，可能与移动运营商的数据不同。"</string>
     <string name="usage_bytes_threshold_picker_positive_button" msgid="4625479840977965519">"设置"</string>
@@ -148,6 +148,8 @@
     <string name="wifi_hotspot_name_summary_connected" msgid="7421325340822195506">"其他设备可以连接到 <xliff:g id="WIFI_HOTSPOT_NAME">%1$s</xliff:g>"</string>
     <string name="wifi_hotspot_password_title" msgid="4103948315849351988">"热点密码"</string>
     <string name="wifi_hotspot_security_title" msgid="2299925790743587725">"安全"</string>
+    <string name="wifi_hotspot_wpa3_sae" msgid="4752416911592950174">"WPA3-Personal"</string>
+    <string name="wifi_security_psk_sae" msgid="8738371461215752280">"WPA2/WPA3-Personal"</string>
     <string name="wifi_hotspot_wpa2_personal" msgid="7135181212837798318">"WPA2-Personal"</string>
     <string name="wifi_hotspot_security_none" msgid="2514844105085054386">"无"</string>
     <string name="wifi_hotspot_ap_band_title" msgid="7685279281668988593">"AP 频段"</string>
@@ -378,13 +380,15 @@
     <string name="apps_default_apps_summary" msgid="2017792579839972926">"针对 Google 助理和更多应用"</string>
     <string name="apps_special_app_access_summary" msgid="6464767436309742163">"针对系统和其他设置"</string>
     <string name="special_access" msgid="5730278220917123811">"特殊应用权限"</string>
-    <string name="show_system" msgid="4401355756969485287">"显示系统程序"</string>
+    <string name="show_system" msgid="4401355756969485287">"显示系统应用"</string>
     <string name="hide_system" msgid="8845453295584638040">"隐藏系统程序"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"隐藏系统应用"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"修改系统设置"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"此权限可让应用修改系统设置。"</string>
     <string name="notification_access_title" msgid="1467340098885813473">"通知访问权限"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"要允许<xliff:g id="SERVICE">%1$s</xliff:g>访问通知吗？"</string>
+    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>将可读取所有通知（包括联系人姓名和您收到的消息正文等个人信息），而且还能关闭通知或触发通知中的操作按钮。\n\n此外，该应用将因此能够开启或关闭勿扰模式，以及更改相关设置。"</string>
+    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"如果您停用<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>的通知访问权限，勿扰模式的访问权限可能也会遭到停用。"</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"关闭"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"取消"</string>
     <string name="premium_sms_access_title" msgid="1409118461646148686">"付费短信权限"</string>
@@ -545,8 +549,6 @@
     <string name="choose_new_admin_title" msgid="1915428454917699587">"选择新的管理员"</string>
     <string name="choose_new_admin_message" msgid="7468286545352043354">"您至少要有一位管理员。要删除现有的这位管理员，请先选择接替者。"</string>
     <string name="choose_new_admin_label" msgid="5987653639387437939">"选择管理员"</string>
-    <string name="user_guest" msgid="3465399481257448601">"访客"</string>
-    <string name="start_guest_session" msgid="4438752398760283201">"访客"</string>
     <string name="user_switch" msgid="6544839750534690781">"开关"</string>
     <string name="current_user_name" msgid="3813671533249316823">"您 (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"名称"</string>
@@ -610,6 +612,8 @@
     <string name="privacy_settings_title" msgid="3150145262029229572">"隐私"</string>
     <string name="privacy_vehicle_data_title" msgid="6385777370742595651">"信息娱乐系统数据"</string>
     <string name="privacy_location_summary" msgid="7019817848470566242">"控制应用对您的位置信息的使用权限"</string>
+    <string name="mute_camera_title" msgid="215494079895460172">"相机"</string>
+    <string name="mute_camera_summary" msgid="1237452064757403042">"控制应用的相机使用权限"</string>
     <string name="mute_mic_title" msgid="2813215197799569553">"麦克风"</string>
     <string name="mute_mic_summary" msgid="5426953935775303904">"控制应用对麦克风的使用权限"</string>
     <string name="vehicle_data_title" msgid="935933215161763721">"信息娱乐系统数据"</string>
@@ -679,34 +683,20 @@
     <string name="lockpassword_password_recently_used" msgid="8255729487108602924">"设备管理员不允许使用最近用过的密码"</string>
     <string name="error_saving_password" msgid="8334882262622500658">"保存密码时出错"</string>
     <string name="lockpassword_password_denylisted_by_admin" msgid="8611831198794524730">"您的 IT 管理员已禁止使用常用密码。请尝试使用其他密码。"</string>
-    <!-- no translation found for lockpassword_password_requires_alpha (713641878535268163) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_digit (8120467503175627546) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_symbol (6294855131052831204) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_letters (324864645474528299) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_lowercase (5373735547134824114) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_uppercase (2002482631049525313) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_numeric (5694949801691947801) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_symbols (1789501049908004075) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_nonletter (3089186186422638926) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_nonnumerical (1677123573552379526) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_too_short (3898753131694105832) -->
-    <skip />
-    <!-- no translation found for lockpassword_pin_too_short (3671037384464545169) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_too_long (1709616257350671045) -->
-    <skip />
-    <!-- no translation found for lockpassword_pin_too_long (8315542764465856288) -->
-    <skip />
+    <string name="lockpassword_password_requires_alpha" msgid="713641878535268163">"必须包含至少 1 个字母"</string>
+    <string name="lockpassword_password_requires_digit" msgid="8120467503175627546">"必须包含至少 1 个数字"</string>
+    <string name="lockpassword_password_requires_symbol" msgid="6294855131052831204">"必须包含至少 1 个符号"</string>
+    <string name="lockpassword_password_requires_letters" msgid="324864645474528299">"{count,plural, =1{必须包含至少 # 个字母}other{必须包含至少 # 个字母}}"</string>
+    <string name="lockpassword_password_requires_lowercase" msgid="5373735547134824114">"{count,plural, =1{必须包含至少 # 个小写字母}other{必须包含至少 # 个小写字母}}"</string>
+    <string name="lockpassword_password_requires_uppercase" msgid="2002482631049525313">"{count,plural, =1{必须包含至少 # 个大写字母}other{必须包含至少 # 个大写字母}}"</string>
+    <string name="lockpassword_password_requires_numeric" msgid="5694949801691947801">"{count,plural, =1{必须包含至少 # 个数字}other{必须包含至少 # 个数字}}"</string>
+    <string name="lockpassword_password_requires_symbols" msgid="1789501049908004075">"{count,plural, =1{必须包含至少 # 个特殊符号}other{必须包含至少 # 个特殊符号}}"</string>
+    <string name="lockpassword_password_requires_nonletter" msgid="3089186186422638926">"{count,plural, =1{必须包含至少 # 个非字母字符}other{必须包含至少 # 个非字母字符}}"</string>
+    <string name="lockpassword_password_requires_nonnumerical" msgid="1677123573552379526">"{count,plural, =1{必须包含至少 # 个非数字字符}other{必须包含至少 # 个非数字字符}}"</string>
+    <string name="lockpassword_password_too_short" msgid="3898753131694105832">"{count,plural, =1{必须包含至少 # 个字符}other{必须包含至少 # 个字符}}"</string>
+    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{必须包含至少 # 位数}other{必须包含至少 # 位数}}"</string>
+    <string name="lockpassword_password_too_long" msgid="1709616257350671045">"{count,plural, =1{必须少于 # 个字符}other{必须少于 # 个字符}}"</string>
+    <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{必须少于 # 位数}other{必须少于 # 位数}}"</string>
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"不允许使用以升序、降序或重复序列进行排列的一串数字"</string>
     <string name="setup_lock_settings_options_button_label" msgid="3337845811029780896">"屏幕锁定选项"</string>
     <string name="build_info_fmt" msgid="5592554123908086426">"<xliff:g id="FINGERPRINT">%1$s</xliff:g>\n<xliff:g id="DATE">%2$s</xliff:g>：<xliff:g id="NUM_DAYS">%3$s</xliff:g> 天前"</string>
@@ -781,6 +771,15 @@
     <string name="work_policy_privacy_settings" msgid="5263835989260149968">"<xliff:g id="ORGANIZATION_NAME">%1$s</xliff:g>的车辆政策"</string>
     <string name="work_policy_privacy_settings_summary" msgid="5321618399949880194">"由组织管理员管理的设置"</string>
     <string name="footer_learn_more_content_description" msgid="7749452309729272078">"详细了解“<xliff:g id="SERVICE">%1$s</xliff:g>”"</string>
+    <string name="enterprise_privacy_settings" msgid="6496900796150572727">"受管理汽车的信息"</string>
+    <string name="enterprise_privacy_settings_summary_generic" msgid="5850991363779957797">"由车队管理员所管理的设置"</string>
+    <string name="enterprise_privacy_header" msgid="4652489109303330306">"若要提供对这部受管理汽车上数据的访问权限，车队管理员可以更改相关设置，以及在信息娱乐系统上安装软件。\n\n如需了解详情，请联系您的车队管理员。"</string>
+    <string name="enterprise_privacy_exposure_category" msgid="4870494030035008520">"车队管理员可以查看的信息"</string>
+    <string name="enterprise_privacy_exposure_changes_category" msgid="8837106430193547177">"车队管理员所做的更改"</string>
+    <string name="enterprise_privacy_exposure_desc" msgid="7962571201715956427">" "<li>"与您受管理汽车的帐号相关的数据"</li>\n" "<li>"受管理汽车上应用的列表"</li>\n" "<li>"每个应用的使用时长和数据用量"</li></string>
+    <string name="enterprise_privacy_device_access_category" msgid="5820180227429886857">"您对信息娱乐系统的访问权限"</string>
+    <string name="enterprise_privacy_installed_packages" msgid="1069862734971848156">"车载设备上应用的列表"</string>
+    <string name="enterprise_privacy_apps_count_estimation_info" msgid="2684195229249659340">"应用数量是估算值，其中可能不包括从 Play 商店以外的来源安装的应用。"</string>
     <plurals name="enterprise_privacy_number_packages_lower_bound" formatted="false" msgid="1628398874478431488">
       <item quantity="other">至少 <xliff:g id="COUNT_1">%d</xliff:g> 个应用</item>
       <item quantity="one">至少 <xliff:g id="COUNT_0">%d</xliff:g> 个应用</item>
@@ -789,6 +788,22 @@
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> 个应用</item>
       <item quantity="one"><xliff:g id="COUNT_0">%d</xliff:g> 个应用</item>
     </plurals>
+    <string name="enterprise_privacy_network_logs" msgid="5093305105565608542">"最新的网络流量日志"</string>
+    <string name="enterprise_privacy_bug_reports" msgid="9197432120122370521">"最新的错误报告"</string>
+    <string name="enterprise_privacy_security_logs" msgid="7375479062062113231">"最新的安全日志"</string>
+    <string name="enterprise_privacy_none" msgid="2566653655908700748">"无"</string>
+    <string name="enterprise_privacy_enterprise_installed_packages" msgid="7798942534994638670">"已安装的应用"</string>
+    <string name="enterprise_privacy_location_access" msgid="3132799413005627076">"位置信息权限"</string>
+    <string name="enterprise_privacy_microphone_access" msgid="4094467062253345379">"麦克风权限"</string>
+    <string name="enterprise_privacy_camera_access" msgid="8895281017339143744">"相机权限"</string>
+    <string name="enterprise_privacy_enterprise_set_default_apps" msgid="3386806357685549519">"默认应用"</string>
+    <string name="enterprise_privacy_input_method" msgid="5062395693747004531">"默认键盘"</string>
+    <string name="enterprise_privacy_input_method_name" msgid="2027313786295077607">"已设为<xliff:g id="APP_LABEL">%s</xliff:g>"</string>
+    <string name="enterprise_privacy_global_http_proxy" msgid="1366593928008294049">"已设置全局 HTTP 代理"</string>
+    <string name="enterprise_privacy_ca_certs_personal" msgid="5677098981429650665">"您个人资料中的可信凭据"</string>
+    <string name="enterprise_privacy_device_access_desc" msgid="3442555102576036038">" "<li>"管理员可以锁定信息娱乐系统并重置密码"</li>\n" "<li>"管理员可以删除信息娱乐系统中的数据"</li></string>
+    <string name="enterprise_privacy_failed_password_wipe_device" msgid="4768743631260876559">"输入错误密码的尝试次数上限（如果超过此上限，系统将删除信息娱乐系统中的所有数据）"</string>
+    <string name="enterprise_privacy_failed_password_wipe_current_user" msgid="786246192213446835">"输入错误密码的尝试次数上限（如果超过此上限，系统将删除个人资料数据）"</string>
     <plurals name="enterprise_privacy_number_failed_password_wipe" formatted="false" msgid="445847844239023816">
       <item quantity="other">已尝试 <xliff:g id="COUNT_1">%d</xliff:g> 次</item>
       <item quantity="one">已尝试 <xliff:g id="COUNT_0">%d</xliff:g> 次</item>
@@ -839,12 +854,20 @@
     <string name="captions_settings_text_style_yellow_on_black" msgid="4681565950104511943">"黑底黄字"</string>
     <string name="captions_settings_text_style_yellow_on_blue" msgid="5072521958156112239">"蓝底黄字"</string>
     <string name="accessibility_settings_screen_reader_title" msgid="5113265553157624836">"屏幕阅读器"</string>
-    <string name="talkback_title" msgid="6529000326454628289">"TalkBack"</string>
-    <string name="talkback_settings_off" msgid="1486849504005704390">"关闭"</string>
-    <string name="talkback_settings_on" msgid="796292072895957042">"读出屏幕上的内容"</string>
-    <string name="enable_talkback_toggle_title" msgid="3027666779214128091">"使用 TalkBack"</string>
-    <string name="talkback_options_title" msgid="7366357383004455638">"选项"</string>
-    <string name="talkback_settings_title" msgid="631275474070654027">"设置"</string>
-    <string name="about_talkback_title" msgid="6048639389606001298">"关于 TalkBack"</string>
-    <string name="about_talkback_description" msgid="5438077447169311605">"车辆行驶时无法使用 TalkBack。\n\n开启 TalkBack 后，它会提供语音反馈，让您无需看屏幕即可使用设备。TalkBack 适用于不便查看屏幕的情况或难以看清屏幕的用户。"</string>
+    <string name="screen_reader_settings_off" msgid="6081562047935689764">"已关闭"</string>
+    <string name="screen_reader_settings_on" msgid="2168217218643349459">"读出屏幕上的内容"</string>
+    <string name="enable_screen_reader_toggle_title" msgid="7641307781194619254">"使用“<xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g>”"</string>
+    <string name="screen_reader_options_title" msgid="1073640098442831819">"选项"</string>
+    <string name="screen_reader_description_title" msgid="8766666406552388012">"设置"</string>
+    <string name="camera_settings_title" msgid="2837785830355288903">"相机"</string>
+    <string name="camera_toggle_title" msgid="1990732328673068456">"使用相机"</string>
+    <string name="camera_toggle_summary" msgid="5751159996822627567">"允许所有应用使用相机"</string>
+    <string name="camera_manage_permissions" msgid="9005596413781984368">"管理相机权限"</string>
+    <string name="camera_recently_accessed" msgid="8084100710444691977">"近期使用过"</string>
+    <string name="camera_no_recent_access" msgid="965105023454777859">"最近没有应用使用过相机"</string>
+    <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"任何应用都无法使用相机"</string>
+    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{# 个应用（共 {total_count} 个）可以使用相机}other{# 个应用（共 {total_count} 个）可以使用相机}}"</string>
+    <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"近期使用过"</string>
+    <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"查看全部"</string>
+    <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"正在加载…"</string>
 </resources>
