@@ -24,6 +24,7 @@ import android.annotation.Nullable;
 import android.annotation.StringRes;
 import android.annotation.UserIdInt;
 import android.app.ActivityManager;
+import android.app.admin.DevicePolicyManager;
 import android.car.Car;
 import android.car.user.CarUserManager;
 import android.car.user.OperationResult;
@@ -111,7 +112,7 @@ public class ProfileHelper {
             sInstance = new ProfileHelper(
                     appContext.getSystemService(UserManager.class), resources,
                     resources.getString(com.android.internal.R.string.owner_name),
-                    resources.getString(R.string.user_guest),
+                    resources.getString(com.android.internal.R.string.guest_name),
                     getCarUserManager(appContext));
         }
         return sInstance;
@@ -483,7 +484,7 @@ public class ProfileHelper {
     }
 
     /**
-     * Get the maximum number of real (non-guest, non-managed profile) profiles that can be created
+     * Gets the maximum number of real (non-guest, non-managed profile) profiles that can be created
      * on the device. This is a dynamic value and it decreases with the increase of the number of
      * managed profiles on the device.
      *
@@ -516,5 +517,13 @@ public class ProfileHelper {
                 EnterpriseUtils.getActionDisabledByAdminDialog(context,
                         UserManager.DISALLOW_MODIFY_ACCOUNTS),
                 DISABLED_BY_ADMIN_CONFIRM_DIALOG_TAG);
+    }
+
+    /**
+     * Checks whether the current user has acknowledged the new user disclaimer.
+     */
+    public static boolean isNewUserDisclaimerAcknolwedged(Context context) {
+        DevicePolicyManager dpm = context.getSystemService(DevicePolicyManager.class);
+        return dpm.isNewUserDisclaimerAcknowledged();
     }
 }
