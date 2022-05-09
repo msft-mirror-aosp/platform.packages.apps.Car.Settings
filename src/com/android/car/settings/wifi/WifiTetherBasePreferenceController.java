@@ -55,26 +55,18 @@ public abstract class WifiTetherBasePreferenceController<V extends Preference> e
     @Override
     @CallSuper
     protected void onCreateInternal() {
-        mCarWifiManager = new CarWifiManager(getContext());
+        mCarWifiManager = new CarWifiManager(getContext(),
+                getFragmentController().getSettingsLifecycle());
+        // ActionDisabledByAdminDialog will be shown if DISALLOW_CONFIG_WIFI
+        // is set by a device admin; otherwise, a default Toast will be shown
+        setClickableWhileDisabled(getPreference(), /* clickable= */ true, p ->
+                WifiUtil.runClickableWhileDisabled(getContext(), getFragmentController()));
     }
 
     @Override
     @CallSuper
     protected void onStartInternal() {
-        mCarWifiManager.start();
         getPreference().setPersistent(true);
-    }
-
-    @Override
-    @CallSuper
-    protected void onStopInternal() {
-        mCarWifiManager.stop();
-    }
-
-    @Override
-    @CallSuper
-    protected void onDestroyInternal() {
-        mCarWifiManager.destroy();
     }
 
     @Override
@@ -88,6 +80,15 @@ public abstract class WifiTetherBasePreferenceController<V extends Preference> e
         } else {
             preference.setSummary(summary);
         }
+    }
+
+    @Override
+    protected int getAvailabilityStatus() {
+        if (WifiUtil.isConfigWifiRestrictedByUm(getContext())
+                || WifiUtil.isConfigWifiRestrictedByDpm(getContext())) {
+            return AVAILABLE_FOR_VIEWING;
+        }
+        return AVAILABLE;
     }
 
     protected SoftApConfiguration getCarSoftApConfig() {

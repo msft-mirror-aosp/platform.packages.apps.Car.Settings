@@ -20,8 +20,9 @@ import static android.bluetooth.BluetoothProfile.STATE_CONNECTED;
 
 import android.content.Context;
 
-import androidx.preference.SwitchPreference;
+import androidx.annotation.VisibleForTesting;
 
+import com.android.car.ui.preference.CarUiSwitchPreference;
 import com.android.settingslib.bluetooth.CachedBluetoothDevice;
 import com.android.settingslib.bluetooth.LocalBluetoothProfile;
 import com.android.settingslib.bluetooth.PanProfile;
@@ -29,7 +30,7 @@ import com.android.settingslib.bluetooth.PanProfile;
 /**
  * Preference that represents a {@link LocalBluetoothProfile} for a {@link CachedBluetoothDevice}.
  */
-public class BluetoothDeviceProfilePreference extends SwitchPreference {
+public class BluetoothDeviceProfilePreference extends CarUiSwitchPreference {
 
     private final LocalBluetoothProfile mProfile;
     private final CachedBluetoothDevice mCachedDevice;
@@ -71,7 +72,8 @@ public class BluetoothDeviceProfilePreference extends SwitchPreference {
         mCachedDevice.unregisterCallback(mDeviceCallback);
     }
 
-    private void refreshUi() {
+    @VisibleForTesting
+    void refreshUi() {
         setEnabled(!mCachedDevice.isBusy());
         if (mProfile instanceof PanProfile) {
             setChecked(
