@@ -148,6 +148,8 @@
     <string name="wifi_hotspot_name_summary_connected" msgid="7421325340822195506">"ఇతర పరికరాలు <xliff:g id="WIFI_HOTSPOT_NAME">%1$s</xliff:g>కు కనెక్ట్ కావచ్చు"</string>
     <string name="wifi_hotspot_password_title" msgid="4103948315849351988">"హాట్‌స్పాట్ పాస్‌వర్డ్‌"</string>
     <string name="wifi_hotspot_security_title" msgid="2299925790743587725">"సెక్యూరిటీ"</string>
+    <string name="wifi_hotspot_wpa3_sae" msgid="4752416911592950174">"WPA3-Personal"</string>
+    <string name="wifi_security_psk_sae" msgid="8738371461215752280">"WPA2/WPA3-Personal"</string>
     <string name="wifi_hotspot_wpa2_personal" msgid="7135181212837798318">"WPA2-వ్యక్తిగతం"</string>
     <string name="wifi_hotspot_security_none" msgid="2514844105085054386">"ఏమీ లేవు"</string>
     <string name="wifi_hotspot_ap_band_title" msgid="7685279281668988593">"AP బ్యాండ్"</string>
@@ -173,7 +175,7 @@
     <string name="network_connection_errorstate_dialog_message" msgid="4268321315241218483">"ఏదో తప్పు జరిగింది. ఈ అప్లికేషన్ పరికరాన్ని ఎంచుకునే రిక్వెస్ట్‌ను రద్దు చేసింది."</string>
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"విజయవంతంగా కనెక్ట్ చేయబడింది"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"అన్నింటినీ చూపు"</string>
-    <string name="progress_scanning" msgid="7191583064717479795">"శోధించడం"</string>
+    <string name="progress_scanning" msgid="7191583064717479795">"సెర్చ్ చేయడం"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"బ్లూటూత్"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"పేరులేని పరికరం"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"జత చేయబడిన పరికరాలు"</string>
@@ -217,7 +219,7 @@
     <string name="bluetooth_pin_values_hint_16_digits" msgid="418776900816984778">"తప్పనిసరిగా 16 అంకెలు ఉండాలి"</string>
     <string name="bluetooth_pin_values_hint" msgid="1561325817559141687">"సాధారణంగా 0000 లేదా 1234"</string>
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"జత చేయడానికి రిక్వెస్ట్‌"</string>
-    <string name="bluetooth_notif_message" msgid="1060821000510108726">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>తో జత చేయడానికి నొక్కండి."</string>
+    <string name="bluetooth_notif_message" msgid="1060821000510108726">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>తో పెయిర్ చేయడానికి ట్యాప్ చేయండి."</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"బ్లూటూత్ పరికరాన్ని ఎంచుకోండి"</string>
     <string name="language_settings" msgid="2079258598337245546">"భాషలు"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"భాషలు &amp; ఇన్‌పుట్"</string>
@@ -230,7 +232,7 @@
     <string name="text_to_speech_current_engine" msgid="8133107484909612597">"ప్రస్తుత ఇంజిన్"</string>
     <string name="tts_speech_rate" msgid="4512944877291943133">"స్పీచ్ రేట్"</string>
     <string name="tts_pitch" msgid="2389171233852604923">"పిచ్"</string>
-    <string name="tts_reset" msgid="6289481549801844709">"రీసెట్ చేయి"</string>
+    <string name="tts_reset" msgid="6289481549801844709">"రీసెట్ చేయండి"</string>
     <string name="sound_settings" msgid="3072423952331872246">"ధ్వని"</string>
     <string name="ring_volume_title" msgid="3135241004980719442">"రింగ్ వాల్యూమ్"</string>
     <string name="navi_volume_title" msgid="946292066759195165">"నావిగేషన్ వాల్యూమ్"</string>
@@ -310,7 +312,7 @@
     <string name="prioritize_app_performance_dialog_action_off" msgid="2813324718753199319">"వద్దు, ధన్యవాదాలు"</string>
     <string name="disable_text" msgid="4358165448648990820">"డిజేబుల్ చేయి"</string>
     <string name="enable_text" msgid="1794971777861881238">"ప్రారంభించు"</string>
-    <string name="uninstall_text" msgid="277907956072833012">"అన్ఇన్‌స్టాల్ చేయి"</string>
+    <string name="uninstall_text" msgid="277907956072833012">"అన్ఇన్‌స్టాల్ చేయండి"</string>
     <string name="app_disable_dialog_text" msgid="7731155411006654025">"మీరు ఈ యాప్‌ను నిలిపివేస్తే, Android మరియు ఇతర యాప్‌లు ఇకపై ఉద్దేశించిన రీతిలో పని చేయకపోవచ్చు."</string>
     <string name="app_disable_dialog_positive" msgid="4448684722791563349">"యాప్‌ను నిలిపివేయి"</string>
     <string name="not_installed" msgid="4163454337822508007">"ఈ ప్రొఫైల్‌లో ఇన్‌స్టాల్ చేయబడలేదు"</string>
@@ -320,7 +322,7 @@
     <string name="prioritize_app_performance_label" msgid="7264505023347026606">"యాప్ పనితీరుకు ప్రాధాన్యత ఇవ్వండి"</string>
     <string name="application_version_label" msgid="8556889839783311649">"వెర్షన్: %1$s"</string>
     <string name="runtime_permissions_summary_no_permissions_granted" msgid="6001439205270250021">"అనుమతులు మంజూరు కాలేదు"</string>
-    <string name="runtime_permissions_summary_no_permissions_requested" msgid="4074220596273432442">"అనుమతులను అభ్యర్థించలేదు"</string>
+    <string name="runtime_permissions_summary_no_permissions_requested" msgid="4074220596273432442">"అనుమతులను రిక్వెస్ట్ చేయలేదు"</string>
     <string name="unused_apps" msgid="648471933781010395">"ఉపయోగించని యాప్‌లు"</string>
     <string name="unused_apps_summary" msgid="8257304516038923072">"{count,plural, =1{# ఉపయోగించని యాప్}other{# ఉపయోగించని యాప్‌లు}}"</string>
     <string name="unused_apps_switch" msgid="4433958286200341563">"అనుమతులను తీసివేసి స్పేస్‌ను ఖాళీ చేయండి"</string>
@@ -385,6 +387,8 @@
     <string name="modify_system_settings_description" msgid="5295023124419592452">"సిస్టమ్ సెట్టింగ్‌లను ఎడిట్ చేయడానికి ఈ అనుమతి యాప్‌కు వీలు కల్పిస్తుంది."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"నోటిఫికేషన్ యాక్సెస్"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"<xliff:g id="SERVICE">%1$s</xliff:g> కోసం నోటిఫికేషన్ యాక్సెస్‌ను అనుమతించాలా?"</string>
+    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> ప‌రిచ‌యాల పేర్లు, మీరు స్వీకరించిన మెసేజ్‌ల వంటి వ్యక్తిగత సమాచారంతో సహా అన్ని నోటిఫికేషన్‌లను చదవగలదు. అంతే కాదు ఇది నోటిఫికేషన్‌లను సవరించగలదు లేదా తీసివేయగలదు లేదా అవి కలిగి ఉండే చర్య బటన్‌లను యాక్టివేట్ చేయగలదు.\n\nఇది, అంతరాయం కలిగించవద్దు ఎంపికను ఆన్ చేయగల లేదా ఆఫ్ చేయగల సామర్థ్యాన్ని యాప్‌కు ఇవ్వడంతో పాటు సంబంధిత సెట్టింగ్‌లను కూడా మారుస్తుంది."</string>
+    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"మీరు <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> కోసం నోటిఫికేషన్ యాక్సెస్‌ను ఆఫ్ చేస్తే, అంతరాయం కలిగించవద్దు ఎంపిక యాక్సెస్ కూడా ఆఫ్ చేయబడవచ్చు."</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"ఆఫ్ చేయి"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"రద్దు చేయి"</string>
     <string name="premium_sms_access_title" msgid="1409118461646148686">"ప్రీమియం SMS యాక్సెస్"</string>
@@ -545,8 +549,6 @@
     <string name="choose_new_admin_title" msgid="1915428454917699587">"కొత్త నిర్వాహకుడిని ఎంచుకోండి"</string>
     <string name="choose_new_admin_message" msgid="7468286545352043354">"మీకు కనీసం ఒక నిర్వాహకుడు అవసరం. ఈ నిర్వహకుడిని తొలగించడానికి, ముందుగా ఒక ప్రత్యామ్నాయాన్ని ఎంచుకోండి."</string>
     <string name="choose_new_admin_label" msgid="5987653639387437939">"నిర్వాహకుడిని ఎంచుకోండి"</string>
-    <string name="user_guest" msgid="3465399481257448601">"అతిథి"</string>
-    <string name="start_guest_session" msgid="4438752398760283201">"అతిథి"</string>
     <string name="user_switch" msgid="6544839750534690781">"మార్చు"</string>
     <string name="current_user_name" msgid="3813671533249316823">"మీరు (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"పేరు"</string>
@@ -562,7 +564,7 @@
     <string name="storage_other_apps" msgid="945509804756782640">"ఇతర యాప్‌లు"</string>
     <string name="storage_files" msgid="6382081694781340364">"ఫైళ్లు"</string>
     <string name="storage_system" msgid="1271345630248014010">"సిస్టమ్"</string>
-    <string name="storage_detail_dialog_system" msgid="796365720531622361">"సిస్టమ్‌లో Android వెర్షన్ <xliff:g id="VERSION">%s</xliff:g>ను అమలు చేయడానికి అవసరమైన ఫైళ్లు ఉంటాయి"</string>
+    <string name="storage_detail_dialog_system" msgid="796365720531622361">"సిస్టమ్‌లో Android వెర్షన్ <xliff:g id="VERSION">%s</xliff:g>ను రన్ చేయడానికి అవసరమైన ఫైళ్లు ఉంటాయి"</string>
     <string name="storage_audio_files_title" msgid="5183170457027181700">"ఆడియో ఫైళ్లు"</string>
     <string name="memory_calculating_size" msgid="1672238502950390033">"గణిస్తోంది…"</string>
     <string name="storage_application_size_label" msgid="1146156683170661354">"యాప్ సైజ్"</string>
@@ -590,7 +592,7 @@
     <string name="add_account_title" msgid="5988746086885210040">"ఖాతాను జోడించండి"</string>
     <string name="add_an_account" msgid="1072285034300995091">"ఖాతాను జోడించండి"</string>
     <string name="user_cannot_add_accounts_message" msgid="6775605884544906797">"పరిమిత ప్రొఫైళ్లలో ఖాతాలను జోడించడం సాధ్యపడదు"</string>
-    <string name="remove_account_title" msgid="8840386525787836381">"ఖాతాను తీసివేయి"</string>
+    <string name="remove_account_title" msgid="8840386525787836381">"ఖాతాను తీసివేయండి"</string>
     <string name="really_remove_account_title" msgid="3555164432587924900">"ఖాతాను తీసివేయాలా?"</string>
     <string name="really_remove_account_message" msgid="4296769280849579900">"ఈ ఖాతాను తీసివేయడం వలన పరికరం నుండి దానికి సంబంధించిన అన్ని మెసేజ్‌లు, కాంటాక్ట్‌లు మరియు ఇతర డేటా తొలగించబడతాయి!"</string>
     <string name="remove_account_error_title" msgid="8368044943174826635">"ఖాతాను తీసివేయడం విఫలమైంది."</string>
@@ -610,6 +612,8 @@
     <string name="privacy_settings_title" msgid="3150145262029229572">"గోప్యత"</string>
     <string name="privacy_vehicle_data_title" msgid="6385777370742595651">"సమాచారంతో కూడిన వినోద సిస్టమ్ డేటా"</string>
     <string name="privacy_location_summary" msgid="7019817848470566242">"మీ లొకేషన్‌కు యాప్ యాక్సెస్‌ను కంట్రోల్ చేయండి"</string>
+    <string name="mute_camera_title" msgid="215494079895460172">"కెమెరా"</string>
+    <string name="mute_camera_summary" msgid="1237452064757403042">"మీ కెమెరాలకు యాప్ యాక్సెస్‌ను కంట్రోల్ చేయండి"</string>
     <string name="mute_mic_title" msgid="2813215197799569553">"మైక్రోఫోన్"</string>
     <string name="mute_mic_summary" msgid="5426953935775303904">"మైక్రోఫోన్‌కు యాప్ యాక్సెస్‌ను కంట్రోల్ చేయండి"</string>
     <string name="vehicle_data_title" msgid="935933215161763721">"వినోదాత్మక సమాచార సిస్టమ్ డేటా"</string>
@@ -658,7 +662,7 @@
     <string name="lock_settings_enter_password" msgid="2636669926649496367">"మీ పాస్‌వర్డ్‌ను నమోదు చేయండి"</string>
     <string name="choose_lock_pin_message" msgid="2963792070267774417">"సెక్యూరిటీ కోసం, పిన్‌ను సెట్ చేయండి"</string>
     <string name="confirm_your_pin_header" msgid="9096581288537156102">"మీ పిన్‌ను మళ్లీ నమోదు చేయండి"</string>
-    <string name="choose_lock_pin_hints" msgid="7362906249992020844">"పిన్ తప్పనిసరిగా కనీసం 4 అంకెలు ఉండాలి"</string>
+    <string name="choose_lock_pin_hints" msgid="7362906249992020844">"PIN తప్పక కనీసం 4 అంకెలతో ఉండాలి"</string>
     <string name="lockpin_invalid_pin" msgid="2149191577096327424">"పిన్ చెల్లదు, కనీసం 4 అంకెలు ఉండాలి."</string>
     <string name="confirm_pins_dont_match" msgid="4607110139373520720">"పిన్‌లు సరిపోలలేదు"</string>
     <string name="error_saving_lockpin" msgid="9011960139736000393">"పిన్‌ని సేవ్ చేయడంలో ఎర్రర్ ఏర్పడింది"</string>
@@ -679,34 +683,20 @@
     <string name="lockpassword_password_recently_used" msgid="8255729487108602924">"ఇటీవలి పాస్‌వర్డ్‌ను ఉపయోగించడానికి పరికర నిర్వాహకులు అనుమతించరు"</string>
     <string name="error_saving_password" msgid="8334882262622500658">"పాస్‌వర్డ్‌ని సేవ్ చేయడంలో ఎర్రర్"</string>
     <string name="lockpassword_password_denylisted_by_admin" msgid="8611831198794524730">"సాధారణ పాస్‌వర్డ్‌లను మీ IT అడ్మిన్ బ్లాక్ చేశారు. వేరే పాస్‌వర్డ్‌ను ట్రై చేయండి."</string>
-    <!-- no translation found for lockpassword_password_requires_alpha (713641878535268163) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_digit (8120467503175627546) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_symbol (6294855131052831204) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_letters (324864645474528299) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_lowercase (5373735547134824114) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_uppercase (2002482631049525313) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_numeric (5694949801691947801) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_symbols (1789501049908004075) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_nonletter (3089186186422638926) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_nonnumerical (1677123573552379526) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_too_short (3898753131694105832) -->
-    <skip />
-    <!-- no translation found for lockpassword_pin_too_short (3671037384464545169) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_too_long (1709616257350671045) -->
-    <skip />
-    <!-- no translation found for lockpassword_pin_too_long (8315542764465856288) -->
-    <skip />
+    <string name="lockpassword_password_requires_alpha" msgid="713641878535268163">"తప్పనిసరిగా కనీసం ఒక అక్షరాన్ని కలిగి ఉండాలి"</string>
+    <string name="lockpassword_password_requires_digit" msgid="8120467503175627546">"తప్పనిసరిగా కనీసం ఒక అంకెను కలిగి ఉండాలి"</string>
+    <string name="lockpassword_password_requires_symbol" msgid="6294855131052831204">"తప్పనిసరిగా కనీసం ఒక గుర్తును కలిగి ఉండాలి"</string>
+    <string name="lockpassword_password_requires_letters" msgid="324864645474528299">"{count,plural, =1{తప్పనిసరిగా కనీసం # అక్షరాన్ని కలిగి ఉండాలి}other{తప్పనిసరిగా కనీసం # అక్షరాలను కలిగి ఉండాలి}}"</string>
+    <string name="lockpassword_password_requires_lowercase" msgid="5373735547134824114">"{count,plural, =1{తప్పనిసరిగా కనీసం # లోయర్‌కేస్ అక్షరాన్ని కలిగి ఉండాలి}other{తప్పనిసరిగా కనీసం # లోయర్‌కేస్ అక్షరాలను కలిగి ఉండాలి}}"</string>
+    <string name="lockpassword_password_requires_uppercase" msgid="2002482631049525313">"{count,plural, =1{తప్పనిసరిగా కనీసం # అప్పర్‌కేస్ అక్షరాన్ని కలిగి ఉండాలి}other{తప్పనిసరిగా కనీసం # అప్పర్‌కేస్ అక్షరాలను కలిగి ఉండాలి}}"</string>
+    <string name="lockpassword_password_requires_numeric" msgid="5694949801691947801">"{count,plural, =1{తప్పనిసరిగా కనీసం # సంఖ్యాత్మక అంకెను కలిగి ఉండాలి}other{తప్పనిసరిగా కనీసం # సంఖ్యాత్మక అంకెలను కలిగి ఉండాలి}}"</string>
+    <string name="lockpassword_password_requires_symbols" msgid="1789501049908004075">"{count,plural, =1{తప్పనిసరిగా కనీసం # ప్రత్యేక గుర్తును కలిగి ఉండాలి}other{తప్పనిసరిగా కనీసం # ప్రత్యేక గుర్తులను కలిగి ఉండాలి}}"</string>
+    <string name="lockpassword_password_requires_nonletter" msgid="3089186186422638926">"{count,plural, =1{తప్పనిసరిగా కనీసం # అక్షరేతర అక్షరాన్ని కలిగి ఉండాలి}other{తప్పనిసరిగా కనీసం # అక్షరేతర అక్షరాలను కలిగి ఉండాలి}}"</string>
+    <string name="lockpassword_password_requires_nonnumerical" msgid="1677123573552379526">"{count,plural, =1{తప్పనిసరిగా కనీసం # అసంఖ్యాత్మక అక్షరాన్ని కలిగి ఉండాలి}other{తప్పనిసరిగా కనీసం # అసంఖ్యాత్మక అక్షరాలను కలిగి ఉండాలి}}"</string>
+    <string name="lockpassword_password_too_short" msgid="3898753131694105832">"{count,plural, =1{తప్పనిసరిగా కనీసం # అక్షరం కలిగి ఉండాలి}other{తప్పనిసరిగా కనీసం # అక్షరాలను కలిగి ఉండాలి}}"</string>
+    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{తప్పనిసరిగా కనీసం # అంకెను కలిగి ఉండాలి}other{తప్పనిసరిగా కనీసం # అంకెలను కలిగి ఉండాలి}}"</string>
+    <string name="lockpassword_password_too_long" msgid="1709616257350671045">"{count,plural, =1{తప్పనిసరిగా # కంటే తక్కువ అక్షరం ఉండాలి}other{తప్పనిసరిగా # కంటే తక్కువ అక్షరాలను కలిగి ఉండాలి}}"</string>
+    <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{తప్పనిసరిగా # కంటే తక్కువ అంకెను కలిగి ఉండాలి}other{తప్పనిసరిగా # కంటే తక్కువ అంకెలను కలిగి ఉండాలి}}"</string>
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"అంకెలను ఆరోహణ, అవరోహణ క్రమంలో లేదా ఒకే అంకెను వరుసగా పునరావృతంగా ఉపయోగించకూడదు"</string>
     <string name="setup_lock_settings_options_button_label" msgid="3337845811029780896">"స్క్రీన్ లాక్ ఎంపికలు"</string>
     <string name="build_info_fmt" msgid="5592554123908086426">"<xliff:g id="FINGERPRINT">%1$s</xliff:g>\n<xliff:g id="DATE">%2$s</xliff:g> : <xliff:g id="NUM_DAYS">%3$s</xliff:g> రోజుల క్రితం"</string>
@@ -781,6 +771,15 @@
     <string name="work_policy_privacy_settings" msgid="5263835989260149968">"<xliff:g id="ORGANIZATION_NAME">%1$s</xliff:g> వాహన పాలసీ"</string>
     <string name="work_policy_privacy_settings_summary" msgid="5321618399949880194">"సంస్థ మేనేజర్ ద్వారా సెట్టింగ్‌లు మేనేజ్ చేయబడతాయి"</string>
     <string name="footer_learn_more_content_description" msgid="7749452309729272078">"<xliff:g id="SERVICE">%1$s</xliff:g> గురించి మరింత తెలుసుకోండి"</string>
+    <string name="enterprise_privacy_settings" msgid="6496900796150572727">"మేనేజ్ చేయబడే వాహన సమాచారం"</string>
+    <string name="enterprise_privacy_settings_summary_generic" msgid="5850991363779957797">"ఫ్లీట్ అడ్మిన్ ద్వారా మేనేజ్ చేయబడే సెట్టింగ్‌లు"</string>
+    <string name="enterprise_privacy_header" msgid="4652489109303330306">"ఈ మేనేజ్ చేయబడే వాహనంలో డేటాకు యాక్సెస్‌ను అందించడానికి, ఫ్లీట్ అడ్మిన్ సెట్టింగ్‌లను మార్చవచ్చు, అలాగే సమాచారంతో కూడిన వినోదం సిస్టమ్‌లో సాఫ్ట్‌వేర్‌ను ఇన్‌స్టాల్ చేయవచ్చు.\n\nమరిన్ని వివరాల కోసం మీ ఫ్లీట్స్ అడ్మిన్‌ను సంప్రదించండి."</string>
+    <string name="enterprise_privacy_exposure_category" msgid="4870494030035008520">"మీ ఫ్లీట్స్ అడ్మిన్ చూడగల సమాచారం"</string>
+    <string name="enterprise_privacy_exposure_changes_category" msgid="8837106430193547177">"మీ ఫ్లీట్స్ అడ్మిన్ చేసిన మార్పులు"</string>
+    <string name="enterprise_privacy_exposure_desc" msgid="7962571201715956427">" "<li>"మీరు మేనేజ్ చేసే వాహనానికి సంబంధించిన ఖాతాతో అనుబంధించబడిన డేటా"</li>\n" "<li>"మీరు మేనేజ్ చేసే వాహనంలోని యాప్‌ల లిస్ట్"</li>\n" "<li>"ప్రతి యాప్‌లోను మీరు వెచ్చించిన సమయం, డేటా"</li></string>
+    <string name="enterprise_privacy_device_access_category" msgid="5820180227429886857">"సమాచారంతో కూడిన వినోదం సిస్టమ్‌కు మీ యాక్సెస్"</string>
+    <string name="enterprise_privacy_installed_packages" msgid="1069862734971848156">"మీ వాహనంలో ఉన్న యాప్‌ల లిస్ట్"</string>
+    <string name="enterprise_privacy_apps_count_estimation_info" msgid="2684195229249659340">"యాప్‌ల సంఖ్య అంచనా సమాచారం మాత్రమే. Play Store నుండి ఇన్‌స్టాల్ చేయని యాప్‌లను ఇందులో పరిగణనలోకి తీసుకుని ఉండకపోవచ్చు."</string>
     <plurals name="enterprise_privacy_number_packages_lower_bound" formatted="false" msgid="1628398874478431488">
       <item quantity="other">కనీసం <xliff:g id="COUNT_1">%d</xliff:g> యాప్‌లు</item>
       <item quantity="one">కనీసం <xliff:g id="COUNT_0">%d</xliff:g> యాప్</item>
@@ -789,6 +788,22 @@
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> యాప్‌లు</item>
       <item quantity="one"><xliff:g id="COUNT_0">%d</xliff:g> యాప్</item>
     </plurals>
+    <string name="enterprise_privacy_network_logs" msgid="5093305105565608542">"అత్యంత ఇటీవలి నెట్‌వర్క్ ట్రాఫిక్ లాగ్"</string>
+    <string name="enterprise_privacy_bug_reports" msgid="9197432120122370521">"అత్యంత ఇటీవలి బగ్ రిపోర్ట్"</string>
+    <string name="enterprise_privacy_security_logs" msgid="7375479062062113231">"అత్యంత ఇటీవలి సెక్యూరిటీ లాగ్"</string>
+    <string name="enterprise_privacy_none" msgid="2566653655908700748">"ఏవీ లేవు"</string>
+    <string name="enterprise_privacy_enterprise_installed_packages" msgid="7798942534994638670">"యాప్‌లు ఇన్‌స్టాల్ చేయబడ్డాయి"</string>
+    <string name="enterprise_privacy_location_access" msgid="3132799413005627076">"లొకేషన్ అనుమతులు"</string>
+    <string name="enterprise_privacy_microphone_access" msgid="4094467062253345379">"మైక్రోఫోన్ అనుమతులు"</string>
+    <string name="enterprise_privacy_camera_access" msgid="8895281017339143744">"కెమెరా అనుమతులు"</string>
+    <string name="enterprise_privacy_enterprise_set_default_apps" msgid="3386806357685549519">"ఆటోమేటిక్ యాప్‌లు"</string>
+    <string name="enterprise_privacy_input_method" msgid="5062395693747004531">"ఆటోమేటిక్ కీబోర్డ్"</string>
+    <string name="enterprise_privacy_input_method_name" msgid="2027313786295077607">"<xliff:g id="APP_LABEL">%s</xliff:g>కు సెట్ చేయబడింది"</string>
+    <string name="enterprise_privacy_global_http_proxy" msgid="1366593928008294049">"గ్లోబల్ HTTP ప్రాక్సీ సెట్ చేయబడింది"</string>
+    <string name="enterprise_privacy_ca_certs_personal" msgid="5677098981429650665">"మీ వ్యక్తిగత ప్రొఫైల్‌లో విశ్వసనీయ ఆధారాలు"</string>
+    <string name="enterprise_privacy_device_access_desc" msgid="3442555102576036038">" "<li>"అడ్మిన్ సమాచారంతో కూడిన వినోదం సిస్టమ్‌ను లాక్ చేయగలరు"</li>\n" "<li>"అడ్మిన్ సమాచారంతో కూడిన వినోదం సిస్టమ్‌కు సంబంధించిన డేటాను తొలగించగలరు"</li></string>
+    <string name="enterprise_privacy_failed_password_wipe_device" msgid="4768743631260876559">"సమాచారంతో కూడిన వినోదం సిస్టమ్‌లో డేటా అంతటినీ తొలగించడానికి ముందు జరిగిన పాస్‌వర్డ్ విఫలయత్నాలు"</string>
+    <string name="enterprise_privacy_failed_password_wipe_current_user" msgid="786246192213446835">"ఆఫీస్ ప్రొఫైల్ డేటాను తొలగించడానికి ముందు జరిగిన పాస్‌వర్డ్ విఫలయత్నాలు"</string>
     <plurals name="enterprise_privacy_number_failed_password_wipe" formatted="false" msgid="445847844239023816">
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> ప్రయత్నాలు</item>
       <item quantity="one"><xliff:g id="COUNT_0">%d</xliff:g> ప్రయత్నం</item>
@@ -839,12 +854,20 @@
     <string name="captions_settings_text_style_yellow_on_black" msgid="4681565950104511943">"నలుపు బ్యాక్‌గ్రౌండ్‌లో పసుపు టెక్స్ట్"</string>
     <string name="captions_settings_text_style_yellow_on_blue" msgid="5072521958156112239">"నీలం బ్యాక్‌గ్రౌండ్‌లో పసుపు టెక్స్ట్"</string>
     <string name="accessibility_settings_screen_reader_title" msgid="5113265553157624836">"స్క్రీన్ రీడర్"</string>
-    <string name="talkback_title" msgid="6529000326454628289">"TalkBack"</string>
-    <string name="talkback_settings_off" msgid="1486849504005704390">"ఆఫ్‌లో ఉంది"</string>
-    <string name="talkback_settings_on" msgid="796292072895957042">"స్క్రీన్‌పై ఐటెమ్‌లను చదివి వినిపించు"</string>
-    <string name="enable_talkback_toggle_title" msgid="3027666779214128091">"TalkBackను ఉపయోగించండి"</string>
-    <string name="talkback_options_title" msgid="7366357383004455638">"ఆప్షన్‌లు"</string>
-    <string name="talkback_settings_title" msgid="631275474070654027">"సెట్టింగ్‌లు"</string>
-    <string name="about_talkback_title" msgid="6048639389606001298">"TalkBack పరిచయం"</string>
-    <string name="about_talkback_description" msgid="5438077447169311605">"వాహనం చలనంలో ఉన్నప్పుడు TalkBack అందుబాటులో ఉండదు.\n\nTalkBack ఆన్‌లో ఉన్నప్పుడు, అది మాటల ప్రతిస్పందనను అందిస్తుంది, తద్వారా మీరు స్క్రీన్‌ను చూడాల్సిన అవసరం లేకుండానే మీ డివైజ్‌ను ఉపయోగించవచ్చు. TalkBack అనేది స్క్రీన్‌ను చూడటానికి కష్టపడే వ్యక్తులు లేదా పరిస్థితుల కోసం ఉద్దేశించినది."</string>
+    <string name="screen_reader_settings_off" msgid="6081562047935689764">"ఆఫ్‌లో ఉంది"</string>
+    <string name="screen_reader_settings_on" msgid="2168217218643349459">"స్క్రీన్‌పై ఐటెమ్‌లను చదివి వినిపించండి"</string>
+    <string name="enable_screen_reader_toggle_title" msgid="7641307781194619254">"<xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g>ను ఉపయోగించండి"</string>
+    <string name="screen_reader_options_title" msgid="1073640098442831819">"ఆప్షన్‌లు"</string>
+    <string name="screen_reader_description_title" msgid="8766666406552388012">"సెట్టింగ్‌లు"</string>
+    <string name="camera_settings_title" msgid="2837785830355288903">"కెమెరా"</string>
+    <string name="camera_toggle_title" msgid="1990732328673068456">"కెమెరాను ఉపయోగించండి"</string>
+    <string name="camera_toggle_summary" msgid="5751159996822627567">"మీ కెమెరాను యాక్సెస్ చేయడానికి అన్ని యాప్‌లను అనుమతించండి"</string>
+    <string name="camera_manage_permissions" msgid="9005596413781984368">"కెమెరా అనుమతులను మేనేజ్ చేయండి"</string>
+    <string name="camera_recently_accessed" msgid="8084100710444691977">"ఇటీవల యాక్సెస్ చేయబడినవి"</string>
+    <string name="camera_no_recent_access" msgid="965105023454777859">"ఇటీవలి యాప్‌లు ఏవీ లేవు"</string>
+    <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"ఏ యాప్‌లకు యాక్సెస్ లేదు"</string>
+    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{{total_count}లో # యాప్‌లకు యాక్సెస్ ఉంది}other{{total_count}లో # యాప్‌లకు యాక్సెస్ ఉంది}}"</string>
+    <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"ఇటీవల యాక్సెస్ చేయబడినవి"</string>
+    <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"అన్నీ చూడండి"</string>
+    <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"లోడ్ అవుతోంది…"</string>
 </resources>
