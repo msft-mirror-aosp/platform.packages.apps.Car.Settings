@@ -35,7 +35,6 @@ import com.android.settingslib.accounts.AuthenticatorHelper;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -52,7 +51,6 @@ public class ChooseAccountPreferenceController extends
 
     private AccountTypesHelper mAccountTypesHelper;
     private ArrayMap<String, AuthenticatorDescriptionPreference> mPreferences = new ArrayMap<>();
-    private boolean mIsStarted = false;
     private boolean mHasPendingBack = false;
 
     public ChooseAccountPreferenceController(Context context, String preferenceKey,
@@ -92,7 +90,6 @@ public class ChooseAccountPreferenceController extends
      */
     @Override
     protected void onStartInternal() {
-        mIsStarted = true;
         mAccountTypesHelper.listenToAccountUpdates();
 
         if (mHasPendingBack) {
@@ -110,7 +107,6 @@ public class ChooseAccountPreferenceController extends
     @Override
     protected void onStopInternal() {
         mAccountTypesHelper.stopListeningToAccountUpdates();
-        mIsStarted = false;
     }
 
     /** Forces a refresh of the authenticator description preferences. */
@@ -168,22 +164,26 @@ public class ChooseAccountPreferenceController extends
             preferencesToRemove.remove(accountType);
         }
 
-        Collections.sort(authenticatorDescriptionPreferences, Comparator.comparing(
-                (AuthenticatorDescriptionPreference a) -> a.getTitle().toString()));
+        Collections.sort(authenticatorDescriptionPreferences);
 
         return authenticatorDescriptionPreferences;
     }
 
     /** Used for testing to trigger an account update. */
     @VisibleForTesting
-    AuthenticatorHelper getAuthenticatorHelper() {
-        return mAccountTypesHelper.getAuthenticatorHelper();
+    AccountTypesHelper getAccountTypesHelper() {
+        return mAccountTypesHelper;
+    }
+
+    @VisibleForTesting
+    void setAuthenticatorHelper(AuthenticatorHelper helper) {
+        mAccountTypesHelper.setAuthenticatorHelper(helper);
     }
 
     @Override
     public void processActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == ADD_ACCOUNT_REQUEST_CODE) {
-            if (mIsStarted) {
+            if (isStarted()) {
                 getFragmentController().goBack();
             } else {
                 mHasPendingBack = true;
