@@ -57,7 +57,7 @@ public class LocationServicesPreferenceController extends PreferenceController<P
     public LocationServicesPreferenceController(Context context, String preferenceKey,
             FragmentController fragmentController, CarUxRestrictions uxRestrictions) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
-        mSettingsInjector = new SettingsInjector(context);
+        mSettingsInjector = new CarLocationSettingsInjector(context);
     }
 
     @VisibleForTesting
@@ -75,7 +75,8 @@ public class LocationServicesPreferenceController extends PreferenceController<P
      */
     @Override
     protected void onStartInternal() {
-        getContext().registerReceiver(mReceiver, INTENT_FILTER_INJECTED_SETTING_CHANGED);
+        getContext().registerReceiver(mReceiver, INTENT_FILTER_INJECTED_SETTING_CHANGED,
+                Context.RECEIVER_EXPORTED_UNAUDITED);
     }
 
     /**

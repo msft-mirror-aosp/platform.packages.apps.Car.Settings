@@ -30,9 +30,11 @@ import android.os.UserHandle;
 import android.util.ArraySet;
 import android.util.SparseArray;
 
+import androidx.annotation.VisibleForTesting;
+
 import com.android.car.settings.common.AsyncLoader;
 import com.android.car.settings.common.Logger;
-import com.android.car.settings.users.UserHelper;
+import com.android.car.settings.profiles.ProfileHelper;
 import com.android.settingslib.applications.StorageStatsSource;
 
 import java.io.IOException;
@@ -50,20 +52,26 @@ public class StorageAsyncLoader
 
     private final StorageStatsSource mStatsManager;
     private final PackageManager mPackageManager;
-    private final UserHelper mUserHelper;
+    private final ProfileHelper mProfileHelper;
 
     public StorageAsyncLoader(Context context, StorageStatsSource source) {
+        this(context, source, context.getPackageManager(), ProfileHelper.getInstance(context));
+    }
+
+    @VisibleForTesting
+    StorageAsyncLoader(Context context, StorageStatsSource source,
+            PackageManager packageManager, ProfileHelper profileHelper) {
         super(context);
         mStatsManager = source;
-        mPackageManager = context.getPackageManager();
-        mUserHelper = UserHelper.getInstance(context);
+        mPackageManager = packageManager;
+        mProfileHelper = profileHelper;
     }
 
     @Override
     public SparseArray<AppsStorageResult> loadInBackground() {
         ArraySet<String> seenPackages = new ArraySet<>();
         SparseArray<AppsStorageResult> result = new SparseArray<>();
-        List<UserInfo> infos = mUserHelper.getAllUsers();
+        List<UserInfo> infos = mProfileHelper.getAllProfiles();
         for (int i = 0, userCount = infos.size(); i < userCount; i++) {
             UserInfo info = infos.get(i);
             result.put(info.id, getStorageResultForUser(info.id, seenPackages));
