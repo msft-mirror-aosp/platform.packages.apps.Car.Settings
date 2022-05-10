@@ -17,14 +17,10 @@
 package com.android.car.settings.datausage;
 
 import android.content.Context;
-import android.net.NetworkPolicy;
-import android.net.NetworkPolicyManager;
 import android.net.NetworkTemplate;
 import android.os.Bundle;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
-import android.text.format.DateUtils;
-import android.util.Pair;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.annotation.XmlRes;
@@ -33,15 +29,16 @@ import androidx.loader.app.LoaderManager;
 import com.android.car.settings.R;
 import com.android.car.settings.common.Logger;
 import com.android.car.settings.common.SettingsFragment;
-import com.android.settingslib.NetworkPolicyEditor;
+import com.android.settingslib.net.DataUsageController;
+import com.android.settingslib.net.NetworkCycleChartData;
 
-import java.time.ZonedDateTime;
-import java.util.Iterator;
+import java.util.Map;
 
 /**
  * Screen to display list of applications using the data.
  */
-public class AppDataUsageFragment extends SettingsFragment {
+public class AppDataUsageFragment extends SettingsFragment implements
+        DataUsageCyclePreferenceController.DataCyclePickedListener<NetworkCycleChartData> {
 
     private static final Logger LOG = new Logger(AppDataUsageFragment.class);
 
@@ -50,10 +47,13 @@ public class AppDataUsageFragment extends SettingsFragment {
     private static final int SUB_ID_NULL = Integer.MIN_VALUE;
 
     private AppsNetworkStatsManager mAppsNetworkStatsManager;
-    private NetworkPolicyEditor mPolicyEditor;
+    private DataUsageCycleManager mDataUsageCycleManager;
     private NetworkTemplate mNetworkTemplate;
+    private DataUsageController mDataUsageController;
 
     private Bundle mBundle;
+    private LoaderManager mLoaderManager;
+    private AppDataUsageTotalPreferenceController mAppDataUsageTotalPreferenceController;
 
     /**
      * Creates a new instance of the {@link AppDataUsageFragment}, which shows settings related to
@@ -88,10 +88,25 @@ public class AppDataUsageFragment extends SettingsFragment {
             subId = DataUsageUtils.getDefaultSubscriptionId(subscriptionManager);
         }
         mNetworkTemplate = DataUsageUtils.getMobileNetworkTemplate(telephonyManager, subId);
-        mPolicyEditor = new NetworkPolicyEditor(NetworkPolicyManager.from(context));
+        mDataUsageController = new DataUsageController(context);
         mAppsNetworkStatsManager = new AppsNetworkStatsManager(getContext());
         mAppsNetworkStatsManager.registerListener(
                 use(AppDataUsagePreferenceController.class, R.string.pk_app_data_usage_detail));
+        mDataUsageCycleManager = new DataUsageCycleManager(getContext(), mNetworkTemplate);
+        mDataUsageCycleManager.registerListener(use(DataUsageCyclePreferenceController.class,
+                R.string.pk_data_usage_usage_history));
+        use(DataUsageCyclePreferenceController.class,
+                R.string.pk_data_usage_usage_history)
+                .setDataCyclePickedListener(this)
+                .setDataUsageInfo(mDataUsageController.getDataUsageInfo(mNetworkTemplate));
+
+        long usage = mDataUsageController.getDataUsageInfo(mNetworkTemplate).usageLevel;
+        mAppDataUsageTotalPreferenceController =
+                use(AppDataUsageTotalPreferenceController.class, R.string.pk_data_usage_all_apps);
+        mAppDataUsageTotalPreferenceController.setDataUsage(usage);
+
+        use(AppDataUsagePreferenceController.class, R.string.pk_app_data_usage_detail)
+                .setNetworkTemplate(mNetworkTemplate);
     }
 
     @Override
@@ -99,42 +114,16 @@ public class AppDataUsageFragment extends SettingsFragment {
         super.onCreate(savedInstanceState);
         mBundle = getBundleForNetworkStats();
 
-        LoaderManager loaderManager = LoaderManager.getInstance(this);
-        mAppsNetworkStatsManager.startLoading(loaderManager, mBundle);
+        mLoaderManager = LoaderManager.getInstance(this);
+        mAppsNetworkStatsManager.startLoading(mLoaderManager, mBundle);
+        mDataUsageCycleManager.startLoading(mLoaderManager);
     }
 
     private Bundle getBundleForNetworkStats() {
-        long historyStart = System.currentTimeMillis();
-        long historyEnd = historyStart + 1;
-
-        long start = 0;
-        long end = 0;
-
-        boolean hasCycles = false;
-
-        NetworkPolicy policy = mPolicyEditor.getPolicy(mNetworkTemplate);
-        if (policy != null) {
-            Iterator<Pair<ZonedDateTime, ZonedDateTime>> it = NetworkPolicyManager
-                    .cycleIterator(policy);
-            while (it.hasNext()) {
-                Pair<ZonedDateTime, ZonedDateTime> cycle = it.next();
-                start = cycle.first.toInstant().toEpochMilli();
-                end = cycle.second.toInstant().toEpochMilli();
-                hasCycles = true;
-            }
-        }
-
-        if (!hasCycles) {
-            // no policy defined cycles; show entry for each four-week period
-            long cycleEnd = historyEnd;
-            while (cycleEnd > historyStart) {
-                long cycleStart = cycleEnd - (DateUtils.WEEK_IN_MILLIS * 4);
-
-                start = cycleStart;
-                end = cycleEnd;
-                cycleEnd = cycleStart;
-            }
-        }
+        DataUsageController.DataUsageInfo dataUsageInfo =
+                mDataUsageController.getDataUsageInfo(mNetworkTemplate);
+        long start = dataUsageInfo.cycleStart;
+        long end = dataUsageInfo.cycleEnd;
 
         return SummaryForAllUidLoader.buildArgs(mNetworkTemplate, start, end);
     }
@@ -142,5 +131,16 @@ public class AppDataUsageFragment extends SettingsFragment {
     @VisibleForTesting(otherwise = VisibleForTesting.NONE)
     Bundle getBundle() {
         return mBundle;
+    }
+
+    @Override
+    public void onDataCyclePicked(String cycle, Map<CharSequence, NetworkCycleChartData> usages) {
+        mAppDataUsageTotalPreferenceController.setDataUsage(usages.get(cycle).getTotalUsage());
+
+        mBundle = SummaryForAllUidLoader.buildArgs(
+                mNetworkTemplate,
+                usages.get(cycle).getStartTime(),
+                usages.get(cycle).getEndTime());
+        mAppsNetworkStatsManager.startLoading(mLoaderManager, mBundle);
     }
 }

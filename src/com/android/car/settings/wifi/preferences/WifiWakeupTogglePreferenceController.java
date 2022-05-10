@@ -16,7 +16,6 @@
 
 package com.android.car.settings.wifi.preferences;
 
-import android.app.Service;
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -38,6 +37,7 @@ import com.android.car.settings.common.ConfirmationDialogFragment;
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.Logger;
 import com.android.car.settings.common.PreferenceController;
+import com.android.car.settings.location.LocationSettingsFragment;
 import com.android.settingslib.HelpUtils;
 
 /** Business logic to allow auto-enabling of wifi near saved networks. */
@@ -73,7 +73,7 @@ public class WifiWakeupTogglePreferenceController extends PreferenceController<T
     public WifiWakeupTogglePreferenceController(Context context, String preferenceKey,
             FragmentController fragmentController, CarUxRestrictions uxRestrictions) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
-        mLocationManager = (LocationManager) context.getSystemService(Service.LOCATION_SERVICE);
+        mLocationManager = context.getSystemService(LocationManager.class);
         mWifiManager = context.getSystemService(WifiManager.class);
     }
 
@@ -109,8 +109,7 @@ public class WifiWakeupTogglePreferenceController extends PreferenceController<T
     @Override
     protected boolean handlePreferenceClicked(TwoStatePreference preference) {
         if (!mLocationManager.isLocationEnabled()) {
-            Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-            getContext().startActivity(intent);
+            getFragmentController().launchFragment(new LocationSettingsFragment());
         } else if (getWifiWakeupEnabled()) {
             setWifiWakeupEnabled(false);
         } else if (!getWifiScanningEnabled()) {
