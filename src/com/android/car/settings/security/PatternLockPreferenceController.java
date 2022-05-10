@@ -17,12 +17,16 @@
 package com.android.car.settings.security;
 
 import android.app.admin.DevicePolicyManager;
+import android.app.admin.PasswordMetrics;
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.Context;
+import android.content.Intent;
+import android.os.UserHandle;
 
-import androidx.fragment.app.Fragment;
+import androidx.preference.Preference;
 
 import com.android.car.settings.common.FragmentController;
+import com.android.internal.widget.LockPatternUtils;
 
 /** Business logic for the lock pattern picker preference. */
 public class PatternLockPreferenceController extends LockTypeBasePreferenceController {
@@ -30,18 +34,30 @@ public class PatternLockPreferenceController extends LockTypeBasePreferenceContr
     private static final int[] ALLOWED_PASSWORD_QUALITIES =
             new int[]{DevicePolicyManager.PASSWORD_QUALITY_SOMETHING};
 
+    private final LockPatternUtils mLockPatternUtils;
+
     public PatternLockPreferenceController(Context context, String preferenceKey,
             FragmentController fragmentController, CarUxRestrictions uxRestrictions) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
+        mLockPatternUtils = new LockPatternUtils(context);
     }
 
     @Override
-    protected Fragment fragmentToOpen() {
-        return ChooseLockPatternFragment.newInstance();
+    protected Intent activityToOpen() {
+        return new Intent(getContext(), ChooseLockPatternActivity.class);
     }
 
     @Override
     protected int[] allowedPasswordQualities() {
         return ALLOWED_PASSWORD_QUALITIES;
+    }
+
+    @Override
+    protected void updateState(Preference preference) {
+        super.updateState(preference);
+
+        PasswordMetrics metrics = mLockPatternUtils.getRequestedPasswordMetrics(
+                UserHandle.myUserId(), /* deviceWideOnly= */ false);
+        preference.setEnabled(metrics.credType <= LockPatternUtils.CREDENTIAL_TYPE_PATTERN);
     }
 }
