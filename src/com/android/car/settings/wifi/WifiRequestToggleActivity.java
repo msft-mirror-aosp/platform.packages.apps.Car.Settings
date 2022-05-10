@@ -26,7 +26,6 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.text.TextUtils;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.FragmentActivity;
@@ -34,6 +33,7 @@ import androidx.fragment.app.FragmentActivity;
 import com.android.car.settings.R;
 import com.android.car.settings.common.ConfirmationDialogFragment;
 import com.android.car.settings.common.Logger;
+import com.android.settingslib.core.lifecycle.HideNonSystemOverlayMixin;
 
 /**
  * Code drop from {@link com.android.settings.wifi.RequestToggleWiFiActivity}.
@@ -93,30 +93,24 @@ public class WifiRequestToggleActivity extends FragmentActivity {
     };
 
     @VisibleForTesting
-    final ConfirmationDialogFragment.DismissListener mDismissListener = arguments -> {
-        finish();
-    };
+    final ConfirmationDialogFragment.DismissListener mDismissListener =
+            (arguments, positiveResult) -> finish();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
-        mCarWifiManager = new CarWifiManager(getApplicationContext());
+        mCarWifiManager = new CarWifiManager(getApplicationContext(), getLifecycle());
 
         setResult(Activity.RESULT_CANCELED);
 
-        String packageName = getIntent().getStringExtra(Intent.EXTRA_PACKAGE_NAME);
-        if (TextUtils.isEmpty(packageName)) {
-            finish();
-            return;
-        }
-
         try {
-            ApplicationInfo applicationInfo = getPackageManager().getApplicationInfo(
-                    packageName, /* flags= */ 0);
-            mAppLabel = applicationInfo.loadSafeLabel(getPackageManager());
+            PackageManager pm = getPackageManager();
+            ApplicationInfo ai = pm.getApplicationInfo(getCallingPackage(), /* flags= */ 0);
+            mAppLabel = pm.getApplicationLabel(ai);
         } catch (PackageManager.NameNotFoundException e) {
-            LOG.e("Couldn't find app with package name " + packageName);
+            LOG.e("Couldn't find app with package name " + getCallingPackage());
             finish();
             return;
         }

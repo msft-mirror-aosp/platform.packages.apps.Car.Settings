@@ -16,6 +16,10 @@
 
 package com.android.car.settings.accounts;
 
+import static android.os.UserManager.DISALLOW_MODIFY_ACCOUNTS;
+
+import static com.android.car.settings.enterprise.EnterpriseUtils.hasUserRestrictionByUm;
+
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.car.drivingstate.CarUxRestrictions;
@@ -34,7 +38,7 @@ import androidx.preference.PreferenceCategory;
 import com.android.car.settings.R;
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.PreferenceController;
-import com.android.car.settings.users.UserHelper;
+import com.android.car.settings.profiles.ProfileHelper;
 import com.android.car.ui.preference.CarUiPreference;
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.settingslib.accounts.AuthenticatorHelper;
@@ -73,9 +77,8 @@ public class AccountListPreferenceController extends
     public AccountListPreferenceController(Context context, String preferenceKey,
             FragmentController fragmentController, CarUxRestrictions uxRestrictions) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
-        mUserInfo = UserHelper.getInstance(context).getCurrentProcessUserInfo();
-        mAuthenticatorHelper = new AuthenticatorHelper(context,
-                mUserInfo.getUserHandle(), /* listener= */ this);
+        mUserInfo = ProfileHelper.getInstance(context).getCurrentProcessUserInfo();
+        mAuthenticatorHelper = createAuthenticatorHelper();
     }
 
     /** Sets the account authorities that are available. */
@@ -94,10 +97,27 @@ public class AccountListPreferenceController extends
     }
 
     @Override
+    protected void onCreateInternal() {
+        super.onCreateInternal();
+        setClickableWhileDisabled(getPreference(), /* clickable= */ true, p -> getProfileHelper()
+                .runClickableWhileDisabled(getContext(), getFragmentController()));
+    }
+
+    @Override
     protected int getAvailabilityStatus() {
-        boolean canModifyAccounts = UserHelper.getInstance(getContext())
-                .canCurrentProcessModifyAccounts();
-        return canModifyAccounts ? AVAILABLE : DISABLED_FOR_USER;
+        ProfileHelper profileHelper = getProfileHelper();
+        boolean canModifyAccounts = profileHelper.canCurrentProcessModifyAccounts();
+
+        if (canModifyAccounts) {
+            return AVAILABLE;
+        }
+
+        if (profileHelper.isDemoOrGuest()
+                || hasUserRestrictionByUm(getContext(), DISALLOW_MODIFY_ACCOUNTS)) {
+            return DISABLED_FOR_PROFILE;
+        }
+
+        return AVAILABLE_FOR_VIEWING;
     }
 
     /**
@@ -132,6 +152,11 @@ public class AccountListPreferenceController extends
         forceUpdateAccountsCategory();
     }
 
+    @VisibleForTesting
+    AuthenticatorHelper createAuthenticatorHelper() {
+        return new AuthenticatorHelper(getContext(), mUserInfo.getUserHandle(), this);
+    }
+
     private boolean onAccountPreferenceClicked(AccountPreference preference) {
         // Show the account's details when an account is clicked on.
         getFragmentController().launchFragment(AccountDetailsFragment.newInstance(
@@ -147,8 +172,7 @@ public class AccountListPreferenceController extends
 
         // Recreate the authentication helper to refresh the list of enabled accounts
         mAuthenticatorHelper.stopListeningToAccountUpdates();
-        mAuthenticatorHelper = new AuthenticatorHelper(getContext(), mUserInfo.getUserHandle(),
-                this);
+        mAuthenticatorHelper = createAuthenticatorHelper();
         if (mListenerRegistered) {
             mAuthenticatorHelper.listenToAccountUpdates();
         }
@@ -268,6 +292,11 @@ public class AccountListPreferenceController extends
             }
         }
         return false;
+    }
+
+    @VisibleForTesting
+    ProfileHelper getProfileHelper() {
+        return ProfileHelper.getInstance(getContext());
     }
 
     private static class AccountPreference extends CarUiPreference {

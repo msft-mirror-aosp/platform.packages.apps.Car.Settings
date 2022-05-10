@@ -16,23 +16,26 @@
 
 package com.android.car.settings.datausage;
 
-import static android.net.TrafficStats.UID_REMOVED;
-import static android.net.TrafficStats.UID_TETHERING;
+import static android.app.usage.NetworkStats.Bucket.UID_REMOVED;
+import static android.app.usage.NetworkStats.Bucket.UID_TETHERING;
 
+import android.annotation.NonNull;
+import android.app.usage.NetworkStats;
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.Context;
 import android.content.pm.UserInfo;
-import android.net.NetworkStats;
+import android.net.NetworkTemplate;
 import android.os.UserHandle;
 import android.util.SparseArray;
 
+import androidx.annotation.VisibleForTesting;
 import androidx.preference.PreferenceGroup;
 
 import com.android.car.settings.R;
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.PreferenceController;
 import com.android.car.settings.common.ProgressBarPreference;
-import com.android.car.settings.users.UserHelper;
+import com.android.car.settings.profiles.ProfileHelper;
 import com.android.settingslib.AppItem;
 import com.android.settingslib.net.UidDetail;
 import com.android.settingslib.net.UidDetailProvider;
@@ -54,11 +57,33 @@ public class AppDataUsagePreferenceController extends
         PreferenceController<PreferenceGroup> implements AppsNetworkStatsManager.Callback {
 
     private final UidDetailProvider mUidDetailProvider;
+    private NetworkTemplate mNetworkTemplate;
 
     public AppDataUsagePreferenceController(Context context, String preferenceKey,
             FragmentController fragmentController, CarUxRestrictions uxRestrictions) {
+        this(context, preferenceKey, fragmentController, uxRestrictions,
+                new UidDetailProvider(context));
+    }
+
+    @VisibleForTesting
+    AppDataUsagePreferenceController(Context context, String preferenceKey,
+            FragmentController fragmentController, CarUxRestrictions uxRestrictions,
+            UidDetailProvider uidDetailProvider) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
-        mUidDetailProvider = new UidDetailProvider(getContext());
+        mUidDetailProvider = uidDetailProvider;
+    }
+
+    @VisibleForTesting
+    boolean hasNextBucket(@NonNull NetworkStats stats) {
+        return stats.hasNextBucket();
+    }
+
+    @NonNull
+    @VisibleForTesting
+    NetworkStats.Bucket getNextBucket(@NonNull NetworkStats stats) {
+        NetworkStats.Bucket bucket = new NetworkStats.Bucket();
+        stats.getNextBucket(bucket);
+        return bucket;
     }
 
     @Override
@@ -71,13 +96,12 @@ public class AppDataUsagePreferenceController extends
         List<AppItem> items = new ArrayList<>();
         long largest = 0;
 
-        List<UserInfo> profiles = UserHelper.getInstance(getContext()).getAllUsers();
+        List<UserInfo> profiles = ProfileHelper.getInstance(getContext()).getAllProfiles();
         SparseArray<AppItem> knownItems = new SparseArray<>();
 
-        NetworkStats.Entry entry = null;
         if (stats != null) {
-            for (int i = 0; i < stats.size(); i++) {
-                entry = stats.getValues(i, entry);
+            while (hasNextBucket(stats)) {
+                NetworkStats.Bucket entry = getNextBucket(stats);
                 long size = aggregateDataUsage(knownItems, items, entry, profiles);
                 largest = Math.max(size, largest);
             }
@@ -87,12 +111,17 @@ public class AppDataUsagePreferenceController extends
         sortAndAddPreferences(items, largest);
     }
 
+    /** Sets the {@link NetworkTemplate}  */
+    public void setNetworkTemplate(NetworkTemplate networkTemplate) {
+        mNetworkTemplate = networkTemplate;
+    }
+
     private long aggregateDataUsage(SparseArray<AppItem> knownItems, List<AppItem> items,
-            NetworkStats.Entry entry, List<UserInfo> profiles) {
+            NetworkStats.Bucket entry, List<UserInfo> profiles) {
         int currentUserId = UserHandle.myUserId();
 
         // Decide how to collapse items together.
-        int uid = entry.uid;
+        int uid = entry.getUid();
 
         int collapseKey;
         int category;
@@ -180,6 +209,7 @@ public class AppDataUsagePreferenceController extends
     }
 
     private void sortAndAddPreferences(List<AppItem> items, long largest) {
+        getPreference().removeAll();
         Collections.sort(items);
         for (int i = 0; i < items.size(); i++) {
             int percentTotal = largest != 0 ? (int) (items.get(i).total * 100 / largest) : 0;
@@ -199,8 +229,8 @@ public class AppDataUsagePreferenceController extends
      * @param itemCategory the item is categorized on the list view by this category. Must be
      */
     private static long accumulate(int collapseKey, SparseArray<AppItem> knownItems,
-            NetworkStats.Entry entry, int itemCategory, List<AppItem> items) {
-        int uid = entry.uid;
+            NetworkStats.Bucket entry, int itemCategory, List<AppItem> items) {
+        int uid = entry.getUid();
         AppItem item = knownItems.get(collapseKey);
         if (item == null) {
             item = new AppItem(collapseKey);
@@ -209,7 +239,7 @@ public class AppDataUsagePreferenceController extends
             knownItems.put(item.key, item);
         }
         item.addUid(uid);
-        item.total += entry.rxBytes + entry.txBytes;
+        item.total += entry.getRxBytes() + entry.getTxBytes();
         return item.total;
     }
 
@@ -235,10 +265,14 @@ public class AppDataUsagePreferenceController extends
             mDetail = provider.getUidDetail(item.key, /* blocking= */ false);
             if (mDetail != null) {
                 setAppInfo();
+                setOnClickListener();
             } else {
                 ThreadUtils.postOnBackgroundThread(() -> {
                     mDetail = provider.getUidDetail(mItem.key, /* blocking= */ true);
-                    ThreadUtils.postOnMainThread(() -> setAppInfo());
+                    ThreadUtils.postOnMainThread(() -> {
+                        setAppInfo();
+                        setOnClickListener();
+                    });
                 });
             }
         }
@@ -251,6 +285,16 @@ public class AppDataUsagePreferenceController extends
             } else {
                 setIcon(null);
                 setTitle(null);
+            }
+        }
+
+        private void setOnClickListener() {
+            if (mDetail != null && mNetworkTemplate != null) {
+                setOnPreferenceClickListener(p -> {
+                    getFragmentController().launchFragment(
+                            AppSpecificDataUsageFragment.getInstance(mItem, mNetworkTemplate));
+                    return true;
+                });
             }
         }
     }
