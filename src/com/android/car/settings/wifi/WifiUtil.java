@@ -16,6 +16,14 @@
 package com.android.car.settings.wifi;
 
 import static android.net.wifi.WifiConfiguration.NetworkSelectionStatus.NETWORK_SELECTION_ENABLED;
+import static android.os.UserManager.DISALLOW_CONFIG_WIFI;
+
+import static com.android.car.settings.common.PreferenceController.AVAILABLE;
+import static com.android.car.settings.common.PreferenceController.AVAILABLE_FOR_VIEWING;
+import static com.android.car.settings.common.PreferenceController.UNSUPPORTED_ON_DEVICE;
+import static com.android.car.settings.enterprise.ActionDisabledByAdminDialogFragment.DISABLED_BY_ADMIN_CONFIRM_DIALOG_TAG;
+import static com.android.car.settings.enterprise.EnterpriseUtils.hasUserRestrictionByDpm;
+import static com.android.car.settings.enterprise.EnterpriseUtils.hasUserRestrictionByUm;
 
 import android.annotation.DrawableRes;
 import android.annotation.Nullable;
@@ -24,20 +32,31 @@ import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
 import android.net.NetworkCapabilities;
-import android.net.NetworkInfo;
+import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
+import android.os.Handler;
+import android.os.SimpleClock;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
+import androidx.lifecycle.Lifecycle;
 
 import com.android.car.settings.R;
+import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.Logger;
-import com.android.settingslib.wifi.AccessPoint;
+import com.android.car.settings.enterprise.EnterpriseUtils;
+import com.android.wifitrackerlib.NetworkDetailsTracker;
+import com.android.wifitrackerlib.WifiEntry;
+import com.android.wifitrackerlib.WifiPickerTracker;
 
+import java.time.Clock;
+import java.time.ZoneOffset;
 import java.util.regex.Pattern;
 
 /**
@@ -49,7 +68,19 @@ public class WifiUtil {
 
     /** Value that is returned when we fail to connect wifi. */
     public static final int INVALID_NET_ID = -1;
+    /** Max age of tracked WifiEntries. */
+    private static final long DEFAULT_MAX_SCAN_AGE_MILLIS = 15_000;
+    /** Interval between initiating WifiPickerTracker scans. */
+    private static final long DEFAULT_SCAN_INTERVAL_MILLIS = 10_000;
     private static final Pattern HEX_PATTERN = Pattern.compile("^[0-9A-F]+$");
+
+    /** Clock used for evaluating the age of WiFi scans */
+    private static final Clock ELAPSED_REALTIME_CLOCK = new SimpleClock(ZoneOffset.UTC) {
+        @Override
+        public long millis() {
+            return android.os.SystemClock.elapsedRealtime();
+        }
+    };
 
     @DrawableRes
     public static int getIconRes(int state) {
@@ -90,17 +121,45 @@ public class WifiUtil {
     }
 
     /**
-     * Returns {@Code true} if wifi is available on this device.
+     * Returns {@code true} if wifi is available on this device.
      */
     public static boolean isWifiAvailable(Context context) {
         return context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI);
     }
 
     /**
-     * Gets a unique key for a {@link AccessPoint}.
+     * Returns {@code true} if configuring wifi is allowed by user manager.
      */
-    public static String getKey(AccessPoint accessPoint) {
-        return String.valueOf(accessPoint.hashCode());
+    public static boolean isConfigWifiRestrictedByUm(Context context) {
+        return hasUserRestrictionByUm(context, DISALLOW_CONFIG_WIFI);
+    }
+
+    /**
+     * Returns {@code true} if configuring wifi is allowed by device policy manager.
+     */
+    public static boolean isConfigWifiRestrictedByDpm(Context context) {
+        return hasUserRestrictionByDpm(context, DISALLOW_CONFIG_WIFI);
+    }
+
+    /**
+     * Returns Preference's availability status.
+     */
+    public static int getAvailabilityStatus(Context context) {
+        if (!isWifiAvailable(context)) {
+            return UNSUPPORTED_ON_DEVICE;
+        }
+        if (isConfigWifiRestrictedByUm(context)
+                || isConfigWifiRestrictedByDpm(context)) {
+            return AVAILABLE_FOR_VIEWING;
+        }
+        return AVAILABLE;
+    }
+
+    /**
+     * Gets a unique key for a {@link WifiEntry}.
+     */
+    public static String getKey(WifiEntry wifiEntry) {
+        return String.valueOf(wifiEntry.hashCode());
     }
 
     /**
@@ -153,7 +212,7 @@ public class WifiUtil {
      * Returns {@code true} if the network security type doesn't require authentication.
      */
     public static boolean isOpenNetwork(int security) {
-        return security == AccessPoint.SECURITY_NONE || security == AccessPoint.SECURITY_OWE;
+        return security == WifiEntry.SECURITY_NONE || security == WifiEntry.SECURITY_OWE;
     }
 
     /**
@@ -165,10 +224,11 @@ public class WifiUtil {
     }
 
     /**
-     * Attempts to connect to a specified access point
+     * Attempts to connect to a specified Wi-Fi entry.
+     *
      * @param listener for callbacks on success or failure of connection attempt (can be null)
      */
-    public static void connectToAccessPoint(Context context, String ssid, int security,
+    public static void connectToWifiEntry(Context context, String ssid, int security,
             String password, boolean hidden, @Nullable WifiManager.ActionListener listener) {
         WifiManager wifiManager = context.getSystemService(WifiManager.class);
         WifiConfiguration wifiConfig = getWifiConfig(ssid, security, password, hidden);
@@ -180,11 +240,31 @@ public class WifiUtil {
         WifiConfiguration wifiConfig = new WifiConfiguration();
         wifiConfig.SSID = String.format("\"%s\"", ssid);
         wifiConfig.hiddenSSID = hidden;
+
+        return finishWifiConfig(wifiConfig, security, password);
+    }
+
+    /** Similar to above, but uses WifiEntry to get additional relevant information. */
+    public static WifiConfiguration getWifiConfig(@NonNull WifiEntry wifiEntry,
+            String password) {
+        WifiConfiguration wifiConfig = new WifiConfiguration();
+        if (wifiEntry.getWifiConfiguration() == null) {
+            wifiConfig.SSID = "\"" + wifiEntry.getSsid() + "\"";
+        } else {
+            wifiConfig.networkId = wifiEntry.getWifiConfiguration().networkId;
+            wifiConfig.hiddenSSID = wifiEntry.getWifiConfiguration().hiddenSSID;
+        }
+
+        return finishWifiConfig(wifiConfig, wifiEntry.getSecurity(), password);
+    }
+
+    private static WifiConfiguration finishWifiConfig(WifiConfiguration wifiConfig, int security,
+            String password) {
         switch (security) {
-            case AccessPoint.SECURITY_NONE:
+            case WifiEntry.SECURITY_NONE:
                 wifiConfig.setSecurityParams(WifiConfiguration.SECURITY_TYPE_OPEN);
                 break;
-            case AccessPoint.SECURITY_WEP:
+            case WifiEntry.SECURITY_WEP:
                 wifiConfig.setSecurityParams(WifiConfiguration.SECURITY_TYPE_WEP);
                 if (!TextUtils.isEmpty(password)) {
                     int length = password.length();
@@ -197,7 +277,7 @@ public class WifiUtil {
                     }
                 }
                 break;
-            case AccessPoint.SECURITY_PSK:
+            case WifiEntry.SECURITY_PSK:
                 wifiConfig.setSecurityParams(WifiConfiguration.SECURITY_TYPE_PSK);
                 if (!TextUtils.isEmpty(password)) {
                     if (password.matches("[0-9A-Fa-f]{64}")) {
@@ -207,9 +287,9 @@ public class WifiUtil {
                     }
                 }
                 break;
-            case AccessPoint.SECURITY_EAP:
-            case AccessPoint.SECURITY_EAP_SUITE_B:
-                if (security == AccessPoint.SECURITY_EAP_SUITE_B) {
+            case WifiEntry.SECURITY_EAP:
+            case WifiEntry.SECURITY_EAP_SUITE_B:
+                if (security == WifiEntry.SECURITY_EAP_SUITE_B) {
                     // allowedSuiteBCiphers will be set according to certificate type
                     wifiConfig.setSecurityParams(WifiConfiguration.SECURITY_TYPE_EAP_SUITE_B);
                 } else {
@@ -219,13 +299,13 @@ public class WifiUtil {
                     wifiConfig.enterpriseConfig.setPassword(password);
                 }
                 break;
-            case AccessPoint.SECURITY_SAE:
+            case WifiEntry.SECURITY_SAE:
                 wifiConfig.setSecurityParams(WifiConfiguration.SECURITY_TYPE_SAE);
                 if (!TextUtils.isEmpty(password)) {
                     wifiConfig.preSharedKey = '"' + password + '"';
                 }
                 break;
-            case AccessPoint.SECURITY_OWE:
+            case WifiEntry.SECURITY_OWE:
                 wifiConfig.setSecurityParams(WifiConfiguration.SECURITY_TYPE_OWE);
                 break;
             default:
@@ -234,41 +314,17 @@ public class WifiUtil {
         return wifiConfig;
     }
 
-
-    /** Forget the network specified by {@code accessPoint}. */
-    public static void forget(Context context, AccessPoint accessPoint) {
-        WifiManager wifiManager = context.getSystemService(WifiManager.class);
-        if (!accessPoint.isSaved()) {
-            if (accessPoint.getNetworkInfo() != null
-                    && accessPoint.getNetworkInfo().getState() != NetworkInfo.State.DISCONNECTED) {
-                // Network is active but has no network ID - must be ephemeral.
-                wifiManager.disableEphemeralNetwork(
-                        AccessPoint.convertToQuotedString(accessPoint.getSsidStr()));
-            } else {
-                // Should not happen, but a monkey seems to trigger it
-                LOG.e("Failed to forget invalid network " + accessPoint.getConfig());
-                return;
-            }
-        } else {
-            wifiManager.forget(accessPoint.getConfig().networkId, new WifiManager.ActionListener() {
-                @Override
-                public void onSuccess() {
-                    LOG.d("Network successfully forgotten");
-                }
-
-                @Override
-                public void onFailure(int reason) {
-                    LOG.d("Could not forget network. Failure code: " + reason);
-                    Toast.makeText(context, R.string.wifi_failed_forget_message,
-                            Toast.LENGTH_SHORT).show();
-                }
-            });
+    /** Returns {@code true} if the Wi-Fi entry is connected or connecting. */
+    public static boolean isWifiEntryConnectedOrConnecting(WifiEntry wifiEntry) {
+        if (wifiEntry == null) {
+            return false;
         }
+        return wifiEntry.getConnectedState() != WifiEntry.CONNECTED_STATE_DISCONNECTED;
     }
 
-    /** Returns {@code true} if the access point was disabled due to the wrong password. */
-    public static boolean isAccessPointDisabledByWrongPassword(AccessPoint accessPoint) {
-        WifiConfiguration config = accessPoint.getConfig();
+    /** Returns {@code true} if the Wi-Fi entry was disabled due to the wrong password. */
+    public static boolean isWifiEntryDisabledByWrongPassword(WifiEntry wifiEntry) {
+        WifiConfiguration config = wifiEntry.getWifiConfiguration();
         if (config == null) {
             return false;
         }
@@ -284,5 +340,116 @@ public class WifiUtil {
 
     private static boolean isHexString(String password) {
         return HEX_PATTERN.matcher(password).matches();
+    }
+
+    /**
+     * Gets the security value from a ScanResult.
+     *
+     * @return related security value based on {@link WifiEntry}
+     */
+    public static int getWifiEntrySecurity(ScanResult result) {
+        if (result.capabilities.contains("WEP")) {
+            return WifiEntry.SECURITY_WEP;
+        } else if (result.capabilities.contains("SAE")) {
+            return WifiEntry.SECURITY_SAE;
+        } else if (result.capabilities.contains("PSK")) {
+            return WifiEntry.SECURITY_PSK;
+        } else if (result.capabilities.contains("EAP_SUITE_B_192")) {
+            return WifiEntry.SECURITY_EAP_SUITE_B;
+        } else if (result.capabilities.contains("EAP")) {
+            return WifiEntry.SECURITY_EAP;
+        } else if (result.capabilities.contains("OWE")) {
+            return WifiEntry.SECURITY_OWE;
+        }
+        return WifiEntry.SECURITY_NONE;
+    }
+
+    /**
+     * Creates an instance of WifiPickerTracker using the default MAX_SCAN_AGE and
+     * SCAN_INTERVAL values.
+     */
+    public static WifiPickerTracker createWifiPickerTracker(
+            Lifecycle lifecycle, Context context,
+            Handler mainHandler, Handler workerHandler,
+            WifiPickerTracker.WifiPickerTrackerCallback listener) {
+        return createWifiPickerTracker(lifecycle, context, mainHandler, workerHandler,
+                DEFAULT_MAX_SCAN_AGE_MILLIS, DEFAULT_SCAN_INTERVAL_MILLIS, listener);
+    }
+
+    /**
+     * Creates an instance of WifiPickerTracker.
+     */
+    public static WifiPickerTracker createWifiPickerTracker(
+            Lifecycle lifecycle, Context context,
+            Handler mainHandler, Handler workerHandler,
+            long maxScanAgeMillis, long scanIntervalMillis,
+            WifiPickerTracker.WifiPickerTrackerCallback listener) {
+        return new WifiPickerTracker(
+                lifecycle, context,
+                context.getSystemService(WifiManager.class),
+                context.getSystemService(ConnectivityManager.class),
+                mainHandler, workerHandler, ELAPSED_REALTIME_CLOCK,
+                maxScanAgeMillis, scanIntervalMillis,
+                listener);
+    }
+
+    /**
+     * Creates an instance of NetworkDetailsTracker using the default MAX_SCAN_AGE and
+     * SCAN_INTERVAL values.
+     */
+    public static NetworkDetailsTracker createNetworkDetailsTracker(
+            Lifecycle lifecycle, Context context,
+            Handler mainHandler, Handler workerHandler,
+            String key) {
+        return createNetworkDetailsTracker(lifecycle, context, mainHandler, workerHandler,
+                DEFAULT_MAX_SCAN_AGE_MILLIS, DEFAULT_SCAN_INTERVAL_MILLIS, key);
+    }
+
+    /**
+     * Creates an instance of NetworkDetailsTracker.
+     */
+    public static NetworkDetailsTracker createNetworkDetailsTracker(
+            Lifecycle lifecycle, Context context,
+            Handler mainHandler, Handler workerHandler,
+            long maxScanAgeMillis, long scanIntervalMillis,
+            String key) {
+        return NetworkDetailsTracker.createNetworkDetailsTracker(
+                lifecycle, context,
+                context.getSystemService(WifiManager.class),
+                context.getSystemService(ConnectivityManager.class),
+                mainHandler, workerHandler, ELAPSED_REALTIME_CLOCK,
+                maxScanAgeMillis, scanIntervalMillis,
+                key);
+    }
+
+    /**
+     * Shows {@code ActionDisabledByAdminDialog} when the action is disallowed by
+     * a device owner or a profile owner. Otherwise, a {@code Toast} will be shwon to inform the
+     * user that the action is disabled.
+     */
+    // TODO(b/186905050): add unit tests for this class and {@code PreferenceController} that uses
+    // this method.
+    public static void runClickableWhileDisabled(Context context,
+            FragmentController fragmentController) {
+        if (hasUserRestrictionByDpm(context, DISALLOW_CONFIG_WIFI)) {
+            showActionDisabledByAdminDialog(context, fragmentController);
+        } else {
+            Toast.makeText(context, context.getString(R.string.action_unavailable),
+                    Toast.LENGTH_LONG).show();
+        }
+    }
+
+    /**
+     * Shows ActionDisabledByAdminDialog when there is user restriction set by device policy
+     * manager.
+     */
+    // TODO(b/186905050): add unit tests for this class and {@code PreferenceController} that uses
+    // this method.
+    public static void showActionDisabledByAdminDialog(Context context,
+            FragmentController fragmentController) {
+        fragmentController.showDialog(
+                EnterpriseUtils.getActionDisabledByAdminDialog(context,
+                        DISALLOW_CONFIG_WIFI),
+                DISABLED_BY_ADMIN_CONFIRM_DIALOG_TAG);
     }
 }
