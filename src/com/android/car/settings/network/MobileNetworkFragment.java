@@ -23,17 +23,23 @@ import android.provider.Settings;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import androidx.annotation.XmlRes;
 
 import com.android.car.settings.R;
 import com.android.car.settings.common.SettingsFragment;
+import com.android.car.settings.datausage.DataUsagePreferenceController;
+import com.android.car.settings.datausage.DataUsageSummaryPreferenceController;
+import com.android.car.settings.datausage.DataWarningAndLimitPreferenceController;
 import com.android.car.settings.search.CarBaseSearchIndexProvider;
+import com.android.car.ui.toolbar.ToolbarController;
 import com.android.internal.util.CollectionUtils;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.google.android.collect.Lists;
 
+import java.util.Arrays;
 import java.util.List;
 
 /** Mobile network settings homepage. */
@@ -69,12 +75,12 @@ public class MobileNetworkFragment extends SettingsFragment implements
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mSubscriptionManager = context.getSystemService(SubscriptionManager.class);
+        mSubscriptionManager = getSubscriptionManager(context);
 
         int subId = getArguments() != null
                 ? getArguments().getInt(ARG_NETWORK_SUB_ID, MobileNetworkUpdateManager.SUB_ID_NULL)
                 : MobileNetworkUpdateManager.SUB_ID_NULL;
-        mMobileNetworkUpdateManager = new MobileNetworkUpdateManager(context, subId);
+        mMobileNetworkUpdateManager = getMobileNetworkUpdateManager(context, subId);
         getLifecycle().addObserver(mMobileNetworkUpdateManager);
 
         List<MobileNetworkUpdateManager.MobileNetworkUpdateListener> listeners =
@@ -86,14 +92,30 @@ public class MobileNetworkFragment extends SettingsFragment implements
         for (MobileNetworkUpdateManager.MobileNetworkUpdateListener listener : listeners) {
             mMobileNetworkUpdateManager.registerListener(listener);
         }
+
+        List<NetworkBasePreferenceController> preferenceControllers =
+                Arrays.asList(
+                        use(DataUsageSummaryPreferenceController.class,
+                                R.string.pk_data_usage_summary),
+                        use(MobileDataTogglePreferenceController.class,
+                                R.string.pk_mobile_data_toggle),
+                        use(RoamingPreferenceController.class, R.string.pk_mobile_roaming_toggle),
+                        use(DataUsagePreferenceController.class, R.string.pk_app_data_usage),
+                        use(DataWarningAndLimitPreferenceController.class,
+                                R.string.pk_data_warning_and_limit));
+
+        for (NetworkBasePreferenceController preferenceController :
+                preferenceControllers) {
+            preferenceController.setFields(subId);
+        }
     }
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    protected void setupToolbar(@NonNull ToolbarController toolbar) {
+        super.setupToolbar(toolbar);
 
         if (mTitle != null) {
-            getToolbar().setTitle(mTitle);
+            toolbar.setTitle(mTitle);
         }
     }
 
@@ -117,12 +139,22 @@ public class MobileNetworkFragment extends SettingsFragment implements
 
         if (info != null) {
             // It is possible for this to be called before the activity is fully created. If so,
-            // cache the value so that it can be constructed onActivityCreated.
+            // cache the value so that it can be constructed when setupToolbar is called.
             mTitle = info.getDisplayName();
             if (getToolbar() != null) {
                 getToolbar().setTitle(mTitle);
             }
         }
+    }
+
+    @VisibleForTesting
+    SubscriptionManager getSubscriptionManager(Context context) {
+        return context.getSystemService(SubscriptionManager.class);
+    }
+
+    @VisibleForTesting
+    MobileNetworkUpdateManager getMobileNetworkUpdateManager(Context context, int subId) {
+        return new MobileNetworkUpdateManager(context, subId);
     }
 
     public static final CarBaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
