@@ -85,7 +85,7 @@ public final class BluetoothPairingService extends Service {
             } else if (action.equals(ACTION_DISMISS_PAIRING)) {
                 LOG.d("Notification cancel " + mDevice.getAddress() + " ("
                         + mDevice.getName() + ")");
-                mDevice.cancelPairing();
+                mDevice.cancelBondProcess();
             } else {
                 int bondState = intent.getIntExtra(BluetoothDevice.EXTRA_BOND_STATE,
                         BluetoothDevice.ERROR);
@@ -124,10 +124,12 @@ public final class BluetoothPairingService extends Service {
                 .setLocalOnly(true);
 
         PendingIntent pairIntent = PendingIntent.getActivity(this, 0,
-                getPairingDialogIntent(this, intent), PendingIntent.FLAG_ONE_SHOT);
+                getPairingDialogIntent(this, intent),
+                PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_ONE_SHOT);
 
         PendingIntent dismissIntent = PendingIntent.getBroadcast(this, 0,
-                new Intent(ACTION_DISMISS_PAIRING), PendingIntent.FLAG_ONE_SHOT);
+                new Intent(ACTION_DISMISS_PAIRING),
+                PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_ONE_SHOT);
 
         mDevice = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
 

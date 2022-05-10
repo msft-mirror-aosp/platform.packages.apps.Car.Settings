@@ -42,33 +42,32 @@ public abstract class WifiBasePreferenceController<V extends Preference> extends
 
     @Override
     protected void onCreateInternal() {
-        mCarWifiManager = new CarWifiManager(getContext());
+        super.onCreateInternal();
+        mCarWifiManager = new CarWifiManager(getContext(),
+                getFragmentController().getSettingsLifecycle());
+
+        setClickableWhileDisabled(getPreference(), /* clickable= */ true, p -> {
+            WifiUtil.runClickableWhileDisabled(getContext(), getFragmentController());
+        });
     }
 
     @Override
     protected void onStartInternal() {
         mCarWifiManager.addListener(this);
-        mCarWifiManager.start();
     }
 
     @Override
     protected void onStopInternal() {
         mCarWifiManager.removeListener(this);
-        mCarWifiManager.stop();
-    }
-
-    @Override
-    protected void onDestroyInternal() {
-        mCarWifiManager.destroy();
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return WifiUtil.isWifiAvailable(getContext()) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return WifiUtil.getAvailabilityStatus(getContext());
     }
 
     @Override
-    public void onAccessPointsChanged() {
+    public void onWifiEntriesChanged() {
         // don't care
     }
 

@@ -16,9 +16,16 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res-auto"
-                  android:title="@string/add_an_account"
+                  android:title="@string/add_account_title"
                   android:key="@string/psk_choose_account">
     <com.android.car.settings.common.LogicalPreferenceGroup
         android:key="@string/pk_add_account"
         settings:controller="com.android.car.settings.accounts.ChooseAccountPreferenceController"/>
+
+    <com.android.car.settings.common.CarFooterPreference
+        android:key="@string/pk_add_account_enterprise_disclosure_footer"
+        android:selectable="false"
+        settings:searchable="false"
+        android:icon="@drawable/ic_settings_about"
+        settings:controller="com.android.car.settings.enterprise.EnterpriseDisclosurePreferenceController"/>
 </PreferenceScreen>
