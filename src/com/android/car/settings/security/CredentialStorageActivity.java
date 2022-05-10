@@ -17,6 +17,7 @@
 package com.android.car.settings.security;
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -40,6 +41,7 @@ import com.android.car.settings.R;
 import com.android.car.settings.common.ConfirmationDialogFragment;
 import com.android.car.settings.common.Logger;
 import com.android.internal.widget.LockPatternUtils;
+import com.android.settingslib.core.lifecycle.HideNonSystemOverlayMixin;
 
 import java.lang.ref.WeakReference;
 
@@ -65,17 +67,9 @@ public class CredentialStorageActivity extends FragmentActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
         mUserManager = UserManager.get(getApplicationContext());
         mUtils = new LockPatternUtils(this);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        if (isFinishing()) {
-            return;
-        }
 
         if (mUserManager.hasUserRestriction(UserManager.DISALLOW_CONFIG_CREDENTIALS)) {
             finish();
@@ -84,7 +78,7 @@ public class CredentialStorageActivity extends FragmentActivity {
 
         Intent intent = getIntent();
         String action = intent.getAction();
-        if (ACTION_RESET.equals(action)) {
+        if (ACTION_RESET.equals(action) && checkCallerIsSelf()) {
             showResetConfirmationDialog();
         } else if (ACTION_INSTALL.equals(action) && checkCallerIsCertInstallerOrSelfInProfile()) {
             Bundle installBundle = intent.getExtras();
@@ -101,6 +95,11 @@ public class CredentialStorageActivity extends FragmentActivity {
                 .setMessage(R.string.credentials_reset_hint)
                 .setPositiveButton(android.R.string.ok, arguments -> onResetConfirmed())
                 .setNegativeButton(android.R.string.cancel, arguments -> finish())
+                .setDismissListener((arguments, positiveResult) -> {
+                    if (!positiveResult) {
+                        finish();
+                    }
+                })
                 .build();
         dialog.show(getSupportFragmentManager(), DIALOG_TAG);
     }
@@ -123,6 +122,19 @@ public class CredentialStorageActivity extends FragmentActivity {
             } else {
                 finish();
             }
+        }
+    }
+
+    /**
+     * Check that the caller is Settings.
+     */
+    private boolean checkCallerIsSelf() {
+        try {
+            return Process.myUid() == android.app.ActivityManager.getService()
+                    .getLaunchedFromUid(getActivityToken());
+        } catch (RemoteException re) {
+            // Error talking to ActivityManager, just give up
+            return false;
         }
     }
 
@@ -173,7 +185,13 @@ public class CredentialStorageActivity extends FragmentActivity {
 
         int uid = installBundle.getInt(Credentials.EXTRA_INSTALL_AS_UID, KeyStore.UID_SELF);
 
-        if (uid != KeyStore.UID_SELF && !UserHandle.isSameUser(uid, Process.myUid())) {
+        // Checks that the provided uid is none of the following:
+        // 1. KeyStore.UID_SELF
+        // 2. Current uid process
+        // 3. uid running as the system process (if in headless system user mode)
+        if (uid != KeyStore.UID_SELF && !UserHandle.isSameUser(uid, Process.myUid())
+                && !(mUserManager.isHeadlessSystemUserMode()
+                && UserHandle.getUserId(uid) == UserHandle.USER_SYSTEM)) {
             int dstUserId = UserHandle.getUserId(uid);
 
             // Restrict install target to the wifi uid.
@@ -225,10 +243,12 @@ public class CredentialStorageActivity extends FragmentActivity {
                 return false;
             }
 
-            credentialStorage.mUtils.resetKeyStore(UserHandle.myUserId());
+            UserHandle user = getUserHandleToUse(mCredentialStorage.get().mUserManager);
+            credentialStorage.mUtils.resetKeyStore(user.getIdentifier());
 
             try {
-                KeyChain.KeyChainConnection keyChainConnection = KeyChain.bind(credentialStorage);
+                KeyChain.KeyChainConnection keyChainConnection = KeyChain.bindAsUser(
+                        credentialStorage, user);
                 try {
                     return keyChainConnection.getService().reset();
                 } catch (RemoteException e) {
@@ -283,8 +303,9 @@ public class CredentialStorageActivity extends FragmentActivity {
 
         @Override
         protected Boolean doInBackground(Void... unused) {
-            try (KeyChain.KeyChainConnection keyChainConnection = KeyChain.bind(
-                    CredentialStorageActivity.this)) {
+            try (KeyChain.KeyChainConnection keyChainConnection = KeyChain.bindAsUser(
+                    CredentialStorageActivity.this,
+                    getUserHandleToUse(CredentialStorageActivity.this.mUserManager))) {
                 return keyChainConnection.getService()
                         .installKeyPair(mKeyData, mCertData, mCaListData, mAlias, mUid);
             } catch (RemoteException e) {
@@ -345,8 +366,8 @@ public class CredentialStorageActivity extends FragmentActivity {
                     || credentialStorage.isDestroyed()) {
                 return false;
             }
-            try (KeyChain.KeyChainConnection keyChainConnection = KeyChain.bind(
-                    credentialStorage)) {
+            try (KeyChain.KeyChainConnection keyChainConnection = KeyChain.bindAsUser(
+                    credentialStorage, getUserHandleToUse(credentialStorage.mUserManager))) {
                 keyChainConnection.getService().setUserSelectable(mAlias, true);
                 return true;
             } catch (RemoteException e) {
@@ -369,5 +390,10 @@ public class CredentialStorageActivity extends FragmentActivity {
             }
             credentialStorage.finish();
         }
+    }
+
+    private static UserHandle getUserHandleToUse(UserManager userManager) {
+        return userManager.isHeadlessSystemUserMode()
+                ? UserHandle.SYSTEM : UserHandle.of(ActivityManager.getCurrentUser());
     }
 }
