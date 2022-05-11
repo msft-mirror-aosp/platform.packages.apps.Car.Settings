@@ -16,6 +16,8 @@
 
 package com.android.car.settings.inputmethod;
 
+import static com.android.car.settings.enterprise.ActionDisabledByAdminDialogFragment.DISABLED_BY_ADMIN_CONFIRM_DIALOG_TAG;
+
 import android.app.admin.DevicePolicyManager;
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.Context;
@@ -25,12 +27,13 @@ import android.view.inputmethod.InputMethodManager;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.PreferenceGroup;
-import androidx.preference.SwitchPreference;
 
 import com.android.car.settings.R;
 import com.android.car.settings.common.ConfirmationDialogFragment;
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.PreferenceController;
+import com.android.car.settings.enterprise.EnterpriseUtils;
+import com.android.car.ui.preference.CarUiSwitchPreference;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -77,10 +80,8 @@ public class KeyboardManagementPreferenceController extends
             FragmentController fragmentController, CarUxRestrictions uxRestrictions) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
         mPackageManager = context.getPackageManager();
-        mDevicePolicyManager =
-                (DevicePolicyManager) context.getSystemService(Context.DEVICE_POLICY_SERVICE);
-        mInputMethodManager =
-                (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+        mDevicePolicyManager = context.getSystemService(DevicePolicyManager.class);
+        mInputMethodManager = context.getSystemService(InputMethodManager.class);
     }
 
     @Override
@@ -127,22 +128,26 @@ public class KeyboardManagementPreferenceController extends
                         mInputMethodManager, a)));
 
         for (InputMethodInfo inputMethodInfo : inputMethodInfos) {
-            if (!isInputMethodAllowedByOrganization(permittedInputMethodsSet, inputMethodInfo)) {
-                continue;
-            }
             // Hide "Google voice typing" IME.
             if (inputMethodInfo.getPackageName().equals(InputMethodUtil.GOOGLE_VOICE_TYPING)) {
                 continue;
             }
 
-            preferenceGroup.addPreference(createSwitchPreference(inputMethodInfo));
+            preferenceGroup
+                .addPreference(createSwitchPreference(permittedInputMethodsSet, inputMethodInfo));
         }
     }
 
     private boolean isInputMethodAllowedByOrganization(Set<String> permittedList,
             InputMethodInfo inputMethodInfo) {
-        // permittedList is null means that all input methods are allowed.
-        return (permittedList == null) || permittedList.contains(inputMethodInfo.getPackageName());
+        // If an input method is enabled but not included in the permitted list, then set it as
+        // allowed by organization. Doing so will allow the user to disable the input method and
+        // remain complaint with the organization's policy. Once disabled, the input method
+        // cannot be re-enabled because it is not in the permitted list. Note: permittedList
+        // is null means that all input methods are allowed.
+        return (permittedList == null)
+                || permittedList.contains(inputMethodInfo.getPackageName())
+                || isInputMethodEnabled(inputMethodInfo);
     }
 
     private boolean isInputMethodEnabled(InputMethodInfo inputMethodInfo) {
@@ -178,12 +183,13 @@ public class KeyboardManagementPreferenceController extends
     }
 
     /**
-     * Create a SwitchPreference to enable/disable an input method.
+     * Create a CarUiSwitchPreference to enable/disable an input method.
      *
-     * @return {@code SwitchPreference} which allows a user to enable/disable an input method.
+     * @return {@code CarUiSwitchPreference} which allows a user to enable/disable an input method.
      */
-    private SwitchPreference createSwitchPreference(InputMethodInfo inputMethodInfo) {
-        SwitchPreference switchPreference = new SwitchPreference(getContext());
+    private CarUiSwitchPreference createSwitchPreference(Set<String> permittedInputMethodsSet,
+            InputMethodInfo inputMethodInfo) {
+        CarUiSwitchPreference switchPreference = new CarUiSwitchPreference(getContext());
         switchPreference.setKey(String.valueOf(inputMethodInfo.getId()));
         switchPreference.setIcon(InputMethodUtil.getPackageIcon(mPackageManager, inputMethodInfo));
         switchPreference.setTitle(InputMethodUtil.getPackageLabel(mPackageManager,
@@ -202,6 +208,12 @@ public class KeyboardManagementPreferenceController extends
             switchPreference.setEnabled(!isOnlyEnabledDefaultInputMethod(inputMethodInfo));
         }
 
+        if (!isInputMethodAllowedByOrganization(permittedInputMethodsSet, inputMethodInfo)) {
+            switchPreference.setEnabled(false);
+            setClickableWhileDisabled(switchPreference, /* clickable= */ true, p ->
+                    showActionDisabledByAdminDialog(inputMethodInfo.getPackageName()));
+            return switchPreference;
+        }
         switchPreference.setOnPreferenceChangeListener((switchPref, newValue) -> {
             boolean enable = (boolean) newValue;
             if (enable) {
@@ -239,5 +251,14 @@ public class KeyboardManagementPreferenceController extends
                 .build();
 
         getFragmentController().showDialog(dialog, SECURITY_WARN_DIALOG_TAG);
+    }
+
+    // TODO: ideally we need to refactor this method. See reasoning on
+    // EnterpriseUtils.DISABLED_INPUT_METHOD constant.
+    private void showActionDisabledByAdminDialog(String inputMethodPkg) {
+        getFragmentController().showDialog(
+                EnterpriseUtils.getActionDisabledByAdminDialog(getContext(),
+                            EnterpriseUtils.DISABLED_INPUT_METHOD, inputMethodPkg),
+                DISABLED_BY_ADMIN_CONFIRM_DIALOG_TAG);
     }
 }
