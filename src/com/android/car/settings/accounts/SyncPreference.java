@@ -21,17 +21,16 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.preference.PreferenceViewHolder;
-import androidx.preference.SwitchPreference;
 
-import com.android.car.apps.common.util.Themes;
 import com.android.car.settings.R;
+import com.android.car.ui.preference.CarUiSwitchPreference;
 
 /**
  * A preference that represents the state of a sync adapter.
  *
  * <p>Largely derived from {@link com.android.settings.accounts.SyncStateSwitchPreference}.
  */
-public class SyncPreference extends SwitchPreference {
+public class SyncPreference extends CarUiSwitchPreference {
     private int mUid;
     private String mPackageName;
     private AccountSyncHelper.SyncState mSyncState = AccountSyncHelper.SyncState.NONE;
@@ -69,15 +68,15 @@ public class SyncPreference extends SwitchPreference {
         switch (mSyncState) {
             case ACTIVE:
                 setIcon(R.drawable.ic_sync_anim);
-                getIcon().setTintList(Themes.getAttrColorStateList(getContext(), R.attr.iconColor));
+                getIcon().setTintList(getContext().getColorStateList(R.color.icon_color_default));
                 break;
             case PENDING:
                 setIcon(R.drawable.ic_sync);
-                getIcon().setTintList(Themes.getAttrColorStateList(getContext(), R.attr.iconColor));
+                getIcon().setTintList(getContext().getColorStateList(R.color.icon_color_default));
                 break;
             case FAILED:
                 setIcon(R.drawable.ic_sync_problem);
-                getIcon().setTintList(Themes.getAttrColorStateList(getContext(), R.attr.iconColor));
+                getIcon().setTintList(getContext().getColorStateList(R.color.icon_color_default));
                 break;
             default:
                 setIcon(null);

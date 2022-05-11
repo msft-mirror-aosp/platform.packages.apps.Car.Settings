@@ -15,8 +15,9 @@
     limitations under the License.
 -->
 
-<LinearLayout
+<com.android.car.ui.FocusArea
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_content_focus_area"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -38,7 +39,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:columnCount="3"/>
+                android:columnCount="3"
+                android:layoutDirection="ltr"/>
         </FrameLayout>
 
         <!-- End side: pin entry field and messages -->
@@ -81,10 +83,14 @@
                 android:id="@+id/hint_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:paddingStart="@dimen/lock_hint_padding"
+                android:paddingEnd="@dimen/lock_hint_padding"
+                android:minHeight="@dimen/lock_hint_min_height"
+                android:gravity="center_horizontal"
                 android:text="@string/choose_lock_pin_hints"
-                android:textAppearance="?android:attr/textAppearanceMedium"/>
+                android:textAppearance="@style/TextAppearance.CarUi.Body3"
+                android:textColor="@color/secondary_text_color"/>
 
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</com.android.car.ui.FocusArea>
