@@ -20,6 +20,6 @@
     <string name="config_defaultAssistantComponentName" translatable="false">#+UNSET</string>
     <!-- Whether exit button in settings' root action bar should be shown or not -->
     <bool name="config_show_settings_root_exit_icon">true</bool>
-    <!-- Whether the dummy fragment should be root -->
-    <bool name="config_is_dummy_fragment_root">true</bool>
+
+    <string name="config_default_screen_reader" translatable="false">com.android.screen.reader/.ScreenReaderService</string>
 </resources>

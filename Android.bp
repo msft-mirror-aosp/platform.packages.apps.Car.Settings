@@ -12,9 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-android_app {
-    name: "CarSettings",
-    overrides: ["Settings"],
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+android_library {
+    name: "CarSettings-core",
     platform_apis: true,
     defaults: [
         "SettingsLibDefaults",
@@ -22,10 +25,6 @@ android_app {
     ],
 
     srcs: ["src/**/*.java"],
-
-    libs: [
-        "android.car",
-    ],
 
     static_libs: [
         "androidx.lifecycle_lifecycle-common-java8",
@@ -35,12 +34,32 @@ android_app {
         "androidx.test.core",
         "car-apps-common",
         "car-setup-wizard-lib-utils",
+        "WifiTrackerLib",
         "SettingsLib",
         "SettingsLib-search",
-        "android.car.userlib",
         "androidx-constraintlayout_constraintlayout-solver",
         "jsr305",
         "car-ui-lib",
+        "car-admin-ui-lib",
+        "car-helper-lib",
+        "car-qc-lib",
+    ],
+
+    libs: [
+        "android.car",
+    ],
+
+    manifest: "AndroidManifest.xml",
+    resource_dirs: ["res"],
+}
+
+android_app {
+    name: "CarSettings",
+    overrides: ["Settings"],
+    platform_apis: true,
+
+    static_libs: [
+        "CarSettings-core",
     ],
 
     certificate: "platform",
@@ -55,7 +74,7 @@ android_app {
         enabled: false,
     },
 
-    required: ["privapp_whitelist_com.android.car.settings"],
+    required: ["allowed_privapp_com.android.car.settings"],
 
     dxflags: ["--multi-dex"],
 
@@ -89,12 +108,15 @@ android_app {
         "androidx.test.core",
         "car-apps-common",
         "car-setup-wizard-lib-utils",
+        "WifiTrackerLib",
         "SettingsLib",
         "SettingsLib-search",
-        "android.car.userlib",
         "androidx-constraintlayout_constraintlayout-solver",
         "jsr305",
         "car-ui-lib-testing-support",
+        "car-admin-ui-lib",
+        "car-helper-lib",
+        "car-qc-lib",
     ],
 
     // Testing only resources must be applied last so they take precedence.
@@ -116,6 +138,65 @@ android_app {
     },
 
     dxflags: ["--multi-dex"],
+
+    product_variables: {
+        pdk: {
+            enabled: false,
+        },
+    },
+}
+
+android_library {
+    name: "CarSettingsForUnitTesting",
+    platform_apis: true,
+    defaults: [
+        "SettingsLibDefaults",
+        "SettingsLib-search-defaults",
+    ],
+
+    manifest: "tests/unit/AndroidManifest.xml",
+
+    srcs: ["src/**/*.java"],
+
+    libs: [
+        "android.car",
+    ],
+
+    static_libs: [
+        "androidx.lifecycle_lifecycle-common-java8",
+        "androidx.lifecycle_lifecycle-extensions",
+        "androidx.preference_preference",
+        "androidx-constraintlayout_constraintlayout",
+        "car-apps-common",
+        "car-setup-wizard-lib-utils",
+        "WifiTrackerLib",
+        "SettingsLib",
+        "SettingsLib-search",
+        "androidx-constraintlayout_constraintlayout-solver",
+        "jsr305",
+        "car-ui-lib-testing-support",
+        "car-admin-ui-lib",
+        "car-helper-lib",
+        "car-qc-lib",
+    ],
+
+    // Testing only resources must be applied last so they take precedence.
+    resource_dirs: [
+        "res",
+        "tests/unit/res",
+    ],
+
+    optimize: {
+        enabled: false,
+    },
+
+    dex_preopt: {
+        enabled: false,
+    },
+
+    dxflags: ["--multi-dex"],
+
+    aaptflags: ["--extra-packages com.android.car.settings"],
 
     product_variables: {
         pdk: {
