@@ -204,7 +204,7 @@
     <string name="bluetooth_ask_enablement_and_discovery_no_name" msgid="907153034209916282">"Một ứng dụng muốn bật Bluetooth và hiển thị đầu giải trí của bạn với các thiết bị khác trong <xliff:g id="TIMEOUT">%1$d</xliff:g> giây."</string>
     <string name="bluetooth_state_switch_summary" msgid="171929910916432266">"Hiển thị dưới tên %1$s trên các thiết bị khác"</string>
     <string name="bluetooth_my_devices" msgid="6352010339607939612">"Thiết bị của tôi"</string>
-    <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Từng được kết nối"</string>
+    <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Đã kết nối trước đây"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"Đã kết nối %1$s"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"Đã ngắt kết nối %1$s"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Yêu cầu ghép nối Bluetooth"</string>
@@ -835,7 +835,7 @@
     <string name="power_component_disabled" msgid="7084144472096800457">"Không thể thay đổi chế độ cài đặt này ngay bây giờ"</string>
     <string name="accessibility_settings_title" msgid="2615042088419230347">"Hỗ trợ tiếp cận"</string>
     <string name="accessibility_settings_captions_title" msgid="4635141293524800795">"Phụ đề"</string>
-    <string name="captions_settings_title" msgid="5738067618097295831">"Chế độ ưu tiên về phụ đề"</string>
+    <string name="captions_settings_title" msgid="5738067618097295831">"Tuỳ chọn phụ đề"</string>
     <string name="captions_settings_off" msgid="7568096968016015626">"Đang tắt"</string>
     <string name="captions_settings_on" msgid="5374984113566914978">"Đang bật"</string>
     <string name="screen_reader_settings_title" msgid="4012734340987826872">"Trình đọc màn hình"</string>
