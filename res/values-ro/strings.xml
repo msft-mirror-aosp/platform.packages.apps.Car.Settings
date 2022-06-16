@@ -148,8 +148,6 @@
     <string name="wifi_hotspot_name_summary_connected" msgid="7421325340822195506">"Alte dispozitive se pot conecta la <xliff:g id="WIFI_HOTSPOT_NAME">%1$s</xliff:g>"</string>
     <string name="wifi_hotspot_password_title" msgid="4103948315849351988">"Parolă hotspot"</string>
     <string name="wifi_hotspot_security_title" msgid="2299925790743587725">"Securitate"</string>
-    <string name="wifi_hotspot_wpa3_sae" msgid="4752416911592950174">"WPA3-Personal"</string>
-    <string name="wifi_security_psk_sae" msgid="8738371461215752280">"WPA2 / WPA3-Personal"</string>
     <string name="wifi_hotspot_wpa2_personal" msgid="7135181212837798318">"WPA2-Personal"</string>
     <string name="wifi_hotspot_security_none" msgid="2514844105085054386">"Fără"</string>
     <string name="wifi_hotspot_ap_band_title" msgid="7685279281668988593">"Bandă AP"</string>
@@ -387,8 +385,6 @@
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Având această permisiune, o aplicație poate să modifice setările de sistem."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Acces la notificări"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"Permiteți accesul la notificări pentru <xliff:g id="SERVICE">%1$s</xliff:g>?"</string>
-    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> va putea să citească toate notificările, inclusiv informațiile cu caracter personal, cum ar fi numele persoanelor de contact și textul mesajelor primite. De asemenea, va putea să închidă notificări sau să declanșeze butoane pentru acțiuni din acestea.\n\nAstfel, aplicația va putea să activeze sau să dezactiveze starea Nu deranja și să modifice setările aferente."</string>
-    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"Dacă dezactivați accesul la notificări pentru <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>, este posibil să fie dezactivat și accesul în modul Nu deranja."</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"Dezactivați"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Anulați"</string>
     <string name="premium_sms_access_title" msgid="1409118461646148686">"Acces la SMS-uri premium"</string>
@@ -549,6 +545,8 @@
     <string name="choose_new_admin_title" msgid="1915428454917699587">"Alegeți un administrator nou"</string>
     <string name="choose_new_admin_message" msgid="7468286545352043354">"Aveți nevoie de cel puțin un administrator. Pentru a-l șterge pe acesta, mai întâi alegeți un înlocuitor."</string>
     <string name="choose_new_admin_label" msgid="5987653639387437939">"Alegeți un administrator"</string>
+    <string name="user_guest" msgid="3465399481257448601">"Invitat"</string>
+    <string name="start_guest_session" msgid="4438752398760283201">"Invitat"</string>
     <string name="user_switch" msgid="6544839750534690781">"Comutați"</string>
     <string name="current_user_name" msgid="3813671533249316823">"Dvs. (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"Nume"</string>
@@ -612,8 +610,6 @@
     <string name="privacy_settings_title" msgid="3150145262029229572">"Confidențialitate"</string>
     <string name="privacy_vehicle_data_title" msgid="6385777370742595651">"Datele sistemului de infotainment"</string>
     <string name="privacy_location_summary" msgid="7019817848470566242">"Controlați accesul aplicațiilor la locație"</string>
-    <string name="mute_camera_title" msgid="215494079895460172">"Camera foto"</string>
-    <string name="mute_camera_summary" msgid="1237452064757403042">"Controlați accesul aplicațiilor la camerele foto"</string>
     <string name="mute_mic_title" msgid="2813215197799569553">"Microfon"</string>
     <string name="mute_mic_summary" msgid="5426953935775303904">"Controlați accesul aplicațiilor la microfon"</string>
     <string name="vehicle_data_title" msgid="935933215161763721">"Date sistem de infotainment"</string>
@@ -683,20 +679,34 @@
     <string name="lockpassword_password_recently_used" msgid="8255729487108602924">"Administratorul dispozitivului nu permite folosirea unei parole recente"</string>
     <string name="error_saving_password" msgid="8334882262622500658">"Eroare la salvarea parolei"</string>
     <string name="lockpassword_password_denylisted_by_admin" msgid="8611831198794524730">"Parolele obișnuite sunt blocate de administratorul IT. Încercați altă parolă."</string>
-    <string name="lockpassword_password_requires_alpha" msgid="713641878535268163">"Trebuie să conțină cel puțin o literă"</string>
-    <string name="lockpassword_password_requires_digit" msgid="8120467503175627546">"Trebuie să conțină cel puțin o cifră"</string>
-    <string name="lockpassword_password_requires_symbol" msgid="6294855131052831204">"Trebuie să conțină cel puțin un simbol"</string>
-    <string name="lockpassword_password_requires_letters" msgid="324864645474528299">"{count,plural, =1{Trebuie să conțină cel puțin # literă}few{Trebuie să conțină cel puțin # litere}other{Trebuie să conțină cel puțin # de litere}}"</string>
-    <string name="lockpassword_password_requires_lowercase" msgid="5373735547134824114">"{count,plural, =1{Trebuie să conțină cel puțin # minusculă}few{Trebuie să conțină cel puțin # minuscule}other{Trebuie să conțină cel puțin # de minuscule}}"</string>
-    <string name="lockpassword_password_requires_uppercase" msgid="2002482631049525313">"{count,plural, =1{Trebuie să conțină cel puțin # majusculă}few{Trebuie să conțină cel puțin # majuscule}other{Trebuie să conțină cel puțin # de majuscule}}"</string>
-    <string name="lockpassword_password_requires_numeric" msgid="5694949801691947801">"{count,plural, =1{Trebuie să conțină cel puțin # cifră}few{Trebuie să conțină cel puțin # cifre}other{Trebuie să conțină cel puțin # de cifre}}"</string>
-    <string name="lockpassword_password_requires_symbols" msgid="1789501049908004075">"{count,plural, =1{Trebuie să conțină cel puțin # simbol special}few{Trebuie să conțină cel puțin # simboluri speciale}other{Trebuie să conțină cel puțin # de simboluri speciale}}"</string>
-    <string name="lockpassword_password_requires_nonletter" msgid="3089186186422638926">"{count,plural, =1{Trebuie să conțină cel puțin # caracter care să nu fie literă}few{Trebuie să conțină cel puțin # caractere care să nu fie litere}other{Trebuie să conțină cel puțin # de caractere care să nu fie litere}}"</string>
-    <string name="lockpassword_password_requires_nonnumerical" msgid="1677123573552379526">"{count,plural, =1{Trebuie să conțină cel puțin # caracter care să nu fie cifră}few{Trebuie să conțină cel puțin # caractere care să nu fie cifre}other{Trebuie să conțină cel puțin # de caractere care să nu fie cifre}}"</string>
-    <string name="lockpassword_password_too_short" msgid="3898753131694105832">"{count,plural, =1{Trebuie să conțină cel puțin # caracter}few{Trebuie să conțină cel puțin # caractere}other{Trebuie să conțină cel puțin # de caractere}}"</string>
-    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{Trebuie să conțină cel puțin # cifră}few{Trebuie să conțină cel puțin # cifre}other{Trebuie să conțină cel puțin # de cifre}}"</string>
-    <string name="lockpassword_password_too_long" msgid="1709616257350671045">"{count,plural, =1{Trebuie să conțină mai puțin de # caracter}few{Trebuie să conțină mai puțin de # caractere}other{Trebuie să conțină mai puțin de # de caractere}}"</string>
-    <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{Trebuie să conțină mai puțin de # cifră}few{Trebuie să conțină mai puțin de # cifre}other{Trebuie să conțină mai puțin de # de cifre}}"</string>
+    <!-- no translation found for lockpassword_password_requires_alpha (713641878535268163) -->
+    <skip />
+    <!-- no translation found for lockpassword_password_requires_digit (8120467503175627546) -->
+    <skip />
+    <!-- no translation found for lockpassword_password_requires_symbol (6294855131052831204) -->
+    <skip />
+    <!-- no translation found for lockpassword_password_requires_letters (324864645474528299) -->
+    <skip />
+    <!-- no translation found for lockpassword_password_requires_lowercase (5373735547134824114) -->
+    <skip />
+    <!-- no translation found for lockpassword_password_requires_uppercase (2002482631049525313) -->
+    <skip />
+    <!-- no translation found for lockpassword_password_requires_numeric (5694949801691947801) -->
+    <skip />
+    <!-- no translation found for lockpassword_password_requires_symbols (1789501049908004075) -->
+    <skip />
+    <!-- no translation found for lockpassword_password_requires_nonletter (3089186186422638926) -->
+    <skip />
+    <!-- no translation found for lockpassword_password_requires_nonnumerical (1677123573552379526) -->
+    <skip />
+    <!-- no translation found for lockpassword_password_too_short (3898753131694105832) -->
+    <skip />
+    <!-- no translation found for lockpassword_pin_too_short (3671037384464545169) -->
+    <skip />
+    <!-- no translation found for lockpassword_password_too_long (1709616257350671045) -->
+    <skip />
+    <!-- no translation found for lockpassword_pin_too_long (8315542764465856288) -->
+    <skip />
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"Șirurile de cifre ascendente, descendente sau repetate nu sunt permise"</string>
     <string name="setup_lock_settings_options_button_label" msgid="3337845811029780896">"Opțiuni de blocare a ecranului"</string>
     <string name="build_info_fmt" msgid="5592554123908086426">"<xliff:g id="FINGERPRINT">%1$s</xliff:g>\n<xliff:g id="DATE">%2$s</xliff:g>: acum <xliff:g id="NUM_DAYS">%3$s</xliff:g> zile"</string>
@@ -771,15 +781,6 @@
     <string name="work_policy_privacy_settings" msgid="5263835989260149968">"Politica <xliff:g id="ORGANIZATION_NAME">%1$s</xliff:g> privind vehiculele"</string>
     <string name="work_policy_privacy_settings_summary" msgid="5321618399949880194">"Setări gestionate de administratorul organizației"</string>
     <string name="footer_learn_more_content_description" msgid="7749452309729272078">"Aflați mai multe despre <xliff:g id="SERVICE">%1$s</xliff:g>"</string>
-    <string name="enterprise_privacy_settings" msgid="6496900796150572727">"Informații despre vehiculul gestionat"</string>
-    <string name="enterprise_privacy_settings_summary_generic" msgid="5850991363779957797">"Setări gestionate de administratorul flotei"</string>
-    <string name="enterprise_privacy_header" msgid="4652489109303330306">"Pentru a acorda acces la datele acestui vehicul gestionat, administratorul flotei poate să modifice setările și să instaleze software pe sistemul de infotainment.\n\nPentru detalii suplimentare, contactați administratorul flotei."</string>
-    <string name="enterprise_privacy_exposure_category" msgid="4870494030035008520">"Informații pe care le poate vedea administratorul flotei"</string>
-    <string name="enterprise_privacy_exposure_changes_category" msgid="8837106430193547177">"Modificări făcute de administratorul flotei"</string>
-    <string name="enterprise_privacy_exposure_desc" msgid="7962571201715956427">" "<li>"Datele asociate cu contul vehiculului gestionat"</li>\n" "<li>"Lista de aplicații vehiculului gestionat"</li>\n" "<li>"Timpul petrecut și cantitatea de date folosite pentru fiecare aplicație"</li></string>
-    <string name="enterprise_privacy_device_access_category" msgid="5820180227429886857">"Accesul la sistemul de infotainment"</string>
-    <string name="enterprise_privacy_installed_packages" msgid="1069862734971848156">"Lista de aplicații ale vehiculului"</string>
-    <string name="enterprise_privacy_apps_count_estimation_info" msgid="2684195229249659340">"Numărul de aplicații este estimat. Este posibil ca acesta să nu includă aplicațiile instalate în afara Magazinului Play."</string>
     <plurals name="enterprise_privacy_number_packages_lower_bound" formatted="false" msgid="1628398874478431488">
       <item quantity="few">Minimum <xliff:g id="COUNT_1">%d</xliff:g> aplicații</item>
       <item quantity="other">Minimum <xliff:g id="COUNT_1">%d</xliff:g> de aplicații</item>
@@ -790,22 +791,6 @@
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> de aplicații</item>
       <item quantity="one"><xliff:g id="COUNT_0">%d</xliff:g> aplicație</item>
     </plurals>
-    <string name="enterprise_privacy_network_logs" msgid="5093305105565608542">"Cel mai recent jurnal de trafic de rețea"</string>
-    <string name="enterprise_privacy_bug_reports" msgid="9197432120122370521">"Cel mai recent raport de eroare"</string>
-    <string name="enterprise_privacy_security_logs" msgid="7375479062062113231">"Cel mai recent jurnal de securitate"</string>
-    <string name="enterprise_privacy_none" msgid="2566653655908700748">"Niciuna"</string>
-    <string name="enterprise_privacy_enterprise_installed_packages" msgid="7798942534994638670">"Aplicații instalate"</string>
-    <string name="enterprise_privacy_location_access" msgid="3132799413005627076">"Permisiuni pentru locație"</string>
-    <string name="enterprise_privacy_microphone_access" msgid="4094467062253345379">"Permisiuni pentru microfon"</string>
-    <string name="enterprise_privacy_camera_access" msgid="8895281017339143744">"Permisiuni pentru camera foto"</string>
-    <string name="enterprise_privacy_enterprise_set_default_apps" msgid="3386806357685549519">"Aplicații prestabilite"</string>
-    <string name="enterprise_privacy_input_method" msgid="5062395693747004531">"Tastatură prestabilită"</string>
-    <string name="enterprise_privacy_input_method_name" msgid="2027313786295077607">"Setată la <xliff:g id="APP_LABEL">%s</xliff:g>"</string>
-    <string name="enterprise_privacy_global_http_proxy" msgid="1366593928008294049">"Proxy global HTTP setat"</string>
-    <string name="enterprise_privacy_ca_certs_personal" msgid="5677098981429650665">"Date de conectare de încredere în profilul personal"</string>
-    <string name="enterprise_privacy_device_access_desc" msgid="3442555102576036038">" "<li>"Administratorii pot să blocheze sistemul de infotainment și să reseteze parola"</li>\n" "<li>"Administratorii pot să șteargă date de pe sistemul de infotainment"</li></string>
-    <string name="enterprise_privacy_failed_password_wipe_device" msgid="4768743631260876559">"Încercări nereușite de introducere a parolei înainte de a șterge toate datele de pe sistemul de infotainment"</string>
-    <string name="enterprise_privacy_failed_password_wipe_current_user" msgid="786246192213446835">"Încercări nereușite de introducere a parolei înainte de a șterge datele din profil"</string>
     <plurals name="enterprise_privacy_number_failed_password_wipe" formatted="false" msgid="445847844239023816">
       <item quantity="few"><xliff:g id="COUNT_1">%d</xliff:g> încercări</item>
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> de încercări</item>
@@ -860,20 +845,12 @@
     <string name="captions_settings_text_style_yellow_on_black" msgid="4681565950104511943">"Galben pe negru"</string>
     <string name="captions_settings_text_style_yellow_on_blue" msgid="5072521958156112239">"Galben pe albastru"</string>
     <string name="accessibility_settings_screen_reader_title" msgid="5113265553157624836">"Cititor de ecran"</string>
-    <string name="screen_reader_settings_off" msgid="6081562047935689764">"Dezactivat"</string>
-    <string name="screen_reader_settings_on" msgid="2168217218643349459">"Rostește elementele de pe ecran"</string>
-    <string name="enable_screen_reader_toggle_title" msgid="7641307781194619254">"Folosiți <xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g>"</string>
-    <string name="screen_reader_options_title" msgid="1073640098442831819">"Opțiuni"</string>
-    <string name="screen_reader_description_title" msgid="8766666406552388012">"Setări"</string>
-    <string name="camera_settings_title" msgid="2837785830355288903">"Camera foto"</string>
-    <string name="camera_toggle_title" msgid="1990732328673068456">"Folosiți camera foto"</string>
-    <string name="camera_toggle_summary" msgid="5751159996822627567">"Permiteți accesul tuturor aplicațiilor la camera foto"</string>
-    <string name="camera_manage_permissions" msgid="9005596413781984368">"Gestionați permisiunile pentru camera foto"</string>
-    <string name="camera_recently_accessed" msgid="8084100710444691977">"Accesate recent"</string>
-    <string name="camera_no_recent_access" msgid="965105023454777859">"Nicio aplicație recentă"</string>
-    <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"Nicio aplicație nu are acces"</string>
-    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{# din {total_count} aplicații are acces}few{# din {total_count} aplicații au acces}other{# din {total_count} aplicații au acces}}"</string>
-    <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Accesate recent"</string>
-    <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Afișați tot"</string>
-    <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Se încarcă…"</string>
+    <string name="talkback_title" msgid="6529000326454628289">"TalkBack"</string>
+    <string name="talkback_settings_off" msgid="1486849504005704390">"Dezactivat"</string>
+    <string name="talkback_settings_on" msgid="796292072895957042">"Rostește elementele de pe ecran"</string>
+    <string name="enable_talkback_toggle_title" msgid="3027666779214128091">"Folosiți TalkBack"</string>
+    <string name="talkback_options_title" msgid="7366357383004455638">"Opțiuni"</string>
+    <string name="talkback_settings_title" msgid="631275474070654027">"Setări"</string>
+    <string name="about_talkback_title" msgid="6048639389606001298">"Despre TalkBack"</string>
+    <string name="about_talkback_description" msgid="5438077447169311605">"Funcția TalkBack nu este disponibilă când vehiculul este în mișcare.\n\nCând funcția TalkBack este activată, oferă feedback rostit, astfel încât să puteți folosi dispozitivul fără a privi ecranul. Funcția TalkBack este destinată situațiilor sau utilizatorilor cu dificultăți în a vedea ecranul."</string>
 </resources>
