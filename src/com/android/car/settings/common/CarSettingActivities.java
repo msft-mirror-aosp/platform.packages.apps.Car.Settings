@@ -94,12 +94,6 @@ public class CarSettingActivities {
                 return null;
             }
         }
-
-        @Override
-        protected boolean shouldFocusContentOnLaunch() {
-            // Focus should stay with the top-level menu for the HomepageActivity.
-            return false;
-        }
     }
 
     // Homepage sub-sections
