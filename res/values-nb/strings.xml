@@ -24,14 +24,13 @@
     <string name="auto_brightness_title" msgid="9124647862844666581">"Tilpasset lysstyrke"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Juster lysstyrken på skjermen basert på omgivelsene"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Nattlys er på"</string>
-    <string name="night_mode_tile_label" msgid="6603597795502131664">"Nattmodus"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Nettverk og internett"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mobilnettverk"</string>
     <string name="mobile_network_summary_count" msgid="760865625847664029">"{count,plural, =1{# SIM-kort}other{# SIM-kort}}"</string>
     <string name="mobile_network_active_sim" msgid="1901674954229832811">"Aktiv / SIM-kort"</string>
     <string name="mobile_network_inactive_sim" msgid="3644984830926224318">"Inaktiv / SIM-kort"</string>
-    <string name="mobile_network_active_esim" msgid="5864100786496761032">"Aktiv / nedlastet SIM-kort"</string>
-    <string name="mobile_network_inactive_esim" msgid="1397332352238119032">"Inaktiv / nedlastet SIM-kort"</string>
+    <string name="mobile_network_active_esim" msgid="5175362818078597096">"Aktivt / e-SIM-kort"</string>
+    <string name="mobile_network_inactive_esim" msgid="7273712403773327964">"Inaktivt / e-SIM-kort"</string>
     <string name="mobile_network_list_add_more" msgid="6174294462747070655">"Legg til mer"</string>
     <string name="mobile_network_toggle_title" msgid="3515647310810280063">"Mobildata"</string>
     <string name="mobile_network_toggle_summary" msgid="8698267487987697148">"Bruk data via mobilnettverket"</string>
@@ -88,11 +87,11 @@
     <string name="network_and_internet_data_usage_time_range_summary" msgid="1792995626433410056">"%1$s brukt %2$s – %3$s"</string>
     <string name="network_and_internet_join_other_network_title" msgid="7126831320010062712">"Koble til et annet nettverk"</string>
     <string name="network_and_internet_network_preferences_title" msgid="2983548049081168876">"Nettverksinnstillinger"</string>
-    <string name="wifi_settings" msgid="7701477685273103841">"Wi-Fi"</string>
-    <string name="wifi_starting" msgid="473253087503153167">"Slår på Wi-Fi …"</string>
-    <string name="wifi_stopping" msgid="3534173972547890148">"Slår av Wi-Fi …"</string>
+    <string name="wifi_settings" msgid="7701477685273103841">"Wifi"</string>
+    <string name="wifi_starting" msgid="473253087503153167">"Slår på Wifi …"</string>
+    <string name="wifi_stopping" msgid="3534173972547890148">"Slår av Wifi …"</string>
     <string name="loading_wifi_list" msgid="8584901433195876465">"Laster inn Wi‑Fi-liste"</string>
-    <string name="wifi_disabled" msgid="5013262438128749950">"Wi-Fi er slått av"</string>
+    <string name="wifi_disabled" msgid="5013262438128749950">"Wifi er slått av"</string>
     <string name="wifi_failed_forget_message" msgid="121732682699377206">"Kunne ikke glemme nettverket"</string>
     <string name="wifi_failed_connect_message" msgid="4447498225022147324">"Kunne ikke koble til nettverket"</string>
     <string name="wifi_setup_add_network" msgid="3660498520389954620">"Legg til nettverk"</string>
@@ -140,14 +139,16 @@
     <string name="wifi_settings_scanning_required_turn_on" msgid="4464931023377210050">"Slå på"</string>
     <string name="wifi_settings_scanning_required_enabled" msgid="5457372118991438313">"Wi‑Fi-skanning er slått på"</string>
     <string name="wifi_cellular_fallback_title" msgid="8322675436784870862">"Bytt til mobildata automatisk"</string>
-    <string name="wifi_cellular_fallback_summary" msgid="2433848528924203758">"Bruk mobildata når Wi-Fi ikke har internettilgang. Avgifter for databruk kan påløpe."</string>
-    <string name="wifi_network_state_switch_subtitle" msgid="7462322882046013762">"Finn og koble til Wi-Fi-nettverk"</string>
+    <string name="wifi_cellular_fallback_summary" msgid="2433848528924203758">"Bruk mobildata når Wifi ikke har internettilgang. Avgifter for databruk kan påløpe."</string>
+    <string name="wifi_network_state_switch_subtitle" msgid="7462322882046013762">"Finn og koble til Wifi-nettverk"</string>
     <string name="learn_more" msgid="8214605928933358604">"Finn ut mer"</string>
-    <string name="wifi_hotspot_name_title" msgid="8844779338692535356">"Navn på Wi-Fi-sone"</string>
+    <string name="wifi_hotspot_name_title" msgid="8844779338692535356">"Navn på wifi-sone"</string>
     <string name="wifi_hotspot_name_summary_connecting" msgid="5262510450498600038">"Slår på <xliff:g id="WIFI_HOTSPOT_NAME">%1$s</xliff:g> …"</string>
     <string name="wifi_hotspot_name_summary_connected" msgid="7421325340822195506">"Andre enheter kan koble til <xliff:g id="WIFI_HOTSPOT_NAME">%1$s</xliff:g>"</string>
-    <string name="wifi_hotspot_password_title" msgid="4103948315849351988">"Passord for Wi-Fi-sone"</string>
+    <string name="wifi_hotspot_password_title" msgid="4103948315849351988">"Passord for wifi-sone"</string>
     <string name="wifi_hotspot_security_title" msgid="2299925790743587725">"Sikkerhet"</string>
+    <string name="wifi_hotspot_wpa3_sae" msgid="4752416911592950174">"WPA3-Personal"</string>
+    <string name="wifi_security_psk_sae" msgid="8738371461215752280">"WPA2/WPA3-Personal"</string>
     <string name="wifi_hotspot_wpa2_personal" msgid="7135181212837798318">"Personlig WPA2"</string>
     <string name="wifi_hotspot_security_none" msgid="2514844105085054386">"Ingen"</string>
     <string name="wifi_hotspot_ap_band_title" msgid="7685279281668988593">"AP-bånd"</string>
@@ -158,23 +159,24 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"5,0 GHz-bånd foretrekkes"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
-    <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Velg minst ett bånd for Wi-Fi-sonen:"</string>
-    <string name="tether_settings_title_all" msgid="4663704772599383169">"Wi-Fi-sone og internettdeling"</string>
-    <string name="hotspot_settings_title" msgid="8220814387592756713">"Wi-Fi-sone"</string>
+    <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Velg minst ett bånd for wifi-sonen:"</string>
+    <string name="tether_settings_title_all" msgid="4663704772599383169">"Wifi-sone og internettdeling"</string>
+    <string name="hotspot_settings_title" msgid="8220814387592756713">"Wifi-sone"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Av"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Slå av Wi-Fi-sone automatisk"</string>
+    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Slå av wifi-sone automatisk"</string>
     <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Wi‑Fi-sonen blir slått av hvis ingen enheter er koblet til"</string>
-    <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> ønsker å slå på Wi-Fi"</string>
-    <string name="wifi_ask_disable" msgid="2949290055916181553">"<xliff:g id="REQUESTER">%s</xliff:g> ønsker å slå av Wi-Fi"</string>
+    <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> ønsker å slå på Wifi"</string>
+    <string name="wifi_ask_disable" msgid="2949290055916181553">"<xliff:g id="REQUESTER">%s</xliff:g> ønsker å slå av Wifi"</string>
     <string name="wifi_error" msgid="3105105447117289410">"Feil"</string>
     <string name="network_connection_request_dialog_title" msgid="8449606155059098762">"Enhet som skal brukes med <xliff:g id="APPNAME">%1$s</xliff:g>"</string>
     <string name="network_connection_timeout_dialog_message" msgid="2536299451668687586">"Fant ingen enheter. Sørg for at enhetene er slått på og tilgjengelige for tilkobling."</string>
-    <string name="network_connection_timeout_dialog_ok" msgid="2228662561126434792">"Prøv igjen"</string>
+    <string name="network_connection_timeout_dialog_ok" msgid="2228662561126434792">"Prøv på nytt"</string>
     <string name="network_connection_errorstate_dialog_message" msgid="4268321315241218483">"Noe dukket opp. Appen har kansellert forespørselen om å velge en enhet."</string>
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"Tilkoblingen var vellykket"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"Vis alle"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"Søker"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
+    <string name="bluetooth_toggle_title" msgid="1431803611346881088">"Bruk Bluetooth"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"Enhet uten navn"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"Tilkoblede enheter"</string>
     <string name="bluetooth_pair_new_device" msgid="6948753485443263095">"Koble til en ny enhet"</string>
@@ -206,7 +208,7 @@
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s er koblet til"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s er frakoblet"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Forespørsel om Bluetooth-tilkobling"</string>
-    <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Koble sammen og koble til"</string>
+    <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Koble sammen"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Bluetooth-tilkoblingskode"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="1636575922217263060">"PIN-koden inneholder bokstaver eller symboler"</string>
     <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"Skriv inn sammenkoblingskoden, og trykk på Retur eller Enter"</string>
@@ -225,7 +227,7 @@
     <string name="language_picker_list_all_header" msgid="1577387973934368428">"Alle språk"</string>
     <string name="keyboard_settings" msgid="1959697870618278081">"Tastatur"</string>
     <string name="manage_keyboard" msgid="4045394766282200132">"Administrer tastaturer"</string>
-    <string name="text_to_speech_settings" msgid="811985746199507343">"Tekst til tale-utdata"</string>
+    <string name="text_to_speech_settings" msgid="811985746199507343">"Tekst til tale"</string>
     <string name="text_to_speech_preferred_engine_settings" msgid="2766782925699132256">"Foretrukket motor"</string>
     <string name="text_to_speech_current_engine" msgid="8133107484909612597">"Nåværende motor"</string>
     <string name="tts_speech_rate" msgid="4512944877291943133">"Talehastighet"</string>
@@ -298,14 +300,16 @@
     <string name="apps_and_notifications_settings" msgid="8704585874333781975">"Apper og varsler"</string>
     <string name="all_applications" msgid="7798210477486822168">"Vis alle apper"</string>
     <string name="default_applications" msgid="1558183275638697087">"Standardapper"</string>
+    <string name="performance_impacting_apps" msgid="3439260699394720569">"Apper som påvirker ytelsen"</string>
     <string name="app_permissions" msgid="32799922508313948">"Apptillatelser"</string>
-    <string name="app_permissions_summary" msgid="5402214755935368418">"Kontrollér apptilgang til dataene dine"</string>
+    <string name="app_permissions_summary" msgid="5402214755935368418">"Kontroller apptilgang til dataene dine"</string>
     <string name="applications_settings" msgid="794261395191035632">"App-info"</string>
-    <string name="force_stop" msgid="2153183697014720520">"Tving avslutning"</string>
-    <string name="force_stop_dialog_title" msgid="3342850939200388694">"Vil du tvinge avslutning?"</string>
+    <string name="force_stop" msgid="1616958676171167028">"Stopp appen"</string>
+    <string name="force_stop_dialog_title" msgid="4481858344628934971">"Vil du stoppe appen?"</string>
     <string name="force_stop_dialog_text" msgid="4354954014318432599">"Hvis du tvinger avslutning av en app, kan det oppstå problemer."</string>
-    <string name="prioritize_app_performance_dialog_title" msgid="2561577032540073080">"Vil du slå på Prioriter appytelse?"</string>
-    <string name="prioritize_app_performance_dialog_text" msgid="572525689800110355">"Hvis du slår dette på, kan det gjøre systemet ustabilt eller ha langsiktig virkning på maskinvaren. Vil du fortsette?"</string>
+    <string name="force_stop_success_toast_text" msgid="2986272849275894254">"<xliff:g id="APP_NAME">%1$s</xliff:g> er stoppet."</string>
+    <string name="prioritize_app_performance_dialog_title" msgid="3205297520523665568">"Vil du prioritere appytelsen?"</string>
+    <string name="prioritize_app_performance_dialog_text" msgid="4321564728229192878">"Dette kan gjøre systemet ustabilt eller ha langsiktig innvirkning på maskinvaren. Vil du fortsette?"</string>
     <string name="prioritize_app_performance_dialog_action_on" msgid="3556735049873419163">"Ja"</string>
     <string name="prioritize_app_performance_dialog_action_off" msgid="2813324718753199319">"Nei, takk"</string>
     <string name="disable_text" msgid="4358165448648990820">"Deaktiver"</string>
@@ -330,7 +334,7 @@
     <string name="data_usage_app_summary_title" msgid="5012851696585421420">"Appens databruk"</string>
     <string name="data_usage_usage_history_title" msgid="2386346082501471648">"Brukslogg"</string>
     <string name="data_usage_all_apps_title" msgid="5956991037518761599">"Alle apper"</string>
-    <string name="app_data_usage_title" msgid="6991057296054761322">"Data- og Wi-Fi-bruk"</string>
+    <string name="app_data_usage_title" msgid="6991057296054761322">"Data- og Wifi-bruk"</string>
     <string name="app_data_usage_usage_history_title" msgid="5861801915345874959">"Brukslogg"</string>
     <string name="app_data_usage_total_usage" msgid="6166480544992906281">"Total bruk"</string>
     <string name="app_data_usage_foreground" msgid="76513424438149709">"Forgrunnen"</string>
@@ -374,8 +378,9 @@
     <string name="apps_recently_opened" msgid="5320377037971195984">"Nylig åpnet"</string>
     <string name="apps_view_all_apps_title" msgid="2322120325505230530">"Se alle %1$d apper"</string>
     <string name="apps_permission_manager_title" msgid="8776335943862484131">"Behandle tillatelser"</string>
-    <string name="apps_permission_manager_summary" msgid="4180424218228141274">"Kontrollér apptilgang til dataene dine"</string>
+    <string name="apps_permission_manager_summary" msgid="4180424218228141274">"Kontroller apptilgang til dataene dine"</string>
     <string name="apps_default_apps_summary" msgid="2017792579839972926">"For assistenten med mer"</string>
+    <string name="performance_impacting_apps_summary" msgid="7762122057244111162">"{count,plural, =1{# app påvirker ytelsen}other{# apper påvirker ytelsen}}"</string>
     <string name="apps_special_app_access_summary" msgid="6464767436309742163">"Til system og andre innstillinger"</string>
     <string name="special_access" msgid="5730278220917123811">"Spesiell apptilgang"</string>
     <string name="show_system" msgid="4401355756969485287">"Vis systemet"</string>
@@ -385,34 +390,43 @@
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Med denne tillatelsen kan apper endre systeminnstillingene."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Tilgang til varsler"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"Vil du gi tilgang til varsler for <xliff:g id="SERVICE">%1$s</xliff:g>?"</string>
+    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> kan lese alle varsler, inkludert personopplysninger som kontaktnavn og tekstinnholdet i meldinger du mottar. Den kan også avvise varsler eller utløse handlingsknapper i varslene. \n\nDette gir også appen muligheten til å slå Ikke forstyrr av eller på samt endre tilknyttede innstillinger."</string>
+    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"Hvis du slår av varseltilgang for <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>, kan tilgang til «Ikke forstyrr» også bli slått av."</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"Slå av"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Avbryt"</string>
+    <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Disse appene påvirker systemytelsen negativt, og de er forhindret fra å kjøre i bakgrunnen.\nDu kan prioritere apper for å tillate at de kjører i bakgrunnen, og fjerne dem fra denne listen."</string>
+    <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Prioriter appen"</string>
     <string name="premium_sms_access_title" msgid="1409118461646148686">"Tilgang til premium-SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Premium-SMS kan koste penger og legges til telefonregningen din. Hvis du slår på tillatelse for en app, kan du sende premium-SMS via den appen."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Brukstilgang"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Med brukstilgang kan apper spore hvilke andre apper du bruker, og hvor ofte du bruker dem. Operatør, språkinnstillinger og annen informasjon kan også spores med brukstilgang."</string>
-    <string name="wifi_control_title" msgid="5660436566907731929">"Wi-Fi-kontroll"</string>
-    <string name="wifi_control_description" msgid="6021926850423169261">"Med Wi-Fi-kontroll kan en app slå Wi-Fi på eller av, søke etter og koble til Wi-Fi-nettverk, legge til eller fjerne nettverk eller starte en lokal Wi-Fi-sone"</string>
+    <string name="wifi_control_title" msgid="5660436566907731929">"Wifi-kontroll"</string>
+    <string name="wifi_control_description" msgid="6021926850423169261">"Med wifi-kontroll kan en app slå Wifi på eller av, søke etter og koble til wifi-nettverk, legge til eller fjerne nettverk eller starte en lokal wifi-sone"</string>
     <string name="more_special_access_title" msgid="166115485446645971">"Mer"</string>
     <string name="location_settings_title" msgid="901334356682423679">"Posisjon"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Bruk posisjon"</string>
     <string name="location_toggle_summary" msgid="7977868708102299495">"Gi spesifiserte apper tilgang til posisjonen din"</string>
-    <string name="location_toggle_off_warning" msgid="8396854289251143748">"Hvis du slår dette av, fjernes posisjonstilgang for alle appene. Apper for sjåførhjelp har fortsatt tilgang."</string>
-    <string name="location_driver_assistance_toggle_title" msgid="9201622805420459957">"Bruk posisjon for sjåførhjelp"</string>
+    <string name="location_toggle_off_warning" msgid="5959449346865136081">"Hvis du slår dette av, fjernes posisjonstilgang for alle apper, unntatt apper for førerhjelp"</string>
+    <string name="location_driver_assistance_toggle_title" msgid="3780157378527924932">"Bruk posisjon for førerhjelp"</string>
     <string name="location_driver_assistance_toggle_off_title" msgid="2218532550578204718">"Posisjonen til kjøretøyet er av"</string>
-    <string name="location_driver_assistance_toggle_off_summary" msgid="1516786816178866919">"Apper for sjåførhjelp kan ikke se posisjonen din"</string>
+    <string name="location_driver_assistance_toggle_off_summary" msgid="6040822988891113026">"Førerhjelp-apper har ikke tilgang til posisjonen din"</string>
     <string name="location_driver_assistance_action_text" msgid="1887309495010247883">"Endre"</string>
     <string name="location_driver_assistance_toggle_summary" msgid="2732591196508054649">"La apper som hjelper med kjøring, få tilgang til posisjonen din"</string>
-    <string name="location_driver_assistance_toggle_off_warning" msgid="8097738968253492982">"Hvis du slår av dette, blir apper for sjåførhjelp som trenger posisjonsinformasjon, slått av."</string>
+    <string name="location_driver_assistance_toggle_off_warning" msgid="2733124752598498356">"Hvis du slår av dette, blir apper for førerhjelp som trenger posisjonsinformasjon, slått av"</string>
     <string name="driver_assistance_warning_confirm_label" msgid="2873799611160864931">"Slå av likevel"</string>
-    <string name="location_settings_recent_requests_title" msgid="6345634382240930628">"Nylige posisjonsforespørsler"</string>
-    <string name="location_settings_recent_requests_empty_message" msgid="7789667070033674910">"Ingen nylige posisjonsforespørsler"</string>
+    <string name="location_recently_accessed" msgid="522888989582110975">"Nylig brukt"</string>
+    <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Nylig brukt"</string>
+    <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Se alle"</string>
+    <string name="location_no_recent_access" msgid="2859914321242257931">"Ingen nylige apper"</string>
+    <string name="driver_assistance_label" msgid="9217315205754658940">"<xliff:g id="TIME">%1$s</xliff:g> • Førerhjelp"</string>
+    <string name="location_driver_assistance_privacy_policy_header_content" msgid="8118086439003674350">"Apper med tilgang til kjøretøyets posisjon for funksjoner for førerhjelp"</string>
+    <string name="location_driver_assistance_privacy_policy_button_text" msgid="669921557502414704">"Personvernregler"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"Tillatelser på appnivå"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"Posisjonstjenester"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"Bruk posisjon"</string>
-    <string name="location_settings_footer" msgid="296892848338100051">"Posisjonstjenestene kan bruke kilder som GPS, Wi-Fi, mobilnettverk og sensorer for å fastslå posisjonen til enheten."</string>
-    <string name="driver_assistance_settings_title" msgid="4915804073177128915">"Sjåførhjelp"</string>
-    <string name="adas_settings_footer" msgid="5128483877858058534">"Posisjonsinformasjon som sendes til apper for sjåførhjelp, inneholder ikke informasjon som identifiserer deg. Den lagres i maksimalt to dager før den slettes."</string>
+    <string name="location_settings_footer" msgid="296892848338100051">"Posisjonstjenestene kan bruke kilder som GPS, Wifi, mobilnettverk og sensorer for å fastslå posisjonen til enheten."</string>
+    <string name="driver_assistance_settings_title" msgid="4915804073177128915">"Førerhjelp"</string>
+    <string name="adas_settings_footer" msgid="6697021691244459156">"Posisjonsinformasjon som sendes til apper for førerhjelp, inneholder ikke informasjon som identifiserer deg. Den lagres i maksimalt to dager før den slettes."</string>
     <string name="microphone_settings_title" msgid="7125554350537136922">"Mikrofon"</string>
     <string name="microphone_toggle_title" msgid="911586035332827275">"Bruk mikrofonen"</string>
     <string name="microphone_toggle_summary" msgid="2682653449849128626">"Gi alle apper tilgang til mikrofonen"</string>
@@ -428,6 +442,9 @@
     <string name="system_update_settings_title" msgid="8448588267784138855">"Systemoppdateringer"</string>
     <string name="system_advanced_title" msgid="6303355131691523362">"Avansert"</string>
     <string name="system_advanced_summary" msgid="5833643795981791953">"Om, juridisk informasjon, tilbakestilling med mer"</string>
+    <string name="restart_infotainment_system_title" msgid="5174129167446756511">"Start infotainment-systemet på nytt"</string>
+    <string name="restart_infotainment_system_dialog_text" msgid="6395281407323116808">"Det kan ta noen minutter å starte infotainment-systemet til bilen på nytt. Vil du fortsette?"</string>
+    <string name="continue_confirmation" msgid="1598892163951467191">"Fortsett"</string>
     <string name="firmware_version" msgid="8491753744549309333">"Android-versjon"</string>
     <string name="security_patch" msgid="4794276590178386903">"Nivå av Android-sikkerhetsoppdatering"</string>
     <string name="hardware_info" msgid="3973165746261507658">"Modell og maskinvare"</string>
@@ -468,11 +485,11 @@
     <string name="developer_options_settings" msgid="1530739225109118480">"Utvikleralternativer"</string>
     <string name="reset_options_title" msgid="4388902952861833420">"Alternativer for tilbakestilling"</string>
     <string name="reset_options_summary" msgid="5508201367420359293">"Tilbakestilling av nettverk, apper eller enhet"</string>
-    <string name="reset_network_title" msgid="1284233059990797263">"Tilbakestill nettverket"</string>
-    <string name="reset_network_desc" msgid="602381374544634925">"Dette tilbakestiller alle nettverksinnstillingene, inkludert"</string>
-    <string name="reset_network_item_wifi" msgid="7569481589699982698"><li>"Wi‑Fi"</li></string>
+    <string name="reset_network_title" msgid="3077846909739832734">"Tilbakestill wifi og Bluetooth"</string>
+    <string name="reset_network_desc" msgid="3332203703135823033">"Dette tilbakestiller wifi- og Bluetooth-innstillingene og fjerner tidligere tilkoblede"</string>
+    <string name="reset_network_item_wifi" msgid="2876370861806060314"><li>"wifi-nettverk og -passord"</li></string>
     <string name="reset_network_item_mobile" msgid="5747282716664480997"><li>"Mobildata"</li></string>
-    <string name="reset_network_item_bluetooth" msgid="6035019931106921284"><li>"Bluetooth"</li></string>
+    <string name="reset_network_item_bluetooth" msgid="7475279871421815601"><li>"telefoner og andre Bluetooth-enheter"</li></string>
     <string name="reset_esim_title" msgid="8132107637911831211">"Slett alle e-SIM-kortene på kjøretøyet"</string>
     <string name="reset_esim_desc" msgid="1437276625485586740">"Dette kansellerer ikke serviceavtalen din."</string>
     <string name="reset_esim_error_title" msgid="7245109418130525492">"Kan ikke tilbakestille e-SIM-kort"</string>
@@ -510,7 +527,7 @@
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Dato"</string>
     <string name="date_time_set_date" msgid="2537494485643283230">"Angi dato"</string>
     <string name="zone_list_menu_sort_alphabetically" msgid="7041628618528523514">"Sortér alfabetisk"</string>
-    <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Sortér etter tidssone"</string>
+    <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Sorter etter tidssone"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Dato"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Klokkeslett"</string>
     <string name="user_admin" msgid="1535484812908584809">"Administrator"</string>
@@ -545,8 +562,6 @@
     <string name="choose_new_admin_title" msgid="1915428454917699587">"Velg en ny administrator"</string>
     <string name="choose_new_admin_message" msgid="7468286545352043354">"Du trenger minst én administrator. For å slette denne administratoren må du først finne en erstatter."</string>
     <string name="choose_new_admin_label" msgid="5987653639387437939">"Velg en administrator"</string>
-    <string name="user_guest" msgid="3465399481257448601">"Gjest"</string>
-    <string name="start_guest_session" msgid="4438752398760283201">"Gjest"</string>
     <string name="user_switch" msgid="6544839750534690781">"Bytt"</string>
     <string name="current_user_name" msgid="3813671533249316823">"Deg (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"Navn"</string>
@@ -572,7 +587,7 @@
     <string name="storage_clear_user_data_text" msgid="8787615136779130680">"Tøm lagring"</string>
     <string name="storage_clear_cache_btn_text" msgid="8449547925966775612">"Tøm bufferen"</string>
     <string name="storage_clear_data_dlg_title" msgid="5863775997588969879">"Vil du slette appdataene?"</string>
-    <string name="storage_clear_data_dlg_text" msgid="795055288575727801">"Alle dataene i appen slettes permanent. Dette omfatter alle filer, innstillinger, kontoer, databaser osv."</string>
+    <string name="storage_clear_data_dlg_text" msgid="3255314337644212283">"Dataene i denne appen slettes permanent. Dette inkluderer filer, innstillinger, databaser og andre appdata."</string>
     <string name="storage_clear_failed_dlg_text" msgid="6710485971686866306">"Kunne ikke frigi lagringsplass for appen."</string>
     <string name="storage_unmount_success" msgid="1553591517580407021">"<xliff:g id="NAME">%1$s</xliff:g> ble løst ut på en trygg måte"</string>
     <string name="storage_unmount_failure" msgid="4591934911541762883">"Kunne ikke løse ut <xliff:g id="NAME">%1$s</xliff:g> på en trygg måte"</string>
@@ -585,7 +600,7 @@
     <string name="data_usage_auto_sync_on_dialog_title" msgid="8068513213445588532">"Vil du tillate automatisk datasynkronisering?"</string>
     <string name="data_usage_auto_sync_on_dialog" msgid="8683935973719807821">"Alle endringene du gjør i kontoene dine på nettet, kopieres auto­matisk til kjøretøyet ditt.\n\nNoen kontoer kan også auto­matisk kopiere endringer du gjør i kjøretøyet, til nettet."</string>
     <string name="data_usage_auto_sync_off_dialog_title" msgid="6683011954002351091">"Vil du ikke tillate automatisk datasynkronisering?"</string>
-    <string name="data_usage_auto_sync_off_dialog" msgid="5040873073016183315">"Dette gir lavere databruk, men du må synkronisere hver konto manuelt for å samle inn ny informasjon. Og du mottar ikke varsler ved oppdateringer."</string>
+    <string name="data_usage_auto_sync_off_dialog" msgid="5040873073016183315">"Dette gir lavere databruk, men du må synkronisere hver konto manuelt for å samle inn ny informasjon. Og du får ikke varsler om oppdateringer."</string>
     <string name="account_details_title" msgid="7529571432258448573">"Kontoinformasjon"</string>
     <string name="add_account_title" msgid="5988746086885210040">"Legg til konto"</string>
     <string name="add_an_account" msgid="1072285034300995091">"Legg til en konto"</string>
@@ -609,9 +624,11 @@
     <string name="sync_is_failing" msgid="5766255460901806206">"Det er midlertidige problemer med synkroniseringen. Vent litt."</string>
     <string name="privacy_settings_title" msgid="3150145262029229572">"Personvern"</string>
     <string name="privacy_vehicle_data_title" msgid="6385777370742595651">"Data om infotainment-systemet"</string>
-    <string name="privacy_location_summary" msgid="7019817848470566242">"Kontrollér apptilgangen til posisjonen din"</string>
+    <string name="privacy_location_summary" msgid="7019817848470566242">"Kontroller apptilgangen til posisjonen din"</string>
+    <string name="mute_camera_title" msgid="215494079895460172">"Kamera"</string>
+    <string name="mute_camera_summary" msgid="1237452064757403042">"Kontroller apptilgangen til kameraene dine"</string>
     <string name="mute_mic_title" msgid="2813215197799569553">"Mikrofon"</string>
-    <string name="mute_mic_summary" msgid="5426953935775303904">"Kontrollér tilgangen til mikrofonen"</string>
+    <string name="mute_mic_summary" msgid="5426953935775303904">"Kontroller tilgangen til mikrofonen"</string>
     <string name="vehicle_data_title" msgid="935933215161763721">"Data om infotainment-systemet"</string>
     <string name="vehicle_data_summary" msgid="9204836361819386115">"Administrer aktivitetene og informasjonen som er lagret i dette kjøretøyet"</string>
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Slett profilen din"</string>
@@ -634,7 +651,7 @@
     <string name="set_screen_lock" msgid="5239317292691332780">"Angi en skjermlås"</string>
     <string name="lockscreen_choose_your_pin" msgid="1645229555410061526">"Velg PIN-koden din"</string>
     <string name="lockscreen_choose_your_password" msgid="4487577710136014069">"Velg passordet ditt"</string>
-    <string name="current_screen_lock" msgid="637651611145979587">"Gjeldende skjermlås"</string>
+    <string name="current_screen_lock" msgid="637651611145979587">"Aktiv skjermlås"</string>
     <string name="choose_lock_pattern_message" msgid="6242765203541309524">"Angi et sikkerhetsmønster"</string>
     <string name="lockpattern_retry_button_text" msgid="4655398824001857843">"Fjern"</string>
     <string name="lockpattern_cancel_button_text" msgid="4068764595622381766">"Avbryt"</string>
@@ -643,7 +660,7 @@
     <string name="lockpattern_recording_inprogress" msgid="1575019990484725964">"Løft fingeren når du er ferdig"</string>
     <string name="lockpattern_pattern_entered" msgid="6103071005285320575">"Mønsteret er registrert"</string>
     <string name="lockpattern_need_to_confirm" msgid="4648070076022940382">"Tegn mønsteret på nytt for å bekrefte"</string>
-    <string name="lockpattern_recording_incorrect_too_short" msgid="2417932185815083082">"Berør minst fire punkter. Prøv igjen."</string>
+    <string name="lockpattern_recording_incorrect_too_short" msgid="2417932185815083082">"Berør minst fire punkter. Prøv på nytt."</string>
     <string name="lockpattern_pattern_wrong" msgid="929223969555399363">"Feil mønster"</string>
     <string name="lockpattern_settings_help_how_to_record" msgid="4436556875843192284">"Slik tegner du et opplåsingsmønster"</string>
     <string name="error_saving_lockpattern" msgid="2933512812768570130">"Feil ved lagring av mønster"</string>
@@ -657,7 +674,7 @@
     <string name="lock_settings_enter_pin" msgid="1669172111244633904">"Skriv inn PIN-koden din"</string>
     <string name="lock_settings_enter_password" msgid="2636669926649496367">"Skriv inn passordet ditt"</string>
     <string name="choose_lock_pin_message" msgid="2963792070267774417">"Angi en PIN-kode for sikkerheten"</string>
-    <string name="confirm_your_pin_header" msgid="9096581288537156102">"Angi PIN-koden på nytt"</string>
+    <string name="confirm_your_pin_header" msgid="9096581288537156102">"Skriv inn PIN-koden på nytt"</string>
     <string name="choose_lock_pin_hints" msgid="7362906249992020844">"PIN-koden må bestå av minst fire sifre"</string>
     <string name="lockpin_invalid_pin" msgid="2149191577096327424">"PIN-koden er ugyldig. Den må bestå av minst fire sifre."</string>
     <string name="confirm_pins_dont_match" msgid="4607110139373520720">"PIN-kodene samsvarer ikke"</string>
@@ -665,7 +682,7 @@
     <string name="lockscreen_wrong_pin" msgid="4922465731473805306">"Feil PIN-kode"</string>
     <string name="lockscreen_wrong_password" msgid="5757087577162231825">"Feil passord"</string>
     <string name="choose_lock_password_message" msgid="6124341145027370784">"Angi et passord for sikkerheten"</string>
-    <string name="confirm_your_password_header" msgid="7052891840366724938">"Angi passordet på nytt"</string>
+    <string name="confirm_your_password_header" msgid="7052891840366724938">"Skriv inn passordet på nytt"</string>
     <string name="confirm_passwords_dont_match" msgid="7300229965206501753">"Passordene samsvarer ikke"</string>
     <string name="lockpassword_clear_label" msgid="6363680971025188064">"Fjern"</string>
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"Avbryt"</string>
@@ -679,37 +696,22 @@
     <string name="lockpassword_password_recently_used" msgid="8255729487108602924">"Enhetsadministratoren forbyr nylig brukte passord"</string>
     <string name="error_saving_password" msgid="8334882262622500658">"Feil ved lagring av passord"</string>
     <string name="lockpassword_password_denylisted_by_admin" msgid="8611831198794524730">"Vanlige passord er blokkert av IT-administratoren din. Prøv et annet passord."</string>
-    <!-- no translation found for lockpassword_password_requires_alpha (713641878535268163) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_digit (8120467503175627546) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_symbol (6294855131052831204) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_letters (324864645474528299) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_lowercase (5373735547134824114) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_uppercase (2002482631049525313) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_numeric (5694949801691947801) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_symbols (1789501049908004075) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_nonletter (3089186186422638926) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_nonnumerical (1677123573552379526) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_too_short (3898753131694105832) -->
-    <skip />
-    <!-- no translation found for lockpassword_pin_too_short (3671037384464545169) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_too_long (1709616257350671045) -->
-    <skip />
-    <!-- no translation found for lockpassword_pin_too_long (8315542764465856288) -->
-    <skip />
+    <string name="lockpassword_password_requires_alpha" msgid="713641878535268163">"Må inneholde minst én bokstav"</string>
+    <string name="lockpassword_password_requires_digit" msgid="8120467503175627546">"Må inneholde minst ett siffer"</string>
+    <string name="lockpassword_password_requires_symbol" msgid="6294855131052831204">"Må inneholde minst ett symbol"</string>
+    <string name="lockpassword_password_requires_letters" msgid="324864645474528299">"{count,plural, =1{Må inneholde minst # bokstav}other{Må inneholde minst # bokstaver}}"</string>
+    <string name="lockpassword_password_requires_lowercase" msgid="5373735547134824114">"{count,plural, =1{Må inneholde minst # liten bokstav}other{Må inneholde minst # små bokstaver}}"</string>
+    <string name="lockpassword_password_requires_uppercase" msgid="2002482631049525313">"{count,plural, =1{Må inneholde minst # stor bokstav}other{Må inneholde minst # store bokstaver}}"</string>
+    <string name="lockpassword_password_requires_numeric" msgid="5694949801691947801">"{count,plural, =1{Må inneholde minst # siffer}other{Må inneholde minst # sifre}}"</string>
+    <string name="lockpassword_password_requires_symbols" msgid="1789501049908004075">"{count,plural, =1{Må inneholde minst # spesialtegn}other{Må inneholde minst # spesialtegn}}"</string>
+    <string name="lockpassword_password_requires_nonletter" msgid="3089186186422638926">"{count,plural, =1{Må inneholde minst # annet tegn enn bokstaver}other{Må inneholde minst # andre tegn enn bokstaver}}"</string>
+    <string name="lockpassword_password_requires_nonnumerical" msgid="1677123573552379526">"{count,plural, =1{Må inneholde minst # tegn som ikke er et tall}other{Må inneholde minst # tegn som ikke er et tall}}"</string>
+    <string name="lockpassword_password_too_short" msgid="3898753131694105832">"{count,plural, =1{Må inneholde minst # tegn}other{Må inneholde minst # tegn}}"</string>
+    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{Må inneholde minst # siffer}other{Må inneholde minst # sifre}}"</string>
+    <string name="lockpassword_password_too_long" msgid="1709616257350671045">"{count,plural, =1{Må inneholde færre enn # tegn}other{Må inneholde færre enn # tegn}}"</string>
+    <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{Må inneholde færre enn # siffer}other{Må inneholde færre enn # sifre}}"</string>
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"En sekvens av stigende, synkende eller like sifre er ikke tillatt"</string>
     <string name="setup_lock_settings_options_button_label" msgid="3337845811029780896">"Alternativer for skjermlås"</string>
-    <string name="build_info_fmt" msgid="5592554123908086426">"<xliff:g id="FINGERPRINT">%1$s</xliff:g>\n<xliff:g id="DATE">%2$s</xliff:g> : for <xliff:g id="NUM_DAYS">%3$s</xliff:g> dager siden"</string>
     <string name="credentials_reset" msgid="873900550885788639">"Tøm legitimasjonslageret"</string>
     <string name="credentials_reset_summary" msgid="6067911547500459637">"Fjern alle sertifikater"</string>
     <string name="credentials_reset_hint" msgid="3459271621754137661">"Vil du fjerne alt innholdet?"</string>
@@ -779,8 +781,18 @@
     <string name="number_of_device_admins" msgid="7508826094096451485">"{count,plural, =1{# aktivert app}other{# aktiverte apper}}"</string>
     <string name="number_of_device_admins_none" msgid="5547493703413973954">"Ingen aktiverte apper"</string>
     <string name="work_policy_privacy_settings" msgid="5263835989260149968">"Retningslinjer for kjøretøy for <xliff:g id="ORGANIZATION_NAME">%1$s</xliff:g>"</string>
+    <string name="work_policy_privacy_settings_no_org_name" msgid="8011687012493940230">"Retningslinjer for kjøretøy"</string>
     <string name="work_policy_privacy_settings_summary" msgid="5321618399949880194">"Innstillinger administreres av organisasjonsadministratoren"</string>
     <string name="footer_learn_more_content_description" msgid="7749452309729272078">"Finn ut mer om <xliff:g id="SERVICE">%1$s</xliff:g>"</string>
+    <string name="enterprise_privacy_settings" msgid="6496900796150572727">"Informasjon om det administrerte kjøretøyet"</string>
+    <string name="enterprise_privacy_settings_summary_generic" msgid="5850991363779957797">"Innstillinger som administreres av hovedadministratoren"</string>
+    <string name="enterprise_privacy_header" msgid="4652489109303330306">"For å gi tilgang til data på dette administrerte kjøretøyet kan hovedadministratoren endre innstillinger og installere programvare i infotainment-systemet.\n\nKontakt hovedadministratoren for å få mer informasjon."</string>
+    <string name="enterprise_privacy_exposure_category" msgid="4870494030035008520">"Informasjon hovedadministratoren kan se"</string>
+    <string name="enterprise_privacy_exposure_changes_category" msgid="8837106430193547177">"Endringer utført av hovedadministratoren"</string>
+    <string name="enterprise_privacy_exposure_desc" msgid="7962571201715956427">" "<li>"Data tilknyttet kontoen for det administrerte kjøretøyet ditt"</li>\n" "<li>"Liste over apper på det administrerte kjøretøyet ditt"</li>\n" "<li>"Hvor mye tid og data som er brukt i hver app"</li></string>
+    <string name="enterprise_privacy_device_access_category" msgid="5820180227429886857">"Tilgangen din til infotainment-systemet"</string>
+    <string name="enterprise_privacy_installed_packages" msgid="1069862734971848156">"Liste over apper på kjøretøyet ditt"</string>
+    <string name="enterprise_privacy_apps_count_estimation_info" msgid="2684195229249659340">"Antall apper et anslag. Det inkluderer muligens ikke apper som er installert utenfor Play-butikken."</string>
     <plurals name="enterprise_privacy_number_packages_lower_bound" formatted="false" msgid="1628398874478431488">
       <item quantity="other">Minimum <xliff:g id="COUNT_1">%d</xliff:g> apper</item>
       <item quantity="one">Minimum <xliff:g id="COUNT_0">%d</xliff:g> app</item>
@@ -789,6 +801,22 @@
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> apper</item>
       <item quantity="one"><xliff:g id="COUNT_0">%d</xliff:g> app</item>
     </plurals>
+    <string name="enterprise_privacy_network_logs" msgid="5093305105565608542">"Den nyeste nettverkstrafikkloggen"</string>
+    <string name="enterprise_privacy_bug_reports" msgid="9197432120122370521">"Den nyeste feilrapporten"</string>
+    <string name="enterprise_privacy_security_logs" msgid="7375479062062113231">"Den nyeste sikkerhetsloggen"</string>
+    <string name="enterprise_privacy_none" msgid="2566653655908700748">"Ingen"</string>
+    <string name="enterprise_privacy_enterprise_installed_packages" msgid="7798942534994638670">"Installerte apper"</string>
+    <string name="enterprise_privacy_location_access" msgid="3132799413005627076">"Posisjonstillatelser"</string>
+    <string name="enterprise_privacy_microphone_access" msgid="4094467062253345379">"Mikrofontillatelser"</string>
+    <string name="enterprise_privacy_camera_access" msgid="8895281017339143744">"Kameratillatelser"</string>
+    <string name="enterprise_privacy_enterprise_set_default_apps" msgid="3386806357685549519">"Standardapper"</string>
+    <string name="enterprise_privacy_input_method" msgid="5062395693747004531">"Standardtastatur"</string>
+    <string name="enterprise_privacy_input_method_name" msgid="2027313786295077607">"Angitt som <xliff:g id="APP_LABEL">%s</xliff:g>"</string>
+    <string name="enterprise_privacy_global_http_proxy" msgid="1366593928008294049">"Global HTTP-proxy-tjener er angitt"</string>
+    <string name="enterprise_privacy_ca_certs_personal" msgid="5677098981429650665">"Pålitelig legitimasjon i den personlige profilen din"</string>
+    <string name="enterprise_privacy_device_access_desc" msgid="3442555102576036038">" "<li>"Administratoren kan låse infotainment-systemet og tilbakestille passordet"</li>\n" "<li>"Administratoren kan slette data på infotainment-systemet"</li></string>
+    <string name="enterprise_privacy_failed_password_wipe_device" msgid="4768743631260876559">"Antall mislykkede forsøk på å oppgi passordet før dataene i infotainment-systemet slettes"</string>
+    <string name="enterprise_privacy_failed_password_wipe_current_user" msgid="786246192213446835">"Antall mislykkede forsøk på å oppgi passordet før profildataene slettes"</string>
     <plurals name="enterprise_privacy_number_failed_password_wipe" formatted="false" msgid="445847844239023816">
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> forsøk</item>
       <item quantity="one"><xliff:g id="COUNT_0">%d</xliff:g> forsøk</item>
@@ -839,12 +867,20 @@
     <string name="captions_settings_text_style_yellow_on_black" msgid="4681565950104511943">"Gult på svart"</string>
     <string name="captions_settings_text_style_yellow_on_blue" msgid="5072521958156112239">"Gult på blått"</string>
     <string name="accessibility_settings_screen_reader_title" msgid="5113265553157624836">"Skjermleser"</string>
-    <string name="talkback_title" msgid="6529000326454628289">"TalkBack"</string>
-    <string name="talkback_settings_off" msgid="1486849504005704390">"Av"</string>
-    <string name="talkback_settings_on" msgid="796292072895957042">"Taleelementer på skjermen"</string>
-    <string name="enable_talkback_toggle_title" msgid="3027666779214128091">"Bruk TalkBack"</string>
-    <string name="talkback_options_title" msgid="7366357383004455638">"Alternativer"</string>
-    <string name="talkback_settings_title" msgid="631275474070654027">"Innstillinger"</string>
-    <string name="about_talkback_title" msgid="6048639389606001298">"Om TalkBack"</string>
-    <string name="about_talkback_description" msgid="5438077447169311605">"TalkBack er ikke tilgjengelig når kjøretøyet er i bevegelse.\n\nNår TalkBack er på, får du taletilbakemelding, slik at du kan bruke enheten din uten å se på skjermen. TalkBack er laget for situasjoner eller personer som har vanskeligheter med å se skjermen."</string>
+    <string name="screen_reader_settings_off" msgid="6081562047935689764">"Av"</string>
+    <string name="screen_reader_settings_on" msgid="2168217218643349459">"Taleelementer på skjermen"</string>
+    <string name="enable_screen_reader_toggle_title" msgid="7641307781194619254">"Bruk <xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g>"</string>
+    <string name="screen_reader_options_title" msgid="1073640098442831819">"Alternativer"</string>
+    <string name="screen_reader_description_title" msgid="8766666406552388012">"Innstillinger"</string>
+    <string name="camera_settings_title" msgid="2837785830355288903">"Kamera"</string>
+    <string name="camera_toggle_title" msgid="1990732328673068456">"Bruk kameraet"</string>
+    <string name="camera_toggle_summary" msgid="5751159996822627567">"Gi alle apper tilgang til kameraet"</string>
+    <string name="camera_manage_permissions" msgid="9005596413781984368">"Administrer kameratillatelser"</string>
+    <string name="camera_recently_accessed" msgid="8084100710444691977">"Nylig brukt"</string>
+    <string name="camera_no_recent_access" msgid="965105023454777859">"Ingen nylige apper"</string>
+    <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"0 apper har tilgang"</string>
+    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{# av {total_count} apper har tilgang}other{# av {total_count} apper har tilgang}}"</string>
+    <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Nylig brukt"</string>
+    <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Se alle"</string>
+    <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Laster inn …"</string>
 </resources>
