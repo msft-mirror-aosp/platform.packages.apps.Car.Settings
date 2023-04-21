@@ -213,7 +213,7 @@
     <string name="bluetooth_enable_alphanumeric_pin" msgid="1636575922217263060">"PIN मा अक्षर वा प्रतीकहरू समाविष्ट हुन्छन्"</string>
     <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"जोडा मिलाउने कोड टाइप गर्नुहोस् त्यसपछि फिर्ता गर्नुहोस् वा प्रविष्टि गर्नुहोस् नामक बटन थिच्नुहोस्"</string>
     <string name="bluetooth_pairing_request" msgid="4769675459526556801">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> सँग जोडा बनाउने हो?"</string>
-    <string name="bluetooth_pairing_shares_phonebook" msgid="2015966932886300630">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>लाई तपाईंका सम्पर्क ठेगानाहरू र फोन सम्पर्कको इतिहासमाथि पहुँच गर्ने अनुमति दिनुहोस्"</string>
+    <string name="bluetooth_pairing_shares_phonebook" msgid="2015966932886300630">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>लाई तपाईंका कन्ट्याक्टहरू र फोन सम्पर्कको इतिहासमाथि पहुँच गर्ने अनुमति दिनुहोस्"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="7825091249522704764">"तपाईंले अर्को यन्त्रमा पनि यो PIN टाइप गर्नु पर्ने हुन सक्छ।"</string>
     <string name="bluetooth_enter_passkey_other_device" msgid="7147248221018865922">"तपाईंले अर्को यन्त्रमा यो पासकुञ्जी पनि टाइप गर्नु पर्ने हुन सक्छ।"</string>
     <string name="bluetooth_pin_values_hint_16_digits" msgid="418776900816984778">"पिन १६ अङ्कको हुनु पर्छ"</string>
@@ -221,6 +221,9 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"जोडा बनाउनका लागि गरिएको अनुरोध"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>सँग जोडा बनाउन ट्याप गर्नुहोस्।"</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"ब्लुटुथ यन्त्र छनौट गर्नुहोस्"</string>
+    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"ब्लुटुथ"</string>
+    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"फोन"</string>
+    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"मिडिया"</string>
     <string name="language_settings" msgid="2079258598337245546">"भाषाहरू"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"भाषा र इनपुट"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"सिफारिस गरिएको"</string>
@@ -688,6 +691,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"रद्द गर्नुहोस्"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"पुष्टि गर्नुहोस्"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"कम्तीमा ४ वर्णको हुनु पर्छ"</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"यो प्रकारको लक उपलब्ध छैन।"</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"अनिवार्य रूपमा ० देखि ९ सम्मका अङ्कहरू मात्र समावेश हुनु पर्छ।"</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"यन्त्रको प्रशासकले पछिल्लो PIN प्रयोग गर्न अनुमति दिँदैन"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"तपाईंका सूचना प्रविधि व्यवस्थापकले धेरै प्रयोग हुने PIN हरूको प्रयोगमा रोक लगाउनु भएको छ। कुनै फरक PIN प्रयोग गरी हेर्नुहोस्।"</string>
@@ -734,6 +738,10 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"डेमो मोडबाट बाहिरिनुहोस्"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"खारेज गर्नुहोस्"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"सवारी साधन चलाइरहेका बेला यो सुविधा उपलब्ध छैन"</string>
+    <!-- no translation found for restricted_for_passenger (7240117443887727753) -->
+    <skip />
+    <!-- no translation found for restricted_for_driver (3364388937671526800) -->
+    <skip />
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"गाडी चलाइरहेका बेला प्रोफाइल थप्न सकिँदैन"</string>
     <string name="default_search_query" msgid="3137420627428857068">"खोज"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"सहायक तथा Voice"</string>
