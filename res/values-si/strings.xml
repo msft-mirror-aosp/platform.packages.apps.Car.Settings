@@ -221,12 +221,9 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"යුගල කිරීමේ ඉල්ලීම"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> සමඟ යුගල කිරීමට තට්ටු කරන්න."</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"බ්ලූටූත් උපාංගය තෝරා ගන්න"</string>
-    <!-- no translation found for bluetooth_bonded_bluetooth_toggle_content_description (6800772154405846597) -->
-    <skip />
-    <!-- no translation found for bluetooth_bonded_phone_toggle_content_description (8152794643249938377) -->
-    <skip />
-    <!-- no translation found for bluetooth_bonded_media_toggle_content_description (7803420585378155404) -->
-    <skip />
+    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"බ්ලූටූත්"</string>
+    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"දුරකථනය"</string>
+    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"මාධ්‍ය"</string>
     <string name="language_settings" msgid="2079258598337245546">"භාෂා"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"භාෂා සහ ආදාන"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"යෝජිත"</string>
@@ -741,6 +738,8 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"ආදර්ශනයෙන් ඉවත් වන්න"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"අස් කරන්න"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"රිය පදවන අතරේ විශේෂාංගය නොමැත"</string>
+    <string name="restricted_for_passenger" msgid="7240117443887727753">"සැකසීම වෙනස් කිරීමට රියැදුරුගෙන් ඉල්ලන්න"</string>
+    <string name="restricted_for_driver" msgid="3364388937671526800">"ඔබට මෙම ක්‍රියාව සිදු කළ නොහැක"</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"රිය පදවන අතරතුර පැතිකඩ එක් කළ නොහැකිය"</string>
     <string name="default_search_query" msgid="3137420627428857068">"සෙවීම"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"සහායක සහ කටහඬ"</string>

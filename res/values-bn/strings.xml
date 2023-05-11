@@ -221,12 +221,9 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"পেয়ার করার অনুরোধ"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> এর সঙ্গে পেয়ার করতে ট্যাপ করুন।"</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"ব্লুটুথ ডিভাইস বেছে নিন"</string>
-    <!-- no translation found for bluetooth_bonded_bluetooth_toggle_content_description (6800772154405846597) -->
-    <skip />
-    <!-- no translation found for bluetooth_bonded_phone_toggle_content_description (8152794643249938377) -->
-    <skip />
-    <!-- no translation found for bluetooth_bonded_media_toggle_content_description (7803420585378155404) -->
-    <skip />
+    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"ব্লুটুথ"</string>
+    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"ফোন করুন"</string>
+    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"মিডিয়া"</string>
     <string name="language_settings" msgid="2079258598337245546">"ভাষা"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"ভাষাগুলি ও ইনপুট"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"সাজেস্ট করা হয়েছে"</string>
@@ -741,6 +738,8 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"ডেমো মোড ছেড়ে যান"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"খারিজ করুন"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"ড্রাইভ করার সময় এই ফিচার কাজ করবে না"</string>
+    <string name="restricted_for_passenger" msgid="7240117443887727753">"সেটিং পরিবর্তন করতে ড্রাইভারকে অনুরোধ করুন"</string>
+    <string name="restricted_for_driver" msgid="3364388937671526800">"আপনি এই অ্যাকশন পারফর্ম করতে পারবেন না"</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"ড্রাইভ করার সময় প্রোফাইল যোগ করতে পারবেন না"</string>
     <string name="default_search_query" msgid="3137420627428857068">"সার্চ"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Assistant ও ভয়েস"</string>
