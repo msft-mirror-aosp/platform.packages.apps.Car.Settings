@@ -24,14 +24,13 @@
     <string name="auto_brightness_title" msgid="9124647862844666581">"अनुकूल चकाकी"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"स्क्रीन ब्राइटनेस वातावरणानुसार अ‍ॅडजस्ट करा"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"रात्रीचा प्रकाश सुरू आहे"</string>
-    <string name="night_mode_tile_label" msgid="6603597795502131664">"नाइट मोड"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"नेटवर्क आणि इंटरनेट"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"मोबाइल नेटवर्क"</string>
     <string name="mobile_network_summary_count" msgid="760865625847664029">"{count,plural, =1{# सिम}other{# सिम}}"</string>
     <string name="mobile_network_active_sim" msgid="1901674954229832811">"अ‍ॅक्टिव्ह / सिम"</string>
     <string name="mobile_network_inactive_sim" msgid="3644984830926224318">"अ‍ॅक्टिव्ह नसलेले / सिम"</string>
-    <string name="mobile_network_active_esim" msgid="5864100786496761032">"ॲक्टिव्ह / डाउनलोड केलेले सिम"</string>
-    <string name="mobile_network_inactive_esim" msgid="1397332352238119032">"अ‍ॅक्टिव्ह नसलेले / डाउनलोड केलेले सिम"</string>
+    <string name="mobile_network_active_esim" msgid="5175362818078597096">"अ‍ॅक्टिव्ह / eSIM"</string>
+    <string name="mobile_network_inactive_esim" msgid="7273712403773327964">"इनॅक्टिव्ह / eSIM"</string>
     <string name="mobile_network_list_add_more" msgid="6174294462747070655">"अधिक जोडा"</string>
     <string name="mobile_network_toggle_title" msgid="3515647310810280063">"मोबाइल डेटा"</string>
     <string name="mobile_network_toggle_summary" msgid="8698267487987697148">"मोबाइल नेटवर्क वापरून डेटा ॲक्सेस करा"</string>
@@ -148,6 +147,8 @@
     <string name="wifi_hotspot_name_summary_connected" msgid="7421325340822195506">"इतर डिव्हाइस <xliff:g id="WIFI_HOTSPOT_NAME">%1$s</xliff:g> शी कनेक्ट होऊ शकतात"</string>
     <string name="wifi_hotspot_password_title" msgid="4103948315849351988">"हॉटस्पॉट पासवर्ड"</string>
     <string name="wifi_hotspot_security_title" msgid="2299925790743587725">"सुरक्षितता"</string>
+    <string name="wifi_hotspot_wpa3_sae" msgid="4752416911592950174">"WPA3-वैयक्तिक"</string>
+    <string name="wifi_security_psk_sae" msgid="8738371461215752280">"WPA2/WPA3-वैयक्तिक"</string>
     <string name="wifi_hotspot_wpa2_personal" msgid="7135181212837798318">"WPA2 वैयक्तिक"</string>
     <string name="wifi_hotspot_security_none" msgid="2514844105085054386">"काहीही नाही"</string>
     <string name="wifi_hotspot_ap_band_title" msgid="7685279281668988593">"AP Band"</string>
@@ -175,6 +176,7 @@
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"सर्व दाखवा"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"शोधत आहे"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"ब्लूटूथ"</string>
+    <string name="bluetooth_toggle_title" msgid="1431803611346881088">"ब्‍लूटूथ वापरा"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"निनावी डिव्हाइस"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"पेअर केलेली डिव्हाइस"</string>
     <string name="bluetooth_pair_new_device" msgid="6948753485443263095">"नवीन डिव्हाइस पेअर करा"</string>
@@ -298,14 +300,16 @@
     <string name="apps_and_notifications_settings" msgid="8704585874333781975">"अ‍ॅप्स आणि सूचना"</string>
     <string name="all_applications" msgid="7798210477486822168">"सर्व अ‍ॅप्स दाखवा"</string>
     <string name="default_applications" msgid="1558183275638697087">"डीफॉल्ट अ‍ॅप्स"</string>
+    <string name="performance_impacting_apps" msgid="3439260699394720569">"अ‍ॅप्सवर परिणाम करणारा परफॉर्मन्स"</string>
     <string name="app_permissions" msgid="32799922508313948">"अ‍ॅप परवानग्या"</string>
     <string name="app_permissions_summary" msgid="5402214755935368418">"तुमच्या डेटाचा अ‍ॅप अ‍ॅक्सेस नियंत्रित करा"</string>
     <string name="applications_settings" msgid="794261395191035632">"ॲप माहिती"</string>
-    <string name="force_stop" msgid="2153183697014720520">"सक्तीने थांबवा"</string>
-    <string name="force_stop_dialog_title" msgid="3342850939200388694">"सक्तीने थांबवायचे आहे का?"</string>
+    <string name="force_stop" msgid="1616958676171167028">"अ‍ॅप थांबवा"</string>
+    <string name="force_stop_dialog_title" msgid="4481858344628934971">"अ‍ॅप थांबवायचे आहे का?"</string>
     <string name="force_stop_dialog_text" msgid="4354954014318432599">"तुम्ही सक्तीने अ‍ॅप थांबवल्यास, ते गैरवर्तन करू शकते."</string>
-    <string name="prioritize_app_performance_dialog_title" msgid="2561577032540073080">"अ‍ॅप परफॉर्मन्सचे प्राधान्य सुरू करायचे आहे का?"</string>
-    <string name="prioritize_app_performance_dialog_text" msgid="572525689800110355">"हे सुरू केल्यामुळे सिस्टीममध्ये संभाव्य अस्थिरता येऊ शकते किंवा हार्डवेअरवर दीर्घकाळासाठी परिणाम होऊ शकतो. तुम्हाला पुढे सुरू ठेवायचे आहे का?"</string>
+    <string name="force_stop_success_toast_text" msgid="2986272849275894254">"<xliff:g id="APP_NAME">%1$s</xliff:g> थांबवले आहे."</string>
+    <string name="prioritize_app_performance_dialog_title" msgid="3205297520523665568">"अ‍ॅप परफॉर्मन्सला प्राधान्य द्यायचे का?"</string>
+    <string name="prioritize_app_performance_dialog_text" msgid="4321564728229192878">"यामुळे सिस्टीममध्ये संभाव्य अस्थिरता येऊ शकते किंवा हार्डवेअरवर दीर्घकाळासाठी परिणाम होऊ शकतो. तुम्हाला पुढे सुरू ठेवायचे आहे का?"</string>
     <string name="prioritize_app_performance_dialog_action_on" msgid="3556735049873419163">"होय"</string>
     <string name="prioritize_app_performance_dialog_action_off" msgid="2813324718753199319">"नाही, नको"</string>
     <string name="disable_text" msgid="4358165448648990820">"बंद करा"</string>
@@ -376,6 +380,7 @@
     <string name="apps_permission_manager_title" msgid="8776335943862484131">"परवानगी व्यवस्थापक"</string>
     <string name="apps_permission_manager_summary" msgid="4180424218228141274">"तुमच्या डेटाचा अ‍ॅप अ‍ॅक्सेस नियंत्रित करा"</string>
     <string name="apps_default_apps_summary" msgid="2017792579839972926">"असिस्टंट आणि आणखी बऱ्याच गोष्टींसाठी"</string>
+    <string name="performance_impacting_apps_summary" msgid="7762122057244111162">"{count,plural, =1{# अ‍ॅप परफॉर्मन्सवर परिणाम करते}other{# अ‍ॅप्स परफॉर्मन्सवर परिणाम करतात}}"</string>
     <string name="apps_special_app_access_summary" msgid="6464767436309742163">"सिस्टम आणि इतर सेटिंग्जसाठी"</string>
     <string name="special_access" msgid="5730278220917123811">"विशेष अ‍ॅप अ‍ॅक्सेस"</string>
     <string name="show_system" msgid="4401355756969485287">"सिस्टम दाखवा"</string>
@@ -385,8 +390,12 @@
     <string name="modify_system_settings_description" msgid="5295023124419592452">"ही परवानगी ॲपला सिस्टम सेटिंग्ज सुधारित करण्‍याची अनुमती देते."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"सूचना अ‍ॅक्सेस"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"<xliff:g id="SERVICE">%1$s</xliff:g> ला सूचना अ‍ॅक्सेस करण्याची अनुमती द्यायची का?"</string>
+    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"संपर्क नावे आणि तुम्हाला येणारे एसएमएस यासारख्या वैयक्तिक माहितीच्या समावेशासह <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> सर्व सूचना पाहू शकेल. ते त्यांच्यामधील सूचना डिसमिस करू शकेल अथवा त्यामध्ये असलेली अ‍ॅक्शन बटणे ट्रिगर करू शकेल. \n\nयामुळे ॲपला व्यत्यय आणू नका सुरू किंवा बंद करता येईल आणि संबंधित सेटिंग्ज बदलता येतील."</string>
+    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> ॲपसाठी सूचना अ‍ॅक्सेस बंद केल्यास, व्यत्यय आणू नका चा अ‍ॅक्सेस देखील बंद केला जाऊ शकतो."</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"बंद करा"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"रद्द करा"</string>
+    <string name="performance_impacting_apps_description" msgid="7361464904617808444">"ही अ‍ॅप्स सिस्टीमच्या परफॉर्मन्सवर नकारात्मक परिणाम करतात आणि त्यांना बॅकग्राउंडमध्ये रन करण्यापासून प्रतिबंधित केले आहे.\nबॅकग्राउंडचा वापर सुरू ठेवण्यासाठी ते या सूचीमधून काढून टाकण्यासाठी अ‍ॅपला प्राधान्य द्या."</string>
+    <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"ॲपला प्राधान्य द्या"</string>
     <string name="premium_sms_access_title" msgid="1409118461646148686">"प्रीमियम SMS ॲक्सेस"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"प्रीमियम SMS मुळे तुम्हाला कदाचित शुल्क लागू होतील आणि तुमच्या कॅरियर बिलमध्ये जोडले जातील. तुम्ही अ‍ॅपसाठी परवानगी सुरू केल्यास, तुम्ही ते अ‍ॅप वापरून प्रीमियम SMS पाठवू शकता."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"वापर अ‍ॅक्सेस"</string>
@@ -397,22 +406,27 @@
     <string name="location_settings_title" msgid="901334356682423679">"स्थान"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"स्थान वापरा"</string>
     <string name="location_toggle_summary" msgid="7977868708102299495">"तुम्ही नमूद केलेल्या ॲप्सना तुमचे स्थान अ‍ॅक्सेस करण्याची अनुमती द्या"</string>
-    <string name="location_toggle_off_warning" msgid="8396854289251143748">"तुम्ही हे बंद केल्यास, यामुळे सर्व ॲप्सचा स्थान अ‍ॅक्सेस काढून टाकला जाईल. ड्रायव्हर साहाय्य अ‍ॅप्सना अजूनही अ‍ॅक्सेस असेल."</string>
-    <string name="location_driver_assistance_toggle_title" msgid="9201622805420459957">"ड्रायव्हर साहाय्य यासाठी स्थान वापरणे"</string>
+    <string name="location_toggle_off_warning" msgid="5959449346865136081">"तुम्ही हे बंद केल्यास, ड्रायव्हर साहाय्यसाठी आवश्यक असलेली अ‍ॅप्स वगळता सर्व ॲप्सचा स्थान अ‍ॅक्सेस काढून टाकला जाईल"</string>
+    <string name="location_driver_assistance_toggle_title" msgid="3780157378527924932">"ड्रायव्हर साहाय्यसाठी स्थान वापरा"</string>
     <string name="location_driver_assistance_toggle_off_title" msgid="2218532550578204718">"वाहनाचे स्थान बंद आहे"</string>
-    <string name="location_driver_assistance_toggle_off_summary" msgid="1516786816178866919">"ड्रायव्हर साहाय्य ॲप्स तुमचे स्थान अ‍ॅक्सेस करू शकत नाहीत"</string>
+    <string name="location_driver_assistance_toggle_off_summary" msgid="6040822988891113026">"ड्रायव्हर साहाय्य ॲप्स तुमचे स्थान अ‍ॅक्सेस करू शकत नाहीत"</string>
     <string name="location_driver_assistance_action_text" msgid="1887309495010247883">"बदला"</string>
     <string name="location_driver_assistance_toggle_summary" msgid="2732591196508054649">"तुमचे स्थान अ‍ॅक्सेस करण्यासाठी ड्राइव्ह करण्यात मदत करणाऱ्या ॲप्सना अनुमती द्या"</string>
-    <string name="location_driver_assistance_toggle_off_warning" msgid="8097738968253492982">"तुम्ही हे बंद केल्यास, स्थान माहितीवर अवलंबून असलेली ड्रायव्हर साहाय्य ॲप्स बंद केली जातील."</string>
+    <string name="location_driver_assistance_toggle_off_warning" msgid="2733124752598498356">"तुम्ही हे बंद केल्यास, स्थान माहितीवर अवलंबून असलेली ड्रायव्हर साहाय्य ॲप्स बंद केली जातील"</string>
     <string name="driver_assistance_warning_confirm_label" msgid="2873799611160864931">"तरीही बंद करा"</string>
-    <string name="location_settings_recent_requests_title" msgid="6345634382240930628">"अलीकडील स्थान विनंत्या"</string>
-    <string name="location_settings_recent_requests_empty_message" msgid="7789667070033674910">"अलीकडील कोणत्याही स्थान विनंत्या नाहीत"</string>
+    <string name="location_recently_accessed" msgid="522888989582110975">"अलीकडे अ‍ॅक्सेस केलेले"</string>
+    <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"अलीकडे अ‍ॅक्सेस केलेले"</string>
+    <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"सर्व पहा"</string>
+    <string name="location_no_recent_access" msgid="2859914321242257931">"कोणतीही अलीकडील अ‍ॅप्स नाहीत"</string>
+    <string name="driver_assistance_label" msgid="9217315205754658940">"<xliff:g id="TIME">%1$s</xliff:g> • ड्रायव्हर साहाय्य"</string>
+    <string name="location_driver_assistance_privacy_policy_header_content" msgid="8118086439003674350">"ड्रायव्हर साहाय्य वैशिष्ट्यांसाठी वाहनाचे स्थान अ‍ॅक्सेस करण्याची परवानगी असलेली ॲप्स"</string>
+    <string name="location_driver_assistance_privacy_policy_button_text" msgid="669921557502414704">"गोपनीयता धोरण"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"ॲप पातळी परवानग्या"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"स्‍थान सेवा"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"स्थान वापरा"</string>
     <string name="location_settings_footer" msgid="296892848338100051">"तुमच्या डिव्हाइसच्या स्थानाचा अंदाज घेण्‍यात मदत करण्यासाठी स्थान GPS, वाय-फाय, मोबाइल नेटवर्क आणि सेन्सर यांसारखे स्रोत वापरू शकते."</string>
     <string name="driver_assistance_settings_title" msgid="4915804073177128915">"ड्रायव्हर साहाय्य"</string>
-    <string name="adas_settings_footer" msgid="5128483877858058534">"ड्रायव्हर साहाय्य अ‍ॅप्सना पाठवलेल्या स्थानाच्या माहितीमध्ये तुमची ओळख करून देणाऱ्या माहितीचा समावेश नसतो. ती हटवली जाण्यापूर्वी किमान दोन दिवसांसाठी स्टोअर केली जाते."</string>
+    <string name="adas_settings_footer" msgid="6697021691244459156">"ड्रायव्हर साहाय्य अ‍ॅप्सना पाठवलेल्या स्थानाच्या माहितीमध्ये तुमची ओळख करून देणाऱ्या माहितीचा समावेश नसतो. ती हटवली जाण्यापूर्वी कमाल दोन दिवसांसाठी स्टोअर केली जाते."</string>
     <string name="microphone_settings_title" msgid="7125554350537136922">"मायक्रोफोन"</string>
     <string name="microphone_toggle_title" msgid="911586035332827275">"मायक्रोफोन वापरा"</string>
     <string name="microphone_toggle_summary" msgid="2682653449849128626">"सर्व ॲप्सना तुमचा मायक्रोफोन अ‍ॅक्सेस करण्याची अनुमती द्या"</string>
@@ -428,6 +442,9 @@
     <string name="system_update_settings_title" msgid="8448588267784138855">"सिस्टम अपडेट"</string>
     <string name="system_advanced_title" msgid="6303355131691523362">"प्रगत"</string>
     <string name="system_advanced_summary" msgid="5833643795981791953">"याविषयी, कायदेशीर माहिती, रीसेट करणे आणि आणखी बरेच काही"</string>
+    <string name="restart_infotainment_system_title" msgid="5174129167446756511">"इंफोटेनमेंट सिस्टीम पुन्हा सुरू करा"</string>
+    <string name="restart_infotainment_system_dialog_text" msgid="6395281407323116808">"तुमच्या कारची इंफोटेनमेंट सिस्टीम पुन्हा सुरू करण्यासाठी काही मिनिटे लागू शकतात. तुम्हाला पुढे सुरू ठेवायचे आहे का?"</string>
+    <string name="continue_confirmation" msgid="1598892163951467191">"पुढे सुरू ठेवा"</string>
     <string name="firmware_version" msgid="8491753744549309333">"Android आवृत्ती"</string>
     <string name="security_patch" msgid="4794276590178386903">"Android सुरक्षितता पॅच पातळी"</string>
     <string name="hardware_info" msgid="3973165746261507658">"मॉडेल आणि हार्डवेअर"</string>
@@ -435,7 +452,7 @@
     <string name="baseband_version" msgid="2370088062235041897">"बेसबँड आवृत्ती"</string>
     <string name="kernel_version" msgid="7327212934187011508">"कर्नेल आवृत्ती"</string>
     <string name="build_number" msgid="3997326631001009102">"बिल्ड नंबर"</string>
-    <string name="bluetooth_mac_address" msgid="7641425947941688072">"ब्लूटूथ पत्ता"</string>
+    <string name="bluetooth_mac_address" msgid="7641425947941688072">"ब्लूटूथ ॲड्रेस"</string>
     <string name="device_info_not_available" msgid="2095601973977376655">"उपलब्ध नाही"</string>
     <string name="device_status_activity_title" msgid="4083567497305368200">"स्थिती"</string>
     <string name="device_status" msgid="267298179806290920">"स्थिती"</string>
@@ -452,7 +469,7 @@
     <string name="copyright_title" msgid="4220237202917417876">"कॉपीराइट"</string>
     <string name="license_title" msgid="936705938435249965">"परवाना"</string>
     <string name="terms_title" msgid="5201471373602628765">"अटी आणि नियम"</string>
-    <string name="webview_license_title" msgid="6442372337052056463">"सिस्टम वेबदृश्य परवाने"</string>
+    <string name="webview_license_title" msgid="6442372337052056463">"सिस्टीम वेबदृश्य परवाने"</string>
     <string name="wallpaper_attributions" msgid="9201272150014500697">"वॉलपेपर"</string>
     <string name="wallpaper_attributions_values" msgid="4292446851583307603">"उपग्रह इमेजरी पुरवठादार:\n©2014 CNES / Astrium, DigitalGlobe, Bluesky"</string>
     <string name="model_info" msgid="4966408071657934452">"मॉडेल"</string>
@@ -468,11 +485,11 @@
     <string name="developer_options_settings" msgid="1530739225109118480">"डेव्‍हलपर पर्याय"</string>
     <string name="reset_options_title" msgid="4388902952861833420">"रीसेट पर्याय"</string>
     <string name="reset_options_summary" msgid="5508201367420359293">"नेटवर्क, अ‍ॅप्स किंवा डिव्हाइस रीसेट"</string>
-    <string name="reset_network_title" msgid="1284233059990797263">"नेटवर्क रीसेट करा"</string>
-    <string name="reset_network_desc" msgid="602381374544634925">"हे सर्व नेटवर्क सेटिंग्ज रीसेट करेल, यामध्ये याचा समावेश आहे:"</string>
-    <string name="reset_network_item_wifi" msgid="7569481589699982698"><li>"वाय-फाय "</li></string>
+    <string name="reset_network_title" msgid="3077846909739832734">"वाय-फाय आणि ब्लूटूथ रीसेट करा"</string>
+    <string name="reset_network_desc" msgid="3332203703135823033">"हे पूर्वी कनेक्ट केलेल्या पुढील गोष्टींची मेमरी काढून टाकून वाय-फाय आणि ब्लूटूथ सेटिंग्ज रीसेट करेल:"</string>
+    <string name="reset_network_item_wifi" msgid="2876370861806060314"><li>"वाय-फाय नेटवर्क आणि पासवर्ड"</li></string>
     <string name="reset_network_item_mobile" msgid="5747282716664480997"><li>"मोबाइल डेटा"</li></string>
-    <string name="reset_network_item_bluetooth" msgid="6035019931106921284"><li>"ब्लूटूथ"</li></string>
+    <string name="reset_network_item_bluetooth" msgid="7475279871421815601"><li>"फोन आणि इतर ब्लूटूथ डिव्‍हाइस"</li></string>
     <string name="reset_esim_title" msgid="8132107637911831211">"सर्व वाहन eSIMs काढून टाका"</string>
     <string name="reset_esim_desc" msgid="1437276625485586740">"तुमचा सेवा प्लॅन रद्द होणार नाही."</string>
     <string name="reset_esim_error_title" msgid="7245109418130525492">"eSIM रीसेट करू शकत नाही"</string>
@@ -545,8 +562,6 @@
     <string name="choose_new_admin_title" msgid="1915428454917699587">"नवीन प्रशासक निवडा"</string>
     <string name="choose_new_admin_message" msgid="7468286545352043354">"तुमच्याकडे किमान एक प्रशासक आवश्यक आहे. हे हटवण्यासाठी, पहिले बदली निवडा."</string>
     <string name="choose_new_admin_label" msgid="5987653639387437939">"प्रशासक निवडा"</string>
-    <string name="user_guest" msgid="3465399481257448601">"अतिथी"</string>
-    <string name="start_guest_session" msgid="4438752398760283201">"अतिथी"</string>
     <string name="user_switch" msgid="6544839750534690781">"स्विच"</string>
     <string name="current_user_name" msgid="3813671533249316823">"तुम्ही (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"नाव"</string>
@@ -572,7 +587,7 @@
     <string name="storage_clear_user_data_text" msgid="8787615136779130680">"स्‍टोरेज साफ करा"</string>
     <string name="storage_clear_cache_btn_text" msgid="8449547925966775612">"कॅशे  साफ करा"</string>
     <string name="storage_clear_data_dlg_title" msgid="5863775997588969879">"अ‍ॅप डेटा हटवायचा का?"</string>
-    <string name="storage_clear_data_dlg_text" msgid="795055288575727801">"या ॲपचा सर्व डेटा कायमचा हटवला जाईल. यात सर्व फाइल, सेटिंग्ज, खाती, डेटाबेस इ.चा समावेश असतो."</string>
+    <string name="storage_clear_data_dlg_text" msgid="3255314337644212283">"या ॲपचा डेटा कायमचा हटवला जाईल. यामध्ये फाइल, सेटिंग्ज, डेटाबेस आणि इतर अ‍ॅप डेटा यांचा समावेश आहे."</string>
     <string name="storage_clear_failed_dlg_text" msgid="6710485971686866306">"ॲपसाठी स्‍टोरेज साफ करता आले नाही."</string>
     <string name="storage_unmount_success" msgid="1553591517580407021">"<xliff:g id="NAME">%1$s</xliff:g> सुरक्षितपणे बाहेर काढले"</string>
     <string name="storage_unmount_failure" msgid="4591934911541762883">"<xliff:g id="NAME">%1$s</xliff:g> सुरक्षितपणे बाहेर काढता आले नाही"</string>
@@ -610,6 +625,8 @@
     <string name="privacy_settings_title" msgid="3150145262029229572">"गोपनीयता"</string>
     <string name="privacy_vehicle_data_title" msgid="6385777370742595651">"इंफोटेनमेंट सिस्टमचा डेटा"</string>
     <string name="privacy_location_summary" msgid="7019817848470566242">"तुमच्या स्थानाचा ॲप अ‍ॅक्सेस नियंत्रित करा"</string>
+    <string name="mute_camera_title" msgid="215494079895460172">"कॅमेरा"</string>
+    <string name="mute_camera_summary" msgid="1237452064757403042">"तुमच्या कॅमेराचा ॲप अ‍ॅक्सेस नियंत्रित करा"</string>
     <string name="mute_mic_title" msgid="2813215197799569553">"मायक्रोफोन"</string>
     <string name="mute_mic_summary" msgid="5426953935775303904">"मायक्रोफोनचा ॲप अ‍ॅक्सेस नियंत्रित करा"</string>
     <string name="vehicle_data_title" msgid="935933215161763721">"इंफोटेनमेंट सिस्टमचा डेटा"</string>
@@ -679,37 +696,22 @@
     <string name="lockpassword_password_recently_used" msgid="8255729487108602924">"डिव्हाइस प्रशासक अलीकडील पासवर्ड वापरण्याची अनुमती देत नाही"</string>
     <string name="error_saving_password" msgid="8334882262622500658">"पासवर्ड सेव्ह करताना एरर आली"</string>
     <string name="lockpassword_password_denylisted_by_admin" msgid="8611831198794524730">"तुमच्या IT ॲडमिनने सामान्यत: वापरले जाणारे पासवर्ड ब्लॉक केले आहेत. दुसरा पासवर्ड वापरून पहा."</string>
-    <!-- no translation found for lockpassword_password_requires_alpha (713641878535268163) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_digit (8120467503175627546) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_symbol (6294855131052831204) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_letters (324864645474528299) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_lowercase (5373735547134824114) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_uppercase (2002482631049525313) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_numeric (5694949801691947801) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_symbols (1789501049908004075) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_nonletter (3089186186422638926) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_nonnumerical (1677123573552379526) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_too_short (3898753131694105832) -->
-    <skip />
-    <!-- no translation found for lockpassword_pin_too_short (3671037384464545169) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_too_long (1709616257350671045) -->
-    <skip />
-    <!-- no translation found for lockpassword_pin_too_long (8315542764465856288) -->
-    <skip />
+    <string name="lockpassword_password_requires_alpha" msgid="713641878535268163">"किमान एक अक्षर असणे आवश्यक आहे"</string>
+    <string name="lockpassword_password_requires_digit" msgid="8120467503175627546">"किमान एक अंक असणे आवश्यक आहे"</string>
+    <string name="lockpassword_password_requires_symbol" msgid="6294855131052831204">"किमान एक चिन्ह असणे आवश्यक आहे"</string>
+    <string name="lockpassword_password_requires_letters" msgid="324864645474528299">"{count,plural, =1{किमान # अक्षर असणे आवश्यक आहे}other{किमान # अक्षरे असणे आवश्यक आहे}}"</string>
+    <string name="lockpassword_password_requires_lowercase" msgid="5373735547134824114">"{count,plural, =1{किमान # लोअरकेस अक्षर असणे आवश्यक आहे}other{किमान # लोअरकेस अक्षरे असणे आवश्यक आहे}}"</string>
+    <string name="lockpassword_password_requires_uppercase" msgid="2002482631049525313">"{count,plural, =1{किमान # अप्परकेस अक्षर असणे आवश्यक आहे}other{किमान # अप्परकेस अक्षरे असणे आवश्यक आहे}}"</string>
+    <string name="lockpassword_password_requires_numeric" msgid="5694949801691947801">"{count,plural, =1{किमान # अंक असणे आवश्यक आहे}other{किमान # अंक असणे आवश्यक आहे}}"</string>
+    <string name="lockpassword_password_requires_symbols" msgid="1789501049908004075">"{count,plural, =1{किमान # विशिष्ट चिन्ह असणे आवश्यक आहे}other{किमान # विशिष्ट चिन्हे असणे आवश्यक आहे}}"</string>
+    <string name="lockpassword_password_requires_nonletter" msgid="3089186186422638926">"{count,plural, =1{किमान # अक्षर नसलेला वर्ण असणे आवश्यक आहे}other{किमान # अक्षर नसलेले वर्ण असणे आवश्यक आहे}}"</string>
+    <string name="lockpassword_password_requires_nonnumerical" msgid="1677123573552379526">"{count,plural, =1{किमान # अंक नसलेला वर्ण असणे आवश्यक आहे}other{किमान # अंक नसलेले वर्ण असणे आवश्यक आहे}}"</string>
+    <string name="lockpassword_password_too_short" msgid="3898753131694105832">"{count,plural, =1{किमान # वर्ण असणे आवश्यक आहे}other{किमान # वर्ण असणे आवश्यक आहे}}"</string>
+    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{किमान # अंक असणे आवश्यक आहे}other{किमान # अंक असणे आवश्यक आहे}}"</string>
+    <string name="lockpassword_password_too_long" msgid="1709616257350671045">"{count,plural, =1{# वर्णापेक्षा कमी असणे आवश्यक आहे}other{# वर्णांपेक्षा कमी असणे आवश्यक आहे}}"</string>
+    <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{# अंकापेक्षा कमी असणे आवश्यक आहे}other{# अंकांपेक्षा कमी असणे आवश्यक आहे}}"</string>
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"अंकांच्या चढत्या, उतरत्या किंवा पुनरावृत्त क्रमाला अनुमती नाही"</string>
     <string name="setup_lock_settings_options_button_label" msgid="3337845811029780896">"स्क्रीन लॉक पर्याय"</string>
-    <string name="build_info_fmt" msgid="5592554123908086426">"<xliff:g id="FINGERPRINT">%1$s</xliff:g>\n<xliff:g id="DATE">%2$s</xliff:g> : <xliff:g id="NUM_DAYS">%3$s</xliff:g> दिवसांपूर्वी"</string>
     <string name="credentials_reset" msgid="873900550885788639">"क्रेडेन्शियल साफ करा"</string>
     <string name="credentials_reset_summary" msgid="6067911547500459637">"सर्व प्रमाणपत्रे काढून टाका"</string>
     <string name="credentials_reset_hint" msgid="3459271621754137661">"सर्व आशय काढून टाकायचा का?"</string>
@@ -779,8 +781,18 @@
     <string name="number_of_device_admins" msgid="7508826094096451485">"{count,plural, =1{# अ‍ॅक्टिव्हेट केलेले ॲप}other{# अ‍ॅक्टिव्हेट केलेली ॲप्स}}"</string>
     <string name="number_of_device_admins_none" msgid="5547493703413973954">"अ‍ॅक्टिव्हेट केलेली कोणतीही ॲप्स नाहीत"</string>
     <string name="work_policy_privacy_settings" msgid="5263835989260149968">"<xliff:g id="ORGANIZATION_NAME">%1$s</xliff:g> चे वाहनाशी संबंधित धोरण"</string>
+    <string name="work_policy_privacy_settings_no_org_name" msgid="8011687012493940230">"वाहनाशी संबंधित धोरण"</string>
     <string name="work_policy_privacy_settings_summary" msgid="5321618399949880194">"संस्थेच्या व्यवस्थापकाद्वारे व्यवस्थापित केली जाणारी सेटिंग्ज"</string>
     <string name="footer_learn_more_content_description" msgid="7749452309729272078">"<xliff:g id="SERVICE">%1$s</xliff:g> बद्दल अधिक जाणून घ्या"</string>
+    <string name="enterprise_privacy_settings" msgid="6496900796150572727">"व्यवस्थापित वाहनांची माहिती"</string>
+    <string name="enterprise_privacy_settings_summary_generic" msgid="5850991363779957797">"फ्लीट ॲडमिनद्वारे व्यवस्थापित सेटिंग्ज"</string>
+    <string name="enterprise_privacy_header" msgid="4652489109303330306">"या व्यवस्थापित वाहनावर डेटाचा अ‍ॅक्सेस पुरवण्यासाठी, फ्लीट ॲडमिन कदाचित सेटिंग्ज बदलू शकतात आणि इंफोटेनमेंट सिस्टीमवर सॉफ्टवेअर इंस्टॉल करू शकतात.\n\nआणखी तपशिलांसाठी, तुमच्या फ्लीट ॲडमिनशी संपर्क साधा."</string>
+    <string name="enterprise_privacy_exposure_category" msgid="4870494030035008520">"तुमचा फ्लीट ॲडमिन पाहू शकणारी माहिती"</string>
+    <string name="enterprise_privacy_exposure_changes_category" msgid="8837106430193547177">"तुमच्या फ्लीट ॲडमिनने केलेले बदल"</string>
+    <string name="enterprise_privacy_exposure_desc" msgid="7962571201715956427">" "<li>"तुमच्या व्यवस्थापित केलेल्या वाहन खात्याशी संलग्न डेटा"</li>\n" "<li>"तुमच्या व्यवस्थापित वाहनावर असणाऱ्या ॲप्सची सूची"</li>\n" "<li>"प्रत्येक ॲपमध्ये खर्च केलेला वेळ आणि डेटा"</li></string>
+    <string name="enterprise_privacy_device_access_category" msgid="5820180227429886857">"तुमचा इंफोटेनमेंट सिस्टीमचा अ‍ॅक्सेस"</string>
+    <string name="enterprise_privacy_installed_packages" msgid="1069862734971848156">"तुमच्या वाहनावरील ॲप्सची सूची"</string>
+    <string name="enterprise_privacy_apps_count_estimation_info" msgid="2684195229249659340">"अ‍ॅप्सची संख्या ही अंदाजे आहे. त्यामध्ये कदाचित Play Store वरून इंस्टॉल न केलेल्या अ‍ॅप्सचा समावेश नसेल."</string>
     <plurals name="enterprise_privacy_number_packages_lower_bound" formatted="false" msgid="1628398874478431488">
       <item quantity="other">किमान <xliff:g id="COUNT_1">%d</xliff:g> ॲप्स</item>
       <item quantity="one">किमान <xliff:g id="COUNT_0">%d</xliff:g> ॲप</item>
@@ -789,6 +801,22 @@
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> अ‍ॅप्स</item>
       <item quantity="one"><xliff:g id="COUNT_0">%d</xliff:g> अ‍ॅप</item>
     </plurals>
+    <string name="enterprise_privacy_network_logs" msgid="5093305105565608542">"सर्वात अलीकडील नेटवर्क रहदारीचा लॉग"</string>
+    <string name="enterprise_privacy_bug_reports" msgid="9197432120122370521">"सर्वात अलीकडील बग रिपोर्ट"</string>
+    <string name="enterprise_privacy_security_logs" msgid="7375479062062113231">"सर्वात अलीकडील सुरक्षा लॉग"</string>
+    <string name="enterprise_privacy_none" msgid="2566653655908700748">"कधीही नाही"</string>
+    <string name="enterprise_privacy_enterprise_installed_packages" msgid="7798942534994638670">"इंस्टॉल केलेली अ‍ॅप्स"</string>
+    <string name="enterprise_privacy_location_access" msgid="3132799413005627076">"स्थान परवानग्या"</string>
+    <string name="enterprise_privacy_microphone_access" msgid="4094467062253345379">"मायक्रोफोन परवानग्या"</string>
+    <string name="enterprise_privacy_camera_access" msgid="8895281017339143744">"कॅमेरा परवानग्या"</string>
+    <string name="enterprise_privacy_enterprise_set_default_apps" msgid="3386806357685549519">"डीफॉल्ट अ‍ॅप्स"</string>
+    <string name="enterprise_privacy_input_method" msgid="5062395693747004531">"डीफॉल्ट कीबोर्ड"</string>
+    <string name="enterprise_privacy_input_method_name" msgid="2027313786295077607">"<xliff:g id="APP_LABEL">%s</xliff:g> वर सेट करा"</string>
+    <string name="enterprise_privacy_global_http_proxy" msgid="1366593928008294049">"जागतिक HTTP प्रॉक्‍सी सेट केली आहे"</string>
+    <string name="enterprise_privacy_ca_certs_personal" msgid="5677098981429650665">"तुमच्‍या वैयक्तिक प्रोफाइलमधील विश्वसनीय क्रेडेंशियल"</string>
+    <string name="enterprise_privacy_device_access_desc" msgid="3442555102576036038">" "<li>"ॲडमिन इंफोटेनमेंट सिस्टीम लॉक करू शकतात आणि पासवर्ड रीसेट करू शकतात"</li>\n" "<li>"ॲडमिन इंफोटेनमेंट सिस्टीमवरील डेटा हटवू शकतात"</li></string>
+    <string name="enterprise_privacy_failed_password_wipe_device" msgid="4768743631260876559">"इंफोटेनमेंट सिस्टीमवरील सर्व डेटा हटवण्यापूर्वी अयशस्वी झालेले पासवर्ड प्रयत्न"</string>
+    <string name="enterprise_privacy_failed_password_wipe_current_user" msgid="786246192213446835">"प्रोफाइल डेटा हटवण्यापूर्वी अयशस्वी झालेले पासवर्ड प्रयत्न"</string>
     <plurals name="enterprise_privacy_number_failed_password_wipe" formatted="false" msgid="445847844239023816">
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> प्रयत्न</item>
       <item quantity="one"><xliff:g id="COUNT_0">%d</xliff:g> प्रयत्न</item>
@@ -839,12 +867,20 @@
     <string name="captions_settings_text_style_yellow_on_black" msgid="4681565950104511943">"काळ्यावर पिवळे"</string>
     <string name="captions_settings_text_style_yellow_on_blue" msgid="5072521958156112239">"निळ्यावर पिवळे"</string>
     <string name="accessibility_settings_screen_reader_title" msgid="5113265553157624836">"स्क्रीन रीडर"</string>
-    <string name="talkback_title" msgid="6529000326454628289">"TalkBack"</string>
-    <string name="talkback_settings_off" msgid="1486849504005704390">"बंद आहे"</string>
-    <string name="talkback_settings_on" msgid="796292072895957042">"स्क्रीनवरील आयटम उच्चारा"</string>
-    <string name="enable_talkback_toggle_title" msgid="3027666779214128091">"TalkBack वापरणे"</string>
-    <string name="talkback_options_title" msgid="7366357383004455638">"पर्याय"</string>
-    <string name="talkback_settings_title" msgid="631275474070654027">"सेटिंग्ज"</string>
-    <string name="about_talkback_title" msgid="6048639389606001298">"TalkBack विषयी"</string>
-    <string name="about_talkback_description" msgid="5438077447169311605">"वाहन गतीमध्ये असताना TalkBack उपलब्ध नसते.\n\nTalkBack सुरू असताना, ते वाचिक फीडबॅक पुरवते जेणेकरून, तुम्ही स्क्रीनकडे न पाहता तुमचे डिव्हाइस वापरू शकता. TalkBack हे स्क्रीन पाहण्यात अडचण येते अशा परिस्थितींसाठी किंवा लोकांकरिता आहे."</string>
+    <string name="screen_reader_settings_off" msgid="6081562047935689764">"बंद आहे"</string>
+    <string name="screen_reader_settings_on" msgid="2168217218643349459">"स्क्रीनवरील आयटम उच्चारा"</string>
+    <string name="enable_screen_reader_toggle_title" msgid="7641307781194619254">"<xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g> वापरा"</string>
+    <string name="screen_reader_options_title" msgid="1073640098442831819">"पर्याय"</string>
+    <string name="screen_reader_description_title" msgid="8766666406552388012">"सेटिंग्ज"</string>
+    <string name="camera_settings_title" msgid="2837785830355288903">"कॅमेरा"</string>
+    <string name="camera_toggle_title" msgid="1990732328673068456">"कॅमेरा वापरा"</string>
+    <string name="camera_toggle_summary" msgid="5751159996822627567">"सर्व ॲप्सना तुमचा कॅमेरा अ‍ॅक्सेस करण्याची अनुमती द्या"</string>
+    <string name="camera_manage_permissions" msgid="9005596413781984368">"कॅमेरा परवानग्या व्यवस्थापित करा"</string>
+    <string name="camera_recently_accessed" msgid="8084100710444691977">"अलीकडे अ‍ॅक्सेस केलेली"</string>
+    <string name="camera_no_recent_access" msgid="965105023454777859">"कोणतीही अलीकडील अ‍ॅप्स नाहीत"</string>
+    <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"कोणत्याही अ‍ॅप्सना अ‍ॅक्सेस नाही"</string>
+    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{# पैकी {total_count} ॲपला अ‍ॅक्सेस आहे}other{# पैकी {total_count} ॲप्सना अ‍ॅक्सेस आहे}}"</string>
+    <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"अलीकडे अ‍ॅक्सेस केलेली"</string>
+    <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"सर्व पहा"</string>
+    <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"लोड करत आहे…"</string>
 </resources>
