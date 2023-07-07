@@ -221,9 +221,6 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"જોડાણ બનાવવાની વિનંતી"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> સાથે જોડાણ બનાવવા માટે ટૅપ કરો."</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"બ્લૂટૂથ ડિવાઇસ પસંદ કરો"</string>
-    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"બ્લૂટૂથ"</string>
-    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"ફોન"</string>
-    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"મીડિયા"</string>
     <string name="language_settings" msgid="2079258598337245546">"ભાષાઓ"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"ભાષા અને ઇનપુટ"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"સૂચવેલા"</string>
@@ -326,7 +323,7 @@
     <string name="storage_application_label" msgid="5911779903670978586">"સ્ટોરેજ અને કૅશ મેમરી"</string>
     <string name="prioritize_app_performance_label" msgid="7264505023347026606">"ઍપ પર્ફોર્મન્સને પ્રાધાન્ય આપો"</string>
     <string name="application_version_label" msgid="8556889839783311649">"વર્ઝન: %1$s"</string>
-    <string name="runtime_permissions_summary_no_permissions_granted" msgid="6001439205270250021">"કોઈ પરવાનગીઓ આપેલી નથી"</string>
+    <string name="runtime_permissions_summary_no_permissions_granted" msgid="6001439205270250021">"કોઈ પરવાનગીઓ આપેલ નથી"</string>
     <string name="runtime_permissions_summary_no_permissions_requested" msgid="4074220596273432442">"કોઈ પરવાનગીઓની વિનંતી કરી નથી"</string>
     <string name="unused_apps" msgid="648471933781010395">"બિનવપરાયેલી ઍપ"</string>
     <string name="unused_apps_summary" msgid="8257304516038923072">"{count,plural, =1{બિનવપરાયેલી # ઍપ}one{બિનવપરાયેલી # ઍપ}other{બિનવપરાયેલી # ઍપ}}"</string>
@@ -691,7 +688,6 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"રદ કરો"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"કન્ફર્મ કરો"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"ઓછામાં ઓછા 4 અક્ષર હોવા આવશ્યક છે"</string>
-    <string name="locktype_unavailable" msgid="2678317466336249126">"આ પ્રકારનું લૉક ઉપલબ્ધ નથી."</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"માત્ર 0-9 અંક શામેલ હોવા આવશ્યક છે."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"ઉપકરણ વ્યવસ્થાપક તાજેતરના પિનનો ઉપયોગ કરવાની મંજૂરી આપતા નથી"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"સામાન્ય પિન તમારા IT વ્યવસ્થાપક દ્વારા બ્લૉક કરવામાં આવ્યા છે. કોઈ બીજો પિન અજમાવી જુઓ."</string>
@@ -738,10 +734,6 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"ડેમોમાંથી બહાર નીકળો"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"છોડી દો"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"ડ્રાઇવિંગ કરતી વખતે આ સુવિધા ઉપલબ્ધ નથી"</string>
-    <!-- no translation found for restricted_for_passenger (7240117443887727753) -->
-    <skip />
-    <!-- no translation found for restricted_for_driver (3364388937671526800) -->
-    <skip />
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"ડ્રાઇવ કરતી વખતે પ્રોફાઇલ ઉમેરી શકાતી નથી"</string>
     <string name="default_search_query" msgid="3137420627428857068">"શોધ"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Assistant અને વૉઇસ"</string>

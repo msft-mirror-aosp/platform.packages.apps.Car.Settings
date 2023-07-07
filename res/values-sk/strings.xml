@@ -221,9 +221,6 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"Žiadosť o párovanie"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"Zariadenie <xliff:g id="DEVICE_NAME">%1$s</xliff:g> spárujete klepnutím."</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"Vybrať zariadenie Bluetooth"</string>
-    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"Bluetooth"</string>
-    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"Telefón"</string>
-    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"Médiá"</string>
     <string name="language_settings" msgid="2079258598337245546">"Jazyky"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"Jazyky a vstup"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"Navrhované"</string>
@@ -691,7 +688,6 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"Zrušiť"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"Potvrdiť"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"Musí obsahovať najmenej 4 znaky"</string>
-    <string name="locktype_unavailable" msgid="2678317466336249126">"Tento typ zámky nie je k dispozícii."</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"Musí obsahovať len číslice 0 až 9."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"Správca zariadenia neumožňuje používať nedávny kód PIN"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"Bežné kódy PIN zablokoval váš správca IT. Skúste iný PIN."</string>
@@ -738,8 +734,6 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"Ukončiť ukážku"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"ZAVRIEŤ"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"Funkcia nie je k dispozícii počas jazdy"</string>
-    <string name="restricted_for_passenger" msgid="7240117443887727753">"Požiadajte o zmenu nastavenia vodiča"</string>
-    <string name="restricted_for_driver" msgid="3364388937671526800">"Túto akciu nemôžete vykonať"</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"Za jazdy sa nedá pridať profil"</string>
     <string name="default_search_query" msgid="3137420627428857068">"Hľadať"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Asistent a hlas"</string>
