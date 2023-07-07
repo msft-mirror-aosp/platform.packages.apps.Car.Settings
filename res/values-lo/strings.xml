@@ -24,14 +24,13 @@
     <string name="auto_brightness_title" msgid="9124647862844666581">"ຄວາມສະຫວ່າງແບບປັບອັດຕະໂນມັດ"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"ປັບຄວາມສະຫວ່າງຂອງໜ້າຈໍຕາມສະພາບແວດລ້ອມ"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"ເປີດແສງກາງຄືນແລ້ວ"</string>
-    <string name="night_mode_tile_label" msgid="6603597795502131664">"ໂໝດກາງຄືນ"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"ເຄືອຂ່າຍ ແລະ ອິນເຕີເນັດ"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"ເຄືອຂ່າຍມືຖື"</string>
     <string name="mobile_network_summary_count" msgid="760865625847664029">"{count,plural, =1{# ຊິມ}other{# ຊິມ}}"</string>
     <string name="mobile_network_active_sim" msgid="1901674954229832811">"ນຳໃຊ້ຢູ່ / SIM"</string>
     <string name="mobile_network_inactive_sim" msgid="3644984830926224318">"ບໍ່ໄດ້ນຳໃຊ້ / SIM"</string>
-    <string name="mobile_network_active_esim" msgid="5864100786496761032">"ນຳໃຊ້ຢູ່ / SIM ທີ່ດາວໂຫລດແລ້ວ"</string>
-    <string name="mobile_network_inactive_esim" msgid="1397332352238119032">"ບໍ່ໄດ້ນຳໃຊ້ / SIM ທີ່ດາວໂຫລດແລ້ວ"</string>
+    <string name="mobile_network_active_esim" msgid="5175362818078597096">"ນຳໃຊ້ / eSIM"</string>
+    <string name="mobile_network_inactive_esim" msgid="7273712403773327964">"ບໍ່ໄດ້ນຳໃຊ້ / eSIM"</string>
     <string name="mobile_network_list_add_more" msgid="6174294462747070655">"ເພີ່ມອີກ"</string>
     <string name="mobile_network_toggle_title" msgid="3515647310810280063">"ອິນເຕີເນັດມືຖື"</string>
     <string name="mobile_network_toggle_summary" msgid="8698267487987697148">"ເຂົ້າເຖິງອິນເຕີເນັດໂດຍໃຊ້ເຄືອຂ່າຍມືຖື"</string>
@@ -148,6 +147,8 @@
     <string name="wifi_hotspot_name_summary_connected" msgid="7421325340822195506">"ອຸປະກອນອື່ນສາມາດເຊື່ອມຕໍ່ກັບ <xliff:g id="WIFI_HOTSPOT_NAME">%1$s</xliff:g>"</string>
     <string name="wifi_hotspot_password_title" msgid="4103948315849351988">"ລະຫັດຜ່ານຮັອດສະປອດ"</string>
     <string name="wifi_hotspot_security_title" msgid="2299925790743587725">"ຄວາມປອດໄພ"</string>
+    <string name="wifi_hotspot_wpa3_sae" msgid="4752416911592950174">"WPA3-Personal"</string>
+    <string name="wifi_security_psk_sae" msgid="8738371461215752280">"WPA2/WPA3-Personal"</string>
     <string name="wifi_hotspot_wpa2_personal" msgid="7135181212837798318">"WPA2 ສ່ວນຕົວ"</string>
     <string name="wifi_hotspot_security_none" msgid="2514844105085054386">"ບໍ່ມີ"</string>
     <string name="wifi_hotspot_ap_band_title" msgid="7685279281668988593">"ຄື້ນ AP"</string>
@@ -175,6 +176,7 @@
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"ສະແດງທັງໝົດ"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"ກຳລັງຊອກຫາ..."</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
+    <string name="bluetooth_toggle_title" msgid="1431803611346881088">"ໃຊ້ Bluetooth"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"ອຸປະກອນທີ່ບໍ່ມີຊື່"</string>
     <string name="bluetooth_paired_devices" msgid="6463199569164652410">"ອຸປະກອນທີ່ຈັບຄູ່ແລ້ວ"</string>
     <string name="bluetooth_pair_new_device" msgid="6948753485443263095">"ຈັບຄູ່ອຸປະກອນໃໝ່"</string>
@@ -298,14 +300,16 @@
     <string name="apps_and_notifications_settings" msgid="8704585874333781975">"ແອັບ ແລະ ການແຈ້ງເຕືອນ"</string>
     <string name="all_applications" msgid="7798210477486822168">"ສະແດງແອັບທັງໝົດ"</string>
     <string name="default_applications" msgid="1558183275638697087">"ແອັບເລີ່ມຕົ້ນ"</string>
+    <string name="performance_impacting_apps" msgid="3439260699394720569">"ແອັບທີ່ກະທົບປະສິດທິພາບ"</string>
     <string name="app_permissions" msgid="32799922508313948">"ການອະນຸຍາດແອັບ"</string>
     <string name="app_permissions_summary" msgid="5402214755935368418">"ຄວບຄຸມສິດເຂົ້າເຖິງແອັບທີ່ມີຕໍ່ຂໍ້ມູນຂອງທ່ານ"</string>
     <string name="applications_settings" msgid="794261395191035632">"ຂໍ້ມູນແອັບ"</string>
-    <string name="force_stop" msgid="2153183697014720520">"ບັງຄັບຢຸດ"</string>
-    <string name="force_stop_dialog_title" msgid="3342850939200388694">"ບັງຄັບປິດບໍ?"</string>
+    <string name="force_stop" msgid="1616958676171167028">"ຢຸດແອັບ"</string>
+    <string name="force_stop_dialog_title" msgid="4481858344628934971">"ຢຸດແອັບໄວ້ບໍ?"</string>
     <string name="force_stop_dialog_text" msgid="4354954014318432599">"ຖ້າທ່ານບັງຄັບປິດແອັບໃດໜຶ່ງ, ມັນອາດເຮັດວຽກຜິດປົກກະຕິໄດ້."</string>
-    <string name="prioritize_app_performance_dialog_title" msgid="2561577032540073080">"ເປີດໃຫ້ຄວາມສຳຄັນແກ່ປະສິດທິພາບແອັບບໍ?"</string>
-    <string name="prioritize_app_performance_dialog_text" msgid="572525689800110355">"ການເປີດມັນສາມາດອາດຈະເຮັດໃຫ້ລະບົບບໍ່ສະຖຽນກໍເປັນໄດ້ ຫຼື ຜົນກະທົບໄລຍະຍາວຕໍ່ກັບຮາດແວ. ທ່ານຕ້ອງການດຳເນີນການຕໍ່ບໍ່?"</string>
+    <string name="force_stop_success_toast_text" msgid="2986272849275894254">"ຢຸດ <xliff:g id="APP_NAME">%1$s</xliff:g> ແລ້ວ."</string>
+    <string name="prioritize_app_performance_dialog_title" msgid="3205297520523665568">"ໃຫ້ຄວາມສຳຄັນປະສິດທິພາບແອັບບໍ?"</string>
+    <string name="prioritize_app_performance_dialog_text" msgid="4321564728229192878">"ນີ້ອາດເປັນໄປໄດ້ທີ່ຈະກໍ່ໃຫ້ເກີດຄວາມບໍ່ສະຖຽນຂອງລະບົບ ຫຼື ກະທົບກັບຮາດແວໃນໄລຍະຍາວ. ທ່ານຕ້ອງການສືບຕໍ່ບໍ່?"</string>
     <string name="prioritize_app_performance_dialog_action_on" msgid="3556735049873419163">"ແມ່ນ"</string>
     <string name="prioritize_app_performance_dialog_action_off" msgid="2813324718753199319">"ບໍ່, ຂອບໃຈ"</string>
     <string name="disable_text" msgid="4358165448648990820">"ປິດນຳໃຊ້"</string>
@@ -376,6 +380,7 @@
     <string name="apps_permission_manager_title" msgid="8776335943862484131">"ຕົວຈັດການສິດອະນຸຍາດ"</string>
     <string name="apps_permission_manager_summary" msgid="4180424218228141274">"ຄວບຄຸມສິດເຂົ້າເຖິງແອັບທີ່ມີຕໍ່ຂໍ້ມູນຂອງທ່ານ"</string>
     <string name="apps_default_apps_summary" msgid="2017792579839972926">"ສຳລັບຜູ້ຊ່ວຍ ແລະ ອື່ນໆ"</string>
+    <string name="performance_impacting_apps_summary" msgid="7762122057244111162">"{count,plural, =1{# ແອັບທີ່ກະທົບປະສິດທິພາບ}other{# ແອັບທີ່ກະທົບປະສິດທິພາບ}}"</string>
     <string name="apps_special_app_access_summary" msgid="6464767436309742163">"ໄປຍັງລະບົບ ແລະ ການຕັ້ງຄ່າອື່ນ"</string>
     <string name="special_access" msgid="5730278220917123811">"ສິດການເຂົ້າເຖິງແອັບພິເສດ"</string>
     <string name="show_system" msgid="4401355756969485287">"ສະແດງລະບົບ"</string>
@@ -385,8 +390,12 @@
     <string name="modify_system_settings_description" msgid="5295023124419592452">"ການອະນຸຍາດນີ້ອະນຸຍາດໃຫ້ແອັບແກ້ໄຂການຕັ້ງຄ່າລະບົບໄດ້."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"ການເຂົ້າເຖິງການແຈ້ງເຕືອນ"</string>
     <string name="notification_listener_security_warning_title" msgid="2893273335175140895">"ອະນຸຍາດໃຫ້ເຂົ້າເຖິງການແຈ້ງເຕືອນສຳລັບ <xliff:g id="SERVICE">%1$s</xliff:g> ບໍ?"</string>
+    <string name="notification_listener_security_warning_summary" msgid="7280197998063498125">"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> ຈະສາມາດອ່ານການແຈ້ງເຕືອນທັງໝົດ ຮວມທັງຂໍ້ມູນສ່ວນຕົວ ເຊັ່ນ: ຊື່ລາຍຊື່ຜູ້ຕິດຕໍ່ ແລະ ຂໍ້ຄວາມທີ່ທ່ານໄດ້ຮັບໄດ້. ມັນຈະສາມາດປິດການແຈ້ງເຕືອນ ຫຼື ກະຕຸ້ນປຸ່ມຄຳສັ່ງທີ່ພວກມັນປະກອບມີໄດ້ນຳ. \n\nນີ້ຈະເຮັດໃຫ້ແອັບສາມາດປິດ ຫຼື ເປີດໃຊ້ຄຸນສົມບັດ ຫ້າມລົບກວນ ຫຼື ປ່ຽນການຕັ້ງຄ່າທີ່ກ່ຽວຂ້ອງໄດ້ນຳອີກ."</string>
+    <string name="notification_listener_revoke_warning_summary" msgid="4904973394539125407">"ຖ້າທ່ານປິດການເຂົ້າເຖິງການແຈ້ງເຕືອນສຳລັບ <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>, ລະບົບອາດຈະປິດການເຂົ້າເຖິງຫ້າມລົບກວນເຊັ່ນກັນ."</string>
     <string name="notification_listener_revoke_warning_confirm" msgid="2759583507454984812">"ປິດ"</string>
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"ຍົກເລີກ"</string>
+    <string name="performance_impacting_apps_description" msgid="7361464904617808444">"ແອັບເຫຼົ່ານີ້ສົ່ງຜົນເສຍຕໍ່ປະສິດທິພາບຂອງລະບົບ ແລະ ຖືກປ້ອງກັນບໍ່ໃຫ້ເອີ້ນໃຊ້ໃນພື້ນຫຼັງ.\nກະລຸນາໃຫ້ຄວາມສຳຄັນແອັບເພື່ອເຮັດໃຫ້ໃຊ້ໃນພື້ນຫຼັງໄດ້ ແລະ ລຶບມັນອອກຈາກລາຍຊື່ນີ້."</string>
+    <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"ໃຫ້ຄວາມສຳຄັນແອັບ"</string>
     <string name="premium_sms_access_title" msgid="1409118461646148686">"ການເຂົ້າເຖິງ SMS ແບບພຣີມຽມ"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"SMS ແບບພຣີມຽມອາດຈະເຮັດໃຫ້ທ່ານເສຍເງິນ ແລະ ຈະເພີ່ມໃສ່ໃບບິນຜູ້ໃຫ້ບໍລິການຂອງທ່ານ. ຖ້າທ່ານເປີດໃຊ້ການອະນຸຍາດສຳລັບແອັບໃດໜຶ່ງ, ທ່ານຈະສາມາດສົ່ງ SMS ແບບພຣີມຽມໂດຍໃຊ້ແອັບນັ້ນໄດ້."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"ການເຂົ້າເຖິງການນຳໃຊ້"</string>
@@ -397,22 +406,27 @@
     <string name="location_settings_title" msgid="901334356682423679">"ສະຖານທີ່"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"ໃຊ້ສະຖານທີ່"</string>
     <string name="location_toggle_summary" msgid="7977868708102299495">"ອະນຸຍາດໃຫ້ແອັບທີ່ທ່ານລະບຸໄວ້ເຂົ້າເຖິງສະຖານທີ່ຂອງທ່ານ"</string>
-    <string name="location_toggle_off_warning" msgid="8396854289251143748">"ຖ້າທ່ານປິດການຕັ້ງຄ່ານີ້, ມັນຈະລຶບສິດເຂົ້າເຖິງສະຖານທີ່ສຳລັບແອັບທັງໝົດອອກ. ແອັບຕົວຊ່ວຍຜູ້ຂັບຈະຍັງມີສິດເຂົ້າເຖິງຢູ່."</string>
-    <string name="location_driver_assistance_toggle_title" msgid="9201622805420459957">"ໃຊ້ສະຖານທີ່ຂອງທ່ານສຳລັບຕົວຊ່ວຍຜູ້ຂັບ"</string>
+    <string name="location_toggle_off_warning" msgid="5959449346865136081">"ຖ້າທ່ານປິດສິ່ງນີ້, ມັນຈະລຶບສິດເຂົ້າເຖິງສະຖານທີ່ຂອງແອັບທັງໝົດອອກ ຍົກເວັ້ນສິດເຂົ້າເຖິງທີ່ຈຳເປັນສຳລັບຕົວຊ່ວຍຜູ້ຂັບ"</string>
+    <string name="location_driver_assistance_toggle_title" msgid="3780157378527924932">"ໃຊ້ສະຖານທີ່ສຳລັບຕົວຊ່ວຍຜູ້ຂັບ"</string>
     <string name="location_driver_assistance_toggle_off_title" msgid="2218532550578204718">"ສະຖານທີ່ພາຫະນະປິດຢູ່"</string>
-    <string name="location_driver_assistance_toggle_off_summary" msgid="1516786816178866919">"ແອັບຕົວຊ່ວຍຜູ້ຂັບຂີ່ບໍ່ສາມາດເຂົ້າເຖິງສະຖານທີ່ຂອງທ່ານໄດ້"</string>
+    <string name="location_driver_assistance_toggle_off_summary" msgid="6040822988891113026">"ແອັບຕົວຊ່ວຍຜູ້ຂັບບໍ່ສາມາດເຂົ້າເຖິງສະຖານທີ່ຂອງທ່ານໄດ້"</string>
     <string name="location_driver_assistance_action_text" msgid="1887309495010247883">"ປ່ຽນ"</string>
     <string name="location_driver_assistance_toggle_summary" msgid="2732591196508054649">"ອະນຸຍາດແອັບທີ່ຊ່ວຍໃນການຂັບຂີ່ເຂົ້າເຖິງສະຖານທີ່ຂອງທ່ານ"</string>
-    <string name="location_driver_assistance_toggle_off_warning" msgid="8097738968253492982">"ຖ້າທ່ານປິດສິ່ງນີ້, ຄຸນສົມບັດຕົວຊ່ວຍຜູ້ຂັບທີ່ອາໄສໃສ່ຂໍ້ມູນສະຖານທີ່ຈະຖືກປິດການນຳໃຊ້."</string>
+    <string name="location_driver_assistance_toggle_off_warning" msgid="2733124752598498356">"ຖ້າທ່ານປິດສິ່ງນີ້, ແອັບຕົວຊ່ວຍຜູ້ຂັບທີ່ອາໄສຂໍ້ມູນສະຖານທີ່ຈະຖືກປິດການນຳໃຊ້"</string>
     <string name="driver_assistance_warning_confirm_label" msgid="2873799611160864931">"ຢືນຢັນການປິດ"</string>
-    <string name="location_settings_recent_requests_title" msgid="6345634382240930628">"ຄຳຂໍຂໍ້ມູນສະຖານທີ່ຫຼ້າສຸດ"</string>
-    <string name="location_settings_recent_requests_empty_message" msgid="7789667070033674910">"ບໍ່ມີຄຳຂໍຂໍ້ມູນສະຖານທີ່ຫຼ້າສຸດ"</string>
+    <string name="location_recently_accessed" msgid="522888989582110975">"ເຂົ້າເຖິງຫຼ້າສຸດ"</string>
+    <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"ເຂົ້າເຖິງຫຼ້າສຸດ"</string>
+    <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"ເບິ່ງທັງໝົດ"</string>
+    <string name="location_no_recent_access" msgid="2859914321242257931">"ບໍ່ມີແອັບທີ່ໃຊ້ຫຼ້າສຸດ"</string>
+    <string name="driver_assistance_label" msgid="9217315205754658940">"<xliff:g id="TIME">%1$s</xliff:g> • ຕົວຊ່ວຍຜູ້ຂັບ"</string>
+    <string name="location_driver_assistance_privacy_policy_header_content" msgid="8118086439003674350">"ແອັບທີ່ໄດ້ຮັບການອະນຸຍາດເຂົ້າເຖິງສະຖານທີ່ຂອງພາຫະນະນີ້ສຳລັບຄຸນສົມບັດຕົວຊ່ວຍຜູ້ຂັບ"</string>
+    <string name="location_driver_assistance_privacy_policy_button_text" msgid="669921557502414704">"ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"ການອະນຸຍາດລະດັບແອັບ"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"ການບໍລິການສະຖານທີ່"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"ໃຊ້ສະຖານທີ່"</string>
     <string name="location_settings_footer" msgid="296892848338100051">"ສະຖານທີ່ອາດຈະໃຊ້ແຫລ່ງຂໍ້ມູນຕ່າງໆ ເຊັ່ນ: GPS, Wi‑Fi ແລະ ເຄືອຂ່າຍມືຖື ແລະ ເຊັນເຊີເພື່ອຊ່ວຍຄາດຄະເນສະຖານທີ່ຂອງອຸປະກອນຂອງທ່ານ."</string>
     <string name="driver_assistance_settings_title" msgid="4915804073177128915">"ຕົວຊ່ວຍຜູ້ຂັບ"</string>
-    <string name="adas_settings_footer" msgid="5128483877858058534">"ຂໍ້ມູນສະຖານທີ່ທີ່ສົ່ງໃຫ້ແອັບຕົວຊ່ວຍຜູ້ຂັບບໍ່ມີຂໍ້ມູນທີ່ລະບຸຕົວຕົນຂອງທ່ານ. ລະບົບຈະເກັບຂໍ້ມູນໄວ້ສູງສຸດ 2 ມື້ກ່ອນທີ່ຈະລຶບມັນ."</string>
+    <string name="adas_settings_footer" msgid="6697021691244459156">"ຂໍ້ມູນສະຖານທີ່ທີ່ສົ່ງໃຫ້ແອັບຕົວຊ່ວຍຜູ້ຂັບບໍ່ມີຂໍ້ມູນທີ່ລະບຸຕົວຕົນຂອງທ່ານ. ລະບົບຈະເກັບຂໍ້ມູນໄວ້ສູງສຸດ 2 ມື້ກ່ອນທີ່ຈະລຶບມັນ."</string>
     <string name="microphone_settings_title" msgid="7125554350537136922">"ໄມໂຄຣໂຟນ"</string>
     <string name="microphone_toggle_title" msgid="911586035332827275">"ໃຊ້ໄມໂຄຣໂຟນ"</string>
     <string name="microphone_toggle_summary" msgid="2682653449849128626">"ອະນຸຍາດໃຫ້ແອັບທັງໝົດເຂົ້າເຖິງໄມໂຄຣໂຟນຂອງທ່ານ"</string>
@@ -428,6 +442,9 @@
     <string name="system_update_settings_title" msgid="8448588267784138855">"ການອັບເດດລະບົບ"</string>
     <string name="system_advanced_title" msgid="6303355131691523362">"ຂັ້ນສູງ"</string>
     <string name="system_advanced_summary" msgid="5833643795981791953">"ກ່ຽວກັບ, ຂໍ້ມູນທາງກົດໝາຍ, ຣີເຊັດ ແລະ ອື່ນໆ"</string>
+    <string name="restart_infotainment_system_title" msgid="5174129167446756511">"ຣີສະຕາດລະບົບສາລະບັນເທີງ"</string>
+    <string name="restart_infotainment_system_dialog_text" msgid="6395281407323116808">"ການຣີສະຕາດລະບົບສາລະບັນເທີງຂອງລົດທ່ານອາດໃຊ້ເວລາສອງສາມນາທີ. ທ່ານຕ້ອງການສືບຕໍ່ບໍ?"</string>
+    <string name="continue_confirmation" msgid="1598892163951467191">"ສືບຕໍ່"</string>
     <string name="firmware_version" msgid="8491753744549309333">"ເວີຊັນ Android"</string>
     <string name="security_patch" msgid="4794276590178386903">"ລະດັບໂປຣແກຣມແກ້ໄຂຄວາມປອດໄພ Android"</string>
     <string name="hardware_info" msgid="3973165746261507658">"ຮຸ່ນ ແລະ ຮາດແວ"</string>
@@ -468,11 +485,11 @@
     <string name="developer_options_settings" msgid="1530739225109118480">"ຕົວເລືອກຜູ້ພັດທະນາ"</string>
     <string name="reset_options_title" msgid="4388902952861833420">"ຕົວເລືອກການຣີເຊັດ"</string>
     <string name="reset_options_summary" msgid="5508201367420359293">"ຣີເຊັດເຄືອຂ່າຍ, ແອັບ ຫຼື ອຸປະກອນ"</string>
-    <string name="reset_network_title" msgid="1284233059990797263">"ຣີເຊັດເຄືອຂ່າຍ"</string>
-    <string name="reset_network_desc" msgid="602381374544634925">"ນີ້ຈະຣີເຊັດການຕັ້ງຄ່າເຄືອຂ່າຍທັງໝົດ ຮວມທັງ:"</string>
-    <string name="reset_network_item_wifi" msgid="7569481589699982698"><li>"Wi‑Fi"</li></string>
+    <string name="reset_network_title" msgid="3077846909739832734">"ຣີເຊັດ Wi‑Fi ແລະ Bluetooth"</string>
+    <string name="reset_network_desc" msgid="3332203703135823033">"ການດຳເນີນການນີ້ຈະຣີເຊັດການຕັ້ງຄ່າ Wi‑Fi ແລະ Bluetooth, ເຊິ່ງຈະລຶບໜ່ວຍຄວາມຈຳຂອງການເຊື່ອມຕໍ່ກ່ອນໜ້ານີ້ອອກ:"</string>
+    <string name="reset_network_item_wifi" msgid="2876370861806060314"><li>"ເຄືອຂ່າຍ Wi‑Fi ແລະ ລະຫັດຜ່ານ"</li></string>
     <string name="reset_network_item_mobile" msgid="5747282716664480997"><li>"ອິນເຕີເນັດມືຖື"</li></string>
-    <string name="reset_network_item_bluetooth" msgid="6035019931106921284"><li>"Bluetooth"</li></string>
+    <string name="reset_network_item_bluetooth" msgid="7475279871421815601"><li>"ໂທລະສັບ ແລະ ອຸປະກອນ Bluetooth ອື່ນໆ"</li></string>
     <string name="reset_esim_title" msgid="8132107637911831211">"ລຶບ eSIM ໃນລົດທັງໝົດ"</string>
     <string name="reset_esim_desc" msgid="1437276625485586740">"ນີ້ຈະບໍ່ຍົກເລີກແພັກເກດການບໍລິການຂອງທ່ານ."</string>
     <string name="reset_esim_error_title" msgid="7245109418130525492">"ບໍ່ສາມາດຣີເຊັດ eSIM ໄດ້"</string>
@@ -545,8 +562,6 @@
     <string name="choose_new_admin_title" msgid="1915428454917699587">"ເລືອກຜູ້ເບິ່ງແຍງລະບົບໃໝ່"</string>
     <string name="choose_new_admin_message" msgid="7468286545352043354">"ທ່ານຈຳເປັນຕ້ອງມີຜູ້ເບິ່ງແຍງລະບົບຢ່າງໜ້ອຍໜຶ່ງຄົນ. ເພື່ອລຶບຜູ້ເບິ່ງແຍງລະບົບນີ້ອອກ, ກະລຸນາເລືອກຜູ້ປ່ຽນແທນກ່ອນ."</string>
     <string name="choose_new_admin_label" msgid="5987653639387437939">"ເລືອກຜູ້ເບິ່ງແຍງລະບົບ"</string>
-    <string name="user_guest" msgid="3465399481257448601">"ແຂກ"</string>
-    <string name="start_guest_session" msgid="4438752398760283201">"ແຂກ"</string>
     <string name="user_switch" msgid="6544839750534690781">"ສະຫຼັບ"</string>
     <string name="current_user_name" msgid="3813671533249316823">"ທ່ານ (%1$s)"</string>
     <string name="user_name_label" msgid="3210832645046206845">"ຊື່"</string>
@@ -572,7 +587,7 @@
     <string name="storage_clear_user_data_text" msgid="8787615136779130680">"ລຶບລ້າງບ່ອນຈັດເກັບຂໍ້ມູນ"</string>
     <string name="storage_clear_cache_btn_text" msgid="8449547925966775612">"ລຶບລ້າງແຄສ"</string>
     <string name="storage_clear_data_dlg_title" msgid="5863775997588969879">"ລຶບຂໍ້ມູນແອັບບໍ?"</string>
-    <string name="storage_clear_data_dlg_text" msgid="795055288575727801">"ຂໍ້ມູນທັງໝົດຂອງແອັບນີ້ຈະຖືກລຶບອອກຢ່າງຖາວອນ ເຊິ່ງຮວມທັງໄຟລ໌, ການຕັ້ງຄ່າ, ບັນຊີ, ຖານຂໍ້ມູນ ແລະ ອື່ນໆທັງໝົດນຳ."</string>
+    <string name="storage_clear_data_dlg_text" msgid="3255314337644212283">"ຂໍ້ມູນຂອງແອັບນີ້ຈະຖືກລຶບອອກຢ່າງຖາວອນ. ນີ້ຮວມເຖິງໄຟລ໌, ການຕັ້ງຄ່າ, ຖານຂໍ້ມູນ ແລະ ຂໍ້ມູນແອັບອື່ນໆນຳ."</string>
     <string name="storage_clear_failed_dlg_text" msgid="6710485971686866306">"ບໍ່ສາມາດລຶບພື້ນທີ່ຈັດເກັບຂໍ້ມູນສຳລັບແອັບໄດ້."</string>
     <string name="storage_unmount_success" msgid="1553591517580407021">"ນຳ <xliff:g id="NAME">%1$s</xliff:g> ອອກຢ່າງປອດໄພແລ້ວ"</string>
     <string name="storage_unmount_failure" msgid="4591934911541762883">"ບໍ່ສາມາດນຳ <xliff:g id="NAME">%1$s</xliff:g> ອອກໄດ້ຢ່າງປອດໄພ"</string>
@@ -610,6 +625,8 @@
     <string name="privacy_settings_title" msgid="3150145262029229572">"ຄວາມເປັນສ່ວນຕົວ"</string>
     <string name="privacy_vehicle_data_title" msgid="6385777370742595651">"ຂໍ້ມູນລະບົບສາລະບັນເທີງ"</string>
     <string name="privacy_location_summary" msgid="7019817848470566242">"ຄວບຄຸມສິດເຂົ້າເຖິງສະຖານທີ່ຂອງທ່ານໂດຍແອັບ"</string>
+    <string name="mute_camera_title" msgid="215494079895460172">"ກ້ອງຖ່າຍຮູບ"</string>
+    <string name="mute_camera_summary" msgid="1237452064757403042">"ຄວບຄຸມສິດເຂົ້າເຖິງກ້ອງຂອງແອັບ"</string>
     <string name="mute_mic_title" msgid="2813215197799569553">"ໄມໂຄຣໂຟນ"</string>
     <string name="mute_mic_summary" msgid="5426953935775303904">"ຄວບຄຸມສິດເຂົ້າເຖິງໄມໂຄຣໂຟນຂອງແອັບ"</string>
     <string name="vehicle_data_title" msgid="935933215161763721">"ຂໍ້ມູນລະບົບສາລະບັນເທີງ"</string>
@@ -679,37 +696,22 @@
     <string name="lockpassword_password_recently_used" msgid="8255729487108602924">"ຜູ້ເບິ່ງແຍງລະບົບອຸປະກອນບໍ່ອະນຸຍາດໃຫ້ໃຊ້ລະຫັດຜ່ານເມື່ອບໍ່ດົນມານີ້"</string>
     <string name="error_saving_password" msgid="8334882262622500658">"ເກີດຄວາມຜິດພາດໃນການບັນທຶກລະຫັດຜ່ານ"</string>
     <string name="lockpassword_password_denylisted_by_admin" msgid="8611831198794524730">"ລະຫັດຜ່ານທົ່ວໄປແມ່ນຖືກບລັອກໂດຍຜູ້ເບິ່ງແຍງລະບົບໄອທີຂອງທ່ານ. ໃຫ້ລອງໃຊ້ລະຫັດອື່ນແທນ."</string>
-    <!-- no translation found for lockpassword_password_requires_alpha (713641878535268163) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_digit (8120467503175627546) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_symbol (6294855131052831204) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_letters (324864645474528299) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_lowercase (5373735547134824114) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_uppercase (2002482631049525313) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_numeric (5694949801691947801) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_symbols (1789501049908004075) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_nonletter (3089186186422638926) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_requires_nonnumerical (1677123573552379526) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_too_short (3898753131694105832) -->
-    <skip />
-    <!-- no translation found for lockpassword_pin_too_short (3671037384464545169) -->
-    <skip />
-    <!-- no translation found for lockpassword_password_too_long (1709616257350671045) -->
-    <skip />
-    <!-- no translation found for lockpassword_pin_too_long (8315542764465856288) -->
-    <skip />
+    <string name="lockpassword_password_requires_alpha" msgid="713641878535268163">"ຕ້ອງມີຕົວອັກສອນຢ່າງໜ້ອຍໜຶ່ງຕົວ"</string>
+    <string name="lockpassword_password_requires_digit" msgid="8120467503175627546">"ຕ້ອງມີຕົວເລກຢ່າງໜ້ອຍໜຶ່ງຕົວ"</string>
+    <string name="lockpassword_password_requires_symbol" msgid="6294855131052831204">"ຕ້ອງມີສັນຍາລັກຢ່າງໜ້ອຍໜຶ່ງຕົວ"</string>
+    <string name="lockpassword_password_requires_letters" msgid="324864645474528299">"{count,plural, =1{ຕ້ອງມີຕົວອັກສອນຢ່າງໜ້ອຍ # ຕົວ}other{ຕ້ອງມີຕົວອັກສອນຢ່າງໜ້ອຍ # ຕົວ}}"</string>
+    <string name="lockpassword_password_requires_lowercase" msgid="5373735547134824114">"{count,plural, =1{ຕ້ອງມີຕົວພິມນ້ອຍຢ່າງໜ້ອຍ # ຕົວ}other{ຕ້ອງມີຕົວພິມນ້ອຍຢ່າງໜ້ອຍ # ຕົວ}}"</string>
+    <string name="lockpassword_password_requires_uppercase" msgid="2002482631049525313">"{count,plural, =1{ຕ້ອງມີຕົວພິມໃຫຍ່ຢ່າງໜ້ອຍ # ຕົວ}other{ຕ້ອງມີຕົວພິມໃຫຍ່ຢ່າງໜ້ອຍ # ຕົວ}}"</string>
+    <string name="lockpassword_password_requires_numeric" msgid="5694949801691947801">"{count,plural, =1{ຕ້ອງມີຕົວເລກຢ່າງໜ້ອຍ # ຕົວ}other{ຕ້ອງມີຕົວເລກຢ່າງໜ້ອຍ # ຕົວ}}"</string>
+    <string name="lockpassword_password_requires_symbols" msgid="1789501049908004075">"{count,plural, =1{ຕ້ອງມີສັນຍາລັກພິເສດຢ່າງໜ້ອຍ # ຕົວ}other{ຕ້ອງມີສັນຍາລັກພິເສດຢ່າງໜ້ອຍ # ຕົວ}}"</string>
+    <string name="lockpassword_password_requires_nonletter" msgid="3089186186422638926">"{count,plural, =1{ຕ້ອງມີອັກຂະລະທີ່ບໍ່ແມ່ນຕົວອັກສອນຢ່າງໜ້ອຍ # ຕົວ}other{ຕ້ອງມີອັກຂະລະທີ່ບໍ່ແມ່ນຕົວອັກສອນຢ່າງໜ້ອຍ # ຕົວ}}"</string>
+    <string name="lockpassword_password_requires_nonnumerical" msgid="1677123573552379526">"{count,plural, =1{ຕ້ອງມີອັກຂະລະທີ່ບໍ່ແມ່ນຕົວເລກຢ່າງໜ້ອຍ # ຕົວ}other{ຕ້ອງມີອັກຂະລະທີ່ບໍ່ແມ່ນຕົວເລກຢ່າງໜ້ອຍ # ຕົວ}}"</string>
+    <string name="lockpassword_password_too_short" msgid="3898753131694105832">"{count,plural, =1{ຕ້ອງມີອັກຂະລະຢ່າງໜ້ອຍ # ຕົວ}other{ຕ້ອງມີອັກຂະລະຢ່າງໜ້ອຍ # ຕົວ}}"</string>
+    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{ຕ້ອງມີຕົວເລກຢ່າງໜ້ອຍ # ຕົວ}other{ຕ້ອງມີຕົວເລກຢ່າງໜ້ອຍ # ຕົວ}}"</string>
+    <string name="lockpassword_password_too_long" msgid="1709616257350671045">"{count,plural, =1{ຕ້ອງມີອັກຂະລະໜ້ອຍກວ່າ # ຕົວ}other{ຕ້ອງມີອັກຂະລະໜ້ອຍກວ່າ # ຕົວ}}"</string>
+    <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{ຕ້ອງມີຕົວເລກໜ້ອຍກວ່າ # ຕົວ}other{ຕ້ອງມີຕົວເລກໜ້ອຍກວ່າ # ຕົວ}}"</string>
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"ບໍ່ອະນຸຍາດໃຫ້ໃຊ້ຊຸດຕົວເລກລຽງກັນແຕ່ນ້ອຍຫາໃຫຍ່, ໃຫຍ່ຫານ້ອຍ ຫຼື ຊຸດຕົວເລກຊ້ຳກັນ"</string>
     <string name="setup_lock_settings_options_button_label" msgid="3337845811029780896">"ຕົວເລືອກການລັອກໜ້າຈໍ"</string>
-    <string name="build_info_fmt" msgid="5592554123908086426">"<xliff:g id="FINGERPRINT">%1$s</xliff:g>\n<xliff:g id="DATE">%2$s</xliff:g> : <xliff:g id="NUM_DAYS">%3$s</xliff:g> ມື້ກ່ອນ"</string>
     <string name="credentials_reset" msgid="873900550885788639">"ລຶບຂໍ້ມູນຮັບຮອງ"</string>
     <string name="credentials_reset_summary" msgid="6067911547500459637">"ລຶບໃບຮັບຮອງທັງໝົດອອກ"</string>
     <string name="credentials_reset_hint" msgid="3459271621754137661">"ລຶບເນື້ອຫາທັງໝົດອອກບໍ?"</string>
@@ -779,8 +781,18 @@
     <string name="number_of_device_admins" msgid="7508826094096451485">"{count,plural, =1{# ແອັບທີ່ເປີດນຳໃຊ້}other{# ແອັບທີ່ເປີດນຳໃຊ້}}"</string>
     <string name="number_of_device_admins_none" msgid="5547493703413973954">"ບໍ່ມີແອັບທີ່ເປີດນຳໃຊ້"</string>
     <string name="work_policy_privacy_settings" msgid="5263835989260149968">"ນະໂຍບາຍພາຫະນະຂອງ <xliff:g id="ORGANIZATION_NAME">%1$s</xliff:g>"</string>
+    <string name="work_policy_privacy_settings_no_org_name" msgid="8011687012493940230">"ນະໂຍບາຍພາຫະນະ"</string>
     <string name="work_policy_privacy_settings_summary" msgid="5321618399949880194">"ການຕັ້ງຄ່າທີ່ຈັດການໂດຍຜູ້ຈັດການອົງການ"</string>
     <string name="footer_learn_more_content_description" msgid="7749452309729272078">"ສຶກສາເພີ່ມເຕີມກ່ຽວກັບ <xliff:g id="SERVICE">%1$s</xliff:g>"</string>
+    <string name="enterprise_privacy_settings" msgid="6496900796150572727">"ຂໍ້ມູນພາຫະນະທີ່ມີການຈັດການ"</string>
+    <string name="enterprise_privacy_settings_summary_generic" msgid="5850991363779957797">"ການຕັ້ງຄ່າທີ່ຈັດການໂດຍຜູ້ເບິ່ງແຍງລະບົບກຸ່ມລົດ"</string>
+    <string name="enterprise_privacy_header" msgid="4652489109303330306">"ເພື່ອໃຫ້ການເຂົ້າເຖິງຂໍ້ມູນໃນພາຫະນະທີ່ມີການຈັດການນີ້, ຜູ້ເບິ່ງແຍງລະບົບກຸ່ມລົດອາດຈະປ່ຽນການຕັ້ງຄ່າ ແລະ ຕິດຕັ້ງຊອບແວໃນລະບົບສາລະບັນເທີງ.\n\nສຳລັບລາຍລະອຽດເພີ່ມເຕີມ, ໃຫ້ຕິດຕໍ່ຜູ້ເບິ່ງແຍງກຸ່ມລົດຂອງທ່ານ."</string>
+    <string name="enterprise_privacy_exposure_category" msgid="4870494030035008520">"ຂໍ້ມູນທີ່ຜູ້ເບິ່ງແຍງກຸ່ມລົດຂອງທ່ານສາມາດເບິ່ງເຫັນ"</string>
+    <string name="enterprise_privacy_exposure_changes_category" msgid="8837106430193547177">"ການປ່ຽນແປງທີ່ສ້າງຂຶ້ນໂດຍຜູ້ເບິ່ງແຍງກຸ່ມລົດຂອງທ່ານ"</string>
+    <string name="enterprise_privacy_exposure_desc" msgid="7962571201715956427">" "<li>"ຂໍ້ມູນທີ່ເຊື່ອມໂຍງກັບບັນຊີພາຫະນະທີ່ມີການຈັດການຂອງທ່ານ"</li>\n" "<li>"ລາຍຊື່ແອັບໃນພາຫະນະທີ່ມີການຈັດການຂອງທ່ານ"</li>\n" "<li>"ໄລຍະເວລາ ແລະ ຂໍ້ມູນທີ່ໃຊ້ໃນແຕ່ລະແອັບ"</li></string>
+    <string name="enterprise_privacy_device_access_category" msgid="5820180227429886857">"ການເຂົ້າເຖິງລະບົບສາລະບັນເທີງຂອງທ່ານ"</string>
+    <string name="enterprise_privacy_installed_packages" msgid="1069862734971848156">"ລາຍຊື່ແອັບໃນພາຫະນະຂອງທ່ານ"</string>
+    <string name="enterprise_privacy_apps_count_estimation_info" msgid="2684195229249659340">"ຈຳນວນຂອງແອັບແມ່ນເປັນການປະມານການເທົ່ານັ້ນ. ມັນອາດບໍ່ຮວມແອັບທີ່ຕິດຕັ້ງຈາກນອກ Play Store."</string>
     <plurals name="enterprise_privacy_number_packages_lower_bound" formatted="false" msgid="1628398874478431488">
       <item quantity="other">ຂັ້ນຕ່ຳ <xliff:g id="COUNT_1">%d</xliff:g> ແອັບ</item>
       <item quantity="one">ຂັ້ນຕ່ຳ <xliff:g id="COUNT_0">%d</xliff:g> ແອັບ</item>
@@ -789,6 +801,22 @@
       <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> ແອັບ</item>
       <item quantity="one"><xliff:g id="COUNT_0">%d</xliff:g> ແອັບ</item>
     </plurals>
+    <string name="enterprise_privacy_network_logs" msgid="5093305105565608542">"ບັນທຶກການຈາລະຈອນເຄືອຂ່າຍຫຼ້າສຸດ"</string>
+    <string name="enterprise_privacy_bug_reports" msgid="9197432120122370521">"ລາຍງານຂໍ້ຜິດພາດຫຼ້າສຸດ"</string>
+    <string name="enterprise_privacy_security_logs" msgid="7375479062062113231">"ບັນທຶກຄວາມປອດໄພຫຼ້າສຸດ"</string>
+    <string name="enterprise_privacy_none" msgid="2566653655908700748">"ບໍ່ມີ"</string>
+    <string name="enterprise_privacy_enterprise_installed_packages" msgid="7798942534994638670">"ຕິດຕັ້ງແອັບແລ້ວ"</string>
+    <string name="enterprise_privacy_location_access" msgid="3132799413005627076">"ການອະນຸຍາດສະຖານທີ່"</string>
+    <string name="enterprise_privacy_microphone_access" msgid="4094467062253345379">"ການອະນຸຍາດໄມໂຄຣໂຟນ"</string>
+    <string name="enterprise_privacy_camera_access" msgid="8895281017339143744">"ການອະນຸຍາດກ້ອງຖ່າຍຮູບ"</string>
+    <string name="enterprise_privacy_enterprise_set_default_apps" msgid="3386806357685549519">"ແອັບເລີ່ມຕົ້ນ"</string>
+    <string name="enterprise_privacy_input_method" msgid="5062395693747004531">"ແປ້ນພິມເລີ່ມຕົ້ນ"</string>
+    <string name="enterprise_privacy_input_method_name" msgid="2027313786295077607">"ຕັ້ງເປັນ <xliff:g id="APP_LABEL">%s</xliff:g>"</string>
+    <string name="enterprise_privacy_global_http_proxy" msgid="1366593928008294049">"ຕັ້ງພຣັອກຊີ HTTP ສ່ວນກາງແລ້ວ"</string>
+    <string name="enterprise_privacy_ca_certs_personal" msgid="5677098981429650665">"ຂໍ້ມູນການເຂົ້າສູ່ລະບົບທີ່ເຊື່ອຖືໃນໂປຣໄຟລ໌ສ່ວນຕົວຂອງທ່ານ"</string>
+    <string name="enterprise_privacy_device_access_desc" msgid="3442555102576036038">" "<li>"ຜູ້ເບິ່ງແຍງລະບົບສາມາດລັອກລະບົບສາລະບັນເທີງ ແລະ ຣີເຊັດລະຫັດຜ່ານ"</li>\n" "<li>"ຜູ້ເບິ່ງແຍງສາມາດລຶບຂໍ້ມູນໃນລະບົບສາລະບັນເທີງ"</li></string>
+    <string name="enterprise_privacy_failed_password_wipe_device" msgid="4768743631260876559">"ຈຳນວນການໃສ່ລະຫັດຜ່ານບໍ່ສຳເລັດກ່ອນຈະລຶບຂໍ້ມູນທັງໝົດໃນລະບົບສາລະບັນເທີງ"</string>
+    <string name="enterprise_privacy_failed_password_wipe_current_user" msgid="786246192213446835">"ຈຳນວນການໃສ່ລະຫັດຜ່ານບໍ່ສຳເລັດກ່ອນຈະລຶບຂໍ້ມູນໂປຣໄຟລ໌ອອກ"</string>
     <plurals name="enterprise_privacy_number_failed_password_wipe" formatted="false" msgid="445847844239023816">
       <item quantity="other">ພະຍາຍາມ <xliff:g id="COUNT_1">%d</xliff:g> ເທື່ອ</item>
       <item quantity="one">ພະຍາຍາມ <xliff:g id="COUNT_0">%d</xliff:g> ເທື່ອ</item>
@@ -839,12 +867,20 @@
     <string name="captions_settings_text_style_yellow_on_black" msgid="4681565950104511943">"ສີເຫຼືອງພື້ນດຳ"</string>
     <string name="captions_settings_text_style_yellow_on_blue" msgid="5072521958156112239">"ສີເຫຼືອງພື້ນຟ້າ"</string>
     <string name="accessibility_settings_screen_reader_title" msgid="5113265553157624836">"ໂປຣແກຣມອ່ານໜ້າຈໍ"</string>
-    <string name="talkback_title" msgid="6529000326454628289">"TalkBack"</string>
-    <string name="talkback_settings_off" msgid="1486849504005704390">"ປິດ"</string>
-    <string name="talkback_settings_on" msgid="796292072895957042">"ເວົ້າລາຍການໃນໜ້າຈໍ"</string>
-    <string name="enable_talkback_toggle_title" msgid="3027666779214128091">"ໃຊ້ TalkBack"</string>
-    <string name="talkback_options_title" msgid="7366357383004455638">"ຕົວເລືອກ"</string>
-    <string name="talkback_settings_title" msgid="631275474070654027">"ການຕັ້ງຄ່າ"</string>
-    <string name="about_talkback_title" msgid="6048639389606001298">"ກ່ຽວກັບ TalkBack"</string>
-    <string name="about_talkback_description" msgid="5438077447169311605">"TalkBack ບໍ່ສາມາດໃຊ້ໄດ້ເມື່ອອຸປະກອນເຄື່ອນທີ່ຢູ່.\n\nເມື່ອ TalkBack ເປີດຢູ່, ມັນໃຫ້ການ​ຕອບ​ສະໜອງ​ແບບ​ສຽງ​ເວົ້າເພື່ອໃຫ້ທ່ານສາມາດໃຊ້ອຸປະກອນຂອງທ່ານໂດຍບໍ່ຕ້ອງເບິ່ງໜ້າຈໍ. TalkBack ມີຈຸດປະສົງສຳລັບສະຖານະການ ຫຼື ຄົນທີ່ມີຄວາມຫຍຸ້ງຍາກໃນການເບິ່ງເຫັນໜ້າຈໍ."</string>
+    <string name="screen_reader_settings_off" msgid="6081562047935689764">"ປິດ"</string>
+    <string name="screen_reader_settings_on" msgid="2168217218643349459">"ເວົ້າລາຍການໃນໜ້າຈໍ"</string>
+    <string name="enable_screen_reader_toggle_title" msgid="7641307781194619254">"ໃຊ້ <xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g>"</string>
+    <string name="screen_reader_options_title" msgid="1073640098442831819">"ຕົວເລືອກ"</string>
+    <string name="screen_reader_description_title" msgid="8766666406552388012">"ການຕັ້ງຄ່າ"</string>
+    <string name="camera_settings_title" msgid="2837785830355288903">"ກ້ອງຖ່າຍຮູບ"</string>
+    <string name="camera_toggle_title" msgid="1990732328673068456">"ໃຊ້ກ້ອງຖ່າຍຮູບ"</string>
+    <string name="camera_toggle_summary" msgid="5751159996822627567">"ອະນຸຍາດໃຫ້ແອັບທັງໝົດເຂົ້າເຖິງກ້ອງຂອງທ່ານ"</string>
+    <string name="camera_manage_permissions" msgid="9005596413781984368">"ຈັດການການອະນຸຍາດກ້ອງ"</string>
+    <string name="camera_recently_accessed" msgid="8084100710444691977">"ເຂົ້າໃຊ້ຫຼ້າສຸດ"</string>
+    <string name="camera_no_recent_access" msgid="965105023454777859">"ບໍ່ມີແອັບທີ່ໃຊ້ຫຼ້າສຸດ"</string>
+    <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"ບໍ່ມີແອັບໃດມີສິດເຂົ້າເຖິງ"</string>
+    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{# ແອັບຈາກທັງໝົດ {total_count} ແອັບມີສິດເຂົ້າເຖິງ}other{# ແອັບຈາກທັງໝົດ {total_count} ແອັບມີສິດເຂົ້າເຖິງ}}"</string>
+    <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"ເຂົ້າໃຊ້ຫຼ້າສຸດ"</string>
+    <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"ເບິ່ງທັງໝົດ"</string>
+    <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"ກຳລັງໂຫລດ…"</string>
 </resources>
