@@ -24,7 +24,10 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: [
+        "src/**/*.kt",
+        "src/**/*.java",
+    ],
 
     static_libs: [
         "androidx.lifecycle_lifecycle-common-java8",
@@ -43,6 +46,7 @@ android_library {
         "car-admin-ui-lib",
         "car-helper-lib",
         "car-qc-lib",
+        "services.core",
     ],
 
     libs: [
@@ -51,6 +55,8 @@ android_library {
 
     manifest: "AndroidManifest.xml",
     resource_dirs: ["res"],
+    // TODO(b/319708040): re-enable use_resource_processor
+    use_resource_processor: false,
 }
 
 android_app {
@@ -81,12 +87,6 @@ android_app {
     required: ["allowed_privapp_com.android.car.settings"],
 
     dxflags: ["--multi-dex"],
-
-    product_variables: {
-        pdk: {
-            enabled: false,
-        },
-    },
 }
 
 // Duplicate of CarSettings which includes testing only resources for Robolectric
@@ -98,7 +98,10 @@ android_app {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: [
+        "src/**/*.kt",
+        "src/**/*.java",
+    ],
 
     libs: [
         "android.car",
@@ -142,12 +145,8 @@ android_app {
     },
 
     dxflags: ["--multi-dex"],
-
-    product_variables: {
-        pdk: {
-            enabled: false,
-        },
-    },
+    // TODO(b/319708040): re-enable use_resource_processor
+    use_resource_processor: false,
 }
 
 android_library {
@@ -160,7 +159,10 @@ android_library {
 
     manifest: "tests/unit/AndroidManifest.xml",
 
-    srcs: ["src/**/*.java"],
+    srcs: [
+        "src/**/*.kt",
+        "src/**/*.java",
+    ],
 
     libs: [
         "android.car",
@@ -178,7 +180,6 @@ android_library {
         "SettingsLib-search",
         "androidx-constraintlayout_constraintlayout-solver",
         "jsr305",
-        "car-ui-lib-testing-support",
         "car-admin-ui-lib",
         "car-helper-lib",
         "car-qc-lib",
@@ -201,10 +202,11 @@ android_library {
     dxflags: ["--multi-dex"],
 
     aaptflags: ["--extra-packages com.android.car.settings"],
+    // TODO(b/319708040): re-enable use_resource_processor
+    use_resource_processor: false,
+}
 
-    product_variables: {
-        pdk: {
-            enabled: false,
-        },
-    },
+filegroup {
+    name: "CarSettings_proguard_flags",
+    srcs: ["proguard.flags"],
 }

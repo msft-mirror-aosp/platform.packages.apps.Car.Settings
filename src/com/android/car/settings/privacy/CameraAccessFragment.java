@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 The Android Open Source Project
+ * Copyright (C) 2024 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +14,22 @@
  * limitations under the License.
  */
 
-package com.android.car.settings.location;
+package com.android.car.settings.privacy;
+
+import android.annotation.FlaggedApi;
 
 import com.android.car.settings.R;
 import com.android.car.settings.common.SettingsFragment;
+import com.android.internal.camera.flags.Flags;
 
 /**
- * Driver assistance page.
+ * Camera access page.
  */
-public class AdasLocationFragment extends SettingsFragment {
+@FlaggedApi(Flags.FLAG_CAMERA_PRIVACY_ALLOWLIST)
+public class CameraAccessFragment extends SettingsFragment {
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.adas_location_fragment;
+        return R.xml.camera_access_fragment;
     }
 }
