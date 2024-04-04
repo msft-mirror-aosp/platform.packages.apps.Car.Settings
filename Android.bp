@@ -47,6 +47,7 @@ android_library {
         "car-helper-lib",
         "car-qc-lib",
         "car-data-subscription-lib",
+        "car-resource-common",
     ],
 
     libs: [
