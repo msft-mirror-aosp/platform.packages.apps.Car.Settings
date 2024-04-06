@@ -46,7 +46,7 @@ public class WifiTetherQrCodePreferenceController extends
             CarUxRestrictions uxRestrictions) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
         mWifiTetheringHandler = new WifiTetheringHandler(context,
-                fragmentController.getSettingsLifecycle(), this);
+                fragmentController.getSettingsLifecycle(), this, /* monitorRestarts= */ false);
     }
 
     @Override
@@ -66,6 +66,7 @@ public class WifiTetherQrCodePreferenceController extends
 
     @Override
     protected void onStartInternal() {
+        super.onStartInternal();
         mWifiTetheringHandler.onStartInternal();
     }
 
