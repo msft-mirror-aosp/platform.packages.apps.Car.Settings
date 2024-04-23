@@ -259,6 +259,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Opletberigklanke"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Luitoon, kennisgewings, wekker"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Speel media op"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Skakel media oor na %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Helderheid"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Pas skerm aan by swak lig"</string>
     <string name="units_settings" msgid="402325305096925886">"Eenhede"</string>
@@ -318,7 +319,7 @@
     <string name="applications_settings" msgid="794261395191035632">"Appinligting"</string>
     <string name="force_stop" msgid="1616958676171167028">"Stop app"</string>
     <string name="force_stop_dialog_title" msgid="4481858344628934971">"Stop app?"</string>
-    <string name="force_stop_dialog_text" msgid="4354954014318432599">"As jy \'n program dwing om te stop, kan dit wangedra."</string>
+    <string name="force_stop_dialog_text" msgid="4354954014318432599">"As jy ’n app verplig om te stop, kan dit verkeerd optree."</string>
     <string name="force_stop_success_toast_text" msgid="2986272849275894254">"<xliff:g id="APP_NAME">%1$s</xliff:g> is gestop."</string>
     <string name="prioritize_app_performance_dialog_title" msgid="3205297520523665568">"Prioritiseer appwerkverrigting?"</string>
     <string name="prioritize_app_performance_dialog_text" msgid="4321564728229192878">"Dit kan potensiële stelselonstabiliteit veroorsaak of hardeware lang termyn beïnvloed. Wil jy voortgaan?"</string>
@@ -328,7 +329,7 @@
     <string name="enable_text" msgid="1794971777861881238">"Aktiveer"</string>
     <string name="uninstall_text" msgid="277907956072833012">"Deïnstalleer"</string>
     <string name="app_disable_dialog_text" msgid="7731155411006654025">"As jy hierdie program deaktiveer, sal Android en ander programme dalk nie meer soos bedoel werk nie."</string>
-    <string name="app_disable_dialog_positive" msgid="4448684722791563349">"Deaktiveer program"</string>
+    <string name="app_disable_dialog_positive" msgid="4448684722791563349">"Deaktiveer app"</string>
     <string name="not_installed" msgid="4163454337822508007">"Nie vir hierdie profiel geïnstalleer nie"</string>
     <string name="permissions_label" msgid="2701446753515612685">"Toestemmings"</string>
     <string name="app_info_all_services_label" msgid="6495363975322723452">"Alle dienste"</string>
@@ -338,7 +339,7 @@
     <string name="application_version_label" msgid="8556889839783311649">"Weergawe: %1$s"</string>
     <string name="runtime_permissions_summary_no_permissions_granted" msgid="6001439205270250021">"Geen toestemmings is verleen nie"</string>
     <string name="runtime_permissions_summary_no_permissions_requested" msgid="4074220596273432442">"Geen toestemmings is versoek nie"</string>
-    <string name="unused_apps" msgid="648471933781010395">"Ongebruikte programme"</string>
+    <string name="unused_apps" msgid="648471933781010395">"Ongebruikte apps"</string>
     <string name="unused_apps_summary" msgid="8257304516038923072">"{count,plural, =1{# ongebruikte program}other{# ongebruikte programme}}"</string>
     <string name="unused_apps_switch" msgid="4433958286200341563">"Verwyder toestemmings en maak spasie oop"</string>
     <string name="storage_type_internal" msgid="8918688427078709570">"%s se interne berging"</string>
@@ -362,9 +363,9 @@
     <string name="assist_and_voice_input_settings" msgid="8813195157136637132">"Bystand en steminvoer"</string>
     <string name="assist_app_settings" msgid="9085261410166776497">"Bystandprogram"</string>
     <string name="assist_access_context_title" msgid="8034851731390785301">"Gebruik teks op die skerm"</string>
-    <string name="assist_access_context_summary" msgid="2374281280599443774">"Gee die bystandprogram toegang tot die skerminhoud as teks"</string>
+    <string name="assist_access_context_summary" msgid="2374281280599443774">"Gee die bystandapp toegang tot die skerminhoud as teks"</string>
     <string name="assist_access_screenshot_title" msgid="2855956879971465044">"Gebruik skermkiekie"</string>
-    <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"Gee die bystandprogram toegang tot \'n prent van die skerm"</string>
+    <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"Gee die bystandapp toegang tot \'n prent van die skerm"</string>
     <string name="voice_input_settings_title" msgid="3238707827815647526">"Steminvoer"</string>
     <string name="autofill_settings_title" msgid="1188754272680049972">"Outovuldiens"</string>
     <string name="app_list_preference_none" msgid="7753357799926715901">"Geen"</string>
@@ -373,7 +374,7 @@
     <string name="autofill_confirmation_message" msgid="1832984461556991378">"&lt;b&gt;Maak seker dat jy hierdie program vertrou&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; &lt;xliff:g id=app_name example=Google Outovul&gt;%1$s&lt;/xliff:g&gt; gebruik wat op jou skerm is om te bepaal wat outomaties ingevul kan word."</string>
     <string name="autofill_add_service" msgid="6413893366443609951">"Voeg diens by"</string>
     <string name="app_launch_domain_links_title" msgid="774480184927726651">"Oopmaak van skakels"</string>
-    <string name="domain_url_section_title" msgid="9070403140947787214">"Geïnstalleerde programme"</string>
+    <string name="domain_url_section_title" msgid="9070403140947787214">"Geïnstalleerde apps"</string>
     <string name="domain_urls_summary_none" msgid="3077803215088293183">"Moenie gesteunde skakels oopmaak nie"</string>
     <string name="domain_urls_summary_one" msgid="5072257421806034237">"Maak <xliff:g id="DOMAIN">%s</xliff:g> oop"</string>
     <string name="domain_urls_summary_some" msgid="5523153458016701725">"Maak <xliff:g id="DOMAIN">%s</xliff:g> en ander URL\'e oop"</string>
@@ -399,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"Wys stelsel"</string>
     <string name="hide_system" msgid="8845453295584638040">"Versteek stelsel"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Versteek stelselprogramme"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Wekkers en onthounotas"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Verander stelselinstellings"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Hierdie toestemming laat \'n program toe om stelselinstellings te verander."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Kennisgewingtoegang"</string>
@@ -412,8 +414,8 @@
     <string name="premium_sms_access_title" msgid="1409118461646148686">"Toegang tot premium-SMS\'e"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Premium-SMS\'e kan jou geld kos en die koste sal by jou diensverskafferfakture gevoeg word. As jy toestemming vir \'n program aktiveer, sal jy premium-SMS\'e met daardie program kan stuur."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Gebruiktoegang"</string>
-    <string name="usage_access_description" msgid="2413168719257435422">"Gebruiktoegang laat \'n program toe om na te spoor watter ander programme jy gebruik en hoe gereeld, asook as jou diensverskaffer, taalinstellings en ander besonderhede."</string>
-    <string name="wifi_control_title" msgid="5660436566907731929">"Wi-Fi-beheer"</string>
+    <string name="usage_access_description" msgid="2413168719257435422">"Gebruiktoegang laat \'n app toe om na te spoor watter ander apps jy gebruik en hoe gereeld, asook jou diensverskaffer, taalinstellings en ander besonderhede."</string>
+    <string name="wifi_control_title" msgid="5660436566907731929">"Wi-fi-beheer"</string>
     <string name="wifi_control_description" msgid="6021926850423169261">"Wi-Fi-beheer laat \'n program toe om Wi-Fi aan of af te skakel, Wi-Fi-netwerke te soek en aan hulle te koppel, netwerke by te voeg of te verwyder, en om \'n warmkol wat net plaaslik is, te begin."</string>
     <string name="more_special_access_title" msgid="166115485446645971">"Meer"</string>
     <string name="location_settings_title" msgid="901334356682423679">"Ligging"</string>
@@ -512,13 +514,13 @@
     <string name="reset_network_confirm_desc" msgid="7721698076856330212">"Stel alle netwerkinstellings terug? Jy kan nie hierdie handeling ontdoen nie!"</string>
     <string name="reset_network_confirm_button_text" msgid="5246859685069024851">"Stel instellings terug"</string>
     <string name="reset_network_complete_toast" msgid="3804108209431416865">"Netwerkinstellings is teruggestel"</string>
-    <string name="reset_app_pref_title" msgid="5855420038951743992">"Stel programvoorkeure terug"</string>
-    <string name="reset_app_pref_desc" msgid="579392665146962149">"Dit sal al die voorkeure terugstel vir:\n\n"<li>"Gedeaktiveerde programme"</li>\n<li>"Gedeaktiveerdeprogram-kennisgewings"</li>\n<li>"Verstekprogramme vir handelinge"</li>\n<li>"Agtergronddatabeperkings vir programme"</li>\n<li>"Enige toestemmingbeperkings"</li>\n\n"Jy sal geen programdata verloor nie."</string>
+    <string name="reset_app_pref_title" msgid="5855420038951743992">"Stel appvoorkeure terug"</string>
+    <string name="reset_app_pref_desc" msgid="579392665146962149">"Dit sal alle voorkeure terugstel vir:\n\n"<li>"Gedeaktiveerde apps"</li>\n<li>"Gedeaktiveerde-appkennisgewings"</li>\n<li>"Verstekapps vir handelinge"</li>\n<li>"Agtergronddatabeperkings vir apps"</li>\n<li>"Enige toestemmingbeperkings"</li>\n\n"Jy sal geen appdata verloor nie."</string>
     <string name="reset_app_pref_button_text" msgid="6270820447321231609">"Stel programme terug"</string>
     <string name="reset_app_pref_complete_toast" msgid="8709072932243594166">"Programvoorkeure is teruggestel"</string>
     <string name="factory_reset_title" msgid="4019066569214122052">"Vee alle data uit (fabriekterugstelling)"</string>
     <string name="factory_reset_summary" msgid="854815182943504327">"Vee alle data en profiele van die inligtingvermaakstelsel af uit"</string>
-    <string name="factory_reset_desc" msgid="2774024747279286354">"Dit sal alle data van jou voertuig se inligtingvermaakstelsel uitvee, insluitend:\n\n"<li>"Jou rekeninge en profiele"</li>\n<li>"Stelsel- en programdata en -instellings"</li>\n<li>"Afgelaaide programme"</li></string>
+    <string name="factory_reset_desc" msgid="2774024747279286354">"Dit sal alle data uit jou voertuig se inligtingvermaakstelsel uitvee, insluitend:\n\n"<li>"Jou rekeninge en profiele"</li>\n<li>"Stelsel- en appdata en -instellings"</li>\n<li>"Afgelaaide apps"</li></string>
     <string name="factory_reset_accounts" msgid="5523956654938834209">"Jy is tans aangemeld by die volgende rekeninge:"</string>
     <string name="factory_reset_other_users_present" msgid="3852324375352090570">"Ander profiele is vir hierdie voertuig opgestel."</string>
     <string name="factory_reset_button_text" msgid="2626666247051368256">"Vee alle data uit"</string>
@@ -649,18 +651,25 @@
     <string name="action_unavailable" msgid="7087119418684417249">"Hierdie handeling is nie vir jou profiel beskikbaar nie"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Kameratoegang"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Kies of apps toegang tot jou motor se kamera kan kry"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Gebruik jou motor se kameras met:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Enige app"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Enige app waarvoor jy toegang tot jou kamera toegelaat het"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Geen apps nie"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Geen van jou apps nie"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Net vereiste apps"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Net apps wat deur jou motor se vervaardiger vereis word"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Vereiste apps"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Hierdie apps is nodig te help dat jou motor veilig werk"</string>
+    <!-- no translation found for camera_required_apps_group_title (3902768358955524404) -->
+    <skip />
+    <!-- no translation found for camera_required_apps_group_summary (3308062892315253384) -->
+    <skip />
     <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Beleid"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Jou motorvervaardiger het dalk steeds toegang tot jou motor se kamera. Jy kan hul beleide nagaan vir meer inligting."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Gaan app se privaatheidsbeleid na vir meer inligting oor hoe elke app jou kamera gebruik."</string>
+    <!-- no translation found for camera_access_disclaimer_summary (901846859668942836) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_title (6628966732265022536) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_summary (2422476957183039039) -->
+    <skip />
+    <!-- no translation found for permission_grant_always (8851460274973784076) -->
+    <skip />
+    <!-- no translation found for permission_grant_never (5725479525867480567) -->
+    <skip />
+    <!-- no translation found for permission_grant_in_use (7442315008206758926) -->
+    <skip />
+    <!-- no translation found for permission_grant_ask (1613256400438907973) -->
+    <skip />
     <string name="security_settings_title" msgid="6955331714774709746">"Sekuriteit"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Skermslot"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Geen"</string>

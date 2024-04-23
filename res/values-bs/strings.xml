@@ -259,6 +259,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Zvukovi obavještenja"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Melodija zvona, obavještenja, alarm"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Reproduciraj medijski sadržaj na:"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Prebacivanje medija na: %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Osvjetljenje"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Podesite ekran za slabo osvjetljenje"</string>
     <string name="units_settings" msgid="402325305096925886">"Jedinice"</string>
@@ -358,12 +359,12 @@
     <string name="app_data_usage_background_data_summary" msgid="4445472217737386826">"Korištenje podataka samo kada je apl. u 1. planu"</string>
     <string name="computing_size" msgid="5791407621793083965">"Računanje…"</string>
     <string name="runtime_permissions_additional_count" msgid="3920383880473283764">"{count,plural, =1{# dodatno odobrenje}one{# dodatno odobrenje}few{# dodatna odobrenja}other{# dodatnih odobrenja}}"</string>
-    <string name="direct_boot_unaware_dialog_message_car" msgid="2857599310518724080">"Napomena: Nakon ponovnog pokretanja, ova aplikacija se neće moći pokrenuti dok ne otključate vozilo."</string>
+    <string name="direct_boot_unaware_dialog_message_car" msgid="2857599310518724080">"Napomena: nakon ponovnog pokretanja ova aplikacija se neće moći pokrenuti dok ne otključate vozilo."</string>
     <string name="assist_and_voice_input_settings" msgid="8813195157136637132">"Pomoć i glasovni unos"</string>
     <string name="assist_app_settings" msgid="9085261410166776497">"Aplikacija za pomoć"</string>
     <string name="assist_access_context_title" msgid="8034851731390785301">"Korištenje teksta s ekrana"</string>
     <string name="assist_access_context_summary" msgid="2374281280599443774">"Omogućava aplikaciji za pomoć da pristupa sadržaju na ekranu kao tekstu"</string>
-    <string name="assist_access_screenshot_title" msgid="2855956879971465044">"Korištenje snimke ekrana"</string>
+    <string name="assist_access_screenshot_title" msgid="2855956879971465044">"Korištenje snimka ekrana"</string>
     <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"Omogućava aplikaciji za pomoć da pristupa slici ekrana"</string>
     <string name="voice_input_settings_title" msgid="3238707827815647526">"Glasovni unos"</string>
     <string name="autofill_settings_title" msgid="1188754272680049972">"Usluga automatskog popunjavanja"</string>
@@ -399,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"Prikaži sistemske procese"</string>
     <string name="hide_system" msgid="8845453295584638040">"Sakrij sistemske procese"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Sakrij sistemske aplikacije"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Alarmi i podsjetnici"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Izmjena postavki sistema"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Ovo odobrenje omogućava aplikaciji da izmijeni postavke sistema."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Pristup obavještenjima"</string>
@@ -649,18 +651,25 @@
     <string name="action_unavailable" msgid="7087119418684417249">"Ova radnja nije dostupna za vaš profil"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Pristup kameri"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Odaberite mogu li aplikacije pristupati kamerama automobila"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Koristite kamere automobila sa sljedećim:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Bilo koja aplikacija"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Bilo koja aplikacija kojoj ste dozvolili pristup kameri"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Nijedna aplikacija"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Nijedna od vaših aplikacija"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Samo potrebne aplikacije"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Samo aplikacije koje zahtijeva proizvođač automobila"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Potrebne aplikacije"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Ove aplikacije su potrebne da pomognu prilikom sigurnog funkcioniranja automobila"</string>
+    <!-- no translation found for camera_required_apps_group_title (3902768358955524404) -->
+    <skip />
+    <!-- no translation found for camera_required_apps_group_summary (3308062892315253384) -->
+    <skip />
     <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Pravila"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Proizvođač automobila i dalje može imati pristup kameri automobila. Za više informacija možete pregledati njegova pravila."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Saznajte više o načinu na koji svaka aplikacija koristi Kameru pregledanjem njenih Pravila privatnosti."</string>
+    <!-- no translation found for camera_access_disclaimer_summary (901846859668942836) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_title (6628966732265022536) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_summary (2422476957183039039) -->
+    <skip />
+    <!-- no translation found for permission_grant_always (8851460274973784076) -->
+    <skip />
+    <!-- no translation found for permission_grant_never (5725479525867480567) -->
+    <skip />
+    <!-- no translation found for permission_grant_in_use (7442315008206758926) -->
+    <skip />
+    <!-- no translation found for permission_grant_ask (1613256400438907973) -->
+    <skip />
     <string name="security_settings_title" msgid="6955331714774709746">"Sigurnost"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Zaključavanje ekrana"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Ništa"</string>

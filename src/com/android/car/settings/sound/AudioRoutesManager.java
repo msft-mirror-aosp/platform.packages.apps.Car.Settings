@@ -16,6 +16,7 @@
 
 package com.android.car.settings.sound;
 
+import static android.car.media.CarAudioManager.AUDIO_FEATURE_DYNAMIC_ROUTING;
 import static android.media.AudioDeviceInfo.TYPE_BLUETOOTH_A2DP;
 
 import android.bluetooth.BluetoothProfile;
@@ -31,6 +32,7 @@ import android.media.AudioDeviceInfo;
 import android.util.ArrayMap;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.VisibleForTesting;
 import androidx.core.content.ContextCompat;
 
 import com.android.car.settings.CarSettingsApplication;
@@ -98,10 +100,13 @@ public class AudioRoutesManager {
         mUsage = usage;
         mAudioRouteItemMap = new ArrayMap<>();
         mAddressList = new ArrayList<>();
-        mCarAudioManager.clearAudioZoneConfigsCallback();
-        mCarAudioManager.setAudioZoneConfigsChangeCallback(ContextCompat.getMainExecutor(mContext),
-                mAudioZoneConfigurationsChangeCallback);
-        updateAudioRoutesList();
+        if (isAudioRoutingEnabled()) {
+            mCarAudioManager.clearAudioZoneConfigsCallback();
+            mCarAudioManager.setAudioZoneConfigsChangeCallback(
+                    ContextCompat.getMainExecutor(mContext),
+                    mAudioZoneConfigurationsChangeCallback);
+            updateAudioRoutesList();
+        }
     }
 
     private void updateAudioRoutesList() {
@@ -171,7 +176,15 @@ public class AudioRoutesManager {
         return mAddressList;
     }
 
-    public Map<String, AudioRouteItem> getAudioRouteItemMap() {
+    public String getDeviceNameForAddress(String address) {
+        if (mAudioRouteItemMap.containsKey(address)) {
+            return mAudioRouteItemMap.get(address).getName();
+        }
+        return address;
+    }
+
+    @VisibleForTesting
+    Map<String, AudioRouteItem> getAudioRouteItemMap() {
         return mAudioRouteItemMap;
     }
 
@@ -181,6 +194,14 @@ public class AudioRoutesManager {
 
     public CarAudioManager getCarAudioManager() {
         return mCarAudioManager;
+    }
+
+    public boolean isAudioRoutingEnabled() {
+        if (mCarAudioManager != null
+                && getCarAudioManager().isAudioFeatureEnabled(AUDIO_FEATURE_DYNAMIC_ROUTING)) {
+            return true;
+        }
+        return false;
     }
 
     public void tearDown() {

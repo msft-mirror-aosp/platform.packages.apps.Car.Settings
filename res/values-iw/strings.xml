@@ -106,7 +106,7 @@
     <string name="wifi_ssid" msgid="488604828159458741">"שם הרשת"</string>
     <string name="wifi_ssid_hint" msgid="3170608752313710099">"הזנת ה-SSID"</string>
     <string name="wifi_security" msgid="158358046038876532">"אבטחה"</string>
-    <string name="wifi_signal_strength" msgid="8507318230553042817">"עוצמת אות"</string>
+    <string name="wifi_signal_strength" msgid="8507318230553042817">"עוצמת האות"</string>
     <string name="wifi_status" msgid="5688013206066543952">"סטטוס"</string>
     <string name="wifi_speed" msgid="1650692446731850781">"מהירות קישור"</string>
     <string name="wifi_frequency" msgid="8951455949682864922">"תדר"</string>
@@ -166,7 +166,7 @@
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"שימוש בנקודת Wi-Fi לשיתוף אינטרנט"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"כבויה"</string>
     <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"שימוש בנקודה לשיתוף אינטרנט (Hotspot) בכל הנסיעות"</string>
-    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"הנקודה לשיתוף אינטרנט (Hotspot) תהיה זמינה ברגע שמפעילים את הרכב"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"הנקודה לשיתוף אינטרנט (Hotspot) תהיה זמינה לאחר הפעלת ההצתה ברכב"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"אפשר לסרוק את קוד ה-QR הזה כדי להיכנס אל \"%s\""</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"הסיסמה של נקודת האינטרנט: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> רוצה להפעיל את ה-Wi-Fi"</string>
@@ -259,6 +259,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"צלילי ההתראות"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"רינגטון, התראות, שעון מעורר"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"הפעלה של מדיה ב-"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"החלפת המדיה ל-%1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"בהירות"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"התאמת המסך לתאורה חלשה"</string>
     <string name="units_settings" msgid="402325305096925886">"יחידות"</string>
@@ -399,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"הצגת המערכת"</string>
     <string name="hide_system" msgid="8845453295584638040">"הסתרת המערכת"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"הסתרת אפליקציות מערכת"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"התראות ותזכורות"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"שינוי הגדרות המערכת"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"ההרשאה הזו מתירה לאפליקציה לשנות את הגדרות המערכת."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"גישה להתראות"</string>
@@ -649,18 +651,25 @@
     <string name="action_unavailable" msgid="7087119418684417249">"הפעולה הזו לא זמינה לפרופיל שלך"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"גישה למצלמה"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"אפשר לבחור אם לאפליקציות תהיה גישה למצלמה של הרכב"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"אפשר להשתמש במצלמה של הרכב עם:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"אפליקציה כלשהי"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"כל אפליקציה שנתת לה גישה למצלמה"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"אף אפליקציה"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"אף אחת מהאפליקציות"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"רק אפליקציות נדרשות"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"רק אפליקציות שנדרשות על ידי יצרן הרכב"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"אפליקציות נדרשות"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"האפליקציות האלה דרושות כדי לעזור לרכב לתפקד בצורה בטיחותית"</string>
+    <!-- no translation found for camera_required_apps_group_title (3902768358955524404) -->
+    <skip />
+    <!-- no translation found for camera_required_apps_group_summary (3308062892315253384) -->
+    <skip />
     <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"מדיניות"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"יכול להיות שליצרן הרכב עדיין יש גישה למצלמה של הרכב. לקבלת מידע נוסף, אפשר לעיין במדיניות של היצרן."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"למידע נוסף על האופן שבו כל אפליקציה משתמשת במצלמה, כדאי לעיין במדיניות הפרטיות שלה."</string>
+    <!-- no translation found for camera_access_disclaimer_summary (901846859668942836) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_title (6628966732265022536) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_summary (2422476957183039039) -->
+    <skip />
+    <!-- no translation found for permission_grant_always (8851460274973784076) -->
+    <skip />
+    <!-- no translation found for permission_grant_never (5725479525867480567) -->
+    <skip />
+    <!-- no translation found for permission_grant_in_use (7442315008206758926) -->
+    <skip />
+    <!-- no translation found for permission_grant_ask (1613256400438907973) -->
+    <skip />
     <string name="security_settings_title" msgid="6955331714774709746">"אבטחה"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"נעילת מסך"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"ללא"</string>

@@ -259,6 +259,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"警示音效"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"鈴聲、通知和鬧鐘"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"選擇媒體輸出裝置"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"正在將媒體切換到「%1$s」"</string>
     <string name="display_brightness" msgid="5718970880488110840">"亮度"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"將螢幕調整為適合在低光源環境中查看的亮度"</string>
     <string name="units_settings" msgid="402325305096925886">"單位"</string>
@@ -399,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"顯示系統程序"</string>
     <string name="hide_system" msgid="8845453295584638040">"隱藏系統程序"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"隱藏系統應用程式"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"鬧鐘和提醒"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"修改系統設定"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"這項權限可讓應用程式修改系統設定。"</string>
     <string name="notification_access_title" msgid="1467340098885813473">"通知存取權"</string>
@@ -411,10 +413,10 @@
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"將應用程式設為優先"</string>
     <string name="premium_sms_access_title" msgid="1409118461646148686">"付費簡訊存取權"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"傳送付費簡訊必須另外付費，相關費用會併入電信費帳單。如果你為某個應用程式啟用權限，即可利用該應用程式傳送付費簡訊。"</string>
-    <string name="usage_access_title" msgid="7153427122072303254">"使用情況存取權"</string>
-    <string name="usage_access_description" msgid="2413168719257435422">"取得「使用情況存取權」權限後，應用程式就能追蹤你使用的其他應用程式與頻率，以及你的電信業者、語言設定和其他詳細資料。"</string>
+    <string name="usage_access_title" msgid="7153427122072303254">"使用存取權"</string>
+    <string name="usage_access_description" msgid="2413168719257435422">"具有使用存取權的應用程式可以追蹤你使用的其他應用程式與頻率，以及你的電信業者、語言設定等詳情。"</string>
     <string name="wifi_control_title" msgid="5660436566907731929">"Wi-Fi 控制"</string>
-    <string name="wifi_control_description" msgid="6021926850423169261">"取得「Wi-Fi 控制」權限後，應用程式就能開啟或關閉 Wi-Fi、掃描及連上 Wi-Fi 網路、新增或移除網路，或者啟動僅限本機的無線基地台。"</string>
+    <string name="wifi_control_description" msgid="6021926850423169261">"取得「Wi-Fi 控制」權限後，應用程式就能開啟或關閉 Wi-Fi、掃描及連上 Wi-Fi 網路、新增或移除網路，或啟動僅限區域網路的無線基地台。"</string>
     <string name="more_special_access_title" msgid="166115485446645971">"更多"</string>
     <string name="location_settings_title" msgid="901334356682423679">"定位"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"使用位置資訊"</string>
@@ -513,7 +515,7 @@
     <string name="reset_network_confirm_button_text" msgid="5246859685069024851">"重設設定"</string>
     <string name="reset_network_complete_toast" msgid="3804108209431416865">"已重設網路設定"</string>
     <string name="reset_app_pref_title" msgid="5855420038951743992">"重設應用程式偏好設定"</string>
-    <string name="reset_app_pref_desc" msgid="579392665146962149">"這麼做會重設下列項目的所有偏好設定：\n\n"<li>"已停用的應用程式"</li>\n<li>"已停用的應用程式通知"</li>\n<li>"執行動作的預設應用程式"</li>\n<li>"應用程式背景資料限制"</li>\n<li>"任何權限限制"</li>\n\n"你不會遺失任何應用程式資料。"</string>
+    <string name="reset_app_pref_desc" msgid="579392665146962149">"這項操作會重設下列項目的所有偏好設定：\n\n"<li>"已停用的應用程式"</li>\n<li>"已停用的應用程式通知"</li>\n<li>"執行動作的預設應用程式"</li>\n<li>"應用程式背景資料限制"</li>\n<li>"任何權限限制"</li>\n\n"你不會遺失任何應用程式資料。"</string>
     <string name="reset_app_pref_button_text" msgid="6270820447321231609">"重設應用程式"</string>
     <string name="reset_app_pref_complete_toast" msgid="8709072932243594166">"已重設應用程式偏好設定"</string>
     <string name="factory_reset_title" msgid="4019066569214122052">"清除所有資料 (恢復原廠設定)"</string>
@@ -613,7 +615,7 @@
     <string name="data_usage_auto_sync_on_dialog_title" msgid="8068513213445588532">"要允許自動同步資料嗎？"</string>
     <string name="data_usage_auto_sync_on_dialog" msgid="8683935973719807821">"連上網路時，你對帳戶所做的變更全都會自動複製到你的車輛。\n\n有些帳戶還可能會自動複製你在車輛上所做的每一項變更。"</string>
     <string name="data_usage_auto_sync_off_dialog_title" msgid="6683011954002351091">"不允許自動同步資料嗎？"</string>
-    <string name="data_usage_auto_sync_off_dialog" msgid="5040873073016183315">"這樣可以節省數據用量，但你必須手動同步處理每個帳戶才能收集最新資訊。此外，系統進行更新時不會通知你。"</string>
+    <string name="data_usage_auto_sync_off_dialog" msgid="5040873073016183315">"這樣可以節省數據用量，但你必須手動同步處理每個帳戶才能收集最新資訊。此外，你也不會收到最新動態的通知。"</string>
     <string name="account_details_title" msgid="7529571432258448573">"帳戶資訊"</string>
     <string name="add_account_title" msgid="5988746086885210040">"新增帳戶"</string>
     <string name="add_an_account" msgid="1072285034300995091">"新增帳戶"</string>
@@ -649,18 +651,25 @@
     <string name="action_unavailable" msgid="7087119418684417249">"你的設定檔不支援這項操作"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"攝影機存取權"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"決定應用程式是否可以存取車輛攝影機"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"以下應用程式可以使用車輛攝影機："</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"所有應用程式"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"將攝影機存取權授予所有應用程式"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"不要授予任何應用程式"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"任何應用程式都無法使用車輛攝影機"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"僅限必要的應用程式"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"僅限車輛製造商所需的應用程式"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"必要的應用程式"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"必須要有這些應用程式才能確保行車安全"</string>
+    <!-- no translation found for camera_required_apps_group_title (3902768358955524404) -->
+    <skip />
+    <!-- no translation found for camera_required_apps_group_summary (3308062892315253384) -->
+    <skip />
     <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"政策"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"車輛製造商或許仍可存取車輛攝影機。如要瞭解詳情，請參閱車輛製造商的政策。"</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"想進一步瞭解各個應用程式使用攝影機的方式，請參閱該應用程式的《隱私權政策》。"</string>
+    <!-- no translation found for camera_access_disclaimer_summary (901846859668942836) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_title (6628966732265022536) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_summary (2422476957183039039) -->
+    <skip />
+    <!-- no translation found for permission_grant_always (8851460274973784076) -->
+    <skip />
+    <!-- no translation found for permission_grant_never (5725479525867480567) -->
+    <skip />
+    <!-- no translation found for permission_grant_in_use (7442315008206758926) -->
+    <skip />
+    <!-- no translation found for permission_grant_ask (1613256400438907973) -->
+    <skip />
     <string name="security_settings_title" msgid="6955331714774709746">"安全性"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"螢幕鎖定"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"無"</string>

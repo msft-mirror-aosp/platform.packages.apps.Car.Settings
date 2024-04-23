@@ -259,6 +259,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"เสียงการแจ้งเตือน"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"เสียงเรียกเข้า การแจ้งเตือน การปลุก"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"เล่นสื่อใน"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"กำลังเปลี่ยนเส้นทางสื่อไปยัง %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"ความสว่าง"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"ปรับหน้าจอสำหรับสภาวะแสงน้อย"</string>
     <string name="units_settings" msgid="402325305096925886">"หน่วย"</string>
@@ -318,7 +319,7 @@
     <string name="applications_settings" msgid="794261395191035632">"ข้อมูลแอป"</string>
     <string name="force_stop" msgid="1616958676171167028">"หยุดแอป"</string>
     <string name="force_stop_dialog_title" msgid="4481858344628934971">"หยุดแอปไหม"</string>
-    <string name="force_stop_dialog_text" msgid="4354954014318432599">"แอปอาจทำงานผิดพลาดหากบังคับให้หยุด"</string>
+    <string name="force_stop_dialog_text" msgid="4354954014318432599">"แอปอาจทำงานผิดพลาดหากคุณบังคับให้หยุด"</string>
     <string name="force_stop_success_toast_text" msgid="2986272849275894254">"หยุด <xliff:g id="APP_NAME">%1$s</xliff:g> แล้ว"</string>
     <string name="prioritize_app_performance_dialog_title" msgid="3205297520523665568">"ตั้งค่าให้เน้นที่ประสิทธิภาพของแอปไหม"</string>
     <string name="prioritize_app_performance_dialog_text" msgid="4321564728229192878">"การตั้งค่านี้อาจทำให้ระบบไม่เสถียรหรืออาจส่งผลกระทบต่อฮาร์ดแวร์ในระยะยาว ต้องการทำต่อไหม"</string>
@@ -399,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"แสดงระบบ"</string>
     <string name="hide_system" msgid="8845453295584638040">"ซ่อนระบบ"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"ซ่อนแอปของระบบ"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"การปลุกและการช่วยเตือน"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"แก้ไขการตั้งค่าระบบ"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"สิทธิ์นี้อนุญาตให้แอปแก้ไขการตั้งค่าระบบได้"</string>
     <string name="notification_access_title" msgid="1467340098885813473">"การเข้าถึงการแจ้งเตือน"</string>
@@ -477,7 +479,7 @@
     <string name="legal_information" msgid="1838443759229784762">"ข้อมูลทางกฎหมาย"</string>
     <string name="contributors_title" msgid="7698463793409916113">"ผู้ร่วมให้ข้อมูล"</string>
     <string name="manual" msgid="4819839169843240804">"กำหนดเอง"</string>
-    <string name="regulatory_labels" msgid="3165587388499646779">"ป้ายกำกับกฎข้อบังคับ"</string>
+    <string name="regulatory_labels" msgid="3165587388499646779">"ป้ายกำกับกฎระเบียบ"</string>
     <string name="safety_and_regulatory_info" msgid="1204127697132067734">"คู่มือความปลอดภัยและกฎระเบียบ"</string>
     <string name="copyright_title" msgid="4220237202917417876">"ลิขสิทธิ์"</string>
     <string name="license_title" msgid="936705938435249965">"ใบอนุญาต"</string>
@@ -649,18 +651,16 @@
     <string name="action_unavailable" msgid="7087119418684417249">"การทำงานนี้ใช้ไม่ได้กับโปรไฟล์ของคุณ"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"สิทธิ์เข้าถึงกล้อง"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"เลือกว่าจะให้แอปต่างๆ เข้าถึงกล้องของรถหรือไม่"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"ใช้กล้องของรถกับแอปต่อไปนี้"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"ทุกแอป"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"ทุกแอปที่คุณอนุญาตให้เข้าถึงกล้อง"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"ไม่มีแอป"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"ไม่มีแอป"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"เฉพาะแอปที่จำเป็น"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"เฉพาะแอปที่จำเป็นจากผู้ผลิตรถยนต์"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"แอปที่จำเป็น"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"ต้องใช้แอปเหล่านี้เพื่อช่วยให้รถทำงานได้อย่างปลอดภัย"</string>
+    <string name="camera_required_apps_group_title" msgid="3902768358955524404">"แอปที่จำเป็น"</string>
+    <string name="camera_required_apps_group_summary" msgid="3308062892315253384">"แอปที่ผู้ผลิตรถยนต์จำเป็นต้องใช้"</string>
     <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"นโยบาย"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"ผู้ผลิตรถยนต์อาจยังเข้าถึงกล้องของรถได้อยู่ โปรดดูข้อมูลเพิ่มเติมจากนโยบายของผู้ผลิต"</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"ดูข้อมูลเพิ่มเติมเกี่ยวกับวิธีใช้กล้องของแต่ละแอปได้จากนโยบายความเป็นส่วนตัว"</string>
+    <string name="camera_access_disclaimer_summary" msgid="901846859668942836">"ผู้ผลิตรถยนต์อาจยังเข้าถึงกล้องของรถได้\n\nดูข้อมูลเพิ่มเติมเกี่ยวกับวิธีใช้กล้องของแต่ละแอปได้จากนโยบายความเป็นส่วนตัวของแอปดังกล่าว"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"แอปสาระบันเทิง"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"อนุญาตให้แอปสาระบันเทิงถ่ายภาพและบันทึกวิดีโอ"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"ตลอดเวลา"</string>
+    <string name="permission_grant_never" msgid="5725479525867480567">"ไม่เลย"</string>
+    <string name="permission_grant_in_use" msgid="7442315008206758926">"เมื่อใช้งาน"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"ถามทุกครั้ง"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"ความปลอดภัย"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"ล็อกหน้าจอ"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"ไม่มี"</string>

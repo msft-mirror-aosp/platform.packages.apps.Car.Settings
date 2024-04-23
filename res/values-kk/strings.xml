@@ -97,7 +97,7 @@
     <string name="wifi_failed_connect_message" msgid="4447498225022147324">"Желіге қосылмады"</string>
     <string name="wifi_setup_add_network" msgid="3660498520389954620">"Желі қосу"</string>
     <string name="wifi_setup_connect" msgid="3512399573397979101">"Қосылу"</string>
-    <string name="wifi_connecting" msgid="1930665730621677960">"Қосылуда…"</string>
+    <string name="wifi_connecting" msgid="1930665730621677960">"Қосылып жатыр…"</string>
     <string name="wifi_disconnected" msgid="4485699234859368137">"Қосылмаған"</string>
     <string name="wifi_not_in_range_message" msgid="2617126307140203787">"Желі байланыс аясында емес."</string>
     <string name="wifi_password" msgid="5565632142720292397">"Құпия сөз"</string>
@@ -219,7 +219,7 @@
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Жұптау және жалғау"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Bluetooth жұптау коды"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="1636575922217263060">"PIN коды әріптерден не таңбалардан құралады"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"Жұптау кодын енгізіп, \"Оралу\" немесе \"Енгізу\" түймесін басыңыз"</string>
+    <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"Жұптау кодын теріп,  Return немесе Enter пернесін басыңыз."</string>
     <string name="bluetooth_pairing_request" msgid="4769675459526556801">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> құрылғысымен жұпталсын ба?"</string>
     <string name="bluetooth_pairing_shares_phonebook" msgid="2015966932886300630">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> құрылғысына контактілерге және қоңыраулар тарихына кіруге рұқсат ету"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="7825091249522704764">"Бұл PIN кодын басқа құрылғыдан да енгізу қажет болуы мүмкін."</string>
@@ -259,6 +259,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Ескерту дыбыстары"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Рингтон, хабарландырулар, дабыл"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Медиафайл ойнатылатын құрылғы:"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Медиафайл %1$s аудио шығысына ауысып жатыр."</string>
     <string name="display_brightness" msgid="5718970880488110840">"Жарықтық"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Экранды көмескі жарыққа реттеу"</string>
     <string name="units_settings" msgid="402325305096925886">"Өлшем бірліктер"</string>
@@ -364,7 +365,7 @@
     <string name="assist_access_context_title" msgid="8034851731390785301">"Экрандағы мәтінді пайдалану"</string>
     <string name="assist_access_context_summary" msgid="2374281280599443774">"Көмекші қолданбаға экрандағы мәтінді пайдалануға рұқсат ету"</string>
     <string name="assist_access_screenshot_title" msgid="2855956879971465044">"Скриншотты пайдалану"</string>
-    <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"Көмекші қолданбаға экран кескінін пайдалануға рұқсат ету"</string>
+    <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"Көмекші қолданбаға экран суретін пайдалануға рұқсат беру"</string>
     <string name="voice_input_settings_title" msgid="3238707827815647526">"Дауыспен енгізу"</string>
     <string name="autofill_settings_title" msgid="1188754272680049972">"Автотолтыру қызметі"</string>
     <string name="app_list_preference_none" msgid="7753357799926715901">"Жоқ"</string>
@@ -399,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"Жүйені көрсету"</string>
     <string name="hide_system" msgid="8845453295584638040">"Жүйені жасыру"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Жүйелік қолданбаларды жасыру"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Оятқыштар мен еске салғыштар"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Жүйе параметрлерін өзгерту"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Бұл рұқсат қолданбаға жүйе параметрлерін өзгертуге мүмкіндік береді."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Хабарландыруларды пайдалану"</string>
@@ -411,8 +413,8 @@
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Қолданбаны басым ету"</string>
     <string name="premium_sms_access_title" msgid="1409118461646148686">"Ақылы SMS жіберу"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Ақылы SMS жіберу үшін оператор тарифтеріне сәйкес ақы алынады. Егер қолданбаға рұқсат берсеңіз, сол қолданба арқылы ақылы SMS жібере аласыз."</string>
-    <string name="usage_access_title" msgid="7153427122072303254">"Пайдалану тарихын көру"</string>
-    <string name="usage_access_description" msgid="2413168719257435422">"Пайдалану тарихын көру рұқсаты қолданбаға сіз пайдаланатын басқа қолданбаларды және қаншалықты жиі пайдаланатыңыз туралы ақпаратты, сондай-ақ операторды, тіл параметрлерін және басқа мәліметтерді бақылауға мүмкіндік береді."</string>
+    <string name="usage_access_title" msgid="7153427122072303254">"Пайдалану мәліметін көру"</string>
+    <string name="usage_access_description" msgid="2413168719257435422">"Пайдалану мәліметін көру рұқсаты қолданбаға сіз пайдаланатын басқа қолданбаларды және қаншалықты жиі пайдаланатыңыз туралы ақпаратты, сондай-ақ операторды, тіл параметрлерін және басқа мәліметтерді бақылауға мүмкіндік береді."</string>
     <string name="wifi_control_title" msgid="5660436566907731929">"Wi-Fi желісін басқару"</string>
     <string name="wifi_control_description" msgid="6021926850423169261">"Wi-Fi желісін басқару функциясы қолданбаға Wi-Fi желісін қосуға немесе өшіруге, Wi-Fi желілерін іздеуге және оларға жалғануға, желілерді енгізуге не өшіруге немесе тек жергілікті хотспотты іске қосуға рұқсат етеді."</string>
     <string name="more_special_access_title" msgid="166115485446645971">"Тағы"</string>
@@ -649,18 +651,25 @@
     <string name="action_unavailable" msgid="7087119418684417249">"Профиліңізде бұл әрекетті жасай алмайсыз."</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Камераны пайдалану"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Қолданбалар көлігіңіздің камераларын пайдалана ала ма жоқ па, соны таңдаңыз."</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Көліктің камераларын келесі қолданбалармен бірге пайдаланыңыз:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Кез келген қолданба"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Камераны пайдалануға рұқсат берілген кез келген қолданба"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Ешқандай қолданба жоқ"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Қолданбалардың ешқайсысы"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Қажетті қолданбалар ғана"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Көлік өндірушісі талап ететін қолданбалар ғана"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Қажетті қолданбалар"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Бұл қолданбалар көлігіңіздің қауіпсіз жұмыс істеуі үшін қажет:"</string>
+    <!-- no translation found for camera_required_apps_group_title (3902768358955524404) -->
+    <skip />
+    <!-- no translation found for camera_required_apps_group_summary (3308062892315253384) -->
+    <skip />
     <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Саясат"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Көлік өндірушісі көлігіңіздің камерасын әлі де пайдалануы мүмкін. Толық ақпарат алу үшін оның саясаттарымен таныса аласыз."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Құпиялық саясатын қарап шығып, әрбір қолданба камераңызды қалай пайдаланатыны туралы толық ақпарат алыңыз."</string>
+    <!-- no translation found for camera_access_disclaimer_summary (901846859668942836) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_title (6628966732265022536) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_summary (2422476957183039039) -->
+    <skip />
+    <!-- no translation found for permission_grant_always (8851460274973784076) -->
+    <skip />
+    <!-- no translation found for permission_grant_never (5725479525867480567) -->
+    <skip />
+    <!-- no translation found for permission_grant_in_use (7442315008206758926) -->
+    <skip />
+    <!-- no translation found for permission_grant_ask (1613256400438907973) -->
+    <skip />
     <string name="security_settings_title" msgid="6955331714774709746">"Қауіпсіздік"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Экранды құлыптау"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Жоқ"</string>

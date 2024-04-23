@@ -217,9 +217,9 @@
     <string name="uwb_toggle_summary" msgid="2206513296288659105">"သင့်ကားကို UWB စက်ပစ္စည်းများ၏ တည်နေရာ ရှာဖွေသတ်မှတ်ရာတွင် ကူညီပေးသည်"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"ဘလူးတုသ်တွဲချိတ်ရန် တောင်းဆိုချက်"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"တွဲချိတ်ပြီးနောက် ချိတ်ဆက်ရန်"</string>
-    <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"ဘလူးတုသ် တွဲချိတ်ခြင်းကုဒ်"</string>
+    <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"ဘလူးတုသ် တွဲချိတ်ကုဒ်"</string>
     <string name="bluetooth_enable_alphanumeric_pin" msgid="1636575922217263060">"ပင်နံပါတ်တွင် စာလုံး သို့မဟုတ် သင်္ကေတများပါဝင်သည်"</string>
-    <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"တွဲချိတ်ရန်ကုဒ်ကို ထည့်ပြီး Return သို့မဟုတ် Enter ကို နှိပ်ပါ"</string>
+    <string name="bluetooth_enter_passkey_msg" msgid="5955236916732265593">"တွဲချိတ်ကုဒ်ကို ရိုက်ထည့်ပြီး Return ခလုတ် (သို့) Enter ခလုတ်ကို နှိပ်ပါ"</string>
     <string name="bluetooth_pairing_request" msgid="4769675459526556801">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> နှင့် တွဲချိတ်လိုပါသလား။"</string>
     <string name="bluetooth_pairing_shares_phonebook" msgid="2015966932886300630">"သင်၏ အဆက်အသွယ်များနှင့် ခေါ်ဆိုမှုမှတ်တမ်းကို <xliff:g id="DEVICE_NAME">%1$s</xliff:g> အား ကြည့်ခွင့်ပြုသည်"</string>
     <string name="bluetooth_enter_pin_other_device" msgid="7825091249522704764">"ဤပင်နံပါတ်ကို အခြား စက်ပစ္စည်းတွင်လည်း ထည့်သွင်းရန် လိုအပ်နိုင်သည်။"</string>
@@ -259,6 +259,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"သတိပေးချက် အသံများ"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"ဖုန်းမြည်သံ၊ အကြောင်းကြားချက်များ၊ နှိုးစက်"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"မီဒီယာကို ဖွင့်ထားရန်"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"မီဒီယာကို %1$s သို့ ပြောင်းနေသည်"</string>
     <string name="display_brightness" msgid="5718970880488110840">"တောက်ပမှု"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"အလင်းရောင်နည်းချိန်အတွက် ဖန်သားပြင်ကို ချိန်ညှိနိုင်သည်"</string>
     <string name="units_settings" msgid="402325305096925886">"ယူနစ်များ"</string>
@@ -361,7 +362,7 @@
     <string name="direct_boot_unaware_dialog_message_car" msgid="2857599310518724080">"မှတ်ချက်- ပြန်လည်စတင်ပြီးနောက် သင့်ယာဉ်ကို လော့ခ်မဖွင့်မချင်း ဤအက်ပ်ကို အသုံးပြု၍မရပါ။"</string>
     <string name="assist_and_voice_input_settings" msgid="8813195157136637132">"အကူနှင့် အသံဖြင့်စာရိုက်ခြင်း"</string>
     <string name="assist_app_settings" msgid="9085261410166776497">"အကူအညီ အက်ပ်"</string>
-    <string name="assist_access_context_title" msgid="8034851731390785301">"ဖန်သားပြင်မှ စာသားကိုသုံးခြင်း"</string>
+    <string name="assist_access_context_title" msgid="8034851731390785301">"ဖန်သားပြင်မှ စာသားကိုသုံးရန်"</string>
     <string name="assist_access_context_summary" msgid="2374281280599443774">"ဖန်သားပြင်မှအကြောင်းအရာများကို စာသားအဖြစ်ရယူရန် အကူအညီအက်ပ်ကို ခွင့်ပြုသည်"</string>
     <string name="assist_access_screenshot_title" msgid="2855956879971465044">"ဖန်သားပြင်ဓာတ်ပုံ သုံးခြင်း"</string>
     <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"ဖန်သားပြင်၏ပုံ အသုံးပြုရန် အကူအညီအက်ပ်ကို ခွင့်ပြုသည်"</string>
@@ -396,10 +397,11 @@
     <string name="apps_default_apps_summary" msgid="2017792579839972926">"Assistant နှင့် အခြားအရာများအတွက်"</string>
     <string name="performance_impacting_apps_summary" msgid="7762122057244111162">"{count,plural, =1{စွမ်းဆောင်ရည်ပေါ် သက်ရောက်သော အက်ပ် # ခု}other{စွမ်းဆောင်ရည်ပေါ် သက်ရောက်သော အက်ပ် # ခု}}"</string>
     <string name="apps_special_app_access_summary" msgid="6464767436309742163">"စနစ်နှင့် အခြားဆက်တင်များသို့"</string>
-    <string name="special_access" msgid="5730278220917123811">"အထူးအက်ပ်များ သုံးခွင့်ရှိသည်"</string>
+    <string name="special_access" msgid="5730278220917123811">"အက်ပ် အထူးအသုံးပြုခွင့်"</string>
     <string name="show_system" msgid="4401355756969485287">"စနစ်ကိုပြသရန်"</string>
     <string name="hide_system" msgid="8845453295584638040">"စနစ်ကို ဖျောက်ရန်"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"စနစ်အက်ပ်များ ဖျောက်ထားရန်"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"နှိုးစက်နှင့် သတိပေးချက်များ"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"စနစ်ဆက်တင်များ ပြန်ပြင်ခြင်း"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"ဤခွင့်ပြုချက်က အက်ပ်ကို စနစ်ဆက်တင်များ ပြင်ခွင့်ပေးသည်။"</string>
     <string name="notification_access_title" msgid="1467340098885813473">"အကြောင်းကြားချက် ရယူခြင်း"</string>
@@ -650,18 +652,25 @@
     <string name="action_unavailable" msgid="7087119418684417249">"ဤလုပ်ဆောင်ချက်ကို သင့်ပရိုဖိုင်အတွက် မရနိုင်ပါ"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"ကင်မရာသုံးခွင့်"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"သင့်ကားတည်နေရာကို အက်ပ်များ ဝင်ကြည့်ခွင့် ရှိ၊ မရှိ ရွေးချယ်ပါ"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"ကားကင်မရာကို ၎င်းဖြင့် သုံးရန်-"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"မည်သည့်အက်ပ်မဆို"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"ကင်မရာကို သင်အသုံးပြုခွင့်ပေးထားသော မည်သည့်အက်ပ်မဆို"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"အက်ပ်မရှိပါ"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"မည်သည့်အက်ပ်ကိုမျှ"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"လိုအပ်သော အက်ပ်များသာ"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"သင့်ကားထုတ်လုပ်သူက သတ်မှတ်ထားသော အက်ပ်များသာ"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"လိုအပ်သော အက်ပ်များ"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"ဤအက်ပ်များသည် သင့်ကား ဘေးကင်းစွာ မောင်းနှင်နိုင်ရန် လိုအပ်သည်"</string>
+    <!-- no translation found for camera_required_apps_group_title (3902768358955524404) -->
+    <skip />
+    <!-- no translation found for camera_required_apps_group_summary (3308062892315253384) -->
+    <skip />
     <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"မူဝါဒ"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"သင်၏ ကားထုတ်လုပ်သူက ကားကင်မရာကို သုံးခွင့်ရှိနိုင်သေးသည်။ အသေးစိတ်အချက်များအတွက် ၎င်းတို့၏မူဝါဒများကို ဖတ်ရှုနိုင်ပါသည်။"</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"အက်ပ်တစ်ခုစီ၏ ‘ကိုယ်ရေးအချက်အလက်လုံခြုံမှုဆိုင်ရာ မူဝါဒ’ ကို ဖတ်ရှုခြင်းဖြင့် ၎င်းက သင်၏ကင်မရာကို မည်သို့အသုံးပြုကြောင်း ပိုမိုလေ့လာပါ။"</string>
+    <!-- no translation found for camera_access_disclaimer_summary (901846859668942836) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_title (6628966732265022536) -->
+    <skip />
+    <!-- no translation found for camera_infotainment_apps_toggle_summary (2422476957183039039) -->
+    <skip />
+    <!-- no translation found for permission_grant_always (8851460274973784076) -->
+    <skip />
+    <!-- no translation found for permission_grant_never (5725479525867480567) -->
+    <skip />
+    <!-- no translation found for permission_grant_in_use (7442315008206758926) -->
+    <skip />
+    <!-- no translation found for permission_grant_ask (1613256400438907973) -->
+    <skip />
     <string name="security_settings_title" msgid="6955331714774709746">"လုံခြုံရေး"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"ဖန်သားပြင်လော့ခ်"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"မရှိ"</string>
