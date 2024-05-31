@@ -653,13 +653,15 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Usuń swój profil"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Usuń swoje profile i konta z systemu multimedialno-rozrywkowego"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"W Twoim profilu nie można wykonać tego działania"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Dostęp do mikrofonu"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Zdecyduj, czy aplikacje mogą mieć dostęp mikrofonów w samochodzie"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Aplikacje informacyjno-rozrywkowe"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Zezwalaj aplikacjom informacyjno-rozrywkowym na nagrywanie dźwięku"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Dostęp do kamer"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Zdecyduj, czy aplikacje mogą mieć dostęp kamer samochodu"</string>
     <string name="required_apps_group_title" msgid="8607608579973985786">"Wymagane aplikacje"</string>
-    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
-    <skip />
-    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
-    <skip />
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Aplikacje wymagane przez producenta samochodu, które pomagają podczas jazdy"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Polityka prywatności"</string>
     <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Producent samochodu może nadal mieć dostęp do kamery w pojeździe"</string>
     <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Aplikacje informacyjno-rozrywkowe"</string>
     <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Zezwalaj aplikacjom informacyjno-rozrywkowym na robienie zdjęć i nagrywanie filmów"</string>
