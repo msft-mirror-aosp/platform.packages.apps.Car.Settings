@@ -20,9 +20,10 @@
     <string name="settings_label" msgid="5147911978211079839">"Postavke"</string>
     <string name="more_settings_label" msgid="3867559443480110616">"Više"</string>
     <string name="display_settings" msgid="5325515247739279185">"Zaslon"</string>
-    <string name="brightness" msgid="2919605130898772866">"Jačina svjetline"</string>
+    <string name="brightness" msgid="2919605130898772866">"Svjetlina zaslona"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Prilagodljiva svjetlina"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Prilagodba svjetline zaslona okruženju"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Tema"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Noćno je svjetlo uključeno"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Mreža i internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mobilna mreža"</string>
@@ -33,7 +34,7 @@
     <string name="mobile_network_inactive_esim" msgid="7273712403773327964">"Neaktivno / eSIM"</string>
     <string name="mobile_network_list_add_more" msgid="6174294462747070655">"Dodajte više"</string>
     <string name="mobile_network_toggle_title" msgid="3515647310810280063">"Mobilni podaci"</string>
-    <string name="mobile_network_toggle_summary" msgid="8698267487987697148">"Pristupi podacima pomoću mobilne mreže"</string>
+    <string name="mobile_network_toggle_summary" msgid="8698267487987697148">"Pristupi podacima putem mobilne mreže"</string>
     <string name="mobile_network_mobile_network_toggle_title" msgid="3087288149339116597">"Mobilna mreža"</string>
     <string name="mobile_network_mobile_network_toggle_summary" msgid="1679917666306941420">"Koristi mobilne podatke"</string>
     <string name="mobile_network_state_off" msgid="471795861420831748">"Isključeno"</string>
@@ -45,7 +46,7 @@
     <string name="roaming_title" msgid="6218635014519017734">"Roaming"</string>
     <string name="roaming_summary" msgid="7476127740259728901">"Poveži se s podatkovnim uslugama u roamingu"</string>
     <string name="roaming_alert_title" msgid="4433901635766775763">"Želite li dopustiti roaming podataka?"</string>
-    <string name="roaming_warning" msgid="4908184914868720704">"Možda se naplaćuju dodatne naknade za roaming."</string>
+    <string name="roaming_warning" msgid="4908184914868720704">"Moguća je naplata dodatnih naknada za roaming."</string>
     <string name="data_usage_settings" msgid="7877132994777987848">"Potrošnja podataka"</string>
     <string name="data_usage_title" msgid="2923515974389203812">"Primarni podaci"</string>
     <string name="data_used_formatted" msgid="6684557577780068339">"Iskorišteno: <xliff:g id="ID_1">^1</xliff:g> <xliff:g id="ID_2">^2</xliff:g>"</string>
@@ -164,8 +165,8 @@
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Žarišna točka"</string>
     <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Koristi Wi‑Fi žarišnu točku"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Isključeno"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Automatski isključi žarišnu točku"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Žarišna točka Wi‑Fija isključit će se ako nije povezan nijedan uređaj"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Koristi žarišnu točku za sve vožnje"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Omogući žarišnu točku kad je automobil uključen"</string>
     <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Skenirajte QR kôd da biste se pridružili \"%s\""</string>
     <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Zaporka žarišne točke: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> želi uključiti Wi-Fi"</string>
@@ -206,11 +207,14 @@
     <string name="bluetooth_ask_discovery_no_name" msgid="164397600370102369">"Aplikacija želi vašu glavnu jedinicu učiniti vidljivom drugim Bluetooth uređajima na <xliff:g id="TIMEOUT">%1$d</xliff:g> s."</string>
     <string name="bluetooth_ask_enablement_and_discovery" msgid="5487502083015708674">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi uključiti Bluetooth i vašu glavnu jedinicu učiniti vidljivom drugim uređajima na <xliff:g id="TIMEOUT">%2$d</xliff:g> s."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" msgid="907153034209916282">"Aplikacija želi uključiti Bluetooth i vašu glavnu jedinicu učiniti vidljivom drugim uređajima na <xliff:g id="TIMEOUT">%1$d</xliff:g> s."</string>
-    <string name="bluetooth_state_switch_summary" msgid="171929910916432266">"Vidljiv kao %1$s drugim uređajima"</string>
+    <string name="bluetooth_state_switch_summary" msgid="171929910916432266">"Drugim uređajima vidljivo kao %1$s"</string>
     <string name="bluetooth_my_devices" msgid="6352010339607939612">"Moji uređaji"</string>
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Prethodno povezano"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"Povezano: %1$s"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"Prekinuta veza: %1$s"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Veze uređaja s automobilom"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ultraširokopojasno povezivanje (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Pomaže automobilu da otkrije položaj UWB uređaja"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Zahtjev za Bluetooth uparivanje"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Upari i poveži"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Bluetoothov kôd za uparivanje"</string>
@@ -255,6 +259,7 @@
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Zvukovi upozorenja"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Melodija zvona, obavijesti, alarm"</string>
     <string name="audio_route_selector_title" msgid="9137648859313120159">"Reprod. medijskih sadržaja je uključena"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Promjena medija na: %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Svjetlina"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Prilagodba zaslona slabom osvjetljenju"</string>
     <string name="units_settings" msgid="402325305096925886">"Jedinice"</string>
@@ -360,7 +365,7 @@
     <string name="assist_access_context_title" msgid="8034851731390785301">"Koristi tekst sa zaslona"</string>
     <string name="assist_access_context_summary" msgid="2374281280599443774">"Dopustite aplikaciji pomoćniku da pristupi sadržaju zaslona kao tekstu"</string>
     <string name="assist_access_screenshot_title" msgid="2855956879971465044">"Koristi snimku zaslona"</string>
-    <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"Dopustite aplikaciji pomoćniku da pristupi slici na zaslonu"</string>
+    <string name="assist_access_screenshot_summary" msgid="6246496926635145782">"Dopustite aplikaciji za pomoć da pristupa slici na zaslonu"</string>
     <string name="voice_input_settings_title" msgid="3238707827815647526">"Glasovni unos"</string>
     <string name="autofill_settings_title" msgid="1188754272680049972">"Usluga automatskog popunjavanja"</string>
     <string name="app_list_preference_none" msgid="7753357799926715901">"Nijedna"</string>
@@ -395,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"Prikaži sustav"</string>
     <string name="hide_system" msgid="8845453295584638040">"Sakrij sustav"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Sakrij aplikacije sustava"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Alarmi i podsjetnici"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Izmjena postavki sustava"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"To dopuštenje omogućuje aplikaciji izmjenu postavki sustava."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Pristup obavijestima"</string>
@@ -405,7 +411,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Odustani"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Ove aplikacije negativno utječu na izvedbu sustava i onemogućeno im je izvođenje u pozadini.\nDajte aplikaciji prednost da biste omogućili njezinu upotrebu u pozadini i uklonili je s ovog popisa."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Prednost aplikaciji"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Pristup SMS-ovima s dodatnom naplatom"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"SMS s dodatnom naplatom"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"SMS-ovi s dodatnom naplatom mogu se dodatno naplaćivati i povećat će vaš račun. Ako nekoj aplikaciji date to dopuštenje, moći ćete slati SMS-ove s dodatnom naplatom pomoću te aplikacije."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Pristup upotrebi"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Pristup podacima o upotrebi omogućuje aplikaciji praćenje drugih aplikacija koje upotrebljavate i učestalosti njihove upotrebe, kao i praćenje mobilnog operatera, postavki jezika i ostalih pojedinosti."</string>
@@ -415,12 +421,16 @@
     <string name="location_settings_title" msgid="901334356682423679">"Lokacija"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Upotreba lokacije"</string>
     <string name="location_toggle_summary" msgid="5651728747635881194">"Lokacija automobila upotrebljava se sa svim aplikacijama koje ste naveli."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Aplikacije sustava za informiranje i zabavu"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Omogući aplikacijama da pristupaju mojoj lokaciji"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Ako isključite tu postavku, uklonit će se pristup lokaciji za sve aplikacije, osim za one koje su potrebne za pomoć u vožnji"</string>
     <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Ako isključite tu postavku, onemogućit će se aplikacije za pomoć u vožnji koje se oslanjaju na lokacijske podatke"</string>
     <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Ipak isključi"</string>
     <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"Ovu postavku nije moguće promijeniti i proizvođač automobila ju je onemogućio."</string>
     <string name="adas_location_toggle_title" msgid="6131739109988811006">"Značajke za pomoć u vožnji"</string>
     <string name="adas_location_toggle_summary" msgid="7055141074159770928">"Ugrađenim značajkama, koje odobrava proizvođač vašeg automobila, dopustite pristup lokaciji automobila."</string>
+    <string name="location_required_apps_group_title" msgid="5672632286858280618">"Obavezne aplikacije"</string>
+    <string name="location_required_apps_group_summary" msgid="5760731893677945737">"Aplikacije koje zahtijeva proizvođač vašeg automobila i koje vam pomažu prilikom vožnje."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"Nedavno pristupano"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Nedavno pristupano"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Prikaži sve"</string>
@@ -634,7 +644,7 @@
     <string name="privacy_settings_title" msgid="3150145262029229572">"Privatnost"</string>
     <string name="privacy_vehicle_data_title" msgid="6385777370742595651">"Podaci sustava za informiranje i zabavu"</string>
     <string name="privacy_location_summary" msgid="7019817848470566242">"Upravljanje pristupom aplikacija lokaciji"</string>
-    <string name="mute_camera_title" msgid="215494079895460172">"Fotoaparat"</string>
+    <string name="mute_camera_title" msgid="215494079895460172">"Kamera"</string>
     <string name="mute_camera_summary" msgid="1237452064757403042">"Upravljajte pristupom aplikacija svojim fotoaparatima"</string>
     <string name="mute_mic_title" msgid="2813215197799569553">"Mikrofon"</string>
     <string name="mute_mic_summary" msgid="5426953935775303904">"Upravljanje pristupa aplikacija mikrofonu"</string>
@@ -643,20 +653,25 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Izbrišite svoj profil"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Brisanje profila i računa iz sustava za informiranje i zabavu"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Ta radnja nije dostupna za vaš profil"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Pristup mikrofonu"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Odaberite mogu li aplikacije pristupati mikrofonima automobila"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Aplikacije za informiranje i zabavu"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Dopustite aplikacijama za informiranje i zabavu da snimaju zvuk"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Pristup kameri"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Odaberite mogu li aplikacije pristupati kamerama automobila"</string>
-    <string name="camera_access_radio_group_title" msgid="4208620766356391501">"Kamere automobila koristite sa sljedećim:"</string>
-    <string name="camera_access_radio_any_app_title" msgid="8324331670738824005">"Bilo koja aplikacija"</string>
-    <string name="camera_access_radio_any_app_summary" msgid="8542924833172200812">"Sve aplikacije kojima ste dopustili pristup kameri"</string>
-    <string name="camera_access_radio_no_apps_title" msgid="3619351327217493913">"Bez aplikacija"</string>
-    <string name="camera_access_radio_no_apps_summary" msgid="6249258388767284908">"Niti jedna vaša aplikacija"</string>
-    <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"Samo obavezne aplikacijew"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"Samo aplikacije koje zahtijeva proizvođač vašeg automobila"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Obavezne aplikacije"</string>
-    <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Te su aplikacije potrebne radi funkcionalne sigurnosti vašeg automobila"</string>
-    <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Pravila"</string>
-    <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Vaš proizvođač automobila možda i dalje ima pristup kameri automobila. Više informacija potražite u njihovim pravilima."</string>
-    <string name="camera_privacy_policy_info_summary" msgid="5036268531646886906">"Saznajte više o tome kako svaka aplikacija koristi vašu kameru tako što ćete pregledati njena pravila o privatnosti."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Obavezne aplikacije"</string>
+    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
+    <skip />
+    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
+    <skip />
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Vaš proizvođač automobila možda i dalje ima pristup kameri automobila"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Aplikacije za informiranje i zabavu"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Dopustite aplikacijama za informiranje i zabavu da snimaju fotografije i videozapise"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Dopušteno"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Cijelo vrijeme"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Nije dopušteno"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Samo dok upotrebljavate aplikaciju"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Pitaj svaki put"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Sigurnost"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Zaključavanje zaslona"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Ništa"</string>
@@ -909,7 +924,7 @@
     <string name="camera_settings_title" msgid="2837785830355288903">"Fotoaparat"</string>
     <string name="camera_toggle_title" msgid="1990732328673068456">"Upotreba fotoaparata"</string>
     <string name="camera_toggle_summary" msgid="5751159996822627567">"Svim aplikacijama dopustite pristup fotoaparatu"</string>
-    <string name="camera_manage_permissions" msgid="9005596413781984368">"Upravljanje dopuštenjima fotoaparata"</string>
+    <string name="camera_manage_permissions" msgid="9005596413781984368">"Upravljanje dopuštenjima kamere"</string>
     <string name="camera_recently_accessed" msgid="8084100710444691977">"Nedavno pristupano"</string>
     <string name="camera_no_recent_access" msgid="965105023454777859">"Nema nedavnih aplikacija"</string>
     <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"Nijedna aplikacija nema pristup"</string>
@@ -917,4 +932,7 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Nedavno pristupano"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Prikaži sve"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Učitavanje…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Prikaži pakete"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Vaši su internetski paketi istekli"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Prikaži pakete"</string>
 </resources>
