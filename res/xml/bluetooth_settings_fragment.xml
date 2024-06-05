@@ -18,7 +18,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/bluetooth_settings_title"
+    android:title="@string/connected_settings_title"
     android:key="@string/psk_bluetooth_settings">
     <com.android.car.settings.common.ColoredSwitchPreference
         android:key="@string/pk_bluetooth_state_switch"
@@ -39,4 +39,27 @@
         settings:showChevron="false">
         <intent android:action="android.car.settings.PAIR_DEVICE_SETTINGS" />
     </com.android.car.ui.preference.CarUiPreference>
+    <com.android.car.settings.common.DividerPreference/>
+    <PreferenceCategory
+        android:key="@string/pk_device_connection"
+        android:title="@string/device_connections_category_title"
+        settings:controller="com.android.car.settings.common.PreferenceCategoryController">
+        <com.android.car.settings.common.LogicalPreferenceGroup
+            android:key="@string/pk_bluetooth_extra_settings"
+            settings:controller="com.android.car.settings.common.ExtraSettingsPreferenceController">
+            <intent>
+                <extra android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.connect"/>
+            </intent>
+        </com.android.car.settings.common.LogicalPreferenceGroup>
+    </PreferenceCategory>
+    <SwitchPreference
+        android:key="@string/pk_uwb_key"
+        android:title="@string/uwb_toggle_title"
+        android:summary="@string/uwb_toggle_summary"
+        android:icon="@drawable/ic_uwb"
+        android:persistent="false"
+        settings:occupant_front_passenger="read"
+        settings:occupant_rear_passenger="read"
+        settings:controller="com.android.car.settings.bluetooth.UwbTogglePreferenceController"/>
 </PreferenceScreen>

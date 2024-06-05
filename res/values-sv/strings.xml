@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Ljusstyrka"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Anpassad ljusstyrka"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Justera skärmens ljusstyrka efter omgivningen"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Tema"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Nattljus är aktiverat"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Nätverk och internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mobilnätverk"</string>
@@ -160,11 +161,14 @@
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Välj minst ett band för Wi‑Fi-surfzon:"</string>
-    <string name="tether_settings_title_all" msgid="4663704772599383169">"Trådlös surfzon och internetdelning"</string>
+    <string name="tether_settings_title_all" msgid="6076625733772210734">"Wifi-surfzon"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Surfzon"</string>
+    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Använd wifi-surfzon"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Av"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Inaktivera surfzon automatiskt"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Wifi-surfzonen inaktiveras om inga enheter är anslutna"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Använd en surfzon vid alla bilturer"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Aktivera en surfzon när bilen är på"</string>
+    <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Skanna den här QR-koden för att ansluta till %s"</string>
+    <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Lösenord för surfzon: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> vill aktivera wifi"</string>
     <string name="wifi_ask_disable" msgid="2949290055916181553">"<xliff:g id="REQUESTER">%s</xliff:g> vill inaktivera wifi"</string>
     <string name="wifi_error" msgid="3105105447117289410">"Fel"</string>
@@ -175,6 +179,7 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"Anslutningen har upprättats"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"Visa alla"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"Söker"</string>
+    <string name="connected_settings_title" msgid="8868738903280658151">"Anslutna enheter"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"Använd Bluetooth"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"Namnlös enhet"</string>
@@ -207,6 +212,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Tidigare anslutna enheter"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s är ansluten"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s är frånkopplad"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Enhetsanslutningar till bilen"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ultrabredband (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Hjälper bilen att identifiera UWB-enheters position"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Begäran om Bluetooth-koppling"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Parkoppla och anslut"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Kopplingskod för Bluetooth"</string>
@@ -221,6 +229,9 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"Begäran om parkoppling"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"Tryck om du vill parkoppla med <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"Välj Bluetooth-enhet"</string>
+    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"Bluetooth"</string>
+    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"Telefon"</string>
+    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"Media"</string>
     <string name="language_settings" msgid="2079258598337245546">"Språk"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"Språk och inmatning"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"Förslag"</string>
@@ -247,6 +258,8 @@
     <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Spara"</string>
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Varningsljud"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Ringsignal, aviseringar, alarm"</string>
+    <string name="audio_route_selector_title" msgid="9137648859313120159">"Spela upp media på"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Byter media till %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Ljusstyrka"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Justera skärmen efter svag belysning"</string>
     <string name="units_settings" msgid="402325305096925886">"Enheter"</string>
@@ -309,7 +322,7 @@
     <string name="force_stop_dialog_text" msgid="4354954014318432599">"Om du tvingar appen att avsluta kanske den inte fungerar som den ska."</string>
     <string name="force_stop_success_toast_text" msgid="2986272849275894254">"<xliff:g id="APP_NAME">%1$s</xliff:g> har avslutats."</string>
     <string name="prioritize_app_performance_dialog_title" msgid="3205297520523665568">"Vill du prioritera appars prestanda?"</string>
-    <string name="prioritize_app_performance_dialog_text" msgid="4321564728229192878">"Detta kan göra att systemet blir instabilt, och det kan påverka maskinvaran långsiktigt. Vill du fortsätta?"</string>
+    <string name="prioritize_app_performance_dialog_text" msgid="4321564728229192878">"Detta kan göra att systemet blir instabilt, och det kan påverka hårdvaran långsiktigt. Vill du fortsätta?"</string>
     <string name="prioritize_app_performance_dialog_action_on" msgid="3556735049873419163">"Ja"</string>
     <string name="prioritize_app_performance_dialog_action_off" msgid="2813324718753199319">"Nej tack"</string>
     <string name="disable_text" msgid="4358165448648990820">"Inaktivera"</string>
@@ -319,6 +332,7 @@
     <string name="app_disable_dialog_positive" msgid="4448684722791563349">"Inaktivera app"</string>
     <string name="not_installed" msgid="4163454337822508007">"Inte installerat för den här profilen"</string>
     <string name="permissions_label" msgid="2701446753515612685">"Behörigheter"</string>
+    <string name="app_info_all_services_label" msgid="6495363975322723452">"Alla tjänster"</string>
     <string name="notifications_label" msgid="6586089149665170731">"Aviseringar"</string>
     <string name="storage_application_label" msgid="5911779903670978586">"Lagringsutrymme och cacheminne"</string>
     <string name="prioritize_app_performance_label" msgid="7264505023347026606">"Prioritera appars prestanda"</string>
@@ -386,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"Visa systemet"</string>
     <string name="hide_system" msgid="8845453295584638040">"Dölj systemet"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Dölj systemappar"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Alarm och påminnelser"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Ändra systeminställningar"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Med den här behörigheten kan appen ändra systeminställningar."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Åtkomst till aviseringar"</string>
@@ -396,7 +411,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Avbryt"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Dessa appar påverkar systemprestandan negativt och förhindras från att köras i bakgrunden.\nPrioritera appar för att ta bort dem från den här listan och tillåta att de körs i bakgrunden."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Prioritera app"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Åtkomst till premium-sms"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"Premium-sms"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Det kan hända att premium-sms kostar pengar och läggs till på dina fakturor från operatören. Om du ger en app åtkomst kan du skicka premium-sms med den appen."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Åtkomst till användningsdata"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Med åtkomst till användningsdata kan en app spåra vilka andra appar du använder och hur ofta, samt vilken operatör du har, språkinställningar och andra uppgifter."</string>
@@ -405,28 +420,30 @@
     <string name="more_special_access_title" msgid="166115485446645971">"Mer"</string>
     <string name="location_settings_title" msgid="901334356682423679">"Plats"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Använd plats"</string>
-    <string name="location_toggle_summary" msgid="7977868708102299495">"Tillåt att specifika appar kommer åt din plats"</string>
+    <string name="location_toggle_summary" msgid="5651728747635881194">"Använd bilens plats med alla appar du har angett."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Infotainment-appar"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Tillåt att appar får åtkomst till din plats"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Om du stänger av detta tas platsåtkomst bort för alla appar utom de som behövs för förarassistans"</string>
-    <string name="location_driver_assistance_toggle_title" msgid="3780157378527924932">"Använd plats för förarassistans"</string>
-    <string name="location_driver_assistance_toggle_off_title" msgid="2218532550578204718">"Fordonets plats är av"</string>
-    <string name="location_driver_assistance_toggle_off_summary" msgid="6040822988891113026">"Förarassistantsappar kommer inte åt din plats"</string>
-    <string name="location_driver_assistance_action_text" msgid="1887309495010247883">"Ändra"</string>
-    <string name="location_driver_assistance_toggle_summary" msgid="2732591196508054649">"Tillåt att appar för förarassistans kommer åt din plats"</string>
-    <string name="location_driver_assistance_toggle_off_warning" msgid="2733124752598498356">"Om du stänger av detta inaktiveras förarassistansappar som behöver platsinformation"</string>
-    <string name="driver_assistance_warning_confirm_label" msgid="2873799611160864931">"Inaktivera ändå"</string>
+    <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Om du stänger av detta inaktiveras förarassistansappar som behöver platsinformation"</string>
+    <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Inaktivera ändå"</string>
+    <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"Den här inställningen kan inte ändras och har inaktiverats av bilens tillverkare."</string>
+    <string name="adas_location_toggle_title" msgid="6131739109988811006">"Funktioner som hjälper till medan du kör"</string>
+    <string name="adas_location_toggle_summary" msgid="7055141074159770928">"Tillåt att inbyggda funktioner som godkänts av bilens tillverkare får åtkomst till bilens plats."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"Har nyligen haft åtkomst"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Har nyligen haft åtkomst"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Visa alla"</string>
     <string name="location_no_recent_access" msgid="2859914321242257931">"Inga appar har haft åtkomst nyligen"</string>
-    <string name="driver_assistance_label" msgid="9217315205754658940">"<xliff:g id="TIME">%1$s</xliff:g> • Förarassistans"</string>
-    <string name="location_driver_assistance_privacy_policy_header_content" msgid="8118086439003674350">"Appar med behörighet att komma åt fordonets plats för förarassistansfunktioner"</string>
-    <string name="location_driver_assistance_privacy_policy_button_text" msgid="669921557502414704">"Integritetspolicy"</string>
+    <string name="driver_assistance_label" msgid="5330316311913399041">"<xliff:g id="TIME">%1$s</xliff:g> • Förarassistans • Åtkomst krävs"</string>
+    <string name="location_adas_apps_list_title" msgid="482882078448695177">"Funktioner som hjälper till medan du kör"</string>
+    <string name="location_driver_assistance_privacy_policy_button_text" msgid="1092702462617222722">"Policy"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"Behörigheter på appnivå"</string>
+    <string name="location_settings_app_permissions_summary" msgid="87851720569447224">"Hantera enskilda appbehörigheter"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"Platstjänster"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"Använd plats"</string>
-    <string name="location_settings_footer" msgid="296892848338100051">"I Platstjänster används källor som GPS, wifi, mobilnätverk och sensorer för att beräkna enhetens plats."</string>
-    <string name="driver_assistance_settings_title" msgid="4915804073177128915">"Förarassistans"</string>
-    <string name="adas_settings_footer" msgid="6697021691244459156">"Platsinformation som skickas till förarassistansappar innehåller inga uppgifter som identifierar dig. Informationen sparas i högst två dagar och tas sedan bort."</string>
+    <string name="location_access_settings_title" msgid="2378398106582207440">"Platsåtkomst"</string>
+    <string name="location_access_settings_summary" msgid="7676354917209152932">"Välj om appar kan få åtkomst till bilens plats"</string>
+    <string name="location_access_disclaimer_summary" msgid="914984622682562036">"Bilens tillverkare kan fortfarande ha åtkomst till bilens plats. Mer information finns i tillverkarens policyer."</string>
+    <string name="location_adas_app_info_summary" msgid="7806057735910556609">"De här inbyggda funktionerna kräver åtkomst till bilens plats för förarassistans.\n\nLäs mer om hur varje app använder din platsdata i integritetspolicyn."</string>
     <string name="microphone_settings_title" msgid="7125554350537136922">"Mikrofon"</string>
     <string name="microphone_toggle_title" msgid="911586035332827275">"Använda mikrofonen"</string>
     <string name="microphone_toggle_summary" msgid="2682653449849128626">"Ge alla appar åtkomst till mikrofonen"</string>
@@ -447,7 +464,7 @@
     <string name="continue_confirmation" msgid="1598892163951467191">"Fortsätt"</string>
     <string name="firmware_version" msgid="8491753744549309333">"Android-version"</string>
     <string name="security_patch" msgid="4794276590178386903">"Korrigeringsnivå för Android"</string>
-    <string name="hardware_info" msgid="3973165746261507658">"Modell och maskinvara"</string>
+    <string name="hardware_info" msgid="3973165746261507658">"Modell och hårdvara"</string>
     <string name="hardware_info_summary" msgid="8262576443254075921">"Modell: <xliff:g id="MODEL">%1$s</xliff:g>"</string>
     <string name="baseband_version" msgid="2370088062235041897">"Basbandsversion"</string>
     <string name="kernel_version" msgid="7327212934187011508">"Kernel-version"</string>
@@ -474,7 +491,7 @@
     <string name="wallpaper_attributions_values" msgid="4292446851583307603">"Satellitbildsleverantörer:\n©2014 CNES / Astrium, DigitalGlobe, Bluesky"</string>
     <string name="model_info" msgid="4966408071657934452">"Modell"</string>
     <string name="status_serial_number" msgid="9158889113131907656">"Serienummer"</string>
-    <string name="hardware_revision" msgid="5713759927934872874">"Maskinvaruversion"</string>
+    <string name="hardware_revision" msgid="5713759927934872874">"Hårdvaruversion"</string>
     <string name="regulatory_info_text" msgid="8890339124198005428"></string>
     <string name="settings_license_activity_title" msgid="8499293744313077709">"Licenser från tredje part"</string>
     <string name="settings_license_activity_unavailable" msgid="6104592821991010350">"Ett problem inträffade när licenserna lästes in."</string>
@@ -634,6 +651,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Radera profilen"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Radera din profil och dina konton från infotainmentsystemet"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Den här åtgärden är inte tillgänglig för din profil"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Mikrofonåtkomst"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Välj om appar kan få åtkomst till bilens mikrofoner"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Infotainment-appar"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Tillåt infotainment-appar att spela in ljud"</string>
+    <string name="camera_access_settings_title" msgid="1841809323727456945">"Kameraåtkomst"</string>
+    <string name="camera_access_settings_summary" msgid="8820488359585532496">"Välj om appar kan få åtkomst till bilens kameror"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Appar som krävs"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Appar som krävs av bilens tillverkare för att hjälpa dig att köra"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Policy"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Bilens tillverkare kan fortfarande ha åtkomst till bilens kamera"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Infotainment-appar"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Tillåt att infotainment-appar tar bilder och spelar in video"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Tillåts"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Alltid"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Tillåts inte"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Endast när appen används"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Fråga varje gång"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Säkerhet"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Skärmlås"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Inga"</string>
@@ -655,11 +689,11 @@
     <string name="choose_lock_pattern_message" msgid="6242765203541309524">"Ange ett mönster som skydd"</string>
     <string name="lockpattern_retry_button_text" msgid="4655398824001857843">"Rensa"</string>
     <string name="lockpattern_cancel_button_text" msgid="4068764595622381766">"Avbryt"</string>
-    <string name="lockpattern_pattern_confirmed" msgid="5984306638250515385">"Ditt nya grafiska lösenord"</string>
+    <string name="lockpattern_pattern_confirmed" msgid="5984306638250515385">"Ditt nya mönster"</string>
     <string name="lockpattern_recording_intro_header" msgid="7864149726033694408">"Rita ett mönster"</string>
     <string name="lockpattern_recording_inprogress" msgid="1575019990484725964">"Lyft fingret när du är klar"</string>
     <string name="lockpattern_pattern_entered" msgid="6103071005285320575">"Mönstret har registrerats"</string>
-    <string name="lockpattern_need_to_confirm" msgid="4648070076022940382">"Bekräfta genom att rita lösenordet igen"</string>
+    <string name="lockpattern_need_to_confirm" msgid="4648070076022940382">"Rita mönstret igen för att bekräfta"</string>
     <string name="lockpattern_recording_incorrect_too_short" msgid="2417932185815083082">"Anslut minst 4 punkter. Försök igen."</string>
     <string name="lockpattern_pattern_wrong" msgid="929223969555399363">"Fel mönster"</string>
     <string name="lockpattern_settings_help_how_to_record" msgid="4436556875843192284">"Så här ritar du ett mönster"</string>
@@ -688,6 +722,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"Avbryt"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"Bekräfta"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"Måste innehålla minst fyra tecken"</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"Denna låstyp är inte tillgänglig"</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"Får endast innehålla siffrorna 0–9."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"Enhetsadministratören tillåter inte att en pinkod som använts nyligen används igen"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"IT-adminstratören har blockerat de vanligaste pinkoderna. Testa en annan pinkod."</string>
@@ -734,6 +769,8 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"Avsluta demoläget"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"IGNORERA"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"Funktionen är inte tillgänglig när du kör"</string>
+    <string name="restricted_for_passenger" msgid="7240117443887727753">"Begär att föraren ändrar inställningen"</string>
+    <string name="restricted_for_driver" msgid="3364388937671526800">"Du kan inte utföra den här åtgärden"</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"Du kan inte lägga till en profil medan du kör"</string>
     <string name="default_search_query" msgid="3137420627428857068">"Sök"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Assistent och röst"</string>
@@ -749,9 +786,11 @@
     <string name="add_a_profile_button_text" msgid="8027395095117925114">"Lägg till en profil"</string>
     <string name="delete_this_profile_text" msgid="6035404714526922665">"Radera den här profilen"</string>
     <string name="add_profile_text" msgid="9118410102199116969">"Lägg till profil"</string>
+    <string name="cannot_remove_driver_profile" msgid="4109363161608717969">"Den här profilen är inloggad som förare. Försök igen när profilen inte används som förare."</string>
     <string name="qc_display_brightness" msgid="2939655289816201170">"Skärmens ljusstyrka"</string>
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Aktivera Bluetooth för att visa enheterna"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Öppna Bluetooth-inställningarna för att koppla en enhet"</string>
+    <string name="qc_ui_mode_title" msgid="2425571805732530923">"Tema"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Infotainmentsystemets administratör"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Aktiverade appar"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Inaktiverade appar"</string>
@@ -786,7 +825,7 @@
     <string name="footer_learn_more_content_description" msgid="7749452309729272078">"Läs mer om <xliff:g id="SERVICE">%1$s</xliff:g>"</string>
     <string name="enterprise_privacy_settings" msgid="6496900796150572727">"Information om hanterat fordon"</string>
     <string name="enterprise_privacy_settings_summary_generic" msgid="5850991363779957797">"Inställningar som hanteras av vagnparksadministratören"</string>
-    <string name="enterprise_privacy_header" msgid="4652489109303330306">"Vagnparksadministratören kan ändra inställningar och installera programvara i infotainmentsystemet för att tillhandahålla åtkomst till data på det hanterade fordonet.\n\nKontakta vagnparksadministratören om du vill veta mer."</string>
+    <string name="enterprise_privacy_header" msgid="4652489109303330306">"Vagnparksadministratören kan ändra inställningar och installera mjukvara i infotainmentsystemet för att tillhandahålla åtkomst till data på det hanterade fordonet.\n\nKontakta vagnparksadministratören om du vill veta mer."</string>
     <string name="enterprise_privacy_exposure_category" msgid="4870494030035008520">"Information som vagnparksadministratören kan se"</string>
     <string name="enterprise_privacy_exposure_changes_category" msgid="8837106430193547177">"Ändringar som gjorts av vagnparksadministratören"</string>
     <string name="enterprise_privacy_exposure_desc" msgid="7962571201715956427">" "<li>"Data som är kopplad till kontot för det hanterade fordonet"</li>\n" "<li>"Lista över appar på det hanterade fordonet"</li>\n" "<li>"Tids- och dataförbrukning för var och en av apparna"</li>"v"</string>
@@ -883,4 +922,7 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Har nyligen haft åtkomst"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Visa alla"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Läser in …"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Se abonnemang"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Dina internetabonnemang har löpt ut"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Se abonnemang"</string>
 </resources>

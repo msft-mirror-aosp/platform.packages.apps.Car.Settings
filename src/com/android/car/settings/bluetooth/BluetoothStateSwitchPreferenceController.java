@@ -20,8 +20,7 @@ import static android.car.hardware.power.PowerComponent.BLUETOOTH;
 import static android.os.UserManager.DISALLOW_BLUETOOTH;
 import static android.os.UserManager.DISALLOW_CONFIG_BLUETOOTH;
 
-import static com.android.car.settings.enterprise.ActionDisabledByAdminDialogFragment.DISABLED_BY_ADMIN_CONFIRM_DIALOG_TAG;
-import static com.android.car.settings.enterprise.EnterpriseUtils.hasUserRestrictionByDpm;
+import static com.android.car.settings.enterprise.EnterpriseUtils.getAvailabilityStatusRestricted;
 
 import android.bluetooth.BluetoothAdapter;
 import android.car.drivingstate.CarUxRestrictions;
@@ -29,6 +28,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.os.UserManager;
 import android.widget.Toast;
 
@@ -128,22 +128,18 @@ public class BluetoothStateSwitchPreferenceController extends
                         getContext().getString(R.string.power_component_disabled),
                         Toast.LENGTH_LONG).show();
             } else if (getAvailabilityStatus() == AVAILABLE_FOR_VIEWING) {
-                showActionDisabledByAdminDialog();
+                EnterpriseUtils.onClickWhileDisabled(mContext, getFragmentController(),
+                        DISALLOW_CONFIG_BLUETOOTH);
             }
         });
     }
 
     @Override
     protected int getDefaultAvailabilityStatus() {
-        return hasUserRestrictionByDpm(getContext(), DISALLOW_CONFIG_BLUETOOTH)
-                ? AVAILABLE_FOR_VIEWING : AVAILABLE;
-    }
-
-    private void showActionDisabledByAdminDialog() {
-        getFragmentController().showDialog(
-                EnterpriseUtils.getActionDisabledByAdminDialog(getContext(),
-                        DISALLOW_CONFIG_BLUETOOTH),
-                DISABLED_BY_ADMIN_CONFIRM_DIALOG_TAG);
+        if (!mContext.getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)) {
+            return UNSUPPORTED_ON_DEVICE;
+        }
+        return getAvailabilityStatusRestricted(mContext, DISALLOW_CONFIG_BLUETOOTH);
     }
 
     @Override

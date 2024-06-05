@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"ஒளிர்வு நிலை"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"சூழலுக்கு ஏற்ற ஒளிர்வு"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"சூழலுக்கேற்றவாறு திரை ஒளிர்வைச் சரிசெய்யும்"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"தீம்"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"நைட் லைட் ஆன் செய்யப்பட்டது"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"நெட்வொர்க் &amp; இணையம்"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"மொபைல் நெட்வொர்க்"</string>
@@ -160,11 +161,14 @@
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2.4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"ஒன்றைத் தேர்வுசெய்யவும்:"</string>
-    <string name="tether_settings_title_all" msgid="4663704772599383169">"ஹாட்ஸ்பாட்டும் இணைப்பு முறையும்"</string>
+    <string name="tether_settings_title_all" msgid="6076625733772210734">"வைஃபை ஹாட்ஸ்பாட்"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"ஹாட்ஸ்பாட்"</string>
+    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"வைஃபை ஹாட்ஸ்பாட்டைப் பயன்படுத்துதல்"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"ஆஃப்"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"ஹாட்ஸ்பாட்டைத் தானாக ஆஃப் செய்"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"சாதனங்கள் எவையும் இணைக்கப்படவில்லை எனில் வைஃபை ஹாட்ஸ்பாட் ஆஃப் செய்யப்படும்"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"அனைத்து டிரைவ்களுக்கும் ஹாட்ஸ்பாட் பயன்படுத்துதல்"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"கார் ஆன் செய்யப்பட்டு இருக்கும்போதெல்லாம் ஹாட்ஸ்பாட்டைக் கிடைக்கும்படி செய்யும்"</string>
+    <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"\"%s\" இல் இணைவதற்கு இந்த QR குறியீட்டை ஸ்கேன் செய்க"</string>
+    <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"ஹாட்ஸ்பாட் கடவுச்சொல்: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"வைஃபையை ஆன் செய்ய <xliff:g id="REQUESTER">%s</xliff:g> ஆப்ஸ் விரும்புகிறது"</string>
     <string name="wifi_ask_disable" msgid="2949290055916181553">"வைஃபையை ஆஃப் செய்ய <xliff:g id="REQUESTER">%s</xliff:g> ஆப்ஸ் விரும்புகிறது"</string>
     <string name="wifi_error" msgid="3105105447117289410">"பிழை"</string>
@@ -175,6 +179,7 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"இணைப்பு வெற்றியடைந்தது"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"அனைத்தையும் காட்டு"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"தேடுகிறது"</string>
+    <string name="connected_settings_title" msgid="8868738903280658151">"இணைக்கப்பட்டுள்ள சாதனங்கள்"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"புளூடூத்"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"புளூடூத்தைப் பயன்படுத்துதல்"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"பெயரிடப்படாத சாதனம்"</string>
@@ -188,7 +193,7 @@
     <string name="bluetooth_name" msgid="2609869978821094114">"வாகனத்தின் பெயர்"</string>
     <string name="bluetooth_rename_vehicle" msgid="5769424875066563154">"வாகனத்திற்கு மறுபெயரிடுதல்"</string>
     <string name="bluetooth_rename_device" msgid="8406868875363878712">"சாதனத்திற்கு மறுபெயரிடுதல்"</string>
-    <string name="bluetooth_rename_button" msgid="2397892174725986383">"மறுபெயரிடு"</string>
+    <string name="bluetooth_rename_button" msgid="2397892174725986383">"பெயர் மாற்று"</string>
     <string name="bluetooth_available_devices" msgid="1854446368146061448">"இணைப்பிற்குக் கிடைக்கும் சாதனங்கள்"</string>
     <string name="bluetooth_profiles" msgid="5580372290862835951">"புளூடூத் சுயவிவரங்கள்"</string>
     <string name="bluetooth_error_title" msgid="2341600997536511742"></string>
@@ -207,6 +212,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"ஏற்கெனவே இணைத்தவை"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s இணைக்கப்பட்டது"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s துண்டிக்கப்பட்டது"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"உங்கள் காருடனான சாதன இணைப்புகள்"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"அல்ட்ரா-வைடுபேண்ட் (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"UWB சாதனங்களின் நிலையைக் கண்டறிய உங்கள் காருக்கு உதவும்"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"புளூடூத் இணைப்பிற்கான கோரிக்கை"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"ஜோடி சேர்த்து, இணை"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"புளூடூத் இணைத்தல் குறியீடு"</string>
@@ -221,6 +229,9 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"இணைப்பிற்கான கோரிக்கை"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> உடன் இணைக்க, தட்டவும்."</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"புளூடூத் சாதனத்தைத் தேர்வுசெய்க"</string>
+    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"புளூடூத்"</string>
+    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"மொபைல்"</string>
+    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"மீடியா"</string>
     <string name="language_settings" msgid="2079258598337245546">"மொழிகள்"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"மொழிகள் &amp; உள்ளீடு"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"பரிந்துரைகள்"</string>
@@ -247,6 +258,8 @@
     <string name="ringtone_picker_save_title" msgid="4388137432517227001">"சேமி"</string>
     <string name="sound_alert_sounds" msgid="6838044721739163867">"விழிப்பூட்டல் ஒலிகள்"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"ரிங்டோன், அறிவிப்புகள், அலாரம்"</string>
+    <string name="audio_route_selector_title" msgid="9137648859313120159">"மீடியாவை இதில் பிளே செய்:"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"மீடியாவை %1$sக்கு மாற்றுகிறது"</string>
     <string name="display_brightness" msgid="5718970880488110840">"ஒளிர்வு"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"வெளிச்சத்திற்கேற்றவாறு திரை ஒளிர்வைச் சரிசெய்யும்"</string>
     <string name="units_settings" msgid="402325305096925886">"அலகுகள்"</string>
@@ -319,6 +332,7 @@
     <string name="app_disable_dialog_positive" msgid="4448684722791563349">"ஆப்ஸை முடக்கு"</string>
     <string name="not_installed" msgid="4163454337822508007">"இந்தச் சுயவிவரத்திற்கு நிறுவப்படவில்லை"</string>
     <string name="permissions_label" msgid="2701446753515612685">"அனுமதிகள்"</string>
+    <string name="app_info_all_services_label" msgid="6495363975322723452">"அனைத்துச் சேவைகளும்"</string>
     <string name="notifications_label" msgid="6586089149665170731">"அறிவிப்புகள்"</string>
     <string name="storage_application_label" msgid="5911779903670978586">"சேமிப்பகமும் தற்காலிக சேமிப்பும்"</string>
     <string name="prioritize_app_performance_label" msgid="7264505023347026606">"ஆப்ஸ் செயல்திறனுக்கு முன்னுரிமை அளித்தல்"</string>
@@ -386,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"சிஸ்டம் ஆப்ஸைக் காட்டு"</string>
     <string name="hide_system" msgid="8845453295584638040">"சிஸ்டம் ஆப்ஸை மறை"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"சிஸ்டம் ஆப்ஸை மறை"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"அலாரங்கள் &amp; நினைவூட்டல்கள்"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"சிஸ்டம் அமைப்புகளை மாற்று"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"இது சிஸ்டம் அமைப்புகளை மாற்ற அனுமதிக்கும்."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"அறிவிப்பு அணுகல்"</string>
@@ -396,7 +411,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"வேண்டாம்"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"சிஸ்டம் செயல்திறனை இந்த ஆப்ஸ் பாதிப்பதால் பின்னணியில் இயங்குவதிலிருந்து தடுக்கப்பட்டுள்ளன.\nபின்னணி உபயோகத்தை அனுமதிக்க ஆப்ஸுக்கு முன்னுரிமையளித்து அதைப் பட்டியலில் இருந்து அகற்றுங்கள்."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"முன்னுரிமையளி"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"பிரீமிய SMS அணுகல்"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"பிரீமியம் SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"பிரீமிய SMSஸுக்குக் கட்டணம் விதிக்கப்படலாம், அது மொபைல் நிறுவன பில்களில் சேர்க்கப்படும். ஆப்ஸுக்கான அனுமதியை இயக்கினால் அதன் மூலம் பிரீமிய SMSஸை அனுப்ப இயலும்."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"உபயோக அணுகல்"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"’உபயோக அணுகல்’ மூலம் நீங்கள் வேறு எந்தெந்த ஆப்ஸை எவ்வளவு அடிக்கடி பயன்படுத்துகிறீர்கள் என்பதை அறிந்துகொள்ளும் அனுமதியை ஆப்ஸிற்கு வழங்கலாம். உங்கள் மொபைல் நிறுவனம், மொழி அமைப்புகள் மற்றும் பிற விவரங்களையும் அறிந்து கொள்ளும் அனுமதியும் இதில் அடங்கும்."</string>
@@ -405,28 +420,30 @@
     <string name="more_special_access_title" msgid="166115485446645971">"மேலும்"</string>
     <string name="location_settings_title" msgid="901334356682423679">"இடம்"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"இருப்பிடத்தைப் பயன்படுத்துதல்"</string>
-    <string name="location_toggle_summary" msgid="7977868708102299495">"இடத்தை அணுக நீங்கள் குறிப்பிடும் ஆப்ஸை அனுமதிக்கும்"</string>
+    <string name="location_toggle_summary" msgid="5651728747635881194">"நீங்கள் குறிப்பட்ட எந்த ஆப்ஸுடனும் உங்கள் காரின் இருப்பிடத்தைப் பயன்படுத்தலாம்."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"இன்ஃபோடெயின்மென்ட் ஆப்ஸ்"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"உங்கள் இருப்பிடத்தை அணுக ஆப்ஸை அனுமதியுங்கள்"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"இதை முடக்கினால், ஓட்டுநர் உதவி அம்சத்திற்குத் தேவையான ஆப்ஸைத் தவிர, மற்ற ஆப்ஸ் அனைத்துக்கும் இருப்பிட அணுகல் அகற்றப்படும்."</string>
-    <string name="location_driver_assistance_toggle_title" msgid="3780157378527924932">"ஓட்டுநர் உதவி ஆப்ஸுக்கு இருப்பிட அணுகலை வழங்குதல்"</string>
-    <string name="location_driver_assistance_toggle_off_title" msgid="2218532550578204718">"வாகன இருப்பிடத்தை முடக்குதல்"</string>
-    <string name="location_driver_assistance_toggle_off_summary" msgid="6040822988891113026">"ஓட்டுநர் உதவி ஆப்ஸுக்கு இருப்பிட அணுகலை வழங்காதே"</string>
-    <string name="location_driver_assistance_action_text" msgid="1887309495010247883">"மாற்று"</string>
-    <string name="location_driver_assistance_toggle_summary" msgid="2732591196508054649">"வாகனம் ஓட்ட உதவும் ஆப்ஸை இருப்பிடத்தை அணுக அனுமதிக்கவும்"</string>
-    <string name="location_driver_assistance_toggle_off_warning" msgid="2733124752598498356">"இதை முடக்கினால், இருப்பிடத் தகவல்களைச் சார்ந்துள்ள ஓட்டுநர் உதவி ஆப்ஸ் முடக்கப்படும்"</string>
-    <string name="driver_assistance_warning_confirm_label" msgid="2873799611160864931">"பரவாயில்லை, முடக்கு"</string>
+    <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"இதை முடக்கினால், இருப்பிடத் தகவல்களைச் சார்ந்துள்ள ஓட்டுநர் உதவி ஆப்ஸ் முடக்கப்படும்"</string>
+    <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"பரவாயில்லை, முடக்கு"</string>
+    <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"இந்த அமைப்பை மாற்ற முடியாது. ஏனெனில், உங்கள் கார் தயாரிப்பாளரால் இது முடக்கப்பட்டுள்ளது."</string>
+    <string name="adas_location_toggle_title" msgid="6131739109988811006">"வாகனம் ஓட்ட உதவும் அம்சங்கள்"</string>
+    <string name="adas_location_toggle_summary" msgid="7055141074159770928">"உங்கள் காரின் உற்பத்தியாளர் அனுமதித்துள்ள, உள்ளமைக்கப்பட்ட அம்சங்களுக்குக் காரின் இருப்பிட அணுகலை வழங்கும்."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"சமீபத்தில் அணுகியவை"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"சமீபத்தில் அணுகியவை"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"அனைத்தையும் காட்டுதல்"</string>
     <string name="location_no_recent_access" msgid="2859914321242257931">"சமீபத்திய ஆப்ஸ் எதுவுமில்லை"</string>
-    <string name="driver_assistance_label" msgid="9217315205754658940">"<xliff:g id="TIME">%1$s</xliff:g> • ஓட்டுநர் உதவி"</string>
-    <string name="location_driver_assistance_privacy_policy_header_content" msgid="8118086439003674350">"ஓட்டுநர் உதவி அம்சங்களை வழங்குவதற்காக, இந்த வாகனத்தின் இருப்பிடத்தை அணுகுவதற்கான அனுமதியுள்ள ஆப்ஸ்"</string>
-    <string name="location_driver_assistance_privacy_policy_button_text" msgid="669921557502414704">"தனியுரிமைக் கொள்கை"</string>
+    <string name="driver_assistance_label" msgid="5330316311913399041">"<xliff:g id="TIME">%1$s</xliff:g> • ஓட்டுநர் உதவி • அணுகல் தேவை"</string>
+    <string name="location_adas_apps_list_title" msgid="482882078448695177">"வாகனம் ஓட்ட உதவும் அம்சங்கள்"</string>
+    <string name="location_driver_assistance_privacy_policy_button_text" msgid="1092702462617222722">"கொள்கை"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"ஆப்ஸ் நிலை அனுமதிகள்"</string>
+    <string name="location_settings_app_permissions_summary" msgid="87851720569447224">"ஆப்ஸ் அனுமதிகளை தனித்தனியே நிர்வகிக்கலாம்"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"இருப்பிடச் சேவைகள்"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"இருப்பிடத்தைப் பயன்படுத்து"</string>
-    <string name="location_settings_footer" msgid="296892848338100051">"உங்கள் சாதனத்தின் இருப்பிடத்தைக் கணிக்க உதவுவதற்கு GPS, வைஃபை, மொபைல் நெட்வொர்க்குகள், சென்சார்கள் போன்றவற்றை இருப்பிட அமைப்புகள் பயன்படுத்தக்கூடும்."</string>
-    <string name="driver_assistance_settings_title" msgid="4915804073177128915">"ஓட்டுநர் உதவி"</string>
-    <string name="adas_settings_footer" msgid="6697021691244459156">"ஓட்டுநர் உதவி ஆப்ஸுக்கு அனுப்பப்படும் இருப்பிடம் குறித்த தகவல்களில் உங்களை அடையாளம் காணும் தகவல்கள் இருக்காது. அதிகபட்சம் 2 நாட்கள் மட்டுமே இவை சேமிக்கப்பட்டிருக்கும், அதன் பிறகு நீக்கப்படும்."</string>
+    <string name="location_access_settings_title" msgid="2378398106582207440">"இருப்பிட அணுகல்"</string>
+    <string name="location_access_settings_summary" msgid="7676354917209152932">"உங்கள் காரின் இருப்பிடத்தை ஆப்ஸ் அணுகலாமா என்பதைத் தேர்வுசெய்யலாம்"</string>
+    <string name="location_access_disclaimer_summary" msgid="914984622682562036">"உங்கள் காரின் இருப்பிடத்திற்கான அணுகல் இப்போதும் உங்கள் கார் தயாரிப்பாளரிடம் இருக்கக்கூடும். கூடுதல் தகவல்களுக்கு அவர்களின் கொள்கைகளை நீங்கள் பார்க்கலாம்."</string>
+    <string name="location_adas_app_info_summary" msgid="7806057735910556609">"வாகனம் ஓட்டுவதற்கு உதவுவதற்காக உங்கள் காரின் இருப்பிடத்திற்கான அணுகல் இந்த உள்ளமைக்கப்பட்ட அம்சங்களுக்குத் தேவை.\n\nஒவ்வொரு ஆப்ஸும் உங்கள் இருப்பிடத் தரவை எப்படிப் பயன்படுத்துகிறது என்பதை அறிய அதன் தனியுரிமைக் கொள்கையைப் பாருங்கள்."</string>
     <string name="microphone_settings_title" msgid="7125554350537136922">"மைக்ரோஃபோன்"</string>
     <string name="microphone_toggle_title" msgid="911586035332827275">"மைக்ரோஃபோனைப் பயன்படுத்துதல்"</string>
     <string name="microphone_toggle_summary" msgid="2682653449849128626">"மைக்ரோஃபோனை அனைத்து ஆப்ஸும் அணுகுவதற்கு அனுமதிக்கும்"</string>
@@ -634,6 +651,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"எனது சுயவிவரத்தை நீக்கு"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"இன்ஃபோடெயின்மென்ட் சிஸ்டத்தில் உள்ள உங்கள் சுயவிவரத்தையும் கணக்குகளையும் அழிக்கும்"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"உங்கள் சுயவிவரத்தில் இந்தச் செயலைச் செய்ய முடியாது"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"மைக்ரோஃபோன் அணுகல்"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"உங்கள் காரின் மைக்ரோஃபோன்களை ஆப்ஸ் அணுகலாமா என்பதைத் தேர்வுசெய்யலாம்"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"இன்ஃபோடெயின்மென்ட் ஆப்ஸ்"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"ஆடியோவை ரெக்கார்டு செய்ய இன்ஃபோடெயின்மென்ட் ஆப்ஸை அனுமதிக்கும்"</string>
+    <string name="camera_access_settings_title" msgid="1841809323727456945">"கேமரா அணுகல்"</string>
+    <string name="camera_access_settings_summary" msgid="8820488359585532496">"உங்கள் காரின் கேமராவை ஆப்ஸ் அணுகலாமா என்பதைத் தேர்வுசெய்யலாம்"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"தேவைப்படும் ஆப்ஸ்"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"கார் ஓட்ட உங்களுக்கு உதவுவதற்காக உங்கள் கார் உற்பத்தியாளருக்குத் தேவைப்படுகின்ற ஆப்ஸ்"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"கொள்கை"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"உங்கள் காரின் கேமராவிற்கான அணுகலை இப்போதும் உங்கள் கார் தயாரிப்பாளர் கொண்டிருக்கக்கூடும்"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"இன்ஃபோடெயின்மென்ட் ஆப்ஸ்"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"படங்களை எடுக்கவும் வீடியோவை ரெக்கார்டு செய்யவும் இன்ஃபோடெயின்மென்ட் ஆப்ஸை அனுமதிக்கலாம்"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"அனுமதிக்கப்பட்டது"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"எப்போதும்"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"அனுமதிக்கப்படவில்லை"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"ஆப்ஸைப் பயன்படுத்தும்போது மட்டும்"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"ஒவ்வொரு முறையும் கேள்"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"பாதுகாப்பு"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"திரைப் பூட்டு"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"எதுவுமில்லை"</string>
@@ -688,6 +722,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"ரத்துசெய்"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"உறுதிப்படுத்து"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"குறைந்தது 4 எழுத்துகள் இருக்க வேண்டும்"</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"இந்தப் பூட்டு வகை கிடைக்கவில்லை."</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"0-9 இலக்கங்கள் மட்டுமே இருக்க வேண்டும்."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"சாதன நிர்வாகி சமீபத்திய பின்னைப் பயன்படுத்துவதை அனுமதிக்கவில்லை"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"பொதுவான பின்கள் IT நிர்வாகியால் தடைசெய்யப்பட்டுள்ளன. வேறொரு பின்னை முயலவும்."</string>
@@ -734,6 +769,8 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"டெமோவிலிருந்து வெளியேறு"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"நிராகரி"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"வாகனம் ஓட்டும்போது இந்த அம்சத்தைப் பயன்படுத்த இயலாது"</string>
+    <string name="restricted_for_passenger" msgid="7240117443887727753">"அமைப்பை மாற்றுமாறு ஓட்டுநரிடம் கோருங்கள்"</string>
+    <string name="restricted_for_driver" msgid="3364388937671526800">"இந்தச் செயலைச் செய்ய முடியாது"</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"வாகனம் ஓட்டும்போது சுயவிவரத்தைச் சேர்க்க முடியாது"</string>
     <string name="default_search_query" msgid="3137420627428857068">"Search"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Assistant &amp; Voice"</string>
@@ -749,9 +786,11 @@
     <string name="add_a_profile_button_text" msgid="8027395095117925114">"புதிய சுயவிவரத்தைச் சேர்"</string>
     <string name="delete_this_profile_text" msgid="6035404714526922665">"இந்தச் சுயவிவரத்தை நீக்கு"</string>
     <string name="add_profile_text" msgid="9118410102199116969">"சுயவிவரத்தைச் சேர்"</string>
+    <string name="cannot_remove_driver_profile" msgid="4109363161608717969">"ஓட்டுநராக இந்தச் சுயவிவரம் தற்போது உள்நுழைந்துள்ளது. ஓட்டுநராகச் சுயவிவரம் இல்லாதபோது மீண்டும் முயலவும்."</string>
     <string name="qc_display_brightness" msgid="2939655289816201170">"திரையின் ஒளிர்வு"</string>
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"உங்கள் சாதனங்களைக் காண புளூடூத்தை ஆன் செய்யுங்கள்"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"சாதனத்துடன் இணைக்க புளூடூத் அமைப்புகளைத் திறங்கள்"</string>
+    <string name="qc_ui_mode_title" msgid="2425571805732530923">"தீம்"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"இன்ஃபோடெயின்மென்ட் சிஸ்டம் நிர்வாகி"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"செயல்படுத்தப்பட்ட ஆப்ஸ்"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"முடக்கப்பட்ட ஆப்ஸ்"</string>
@@ -883,4 +922,7 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"சமீபத்தில் அணுகியவை"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"அனைத்தையும் காட்டுதல்"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"ஏற்றுகிறது…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"திட்டங்களைக் காட்டு"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"உங்கள் இணையத் திட்டங்கள் காலாவதியாகிவிட்டன"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"திட்டங்களைக் காட்டு"</string>
 </resources>

@@ -16,162 +16,136 @@
 
 package com.android.car.settings.location;
 
-import static android.car.hardware.power.PowerComponent.LOCATION;
-import static android.os.UserManager.DISALLOW_CONFIG_LOCATION;
-import static android.os.UserManager.DISALLOW_SHARE_LOCATION;
-
-import static com.android.car.settings.enterprise.ActionDisabledByAdminDialogFragment.DISABLED_BY_ADMIN_CONFIRM_DIALOG_TAG;
-import static com.android.car.settings.enterprise.EnterpriseUtils.hasUserRestrictionByDpm;
-
 import android.car.drivingstate.CarUxRestrictions;
-import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.location.LocationManager;
+import android.content.res.Resources;
+import android.widget.Toast;
 
 import androidx.annotation.VisibleForTesting;
 
+import com.android.car.settings.Flags;
 import com.android.car.settings.R;
 import com.android.car.settings.common.ConfirmationDialogFragment;
 import com.android.car.settings.common.FragmentController;
-import com.android.car.settings.common.PowerPolicyListener;
-import com.android.car.settings.common.PreferenceController;
-import com.android.car.settings.enterprise.EnterpriseUtils;
-import com.android.car.ui.preference.CarUiTwoActionSwitchPreference;
+import com.android.car.ui.preference.CarUiSwitchPreference;
 
 /**
  * Enables/disables ADAS (Advanced Driver-assistance systems) GNSS bypass via SwitchPreference.
+ *
+ * <p>This switch is not affected by {@link android.os.UserManager#DISALLOW_CONFIG_LOCATION} or
+ * {@link android.os.UserManager#DISALLOW_SHARE_LOCATION} to prevent a device policy manager from
+ * changing settings that can negatively impact the safety of the driver.
  */
 public class AdasLocationSwitchPreferenceController extends
-        PreferenceController<CarUiTwoActionSwitchPreference> {
-    private final Context mContext;
-    private final LocationManager mLocationManager;
+        LocationStateListenerBasePreferenceController<CarUiSwitchPreference> {
+    private static final String AUTOMOTIVE_LOCATION_BYPASS_RESOURCE_NAME =
+            "config_defaultAdasGnssLocationEnabled";
+    private static final String AUTOMOTIVE_LOCATION_BYPASS_RESOURCE_TYPE = "bool";
+    private static final String AUTOMOTIVE_LOCATION_BYPASS_RESOURCE_PACKAGE = "android";
 
-    private final BroadcastReceiver mAdasReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            refreshUi();
-        }
-    };
-
-    private final BroadcastReceiver mLocationReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            // Turns Driver assistance on when main location switch is on. Location service don't
-            // support the case where main location switch on and Driver assistance off
-            if (mLocationManager.isLocationEnabled()) {
-                mLocationManager.setAdasGnssLocationEnabled(true);
-            }
-            refreshUi();
-        }
-    };
-
-    private static final IntentFilter INTENT_FILTER_ADAS_GNSS_ENABLED_CHANGED = new IntentFilter(
-            LocationManager.ACTION_ADAS_GNSS_ENABLED_CHANGED);
-
-    private static final IntentFilter INTENT_FILTER_LOCATION_MODE_CHANGED = new IntentFilter(
-            LocationManager.MODE_CHANGED_ACTION);
     @VisibleForTesting
-    final PowerPolicyListener mPowerPolicyListener;
+    boolean mIsClickable;
+    @VisibleForTesting
+    boolean mIsVisible;
 
     public AdasLocationSwitchPreferenceController(Context context, String preferenceKey,
             FragmentController fragmentController, CarUxRestrictions uxRestrictions) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
-        mContext = context;
-        mLocationManager = context.getSystemService(LocationManager.class);
-        mPowerPolicyListener = new PowerPolicyListener(context, LOCATION,
-                isOn -> {
-                    handlePowerPolicyChange(getPreference(), isOn);
-                });
     }
 
     @Override
-    protected Class<CarUiTwoActionSwitchPreference> getPreferenceType() {
-        return CarUiTwoActionSwitchPreference.class;
+    protected Class<CarUiSwitchPreference> getPreferenceType() {
+        return CarUiSwitchPreference.class;
     }
 
     @Override
     protected int getDefaultAvailabilityStatus() {
-        if (hasUserRestrictionByDpm(getContext(), DISALLOW_CONFIG_LOCATION)
-                || hasUserRestrictionByDpm(getContext(), DISALLOW_SHARE_LOCATION)) {
-            return AVAILABLE_FOR_VIEWING;
+        if (Flags.requiredInfotainmentAppsSettingsPage()) {
+            if (!mIsVisible) {
+                return CONDITIONALLY_UNAVAILABLE;
+            }
+            if (!getIsPowerPolicyOn() || getLocationManager().isLocationEnabled()) {
+                return AVAILABLE_FOR_VIEWING;
+            }
+            return AVAILABLE;
+        } else {
+            return mIsClickable && getIsPowerPolicyOn() && !getLocationManager().isLocationEnabled()
+                    ? AVAILABLE
+                    : AVAILABLE_FOR_VIEWING;
         }
-        return AVAILABLE;
     }
 
     @Override
-    protected void updateState(CarUiTwoActionSwitchPreference preference) {
-        updateSwitchPreference(preference, mLocationManager.isAdasGnssLocationEnabled());
+    protected void updateState(CarUiSwitchPreference preference) {
+        preference.setChecked(getLocationManager().isAdasGnssLocationEnabled());
+    }
+
+    @Override
+    protected boolean handlePreferenceChanged(CarUiSwitchPreference preference, Object newValue) {
+        if (Flags.requiredInfotainmentAppsSettingsPage()) {
+            getLocationManager().setAdasGnssLocationEnabled((Boolean) newValue);
+            return true;
+        } else {
+            if (getLocationManager().isAdasGnssLocationEnabled()) {
+                getFragmentController().showDialog(getConfirmationDialog(),
+                        ConfirmationDialogFragment.TAG);
+                return false;
+            } else {
+                getLocationManager().setAdasGnssLocationEnabled((Boolean) newValue);
+            }
+            return true;
+        }
     }
 
     @Override
     protected void onCreateInternal() {
-        getPreference().setOnSecondaryActionClickListener(isChecked -> {
-            if (!isChecked) {
-                getFragmentController().showDialog(getConfirmationDialog(),
-                        ConfirmationDialogFragment.TAG);
-                refreshUi();
-            } else {
-                mLocationManager.setAdasGnssLocationEnabled(true);
+        addDefaultBypassLocationStateListener();
+        setMainLocationStateListener((isEnabled) -> {
+            // Turns ADAS location on when main location switch is on. Location service do
+            // not support the case where main location switch on and ADAS location off.
+            if (isEnabled) {
+                getLocationManager().setAdasGnssLocationEnabled(true);
             }
         });
-        setClickableWhileDisabled(getPreference(), /* clickable= */ true, p -> {
-            if (hasUserRestrictionByDpm(getContext(), DISALLOW_SHARE_LOCATION)) {
-                showActionDisabledByAdminDialog(DISALLOW_SHARE_LOCATION);
-                return;
-            }
-            if (hasUserRestrictionByDpm(getContext(), DISALLOW_CONFIG_LOCATION)) {
-                showActionDisabledByAdminDialog(DISALLOW_CONFIG_LOCATION);
-                return;
-            }
-        });
-    }
+        addDefaultPowerPolicyListener();
 
-    @Override
-    protected void onStartInternal() {
-        mContext.registerReceiver(mAdasReceiver, INTENT_FILTER_ADAS_GNSS_ENABLED_CHANGED,
-                Context.RECEIVER_NOT_EXPORTED);
-        mContext.registerReceiver(mLocationReceiver, INTENT_FILTER_LOCATION_MODE_CHANGED,
-                Context.RECEIVER_NOT_EXPORTED);
-    }
-
-    @Override
-    protected void onResumeInternal() {
-        mPowerPolicyListener.handleCurrentPolicy();
-    }
-
-    @Override
-    protected void onStopInternal() {
-        mContext.unregisterReceiver(mAdasReceiver);
-        mContext.unregisterReceiver(mLocationReceiver);
-    }
-
-    @Override
-    protected void onDestroyInternal() {
-        mPowerPolicyListener.release();
-    }
-
-    private void updateSwitchPreference(CarUiTwoActionSwitchPreference preference,
-            boolean enabled) {
-        if (enabled && hasUserRestrictionByDpm(getContext(), DISALLOW_SHARE_LOCATION)) {
-            preference.setSecondaryActionChecked(false);
-            preference.setSecondaryActionEnabled(false);
+        if (Flags.requiredInfotainmentAppsSettingsPage()) {
+            Resources res = Resources.getSystem();
+            int resId = res.getIdentifier(
+                    AUTOMOTIVE_LOCATION_BYPASS_RESOURCE_NAME,
+                    AUTOMOTIVE_LOCATION_BYPASS_RESOURCE_TYPE,
+                    AUTOMOTIVE_LOCATION_BYPASS_RESOURCE_PACKAGE);
+            boolean defaultLocationBypassEnabled = res.getBoolean(resId);
+            // If by default automotive location bypass is on, then
+            // config_show_location_required_apps_toggle will dictate the visibility.
+            // Otherwise the toggle must be visible.
+            mIsVisible = defaultLocationBypassEnabled
+                    ? getContext().getResources().getBoolean(
+                            R.bool.config_show_location_required_apps_toggle)
+                    : true;
         } else {
-            preference.setSecondaryActionChecked(enabled);
-            preference.setSecondaryActionEnabled(!mLocationManager.isLocationEnabled());
+            mIsClickable = getContext().getResources()
+                    .getBoolean(R.bool.config_allow_adas_location_switch_clickable);
         }
-    }
 
-    private void handlePowerPolicyChange(CarUiTwoActionSwitchPreference preference,
-            boolean enabled) {
-        if (hasUserRestrictionByDpm(getContext(), DISALLOW_CONFIG_LOCATION)
-                || hasUserRestrictionByDpm(getContext(), DISALLOW_SHARE_LOCATION)
-                ||  mLocationManager.isLocationEnabled()) {
-            preference.setSecondaryActionEnabled(false);
-            return;
-        }
-        preference.setSecondaryActionEnabled(enabled);
+        setClickableWhileDisabled(getPreference(), /* clickable= */true, preference -> {
+            if (Flags.requiredInfotainmentAppsSettingsPage()) {
+                if (!getIsPowerPolicyOn()) {
+                    Toast.makeText(getContext(), R.string.power_component_disabled,
+                            Toast.LENGTH_LONG).show();
+                }
+            } else {
+                if (!mIsClickable) {
+                    getFragmentController().showDialog(getToggleDisabledDialog(),
+                            ConfirmationDialogFragment.TAG);
+                    return;
+                }
+                if (!getIsPowerPolicyOn()) {
+                    Toast.makeText(getContext(), R.string.power_component_disabled,
+                            Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 
     /**
@@ -181,21 +155,28 @@ public class AdasLocationSwitchPreferenceController extends
      */
     private ConfirmationDialogFragment getConfirmationDialog() {
         return new ConfirmationDialogFragment.Builder(getContext())
-                .setMessage(mContext
-                        .getString(R.string.location_driver_assistance_toggle_off_warning))
-                .setNegativeButton(mContext
-                        .getString(R.string.driver_assistance_warning_confirm_label), arguments -> {
-                                mLocationManager.setAdasGnssLocationEnabled(false);
+                .setMessage(R.string.adas_location_toggle_off_warning)
+                .setNegativeButton(
+                        R.string.adas_location_toggle_confirm_label,
+                        arguments -> {
+                            // This if statement is included because the power policy handler runs
+                            // slightly after the UI is initialized. Therefore, there's a small
+                            // timeframe for the user to toggle the switch before the UI updates
+                            // and disables the switch because the power policy is off. This if
+                            // statement mitigates this issue by reverifying the power policy
+                            // status.
+                            if (getIsPowerPolicyOn()) {
+                                getLocationManager().setAdasGnssLocationEnabled(false);
+                            }
                         })
-                .setPositiveButton(android.R.string.cancel,
-                        /* rejectListener= */ null)
+                .setPositiveButton(android.R.string.cancel, /* confirmListener= */ null)
                 .build();
     }
 
-    private void showActionDisabledByAdminDialog(String restrictionType) {
-        getFragmentController().showDialog(
-                EnterpriseUtils.getActionDisabledByAdminDialog(getContext(),
-                        restrictionType),
-                DISABLED_BY_ADMIN_CONFIRM_DIALOG_TAG);
+    private ConfirmationDialogFragment getToggleDisabledDialog() {
+        return new ConfirmationDialogFragment.Builder(getContext())
+                .setMessage(R.string.adas_location_toggle_popup_summary)
+                .setPositiveButton(android.R.string.ok, /* confirmListener= */ null)
+                .build();
     }
 }

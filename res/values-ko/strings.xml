@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"밝기 수준"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"밝기 자동 조절"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"화면 밝기를 환경에 맞게 조정"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"테마"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"야간 조명 켜짐"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"네트워크 및 인터넷"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"모바일 네트워크"</string>
@@ -160,11 +161,14 @@
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2.4GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Wi‑Fi 핫스팟 대역 한 개 이상 선택"</string>
-    <string name="tether_settings_title_all" msgid="4663704772599383169">"핫스팟 및 테더링"</string>
+    <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi‑Fi 핫스팟"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"핫스팟"</string>
+    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Wi‑Fi 핫스팟 사용"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"사용 안함"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"자동으로 핫스팟 사용 중지"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"연결된 기기가 없으면 Wi‑Fi 핫스팟이 사용 중지됩니다."</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"모든 주행에 핫스팟 사용"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"자동차가 사용 설정되어 있을 때 핫스팟을 사용 설정합니다."</string>
+    <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"\'%s\'에 연결하려면 이 QR 코드를 스캔하세요."</string>
+    <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"핫스팟 비밀번호: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g>에서 Wi-Fi를 사용 설정하려고 합니다."</string>
     <string name="wifi_ask_disable" msgid="2949290055916181553">"<xliff:g id="REQUESTER">%s</xliff:g>에서 Wi-Fi를 사용 중지하려고 합니다."</string>
     <string name="wifi_error" msgid="3105105447117289410">"오류"</string>
@@ -175,6 +179,7 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"연결되었습니다."</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"모두 표시"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"검색 중"</string>
+    <string name="connected_settings_title" msgid="8868738903280658151">"연결된 기기"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"블루투스"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"블루투스 사용"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"이름이 없는 기기"</string>
@@ -207,6 +212,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"이전에 연결됨"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s 연결됨"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s 연결 해제됨"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"자동차와 기기 연결"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"초광대역(UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"자동차에서 초광대역 기기의 위치를 파악하도록 돕습니다."</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"블루투스 페어링 요청"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"페어링 및 연결"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"블루투스 페어링 코드"</string>
@@ -221,6 +229,9 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"페어링 요청"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g>에 페어링하려면 탭하세요."</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"블루투스 기기 선택"</string>
+    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"블루투스"</string>
+    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"전화"</string>
+    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"미디어"</string>
     <string name="language_settings" msgid="2079258598337245546">"언어"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"언어 및 입력"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"추천"</string>
@@ -247,6 +258,8 @@
     <string name="ringtone_picker_save_title" msgid="4388137432517227001">"저장"</string>
     <string name="sound_alert_sounds" msgid="6838044721739163867">"경고음"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"벨소리, 알림, 알람"</string>
+    <string name="audio_route_selector_title" msgid="9137648859313120159">"다음에서 미디어 재생"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"%1$s(으)로 미디어 전환 중"</string>
     <string name="display_brightness" msgid="5718970880488110840">"밝기"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"어두운 곳에 맞게 화면 조정"</string>
     <string name="units_settings" msgid="402325305096925886">"단위"</string>
@@ -319,11 +332,12 @@
     <string name="app_disable_dialog_positive" msgid="4448684722791563349">"앱 사용 중지"</string>
     <string name="not_installed" msgid="4163454337822508007">"이 프로필에 설치되지 않음"</string>
     <string name="permissions_label" msgid="2701446753515612685">"권한"</string>
+    <string name="app_info_all_services_label" msgid="6495363975322723452">"모든 서비스"</string>
     <string name="notifications_label" msgid="6586089149665170731">"알림"</string>
     <string name="storage_application_label" msgid="5911779903670978586">"저장용량 및 캐시"</string>
     <string name="prioritize_app_performance_label" msgid="7264505023347026606">"앱 성능 우선순위 지정"</string>
     <string name="application_version_label" msgid="8556889839783311649">"버전: %1$s"</string>
-    <string name="runtime_permissions_summary_no_permissions_granted" msgid="6001439205270250021">"부여된 권한이 없습니다."</string>
+    <string name="runtime_permissions_summary_no_permissions_granted" msgid="6001439205270250021">"부여된 권한 없음"</string>
     <string name="runtime_permissions_summary_no_permissions_requested" msgid="4074220596273432442">"요청한 권한이 없습니다."</string>
     <string name="unused_apps" msgid="648471933781010395">"사용하지 않는 앱"</string>
     <string name="unused_apps_summary" msgid="8257304516038923072">"{count,plural, =1{사용하지 않는 앱 #개}other{사용하지 않는 앱 #개}}"</string>
@@ -386,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"시스템 표시"</string>
     <string name="hide_system" msgid="8845453295584638040">"시스템 숨기기"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"시스템 앱 숨기기"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"알람 및 리마인더"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"시스템 설정 수정"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"이 권한은 앱이 시스템 설정을 수정하도록 허용합니다."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"알림 액세스"</string>
@@ -396,7 +411,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"취소"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"시스템 성능에 부정적인 영향을 미쳐 백그라운드 실행이 차단된 앱입니다.\n앱 우선순위를 지정하여 백그라운드 사용을 허용하고 이 목록에서 삭제하세요."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"앱 우선순위 지정"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"프리미엄 SMS 액세스"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"프리미엄 SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"프리미엄 SMS는 요금이 부과될 수 있으며 이는 이동통신사 요금에 추가됩니다. 앱에 권한을 부여하면 해당 앱을 사용하여 프리미엄 SMS를 사용할 수 있게 됩니다."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"사용 기록에 액세스"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"앱에서 사용 기록에 액세스하도록 허용하면 사용 중인 다른 앱의 종류와 사용 빈도, 이동통신사, 언어 설정, 기타 세부정보를 추적할 수 있게 됩니다."</string>
@@ -405,28 +420,30 @@
     <string name="more_special_access_title" msgid="166115485446645971">"더보기"</string>
     <string name="location_settings_title" msgid="901334356682423679">"위치"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"위치 사용"</string>
-    <string name="location_toggle_summary" msgid="7977868708102299495">"지정한 앱이 내 위치에 액세스하도록 허용합니다."</string>
+    <string name="location_toggle_summary" msgid="5651728747635881194">"지정한 앱에서 자동차 위치 정보를 사용합니다."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"인포테인먼트 앱"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"앱이 내 위치 정보에 액세스할 수 있도록 허용"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"이 기능을 끄면 운전자 지원을 위해 필요한 경우를 제외하고 모든 앱에서 위치 액세스 권한이 삭제됩니다."</string>
-    <string name="location_driver_assistance_toggle_title" msgid="3780157378527924932">"운전자 지원을 위해 위치 정보 사용"</string>
-    <string name="location_driver_assistance_toggle_off_title" msgid="2218532550578204718">"자동차 위치 사용 중지됨"</string>
-    <string name="location_driver_assistance_toggle_off_summary" msgid="6040822988891113026">"운전자 지원 앱이 내 위치 정보에 액세스할 수 없음"</string>
-    <string name="location_driver_assistance_action_text" msgid="1887309495010247883">"변경"</string>
-    <string name="location_driver_assistance_toggle_summary" msgid="2732591196508054649">"운전 지원 앱이 내 위치에 액세스하도록 허용합니다."</string>
-    <string name="location_driver_assistance_toggle_off_warning" msgid="2733124752598498356">"기능을 끄면 위치 정보를 사용하는 운전자 지원 앱이 사용 중지됩니다."</string>
-    <string name="driver_assistance_warning_confirm_label" msgid="2873799611160864931">"무시하고 사용 중지"</string>
+    <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"기능을 끄면 위치 정보를 사용하는 운전자 지원 앱이 사용 중지됩니다."</string>
+    <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"무시하고 사용 중지"</string>
+    <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"이 설정은 변경할 수 없으며, 자동차 제조업체에 의해 중지되었습니다."</string>
+    <string name="adas_location_toggle_title" msgid="6131739109988811006">"운전을 도와주는 기능"</string>
+    <string name="adas_location_toggle_summary" msgid="7055141074159770928">"자동차 제조업체에서 승인한 기본 내장 기능이 자동차의 위치 정보에 액세스할 수 있도록 허용합니다."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"최근 액세스함"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"최근 액세스함"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"모두 보기"</string>
     <string name="location_no_recent_access" msgid="2859914321242257931">"최근에 사용한 앱 없음"</string>
-    <string name="driver_assistance_label" msgid="9217315205754658940">"<xliff:g id="TIME">%1$s</xliff:g> • 운전자 지원"</string>
-    <string name="location_driver_assistance_privacy_policy_header_content" msgid="8118086439003674350">"운전자 지원 기능을 위해 이 자동차의 위치 정보에 액세스할 수 있는 앱"</string>
-    <string name="location_driver_assistance_privacy_policy_button_text" msgid="669921557502414704">"개인정보처리방침"</string>
+    <string name="driver_assistance_label" msgid="5330316311913399041">"<xliff:g id="TIME">%1$s</xliff:g> • 운전자 지원 • 접근 권한 필요"</string>
+    <string name="location_adas_apps_list_title" msgid="482882078448695177">"운전을 도와주는 기능"</string>
+    <string name="location_driver_assistance_privacy_policy_button_text" msgid="1092702462617222722">"정책"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"앱 수준 권한"</string>
+    <string name="location_settings_app_permissions_summary" msgid="87851720569447224">"개별 앱 권한 관리"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"위치 서비스"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"위치 사용"</string>
-    <string name="location_settings_footer" msgid="296892848338100051">"기기의 위치를 추정하는 데 GPS, Wi-Fi, 모바일 네트워크, 센서 등의 데이터가 사용될 수 있습니다."</string>
-    <string name="driver_assistance_settings_title" msgid="4915804073177128915">"운전자 지원"</string>
-    <string name="adas_settings_footer" msgid="6697021691244459156">"운전자 지원 앱에 전송되는 위치 정보에는 개인 식별 정보가 포함되지 않습니다. 정보는 최대 2일 동안 보관된 후 삭제됩니다."</string>
+    <string name="location_access_settings_title" msgid="2378398106582207440">"위치 정보 액세스"</string>
+    <string name="location_access_settings_summary" msgid="7676354917209152932">"앱의 자동차 위치 정보 액세스 여부 선택"</string>
+    <string name="location_access_disclaimer_summary" msgid="914984622682562036">"자동차 제조업체에서 사용자의 자동차 위치 정보에 계속 액세스할 수도 있습니다. 자세한 내용은 자동차 제조업체의 정책을 검토하세요."</string>
+    <string name="location_adas_app_info_summary" msgid="7806057735910556609">"기본으로 제공되는 이러한 기능은 운전을 돕기 위해 사용자의 자동차 위치 정보에 대한 액세스 권한을 요구합니다.\n\n자동차 제조업체의 개인정보처리방침을 검토하여 각각의 앱에서 위치 데이터를 사용하는 방식을 자세히 알아보세요."</string>
     <string name="microphone_settings_title" msgid="7125554350537136922">"마이크"</string>
     <string name="microphone_toggle_title" msgid="911586035332827275">"마이크 사용"</string>
     <string name="microphone_toggle_summary" msgid="2682653449849128626">"모든 앱이 마이크에 액세스하도록 허용"</string>
@@ -634,6 +651,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"프로필 삭제"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"인포테인먼트 시스템에서 프로필과 계정을 삭제"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"이 프로필에서 사용할 수 없는 작업입니다."</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"마이크 액세스"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"앱이 자동차 마이크에 액세스하도록 허용할지 선택"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"인포테인먼트 앱"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"인포테인먼트 앱이 오디오를 녹음하도록 허용"</string>
+    <string name="camera_access_settings_title" msgid="1841809323727456945">"카메라 액세스"</string>
+    <string name="camera_access_settings_summary" msgid="8820488359585532496">"앱의 자동차 카메라 액세스 여부 선택"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"필수 앱"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"운전 지원을 위해 자동차 제조업체에서 지정한 필수 앱"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"정책"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"자동차 제조업체에서 사용자의 자동차 카메라에 계속 액세스할 수도 있습니다."</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"인포테인먼트 앱"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"인포테인먼트 앱이 사진을 촬영하고 동영상을 녹화하도록 허용"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"허용됨"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"항상"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"허용되지 않음"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"앱 사용 중에만 허용"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"항상 확인"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"보안"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"화면 잠금"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"없음"</string>
@@ -688,6 +722,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"취소"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"확인"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"4자 이상이어야 합니다."</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"사용할 수 없는 잠금 유형입니다."</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"숫자 0~9만 포함해야 합니다."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"기기 관리자가 최근 PIN 사용을 허용하지 않습니다."</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"IT 관리자가 일반적으로 사용되는 PIN을 차단했습니다. 다른 PIN을 시도해 보세요."</string>
@@ -734,6 +769,8 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"데모 종료"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"닫기"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"운전 중에 사용할 수 없는 기능입니다."</string>
+    <string name="restricted_for_passenger" msgid="7240117443887727753">"운전자에게 설정 변경을 요청하세요."</string>
+    <string name="restricted_for_driver" msgid="3364388937671526800">"이 작업을 실행할 수 없습니다."</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"운전 중에는 프로필을 추가할 수 없습니다."</string>
     <string name="default_search_query" msgid="3137420627428857068">"검색"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"어시스턴트 및 음성"</string>
@@ -749,9 +786,11 @@
     <string name="add_a_profile_button_text" msgid="8027395095117925114">"프로필 추가"</string>
     <string name="delete_this_profile_text" msgid="6035404714526922665">"이 프로필 삭제"</string>
     <string name="add_profile_text" msgid="9118410102199116969">"프로필 추가"</string>
+    <string name="cannot_remove_driver_profile" msgid="4109363161608717969">"이 프로필은 운전자로 로그인된 상태입니다. 운전자가 프로필을 사용하지 않을 때 다시 시도해 보세요."</string>
     <string name="qc_display_brightness" msgid="2939655289816201170">"디스플레이 밝기"</string>
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"기기를 표시하려면 블루투스를 사용 설정하세요."</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"기기를 페어링하려면 블루투스 설정을 여세요."</string>
+    <string name="qc_ui_mode_title" msgid="2425571805732530923">"테마"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"인포테인먼트 시스템 관리자"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"활성화된 앱"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"비활성화된 앱"</string>
@@ -879,8 +918,11 @@
     <string name="camera_recently_accessed" msgid="8084100710444691977">"최근 액세스함"</string>
     <string name="camera_no_recent_access" msgid="965105023454777859">"최근에 사용한 앱 없음"</string>
     <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"앱 0개에 액세스 권한이 있음"</string>
-    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{앱 #/{total_count}개에 액세스 권한이 있음}other{앱 #/{total_count}개에 액세스 권한이 있음}}"</string>
+    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{앱 {total_count}개 중 #개에 액세스 권한이 있음}other{앱 {total_count}개 중 #개에 액세스 권한이 있음}}"</string>
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"최근 액세스함"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"모두 보기"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"로드 중…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"요금제 보기"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"인터넷 요금제가 만료되었습니다."</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"요금제 보기"</string>
 </resources>

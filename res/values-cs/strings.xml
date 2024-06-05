@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Úroveň jasu"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Adaptivní jas"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Přizpůsobit jas obrazovky okolí"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Motiv"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Noční režim je aktivní"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Síť a internet"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mobilní síť"</string>
@@ -43,7 +44,7 @@
     <string name="sim_change_data_message" msgid="4669775284395549069">"Pro mobilní data používáte <xliff:g id="CARRIER2_0">%2$s</xliff:g>. Pokud přepnete na operátora <xliff:g id="CARRIER1">%1$s</xliff:g>, <xliff:g id="CARRIER2_1">%2$s</xliff:g> už se používat nebude."</string>
     <string name="sim_change_data_ok" msgid="2348804996223271081">"Použít <xliff:g id="CARRIER">%1$s</xliff:g>"</string>
     <string name="roaming_title" msgid="6218635014519017734">"Roaming"</string>
-    <string name="roaming_summary" msgid="7476127740259728901">"Používat datové služby při roamingu"</string>
+    <string name="roaming_summary" msgid="7476127740259728901">"Při roamingu používat datové služby"</string>
     <string name="roaming_alert_title" msgid="4433901635766775763">"Povolit datový roaming?"</string>
     <string name="roaming_warning" msgid="4908184914868720704">"Mohou vám být účtovány poplatky za roaming."</string>
     <string name="data_usage_settings" msgid="7877132994777987848">"Využití dat"</string>
@@ -124,7 +125,7 @@
     <string name="link_speed" msgid="7868861844075624445">"%1$d Mb/s"</string>
     <string name="wifi_band_24ghz" msgid="8972492390639295220">"2,4 GHz"</string>
     <string name="wifi_band_5ghz" msgid="2023762623523105080">"5 GHz"</string>
-    <string name="wifi_network_detail" msgid="9070182553555487360">"Podrobnosti sítě"</string>
+    <string name="wifi_network_detail" msgid="9070182553555487360">"Podrobnosti o síti"</string>
     <string name="wifi_mac_address" msgid="1466178247802349180">"Adresa MAC"</string>
     <string name="wifi_ip_address_title" msgid="300539799594024884">"IP adresa"</string>
     <string name="wifi_subnet_mask" msgid="6238171812379380608">"Maska podsítě"</string>
@@ -160,11 +161,14 @@
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Vyberte alespoň jedno pásmo pro hotspot Wi-Fi:"</string>
-    <string name="tether_settings_title_all" msgid="4663704772599383169">"Hotspot a tethering"</string>
+    <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi‑Fi hotspot"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Hotspot"</string>
+    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Použít hotspot sítě Wi‑Fi"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Vypnuto"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Automatické vypnutí hotspotu"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Pokud nebudou připojena žádná zařízení, hotspot Wi-Fi se vypne"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Používat hotspot pro všechny jízdy"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Aktivovat hotspot, když je auto nastartované"</string>
+    <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Připojte se k síti %s naskenováním QR kódu"</string>
+    <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Heslo hotspotu: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"Aplikace <xliff:g id="REQUESTER">%s</xliff:g> chce zapnout Wi-Fi"</string>
     <string name="wifi_ask_disable" msgid="2949290055916181553">"Aplikace <xliff:g id="REQUESTER">%s</xliff:g> chce vypnout Wi-Fi"</string>
     <string name="wifi_error" msgid="3105105447117289410">"Chyba"</string>
@@ -175,6 +179,7 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"Připojení úspěšně navázáno"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"Zobrazit vše"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"Hledání"</string>
+    <string name="connected_settings_title" msgid="8868738903280658151">"Připojená zařízení"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"Používat Bluetooth"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"Zařízení bez názvu"</string>
@@ -207,6 +212,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Dříve připojeno"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"Zařízení %1$s je připojeno"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"Zařízení %1$s je odpojeno"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Připojení zařízení k autu"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ultra-wideband (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Pomáhá autu rozpoznat umístění zařízení UWB"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Požadavek na párování zařízení Bluetooth"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Párovat a připojit"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Párovací kód Bluetooth"</string>
@@ -221,6 +229,9 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"Požadavek na párování"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"Klepnutím spárujete se zařízením <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"Vybrat zařízení Bluetooth"</string>
+    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"Bluetooth"</string>
+    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"Telefon"</string>
+    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"Média"</string>
     <string name="language_settings" msgid="2079258598337245546">"Jazyky"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"Jazyky a zadávání"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"Navrženo"</string>
@@ -247,6 +258,8 @@
     <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Uložit"</string>
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Zvuky upozornění"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Vyzvánění, oznámení, budík"</string>
+    <string name="audio_route_selector_title" msgid="9137648859313120159">"Přehrávat média na"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Přepínání médií na %1$s"</string>
     <string name="display_brightness" msgid="5718970880488110840">"Jas"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Přizpůsobit obrazovku slabému světlu"</string>
     <string name="units_settings" msgid="402325305096925886">"Jednotky"</string>
@@ -294,7 +307,7 @@
     <string name="units_unit_name_kilowatt_per_hundred_miles" msgid="715836273168653604">"Kilowatt na sto mil"</string>
     <string name="units_unit_name_kilowatt_per_hundred_kilometers" msgid="2761254652642587883">"Kilowatt na to kilometrů"</string>
     <string name="units_unit_name_miles_per_gallon_us" msgid="3911349970584135950">"Míle na galon (USA)"</string>
-    <string name="units_unit_name_miles_per_gallon_uk" msgid="7700318800709988481">"Míle na galon (Velká Británie)"</string>
+    <string name="units_unit_name_miles_per_gallon_uk" msgid="7700318800709988481">"Míle na galon (Spojené království)"</string>
     <string name="units_unit_name_kilometers_per_liter" msgid="8769902235588571155">"Kilometry na litr"</string>
     <string name="units_unit_name_liter_per_hundred_kilometers" msgid="4867647387452453552">"Litry na sto kilometrů"</string>
     <string name="apps_and_notifications_settings" msgid="8704585874333781975">"Aplikace a oznámení"</string>
@@ -319,6 +332,7 @@
     <string name="app_disable_dialog_positive" msgid="4448684722791563349">"Deaktivovat aplikaci"</string>
     <string name="not_installed" msgid="4163454337822508007">"U tohoto profilu není nainstalováno"</string>
     <string name="permissions_label" msgid="2701446753515612685">"Oprávnění"</string>
+    <string name="app_info_all_services_label" msgid="6495363975322723452">"Všechny služby"</string>
     <string name="notifications_label" msgid="6586089149665170731">"Oznámení"</string>
     <string name="storage_application_label" msgid="5911779903670978586">"Úložiště a mezipaměť"</string>
     <string name="prioritize_app_performance_label" msgid="7264505023347026606">"Upřednostnit výkon aplikace"</string>
@@ -386,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"Zobrazit systémové aplikace"</string>
     <string name="hide_system" msgid="8845453295584638040">"Skrýt systémové aplikace"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Skrýt systémové aplikace"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Budíky a připomenutí"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Změny nastavení systému"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Toto oprávnění umožňuje aplikaci měnit nastavení systému."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Přístup k oznámením"</string>
@@ -396,7 +411,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Zrušit"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Tyto aplikace negativně ovlivňují výkon systému a byl u nich zablokován běh na pozadí.\nPokud je chcete z tohoto seznamu odstranit a povolit jejich běh na pozadí, nastavte je jako přednostní."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Upřednostnit"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Přístup k prémiovým SMS"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"Prémiová SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Prémiové SMS mohou být zpoplatněny a jejich cena se přičte k fakturaci operátora. Pokud aplikaci udělíte příslušné oprávnění, budete pomocí této aplikace moci odesílat prémiové SMS."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Přístup k údajům o využití"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Přístup k údajům o využití umožňuje aplikaci sledovat, které ostatní aplikace používáte, jak často je používáte, jakého máte operátora, nastavení jazyka a další podrobnosti."</string>
@@ -405,28 +420,30 @@
     <string name="more_special_access_title" msgid="166115485446645971">"Více"</string>
     <string name="location_settings_title" msgid="901334356682423679">"Poloha"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Používat polohu"</string>
-    <string name="location_toggle_summary" msgid="7977868708102299495">"Přístup k poloze pro vybrané aplikace"</string>
+    <string name="location_toggle_summary" msgid="5651728747635881194">"Poloha auta se bude používat pro vybrané aplikace."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Informační a zábavní aplikace"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Povolit aplikacím přístup k vaší poloze"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Pokud tuto možnost vypnete, o přístup k poloze přijdou všechny aplikace (kromě aplikací nezbytných k asistenci pro řidiče)"</string>
-    <string name="location_driver_assistance_toggle_title" msgid="3780157378527924932">"Používat polohu při asistenci pro řidiče"</string>
-    <string name="location_driver_assistance_toggle_off_title" msgid="2218532550578204718">"Poloha vozidla je vypnutá"</string>
-    <string name="location_driver_assistance_toggle_off_summary" msgid="6040822988891113026">"Aplikace pro řidiče nevidí vaši polohu"</string>
-    <string name="location_driver_assistance_action_text" msgid="1887309495010247883">"Změnit"</string>
-    <string name="location_driver_assistance_toggle_summary" msgid="2732591196508054649">"Povolit přístup k poloze"</string>
-    <string name="location_driver_assistance_toggle_off_warning" msgid="2733124752598498356">"Pokud tuto možnost vypnete, budou deaktivovány funkce asistentce pro řidiče, které vyžadují údaje o poloze."</string>
-    <string name="driver_assistance_warning_confirm_label" msgid="2873799611160864931">"Přesto vypnout"</string>
+    <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Pokud tuto možnost vypnete, budou deaktivovány funkce asistence pro řidiče, které vyžadují údaje o poloze."</string>
+    <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Přesto vypnout"</string>
+    <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"Toto nastavení nelze změnit, deaktivoval jej výrobce auta."</string>
+    <string name="adas_location_toggle_title" msgid="6131739109988811006">"Funkce, které vám usnadňují řízení"</string>
+    <string name="adas_location_toggle_summary" msgid="7055141074159770928">"Povolte vestavěným funkcím (schváleným výrobcem auta) přístup k poloze auta."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"Nedávno používáno"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Nedávno používáno"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Zobrazit vše"</string>
     <string name="location_no_recent_access" msgid="2859914321242257931">"Žádné nedávné aplikace"</string>
-    <string name="driver_assistance_label" msgid="9217315205754658940">"<xliff:g id="TIME">%1$s</xliff:g> • Asistence pro řidiče"</string>
-    <string name="location_driver_assistance_privacy_policy_header_content" msgid="8118086439003674350">"Aplikace s oprávněním mají přístup k poloze tohoto vozidla pro funkce asistence pro řidiče."</string>
-    <string name="location_driver_assistance_privacy_policy_button_text" msgid="669921557502414704">"Zásady ochrany soukromí"</string>
+    <string name="driver_assistance_label" msgid="5330316311913399041">"<xliff:g id="TIME">%1$s</xliff:g> • Asistence pro řidiče • Vyžaduje přístup"</string>
+    <string name="location_adas_apps_list_title" msgid="482882078448695177">"Funkce, které vám usnadňují řízení"</string>
+    <string name="location_driver_assistance_privacy_policy_button_text" msgid="1092702462617222722">"Zásady"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"Oprávnění na úrovni aplikace"</string>
+    <string name="location_settings_app_permissions_summary" msgid="87851720569447224">"Správa oprávnění jednotlivých aplikací"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"Služby určování polohy"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"Používat polohu"</string>
-    <string name="location_settings_footer" msgid="296892848338100051">"Poloha zařízení se určuje pomocí zdrojů, jako je systém GPS, sítě Wi-Fi, mobilní sítě a senzory."</string>
-    <string name="driver_assistance_settings_title" msgid="4915804073177128915">"Asistence pro řidiče"</string>
-    <string name="adas_settings_footer" msgid="6697021691244459156">"Informace o poloze odesílané do aplikací asistence pro řidiče nezahrnují údaje umožňující zjistit vaši totožnost. Informace jsou ukládány nejvýše 2 dny a pak jsou smazány."</string>
+    <string name="location_access_settings_title" msgid="2378398106582207440">"Přístup k poloze"</string>
+    <string name="location_access_settings_summary" msgid="7676354917209152932">"Určete, zda budou mít aplikace přístup k poloze auta"</string>
+    <string name="location_access_disclaimer_summary" msgid="914984622682562036">"Výrobce auta může mít nadále přístup k poloze auta. Další informace najdete v jeho zásadách."</string>
+    <string name="location_adas_app_info_summary" msgid="7806057735910556609">"Tyto vestavěné funkce vyžadují přístup k poloze auta, aby vám mohly poskytovat asistenci během jízdy.\n\nDalší informace o využití údajů o poloze jednotlivými aplikacemi najdete v jejich zásadách ochrany soukromí."</string>
     <string name="microphone_settings_title" msgid="7125554350537136922">"Mikrofon"</string>
     <string name="microphone_toggle_title" msgid="911586035332827275">"Použít mikrofon"</string>
     <string name="microphone_toggle_summary" msgid="2682653449849128626">"Povolit všem aplikacím přístup k mikrofonu"</string>
@@ -503,7 +520,7 @@
     <string name="reset_app_pref_desc" msgid="579392665146962149">"Touto akcí obnovíte všechna nastavení pro:\n\n"<li>"deaktivované aplikace,"</li>\n<li>"deaktivovaná oznámení aplikací,"</li>\n<li>"výchozí aplikace k provádění akcí,"</li>\n<li>"omezení dat na pozadí pro aplikace,"</li>\n<li>"omezení oprávnění."</li>\n\n"O žádná data aplikací nepřijdete."</string>
     <string name="reset_app_pref_button_text" msgid="6270820447321231609">"Resetovat aplikace"</string>
     <string name="reset_app_pref_complete_toast" msgid="8709072932243594166">"Předvolby aplikací byly resetovány"</string>
-    <string name="factory_reset_title" msgid="4019066569214122052">"Vymazat data (tovární reset)"</string>
+    <string name="factory_reset_title" msgid="4019066569214122052">"Vymazat všechna data (tovární reset)"</string>
     <string name="factory_reset_summary" msgid="854815182943504327">"Vymazat z informačního a zábavního systému všechna data a profily"</string>
     <string name="factory_reset_desc" msgid="2774024747279286354">"Touto akcí vymažete všechna data z informačního a zábavního systému vozidla, včetně těchto:\n\n"<li>"vaše účty a profily,"</li>\n<li>"data a nastavení systému a aplikací,"</li>\n<li>"stažené aplikace."</li></string>
     <string name="factory_reset_accounts" msgid="5523956654938834209">"Jste přihlášeni k následujícím účtům:"</string>
@@ -634,6 +651,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Vymazat profil"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Vymazat profil a účty z informačního a zábavního systému"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Tato akce ve vašem profilu není dostupná"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Přístup k mikrofonu"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Určete, zda budou mít aplikace přístup k mikrofonům auta"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Informační a zábavní aplikace"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Povolit informačním a zábavním aplikacím nahrávat zvuk"</string>
+    <string name="camera_access_settings_title" msgid="1841809323727456945">"Přístup ke kamerám"</string>
+    <string name="camera_access_settings_summary" msgid="8820488359585532496">"Určete, zda mají aplikace přístup ke kamerám auta"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Povinné aplikace"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Aplikace k asistenci při řízení vyžadované výrobcem auta"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Zásady"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Výrobce auta může mít k jeho kameře přístup i nadále"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Informační a zábavní aplikace"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Povolit informačním a zábavním aplikacím fotit a nahrávat videa?"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Povoleno"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Neustále"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Nepovoleno"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Pouze při používání aplikace"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Pokaždé se zeptat"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Zabezpečení"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Zámek obrazovky"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Žádný zámek"</string>
@@ -688,6 +722,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"Zrušit"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"Potvrdit"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"Musí obsahovat nejméně 4 znaky"</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"Tento typ zámku není k dispozici."</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"Kód PIN smí obsahovat pouze číslice 0 až 9."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"Administrátor zařízení nedovoluje použití nedávno použitého kódu PIN"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"Obvyklé kódy PIN jsou blokovány administrátorem IT. Použijte jiný PIN."</string>
@@ -734,6 +769,8 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"Ukončit ukázku"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"ZAVŘÍT"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"Funkce při řízení není dostupná"</string>
+    <string name="restricted_for_passenger" msgid="7240117443887727753">"O změnu nastavení požádejte řidiče"</string>
+    <string name="restricted_for_driver" msgid="3364388937671526800">"Tuto akci nelze provést"</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"Při řízení nelze přidat profil"</string>
     <string name="default_search_query" msgid="3137420627428857068">"Hledat"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Asistent a hlas"</string>
@@ -749,9 +786,11 @@
     <string name="add_a_profile_button_text" msgid="8027395095117925114">"Přidat profil"</string>
     <string name="delete_this_profile_text" msgid="6035404714526922665">"Smazat tento profil"</string>
     <string name="add_profile_text" msgid="9118410102199116969">"Přidat profil"</string>
+    <string name="cannot_remove_driver_profile" msgid="4109363161608717969">"Tento profil je aktuálně přihlášen jako řidič. Zkuste to znovu, až se tento profil používat nebude."</string>
     <string name="qc_display_brightness" msgid="2939655289816201170">"Jas displeje"</string>
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Pokud chcete zobrazit svá zařízení, zapněte Bluetooth"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Pokud spárovat zařízení, zapněte nastavení Bluetooth"</string>
+    <string name="qc_ui_mode_title" msgid="2425571805732530923">"Motiv"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Administrátor informačního a zábavního systému"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Aktivované aplikace"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Deaktivované aplikace"</string>
@@ -895,4 +934,7 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Nedávno používáno"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Zobrazit vše"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Načítání…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Zobrazit tarify"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Vašim internetovým tarifům vypršela platnost"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Zobrazit tarify"</string>
 </resources>

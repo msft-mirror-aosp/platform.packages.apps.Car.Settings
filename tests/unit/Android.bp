@@ -1,4 +1,5 @@
 package {
+    default_team: "trendy_team_system_experience",
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
@@ -8,7 +9,10 @@ android_test {
     certificate: "platform",
     privileged: true,
 
-    srcs: ["src/**/*.java"],
+    srcs: [
+        "src/**/*.kt",
+        "src/**/*.java",
+    ],
 
     libs: [
         "android.test.runner",
@@ -24,14 +28,20 @@ android_test {
         "androidx.test.rules",
         "androidx.test.ext.junit",
         "androidx.test.ext.truth",
+        "flag-junit",
+        "mockito-kotlin2",
         "mockito-target-extended-minus-junit4",
         "platform-test-annotations",
-        "truth-prebuilt",
+        "truth",
         "testng",
         "car-helper-lib",
+        "collector-device-lib-platform",
     ],
 
-    jni_libs: ["libdexmakerjvmtiagent", "libstaticjvmtiagent"],
+    jni_libs: [
+        "libdexmakerjvmtiagent",
+        "libstaticjvmtiagent",
+    ],
 
     aaptflags: ["--extra-packages com.android.car.settings"],
 
@@ -41,4 +51,6 @@ android_test {
     ],
 
     compile_multilib: "64",
+    // TODO(b/319708040): re-enable use_resource_processor
+    use_resource_processor: false,
 }

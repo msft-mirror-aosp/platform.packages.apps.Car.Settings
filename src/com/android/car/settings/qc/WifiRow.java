@@ -57,7 +57,11 @@ public class WifiRow extends SettingsQCItem {
         if (isHiddenForZone()) {
             return null;
         }
-        boolean wifiEnabled = mWifiManager.isWifiEnabled();
+        int wifiState = mWifiManager.getWifiState();
+        boolean wifiEnabled = wifiState == WifiManager.WIFI_STATE_ENABLED
+                || wifiState == WifiManager.WIFI_STATE_ENABLING;
+
+        // TODO(b/304694358): Use api that detects connected secondary networks
         Icon icon = Icon.createWithResource(getContext(), WifiQCUtils.getIcon(mWifiManager));
 
         String userRestriction = UserManager.DISALLOW_CONFIG_WIFI;
@@ -74,9 +78,11 @@ public class WifiRow extends SettingsQCItem {
         QCActionItem wifiToggle = new QCActionItem.Builder(QC_TYPE_ACTION_SWITCH)
                 .setChecked(wifiEnabled)
                 .setAction(getBroadcastIntent())
-                .setEnabled(!hasUmRestrictions && !hasDpmRestrictions && isWritableForZone())
+                .setEnabled(!WifiQCUtils.isWifiBusy(mWifiManager) && !hasUmRestrictions
+                        && !hasDpmRestrictions && isWritableForZone())
                 .setClickableWhileDisabled(hasDpmRestrictions | isReadOnlyForZone)
                 .setDisabledClickAction(disabledPendingIntent)
+                .setContentDescription(getContext(), R.string.wifi_settings)
                 .build();
 
         QCRow wifiRow = new QCRow.Builder()

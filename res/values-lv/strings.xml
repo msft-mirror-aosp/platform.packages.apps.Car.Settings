@@ -23,6 +23,7 @@
     <string name="brightness" msgid="2919605130898772866">"Spilgtuma līmenis"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"Adaptīvs spilgtums"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"Pielāgojiet ekrāna spilgtumu videi"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"Motīvs"</string>
     <string name="condition_night_display_title" msgid="3777509730126972675">"Nakts režīms ir ieslēgts"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"Tīkls un internets"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"Mobilais tīkls"</string>
@@ -79,7 +80,7 @@
     <string name="data_usage_settings_footer" msgid="681881387909678237">"Datu lietojums tiek noteikts ierīcē. Tas var atšķirties no jūsu mobilo sakaru operatora datiem."</string>
     <string name="usage_bytes_threshold_picker_positive_button" msgid="4625479840977965519">"Iestatīt"</string>
     <string name="data_usage_warning_save_title" msgid="2900544287239037695">"Saglabāt"</string>
-    <string name="network_and_internet_oem_network_title" msgid="6436902713696212250">"OEM tīkls"</string>
+    <string name="network_and_internet_oem_network_title" msgid="6436902713696212250">"OAR tīkls"</string>
     <string name="network_and_internet_vehicle_internet_title" msgid="2518848595673002736">"Transportlīdzekļa internets"</string>
     <string name="network_and_internet_oem_network_dialog_description" msgid="4469178879867702066">"Izslēdzot transportlīdzekļa internetu, dažas tā funkcijas vai lietotnes var nedarboties.\n\nKritiskie dati, kas nepieciešami transportlīdzekļa vadībai, joprojām tiks kopīgoti ar tā ražotāju."</string>
     <string name="network_and_internet_oem_network_dialog_confirm_label" msgid="2630033932472996255">"Tomēr izslēgt"</string>
@@ -160,11 +161,14 @@
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Izvēlieties vismaz 1 joslu Wi‑Fi tīklājam:"</string>
-    <string name="tether_settings_title_all" msgid="4663704772599383169">"Tīklājs un piesaiste"</string>
+    <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi-Fi tīklājs"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Tīklājs"</string>
+    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"Izmantot Wi-Fi tīklāju"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"Izslēgts"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"Automātiski izslēgt tīklāju"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"Wi‑Fi tīklājs tiks izslēgts, ja netiks pievienota neviena ierīce."</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"Izmantot tīklāju visos braucienos"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"Iestatiet, lai tīklājs būtu pieejams, kad tiek iedarbināta automašīna."</string>
+    <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"Skenējiet šo kvadrātkodu, lai pievienotos “%s”."</string>
+    <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"Tīklāja parole: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"Lietotnē <xliff:g id="REQUESTER">%s</xliff:g> tiek mēģināts ieslēgt Wi-Fi savienojumu"</string>
     <string name="wifi_ask_disable" msgid="2949290055916181553">"Lietotnē <xliff:g id="REQUESTER">%s</xliff:g> tiek mēģināts izslēgt Wi-Fi savienojumu"</string>
     <string name="wifi_error" msgid="3105105447117289410">"Kļūda"</string>
@@ -175,6 +179,7 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"Savienojums izveidots"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"Rādīt visu"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"Notiek meklēšana"</string>
+    <string name="connected_settings_title" msgid="8868738903280658151">"Pievienotās ierīces"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"Izmantot Bluetooth"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"Nenosaukta ierīce"</string>
@@ -207,6 +212,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"Ierīces, ar kurām iepriekš tika izveidots savienojums"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"Savienojums ar %1$s izveidots"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"Savienojums ar %1$s pārtraukts"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"Ar jūsu automašīnu savienotās ierīces"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"Ultra platjosla (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"Palīdz jūsu automašīnai identificēt UWB ierīču pozīciju."</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"Bluetooth pieprasījums savienošanai pārī"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"Savienot pārī un izveidot savienojumu"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"Bluetooth kods savienošanai pārī"</string>
@@ -221,6 +229,9 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"Pieprasījums savienošanai pārī"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"Pieskarieties, lai izveidotu savienojumu pārī ar ierīci “<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”."</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"Bluetooth ierīces izvēle"</string>
+    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"Bluetooth"</string>
+    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"Tālrunis"</string>
+    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"Multivide"</string>
     <string name="language_settings" msgid="2079258598337245546">"Valodas"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"Valodas un ievade"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"Ieteiktās"</string>
@@ -247,6 +258,8 @@
     <string name="ringtone_picker_save_title" msgid="4388137432517227001">"Saglabāt"</string>
     <string name="sound_alert_sounds" msgid="6838044721739163867">"Brīdinājumu signāli"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"Zvana signāls, paziņojumi, modinātājs"</string>
+    <string name="audio_route_selector_title" msgid="9137648859313120159">"Atskaņojiet multivides saturu šeit:"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"Audio maršruts tiek pārslēgts uz “%1$s”."</string>
     <string name="display_brightness" msgid="5718970880488110840">"Spilgtums"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"Pielāgojiet ekrānu vājam apgaismojumam"</string>
     <string name="units_settings" msgid="402325305096925886">"Mērvien."</string>
@@ -319,6 +332,7 @@
     <string name="app_disable_dialog_positive" msgid="4448684722791563349">"Atspējot lietotni"</string>
     <string name="not_installed" msgid="4163454337822508007">"Nav instalēta šim profilam"</string>
     <string name="permissions_label" msgid="2701446753515612685">"Atļaujas"</string>
+    <string name="app_info_all_services_label" msgid="6495363975322723452">"Visi pakalpojumi"</string>
     <string name="notifications_label" msgid="6586089149665170731">"Paziņojumi"</string>
     <string name="storage_application_label" msgid="5911779903670978586">"Krātuve un kešatmiņa"</string>
     <string name="prioritize_app_performance_label" msgid="7264505023347026606">"Lietotnes veiktspējas prioritātes piešķiršana"</string>
@@ -386,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"Rādīt sistēmas lietotnes"</string>
     <string name="hide_system" msgid="8845453295584638040">"Slēpt sistēmas lietotnes"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Slēpt sistēmas lietotnes"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Signāli un atgādinājumi"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Sistēmas iestatījumu pārveide"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Ar šo atļauju lietotne var pārveidot sistēmas iestatījumus."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Piekļuve paziņojumiem"</string>
@@ -396,7 +411,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"Atcelt"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"Šīs lietotnes negatīvi ietekmē sistēmas veiktspēju, un tika pārtraukta to darbība fonā.\nPiešķiriet kādai lietotnei prioritāti, lai atļautu tās darbību fonā un noņemtu to no šī saraksta."</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"Piešķirt prioritāti"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"Piekļuve maksas īsziņām"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"Maksas īsziņas"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"Par maksas īsziņām no jums var tikt iekasēta samaksa, kas tiks pievienota jūsu mobilo sakaru operatora rēķinam. Ja kādai lietotnei iespējosiet piekļuves atļauju, varēsiet sūtīt maksas īsziņas, izmantojot šo lietotni."</string>
     <string name="usage_access_title" msgid="7153427122072303254">"Piekļuve lietojuma datiem"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"Piekļuve lietojuma datiem ļauj lietotnei izsekot, kādas lietotnes un cik bieži izmantojat, kā arī iegūt informāciju par jūsu mobilo sakaru operatoru, valodas iestatījumiem u.c."</string>
@@ -405,28 +420,30 @@
     <string name="more_special_access_title" msgid="166115485446645971">"Vairāk"</string>
     <string name="location_settings_title" msgid="901334356682423679">"Atrašanās vieta"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"Izmantot atrašanās vietu"</string>
-    <string name="location_toggle_summary" msgid="7977868708102299495">"Ļaut dažām lietotnēm piekļūt atrašanās vietai"</string>
+    <string name="location_toggle_summary" msgid="5651728747635881194">"Atļaujiet visām jūsu norādītajām vietnēm izmantot jūsu automašīnas atrašanās vietas datus."</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"Inform. izklaidējošās sistēmas lietotnes"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"Atļaujiet lietotnēm piekļūt jūsu atrašanās vietas informācijai."</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"Ja izslēgsiet šo iestatījumu, piekļuve atrašanās vietai tiks noņemta visām lietotnēm, izņemot lietotnes, kas nepieciešamas autovadītāja palīdzības nodrošināšanai."</string>
-    <string name="location_driver_assistance_toggle_title" msgid="3780157378527924932">"Atrašanās vieta autovadītāja palīdzībai"</string>
-    <string name="location_driver_assistance_toggle_off_title" msgid="2218532550578204718">"Automašīnas atrašanās vieta ir izslēgta"</string>
-    <string name="location_driver_assistance_toggle_off_summary" msgid="6040822988891113026">"Palīdzības lietotnes nevar piekļūt atrašanās vietai"</string>
-    <string name="location_driver_assistance_action_text" msgid="1887309495010247883">"Mainīt"</string>
-    <string name="location_driver_assistance_toggle_summary" msgid="2732591196508054649">"Ļaut palīdzības lietotnēm piekļūt atrašanās vietai"</string>
-    <string name="location_driver_assistance_toggle_off_warning" msgid="2733124752598498356">"Ja izslēgsiet šo iestatījumu, tiks atspējotas autovadītāja palīdzības lietotnes, kuru pamatā ir atrašanās vietas informācija."</string>
-    <string name="driver_assistance_warning_confirm_label" msgid="2873799611160864931">"Tomēr izslēgt"</string>
+    <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"Ja izslēgsiet šo iestatījumu, tiks atspējotas autovadītāja palīdzības lietotnes, kuru pamatā ir atrašanās vietas informācija."</string>
+    <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"Tomēr izslēgt"</string>
+    <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"Šo iestatījumu nevar mainīt, un automašīnas ražotājs to ir atspējojis."</string>
+    <string name="adas_location_toggle_title" msgid="6131739109988811006">"Autovadīšanas palīdzības funkcijas"</string>
+    <string name="adas_location_toggle_summary" msgid="7055141074159770928">"Atļaujiet iebūvētajām funkcijām, ko apstiprinājis automašīnas ražotājs, piekļūt jūsu automašīnas atrašanās vietas datiem."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"Atrašanās vietas, kam nesen piekļūts"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Atrašanās vietas, kam nesen piekļūts"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Skatīt visas"</string>
     <string name="location_no_recent_access" msgid="2859914321242257931">"Nav nesen izmantotu lietotņu"</string>
-    <string name="driver_assistance_label" msgid="9217315205754658940">"<xliff:g id="TIME">%1$s</xliff:g> • Autovadītāja palīdzība"</string>
-    <string name="location_driver_assistance_privacy_policy_header_content" msgid="8118086439003674350">"Lietotnes ar atļauju piekļūt transportlīdzekļa atrašanās vietai autovadītāja palīdzības funkciju nodrošināšanai"</string>
-    <string name="location_driver_assistance_privacy_policy_button_text" msgid="669921557502414704">"Konfidencialitātes politika"</string>
+    <string name="driver_assistance_label" msgid="5330316311913399041">"<xliff:g id="TIME">%1$s</xliff:g> • Autovadītāja palīdzība • Nepieciešama piekļuve"</string>
+    <string name="location_adas_apps_list_title" msgid="482882078448695177">"Autovadīšanas palīdzības funkcijas"</string>
+    <string name="location_driver_assistance_privacy_policy_button_text" msgid="1092702462617222722">"Politika"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"Lietotnes līmeņa atļaujas"</string>
+    <string name="location_settings_app_permissions_summary" msgid="87851720569447224">"Pārvaldīt atsevišķu lietotņu atļaujas"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"Atrašanās vietu pakalpojumi"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"Izmantot atrašanās vietu"</string>
-    <string name="location_settings_footer" msgid="296892848338100051">"Lai noteiktu jūsu ierīces atrašanās vietu, var tikt izmantoti tādi avoti kā GPS, Wi-Fi, mobilie tīkli un sensori."</string>
-    <string name="driver_assistance_settings_title" msgid="4915804073177128915">"Autovadītāja palīdzība"</string>
-    <string name="adas_settings_footer" msgid="6697021691244459156">"Autovadītāja palīdzības lietotnēm nosūtītā atrašanās vietas informācija neietver jūs identificējošu informāciju. Tā tiek glabāta ne vairāk kā 2 dienas un pēc tam tiek dzēsta."</string>
+    <string name="location_access_settings_title" msgid="2378398106582207440">"Piekļuve atrašanās vietas datiem"</string>
+    <string name="location_access_settings_summary" msgid="7676354917209152932">"Izvēlieties, vai lietotnes var piekļūt jūsu automašīnas atrašanās vietas datiem."</string>
+    <string name="location_access_disclaimer_summary" msgid="914984622682562036">"Automašīnas ražotājam joprojām var būt piekļuve jūsu automašīnas atrašanās vietas datiem. Lai uzzinātu vairāk, varat skatīt ražotāja politikas."</string>
+    <string name="location_adas_app_info_summary" msgid="7806057735910556609">"Šīm iebūvētajām funkcijām ir nepieciešama piekļuve automašīnas atrašanās vietas datiem, lai nodrošinātu autovadīšanas palīdzību.\n\nLai uzzinātu vairāk par to, kā lietotnēs tiek izmantoti jūsu atrašanās vietas dati, skatiet katras lietotnes konfidencialitātes politiku."</string>
     <string name="microphone_settings_title" msgid="7125554350537136922">"Mikrofons"</string>
     <string name="microphone_toggle_title" msgid="911586035332827275">"Izmantot mikrofonu"</string>
     <string name="microphone_toggle_summary" msgid="2682653449849128626">"Atļaut visām lietotnēm piekļūt jūsu mikrofonam"</string>
@@ -634,6 +651,23 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Dzēst jūsu profilu"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Dzēst jūsu profilu un kontus no informatīvi izklaidējošās sistēmas"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Šī darbība nav pieejama jūsu profilam."</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Piekļuve mikrofonam"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Izvēlieties, vai lietotnes var piekļūt jūsu automašīnas mikrofoniem."</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Inform. izklaidējošās sistēmas lietotnes"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Atļaujiet informatīvi izklaidējošās sistēmas lietotnēm ierakstīt audio."</string>
+    <string name="camera_access_settings_title" msgid="1841809323727456945">"Piekļuve kamerām"</string>
+    <string name="camera_access_settings_summary" msgid="8820488359585532496">"Izvēlieties, vai lietotnes var piekļūt jūsu automašīnas kamerām."</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"Obligātās lietotnes"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Autovadīšanas palīdzības lietotnes, ko jūsu automašīnas ražotājs ir noteicis kā obligātas."</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Politika"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Automašīnas ražotājam joprojām var būt piekļuve jūsu automašīnas kamerai."</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Inform. izklaidējošās sistēmas lietotnes"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Atļaut informatīvi izklaidējošās sistēmas lietotnēm uzņemt attēlus un ierakstīt videoklipus"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"Atļauja piešķirta"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"Vienmēr"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"Atļauja nav piešķirta"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Tikai lietotnes izmantošanas laikā"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"Vaicāt katru reizi"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Drošība"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Ekrāna bloķēšana"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"Nav"</string>
@@ -688,6 +722,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"Atcelt"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"Apstiprināt"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"Jābūt vismaz 4 rakstzīmēm"</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"Šis bloķēšanas veids nav pieejams."</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"Ir jāietver tikai cipari no 0 līdz 9."</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"Ierīces administrators neļauj izmantot nesen izveidotu PIN."</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"Jūsu IT administrators ir bloķējis bieži lietotus PIN. Izmēģiniet citu PIN."</string>
@@ -734,6 +769,8 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"Iziet no demonstr. režīma"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"NERĀDĪT"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"Funkcija nav pieejama braukšanas laikā."</string>
+    <string name="restricted_for_passenger" msgid="7240117443887727753">"Lūdziet autovadītājam mainīt iestatījumu."</string>
+    <string name="restricted_for_driver" msgid="3364388937671526800">"Jūs nevarat veikt šo darbību."</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"Nevar pievienot profilu braukšanas laikā."</string>
     <string name="default_search_query" msgid="3137420627428857068">"Meklēt"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Asistents un balss vadība"</string>
@@ -749,9 +786,11 @@
     <string name="add_a_profile_button_text" msgid="8027395095117925114">"Pievienot profilu"</string>
     <string name="delete_this_profile_text" msgid="6035404714526922665">"Dzēst šo profilu"</string>
     <string name="add_profile_text" msgid="9118410102199116969">"Pievienot profilu"</string>
+    <string name="cannot_remove_driver_profile" msgid="4109363161608717969">"Šajā profilā pašlaik ir pierakstījies autovadītājs. Mēģiniet vēlreiz, kad to neizmantos autovadītājs."</string>
     <string name="qc_display_brightness" msgid="2939655289816201170">"Displeja spilgtums"</string>
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Lai skatītu savas ierīces, ieslēdziet Bluetooth."</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Lai savienotu pārī kādu ierīci, atveriet Bluetooth iestatījumus."</string>
+    <string name="qc_ui_mode_title" msgid="2425571805732530923">"Motīvs"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Informatīvi izklaidējošās sistēmas administrators"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Aktivizētās lietotnes"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Deaktivizētās lietotnes"</string>
@@ -889,4 +928,7 @@
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"Nesen piekļuva"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"Skatīt visu"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"Notiek ielāde…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"Skatīt plānus"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Beidzies jūsu interneta plānu derīguma termiņš"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Skatīt plānus"</string>
 </resources>

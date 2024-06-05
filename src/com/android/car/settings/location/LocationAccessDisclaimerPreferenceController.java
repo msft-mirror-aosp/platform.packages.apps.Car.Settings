@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 The Android Open Source Project
+ * Copyright (C) 2023 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,33 +18,30 @@ package com.android.car.settings.location;
 
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.Context;
-import android.location.LocationManager;
-
-import androidx.preference.PreferenceGroup;
 
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.PreferenceController;
+import com.android.car.ui.preference.CarUiFooterPreference;
 
 /**
- * Controller for displaying {@link AdasLocationSwitchSubMenuPreference} and a preference divider.
+ * Controller for displaying OEMs location access disclaimer on the location settings page.
  */
-public class AdasGroupPreferenceController extends PreferenceController<PreferenceGroup> {
-
-    private final LocationManager mLocationManager;
-
-    public AdasGroupPreferenceController(Context context, String preferenceKey,
+public class LocationAccessDisclaimerPreferenceController
+        extends PreferenceController<CarUiFooterPreference> {
+    public LocationAccessDisclaimerPreferenceController(Context context, String preferenceKey,
             FragmentController fragmentController, CarUxRestrictions uxRestrictions) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
-        mLocationManager = context.getSystemService(LocationManager.class);
     }
 
     @Override
-    protected Class<PreferenceGroup> getPreferenceType() {
-        return PreferenceGroup.class;
+    protected Class<CarUiFooterPreference> getPreferenceType() {
+        return CarUiFooterPreference.class;
     }
 
     @Override
     protected int getDefaultAvailabilityStatus() {
-        return mLocationManager.isAdasGnssLocationEnabled() ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
+        return LocationUtil.isDriverWithAdasApps(getContext())
+                ? CONDITIONALLY_UNAVAILABLE
+                : AVAILABLE;
     }
 }

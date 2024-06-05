@@ -17,6 +17,7 @@
 package com.android.car.settings.sound;
 
 import static android.car.media.CarAudioManager.AUDIO_FEATURE_DYNAMIC_ROUTING;
+import static android.car.media.CarAudioManager.AUDIO_FEATURE_VOLUME_GROUP_EVENTS;
 import static android.car.media.CarAudioManager.AUDIO_FEATURE_VOLUME_GROUP_MUTING;
 import static android.car.media.CarAudioManager.PRIMARY_AUDIO_ZONE;
 import static android.os.UserManager.DISALLOW_ADJUST_VOLUME;
@@ -40,7 +41,10 @@ import static org.mockito.Mockito.when;
 import android.car.CarNotConnectedException;
 import android.car.drivingstate.CarUxRestrictions;
 import android.car.media.CarAudioManager;
+import android.car.media.CarVolumeGroupEvent;
+import android.car.media.CarVolumeGroupInfo;
 import android.content.Context;
+import android.media.AudioAttributes;
 import android.os.UserManager;
 import android.widget.Toast;
 
@@ -71,18 +75,74 @@ import org.mockito.Mock;
 import org.mockito.MockitoSession;
 import org.mockito.quality.Strictness;
 
+import java.util.List;
+
 @RunWith(AndroidJUnit4.class)
 public class VolumeSettingsPreferenceControllerTest {
 
     private static final int ZONE_ID = PRIMARY_AUDIO_ZONE;
     private static final int INVALID_ZONE_ID = -1;
-    private static final int GROUP_ID = 0;
-    private static final int TEST_MIN_VOLUME = 0;
-    private static final int TEST_VOLUME = 40;
-    private static final int TEST_NEW_VOLUME = 80;
-    private static final int TEST_MAX_VOLUME = 100;
 
     private static final String TEST_RESTRICTION = DISALLOW_ADJUST_VOLUME;
+
+    private static final int TEST_PRIMARY_ZONE_GROUP_0 = 0;
+    private static final int TEST_PRIMARY_ZONE_GROUP_1 = 1;
+    private static final int MIN_GAIN = 0;
+    private static final int MAX_GAIN = 100;
+    private static final int DEFAULT_GAIN = 50;
+    private static final int NEW_GAIN = 80;
+    private static final int STEP_SIZE = 2;
+    private static final int TEST_DEFAULT_VOLUME = DEFAULT_GAIN / STEP_SIZE;
+    private static final int TEST_NEW_VOLUME = NEW_GAIN / STEP_SIZE;
+    private static final int TEST_MIN_VOLUME = MIN_GAIN / STEP_SIZE;
+    private static final int TEST_MAX_VOLUME = MAX_GAIN / STEP_SIZE;
+    private static final int TEST_MIN_ACTIVATION_VOLUME = TEST_MIN_VOLUME + 1;
+    private static final int TEST_MAX_ACTIVATION_VOLUME = TEST_MAX_VOLUME - 1;
+    private static final CarVolumeGroupInfo TEST_PRIMARY_ZONE_DEFAULT_VOLUME_INFO =
+            new CarVolumeGroupInfo.Builder("group id " + TEST_PRIMARY_ZONE_GROUP_0,
+                    PRIMARY_AUDIO_ZONE, TEST_PRIMARY_ZONE_GROUP_0).setMuted(false)
+                    .setMinVolumeGainIndex(TEST_MIN_VOLUME).setMaxVolumeGainIndex(TEST_MAX_VOLUME)
+                    .setVolumeGainIndex(TEST_DEFAULT_VOLUME)
+                    .setMinActivationVolumeGainIndex(TEST_MIN_ACTIVATION_VOLUME)
+                    .setMaxActivationVolumeGainIndex(TEST_MAX_ACTIVATION_VOLUME).build();
+    private static final CarVolumeGroupInfo TEST_PRIMARY_ZONE_SECOND_VOLUME_INFO =
+            new CarVolumeGroupInfo.Builder("group id " + TEST_PRIMARY_ZONE_GROUP_1,
+                    PRIMARY_AUDIO_ZONE, TEST_PRIMARY_ZONE_GROUP_1).setMuted(false)
+                    .setMinVolumeGainIndex(TEST_MIN_VOLUME).setMaxVolumeGainIndex(TEST_MAX_VOLUME)
+                    .setVolumeGainIndex(TEST_DEFAULT_VOLUME)
+                    .setMinActivationVolumeGainIndex(TEST_MIN_ACTIVATION_VOLUME)
+                    .setMaxActivationVolumeGainIndex(TEST_MAX_ACTIVATION_VOLUME).build();
+    private static final CarVolumeGroupInfo TEST_PRIMARY_ZONE_NEW_VOLUME_INFO =
+            new CarVolumeGroupInfo.Builder("group id " + TEST_PRIMARY_ZONE_GROUP_0,
+                    PRIMARY_AUDIO_ZONE, TEST_PRIMARY_ZONE_GROUP_0).setMuted(false)
+                    .setMinVolumeGainIndex(TEST_MIN_VOLUME).setMaxVolumeGainIndex(TEST_MAX_VOLUME)
+                    .setVolumeGainIndex(TEST_NEW_VOLUME)
+                    .setMinActivationVolumeGainIndex(TEST_MIN_ACTIVATION_VOLUME)
+                    .setMaxActivationVolumeGainIndex(TEST_MAX_ACTIVATION_VOLUME).build();
+    private static final CarVolumeGroupInfo TEST_PRIMARY_ZONE_MUTED_GROUP_INFO =
+            new CarVolumeGroupInfo.Builder("group id " + TEST_PRIMARY_ZONE_GROUP_0,
+                    PRIMARY_AUDIO_ZONE, TEST_PRIMARY_ZONE_GROUP_0).setMuted(true)
+                    .setMinVolumeGainIndex(TEST_MIN_VOLUME).setMaxVolumeGainIndex(TEST_MAX_VOLUME)
+                    .setVolumeGainIndex(TEST_DEFAULT_VOLUME)
+                    .setMinActivationVolumeGainIndex(TEST_MIN_ACTIVATION_VOLUME)
+                    .setMaxActivationVolumeGainIndex(TEST_MAX_ACTIVATION_VOLUME).build();
+    private static final CarVolumeGroupEvent TEST_CAR_VOLUME_GROUP_EVENT_DEFAULT =
+            new CarVolumeGroupEvent.Builder(List.of(TEST_PRIMARY_ZONE_DEFAULT_VOLUME_INFO),
+                    CarVolumeGroupEvent.EVENT_TYPE_VOLUME_GAIN_INDEX_CHANGED,
+                    List.of(CarVolumeGroupEvent.EXTRA_INFO_VOLUME_INDEX_CHANGED_BY_UI)).build();
+    private static final CarVolumeGroupEvent TEST_CAR_VOLUME_GROUP_EVENT_NEW_VOLUME =
+            new CarVolumeGroupEvent.Builder(List.of(TEST_PRIMARY_ZONE_NEW_VOLUME_INFO),
+                    CarVolumeGroupEvent.EVENT_TYPE_VOLUME_GAIN_INDEX_CHANGED,
+                    List.of(CarVolumeGroupEvent.EXTRA_INFO_VOLUME_INDEX_CHANGED_BY_UI)).build();
+    private static final CarVolumeGroupEvent TEST_CAR_VOLUME_GROUP_EVENT_MUTED_GROUP =
+            new CarVolumeGroupEvent.Builder(List.of(TEST_PRIMARY_ZONE_MUTED_GROUP_INFO),
+                    CarVolumeGroupEvent.EVENT_TYPE_MUTE_CHANGED,
+                    List.of(CarVolumeGroupEvent.EXTRA_INFO_VOLUME_INDEX_CHANGED_BY_UI)).build();
+    private static final CarVolumeGroupEvent TEST_CAR_VOLUME_CONFIG_EVENT =
+            new CarVolumeGroupEvent.Builder(List.of(TEST_PRIMARY_ZONE_DEFAULT_VOLUME_INFO,
+                    TEST_PRIMARY_ZONE_SECOND_VOLUME_INFO),
+                    CarVolumeGroupEvent.EVENT_TYPE_ZONE_CONFIGURATION_CHANGED,
+                    List.of(CarVolumeGroupEvent.EXTRA_INFO_SHOW_UI)).build();
 
     private final Context mContext = spy(ApplicationProvider.getApplicationContext());
     private LifecycleOwner mLifecycleOwner;
@@ -119,17 +179,41 @@ public class VolumeSettingsPreferenceControllerTest {
                 .startMocking();
 
         when(mCarAudioManager.getVolumeGroupCount(ZONE_ID)).thenReturn(1);
-        when(mCarAudioManager.getUsagesForVolumeGroupId(ZONE_ID, GROUP_ID))
-                .thenReturn(new int[]{1, 2});
-        when(mCarAudioManager.getGroupMinVolume(ZONE_ID, GROUP_ID)).thenReturn(TEST_MIN_VOLUME);
-        when(mCarAudioManager.getGroupVolume(ZONE_ID, GROUP_ID)).thenReturn(TEST_VOLUME);
-        when(mCarAudioManager.getGroupMaxVolume(ZONE_ID, GROUP_ID)).thenReturn(TEST_MAX_VOLUME);
-        when(mCarAudioManager.isVolumeGroupMuted(ZONE_ID, GROUP_ID)).thenReturn(false);
+        when(mCarAudioManager.getUsagesForVolumeGroupId(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(new int[]{AudioAttributes.USAGE_MEDIA,
+                        AudioAttributes.USAGE_VOICE_COMMUNICATION});
+        when(mCarAudioManager.getGroupMinVolume(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(TEST_MIN_VOLUME);
+        when(mCarAudioManager.getGroupVolume(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(TEST_DEFAULT_VOLUME);
+        when(mCarAudioManager.getGroupMaxVolume(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(TEST_MAX_VOLUME);
+        when(mCarAudioManager.isVolumeGroupMuted(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(false);
         when(mCarAudioManager.isAudioFeatureEnabled(AUDIO_FEATURE_VOLUME_GROUP_MUTING))
                 .thenReturn(true);
         when(mCarAudioManager.isAudioFeatureEnabled(AUDIO_FEATURE_DYNAMIC_ROUTING))
                 .thenReturn(false);
-        when(mCarAudioManager.isPlaybackOnVolumeGroupActive(ZONE_ID, GROUP_ID)).thenReturn(false);
+        when(mCarAudioManager.isAudioFeatureEnabled(AUDIO_FEATURE_VOLUME_GROUP_EVENTS))
+                .thenReturn(false);
+        when(mCarAudioManager.isPlaybackOnVolumeGroupActive(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(false);
+        when(mCarAudioManager.getVolumeGroupInfo(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(TEST_PRIMARY_ZONE_DEFAULT_VOLUME_INFO);
+
+        when(mCarAudioManager.getUsagesForVolumeGroupId(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_1))
+                .thenReturn(new int[]{AudioAttributes.USAGE_VOICE_COMMUNICATION_SIGNALLING,
+                        AudioAttributes.USAGE_ASSISTANCE_NAVIGATION_GUIDANCE });
+        when(mCarAudioManager.getGroupMinVolume(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_1))
+                .thenReturn(TEST_MIN_VOLUME);
+        when(mCarAudioManager.getGroupVolume(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_1))
+                .thenReturn(TEST_DEFAULT_VOLUME);
+        when(mCarAudioManager.getGroupMaxVolume(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_1))
+                .thenReturn(TEST_MAX_VOLUME);
+        when(mCarAudioManager.isVolumeGroupMuted(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_1))
+                .thenReturn(false);
+        when(mCarAudioManager.getVolumeGroupInfo(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_1))
+                .thenReturn(TEST_PRIMARY_ZONE_SECOND_VOLUME_INFO);
 
         when(mContext.getApplicationContext()).thenReturn(mCarSettingsApplication);
         when(mCarSettingsApplication.getCarAudioManager()).thenReturn(mCarAudioManager);
@@ -197,7 +281,7 @@ public class VolumeSettingsPreferenceControllerTest {
 
         SeekBarPreference preference = (SeekBarPreference) mPreferenceGroup.getPreference(0);
         assertThat(preference.getMin()).isEqualTo(TEST_MIN_VOLUME);
-        assertThat(preference.getValue()).isEqualTo(TEST_VOLUME);
+        assertThat(preference.getValue()).isEqualTo(TEST_DEFAULT_VOLUME);
         assertThat(preference.getMax()).isEqualTo(TEST_MAX_VOLUME);
     }
 
@@ -215,7 +299,8 @@ public class VolumeSettingsPreferenceControllerTest {
     public void testOnPreferenceChange_dynamicAudio_playbackActive_ringtoneDoesNotPlay() {
         when(mCarAudioManager.isAudioFeatureEnabled(AUDIO_FEATURE_DYNAMIC_ROUTING))
                 .thenReturn(true);
-        when(mCarAudioManager.isPlaybackOnVolumeGroupActive(ZONE_ID, GROUP_ID)).thenReturn(true);
+        when(mCarAudioManager.isPlaybackOnVolumeGroupActive(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(true);
 
         mPreferenceController.onCreate(mLifecycleOwner);
         mPreferenceController.refreshUi();
@@ -229,7 +314,8 @@ public class VolumeSettingsPreferenceControllerTest {
     public void testOnPreferenceChange_dynamicAudio_playbackNotActive_ringtonePlays() {
         when(mCarAudioManager.isAudioFeatureEnabled(AUDIO_FEATURE_DYNAMIC_ROUTING))
                 .thenReturn(true);
-        when(mCarAudioManager.isPlaybackOnVolumeGroupActive(ZONE_ID, GROUP_ID)).thenReturn(false);
+        when(mCarAudioManager.isPlaybackOnVolumeGroupActive(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(false);
 
         mPreferenceController.onCreate(mLifecycleOwner);
         mPreferenceController.refreshUi();
@@ -246,7 +332,8 @@ public class VolumeSettingsPreferenceControllerTest {
         SeekBarPreference preference = (SeekBarPreference) mPreferenceGroup.getPreference(0);
         preference.getOnPreferenceChangeListener().onPreferenceChange(preference, TEST_NEW_VOLUME);
 
-        verify(mCarAudioManager).setGroupVolume(ZONE_ID, GROUP_ID, TEST_NEW_VOLUME, 0);
+        verify(mCarAudioManager).setGroupVolume(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0, TEST_NEW_VOLUME,
+                /* flags= */ 0);
     }
 
     @Test
@@ -255,19 +342,20 @@ public class VolumeSettingsPreferenceControllerTest {
         mPreferenceController.refreshUi();
         SeekBarPreference preference = spy((SeekBarPreference) mPreferenceGroup.getPreference(0));
         mPreferenceController.mVolumeChangeCallback.onGroupVolumeChanged(ZONE_ID,
-                GROUP_ID, /* flags= */ 0);
+                TEST_PRIMARY_ZONE_GROUP_0, /* flags= */ 0);
 
         verify(preference, never()).setValue(any(Integer.class));
     }
 
     @Test
     public void onGroupVolumeChanged_differentValue_updatesVolumeSeekbar() {
-        when(mCarAudioManager.getGroupVolume(ZONE_ID, GROUP_ID)).thenReturn(TEST_NEW_VOLUME);
+        when(mCarAudioManager.getVolumeGroupInfo(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(TEST_PRIMARY_ZONE_NEW_VOLUME_INFO);
 
         mPreferenceController.onCreate(mLifecycleOwner);
         mPreferenceController.refreshUi();
         mPreferenceController.mVolumeChangeCallback.onGroupVolumeChanged(ZONE_ID,
-                GROUP_ID, /* flags= */ 0);
+                TEST_PRIMARY_ZONE_GROUP_0, /* flags= */ 0);
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
 
         SeekBarPreference preference = (SeekBarPreference) mPreferenceGroup.getPreference(0);
@@ -276,12 +364,13 @@ public class VolumeSettingsPreferenceControllerTest {
 
     @Test
     public void onGroupVolumeChanged_invalidZoneId_doesNotUpdateVolumeSeekbar() {
-        when(mCarAudioManager.getGroupVolume(ZONE_ID, GROUP_ID)).thenReturn(TEST_NEW_VOLUME);
+        when(mCarAudioManager.getVolumeGroupInfo(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(TEST_PRIMARY_ZONE_NEW_VOLUME_INFO);
 
         mPreferenceController.onCreate(mLifecycleOwner);
         mPreferenceController.refreshUi();
         mPreferenceController.mVolumeChangeCallback.onGroupVolumeChanged(INVALID_ZONE_ID,
-                GROUP_ID, /* flags= */ 0);
+                TEST_PRIMARY_ZONE_GROUP_0, /* flags= */ 0);
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
 
         SeekBarPreference preference =
@@ -296,19 +385,20 @@ public class VolumeSettingsPreferenceControllerTest {
         VolumeSeekBarPreference preference =
                 spy((VolumeSeekBarPreference) mPreferenceGroup.getPreference(0));
         mPreferenceController.mVolumeChangeCallback.onGroupMuteChanged(ZONE_ID,
-                GROUP_ID, /* flags= */ 0);
+                TEST_PRIMARY_ZONE_GROUP_0, /* flags= */ 0);
 
         verify(preference, never()).setIsMuted(any(Boolean.class));
     }
 
     @Test
     public void onGroupMuteChanged_differentValue_updatesMutedState() {
-        when(mCarAudioManager.isVolumeGroupMuted(ZONE_ID, GROUP_ID)).thenReturn(true);
+        when(mCarAudioManager.getVolumeGroupInfo(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(TEST_PRIMARY_ZONE_MUTED_GROUP_INFO);
 
         mPreferenceController.onCreate(mLifecycleOwner);
         mPreferenceController.refreshUi();
         mPreferenceController.mVolumeChangeCallback.onGroupMuteChanged(ZONE_ID,
-                GROUP_ID, /* flags= */ 0);
+                TEST_PRIMARY_ZONE_GROUP_0, /* flags= */ 0);
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
 
         VolumeSeekBarPreference preference =
@@ -320,11 +410,12 @@ public class VolumeSettingsPreferenceControllerTest {
     public void onGroupMuteChanged_differentValue_muteFeatureDisabled_doesNotUpdatesMutedState() {
         mPreferenceController.onCreate(mLifecycleOwner);
         mPreferenceController.refreshUi();
-        when(mCarAudioManager.isVolumeGroupMuted(ZONE_ID, GROUP_ID)).thenReturn(true);
+        when(mCarAudioManager.isVolumeGroupMuted(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(true);
         when(mCarAudioManager.isAudioFeatureEnabled(AUDIO_FEATURE_VOLUME_GROUP_MUTING))
                 .thenReturn(false);
         mPreferenceController.mVolumeChangeCallback.onGroupMuteChanged(ZONE_ID,
-                GROUP_ID, /* flags= */ 0);
+                TEST_PRIMARY_ZONE_GROUP_0, /* flags= */ 0);
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
 
         VolumeSeekBarPreference preference =
@@ -336,14 +427,107 @@ public class VolumeSettingsPreferenceControllerTest {
     public void onGroupMuteChanged_invalidZoneId_doesNotUpdateMutedState() {
         mPreferenceController.onCreate(mLifecycleOwner);
         mPreferenceController.refreshUi();
-        when(mCarAudioManager.isVolumeGroupMuted(ZONE_ID, GROUP_ID)).thenReturn(true);
+        when(mCarAudioManager.isVolumeGroupMuted(ZONE_ID, TEST_PRIMARY_ZONE_GROUP_0))
+                .thenReturn(true);
         mPreferenceController.mVolumeChangeCallback.onGroupMuteChanged(ZONE_ID,
-                GROUP_ID, /* flags= */ 0);
+                TEST_PRIMARY_ZONE_GROUP_0, /* flags= */ 0);
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
 
         VolumeSeekBarPreference preference =
                 (VolumeSeekBarPreference) spy(mPreferenceGroup.getPreference(0));
         verify(preference, never()).setIsMuted(any(Boolean.class));
+    }
+
+    @Test
+    public void onVolumeGroupEvent_sameGroupInfo_doesNotUpdateVolumeSeekbar() {
+        mPreferenceController.onCreate(mLifecycleOwner);
+        mPreferenceController.refreshUi();
+        SeekBarPreference preference = spy((SeekBarPreference) mPreferenceGroup.getPreference(0));
+
+        mPreferenceController.mCarVolumeGroupEventCallback.onVolumeGroupEvent(
+                List.of(TEST_CAR_VOLUME_GROUP_EVENT_DEFAULT));
+        InstrumentationRegistry.getInstrumentation().waitForIdleSync();
+
+        verify(preference, never()).setValue(any(Integer.class));
+    }
+
+    @Test
+    public void onVolumeGroupEvent_differentGroupInfo_updatesVolumeSeekbar() {
+        mPreferenceController.onCreate(mLifecycleOwner);
+        mPreferenceController.refreshUi();
+
+        mPreferenceController.mCarVolumeGroupEventCallback.onVolumeGroupEvent(
+                List.of(TEST_CAR_VOLUME_GROUP_EVENT_NEW_VOLUME));
+        InstrumentationRegistry.getInstrumentation().waitForIdleSync();
+
+        SeekBarPreference preference = (SeekBarPreference) mPreferenceGroup.getPreference(0);
+        assertThat(preference.getValue()).isEqualTo(TEST_NEW_VOLUME);
+    }
+
+    @Test
+    public void onVolumeGroupEvent_invalidGroupInfo_doesNotUpdateVolumeSeekbar() {
+        CarVolumeGroupInfo invalidGroupInfo =
+                new CarVolumeGroupInfo.Builder("group id " + 0, 1 /* ZoneId */, 0).setMuted(false)
+                        .setMinVolumeGainIndex(TEST_MIN_VOLUME)
+                        .setMaxVolumeGainIndex(TEST_MAX_VOLUME)
+                        .setVolumeGainIndex(TEST_DEFAULT_VOLUME)
+                        .setMinActivationVolumeGainIndex(TEST_MIN_ACTIVATION_VOLUME)
+                        .setMaxActivationVolumeGainIndex(TEST_MAX_ACTIVATION_VOLUME).build();
+        CarVolumeGroupEvent eventWithInvalidGroupInfo =
+                new CarVolumeGroupEvent.Builder(List.of(invalidGroupInfo),
+                        CarVolumeGroupEvent.EVENT_TYPE_VOLUME_GAIN_INDEX_CHANGED,
+                        List.of(CarVolumeGroupEvent.EXTRA_INFO_VOLUME_INDEX_CHANGED_BY_UI)).build();
+        mPreferenceController.onCreate(mLifecycleOwner);
+        mPreferenceController.refreshUi();
+
+        mPreferenceController.mCarVolumeGroupEventCallback.onVolumeGroupEvent(
+                List.of(eventWithInvalidGroupInfo));
+        InstrumentationRegistry.getInstrumentation().waitForIdleSync();
+
+        SeekBarPreference preference = spy((SeekBarPreference) mPreferenceGroup.getPreference(0));
+        verify(preference, never()).setValue(any(Integer.class));
+    }
+
+    @Test
+    public void onVolumeGroupEvent_groupMuteChanged_updatesVolumeSeekbar() {
+        mPreferenceController.onCreate(mLifecycleOwner);
+        mPreferenceController.refreshUi();
+
+        mPreferenceController.mCarVolumeGroupEventCallback.onVolumeGroupEvent(
+                List.of(TEST_CAR_VOLUME_GROUP_EVENT_MUTED_GROUP));
+        InstrumentationRegistry.getInstrumentation().waitForIdleSync();
+
+        VolumeSeekBarPreference preference =
+                (VolumeSeekBarPreference) mPreferenceGroup.getPreference(0);
+        assertThat(preference.isMuted()).isTrue();
+    }
+
+    @Test
+    public void onVolumeGroupEvent_groupMuteUnchanged_doesNotUpdateVolumeSeekbar() {
+        mPreferenceController.onCreate(mLifecycleOwner);
+        mPreferenceController.refreshUi();
+
+        mPreferenceController.mCarVolumeGroupEventCallback.onVolumeGroupEvent(
+                List.of(TEST_CAR_VOLUME_GROUP_EVENT_DEFAULT));
+        InstrumentationRegistry.getInstrumentation().waitForIdleSync();
+
+        VolumeSeekBarPreference preference =
+                (VolumeSeekBarPreference) spy(mPreferenceGroup.getPreference(0));
+        verify(preference, never()).setIsMuted(any(Boolean.class));
+        assertThat(preference.isMuted()).isFalse();
+    }
+
+    @Test
+    public void onVolumeGroupEvent_groupConfigChange_updatesPreferences() {
+        mPreferenceController.onCreate(mLifecycleOwner);
+        mPreferenceController.refreshUi();
+        when(mCarAudioManager.getVolumeGroupCount(ZONE_ID)).thenReturn(2);
+
+        mPreferenceController.mCarVolumeGroupEventCallback.onVolumeGroupEvent(
+                List.of(TEST_CAR_VOLUME_CONFIG_EVENT));
+        InstrumentationRegistry.getInstrumentation().waitForIdleSync();
+
+        assertThat(mPreferenceGroup.getPreferenceCount()).isEqualTo(2);
     }
 
     @Test

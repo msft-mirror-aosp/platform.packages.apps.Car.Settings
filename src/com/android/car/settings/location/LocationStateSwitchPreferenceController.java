@@ -16,7 +16,6 @@
 
 package com.android.car.settings.location;
 
-import static android.car.hardware.power.PowerComponent.LOCATION;
 import static android.os.UserManager.DISALLOW_CONFIG_LOCATION;
 import static android.os.UserManager.DISALLOW_SHARE_LOCATION;
 
@@ -24,101 +23,60 @@ import static com.android.car.settings.enterprise.ActionDisabledByAdminDialogFra
 import static com.android.car.settings.enterprise.EnterpriseUtils.hasUserRestrictionByDpm;
 
 import android.car.drivingstate.CarUxRestrictions;
-import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.location.LocationManager;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.widget.Toast;
 
-import androidx.annotation.VisibleForTesting;
-
 import com.android.car.settings.R;
-import com.android.car.settings.common.ColoredSwitchPreference;
-import com.android.car.settings.common.ConfirmationDialogFragment;
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.Logger;
-import com.android.car.settings.common.PowerPolicyListener;
-import com.android.car.settings.common.PreferenceController;
 import com.android.car.settings.enterprise.EnterpriseUtils;
+import com.android.car.ui.preference.CarUiSwitchPreference;
 import com.android.settingslib.Utils;
 
 /**
  * Enables/disables location state via SwitchPreference.
  */
 public class LocationStateSwitchPreferenceController extends
-        PreferenceController<ColoredSwitchPreference> {
+        LocationStateListenerBasePreferenceController<CarUiSwitchPreference> {
     private static final Logger LOG = new Logger(
             LocationStateSwitchPreferenceController.class);
-    private static final IntentFilter INTENT_FILTER_LOCATION_MODE_CHANGED =
-            new IntentFilter(LocationManager.MODE_CHANGED_ACTION);
-
-    private boolean mIsPowerPolicyOn = true;
-
-    private final Context mContext;
-    private final LocationManager mLocationManager;
-    private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            refreshUi();
-        }
-    };
-
-    @VisibleForTesting
-    final PowerPolicyListener mPowerPolicyListener;
 
     public LocationStateSwitchPreferenceController(Context context,
             String preferenceKey,
             FragmentController fragmentController,
             CarUxRestrictions uxRestrictions) {
         super(context, preferenceKey, fragmentController, uxRestrictions);
-        mContext = context;
-        mLocationManager = context.getSystemService(LocationManager.class);
-        mPowerPolicyListener = new PowerPolicyListener(context, LOCATION,
-                isOn -> {
-                    LOG.d("setting mIsPowerPolicyOn to " + isOn);
-                    mIsPowerPolicyOn = isOn;
-                    // mIsPowerPolicyOn is used in deciding the availability status.
-                    // Call refreshUi() so that the UI can be updated as per
-                    // getAvailabilityStatus().
-                    refreshUi();
-                });
     }
 
     @Override
     protected int getDefaultAvailabilityStatus() {
         if (hasUserRestrictionByDpm(getContext(), DISALLOW_CONFIG_LOCATION)
                 || hasUserRestrictionByDpm(getContext(), DISALLOW_SHARE_LOCATION)
-                || !mIsPowerPolicyOn) {
+                || !getIsPowerPolicyOn()) {
             return AVAILABLE_FOR_VIEWING;
         }
         return AVAILABLE;
     }
 
     @Override
-    protected Class<ColoredSwitchPreference> getPreferenceType() {
-        return ColoredSwitchPreference.class;
+    protected Class<CarUiSwitchPreference> getPreferenceType() {
+        return CarUiSwitchPreference.class;
     }
 
     @Override
-    protected void updateState(ColoredSwitchPreference preference) {
-        updateSwitchPreference(preference, mLocationManager.isLocationEnabled());
+    protected void updateState(CarUiSwitchPreference preference) {
+        preference.setChecked(getLocationManager().isLocationEnabled()
+                && !hasUserRestrictionByDpm(getContext(), DISALLOW_SHARE_LOCATION));
     }
 
     @Override
-    protected boolean handlePreferenceChanged(ColoredSwitchPreference preference,
-            Object newValue) {
-        boolean locationEnabled = (Boolean) newValue;
-        if (!locationEnabled) {
-            getFragmentController().showDialog(getConfirmationDialog(),
-                    ConfirmationDialogFragment.TAG);
-            return false;
-        }
+    protected boolean handlePreferenceChanged(CarUiSwitchPreference preference, Object newValue) {
+        boolean isLocationEnabled = (Boolean) newValue;
         Utils.updateLocationEnabled(
-                mContext,
-                locationEnabled,
+                getContext(),
+                isLocationEnabled,
                 UserHandle.myUserId(),
                 Settings.Secure.LOCATION_CHANGER_SYSTEM_SETTINGS);
         return true;
@@ -126,14 +84,14 @@ public class LocationStateSwitchPreferenceController extends
 
     @Override
     protected void onCreateInternal() {
-        getPreference().setContentDescription(
-                getContext().getString(R.string.location_state_switch_content_description));
+        addDefaultMainLocationStateListener();
+        addDefaultPowerPolicyListener();
+
         setClickableWhileDisabled(getPreference(), /* clickable= */ true, p -> {
             // All the cases here should coincide with the ones in getAvailabilityStatus()
-            if (!mIsPowerPolicyOn) {
-                Toast.makeText(getContext(),
-                        getContext().getString(R.string.power_component_disabled),
-                        Toast.LENGTH_LONG).show();
+            if (!getIsPowerPolicyOn()) {
+                Toast.makeText(getContext(), R.string.power_component_disabled, Toast.LENGTH_LONG)
+                        .show();
                 return;
             }
             if (hasUserRestrictionByDpm(getContext(), DISALLOW_SHARE_LOCATION)) {
@@ -145,45 +103,6 @@ public class LocationStateSwitchPreferenceController extends
                 return;
             }
         });
-    }
-
-    @Override
-    protected void onStartInternal() {
-        mContext.registerReceiver(mReceiver, INTENT_FILTER_LOCATION_MODE_CHANGED);
-    }
-
-    @Override
-    protected void onResumeInternal() {
-        mPowerPolicyListener.handleCurrentPolicy();
-    }
-
-    @Override
-    protected void onStopInternal() {
-        mContext.unregisterReceiver(mReceiver);
-    }
-
-    @Override
-    protected void onDestroyInternal() {
-        mPowerPolicyListener.release();
-    }
-
-    private void updateSwitchPreference(ColoredSwitchPreference preference,
-            boolean enabled) {
-        preference.setChecked(enabled
-                && !hasUserRestrictionByDpm(getContext(), DISALLOW_SHARE_LOCATION));
-    }
-
-    private ConfirmationDialogFragment getConfirmationDialog() {
-        return new ConfirmationDialogFragment.Builder(getContext())
-                .setMessage(mContext.getString(R.string.location_toggle_off_warning))
-                .setPositiveButton(android.R.string.ok, arguments -> {
-                    Utils.updateLocationEnabled(
-                            mContext,
-                            false,
-                            UserHandle.myUserId(),
-                            Settings.Secure.LOCATION_CHANGER_SYSTEM_SETTINGS);
-                })
-                .build();
     }
 
     private void showActionDisabledByAdminDialog(String restrictionType) {

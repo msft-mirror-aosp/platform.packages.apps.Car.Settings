@@ -18,6 +18,8 @@ package com.android.car.settings.bluetooth;
 
 import static android.os.UserManager.DISALLOW_CONFIG_BLUETOOTH;
 
+import static com.android.car.settings.enterprise.EnterpriseUtils.hasUserRestrictionByDpm;
+
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothProfile;
 import android.car.drivingstate.CarUxRestrictions;
@@ -32,11 +34,14 @@ import com.android.car.settings.common.CarUxRestrictionsHelper;
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.MultiActionPreference;
 import com.android.car.settings.common.ToggleButtonActionItem;
+import com.android.car.settings.enterprise.EnterpriseUtils;
+import com.android.settingslib.bluetooth.A2dpProfile;
 import com.android.settingslib.bluetooth.BluetoothDeviceFilter;
 import com.android.settingslib.bluetooth.CachedBluetoothDevice;
 import com.android.settingslib.bluetooth.LocalBluetoothManager;
 import com.android.settingslib.bluetooth.LocalBluetoothProfile;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -109,8 +114,8 @@ public class BluetoothBondedDevicesPreferenceController extends
         ToggleButtonActionItem mediaItem = pref.getActionItem(MEDIA_BUTTON);
 
         bluetoothItem.setVisible(true);
-        phoneItem.setVisible(true);
-        mediaItem.setVisible(true);
+        phoneItem.setVisible(!isA2dpDevice(cachedDevice));
+        mediaItem.setVisible(!isA2dpDevice(cachedDevice));
 
         bluetoothItem.setContentDescription(getContext(),
                 R.string.bluetooth_bonded_bluetooth_toggle_content_description);
@@ -222,6 +227,10 @@ public class BluetoothBondedDevicesPreferenceController extends
                     toggleBluetoothConnectivity(isChecked, cachedDevice);
                 });
 
+        if (isA2dpDevice(cachedDevice)) {
+            return;
+        }
+
         if (phoneProfile == null || !isConnected || mHasUxRestriction) {
             // Disable phone button
             updatePhoneActionItemAvailability(preference, /* isAvailable= */ false);
@@ -231,9 +240,10 @@ public class BluetoothBondedDevicesPreferenceController extends
             updatePhoneActionItemAvailability(preference, /* isAvailable= */ true);
             boolean phoneEnabled = phoneProfile.isEnabled(cachedDevice.getDevice());
 
-            if (hasDisallowConfigRestriction()) {
-                phoneItem.setOnClickWhileDisabledListener(p -> BluetoothUtils
-                        .onClickWhileDisabled(getContext(), getFragmentController()));
+            if (hasUserRestrictionByDpm(getContext(), DISALLOW_CONFIG_BLUETOOTH)) {
+                phoneItem.setOnClickWhileDisabledListener(p -> EnterpriseUtils
+                        .onClickWhileDisabled(getContext(), getFragmentController(),
+                                DISALLOW_CONFIG_BLUETOOTH));
             }
             phoneItem.setOnClickListener(isChecked ->
                     finalPhoneProfile.setEnabled(cachedDevice.getDevice(), isChecked));
@@ -249,9 +259,10 @@ public class BluetoothBondedDevicesPreferenceController extends
             updateMediaActionItemAvailability(preference, /* isAvailable= */ true);
             boolean mediaEnabled = mediaProfile.isEnabled(cachedDevice.getDevice());
 
-            if (hasDisallowConfigRestriction()) {
-                mediaItem.setOnClickWhileDisabledListener(p -> BluetoothUtils
-                        .onClickWhileDisabled(getContext(), getFragmentController()));
+            if (hasUserRestrictionByDpm(getContext(), DISALLOW_CONFIG_BLUETOOTH)) {
+                mediaItem.setOnClickWhileDisabledListener(p -> EnterpriseUtils
+                        .onClickWhileDisabled(getContext(), getFragmentController(),
+                                DISALLOW_CONFIG_BLUETOOTH));
             }
             mediaItem.setOnClickListener(isChecked ->
                     finalMediaProfile.setEnabled(cachedDevice.getDevice(), isChecked));
@@ -299,6 +310,16 @@ public class BluetoothBondedDevicesPreferenceController extends
             preference.getActionItem(PHONE_BUTTON).setEnabled(false);
             preference.getActionItem(MEDIA_BUTTON).setEnabled(false);
         });
+    }
+
+    private boolean isA2dpDevice(CachedBluetoothDevice bluetoothDevice) {
+        List<LocalBluetoothProfile> profileList =  bluetoothDevice.getProfiles();
+        for (LocalBluetoothProfile profile : profileList) {
+            if (profile instanceof A2dpProfile) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private boolean hasDisallowConfigRestriction() {

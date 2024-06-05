@@ -23,7 +23,8 @@
     <string name="brightness" msgid="2919605130898772866">"ਚਮਕ ਪੱਧਰ"</string>
     <string name="auto_brightness_title" msgid="9124647862844666581">"ਅਨੁਕੂਲ ਚਮਕ"</string>
     <string name="auto_brightness_summary" msgid="2002570577219479702">"ਵਾਤਾਵਰਨ ਮੁਤਾਬਕ ਸਕ੍ਰੀਨ ਦੀ ਚਮਕ ਨੂੰ ਵਿਵਸਥਿਤ ਕਰੋ"</string>
-    <string name="condition_night_display_title" msgid="3777509730126972675">"\'ਰਾਤ ਦੀ ਰੋਸ਼ਨੀ\' ਮੋਡ ਚਾਲੂ ਹੈ"</string>
+    <string name="theme_toggle_title" msgid="7091393596274709558">"ਥੀਮ"</string>
+    <string name="condition_night_display_title" msgid="3777509730126972675">"\'ਨਾਈਟ ਲਾਈਟ\' ਮੋਡ ਚਾਲੂ ਹੈ"</string>
     <string name="network_and_internet" msgid="4229023630498537530">"ਨੈੱਟਵਰਕ ਅਤੇ ਇੰਟਰਨੈੱਟ"</string>
     <string name="mobile_network_settings" msgid="1708621113321368597">"ਮੋਬਾਈਲ ਨੈੱਟਵਰਕ"</string>
     <string name="mobile_network_summary_count" msgid="760865625847664029">"{count,plural, =1{# ਸਿਮ}one{# ਸਿਮ}other{# ਸਿਮ}}"</string>
@@ -160,11 +161,14 @@
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2.4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"ਵਾਈ-ਫਾਈ ਹੌਟਸਪੌਟ ਲਈ ਬੈਂਡ ਚੁਣੋ:"</string>
-    <string name="tether_settings_title_all" msgid="4663704772599383169">"ਹੌਟਸਪੌਟ ਅਤੇ ਟੈਦਰਿੰਗ"</string>
+    <string name="tether_settings_title_all" msgid="6076625733772210734">"ਵਾਈ‑ਫਾਈ ਹੌਟਸਪੌਟ"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"ਹੌਟਸਪੌਟ"</string>
+    <string name="wifi_hotspot_switch_title" msgid="5011183846278097937">"ਵਾਈ‑ਫਾਈ ਹੌਟਸਪੌਟ ਵਰਤੋ"</string>
     <string name="wifi_hotspot_state_off" msgid="6096709579204322798">"ਬੰਦ"</string>
-    <string name="wifi_hotspot_auto_off_title" msgid="7871858619924599922">"ਹੌਟਸਪੌਟ ਸਵੈਚਲਿਤ ਤੌਰ \'ਤੇ ਬੰਦ ਕਰੋ"</string>
-    <string name="wifi_hotspot_auto_off_summary" msgid="4830341947541735136">"ਕਿਸੇ ਵੀ ਡੀਵਾਈਸ ਦੇ ਨਾ ਕਨੈਕਟ ਹੋਣ \'ਤੇ ਵਾਈ-ਫਾਈ ਹੌਟਸਪੌਟ ਬੰਦ ਹੋ ਜਾਵੇਗਾ"</string>
+    <string name="wifi_hotspot_keep_on_title" msgid="2920327805105370804">"ਸਾਰੀਆਂ ਡਰਾਈਵਾਂ ਲਈ ਹੌਟਸਪੌਟ ਦੀ ਵਰਤੋਂ ਕਰੋ"</string>
+    <string name="wifi_hotspot_keep_on_summary" msgid="7701814310702163462">"ਜਦੋਂ ਵੀ ਕਾਰ ਚਾਲੂ ਹੋਵੇ, ਤਾਂ ਹੌਟਸਪੌਟ ਉਪਲਬਧ ਕਰਵਾਓ"</string>
+    <string name="wifi_hotspot_qr_code_text" msgid="6074599244483100567">"\"%s\" ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਇਸ QR ਕੋਡ ਨੂੰ ਸਕੈਨ ਕਰੋ"</string>
+    <string name="wifi_hotspot_qr_code_password_text" msgid="400288180113940870">"ਹੌਟਸਪੌਟ ਦਾ ਪਾਸਵਰਡ: %s"</string>
     <string name="wifi_ask_enable" msgid="4452418245680754578">"<xliff:g id="REQUESTER">%s</xliff:g> ਦੀ ਵਾਈ-ਫਾਈ ਨੂੰ ਚਾਲੂ ਕਰਨ ਦੀ ਇੱਛਾ ਹੈ"</string>
     <string name="wifi_ask_disable" msgid="2949290055916181553">"<xliff:g id="REQUESTER">%s</xliff:g> ਦੀ ਵਾਈ-ਫਾਈ ਨੂੰ ਬੰਦ ਕਰਨ ਦੀ ਇੱਛਾ ਹੈ"</string>
     <string name="wifi_error" msgid="3105105447117289410">"ਗੜਬੜ"</string>
@@ -175,6 +179,7 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"ਕਨੈਕਸ਼ਨ ਸਫਲ ਰਿਹਾ"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"ਸਭ ਦਿਖਾਓ"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"ਖੋਜ ਰਿਹਾ ਹੈ"</string>
+    <string name="connected_settings_title" msgid="8868738903280658151">"ਕਨੈਕਟ ਕੀਤੇ ਡੀਵਾਈਸ"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"ਬਲੂਟੁੱਥ"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"ਬਲੂਟੁੱਥ ਵਰਤੋ"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"ਬੇਨਾਮ ਡੀਵਾਈਸ"</string>
@@ -207,6 +212,9 @@
     <string name="bluetooth_previously_connected" msgid="5206229557831180323">"ਪਹਿਲਾਂ ਤੋਂ ਕਨੈਕਟ ਕੀਤੇ"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s ਨੂੰ ਕਨੈਕਟ ਕੀਤਾ ਗਿਆ"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s ਨੂੰ ਡਿਸਕਨੈਕਟ ਕੀਤਾ ਗਿਆ"</string>
+    <string name="device_connections_category_title" msgid="1753729363581927505">"ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਡੀਵਾਈਸ ਕਨੈਕਸ਼ਨ"</string>
+    <string name="uwb_toggle_title" msgid="8831695790040626922">"ਅਲਟ੍ਰਾ-ਵਾਈਡਬੈਂਡ (UWB)"</string>
+    <string name="uwb_toggle_summary" msgid="2206513296288659105">"ਇਸ ਨਾਲ ਤੁਹਾਡੀ ਕਾਰ ਨੂੰ UWB ਡੀਵਾਈਸਾਂ ਦੀ ਸਥਿਤੀ ਦੀ ਪਛਾਣ ਕਰਨ ਵਿੱਚ ਮਦਦ ਮਿਲਦੀ ਹੈ"</string>
     <string name="bluetooth_notif_ticker" msgid="7192577740198156792">"ਬਲੂਟੁੱਥ ਜੋੜਾਬੱਧ ਕਰਨ ਦੀ ਬੇਨਤੀ"</string>
     <string name="bluetooth_device_context_pair_connect" msgid="3138105800372470422">"ਜੋੜਾਬੱਧ ਕਰੋ ਅਤੇ ਕਨੈਕਟ ਕਰੋ"</string>
     <string name="bluetooth_pairing_key_msg" msgid="5066825929751599037">"ਬਲੂਟੁੱਥ ਜੋੜਾਬੱਧਕਰਨ ਕੋਡ"</string>
@@ -221,6 +229,9 @@
     <string name="bluetooth_notif_title" msgid="8374602799367803335">"ਜੋੜਾਬੱਧ ਕਰਨ ਦੀ ਬੇਨਤੀ"</string>
     <string name="bluetooth_notif_message" msgid="1060821000510108726">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> ਨਾਲ ਜੋੜਾ ਬਣਾਉਣ ਲਈ ਟੈਪ ਕਰੋ।"</string>
     <string name="bluetooth_device_picker" msgid="673238198452345475">"ਬਲੂਟੁੱਥ ਡੀਵਾਈਸ ਚੁਣੋ"</string>
+    <string name="bluetooth_bonded_bluetooth_toggle_content_description" msgid="6800772154405846597">"ਬਲੂਟੁੱਥ"</string>
+    <string name="bluetooth_bonded_phone_toggle_content_description" msgid="8152794643249938377">"ਫ਼ੋਨ"</string>
+    <string name="bluetooth_bonded_media_toggle_content_description" msgid="7803420585378155404">"ਮੀਡੀਆ"</string>
     <string name="language_settings" msgid="2079258598337245546">"ਭਾਸ਼ਾਵਾਂ"</string>
     <string name="languages_and_input_settings" msgid="3672322610529408248">"ਭਾਸ਼ਾਵਾਂ ਅਤੇ ਇਨਪੁੱਟ"</string>
     <string name="language_picker_list_suggested_header" msgid="7593893806003415948">"ਸੁਝਾਇਆ ਗਿਆ"</string>
@@ -245,8 +256,10 @@
     <string name="notification_ringtone_title" msgid="8661716239594010288">"ਪੂਰਵ-ਨਿਰਧਾਰਤ ਸੂਚਨਾ ਧੁਨੀ"</string>
     <string name="alarm_ringtone_title" msgid="3257364170646440908">"ਪੂਰਵ-ਨਿਰਧਾਰਤ ਅਲਾਰਮ ਧੁਨੀ"</string>
     <string name="ringtone_picker_save_title" msgid="4388137432517227001">"ਰੱਖਿਅਤ ਕਰੋ"</string>
-    <string name="sound_alert_sounds" msgid="6838044721739163867">"ਸੁਚੇਤਨਾ ਧੁਨੀਆਂ"</string>
+    <string name="sound_alert_sounds" msgid="6838044721739163867">"ਅਲਰਟ ਧੁਨੀਆਂ"</string>
     <string name="sound_alert_sounds_summary" msgid="816501423095651281">"ਰਿੰਗਟੋਨ, ਸੂਚਨਾਵਾਂ, ਅਲਾਰਮ"</string>
+    <string name="audio_route_selector_title" msgid="9137648859313120159">"ਮੀਡੀਆ ਇੱਥੇ ਚਲਾਓ"</string>
+    <string name="audio_route_selector_toast" msgid="338103814096108292">"ਮੀਡੀਆ ਨੂੰ %1$s \'ਤੇ ਸਵਿੱਚ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"</string>
     <string name="display_brightness" msgid="5718970880488110840">"ਚਮਕ"</string>
     <string name="display_night_mode_summary" msgid="4939425286027546230">"ਘੱਟ ਰੋਸ਼ਨੀ ਲਈ ਸਕ੍ਰੀਨ ਨੂੰ ਵਿਵਸਥਿਤ ਕਰੋ"</string>
     <string name="units_settings" msgid="402325305096925886">"ਯੂਨਿਟਾਂਂ"</string>
@@ -319,6 +332,7 @@
     <string name="app_disable_dialog_positive" msgid="4448684722791563349">"ਐਪ ਨੂੰ ਬੰਦ ਕਰੋ"</string>
     <string name="not_installed" msgid="4163454337822508007">"ਇਸ ਪ੍ਰੋਫਾਈਲ ਲਈ ਸਥਾਪਤ ਨਹੀਂ ਕੀਤੀ ਗਈ"</string>
     <string name="permissions_label" msgid="2701446753515612685">"ਇਜਾਜ਼ਤਾਂ"</string>
+    <string name="app_info_all_services_label" msgid="6495363975322723452">"ਸਾਰੀਆਂ ਸੇਵਾਵਾਂ"</string>
     <string name="notifications_label" msgid="6586089149665170731">"ਸੂਚਨਾਵਾਂ"</string>
     <string name="storage_application_label" msgid="5911779903670978586">"ਸਟੋਰੇਜ ਅਤੇ ਕੈਸ਼ੇ"</string>
     <string name="prioritize_app_performance_label" msgid="7264505023347026606">"ਐਪ ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਨੂੰ ਤਰਜੀਹ ਦੇਣਾ"</string>
@@ -386,6 +400,7 @@
     <string name="show_system" msgid="4401355756969485287">"ਸਿਸਟਮ ਦਿਖਾਓ"</string>
     <string name="hide_system" msgid="8845453295584638040">"ਸਿਸਟਮ ਲੁਕਾਓ"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"ਸਿਸਟਮ ਐਪਾਂ ਨੂੰ ਲੁਕਾਓ"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"ਅਲਾਰਮ ਅਤੇ ਰਿਮਾਈਂਡਰ"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"ਸਿਸਟਮ ਸੈਟਿੰਗਾਂ ਸੋਧੋ"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"ਇਹ ਇਜਾਜ਼ਤ ਕਿਸੇ ਐਪ ਨੂੰ ਸਿਸਟਮ ਸੈਟਿੰਗਾਂ ਸੋਧਣ ਦਿੰਦੀ ਹੈ।"</string>
     <string name="notification_access_title" msgid="1467340098885813473">"ਸੂਚਨਾ ਪਹੁੰਚ"</string>
@@ -396,7 +411,7 @@
     <string name="notification_listener_revoke_warning_cancel" msgid="4399941651358241154">"ਰੱਦ ਕਰੋ"</string>
     <string name="performance_impacting_apps_description" msgid="7361464904617808444">"ਇਹ ਐਪਾਂ ਸਿਸਟਮ ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਨੂੰ ਨਕਾਰਾਤਮਕ ਤਰੀਕੇ ਨਾਲ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀਆਂ ਹਨ ਅਤੇ ਐਪ ਨੂੰ ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਚੱਲਣ ਤੋਂ ਰੋਕਿਆ ਗਿਆ ਹੈ।\nਬੈਕਗ੍ਰਾਊਂਡ ਦੀ ਵਰਤੋਂ ਕਰਨ ਦੀ ਆਗਿਆ ਦੇਣ ਲਈ ਐਪ ਨੂੰ ਤਰਜੀਹ ਦਿਓ ਅਤੇ ਇਸਨੂੰ ਇਸ ਸੂਚੀ ਵਿੱਚੋਂ ਹਟਾਓ।"</string>
     <string name="performance_impacting_apps_button_label" msgid="8277507326717608783">"ਐਪ ਨੂੰ ਤਰਜੀਹ ਦਿਓ"</string>
-    <string name="premium_sms_access_title" msgid="1409118461646148686">"ਪ੍ਰੀਮੀਅਮ SMS ਤੱਕ ਪਹੁੰਚ"</string>
+    <string name="premium_sms_access_title" msgid="4290463862145052004">"ਪ੍ਰੀਮੀਅਮ SMS"</string>
     <string name="premium_sms_access_description" msgid="7119026067677052169">"ਪ੍ਰੀਮੀਅਮ SMS ਦਾ ਤੁਹਾਡੇ ਤੋਂ ਖਰਚਾ ਲਿਆ ਜਾ ਸਕਦਾ ਹੈ ਅਤੇ ਇਸ ਨਾਲ ਤੁਹਾਡੇ ਕੈਰੀਅਰ ਬਿੱਲਾਂ ਵਿੱਚ ਵਾਧਾ ਹੋ ਜਾਵੇਗਾ। ਜੇ ਤੁਸੀਂ ਕਿਸੇ ਐਪ ਨੂੰ ਇਜਾਜ਼ਤ ਦਿੰਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਉਸ ਐਪ ਦੀ ਵਰਤੋਂ ਨਾਲ ਪ੍ਰੀਮੀਅਮ SMS ਭੇਜਣ ਦੇ ਯੋਗ ਹੋ ਜਾਵੋਗੇ।"</string>
     <string name="usage_access_title" msgid="7153427122072303254">"ਵਰਤੋਂ ਪਹੁੰਚ"</string>
     <string name="usage_access_description" msgid="2413168719257435422">"ਵਰਤੋਂ ਪਹੁੰਚ ਕਿਸੇ ਐਪ ਨੂੰ ਇਹ ਨਜ਼ਰ ਰੱਖਣ ਦਿੰਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਕਿਹੜੀਆਂ ਐਪਾਂ ਦੀ ਵਰਤੋਂ ਕਰ ਰਹੇ ਹੋ ਅਤੇ ਕਿੰਨੀ ਵਾਰੀ, ਜਿਵੇਂ ਕਿ ਤੁਹਾਡਾ ਕੈਰੀਅਰ, ਭਾਸ਼ਾ ਸੈਟਿੰਗਾਂ, ਅਤੇ ਹੋਰ ਵੇਰਵੇ।"</string>
@@ -405,28 +420,30 @@
     <string name="more_special_access_title" msgid="166115485446645971">"ਹੋਰ"</string>
     <string name="location_settings_title" msgid="901334356682423679">"ਟਿਕਾਣਾ"</string>
     <string name="location_toggle_title" msgid="836779750812064601">"ਟਿਕਾਣਾ ਵਰਤੋ"</string>
-    <string name="location_toggle_summary" msgid="7977868708102299495">"ਆਪਣੇ ਵੱਲੋਂ ਨਿਰਧਾਰਿਤ ਐਪਾਂ ਨੂੰ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦਿਓ"</string>
+    <string name="location_toggle_summary" msgid="5651728747635881194">"ਤੁਹਾਡੇ ਵੱਲੋਂ ਨਿਰਧਾਰਿਤ ਕੀਤੀ ਗਈ ਐਪ ਨਾਲ ਆਪਣੀ ਕਾਰ ਦੇ ਟਿਕਾਣੇ ਦੀ ਵਰਤੋਂ ਕਰੋ।"</string>
+    <string name="location_infotainment_apps_toggle_title" msgid="2083924249183557387">"ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਐਪਾਂ"</string>
+    <string name="location_infotainment_apps_toggle_summary" msgid="6657657826985915806">"ਆਪਣੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਐਪਾਂ ਨੂੰ ਆਗਿਆ ਦਿਓ"</string>
     <string name="location_toggle_off_warning" msgid="5959449346865136081">"ਜੇ ਤੁਸੀਂ ਇਸ ਨੂੰ ਬੰਦ ਕਰਦੇ ਹੋ, ਤਾਂ ਇਹ ਡਰਾਈਵਰ ਸਹਾਇਤਾ ਲਈ ਲੋੜੀਂਦੀ ਐਪਾਂ ਨੂੰ ਛੱਡ ਕੇ ਬਾਕੀ ਸਾਰੀਆਂ ਐਪਾਂ ਵਾਸਤੇ ਟਿਕਾਣਾ ਪਹੁੰਚ ਨੂੰ ਹਟਾ ਦੇਵੇਗਾ"</string>
-    <string name="location_driver_assistance_toggle_title" msgid="3780157378527924932">"ਡਰਾਈਵਰ ਸਹਾਇਤਾ ਲਈ ਟਿਕਾਣਾ ਵਰਤੋ"</string>
-    <string name="location_driver_assistance_toggle_off_title" msgid="2218532550578204718">"ਵਾਹਨ ਟਿਕਾਣਾ ਬੰਦ ਹੈ"</string>
-    <string name="location_driver_assistance_toggle_off_summary" msgid="6040822988891113026">"ਡਰਾਈਵਰ ਸਹਾਇਤਾ ਐਪਾਂ ਤੁਹਾਡੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਨਹੀਂ ਕਰ ਸਕਦੀਆਂ"</string>
-    <string name="location_driver_assistance_action_text" msgid="1887309495010247883">"ਬਦਲੋ"</string>
-    <string name="location_driver_assistance_toggle_summary" msgid="2732591196508054649">"ਗੱਡੀ ਚਲਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਨ ਵਾਲੀਆਂ ਐਪਾਂ ਨੂੰ ਆਪਣੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦਿਓ"</string>
-    <string name="location_driver_assistance_toggle_off_warning" msgid="2733124752598498356">"ਜੇ ਤੁਸੀਂ ਇਸਨੂੰ ਬੰਦ ਕਰਦੇ ਹੋ, ਤਾਂ ਉਨ੍ਹਾਂ ਡਰਾਈਵਰ ਸਹਾਇਤਾ ਐਪਾਂ ਨੂੰ ਬੰਦ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ ਜੋ ਟਿਕਾਣਾ ਜਾਣਕਾਰੀ \'ਤੇ ਨਿਰਭਰ ਕਰਦੀਆਂ ਹਨ"</string>
-    <string name="driver_assistance_warning_confirm_label" msgid="2873799611160864931">"ਕਿਸੇ ਵੇਲੇ ਵੀ ਬੰਦ ਕਰੋ"</string>
+    <string name="adas_location_toggle_off_warning" msgid="2269555998731648820">"ਜੇ ਤੁਸੀਂ ਇਸਨੂੰ ਬੰਦ ਕਰਦੇ ਹੋ, ਤਾਂ ਉਨ੍ਹਾਂ ਡਰਾਈਵਰ ਸਹਾਇਤਾ ਐਪਾਂ ਨੂੰ ਬੰਦ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ ਜੋ ਟਿਕਾਣਾ ਜਾਣਕਾਰੀ \'ਤੇ ਨਿਰਭਰ ਕਰਦੀਆਂ ਹਨ"</string>
+    <string name="adas_location_toggle_confirm_label" msgid="7500504328355834995">"ਕਿਸੇ ਵੇਲੇ ਵੀ ਬੰਦ ਕਰੋ"</string>
+    <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"ਇਸ ਸੈਟਿੰਗ ਨੂੰ ਬਦਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਅਤੇ ਇਸਨੂੰ ਤੁਹਾਡੇ ਕਾਰ ਨਿਰਮਾਤਾ ਨੇ ਬੰਦ ਕਰ ਦਿੱਤਾ ਹੈ।"</string>
+    <string name="adas_location_toggle_title" msgid="6131739109988811006">"ਡਰਾਈਵਿੰਗ \'ਚ ਮਦਦ ਕਰਨ ਵਾਲੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ"</string>
+    <string name="adas_location_toggle_summary" msgid="7055141074159770928">"ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਨਿਰਮਾਤਾ ਵੱਲੋਂ ਮਨਜ਼ੂਰਸ਼ੁਦਾ ਬਿਲਟ-ਇਨ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਨੂੰ ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦਿਓ।"</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"ਹਾਲ ਹੀ ਵਿੱਚ ਪਹੁੰਚ ਕੀਤੀ"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"ਹਾਲ ਹੀ ਵਿੱਚ ਪਹੁੰਚ ਕੀਤੀ"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"ਸਭ ਦੇਖੋ"</string>
     <string name="location_no_recent_access" msgid="2859914321242257931">"ਕੋਈ ਹਾਲੀਆ ਐਪ ਨਹੀਂ"</string>
-    <string name="driver_assistance_label" msgid="9217315205754658940">"<xliff:g id="TIME">%1$s</xliff:g> • ਡਰਾਈਵਰ ਸਹਾਇਤਾ"</string>
-    <string name="location_driver_assistance_privacy_policy_header_content" msgid="8118086439003674350">"ਡਰਾਈਵਰ ਸਹਾਇਤਾ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਲਈ ਇਸ ਵਾਹਨ ਦੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਵਾਸਤੇ ਇਜਾਜ਼ਤ ਵਾਲੀਆਂ ਐਪਾਂ"</string>
-    <string name="location_driver_assistance_privacy_policy_button_text" msgid="669921557502414704">"ਪਰਦੇਦਾਰੀ ਨੀਤੀ"</string>
+    <string name="driver_assistance_label" msgid="5330316311913399041">"<xliff:g id="TIME">%1$s</xliff:g> • ਡਰਾਈਵਰ ਸਹਾਇਤਾ • ਪਹੁੰਚ ਲੋੜੀਂਦੀ ਹੈ"</string>
+    <string name="location_adas_apps_list_title" msgid="482882078448695177">"ਡਰਾਈਵਿੰਗ \'ਚ ਮਦਦ ਕਰਨ ਵਾਲੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ"</string>
+    <string name="location_driver_assistance_privacy_policy_button_text" msgid="1092702462617222722">"ਨੀਤੀ"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"ਐਪ-ਪੱਧਰ ਇਜਾਜ਼ਤਾਂ"</string>
+    <string name="location_settings_app_permissions_summary" msgid="87851720569447224">"ਵਿਅਕਤੀਗਤ ਐਪ ਇਜਾਜ਼ਤਾਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ"</string>
     <string name="location_settings_services_title" msgid="1186133632690970468">"ਟਿਕਾਣਾ ਸੇਵਾਵਾਂ"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"ਟਿਕਾਣਾ ਵਰਤੋ"</string>
-    <string name="location_settings_footer" msgid="296892848338100051">"ਟਿਕਾਣਾ ਸੇਵਾ ਤੁਹਾਡੇ ਡੀਵਾਈਸ ਦੇ ਟਿਕਾਣੇ ਦਾ ਅੰਦਾਜ਼ਾ ਲਗਾਉਣ ਲਈ GPS, ਵਾਈ-ਫਾਈ, ਮੋਬਾਈਲ ਨੈੱਟਵਰਕਾਂ ਅਤੇ ਸੈਂਸਰਾਂ ਵਰਗੇ ਸਰੋਤਾਂ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੀ ਹੈ।"</string>
-    <string name="driver_assistance_settings_title" msgid="4915804073177128915">"ਡਰਾਈਵਰ ਸਹਾਇਤਾ"</string>
-    <string name="adas_settings_footer" msgid="6697021691244459156">"ਡਰਾਈਵਰ ਸਹਾਇਤਾ ਐਪਾਂ ਨੂੰ ਭੇਜੀ ਗਈ ਟਿਕਾਣਾ ਜਾਣਕਾਰੀ ਵਿੱਚ ਅਜਿਹੀ ਜਾਣਕਾਰੀ ਸ਼ਾਮਲ ਨਹੀਂ ਹੁੰਦੀ ਜਿਸ ਨਾਲ ਤੁਹਾਡੀ ਪਛਾਣ ਹੋ ਸਕੇ। ਇਸਨੂੰ ਵੱਧ ਤੋਂ ਵੱਧ 2 ਦਿਨਾਂ ਲਈ ਸਟੋਰ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਇਸ ਤੋਂ ਬਾਅਦ ਇਸਨੂੰ ਮਿਟਾ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ।"</string>
+    <string name="location_access_settings_title" msgid="2378398106582207440">"ਟਿਕਾਣਾ ਪਹੁੰਚ"</string>
+    <string name="location_access_settings_summary" msgid="7676354917209152932">"ਚੁਣੋ ਕਿ ਐਪਾਂ ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਕਰ ਸਕਦੀਆਂ ਹਨ ਜਾਂ ਨਹੀਂ"</string>
+    <string name="location_access_disclaimer_summary" msgid="914984622682562036">"ਤੁਹਾਡੇ ਕਾਰ ਨਿਰਮਾਤਾ ਕੋਲ ਹਾਲੇ ਵੀ ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਹੋ ਸਕਦੀ ਹੈ। ਤੁਸੀਂ ਜ਼ਿਆਦਾ ਜਾਣਕਾਰੀ ਲਈ ਉਨ੍ਹਾਂ ਦੀਆਂ ਨੀਤੀਆਂ ਦੀ ਸਮੀਖਿਆ ਕਰ ਸਕਦੇ ਹੋ।"</string>
+    <string name="location_adas_app_info_summary" msgid="7806057735910556609">"ਡਰਾਈਵਿੰਗ ਵਿੱਚ ਮਦਦ ਲਈ ਇਨ੍ਹਾਂ ਬਿਲਟ-ਇਨ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਨੂੰ ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ।\n\nਹਰੇਕ ਐਪ ਵੱਲੋਂ ਤੁਹਾਡੇ ਟਿਕਾਣੇ ਦੇ ਡਾਟੇ ਨੂੰ ਵਰਤਣ ਦੇ ਤਰੀਕੇ ਬਾਰੇ ਹੋਰ ਜਾਣਨ ਲਈ ਉਸਦੀ ਪਰਦੇਦਾਰੀ ਨੀਤੀ ਨੂੰ ਦੇਖੋ।"</string>
     <string name="microphone_settings_title" msgid="7125554350537136922">"ਮਾਈਕ੍ਰੋਫ਼ੋਨ"</string>
     <string name="microphone_toggle_title" msgid="911586035332827275">"ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਵਰਤੋ"</string>
     <string name="microphone_toggle_summary" msgid="2682653449849128626">"ਸਾਰੀਆਂ ਐਪਾਂ ਨੂੰ ਆਪਣੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ"</string>
@@ -442,8 +459,8 @@
     <string name="system_update_settings_title" msgid="8448588267784138855">"ਸਿਸਟਮ ਅੱਪਡੇਟ"</string>
     <string name="system_advanced_title" msgid="6303355131691523362">"ਉੱਨਤ"</string>
     <string name="system_advanced_summary" msgid="5833643795981791953">"ਇਸ ਬਾਰੇ, ਕਨੂੰਨੀ ਜਾਣਕਾਰੀ, ਰੀਸੈੱਟ ਕਰੋ ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ"</string>
-    <string name="restart_infotainment_system_title" msgid="5174129167446756511">"ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਨੂੰ ਮੁੜ-ਸ਼ੁਰੂ ਕਰੋ"</string>
-    <string name="restart_infotainment_system_dialog_text" msgid="6395281407323116808">"ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਨੂੰ ਮੁੜ-ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਕੁਝ ਮਿੰਟ ਲੱਗ ਸਕਦੇ ਹਨ। ਕੀ ਤੁਸੀਂ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?"</string>
+    <string name="restart_infotainment_system_title" msgid="5174129167446756511">"ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਨੂੰ ਮੁੜ-ਸ਼ੁਰੂ ਕਰੋ"</string>
+    <string name="restart_infotainment_system_dialog_text" msgid="6395281407323116808">"ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਨੂੰ ਮੁੜ-ਸ਼ੁਰੂ ਕਰਨ ਵਿੱਚ ਕੁਝ ਮਿੰਟ ਲੱਗ ਸਕਦੇ ਹਨ। ਕੀ ਤੁਸੀਂ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ?"</string>
     <string name="continue_confirmation" msgid="1598892163951467191">"ਜਾਰੀ ਰੱਖੋ"</string>
     <string name="firmware_version" msgid="8491753744549309333">"Android ਵਰਜਨ"</string>
     <string name="security_patch" msgid="4794276590178386903">"Android ਸੁਰੱਖਿਆ ਪੈਚ ਪੱਧਰ"</string>
@@ -482,7 +499,7 @@
     <string name="show_dev_countdown" msgid="7416958516942072383">"{count,plural, =1{ਤੁਸੀਂ ਹੁਣ ਵਿਕਾਸਕਾਰ ਬਣਨ ਤੋਂ # ਕਦਮ ਦੂਰ ਹੋ।}one{ਤੁਸੀਂ ਹੁਣ ਵਿਕਾਸਕਾਰ ਬਣਨ ਤੋਂ # ਕਦਮ ਦੂਰ ਹੋ।}other{ਤੁਸੀਂ ਹੁਣ ਵਿਕਾਸਕਾਰ ਬਣਨ ਤੋਂ # ਕਦਮ ਦੂਰ ਹੋ।}}"</string>
     <string name="show_dev_on" msgid="5339077400040834808">"ਹੁਣ ਤੁਸੀਂ ਇੱਕ ਵਿਕਾਸਕਾਰ ਹੋ!"</string>
     <string name="show_dev_already" msgid="1678087328973865736">"ਕੋਈ ਲੋੜ ਨਹੀਂ, ਤੁਸੀਂ ਪਹਿਲਾਂ ਹੀ ਇੱਕ ਵਿਕਾਸਕਾਰ ਹੋ।"</string>
-    <string name="developer_options_settings" msgid="1530739225109118480">"ਵਿਕਾਸਕਾਰ ਚੋਣਾਂ"</string>
+    <string name="developer_options_settings" msgid="1530739225109118480">"ਵਿਕਾਸਕਾਰ ਵਿਕਲਪ"</string>
     <string name="reset_options_title" msgid="4388902952861833420">"ਰੀਸੈੱਟ ਵਿਕਲਪ"</string>
     <string name="reset_options_summary" msgid="5508201367420359293">"ਨੈੱਟਵਰਕ, ਐਪਾਂ ਜਾਂ ਡੀਵਾਈਸ ਰੀਸੈੱਟ"</string>
     <string name="reset_network_title" msgid="3077846909739832734">"ਵਾਈ-ਫਾਈ ਅਤੇ ਬਲੂਟੁੱਥ ਨੂੰ ਰੀਸੈੱਟ ਕਰੋ"</string>
@@ -504,13 +521,13 @@
     <string name="reset_app_pref_button_text" msgid="6270820447321231609">"ਐਪਾਂ ਰੀਸੈੱਟ ਕਰੋ"</string>
     <string name="reset_app_pref_complete_toast" msgid="8709072932243594166">"ਐਪ ਤਰਜੀਹਾਂ ਰੀਸੈੱਟ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ"</string>
     <string name="factory_reset_title" msgid="4019066569214122052">"ਸਭ ਡਾਟਾ ਮਿਟਾਓ (ਫੈਕਟਰੀ ਰੀਸੈੱਟ)"</string>
-    <string name="factory_reset_summary" msgid="854815182943504327">"ਇਸ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਵਿੱਚੋਂ ਸਾਰੇ ਡਾਟੇ ਅਤੇ ਪ੍ਰੋਫਾਈਲਾਂ ਨੂੰ ਮਿਟਾਓ"</string>
-    <string name="factory_reset_desc" msgid="2774024747279286354">"ਇਹ ਤੁਹਾਡੇ ਵਾਹਨ ਦੇ ਆਡੀਓ ਸਿਸਟਮ ਤੋਂ ਸਾਰਾ ਡਾਟਾ ਮਿਟਾ ਦੇਵੇਗਾ, ਜਿਸ ਵਿੱਚ ਇਹ ਵੀ ਸ਼ਾਮਲ ਹੈ:\n\n"<li>"ਤੁਹਾਡੇ ਖਾਤੇ ਅਤੇ ਪ੍ਰੋਫਾਈਲ"</li>\n<li>"ਸਿਸਟਮ ਅਤੇ ਐਪ ਡਾਟਾ ਅਤੇ ਸੈਟਿੰਗਾਂ"</li>\n<li>"ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਐਪਾਂ"</li></string>
+    <string name="factory_reset_summary" msgid="854815182943504327">"ਇਸ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਵਿੱਚੋਂ ਸਾਰੇ ਡਾਟੇ ਅਤੇ ਪ੍ਰੋਫਾਈਲਾਂ ਨੂੰ ਮਿਟਾਓ"</string>
+    <string name="factory_reset_desc" msgid="2774024747279286354">"ਇਹ ਤੁਹਾਡੇ ਵਾਹਨ ਦੇ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਤੋਂ ਸਾਰਾ ਡਾਟਾ ਮਿਟਾ ਦੇਵੇਗਾ, ਜਿਸ ਵਿੱਚ ਇਹ ਵੀ ਸ਼ਾਮਲ ਹੈ:\n\n"<li>"ਤੁਹਾਡੇ ਖਾਤੇ ਅਤੇ ਪ੍ਰੋਫਾਈਲ"</li>\n<li>"ਸਿਸਟਮ ਅਤੇ ਐਪ ਡਾਟਾ ਅਤੇ ਸੈਟਿੰਗਾਂ"</li>\n<li>"ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਐਪਾਂ"</li></string>
     <string name="factory_reset_accounts" msgid="5523956654938834209">"ਤੁਸੀਂ ਇਸ ਵੇਲੇ ਇਹਨਾਂ ਖਾਤਿਆਂ \'ਤੇ ਸਾਈਨ-ਇਨ ਹੋ:"</string>
     <string name="factory_reset_other_users_present" msgid="3852324375352090570">"ਇਸ ਵਾਹਨ ਲਈ ਹੋਰ ਪ੍ਰੋਫਾਈਲਾਂ ਦਾ ਸੈੱਟਅੱਪ ਕੀਤਾ ਗਿਆ ਹੈ।"</string>
     <string name="factory_reset_button_text" msgid="2626666247051368256">"ਸਾਰਾ ਡਾਟਾ ਮਿਟਾਓ"</string>
     <string name="factory_reset_confirm_title" msgid="3354542161765761879">"ਕੀ ਸਾਰਾ ਡਾਟਾ ਮਿਟਾਉਣਾ ਹੈ?"</string>
-    <string name="factory_reset_confirm_desc" msgid="2037199381372030510">"ਇਹ ਤੁਹਾਡੇ ਨਿੱਜੀ ਪ੍ਰੋਫਾਈਲ ਦੇ ਸਾਰੇ ਡਾਟੇ, ਖਾਤਿਆਂ ਅਤੇ ਇਸ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ \'ਤੇ ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਐਪਾਂ ਨੂੰ ਮਿਟਾ ਦੇਵੇਗਾ।\n\nਤੁਸੀਂ ਇਸ ਕਾਰਵਾਈ ਨੂੰ ਅਣਕੀਤਾ ਨਹੀਂ ਕਰ ਸਕਦੇ।"</string>
+    <string name="factory_reset_confirm_desc" msgid="2037199381372030510">"ਇਹ ਤੁਹਾਡੇ ਨਿੱਜੀ ਪ੍ਰੋਫਾਈਲ ਦੇ ਸਾਰੇ ਡਾਟੇ, ਖਾਤਿਆਂ ਅਤੇ ਇਸ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ \'ਤੇ ਡਾਊਨਲੋਡ ਕੀਤੀਆਂ ਐਪਾਂ ਨੂੰ ਮਿਟਾ ਦੇਵੇਗਾ।\n\nਤੁਸੀਂ ਇਸ ਕਾਰਵਾਈ ਨੂੰ ਅਣਕੀਤਾ ਨਹੀਂ ਕਰ ਸਕਦੇ।"</string>
     <string name="factory_reset_confirm_button_text" msgid="1797490544756481809">"ਸਭ ਕੁਝ ਮਿਟਾਓ"</string>
     <string name="factory_reset_progress_title" msgid="4580937077054738173">"ਮਿਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"</string>
     <string name="factory_reset_progress_text" msgid="7704636573522634757">"ਕਿਰਪਾ ਕਰਕੇ ਉਡੀਕ ਕਰੋ..."</string>
@@ -534,7 +551,7 @@
     <string name="signed_in_admin_user" msgid="1267225622818673274">"ਪ੍ਰਸ਼ਾਸਕ ਵਜੋਂ ਸਾਈਨ ਇਨ ਕੀਤਾ ਗਿਆ"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"ਕੀ ਪ੍ਰਸ਼ਾਸਕ ਇਜਾਜ਼ਤਾਂ ਦੇਣੀਆਂ ਹਨ?"</string>
     <string name="grant_admin_permissions_button_text" msgid="988239414372882401">"ਪ੍ਰਸ਼ਾਸਕ ਬਣਾਓ"</string>
-    <string name="grant_admin_permissions_message" msgid="5205433947453539566">"ਪ੍ਰਸ਼ਾਸਕ ਹੋਰ ਪ੍ਰਸ਼ਾਸਕਾਂ ਲਈ ਪ੍ਰੋਫਾਈਲਾਂ ਸਮੇਤ ਹੋਰ ਪ੍ਰੋਫਾਈਲਾਂ ਨੂੰ ਮਿਟਾ ਸਕੇਗਾ ਅਤੇ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਨੂੰ ਫੈਕਟਰੀ ਰੀਸੈੱਟ ਕਰ ਸਕੇਗਾ।"</string>
+    <string name="grant_admin_permissions_message" msgid="5205433947453539566">"ਪ੍ਰਸ਼ਾਸਕ ਹੋਰ ਪ੍ਰਸ਼ਾਸਕਾਂ ਲਈ ਪ੍ਰੋਫਾਈਲਾਂ ਸਮੇਤ ਹੋਰ ਪ੍ਰੋਫਾਈਲਾਂ ਨੂੰ ਮਿਟਾ ਸਕੇਗਾ ਅਤੇ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਨੂੰ ਫੈਕਟਰੀ ਰੀਸੈੱਟ ਕਰ ਸਕੇਗਾ।"</string>
     <string name="action_not_reversible_message" msgid="740401337875726973">"ਇਹ ਕਾਰਵਾਈ ਪਲਟਾਉਣਯੋਗ ਨਹੀਂ ਹੈ।"</string>
     <string name="confirm_grant_admin" msgid="7852596890218647682">"ਹਾਂ, ਪ੍ਰਸ਼ਾਸਕ ਬਣਾਓ"</string>
     <string name="create_user_permission_title" msgid="2402003632264628632">"ਨਵੇਂ ਪ੍ਰੋਫਾਈਲ ਬਣਾਓ"</string>
@@ -596,7 +613,7 @@
     <string name="no_accounts_added" msgid="5148163140691096055">"ਕੋਈ ਖਾਤੇ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤੇ ਗਏ"</string>
     <string name="account_list_title" msgid="7631588514613843065">"<xliff:g id="CURRENT_USER_NAME">%1$s</xliff:g> ਦੇ ਖਾਤੇ"</string>
     <string name="account_auto_sync_title" msgid="3238816995364191432">"ਸਵੈਚਲਿਤ ਤੌਰ \'ਤੇ ਡਾਟੇ ਦਾ ਸਿੰਕ ਕਰੋ"</string>
-    <string name="account_auto_sync_summary" msgid="6963837893148304128">"ਐਪਾਂ ਨੂੰ ਸਵੈਚਲਿਤ ਤੌਰ \'ਤੇ ਡਾਟਾ ਰਿਫ੍ਰੈਸ਼ ਕਰਨ ਦਿਓ"</string>
+    <string name="account_auto_sync_summary" msgid="6963837893148304128">"ਐਪਾਂ ਨੂੰ ਆਪਣੇ-ਆਪ ਡਾਟਾ ਰਿਫ੍ਰੈਸ਼ ਕਰਨ ਦਿਓ"</string>
     <string name="data_usage_auto_sync_on_dialog_title" msgid="8068513213445588532">"ਕੀ ਸਵੈਚਲਿਤ ਡਾਟਾ ਸਿੰਕ ਦੀ ਆਗਿਆ ਦੇਣ ਹੈ?"</string>
     <string name="data_usage_auto_sync_on_dialog" msgid="8683935973719807821">"ਵੈੱਬ ਤੇ ਤੁਹਾਡੇ ਖਾਤਿਆਂ ਵਿੱਚ ਕੀਤੀਆਂ ਗਈਆਂ ਕੋਈ ਵੀ ਤਬਦੀਲੀਆਂ ਨੂੰ ਸਵੈਚਲਿਤ ਤੌਰ \'ਤੇ ਹੀ ਤੁਹਾਡੇ ਵਾਹਨ \'ਤੇ ਕਾਪੀ ਕੀਤਾ ਜਾਵੇਗਾ।\n\nਕੁਝ ਖਾਤੇ ਸਵੈਚਲਿਤ ਤੌਰ \'ਤੇ ਉਹ ਬਦਲਾਅ ਕਾਪੀ ਕਰ ਸਕਦੇ ਹਨ ਜੋ ਤੁਸੀਂ ਵੈੱਬ \'ਤੇ ਆਪਣੇ ਵਾਹਨ ਵਿੱਚ ਕਰਦੇ ਹੋ।"</string>
     <string name="data_usage_auto_sync_off_dialog_title" msgid="6683011954002351091">"ਕੀ ਸਵੈਚਲਿਤ ਡਾਟਾ ਸਿੰਕ ਦੀ ਆਗਿਆ ਨੂੰ ਹਟਾਉਣਾ ਹੈ?"</string>
@@ -623,17 +640,34 @@
     <string name="sync_button_sync_cancel" msgid="7739510554513641393">"ਸਿੰਕ ਰੱਦ ਕਰੋ"</string>
     <string name="sync_is_failing" msgid="5766255460901806206">"ਇਸ ਵੇਲੇ ਸਿੰਕ ਵਿੱਚ ਸਮੱਸਿਆਵਾਂ ਆ ਰਹੀਆਂ ਹਨ। ਇਹ ਜਲਦੀ ਹੀ ਠੀਕ ਹੋ ਜਾਣਗੀਆਂ।"</string>
     <string name="privacy_settings_title" msgid="3150145262029229572">"ਪਰਦੇਦਾਰੀ"</string>
-    <string name="privacy_vehicle_data_title" msgid="6385777370742595651">"ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਡਾਟਾ"</string>
+    <string name="privacy_vehicle_data_title" msgid="6385777370742595651">"ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਡਾਟਾ"</string>
     <string name="privacy_location_summary" msgid="7019817848470566242">"ਐਪ ਦੀ ਤੁਹਾਡੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਕੰਟਰੋਲ ਕਰੋ"</string>
     <string name="mute_camera_title" msgid="215494079895460172">"ਕੈਮਰਾ"</string>
     <string name="mute_camera_summary" msgid="1237452064757403042">"ਆਪਣੇ ਕੈਮਰਿਆਂ ਤੱਕ ਐਪ ਦੀ ਪਹੁੰਚ ਨੂੰ ਕੰਟਰੋਲ ਕਰੋ"</string>
     <string name="mute_mic_title" msgid="2813215197799569553">"ਮਾਈਕ੍ਰੋਫ਼ੋਨ"</string>
     <string name="mute_mic_summary" msgid="5426953935775303904">"ਐਪ ਦੀ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ ਕੰਟਰੋਲ ਕਰੋ"</string>
-    <string name="vehicle_data_title" msgid="935933215161763721">"ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਡਾਟਾ"</string>
+    <string name="vehicle_data_title" msgid="935933215161763721">"ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਡਾਟਾ"</string>
     <string name="vehicle_data_summary" msgid="9204836361819386115">"ਇਸ ਵਾਹਨ \'ਤੇ ਰੱਖਿਅਤ ਕੀਤੀਆਂ ਸਰਗਰਮੀਆਂ ਅਤੇ ਜਾਣਕਾਰੀ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ"</string>
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"ਆਪਣਾ ਪ੍ਰੋਫਾਈਲ ਮਿਟਾਓ"</string>
-    <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"ਇਸ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਵਿੱਚੋਂ ਆਪਣਾ ਪ੍ਰੋਫਾਈਲ ਅਤੇ ਖਾਤਿਆਂ ਨੂੰ ਮਿਟਾਓ"</string>
+    <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"ਇਸ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਵਿੱਚੋਂ ਆਪਣਾ ਪ੍ਰੋਫਾਈਲ ਅਤੇ ਖਾਤਿਆਂ ਨੂੰ ਮਿਟਾਓ"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"ਇਹ ਕਾਰਵਾਈ ਤੁਹਾਡੇ ਪ੍ਰੋਫਾਈਲ ਲਈ ਉਪਲਬਧ ਨਹੀਂ ਹੈ"</string>
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"ਚੁਣੋ ਕਿ ਐਪਾਂ ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨਾਂ ਤੱਕ ਪਹੁੰਚ ਕਰ ਸਕਦੀਆਂ ਹਨ ਜਾਂ ਨਹੀਂ"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਐਪਾਂ"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"ਆਡੀਓ ਰਿਕਾਰਡ ਕਰਨ ਲਈ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਐਪਾਂ ਨੂੰ ਆਗਿਆ ਦਿਓ"</string>
+    <string name="camera_access_settings_title" msgid="1841809323727456945">"ਕੈਮਰਾ ਪਹੁੰਚ"</string>
+    <string name="camera_access_settings_summary" msgid="8820488359585532496">"ਚੁਣੋ ਕਿ ਐਪਾਂ ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਕੈਮਰਿਆਂ ਤੱਕ ਪਹੁੰਚ ਕਰ ਸਕਦੀਆਂ ਹਨ ਜਾਂ ਨਹੀਂ"</string>
+    <string name="required_apps_group_title" msgid="8607608579973985786">"ਲੋੜੀਂਦੀਆਂ ਐਪਾਂ"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਨਿਰਮਾਤਾ ਮੁਤਾਬਕ, ਗੱਡੀ ਚਲਾਉਣ ਵੇਲੇ ਤੁਹਾਡੇ ਲਈ ਲੋੜੀਂਦੀਆਂ ਲਾਹੇਵੰਦ ਐਪਾਂ"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"ਨੀਤੀ"</string>
+    <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"ਤੁਹਾਡੇ ਕਾਰ ਨਿਰਮਾਤਾ ਕੋਲ ਹਾਲੇ ਵੀ ਤੁਹਾਡੀ ਕਾਰ ਦੇ ਕੈਮਰੇ ਤੱਕ ਪਹੁੰਚ ਹੋ ਸਕਦੀ ਹੈ"</string>
+    <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਐਪਾਂ"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਐਪਾਂ ਨੂੰ ਤਸਵੀਰ ਖਿੱਚਣ ਅਤੇ ਵੀਡੀਓ ਰਿਕਾਰਡ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿਓ"</string>
+    <string name="permission_grant_allowed" msgid="4844649705788049638">"ਆਗਿਆ ਹੈ"</string>
+    <string name="permission_grant_always" msgid="8851460274973784076">"ਹਰ ਸਮੇਂ"</string>
+    <string name="permission_grant_never" msgid="1357441946890127898">"ਆਗਿਆ ਨਹੀਂ ਹੈ"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"ਸਿਰਫ਼ ਐਪ ਨੂੰ ਵਰਤਣ ਵੇਲੇ"</string>
+    <string name="permission_grant_ask" msgid="1613256400438907973">"ਹਰ ਵਾਰ ਪੁੱਛੋ"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"ਸੁਰੱਖਿਆ"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"ਸਕ੍ਰੀਨ ਲਾਕ"</string>
     <string name="security_lock_none" msgid="1054645093754839638">"ਕੋਈ ਨਹੀਂ"</string>
@@ -688,6 +722,7 @@
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"ਰੱਦ ਕਰੋ"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"ਪੁਸ਼ਟੀ ਕਰੋ"</string>
     <string name="choose_lock_password_hints" msgid="3903696950202491593">"ਘੱਟੋ-ਘੱਟ 4 ਅੱਖਰ-ਚਿੰਨ੍ਹਾਂ ਦਾ ਹੋਣਾ ਲਾਜ਼ਮੀ ਹੈ"</string>
+    <string name="locktype_unavailable" msgid="2678317466336249126">"ਲਾਕ ਦੀ ਇਹ ਕਿਸਮ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।"</string>
     <string name="lockpassword_pin_contains_non_digits" msgid="3044526271686839923">"ਸਿਰਫ਼ 0-9 ਤੱਕ ਅੰਕ ਸ਼ਾਮਲ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ।"</string>
     <string name="lockpassword_pin_recently_used" msgid="7901918311213276207">"ਡੀਵਾਈਸ ਪ੍ਰਸ਼ਾਸਕ ਇੱਕ ਹਾਲੀਆ ਪਿੰਨ ਵਰਤਣ ਨਹੀਂ ਦਿੰਦਾ ਹੈ"</string>
     <string name="lockpassword_pin_denylisted_by_admin" msgid="3752574009492336468">"ਆਮ ਪਿੰਨ ਤੁਹਾਡੇ IT ਪ੍ਰਸ਼ਾਸਕ ਵੱਲੋਂ ਬਲਾਕ ਕੀਤੇ ਗਏ ਹਨ। ਕੋਈ ਵੱਖਰਾ ਪਿੰਨ ਵਰਤ ਕੇ ਦੇਖੋ।"</string>
@@ -734,6 +769,8 @@
     <string name="exit_retail_mode_dialog_confirmation_button_text" msgid="3147249675355968649">"ਡੈਮੋ ਮੋਡ ਤੋ ਬਾਹਰ ਜਾਓ"</string>
     <string name="suggestion_dismiss_button" msgid="4539412646977050641">"ਖਾਰਜ ਕਰੋ"</string>
     <string name="restricted_while_driving" msgid="6587569249519274524">"ਚਲਦੀ ਗੱਡੀ ਵਿੱਚ ਇਹ ਵਿਸ਼ੇਸ਼ਤਾ ਉਪਲਬਧ ਨਹੀਂ ਹੈ"</string>
+    <string name="restricted_for_passenger" msgid="7240117443887727753">"ਡਰਾਈਵਰ ਨੂੰ ਸੈਟਿੰਗ ਬਦਲਣ ਲਈ ਬੇਨਤੀ ਕਰੋ"</string>
+    <string name="restricted_for_driver" msgid="3364388937671526800">"ਤੁਸੀਂ ਇਹ ਕਾਰਵਾਈ ਨਹੀਂ ਕਰ ਸਕਦੇ"</string>
     <string name="add_user_restricted_while_driving" msgid="1037301074725362944">"ਚਲਦੀ ਗੱਡੀ ਵਿੱਚ ਪ੍ਰੋਫਾਈਲ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"</string>
     <string name="default_search_query" msgid="3137420627428857068">"ਖੋਜ"</string>
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Assistant ਅਤੇ ਅਵਾਜ਼"</string>
@@ -749,24 +786,26 @@
     <string name="add_a_profile_button_text" msgid="8027395095117925114">"ਕੋਈ ਪ੍ਰੋਫਾਈਲ ਸ਼ਾਮਲ ਕਰੋ"</string>
     <string name="delete_this_profile_text" msgid="6035404714526922665">"ਇਹ ਪ੍ਰੋਫਾਈਲ ਮਿਟਾਓ"</string>
     <string name="add_profile_text" msgid="9118410102199116969">"ਪ੍ਰੋਫਾਈਲ ਸ਼ਾਮਲ ਕਰੋ"</string>
+    <string name="cannot_remove_driver_profile" msgid="4109363161608717969">"ਫ਼ਿਲਹਾਲ ਇਹ ਪ੍ਰੋਫਾਈਲ ਡਰਾਈਵਰ ਵਜੋਂ ਸਾਈਨ-ਇਨ ਹੈ। ਪ੍ਰੋਫਾਈਲ ਡਰਾਈਵਰ ਵਜੋਂ ਵਰਤੋਂ ਵਿੱਚ ਨਾ ਹੋਣ \'ਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"</string>
     <string name="qc_display_brightness" msgid="2939655289816201170">"ਡਿਸਪਲੇ ਚਮਕ"</string>
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"ਆਪਣੇ ਡੀਵਾਈਸ ਦੇਖਣ ਲਈ, ਬਲੂਟੁੱਥ ਚਾਲੂ ਕਰੋ"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"ਕਿਸੇ ਡੀਵਾਈਸ ਨੂੰ ਜੋੜਾਬੱਧ ਕਰਨ ਲਈ, ਬਲੂਟੁੱਥ ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ"</string>
-    <string name="device_admin_add_title" msgid="1294399588284546811">"ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਪ੍ਰਸ਼ਾਸਕ"</string>
+    <string name="qc_ui_mode_title" msgid="2425571805732530923">"ਥੀਮ"</string>
+    <string name="device_admin_add_title" msgid="1294399588284546811">"ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਪ੍ਰਸ਼ਾਸਕ"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"ਕਿਰਿਆਸ਼ੀਲ ਕੀਤੀਆਂ ਐਪਾਂ"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"ਅਕਿਰਿਆਸ਼ੀਲ ਕੀਤੀਆਂ ਐਪਾਂ"</string>
     <string name="device_admin_apps_description" msgid="1371935499168453457">"ਇਸ ਇਜਾਜ਼ਤ ਵਾਲੀਆਂ ਐਪਾਂ ਕੋਲ ਇਸ ਵਾਹਨ ਦੇ ਡਾਟੇ ਤੱਕ ਪਹੁੰਚ ਹੈ"</string>
     <string name="device_admin_apps_list_empty" msgid="7634804595645191123">"ਵਾਹਨ ਲਈ ਕੋਈ ਪ੍ਰਸ਼ਾਸਕ ਐਪ ਨਹੀਂ ਹੈ"</string>
-    <string name="device_admin_status" msgid="4041772636856135168">"ਇਹ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਪ੍ਰਸ਼ਾਸਕ ਐਪ ਕਿਰਿਆਸ਼ੀਲ ਹੈ ਅਤੇ <xliff:g id="APP_NAME">%1$s</xliff:g> ਐਪ ਨੂੰ ਅੱਗੇ ਦਿੱਤੀਆਂ ਕਾਰਵਾਈਆਂ ਨੂੰ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦਿੰਦੀ ਹੈ:"</string>
-    <string name="device_admin_warning" msgid="8997805999333600901">"ਇਸ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਪ੍ਰਸ਼ਾਸਕ ਐਪ ਨੂੰ ਕਿਰਿਆਸ਼ੀਲ ਕਰਨ ਨਾਲ <xliff:g id="APP_NAME">%1$s</xliff:g> ਐਪ ਨੂੰ ਅੱਗੇ ਦਿੱਤੀਆਂ ਕਾਰਵਾਈਆਂ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਮਿਲੇਗੀ:"</string>
-    <string name="add_device_admin_msg" msgid="8188888666879499482">"ਕੀ ਇਹ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਐਪ ਕਿਰਿਆਸ਼ੀਲ ਕਰੀਏ?"</string>
-    <string name="add_device_admin" msgid="7674707256074840333">"ਇਸ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਐਪ ਨੂੰ ਕਿਰਿਆਸ਼ੀਲ ਕਰੋ"</string>
+    <string name="device_admin_status" msgid="4041772636856135168">"ਇਹ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਪ੍ਰਸ਼ਾਸਕ ਐਪ ਕਿਰਿਆਸ਼ੀਲ ਹੈ ਅਤੇ <xliff:g id="APP_NAME">%1$s</xliff:g> ਐਪ ਨੂੰ ਅੱਗੇ ਦਿੱਤੀਆਂ ਕਾਰਵਾਈਆਂ ਨੂੰ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦਿੰਦੀ ਹੈ:"</string>
+    <string name="device_admin_warning" msgid="8997805999333600901">"ਇਸ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਪ੍ਰਸ਼ਾਸਕ ਐਪ ਨੂੰ ਕਿਰਿਆਸ਼ੀਲ ਕਰਨ ਨਾਲ <xliff:g id="APP_NAME">%1$s</xliff:g> ਐਪ ਨੂੰ ਅੱਗੇ ਦਿੱਤੀਆਂ ਕਾਰਵਾਈਆਂ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਮਿਲੇਗੀ:"</string>
+    <string name="add_device_admin_msg" msgid="8188888666879499482">"ਕੀ ਇਹ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਐਪ ਕਿਰਿਆਸ਼ੀਲ ਕਰੀਏ?"</string>
+    <string name="add_device_admin" msgid="7674707256074840333">"ਇਸ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਐਪ ਨੂੰ ਕਿਰਿਆਸ਼ੀਲ ਕਰੋ"</string>
     <string name="deactivate_and_uninstall_device_admin" msgid="596399938769951696">"ਅਕਿਰਿਆਸ਼ੀਲ ਕਰੋ ਅਤੇ ਅਣਸਥਾਪਤ ਕਰੋ"</string>
-    <string name="remove_device_admin" msgid="3595343390502030723">"ਇਸ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਐਪ ਨੂੰ ਅਕਿਰਿਆਸ਼ੀਲ ਕਰੋ"</string>
+    <string name="remove_device_admin" msgid="3595343390502030723">"ਇਸ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਐਪ ਨੂੰ ਅਕਿਰਿਆਸ਼ੀਲ ਕਰੋ"</string>
     <string name="admin_profile_owner_message" msgid="8361351256802954556">"ਸੰਸਥਾ ਪ੍ਰਬੰਧਕ ਸੈਟਿੰਗਾਂ, ਇਜਾਜ਼ਤਾਂ, ਕਾਰਪੋਰੇਟ ਪਹੁੰਚ, ਨੈੱਟਵਰਕ ਸਰਗਰਮੀ ਅਤੇ ਵਾਹਨ ਦੀ ਟਿਕਾਣਾ ਜਾਣਕਾਰੀ ਸਮੇਤ ਇਸ ਪ੍ਰੋਫਾਈਲ ਨਾਲ ਸੰਬੰਧਿਤ ਐਪਾਂ ਅਤੇ ਡਾਟੇ ਦੀ ਨਿਗਰਾਨੀ ਅਤੇ ਪ੍ਰਬੰਧਨ ਕਰ ਸਕਦਾ ਹੈ।"</string>
     <string name="admin_profile_owner_user_message" msgid="366072696508275753">"ਸੰਸਥਾ ਪ੍ਰਬੰਧਕ ਸੈਟਿੰਗਾਂ, ਇਜਾਜ਼ਤਾਂ, ਕਾਰਪੋਰੇਟ ਪਹੁੰਚ, ਨੈੱਟਵਰਕ ਸਰਗਰਮੀ ਅਤੇ ਡੀਵਾਈਸ ਦੀ ਟਿਕਾਣਾ ਜਾਣਕਾਰੀ ਸਮੇਤ ਇਸ ਪ੍ਰੋਫਾਈਲ ਨਾਲ ਸੰਬੰਧਿਤ ਐਪਾਂ ਅਤੇ ਡਾਟੇ ਦੀ ਨਿਗਰਾਨੀ ਅਤੇ ਪ੍ਰਬੰਧਨ ਕਰ ਸਕਦਾ ਹੈ।"</string>
-    <string name="admin_device_owner_message" msgid="896530502350904835">"ਸੰਸਥਾ ਪ੍ਰਬੰਧਕ ਸੈਟਿੰਗਾਂ, ਇਜਾਜ਼ਤਾਂ, ਕਾਰਪੋਰੇਟ ਪਹੁੰਚ, ਨੈੱਟਵਰਕ ਸਰਗਰਮੀ ਅਤੇ ਵਾਹਨ ਦੀ ਟਿਕਾਣਾ ਜਾਣਕਾਰੀ ਸਮੇਤ ਇਸ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਨਾਲ ਸੰਬੰਧਿਤ ਐਪਾਂ ਅਤੇ ਡਾਟੇ ਦੀ ਨਿਗਰਾਨੀ ਅਤੇ ਪ੍ਰਬੰਧਨ ਕਰ ਸਕਦਾ ਹੈ।"</string>
-    <string name="admin_financed_message" msgid="7357397436233684082">"ਸੰਸਥਾ ਪ੍ਰਬੰਧਕ ਸ਼ਾਇਦ ਇਸ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਨਾਲ ਸੰਬੰਧਿਤ ਡਾਟੇ ਤੱਕ ਪਹੁੰਚ ਕਰ ਸਕਦਾ ਹੈ, ਐਪਾਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰ ਸਕਦਾ ਹੈ ਅਤੇ ਇਸ ਵਾਹਨ ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲ ਸਕਦਾ ਹੈ।"</string>
+    <string name="admin_device_owner_message" msgid="896530502350904835">"ਸੰਸਥਾ ਪ੍ਰਬੰਧਕ ਸੈਟਿੰਗਾਂ, ਇਜਾਜ਼ਤਾਂ, ਕਾਰਪੋਰੇਟ ਪਹੁੰਚ, ਨੈੱਟਵਰਕ ਸਰਗਰਮੀ ਅਤੇ ਵਾਹਨ ਦੀ ਟਿਕਾਣਾ ਜਾਣਕਾਰੀ ਸਮੇਤ ਇਸ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਨਾਲ ਸੰਬੰਧਿਤ ਐਪਾਂ ਅਤੇ ਡਾਟੇ ਦੀ ਨਿਗਰਾਨੀ ਅਤੇ ਪ੍ਰਬੰਧਨ ਕਰ ਸਕਦਾ ਹੈ।"</string>
+    <string name="admin_financed_message" msgid="7357397436233684082">"ਸੰਸਥਾ ਪ੍ਰਬੰਧਕ ਸ਼ਾਇਦ ਇਸ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਨਾਲ ਸੰਬੰਧਿਤ ਡਾਟੇ ਤੱਕ ਪਹੁੰਚ ਕਰ ਸਕਦਾ ਹੈ, ਐਪਾਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰ ਸਕਦਾ ਹੈ ਅਤੇ ਇਸ ਵਾਹਨ ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲ ਸਕਦਾ ਹੈ।"</string>
     <string name="disabled_by_policy_title" msgid="1121694702115232518">"ਇਹ ਉਪਲਬਧ ਨਹੀਂ ਹੈ"</string>
     <string name="disabled_by_policy_title_adjust_volume" msgid="7002865820552702232">"ਇਸ ਪ੍ਰਬੰਧਿਤ ਵਾਹਨ ਵਿੱਚ ਅਵਾਜ਼ ਨੂੰ ਬਦਲਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ"</string>
     <string name="disabled_by_policy_title_outgoing_calls" msgid="158752542663419500">"ਇਸ ਪ੍ਰਬੰਧਿਤ ਵਾਹਨ ਵਿੱਚ ਕਾਲਾਂ ਨਹੀਂ ਕੀਤੀਆਂ ਜਾ ਸਕਦੀਆਂ"</string>
@@ -786,11 +825,11 @@
     <string name="footer_learn_more_content_description" msgid="7749452309729272078">"<xliff:g id="SERVICE">%1$s</xliff:g> ਬਾਰੇ ਹੋਰ ਜਾਣੋ"</string>
     <string name="enterprise_privacy_settings" msgid="6496900796150572727">"ਪ੍ਰਬੰਧਿਤ ਵਾਹਨ ਸੰਬੰਧੀ ਜਾਣਕਾਰੀ"</string>
     <string name="enterprise_privacy_settings_summary_generic" msgid="5850991363779957797">"ਫਲੀਟ ਦੇ ਪ੍ਰਸ਼ਾਸਕ ਵੱਲੋਂ ਪ੍ਰਬੰਧਿਤ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਸੈਟਿੰਗਾਂ"</string>
-    <string name="enterprise_privacy_header" msgid="4652489109303330306">"ਇਸ ਪ੍ਰਬੰਧਿਤ ਵਾਹਨ ਦੇ ਡਾਟੇ ਤੱਕ ਪਹੁੰਚ ਮੁਹੱਈਆ ਕਰਨ ਲਈ, ਫਲੀਟ ਪ੍ਰਸ਼ਾਸਕ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ \'ਤੇ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲ ਸਕਦਾ ਅਤੇ ਸਾਫ਼ਟਵੇਅਰ ਸਥਾਪਤ ਕਰ ਸਕਦਾ ਹੈ।\n\nਹੋਰ ਵੇਰਵਿਆਂ ਲਈ, ਆਪਣੇ ਫਲੀਟ ਦੇ ਪ੍ਰਸ਼ਾਸਕ ਨੂੰ ਸੰਪਰਕ ਕਰੋ।"</string>
+    <string name="enterprise_privacy_header" msgid="4652489109303330306">"ਇਸ ਪ੍ਰਬੰਧਿਤ ਵਾਹਨ ਦੇ ਡਾਟੇ ਤੱਕ ਪਹੁੰਚ ਮੁਹੱਈਆ ਕਰਨ ਲਈ, ਫਲੀਟ ਪ੍ਰਸ਼ਾਸਕ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ \'ਤੇ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲ ਸਕਦਾ ਅਤੇ ਸਾਫ਼ਟਵੇਅਰ ਸਥਾਪਤ ਕਰ ਸਕਦਾ ਹੈ।\n\nਹੋਰ ਵੇਰਵਿਆਂ ਲਈ, ਆਪਣੇ ਫਲੀਟ ਦੇ ਪ੍ਰਸ਼ਾਸਕ ਨੂੰ ਸੰਪਰਕ ਕਰੋ।"</string>
     <string name="enterprise_privacy_exposure_category" msgid="4870494030035008520">"ਉਹ ਜਾਣਕਾਰੀ ਜਿਸਨੂੰ ਤੁਹਾਡਾ ਫਲੀਟ ਦੇ ਪ੍ਰਸ਼ਾਸਕ ਦੇਖ ਸਕਦਾ ਹੈ"</string>
     <string name="enterprise_privacy_exposure_changes_category" msgid="8837106430193547177">"ਤੁਹਾਡੇ ਫਲੀਟ ਦੇ ਪ੍ਰਸ਼ਾਸਕ ਵੱਲੋਂ ਕੀਤੀਆਂ ਗਈਆਂ ਤਬਦੀਲੀਆਂ"</string>
     <string name="enterprise_privacy_exposure_desc" msgid="7962571201715956427">" "<li>"ਤੁਹਾਡੇ ਪ੍ਰਬੰਧਿਤ ਵਾਹਨ ਖਾਤੇ ਨਲ ਸੰਬੰਧਿਤ ਡਾਟਾ"</li>\n" "<li>"ਤੁਹਾਡੇ ਪ੍ਰਬੰਧਿਤ ਵਾਹਨ \'ਤੇ ਸਥਾਪਤ ਕੀਤੀਆਂ ਐਪਾਂ ਦੀ ਸੂਚੀ"</li>\n" "<li>"ਹਰੇਕ ਐਪ ਵਿੱਚ ਲਗਾਇਆ ਗਿਆ ਸਮਾਂ ਅਤੇ ਵਰਤਿਆ ਗਿਆ ਡਾਟਾ"</li></string>
-    <string name="enterprise_privacy_device_access_category" msgid="5820180227429886857">"ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਤੱਕ ਤੁਹਾਡੀ ਪਹੁੰਚ"</string>
+    <string name="enterprise_privacy_device_access_category" msgid="5820180227429886857">"ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਤੱਕ ਤੁਹਾਡੀ ਪਹੁੰਚ"</string>
     <string name="enterprise_privacy_installed_packages" msgid="1069862734971848156">"ਤੁਹਾਡੇ ਵਾਹਨ \'ਤੇ ਸਥਾਪਤ ਕੀਤੀਆਂ ਐਪਾਂ ਦੀ ਸੂਚੀ"</string>
     <string name="enterprise_privacy_apps_count_estimation_info" msgid="2684195229249659340">"ਐਪਾਂ ਦੀ ਗਿਣਤੀ ਅੰਦਾਜ਼ਨ ਹੈ। ਸ਼ਾਇਦ ਇਸ ਵਿੱਚ Play Store ਤੋਂ ਬਾਹਰੋਂ ਸਥਾਪਤ ਕੀਤੀਆਂ ਐਪਾਂ ਸ਼ਾਮਲ ਨਾ ਹੋਣ।"</string>
     <plurals name="enterprise_privacy_number_packages_lower_bound" formatted="false" msgid="1628398874478431488">
@@ -814,8 +853,8 @@
     <string name="enterprise_privacy_input_method_name" msgid="2027313786295077607">"<xliff:g id="APP_LABEL">%s</xliff:g> \'ਤੇ ਸੈੱਟ ਕਰੋ"</string>
     <string name="enterprise_privacy_global_http_proxy" msgid="1366593928008294049">"ਗਲੋਬਲ HTTP ਪ੍ਰੌਕਸੀ ਸੈੱਟ ਕੀਤੀ ਗਈ"</string>
     <string name="enterprise_privacy_ca_certs_personal" msgid="5677098981429650665">"ਤੁਹਾਡੇ ਨਿੱਜੀ ਪ੍ਰੋਫਾਈਲ ਵਿੱਚ ਭਰੋਸੇਯੋਗ ਕ੍ਰੀਡੈਂਸ਼ੀਅਲ"</string>
-    <string name="enterprise_privacy_device_access_desc" msgid="3442555102576036038">" "<li>"ਪ੍ਰਸ਼ਾਸਕ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਨੂੰ ਲਾਕ ਕਰ ਸਕਦਾ ਅਤੇ ਪਾਸਵਰਡ ਰੀਸੈੱਟ ਕਰ ਸਕਦਾ ਹੈ"</li>\n" "<li>"ਪ੍ਰਸ਼ਾਸਕ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਵਿਚਲੇ ਡਾਟੇ ਨੂੰ ਮਿਟਾ ਸਕਦਾ ਹੈ"</li></string>
-    <string name="enterprise_privacy_failed_password_wipe_device" msgid="4768743631260876559">"ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਦਾ ਸਾਰਾ ਡਾਟਾ ਮਿਟਾਏ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਪਾਸਵਰਡ ਦਾਖਲ ਕਰਨ ਦੀਆਂ ਅਸਫਲ ਕੋਸ਼ਿਸ਼ਾਂ ਦੀ ਗਿਣਤੀ"</string>
+    <string name="enterprise_privacy_device_access_desc" msgid="3442555102576036038">" "<li>"ਪ੍ਰਸ਼ਾਸਕ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਨੂੰ ਲਾਕ ਕਰ ਸਕਦਾ ਅਤੇ ਪਾਸਵਰਡ ਰੀਸੈੱਟ ਕਰ ਸਕਦਾ ਹੈ"</li>\n" "<li>"ਪ੍ਰਸ਼ਾਸਕ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਵਿਚਲੇ ਡਾਟੇ ਨੂੰ ਮਿਟਾ ਸਕਦਾ ਹੈ"</li></string>
+    <string name="enterprise_privacy_failed_password_wipe_device" msgid="4768743631260876559">"ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਦਾ ਸਾਰਾ ਡਾਟਾ ਮਿਟਾਏ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਪਾਸਵਰਡ ਦਾਖਲ ਕਰਨ ਦੀਆਂ ਅਸਫਲ ਕੋਸ਼ਿਸ਼ਾਂ ਦੀ ਗਿਣਤੀ"</string>
     <string name="enterprise_privacy_failed_password_wipe_current_user" msgid="786246192213446835">"ਪ੍ਰੋਫਾਈਲ ਡਾਟਾ ਮਿਟਾਏ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਪਾਸਵਰਡ ਦਾਖਲ ਕਰਨ ਦੀਆਂ ਅਸਫਲ ਕੋਸ਼ਿਸ਼ਾਂ ਦੀ ਗਿਣਤੀ"</string>
     <plurals name="enterprise_privacy_number_failed_password_wipe" formatted="false" msgid="445847844239023816">
       <item quantity="one"><xliff:g id="COUNT_1">%d</xliff:g> ਕੋਸ਼ਿਸ਼</item>
@@ -839,11 +878,11 @@
     <string name="sharing_remote_bugreport_dialog_message" msgid="7018120538510110940">"ਇਸ ਬੱਗ ਰਿਪੋਰਟ ਨੂੰ ਇਸ ਵਾਹਨ ਦੇ ਸੰਸਥਾ ਪ੍ਰਬੰਧਕ ਨਾਲ ਸਾਂਝਾ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ। ਹੋਰ ਵੇਰਵਿਆਂ ਲਈ ਉਨ੍ਹਾਂ ਨੂੰ ਸੰਪਰਕ ਕਰੋ।"</string>
     <string name="share_remote_bugreport_action" msgid="5364819432179581532">"ਸਾਂਝੀ ਕਰੋ"</string>
     <string name="decline_remote_bugreport_action" msgid="7287544934032744334">"ਅਸਵੀਕਾਰ ਕਰੋ"</string>
-    <string name="factory_reset_parked_title" msgid="4004694559766549441">"ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਨੂੰ ਰੀਸੈੱਟ ਕਰੋ"</string>
+    <string name="factory_reset_parked_title" msgid="4004694559766549441">"ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਨੂੰ ਰੀਸੈੱਟ ਕਰੋ"</string>
     <string name="factory_reset_parked_text" msgid="1446768795193651311">"ਤੁਹਾਡੇ ਸਿਸਟਮ ਨੂੰ ਫੈਕਟਰੀ ਰੀਸੈੱਟ ਕਰਨ ਅਤੇ ਸਾਰੇ ਡਾਟੇ ਨੂੰ ਮਿਟਾਉਣ ਦੀ ਬੇਨਤੀ ਪ੍ਰਾਪਤ ਹੋਈ ਹੈ। ਤੁਸੀਂ ਇਸਨੂੰ ਹੁਣੇ ਰੀਸੈੱਟ ਕਰ ਸਕਦੇ ਹੋ, ਜਾਂ ਅਗਲੀ ਵਾਰ ਕਾਰ ਦੇ ਸ਼ੁਰੂ ਹੋਣ \'ਤੇ ਇਹ ਰੀਸੈੱਟ ਹੋ ਜਾਵੇਗਾ। ਉਸ ਤੋਂ ਬਾਅਦ ਤੁਸੀਂ ਨਵੇਂ ਪ੍ਰੋਫਾਈਲ ਦਾ ਸੈੱਟਅੱਪ ਕਰ ਸਕਦੇ ਹੋ।"</string>
     <string name="factory_reset_now_button" msgid="4461863686086129437">"ਹੁਣੇ ਰੀਸੈੱਟ ਕਰੋ"</string>
     <string name="factory_reset_later_button" msgid="2653125445148367016">"ਬਾਅਦ ਵਿੱਚ ਰੀਸੈੱਟ ਕਰੋ"</string>
-    <string name="factory_reset_later_text" msgid="6371031843489938419">"ਅਗਲੀ ਵਾਰ ਕਾਰ ਦੇ ਸ਼ੁਰੂ ਹੋਣ \'ਤੇ ਵਾਹਨ ਆਡੀਓ ਸਿਸਟਮ ਰੀਸੈੱਟ ਹੋਵੇਗਾ।"</string>
+    <string name="factory_reset_later_text" msgid="6371031843489938419">"ਅਗਲੀ ਵਾਰ ਕਾਰ ਦੇ ਸ਼ੁਰੂ ਹੋਣ \'ਤੇ ਇੰਫ਼ੋਟੇਨਮੈਂਟ ਸਿਸਟਮ ਰੀਸੈੱਟ ਹੋਵੇਗਾ।"</string>
     <string name="factory_reset_driving_text" msgid="6833832382688900191">"ਰੀਸੈੱਟ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਕਾਰ ਪਾਰਕ ਕੀਤੀ ਜਾਣੀ ਲਾਜ਼ਮੀ ਹੈ।"</string>
     <string name="power_component_disabled" msgid="7084144472096800457">"ਫ਼ਿਲਹਾਲ ਇਹ ਸੈਟਿੰਗ ਬਦਲੀ ਨਹੀਂ ਜਾ ਸਕਦੀ"</string>
     <string name="accessibility_settings_title" msgid="2615042088419230347">"ਪਹੁੰਚਯੋਗਤਾ"</string>
@@ -879,8 +918,11 @@
     <string name="camera_recently_accessed" msgid="8084100710444691977">"ਹਾਲ ਹੀ ਵਿੱਚ ਪਹੁੰਚ ਕੀਤੀ"</string>
     <string name="camera_no_recent_access" msgid="965105023454777859">"ਕੋਈ ਹਾਲੀਆ ਐਪ ਨਹੀਂ"</string>
     <string name="camera_app_permission_summary_camera_off" msgid="1437200903113016549">"0 ਐਪ ਕੋਲ ਪੁਹੰਚ ਹੈ"</string>
-    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{{total_count} ਵਿੱਚੋਂ # ਐਪ ਕੋਲ ਪੁਹੰਚ ਹੈ}one{{total_count} ਵਿੱਚੋਂ # ਐਪ ਕੋਲ ਪੁਹੰਚ ਹੈ}other{{total_count} ਵਿੱਚੋਂ # ਐਪਾਂ ਕੋਲ ਪੁਹੰਚ ਹੈ}}"</string>
+    <string name="camera_app_permission_summary_camera_on" msgid="7260565911222013361">"{count,plural, =1{{total_count} ਵਿੱਚੋਂ # ਐਪ ਕੋਲ ਪਹੁੰਚ ਹੈ}one{{total_count} ਵਿੱਚੋਂ # ਐਪ ਕੋਲ ਪਹੁੰਚ ਹੈ}other{{total_count} ਵਿੱਚੋਂ # ਐਪਾਂ ਕੋਲ ਪਹੁੰਚ ਹੈ}}"</string>
     <string name="camera_settings_recent_requests_title" msgid="2433698239374365206">"ਹਾਲ ਹੀ ਵਿੱਚ ਪਹੁੰਚ ਕੀਤੀ"</string>
     <string name="camera_settings_recent_requests_view_all_title" msgid="8590811106414244795">"ਸਭ ਦੇਖੋ"</string>
     <string name="camera_settings_loading_app_permission_stats" msgid="1402676190705491418">"ਲੋਡ ਹੋ ਰਹੀਆਂ ਹਨ…"</string>
+    <string name="data_subscription_explore_options" msgid="4089747156447849054">"ਪਲਾਨ ਦੇਖੋ"</string>
+    <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"ਤੁਹਾਡੇ ਇੰਟਰਨੈੱਟ ਪਲਾਨਾਂ ਦੀ ਮਿਆਦ ਲੰਘ ਗਈ ਹੈ"</string>
+    <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"ਪਲਾਨ ਦੇਖੋ"</string>
 </resources>

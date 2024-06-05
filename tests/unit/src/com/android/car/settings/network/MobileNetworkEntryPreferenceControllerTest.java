@@ -27,8 +27,10 @@ import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.withSettings;
@@ -36,6 +38,9 @@ import static org.mockito.Mockito.withSettings;
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkCapabilities;
 import android.net.Uri;
 import android.os.UserManager;
 import android.provider.Settings;
@@ -50,11 +55,12 @@ import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 
+import com.android.car.datasubscription.DataSubscription;
 import com.android.car.settings.R;
+import com.android.car.settings.common.ColoredTwoActionSwitchPreference;
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.PreferenceControllerTestUtil;
 import com.android.car.settings.testutils.TestLifecycleOwner;
-import com.android.car.ui.preference.CarUiTwoActionSwitchPreference;
 import com.android.dx.mockito.inline.extended.ExtendedMockito;
 import com.android.settingslib.utils.StringUtil;
 
@@ -79,7 +85,6 @@ public class MobileNetworkEntryPreferenceControllerTest {
 
     private Context mContext = spy(ApplicationProvider.getApplicationContext());
     private LifecycleOwner mLifecycleOwner;
-    private CarUiTwoActionSwitchPreference mPreference;
     private MobileNetworkEntryPreferenceController mPreferenceController;
     private CarUxRestrictions mCarUxRestrictions;
     private MockitoSession mSession;
@@ -91,9 +96,17 @@ public class MobileNetworkEntryPreferenceControllerTest {
     @Mock
     private SubscriptionManager mSubscriptionManager;
     @Mock
+    private ConnectivityManager mConnectivityManager;
+    @Mock
     private TelephonyManager mTelephonyManager;
     @Mock
+    private NetworkCapabilities mCapabilities;
+    @Mock
     private ContentResolver mMockContentResolver;
+    @Mock
+    private DataSubscription mDataSubscription;
+    @Mock
+    private ColoredTwoActionSwitchPreference mMockPreference;
 
     @Before
     @UiThreadTest
@@ -111,6 +124,7 @@ public class MobileNetworkEntryPreferenceControllerTest {
         // Because of the static mock of SubscriptionManager, Mockito thinks .from() is supposed to
         // return SubscriptionManager instead of TelephonyManager
         doReturn(mTelephonyManager).when(mContext).getSystemService(TelephonyManager.class);
+        doReturn(mConnectivityManager).when(mContext).getSystemService(ConnectivityManager.class);
         when(mContext.getContentResolver()).thenReturn(mMockContentResolver);
         ExtendedMockito.when(SubscriptionManager.getDefaultDataSubscriptionId())
                 .thenReturn(SUB_ID);
@@ -119,6 +133,12 @@ public class MobileNetworkEntryPreferenceControllerTest {
         when(mTelephonyManager.getSimCount()).thenReturn(1);
         when(mTelephonyManager.isDataEnabled()).thenReturn(true);
 
+        Network network = mock(Network.class);
+        when(mCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)).thenReturn(true);
+        when(mConnectivityManager.getNetworkCapabilities(network)).thenReturn(mCapabilities);
+        when(mConnectivityManager.getAllNetworks()).thenReturn(new Network[]{network});
+        when(mDataSubscription.isDataSubscriptionInactive()).thenReturn(false);
+
         when(mUserManager.isAdminUser()).thenReturn(true);
         when(mUserManager.hasUserRestriction(UserManager.DISALLOW_CONFIG_MOBILE_NETWORKS))
                 .thenReturn(false);
@@ -126,10 +146,12 @@ public class MobileNetworkEntryPreferenceControllerTest {
         mCarUxRestrictions = new CarUxRestrictions.Builder(/* reqOpt= */ true,
                 CarUxRestrictions.UX_RESTRICTIONS_BASELINE, /* timestamp= */ 0).build();
 
-        mPreference = new CarUiTwoActionSwitchPreference(mContext);
         mPreferenceController = new MobileNetworkEntryPreferenceController(mContext,
                 "key", mFragmentController, mCarUxRestrictions);
-        PreferenceControllerTestUtil.assignPreference(mPreferenceController, mPreference);
+
+        mPreferenceController.setSubscription(mDataSubscription);
+
+        PreferenceControllerTestUtil.assignPreference(mPreferenceController, mMockPreference);
     }
 
     @After
@@ -141,15 +163,18 @@ public class MobileNetworkEntryPreferenceControllerTest {
     }
 
     @Test
-    public void getAvailabilityStatus_noSim_unsupported() {
+    public void getAvailabilityStatus_noSim_noMobileNetwork_unsupported() {
         when(mTelephonyManager.getSimState()).thenReturn(TelephonyManager.SIM_STATE_ABSENT);
+        when(mCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)).thenReturn(false);
 
-        assertThat(mPreferenceController.getAvailabilityStatus()).isEqualTo(UNSUPPORTED_ON_DEVICE);
+        PreferenceControllerTestUtil.assertAvailability(
+                mPreferenceController.getAvailabilityStatus(), UNSUPPORTED_ON_DEVICE);
     }
 
     @Test
-    public void getAvailabilityStatus_noSim_unsupported_zoneWrite() {
+    public void getAvailabilityStatus_noSim_noMobileNetwork_unsupported_zoneWrite() {
         when(mTelephonyManager.getSimState()).thenReturn(TelephonyManager.SIM_STATE_ABSENT);
+        when(mCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)).thenReturn(false);
         mPreferenceController.setAvailabilityStatusForZone("write");
 
         PreferenceControllerTestUtil.assertAvailability(
@@ -157,8 +182,9 @@ public class MobileNetworkEntryPreferenceControllerTest {
     }
 
     @Test
-    public void getAvailabilityStatus_noSim_unsupported_zoneRead() {
+    public void getAvailabilityStatus_noSim_noMobileNetwork_unsupported_zoneRead() {
         when(mTelephonyManager.getSimState()).thenReturn(TelephonyManager.SIM_STATE_ABSENT);
+        when(mCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)).thenReturn(false);
         mPreferenceController.setAvailabilityStatusForZone("read");
 
         PreferenceControllerTestUtil.assertAvailability(
@@ -166,8 +192,9 @@ public class MobileNetworkEntryPreferenceControllerTest {
     }
 
     @Test
-    public void getAvailabilityStatus_noSim_unsupported_zoneHidden() {
+    public void getAvailabilityStatus_noSim_noMobileNetwork_unsupported_zoneHidden() {
         when(mTelephonyManager.getSimState()).thenReturn(TelephonyManager.SIM_STATE_ABSENT);
+        when(mCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)).thenReturn(false);
         mPreferenceController.setAvailabilityStatusForZone("hidden");
 
         PreferenceControllerTestUtil.assertAvailability(
@@ -178,7 +205,8 @@ public class MobileNetworkEntryPreferenceControllerTest {
     public void getAvailabilityStatus_notAdmin_disabledForUser() {
         when(mUserManager.isAdminUser()).thenReturn(false);
 
-        assertThat(mPreferenceController.getAvailabilityStatus()).isEqualTo(DISABLED_FOR_PROFILE);
+        PreferenceControllerTestUtil.assertAvailability(
+                mPreferenceController.getAvailabilityStatus(), DISABLED_FOR_PROFILE);
     }
 
     @Test
@@ -213,7 +241,8 @@ public class MobileNetworkEntryPreferenceControllerTest {
         when(mUserManager.hasUserRestriction(UserManager.DISALLOW_CONFIG_MOBILE_NETWORKS))
                 .thenReturn(true);
 
-        assertThat(mPreferenceController.getAvailabilityStatus()).isEqualTo(DISABLED_FOR_PROFILE);
+        PreferenceControllerTestUtil.assertAvailability(
+                mPreferenceController.getAvailabilityStatus(), DISABLED_FOR_PROFILE);
     }
 
     @Test
@@ -247,26 +276,42 @@ public class MobileNetworkEntryPreferenceControllerTest {
     }
 
     @Test
-    public void getAvailabilityStatus_hasMobileNetwork_isAdmin_noRestriction_available() {
+    public void getAvailabilityStatus_hasSim_hasMobileNetwork_isAdmin_noRestriction_available() {
+        PreferenceControllerTestUtil.assertAvailability(
+                mPreferenceController.getAvailabilityStatus(), AVAILABLE);
+    }
+
+    @Test
+    public void getAvailabilityStatus_noSim_hasMobileNetwork_isAdmin_noRestriction_available() {
+        when(mTelephonyManager.getSimState()).thenReturn(TelephonyManager.SIM_STATE_ABSENT);
+
         assertThat(mPreferenceController.getAvailabilityStatus()).isEqualTo(AVAILABLE);
     }
 
     @Test
-    public void getAvailabilityStatus_hasMobileNetwork_noRestriction_available_zoneWrite() {
+    public void getAvailabilityStatus_hasSim_noMobileNetwork_isAdmin_noRestriction_available() {
+        when(mCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)).thenReturn(false);
+
+        PreferenceControllerTestUtil.assertAvailability(
+                mPreferenceController.getAvailabilityStatus(), AVAILABLE);
+    }
+
+    @Test
+    public void getAvailabilityStatus_hasSim_hasMobileNetwork_noRestriction_available_zoneWrite() {
         mPreferenceController.setAvailabilityStatusForZone("write");
         PreferenceControllerTestUtil.assertAvailability(
                 mPreferenceController.getAvailabilityStatus(), AVAILABLE);
     }
 
     @Test
-    public void getAvailabilityStatus_hasMobileNetwork_noRestriction_available_zoneRead() {
+    public void getAvailabilityStatus_hasSim_hasMobileNetwork_noRestriction_available_zoneRead() {
         mPreferenceController.setAvailabilityStatusForZone("read");
         PreferenceControllerTestUtil.assertAvailability(
                 mPreferenceController.getAvailabilityStatus(), AVAILABLE_FOR_VIEWING);
     }
 
     @Test
-    public void getAvailabilityStatus_hasMobileNetwork_noRestriction_available_zoneHidden() {
+    public void getAvailabilityStatus_hasSim_hasMobileNetwork_noRestriction_available_zoneHidden() {
         mPreferenceController.setAvailabilityStatusForZone("hidden");
         PreferenceControllerTestUtil.assertAvailability(
                 mPreferenceController.getAvailabilityStatus(), CONDITIONALLY_UNAVAILABLE);
@@ -298,13 +343,6 @@ public class MobileNetworkEntryPreferenceControllerTest {
     }
 
     @Test
-    public void onCreate_noSubscriptions_disabled() {
-        mPreferenceController.onCreate(mLifecycleOwner);
-
-        assertThat(mPreference.isEnabled()).isFalse();
-    }
-
-    @Test
     public void onCreate_oneSim_enabled() {
         SubscriptionInfo info = createSubscriptionInfo(/* subId= */ 1,
                 /* simSlotIndex= */ 1, TEST_NETWORK_NAME);
@@ -313,7 +351,7 @@ public class MobileNetworkEntryPreferenceControllerTest {
 
         mPreferenceController.onCreate(mLifecycleOwner);
 
-        assertThat(mPreference.isEnabled()).isTrue();
+        verify(mMockPreference, times(2)).setEnabled(true);
     }
 
     @Test
@@ -324,8 +362,7 @@ public class MobileNetworkEntryPreferenceControllerTest {
         when(mSubscriptionManager.getSelectableSubscriptionInfoList()).thenReturn(selectable);
 
         mPreferenceController.onCreate(mLifecycleOwner);
-
-        assertThat(mPreference.getSummary()).isEqualTo(TEST_NETWORK_NAME);
+        verify(mMockPreference).setSummary(TEST_NETWORK_NAME);
     }
 
     @Test
@@ -338,8 +375,7 @@ public class MobileNetworkEntryPreferenceControllerTest {
 
         mPreferenceController.onCreate(mLifecycleOwner);
 
-        assertThat(mPreference.getSummary()).isEqualTo(
-                mContext.getString(R.string.mobile_network_state_off));
+        verify(mMockPreference).setSummary(mContext.getString(R.string.mobile_network_state_off));
     }
 
     @Test
@@ -353,7 +389,7 @@ public class MobileNetworkEntryPreferenceControllerTest {
 
         mPreferenceController.onCreate(mLifecycleOwner);
 
-        assertThat(mPreference.isEnabled()).isTrue();
+        verify(mMockPreference, times(2)).setEnabled(true);
     }
 
     @Test
@@ -367,7 +403,7 @@ public class MobileNetworkEntryPreferenceControllerTest {
 
         mPreferenceController.onCreate(mLifecycleOwner);
 
-        assertThat(mPreference.getSummary()).isEqualTo(StringUtil.getIcuPluralsString(mContext, 2,
+        verify(mMockPreference).setSummary(StringUtil.getIcuPluralsString(mContext, 2,
                 R.string.mobile_network_summary_count));
     }
 
@@ -375,7 +411,7 @@ public class MobileNetworkEntryPreferenceControllerTest {
     @UiThreadTest
     public void performClick_noSim_noFragmentStarted() {
         mPreferenceController.onCreate(mLifecycleOwner);
-        mPreference.performClick();
+        mPreferenceController.handlePreferenceClicked(mMockPreference);
 
         verify(mFragmentController, never()).launchFragment(
                 any(Fragment.class));
@@ -389,9 +425,8 @@ public class MobileNetworkEntryPreferenceControllerTest {
                 TEST_NETWORK_NAME);
         List<SubscriptionInfo> selectable = Lists.newArrayList(info);
         when(mSubscriptionManager.getSelectableSubscriptionInfoList()).thenReturn(selectable);
-
         mPreferenceController.onCreate(mLifecycleOwner);
-        mPreference.performClick();
+        mPreferenceController.handlePreferenceClicked(mMockPreference);
 
         ArgumentCaptor<MobileNetworkFragment> captor = ArgumentCaptor.forClass(
                 MobileNetworkFragment.class);
@@ -412,7 +447,7 @@ public class MobileNetworkEntryPreferenceControllerTest {
         when(mSubscriptionManager.getSelectableSubscriptionInfoList()).thenReturn(selectable);
 
         mPreferenceController.onCreate(mLifecycleOwner);
-        mPreference.performClick();
+        mPreferenceController.handlePreferenceClicked(mMockPreference);
 
         verify(mFragmentController).launchFragment(
                 any(MobileNetworkListFragment.class));
@@ -427,9 +462,10 @@ public class MobileNetworkEntryPreferenceControllerTest {
 
         when(mTelephonyManager.isDataEnabled()).thenReturn(false);
         mPreferenceController.onCreate(mLifecycleOwner);
-        assertThat(mPreference.isSecondaryActionChecked()).isFalse();
 
-        mPreference.performSecondaryActionClick();
+        verify(mMockPreference).setOnSecondaryActionClickListener(any());
+        verify(mMockPreference).setSecondaryActionChecked(false);
+        mPreferenceController.onSecondaryActionClick(true);
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
 
         verify(mTelephonyManager).setDataEnabled(true);
@@ -444,9 +480,10 @@ public class MobileNetworkEntryPreferenceControllerTest {
 
         when(mTelephonyManager.isDataEnabled()).thenReturn(true);
         mPreferenceController.onCreate(mLifecycleOwner);
-        assertThat(mPreference.isSecondaryActionChecked()).isTrue();
 
-        mPreference.performSecondaryActionClick();
+        verify(mMockPreference).setOnSecondaryActionClickListener(any());
+        verify(mMockPreference).setSecondaryActionChecked(true);
+        mPreferenceController.onSecondaryActionClick(false);
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
 
         verify(mTelephonyManager).setDataEnabled(false);

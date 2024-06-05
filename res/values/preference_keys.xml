@@ -29,6 +29,10 @@
     <string name="pk_wireless_extra_settings" translatable="false">wireless_extra_settings</string>
     <string name="pk_bluetooth_settings_entry" translatable="false">bluetooth_settings_entry
     </string>
+    <string name="pk_device_connection" translatable="false">device_connection_settings</string>
+    <string name="pk_bluetooth_extra_settings" translatable="false">bluetooth_extra_settings
+    </string>
+    <string name="pk_uwb_key" translatable="false">uwb_setting</string>
     <string name="pk_location_settings_entry" translatable="false">location_settings_entry</string>
     <string name="pk_notifications_settings_entry" translatable="false">
         notifications_settings_entry
@@ -97,11 +101,12 @@
     </string>
     <string name="pk_wifi_tether_security" translatable="false">wifi_tether_security</string>
     <string name="pk_wifi_tether_ap_band" translatable="false">wifi_tether_ap_band</string>
-    <string name="pk_wifi_tether_auto_off" translatable="false">wifi_tether_auto_off</string>
+    <string name="pk_wifi_tether_keep_on" translatable="false">wifi_tether_keep_on</string>
     <string name="pk_wifi_tether_password" translatable="false">wifi_tether_password</string>
     <string name="pk_wifi_tether_name" translatable="false">wifi_tether_name</string>
     <string name="pk_wifi_tether_state_switch" translatable="false">wifi_tether_state_switch
     </string>
+    <string name="pk_wifi_tether_qr_code" translatable="false">wifi_tether_qr_code</string>
 
     <!-- WIFI -->
     <string name="pk_wifi_settings_entry" translatable="false">wifi_settings_entry</string>
@@ -134,7 +139,7 @@
     <string name="pk_limited_wifi_list" translatable="false">limited_wifi_list</string>
 
     <!-- Bluetooth -->
-    <string name="pk_bluetooth_paired_devices" translatable="false">bluetooth_paired_devicesd
+    <string name="pk_bluetooth_paired_devices" translatable="false">bluetooth_paired_devices
     </string>
     <string name="pk_bluetooth_pair_new_device" translatable="false">bluetooth_pair_new_device
     </string>
@@ -190,6 +195,7 @@
     <string name="pk_application_details_action_buttons" translatable="false">
         application_details_action_buttons
     </string>
+    <string name="pk_all_services_settings" translatable="false">all_services_settings</string>
     <string name="pk_application_details_notifications" translatable="false">
         application_details_notifications
     </string>
@@ -252,6 +258,13 @@
     </string>
 
     <!-- Special App Access Settings -->
+    <string name="pk_alarms_and_reminders_entry" translatable="false">
+        alarms_and_reminders_entry
+    </string>
+    <string name="pk_alarms_and_reminders" translatable="false">alarms_and_reminders</string>
+    <string name="pk_alarms_and_reminders_description" translatable="false">
+        pk_alarms_and_reminders_description
+    </string>
     <string name="pk_modify_system_settings_entry" translatable="false">
         modify_system_settings_entry
     </string>
@@ -311,6 +324,40 @@
     <string name="pk_mute_mic_switch" translatable="false">privacy_mute_mic</string>
     <string name="pk_vehicle_data" translatable="false">vehicle_data</string>
     <string name="pk_vehicle_data_delete_profile" translatable="false">vehicle_data_delete_profile</string>
+    <string name="pk_microphone_access" translatable="false">microphone_access</string>
+    <string name="pk_microphone_access_fragment" translatable="false">microphone_access_fragment</string>
+    <string name="pk_microphone_infotainment_apps_switch" translatable="false">
+        microphone_infotainment_apps_switch
+    </string>
+    <string name="pk_microphone_infotainment_apps_list" translatable="false">
+        microphone_infotainment_apps_list
+    </string>
+    <string name="pk_camera_access" translatable="false">camera_access</string>
+    <string name="pk_camera_access_fragment" translatable="false">camera_access_fragment</string>
+    <string name="pk_camera_required_apps_list" translatable="false">
+        camera_required_apps_list
+    </string>
+    <string name="pk_camera_required_apps_group" translatable="false">
+        camera_required_apps_group
+    </string>
+    <string name="pk_camera_access_disclaimer" translatable="false">
+        camera_access_disclaimer
+    </string>
+    <string name="pk_camera_infotainment_apps_group" translatable="false">
+        camera_infotainment_apps_group
+    </string>
+    <string name="pk_camera_infotainment_apps_switch" translatable="false">
+        camera_infotainment_apps_switch
+    </string>
+    <string name="pk_camera_infotainment_apps_list" translatable="false">
+        camera_infotainment_apps_list
+    </string>
+    <string name="pk_camera_required_apps_switch" translatable="false">
+        camera_required_apps_switch
+    </string>
+    <string name="pk_camera_required_apps_header" translatable="false">
+        camera_required_apps_header
+    </string>
 
     <!-- Storage -->
     <string name="pk_storage_music_audio" translatable="false">storage_music_audio</string>
@@ -350,6 +397,7 @@
     <string name="pk_adaptive_brightness_switch" translatable="false">adaptive_brightness_switch
     </string>
     <string name="pk_brightness_level" translatable="false">brightness_level</string>
+    <string name="pk_theme_toggle" translatable="false">theme_toggle</string>
     <string name="pk_display_extra_settings" translatable="false">display_extra_settings</string>
     <!-- DateTime Settings -->
     <string name="pk_auto_datetime_switch" translatable="false">auto_datetime_switch</string>
@@ -363,6 +411,7 @@
     <string name="pk_timezone_picker_screen" translatable="false">timezone_picker_screen</string>
 
     <!-- Sound Settings -->
+    <string name="pk_audio_destination" translatable="false">audio_destination</string>
     <string name="pk_volume_settings" translatable="false">volume_settings</string>
     <string name="pk_default_ringtone" translatable="false">default_ringtone</string>
     <string name="pk_default_notification" translatable="false">default_notification</string>
@@ -390,20 +439,30 @@
     <string name="pk_location_app_permissions" translatable="false">location_app_permissions
     </string>
     <string name="pk_location_services" translatable="false">location_services</string>
-    <string name="pk_location_footer" translatable="false">location_footer</string>
     <string name="pk_location_state_switch" translatable="false">location_state_switch</string>
-    <string name="pk_location_driver_assistance_state_switch" translatable="false">
-        driver_assistance_state_switch
+    <string name="pk_adas_location_state_switch" translatable="false">
+        adas_location_state_switch
     </string>
     <string name="pk_location_divider" translatable="false">location_divider</string>
-    <string name="pk_location_driver_assistance_preference_group" translatable="false">
-        driver_assistance_preference_group
-    </string>
     <string name="pk_location_driver_assistance_privacy_policy_group" translatable="false">
-        driver_assistance_privacy_policy_group
+        location_driver_assistance_privacy_policy_group
     </string>
-    <string name="pk_location_driver_assistance_privacy_policy_header" translatable="false">
-        driver_assistanceprivacy_policy_header
+    <string name="pk_location_adas_apps_list" translatable="false">
+        location_adas_apps_list
+    </string>
+    <string name="pk_location_access_fragment" translatable="false">
+        location_access_fragment
+    </string>
+    <string name="pk_location_access" translatable="false">location_access</string>
+    <string name="pk_location_adas_app_info" translatable="false">location_adas_app_info</string>
+    <string name="pk_location_access_disclaimer" translatable="false">
+        location_access_disclaimer
+    </string>
+    <string name="pk_location_required_apps_group" translatable="false">
+        location_required_apps_group
+    </string>
+    <string name="pk_location_infotainment_apps_group" translatable="false">
+        location_infotainment_apps_group
     </string>
 
     <!-- Microphone Settings -->
