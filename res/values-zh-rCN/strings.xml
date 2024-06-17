@@ -653,7 +653,7 @@
     <string name="camera_access_radio_helpful_apps_title" msgid="2798745588985580019">"提供辅助驾驶功能的应用"</string>
     <string name="camera_access_radio_helpful_apps_summary" msgid="2152605965038188293">"提供辅助驾驶功能（例如在停车时显示周遭环境影像）的应用"</string>
     <string name="camera_access_radio_required_apps_title" msgid="6742441427451523208">"仅限必需的应用"</string>
-    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"仅限汽车制造商要求的应用"</string>
+    <string name="camera_access_radio_required_apps_summary" msgid="6514325511542932602">"仅限汽车制造商所需的应用"</string>
     <string name="camera_access_radio_helpful_required_apps_title" msgid="631591123648468495">"提供辅助驾驶功能的应用"</string>
     <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"提供辅助驾驶功能（例如在停车时显示周遭环境影像）的应用以及必需的应用"</string>
     <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"提供辅助驾驶功能的应用"</string>
