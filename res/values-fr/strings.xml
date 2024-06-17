@@ -160,6 +160,8 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Bande 5 GHz de préférence"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5 GHz"</string>
+    <!-- no translation found for wifi_ap_2G_5G (5526758464441623079) -->
+    <skip />
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Sélectionnez au moins une bande pour le point d\'accès Wi-Fi :"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Point d\'accès Wi‑Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Point d\'accès"</string>
@@ -429,8 +431,6 @@
     <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"Ce paramètre ne peut pas être modifié et a été désactivé par votre constructeur automobile."</string>
     <string name="adas_location_toggle_title" msgid="6131739109988811006">"Fonctionnalités d\'aide à la conduite"</string>
     <string name="adas_location_toggle_summary" msgid="7055141074159770928">"Autorisez les fonctionnalités intégrées, approuvées par le fabricant de votre voiture, à accéder à la position de celle-ci."</string>
-    <string name="location_required_apps_group_title" msgid="5672632286858280618">"Applis requises"</string>
-    <string name="location_required_apps_group_summary" msgid="5760731893677945737">"Applis requises par le fabricant de votre voiture pour vous aider à conduire."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"Accès récent(s)"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Accès récent(s)"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Tout afficher"</string>
@@ -660,17 +660,15 @@
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Accès à la caméra"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Choisir si les applis ont accès aux caméras de votre voiture"</string>
     <string name="required_apps_group_title" msgid="8607608579973985786">"Applis requises"</string>
-    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
-    <skip />
-    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
-    <skip />
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Applis requises par votre constructeur automobile pour vous aider à conduire"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Règles"</string>
     <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Votre constructeur automobile a peut-être encore accès à la caméra de votre véhicule"</string>
     <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Applis d\'infoloisirs"</string>
-    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Autorisez les applis d\'infoloisirs à prendre des photos et à enregistrer des vidéos"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Autoriser les applis d\'infoloisirs à prendre des photos et à enregistrer des vidéos"</string>
     <string name="permission_grant_allowed" msgid="4844649705788049638">"Autorisées"</string>
     <string name="permission_grant_always" msgid="8851460274973784076">"Tout le temps"</string>
     <string name="permission_grant_never" msgid="1357441946890127898">"Non autorisées"</string>
-    <string name="permission_grant_in_use" msgid="2314262542396732455">"Seulement quand l\'application fonctionne"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"Seulement si l\'appli est en cours d\'utilisation"</string>
     <string name="permission_grant_ask" msgid="1613256400438907973">"Toujours demander"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"Sécurité"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"Verrouillage d\'écran"</string>
@@ -929,4 +927,6 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"Afficher les forfaits"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Vos forfaits Internet ont expiré"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Afficher les forfaits"</string>
+    <!-- no translation found for audio_route_dialog_neutral_button_text (3303313405283478327) -->
+    <skip />
 </resources>

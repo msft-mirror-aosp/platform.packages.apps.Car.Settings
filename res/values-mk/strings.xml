@@ -160,6 +160,8 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Претпочитан опсег: 5,0 GHz"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
+    <!-- no translation found for wifi_ap_2G_5G (5526758464441623079) -->
+    <skip />
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Избери барем еден појас:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Точка на пристап за Wi‑Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Точка на пристап"</string>
@@ -429,8 +431,6 @@
     <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"Поставкава не може да се промени, а ја оневозможил производителот на вашиот автомобил."</string>
     <string name="adas_location_toggle_title" msgid="6131739109988811006">"Функции што ви помагаат при возењето"</string>
     <string name="adas_location_toggle_summary" msgid="7055141074159770928">"Дозволете вградените функции, одобрени од производителот на возилото, да пристапуваат до локацијата на вашиот автомобил."</string>
-    <string name="location_required_apps_group_title" msgid="5672632286858280618">"Задолжителни апликации"</string>
-    <string name="location_required_apps_group_summary" msgid="5760731893677945737">"Апликации што ги бара производителот на вашиот автомобил за да ви помогне при возењето."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"Неодамна пристапени"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Неодамна пристапени"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Прикажи ги сите"</string>
@@ -440,7 +440,7 @@
     <string name="location_driver_assistance_privacy_policy_button_text" msgid="1092702462617222722">"Правило"</string>
     <string name="location_settings_app_permissions_title" msgid="6446735313354321564">"Дозволи на ниво на апликација"</string>
     <string name="location_settings_app_permissions_summary" msgid="87851720569447224">"Управувајте со поединечните дозволи за апликациите"</string>
-    <string name="location_settings_services_title" msgid="1186133632690970468">"Услуги според локација"</string>
+    <string name="location_settings_services_title" msgid="1186133632690970468">"Локациски услуги"</string>
     <string name="location_use_location_title" msgid="117735895374606680">"Користи ја локацијата"</string>
     <string name="location_access_settings_title" msgid="2378398106582207440">"Пристап до локацијата"</string>
     <string name="location_access_settings_summary" msgid="7676354917209152932">"Одредете дали апликациите може да пристапуваат до локацијата на вашиот автомобил"</string>
@@ -660,13 +660,11 @@
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Пристап до камерата"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Изберете дали апликациите може да пристапуваат до камерите на вашиот автомобил"</string>
     <string name="required_apps_group_title" msgid="8607608579973985786">"Задолжителни апликации"</string>
-    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
-    <skip />
-    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
-    <skip />
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Апликации што ги бара производителот на вашиот автомобил за да ви помагаат при возење"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Политика"</string>
     <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Производителот на вашиот автомобил можеби сѐ уште има пристап до камерата на автомобилот"</string>
     <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Апликации за информации и забава"</string>
-    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Дозволи апликациите за информации и забава да фотографираат и снимаат видео"</string>
+    <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Дозволете им на апликациите за информации и забава да снимаат фотографии и видеа"</string>
     <string name="permission_grant_allowed" msgid="4844649705788049638">"Дозволено"</string>
     <string name="permission_grant_always" msgid="8851460274973784076">"Цело време"</string>
     <string name="permission_grant_never" msgid="1357441946890127898">"Не е дозволено"</string>
@@ -929,4 +927,6 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"Погледнете ги пакетите"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Вашите интернет-пакети се истечени"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Погледнете ги пакетите"</string>
+    <!-- no translation found for audio_route_dialog_neutral_button_text (3303313405283478327) -->
+    <skip />
 </resources>
