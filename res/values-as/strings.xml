@@ -160,6 +160,7 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"৫.০ গিগাহাৰ্টজ বেণ্ডক অগ্ৰাধিকাৰ দিয়া হৈছে"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"২.৪ গিগাহাৰ্টজ"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"৫.০ গিগাহাৰ্টজ"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"২.৪ আৰু ৫.০ GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"ৱাই-ফাই হটস্পটৰ বাবে কমেও এটা বেণ্ড বাছনি কৰক:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"ৱাই-ফাই হটস্পট"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"হটস্পট"</string>
@@ -429,8 +430,6 @@
     <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"এই ছেটিংটো সলনি কৰিব নোৱাৰি আৰু সেইটো আপোনাৰ কাৰ নিৰ্মাতাই অক্ষম কৰিছে।"</string>
     <string name="adas_location_toggle_title" msgid="6131739109988811006">"আপোনাক গাড়ী চলোৱাত সহায় কৰা সুবিধাসমূহ"</string>
     <string name="adas_location_toggle_summary" msgid="7055141074159770928">"আপোনাৰ গাড়ী নিৰ্মাতাই অনুমোদন জনোৱা বিল্ট-ইন সুবিধাসমূহক আপোনাৰ গাড়ীৰ অৱস্থান এক্সেছ কৰিবলৈ অনুমতি দিয়ক।"</string>
-    <string name="location_required_apps_group_title" msgid="5672632286858280618">"আৱশ্যকীয় এপ্‌সমূহ"</string>
-    <string name="location_required_apps_group_summary" msgid="5760731893677945737">"গাড়ী চলোৱাত সহায় কৰিবলৈ আপোনাৰ গাড়ী নিৰ্মাতাৰ বাবে আৱশ্যকীয় এপ্‌সমূহ।"</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"শেহতীয়াকৈ এক্সেছ কৰা"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"শেহতীয়াকৈ এক্সেছ কৰা"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"আটাইবোৰ চাওক"</string>
@@ -653,28 +652,22 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"আপোনাৰ প্ৰ’ফাইলটো মচক"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"ইনফ’টেইনমেণ্ট ছিষ্টেমটোৰ পৰা আপোনাৰ প্ৰ’ফাইল আৰু একাউণ্ট মচক"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"আপোনাৰ প্ৰ’ফাইলত এই কাৰ্যটো উপলব্ধ নহয়"</string>
-    <!-- no translation found for microphone_access_settings_title (6748613084403267254) -->
-    <skip />
-    <!-- no translation found for microphone_access_settings_summary (3531690421673836538) -->
-    <skip />
-    <!-- no translation found for microphone_infotainment_apps_toggle_title (6625559365680936672) -->
-    <skip />
-    <!-- no translation found for microphone_infotainment_apps_toggle_summary (5967713909533492475) -->
-    <skip />
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"মাইক্ৰ’ফ’নৰ এক্সেছ"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"এপ্‌সমূহে আপোনাৰ গাড়ীৰ মাইক্ৰ’ফ’ন এক্সেছ কৰিব পাৰেনে নোৱাৰে সেয়া বাছনি কৰক"</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"ইনফ’টেইনমেণ্ট এপ্‌সমূহ"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"ইনফ’টেইনমেণ্ট এপ্‌সমূহক অডিঅ’ ৰেকৰ্ড কৰিবলৈ অনুমতি দিয়ক"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"কেমেৰাৰ এক্সেছ"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"এপ্‌সমূহে আপোনাৰ গাড়ীৰ কেমেৰা এক্সেছ কৰিব পাৰেনে নোৱাৰে সেয়া বাছনি কৰক"</string>
     <string name="required_apps_group_title" msgid="8607608579973985786">"আৱশ্যকীয় এপ্‌সমূহ"</string>
-    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
-    <skip />
-    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
-    <skip />
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"আপুনি গাড়ী চলোৱাৰ সময়ত সহায় কৰিবলৈ আপোনাৰ গাড়ী নিৰ্মাতাৰ বাবে আৱশ্যকীয় এপ্‌সমূহ"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"নীতি"</string>
     <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"আপোনাৰ গাড়ীৰ নিৰ্মাতাৰ ওচৰত এতিয়াও আপোনাৰ গাড়ীৰ কেমেৰাৰ এক্সেছ থাকিব পাৰে"</string>
     <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"ইনফ’টেইনমেণ্ট এপ্‌সমূহ"</string>
     <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"ইনফ’টেইনমেণ্ট এপ্‌সমূহক ফট’ তুলিবলৈ আৰু ভিডিঅ’ ৰেকৰ্ড কৰিবলৈ অনুমতি দিয়ক"</string>
     <string name="permission_grant_allowed" msgid="4844649705788049638">"অনুমতি দিয়া হৈছে"</string>
     <string name="permission_grant_always" msgid="8851460274973784076">"সকলো সময়তে"</string>
     <string name="permission_grant_never" msgid="1357441946890127898">"অনুমতি নাই"</string>
-    <string name="permission_grant_in_use" msgid="2314262542396732455">"কেবল এপ্‌টো ব্যৱহাৰ কৰি থকাৰ সময়ত"</string>
+    <string name="permission_grant_in_use" msgid="2314262542396732455">"কেৱল এপ্‌টো ব্যৱহাৰ কৰি থকাৰ সময়ত"</string>
     <string name="permission_grant_ask" msgid="1613256400438907973">"প্ৰতিবাৰতে সোধক"</string>
     <string name="security_settings_title" msgid="6955331714774709746">"সুৰক্ষা"</string>
     <string name="security_settings_subtitle" msgid="2244635550239273229">"স্ক্ৰীন লক"</string>
@@ -933,4 +926,5 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"আঁচনি চাওক"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"আপোনাৰ ইণ্টাৰনেটৰ আঁচনিৰ ম্যাদ উকলিছে"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"আঁচনি চাওক"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"কৰা হ’ল"</string>
 </resources>
