@@ -1253,7 +1253,7 @@
     <!-- Date & time setting screen setting option title [CHAR LIMIT=30] -->
     <string name="date_time_set_time_title">Time</string>
     <!-- Date & time setting screen setting option title -->
-    <string name="date_time_set_time">Set time</string>
+    <string name="date_time_set_time">Set clock</string>
     <!-- Date & time setting screen setting option title [CHAR LIMIT=30] -->
     <string name="date_time_set_timezone_title">Time zone</string>
     <!-- Date & time setting screen setting option title -->
