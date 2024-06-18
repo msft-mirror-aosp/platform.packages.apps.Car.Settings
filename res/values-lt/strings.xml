@@ -160,6 +160,7 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Pageidaujama 5,0 GHz dažnio juosta"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 ir 5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Pasir. bent 1 „Wi‑Fi“ vieš. int. prieig. tšk. dažn. juostą:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"„Wi-Fi“ viešosios interneto prieigos taškas"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Viešosios interneto prieigos taškas"</string>
@@ -429,8 +430,6 @@
     <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"Šio nustatymo keisti negalima ir jį išjungė jūsų automobilio gamintojas."</string>
     <string name="adas_location_toggle_title" msgid="6131739109988811006">"Funkcijos, padedančios vairuoti"</string>
     <string name="adas_location_toggle_summary" msgid="7055141074159770928">"Leiskite įtaisytosioms funkcijoms, patvirtintoms automobilio gamintojo, pasiekti automobilio vietovės informaciją."</string>
-    <string name="location_required_apps_group_title" msgid="5672632286858280618">"Būtinos programos"</string>
-    <string name="location_required_apps_group_summary" msgid="5760731893677945737">"Automobilio gamintojo reikalaujamos programos, kad būtų galima padėti vairuojant."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"Neseniai pasiekta"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Neseniai pasiekta"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Žr. viską"</string>
@@ -660,10 +659,8 @@
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Prieiga prie vaizdo kameros"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Pasirinkite, ar programos gali pasiekti automobilio vaizdo kameras"</string>
     <string name="required_apps_group_title" msgid="8607608579973985786">"Būtinos programos"</string>
-    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
-    <skip />
-    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
-    <skip />
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Automobilio gamintojo reikalaujamos programos, kad būtų galima padėti vairuojant"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Politika"</string>
     <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Automobilio gamintojui vis dar gali būti suteikta prieiga prie jūsų automobilio vaizdo kameros"</string>
     <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Informacinės pramoginės sist. programos"</string>
     <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Leisti informacinės pramoginės sistemos programoms fotografuoti ir įrašyti vaizdo įrašus"</string>
@@ -941,4 +938,5 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"Peržiūrėti planus"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Jūsų interneto planas nebegalioja"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Peržiūrėti planus"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Atlikta"</string>
 </resources>
