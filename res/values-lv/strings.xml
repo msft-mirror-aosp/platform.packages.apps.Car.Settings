@@ -160,6 +160,8 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Ieteicama 5,0 GHz josla"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
+    <!-- no translation found for wifi_ap_2G_5G (5526758464441623079) -->
+    <skip />
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Izvēlieties vismaz 1 joslu Wi‑Fi tīklājam:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi-Fi tīklājs"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Tīklājs"</string>
@@ -429,8 +431,6 @@
     <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"Šo iestatījumu nevar mainīt, un automašīnas ražotājs to ir atspējojis."</string>
     <string name="adas_location_toggle_title" msgid="6131739109988811006">"Autovadīšanas palīdzības funkcijas"</string>
     <string name="adas_location_toggle_summary" msgid="7055141074159770928">"Atļaujiet iebūvētajām funkcijām, ko apstiprinājis automašīnas ražotājs, piekļūt jūsu automašīnas atrašanās vietas datiem."</string>
-    <string name="location_required_apps_group_title" msgid="5672632286858280618">"Obligātās lietotnes"</string>
-    <string name="location_required_apps_group_summary" msgid="5760731893677945737">"Autovadīšanas atbalsta lietotnes, ko automašīnas ražotājs ir noteicis kā obligātas."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"Atrašanās vietas, kam nesen piekļūts"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Atrašanās vietas, kam nesen piekļūts"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Skatīt visas"</string>
@@ -653,21 +653,15 @@
     <string name="vehicle_data_delete_user_title" msgid="9132472153739085346">"Dzēst jūsu profilu"</string>
     <string name="vehicle_data_delete_user_summary" msgid="5900205773710111394">"Dzēst jūsu profilu un kontus no informatīvi izklaidējošās sistēmas"</string>
     <string name="action_unavailable" msgid="7087119418684417249">"Šī darbība nav pieejama jūsu profilam."</string>
-    <!-- no translation found for microphone_access_settings_title (6748613084403267254) -->
-    <skip />
-    <!-- no translation found for microphone_access_settings_summary (3531690421673836538) -->
-    <skip />
-    <!-- no translation found for microphone_infotainment_apps_toggle_title (6625559365680936672) -->
-    <skip />
-    <!-- no translation found for microphone_infotainment_apps_toggle_summary (5967713909533492475) -->
-    <skip />
+    <string name="microphone_access_settings_title" msgid="6748613084403267254">"Piekļuve mikrofonam"</string>
+    <string name="microphone_access_settings_summary" msgid="3531690421673836538">"Izvēlieties, vai lietotnes var piekļūt jūsu automašīnas mikrofoniem."</string>
+    <string name="microphone_infotainment_apps_toggle_title" msgid="6625559365680936672">"Inform. izklaidējošās sistēmas lietotnes"</string>
+    <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"Atļaujiet informatīvi izklaidējošās sistēmas lietotnēm ierakstīt audio."</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Piekļuve kamerām"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Izvēlieties, vai lietotnes var piekļūt jūsu automašīnas kamerām."</string>
     <string name="required_apps_group_title" msgid="8607608579973985786">"Obligātās lietotnes"</string>
-    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
-    <skip />
-    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
-    <skip />
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"Autovadīšanas palīdzības lietotnes, ko jūsu automašīnas ražotājs ir noteicis kā obligātas."</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Politika"</string>
     <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Automašīnas ražotājam joprojām var būt piekļuve jūsu automašīnas kamerai."</string>
     <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"Inform. izklaidējošās sistēmas lietotnes"</string>
     <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Atļaut informatīvi izklaidējošās sistēmas lietotnēm uzņemt attēlus un ierakstīt videoklipus"</string>
@@ -939,4 +933,6 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"Skatīt plānus"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Beidzies jūsu interneta plānu derīguma termiņš"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Skatīt plānus"</string>
+    <!-- no translation found for audio_route_dialog_neutral_button_text (3303313405283478327) -->
+    <skip />
 </resources>
