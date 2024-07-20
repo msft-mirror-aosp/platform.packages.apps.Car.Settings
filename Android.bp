@@ -46,6 +46,8 @@ android_library {
         "car-admin-ui-lib",
         "car-helper-lib",
         "car-qc-lib",
+        "car-data-subscription-lib",
+        "car-resource-common",
     ],
 
     libs: [
@@ -127,6 +129,7 @@ android_app {
         "car-admin-ui-lib",
         "car-helper-lib",
         "car-qc-lib",
+        "car-data-subscription-lib",
     ],
 
     // Testing only resources must be applied last so they take precedence.
@@ -191,6 +194,7 @@ android_library {
         "car-admin-ui-lib",
         "car-helper-lib",
         "car-qc-lib",
+        "car-data-subscription-lib",
     ],
 
     // Testing only resources must be applied last so they take precedence.
