@@ -38,10 +38,8 @@ import org.junit.runner.RunWith;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
 import org.robolectric.android.controller.ActivityController;
-import org.robolectric.annotation.Config;
 
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowCarWifiManager.class})
 public class WifiRequestToggleActivityTest {
 
     private static final String PACKAGE_NAME = "com.android.vending";

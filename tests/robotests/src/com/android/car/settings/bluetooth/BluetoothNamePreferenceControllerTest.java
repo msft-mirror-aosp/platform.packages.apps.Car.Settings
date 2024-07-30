@@ -37,7 +37,6 @@ import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.common.PreferenceControllerTestHelper;
 import com.android.car.settings.testutils.ShadowBluetoothAdapter;
-import com.android.car.settings.testutils.ShadowBluetoothPan;
 
 import org.junit.After;
 import org.junit.Before;
@@ -46,13 +45,11 @@ import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadow.api.Shadow;
 import org.robolectric.shadows.ShadowUserManager;
 
 /** Unit test for {@link BluetoothNamePreferenceController}. */
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowBluetoothAdapter.class, ShadowBluetoothPan.class})
 public class BluetoothNamePreferenceControllerTest {
 
     private static final String NAME = "name";

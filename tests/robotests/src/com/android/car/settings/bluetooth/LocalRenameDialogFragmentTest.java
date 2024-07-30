@@ -41,13 +41,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadow.api.Shadow;
 import org.robolectric.shadows.ShadowDialog;
 
 /** Unit test for {@link LocalRenameDialogFragment}. */
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowBluetoothAdapter.class})
 public class LocalRenameDialogFragmentTest {
 
     private static final String NAME = "name";

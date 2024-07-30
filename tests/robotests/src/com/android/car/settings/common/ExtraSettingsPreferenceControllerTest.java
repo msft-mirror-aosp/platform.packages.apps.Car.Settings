@@ -40,14 +40,12 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /** Unit test for {@link ExtraSettingsPreferenceController}. */
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowApplicationPackageManager.class})
 public class ExtraSettingsPreferenceControllerTest {
 
     private static final Intent FAKE_INTENT = new Intent();

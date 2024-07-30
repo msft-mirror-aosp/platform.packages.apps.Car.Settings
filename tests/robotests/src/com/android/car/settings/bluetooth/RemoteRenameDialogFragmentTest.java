@@ -33,7 +33,6 @@ import androidx.test.runner.AndroidJUnit4;
 import com.android.car.settings.R;
 import com.android.car.settings.testutils.BaseTestActivity;
 import com.android.car.settings.testutils.ShadowBluetoothAdapter;
-import com.android.car.settings.testutils.ShadowBluetoothPan;
 import com.android.car.ui.CarUiLayoutInflaterFactory;
 import com.android.settingslib.bluetooth.CachedBluetoothDevice;
 import com.android.settingslib.bluetooth.CachedBluetoothDeviceManager;
@@ -47,13 +46,11 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowDialog;
 import org.robolectric.util.ReflectionHelpers;
 
 /** Unit test for {@link RemoteRenameDialogFragment}. */
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowBluetoothAdapter.class, ShadowBluetoothPan.class})
 public class RemoteRenameDialogFragmentTest {
 
     private static final String NAME = "name";

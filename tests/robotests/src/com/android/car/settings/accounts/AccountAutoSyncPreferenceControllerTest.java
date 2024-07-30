@@ -35,18 +35,15 @@ import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.common.ConfirmationDialogFragment;
 import com.android.car.settings.common.PreferenceControllerTestHelper;
-import com.android.car.settings.testutils.ShadowContentResolver;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 /** Unit tests for {@link AccountAutoSyncPreferenceController}. */
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowContentResolver.class})
 public class AccountAutoSyncPreferenceControllerTest {
     private final int mUserId = UserHandle.myUserId();
     private final UserHandle mUserHandle = new UserHandle(mUserId);

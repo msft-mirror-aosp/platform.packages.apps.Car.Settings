@@ -43,7 +43,6 @@ import androidx.test.runner.AndroidJUnit4;
 import com.android.car.settings.R;
 import com.android.car.settings.common.PreferenceControllerTestHelper;
 import com.android.car.settings.testutils.ShadowBluetoothAdapter;
-import com.android.car.settings.testutils.ShadowBluetoothPan;
 import com.android.settingslib.bluetooth.BluetoothEventManager;
 import com.android.settingslib.bluetooth.LocalBluetoothManager;
 
@@ -56,14 +55,12 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadow.api.Shadow;
 import org.robolectric.shadows.ShadowUserManager;
 import org.robolectric.util.ReflectionHelpers;
 
 /** Unit test for {@link PairNewDevicePreferenceController}. */
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowBluetoothAdapter.class, ShadowBluetoothPan.class})
 public class PairNewDevicePreferenceControllerTest {
 
     @Mock

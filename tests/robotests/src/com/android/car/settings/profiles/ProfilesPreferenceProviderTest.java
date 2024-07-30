@@ -31,7 +31,6 @@ import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.R;
 import com.android.car.settings.testutils.ShadowUserHelper;
-import com.android.car.settings.testutils.ShadowUserIconProvider;
 
 import org.junit.After;
 import org.junit.Before;
@@ -47,7 +46,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowUserIconProvider.class, ShadowUserHelper.class})
+@Config(shadows = {ShadowUserHelper.class})
 @Ignore("TODO: b/353761286 - Fix this test. Disabled for now.")
 public class ProfilesPreferenceProviderTest {
 

@@ -44,11 +44,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadow.api.Shadow;
 
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowCarWifiManager.class, ShadowLocalBroadcastManager.class})
 public class WifiTetherBasePreferenceControllerTest {
 
     private static final String SUMMARY = "SUMMARY";

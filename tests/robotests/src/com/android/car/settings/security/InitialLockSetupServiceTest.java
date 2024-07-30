@@ -44,7 +44,6 @@ import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowContextWrapper;
 
 import java.util.ArrayList;
@@ -54,7 +53,6 @@ import java.util.List;
 /**
  * Tests that the {@link InitialLockSetupService} properly handles connections and lock requests.
  */
-@Config(shadows = ShadowLockPatternUtils.class)
 @RunWith(AndroidJUnit4.class)
 public class InitialLockSetupServiceTest {
 

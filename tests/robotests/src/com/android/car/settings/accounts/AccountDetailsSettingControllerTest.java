@@ -36,9 +36,6 @@ import androidx.test.runner.AndroidJUnit4;
 import com.android.car.settings.common.ExtraSettingsLoader;
 import com.android.car.settings.common.LogicalPreferenceGroup;
 import com.android.car.settings.common.PreferenceControllerTestHelper;
-import com.android.car.settings.testutils.ShadowAccountManager;
-import com.android.car.settings.testutils.ShadowApplicationPackageManager;
-import com.android.car.settings.testutils.ShadowContentResolver;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -46,7 +43,6 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -54,12 +50,6 @@ import java.util.List;
 
 /** Unit test for {@link AccountDetailsSettingController}. */
 @RunWith(AndroidJUnit4.class)
-@Config(
-        shadows = {
-            ShadowAccountManager.class,
-            ShadowContentResolver.class,
-            ShadowApplicationPackageManager.class
-        })
 public class AccountDetailsSettingControllerTest {
 
     private static final String ACCOUNT_NAME = "account_name";

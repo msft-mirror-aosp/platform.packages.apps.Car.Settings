@@ -44,8 +44,6 @@ import java.util.Collections;
 @RunWith(AndroidJUnit4.class)
 @Config(
         shadows = {
-            ShadowDefaultDialerManager.class,
-            ShadowSmsApplication.class,
             ShadowUserHelper.class
         })
 public class ApplicationsUtilsTest {

@@ -42,14 +42,12 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadow.api.Shadow;
 
 import java.util.Map;
 
 /** Unit test for {@link ExtraSettingsLoader}. */
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowApplicationPackageManager.class})
 public class ExtraSettingsLoaderTest {
     private Context mContext;
     private ExtraSettingsLoader mExtraSettingsLoader;
@@ -363,4 +361,3 @@ public class ExtraSettingsLoaderTest {
         return Shadow.extract(mContext.getPackageManager());
     }
 }
-

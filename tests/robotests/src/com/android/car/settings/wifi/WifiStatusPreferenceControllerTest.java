@@ -40,13 +40,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
-import org.robolectric.annotation.Config;
 
 import java.util.Arrays;
 import java.util.List;
 
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowCarWifiManager.class})
 public class WifiStatusPreferenceControllerTest {
     private static final List<Integer> VISIBLE_STATES = Arrays.asList(
             WifiManager.WIFI_STATE_DISABLED,

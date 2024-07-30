@@ -43,7 +43,6 @@ import android.os.UserManager;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.testutils.ShadowActivityManager;
-import com.android.car.settings.testutils.ShadowUserIconProvider;
 import com.android.car.settings.testutils.ShadowUserManager;
 
 import org.junit.After;
@@ -58,7 +57,7 @@ import org.robolectric.shadows.ShadowProcess;
 
 // TODO: b/353761286 - TechDebt: Remove/cleanup testuitls `ShadowUserManager`.
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowUserManager.class, ShadowUserIconProvider.class})
+@Config(shadows = {ShadowUserManager.class})
 public class ProfileHelperTest {
 
     private static final String DEFAULT_ADMIN_NAME = "default_admin";

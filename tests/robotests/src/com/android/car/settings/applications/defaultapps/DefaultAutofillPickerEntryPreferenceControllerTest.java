@@ -58,7 +58,7 @@ import org.robolectric.shadows.ShadowPackageManager;
 import java.util.Collections;
 
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowSecureSettings.class, ShadowAutofillServiceInfo.class})
+@Config(shadows = {ShadowSecureSettings.class})
 public class DefaultAutofillPickerEntryPreferenceControllerTest {
 
     private static final String TEST_PACKAGE = "com.android.car.settings.testutils";

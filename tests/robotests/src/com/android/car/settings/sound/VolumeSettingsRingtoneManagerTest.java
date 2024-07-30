@@ -45,11 +45,9 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
 
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowRingtoneManager.class})
 public class VolumeSettingsRingtoneManagerTest {
 
     private static final int TEST_GROUP_ID = 1;

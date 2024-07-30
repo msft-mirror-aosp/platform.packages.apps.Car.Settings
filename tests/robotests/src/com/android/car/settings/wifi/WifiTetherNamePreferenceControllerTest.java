@@ -36,11 +36,9 @@ import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 import org.robolectric.shadow.api.Shadow;
 
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowCarWifiManager.class})
 public class WifiTetherNamePreferenceControllerTest {
 
     private Context mContext;

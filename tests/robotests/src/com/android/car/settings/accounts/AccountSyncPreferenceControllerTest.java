@@ -40,7 +40,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.annotation.Config;
 
 /**
  * Unit test for {@link AccountSyncPreferenceController}.
@@ -48,7 +47,6 @@ import org.robolectric.annotation.Config;
  * <p>Largely copied from {@link com.android.settings.accounts.AccountSyncPreferenceControllerTest}.
  */
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowContentResolver.class})
 public class AccountSyncPreferenceControllerTest {
     private static final int SYNCABLE = 1;
     private static final int NOT_SYNCABLE = 0;

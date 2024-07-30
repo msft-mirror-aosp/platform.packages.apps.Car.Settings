@@ -34,12 +34,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 import java.util.List;
 
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowLocalBroadcastManager.class})
 public class NetworkNamePreferenceControllerTest {
 
     private static final String TEST_SSID = "test_ssid";

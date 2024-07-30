@@ -43,7 +43,6 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -51,7 +50,6 @@ import java.util.List;
 import java.util.Locale;
 
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowLocaleStore.class})
 public class LocalePreferenceProviderTest {
 
     private static class Pair {

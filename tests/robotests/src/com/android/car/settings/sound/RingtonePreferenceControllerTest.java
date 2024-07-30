@@ -43,10 +43,8 @@ import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 @RunWith(AndroidJUnit4.class)
-@Config(shadows = {ShadowRingtoneManager.class, ShadowRingtone.class})
 @Ignore("TODO: b/353761286 - Fix this test. Disabled for now.")
 public class RingtonePreferenceControllerTest {
 
