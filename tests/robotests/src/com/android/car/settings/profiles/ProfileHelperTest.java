@@ -37,9 +37,10 @@ import android.car.util.concurrent.AndroidFuture;
 import android.content.Context;
 import android.content.pm.UserInfo;
 import android.content.res.Resources;
-import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
+
+import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.testutils.ShadowActivityManager;
 import com.android.car.settings.testutils.ShadowUserIconProvider;
@@ -47,18 +48,16 @@ import com.android.car.settings.testutils.ShadowUserManager;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowProcess;
 
-@RunWith(RobolectricTestRunner.class)
 // TODO: b/353761286 - TechDebt: Remove/cleanup testuitls `ShadowUserManager`.
+@RunWith(AndroidJUnit4.class)
 @Config(shadows = {ShadowUserManager.class, ShadowUserIconProvider.class})
 public class ProfileHelperTest {
 

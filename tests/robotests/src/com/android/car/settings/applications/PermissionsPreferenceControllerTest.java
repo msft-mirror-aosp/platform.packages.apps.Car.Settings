@@ -25,6 +25,7 @@ import android.content.Intent;
 
 import androidx.lifecycle.Lifecycle;
 import androidx.preference.Preference;
+import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.common.PreferenceControllerTestHelper;
 import com.android.car.settings.testutils.ShadowPermissionControllerManager;
@@ -33,12 +34,11 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowApplication;
 
-@RunWith(RobolectricTestRunner.class)
+@RunWith(AndroidJUnit4.class)
 @Config(shadows = {ShadowPermissionControllerManager.class})
 public class PermissionsPreferenceControllerTest {
 

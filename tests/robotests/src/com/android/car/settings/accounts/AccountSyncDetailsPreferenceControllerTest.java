@@ -36,6 +36,7 @@ import android.os.UserHandle;
 
 import androidx.lifecycle.Lifecycle;
 import androidx.preference.Preference;
+import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.R;
 import com.android.car.settings.common.LogicalPreferenceGroup;
@@ -50,7 +51,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.RobolectricTestRunner;
 import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadow.api.Shadow;
@@ -59,12 +59,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Unit test for {@link AccountSyncDetailsPreferenceController}.
- */
-@RunWith(RobolectricTestRunner.class)
-@Config(shadows = {ShadowContentResolver.class, ShadowApplicationPackageManager.class,
-        ShadowAccountManager.class})
+/** Unit test for {@link AccountSyncDetailsPreferenceController}. */
+@RunWith(AndroidJUnit4.class)
+@Config(
+        shadows = {
+            ShadowContentResolver.class,
+            ShadowApplicationPackageManager.class,
+            ShadowAccountManager.class
+        })
 public class AccountSyncDetailsPreferenceControllerTest {
     private static final int SYNCABLE = 1;
     private static final int NOT_SYNCABLE = 0;

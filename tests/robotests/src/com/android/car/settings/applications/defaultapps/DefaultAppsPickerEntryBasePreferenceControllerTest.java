@@ -35,6 +35,7 @@ import android.provider.Settings;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Lifecycle;
+import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.common.FragmentController;
 import com.android.car.settings.common.PreferenceControllerTestHelper;
@@ -45,11 +46,10 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
 
-@RunWith(RobolectricTestRunner.class)
+@RunWith(AndroidJUnit4.class)
 public class DefaultAppsPickerEntryBasePreferenceControllerTest {
 
     private static final Intent TEST_INTENT = new Intent(Settings.ACTION_SETTINGS);

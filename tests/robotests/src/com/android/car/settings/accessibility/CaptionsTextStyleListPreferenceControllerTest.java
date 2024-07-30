@@ -23,6 +23,7 @@ import android.provider.Settings;
 
 import androidx.lifecycle.Lifecycle;
 import androidx.preference.ListPreference;
+import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.common.PreferenceControllerTestHelper;
 
@@ -30,12 +31,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 
 import java.util.Arrays;
 
-@RunWith(RobolectricTestRunner.class)
+@RunWith(AndroidJUnit4.class)
 public class CaptionsTextStyleListPreferenceControllerTest {
 
     private Context mContext;

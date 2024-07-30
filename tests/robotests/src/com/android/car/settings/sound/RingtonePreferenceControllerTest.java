@@ -28,6 +28,7 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 
 import androidx.lifecycle.Lifecycle;
+import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.common.ActivityResultCallback;
 import com.android.car.settings.common.PreferenceControllerTestHelper;
@@ -41,11 +42,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
-@RunWith(RobolectricTestRunner.class)
+@RunWith(AndroidJUnit4.class)
 @Config(shadows = {ShadowRingtoneManager.class, ShadowRingtone.class})
 @Ignore("TODO: b/353761286 - Fix this test. Disabled for now.")
 public class RingtonePreferenceControllerTest {

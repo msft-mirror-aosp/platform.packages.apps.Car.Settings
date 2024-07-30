@@ -19,7 +19,6 @@ package com.android.car.settings.testutils;
 import android.app.AppOpsManager;
 import android.app.AppOpsManager.OpEntry;
 import android.app.AppOpsManager.PackageOps;
-import android.util.Pair;
 
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.ImmutableList;

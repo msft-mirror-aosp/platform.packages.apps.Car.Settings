@@ -34,6 +34,7 @@ import android.content.Context;
 import androidx.lifecycle.Lifecycle;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
+import androidx.test.runner.AndroidJUnit4;
 
 import org.junit.Before;
 import org.junit.Ignore;
@@ -43,16 +44,13 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Unit test for {@link PreferenceController}.
- */
-@RunWith(RobolectricTestRunner.class)
+/** Unit test for {@link PreferenceController}. */
+@RunWith(AndroidJUnit4.class)
 public class PreferenceControllerTest {
 
     private static final CarUxRestrictions NO_SETUP_UX_RESTRICTIONS =

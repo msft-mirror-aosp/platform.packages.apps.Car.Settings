@@ -27,6 +27,7 @@ import android.content.Context;
 import android.content.pm.UserInfo;
 
 import androidx.preference.Preference;
+import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.R;
 import com.android.car.settings.testutils.ShadowUserHelper;
@@ -39,14 +40,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
 import java.util.Arrays;
 import java.util.List;
 
-@RunWith(RobolectricTestRunner.class)
+@RunWith(AndroidJUnit4.class)
 @Config(shadows = {ShadowUserIconProvider.class, ShadowUserHelper.class})
 @Ignore("TODO: b/353761286 - Fix this test. Disabled for now.")
 public class ProfilesPreferenceProviderTest {
