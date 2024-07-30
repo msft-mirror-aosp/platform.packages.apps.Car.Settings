@@ -27,6 +27,7 @@ import com.android.car.settings.testutils.ShadowUserManager;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
@@ -43,6 +44,7 @@ public class ProfileIconProviderTest {
     private ProfileIconProvider mProfileIconProvider;
     private UserInfo mUserInfo;
     private UserManager mUserManager;
+    private ShadowUserManager mShadowUserManager;
 
     @Before
     public void setUp() {
@@ -52,6 +54,8 @@ public class ProfileIconProviderTest {
 
         mProfileIconProvider = new ProfileIconProvider();
         mUserInfo = new UserInfo(/* id= */ 10, "USER_NAME", /* flags= */ 0);
+        mShadowUserManager = Shadow.extract(mUserManager);
+        mShadowUserManager.addUser(mUserInfo.id, mUserInfo.name, mUserInfo.flags);
     }
 
     @After
@@ -61,15 +65,14 @@ public class ProfileIconProviderTest {
 
     @Test
     public void getRoundedUserIcon_AssignsIconIfNotPresent() {
-        ShadowUserManager.setUserIcon(mUserInfo.id, null);
+        // Set and ensure icon is null initially for this user.
+        mUserManager.setUserIcon(mUserInfo.id, null);
+        assertThat(mUserManager.getUserIcon(mUserInfo.id)).isNull();
 
         Drawable returnedIcon = mProfileIconProvider.getRoundedProfileIcon(mUserInfo, mContext);
 
         assertThat(returnedIcon).isNotNull();
-        assertThat(getShadowUserManager().getUserIcon(mUserInfo.id)).isNotNull();
-    }
-
-    private ShadowUserManager getShadowUserManager() {
-        return Shadow.extract(mUserManager);
+        // Ensure icon is not null anymore after `getRoundedProfileIcon`.
+        assertThat(mShadowUserManager.getUserIcon(mUserInfo.id)).isNotNull();
     }
 }
