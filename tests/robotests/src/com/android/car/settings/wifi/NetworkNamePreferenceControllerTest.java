@@ -23,6 +23,7 @@ import android.content.Intent;
 
 import androidx.lifecycle.Lifecycle;
 import androidx.preference.EditTextPreference;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.R;
@@ -33,7 +34,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RuntimeEnvironment;
 
 import java.util.List;
 
@@ -48,7 +48,7 @@ public class NetworkNamePreferenceControllerTest {
 
     @Before
     public void setUp() {
-        mContext = RuntimeEnvironment.application;
+        mContext = InstrumentationRegistry.getInstrumentation().getContext();
         mEditTextPreference = new EditTextPreference(mContext);
         PreferenceControllerTestHelper<NetworkNamePreferenceController> controllerHelper =
                 new PreferenceControllerTestHelper<>(mContext,

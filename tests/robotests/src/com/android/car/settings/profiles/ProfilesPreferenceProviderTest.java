@@ -27,6 +27,7 @@ import android.content.Context;
 import android.content.pm.UserInfo;
 
 import androidx.preference.Preference;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.R;
@@ -39,7 +40,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
 import java.util.Arrays;
@@ -78,7 +78,7 @@ public class ProfilesPreferenceProviderTest {
     public void setUp() {
         MockitoAnnotations.initMocks(this);
         ShadowUserHelper.setInstance(mProfileHelper);
-        mContext = RuntimeEnvironment.application;
+        mContext = InstrumentationRegistry.getInstrumentation().getContext();
 
         List<UserInfo> users = Arrays.asList(TEST_OTHER_USER_1, TEST_GUEST_USER_1,
                 TEST_GUEST_USER_2,

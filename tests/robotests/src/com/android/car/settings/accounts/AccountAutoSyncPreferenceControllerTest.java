@@ -31,6 +31,7 @@ import android.os.UserHandle;
 
 import androidx.lifecycle.Lifecycle;
 import androidx.preference.SwitchPreference;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.common.ConfirmationDialogFragment;
@@ -40,7 +41,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.RuntimeEnvironment;
 
 /** Unit tests for {@link AccountAutoSyncPreferenceController}. */
 @RunWith(AndroidJUnit4.class)
@@ -57,7 +57,7 @@ public class AccountAutoSyncPreferenceControllerTest {
     public void setUp() {
         MockitoAnnotations.initMocks(this);
 
-        Context context = RuntimeEnvironment.application;
+        Context context = InstrumentationRegistry.getInstrumentation().getContext();
         mSwitchPreference = new SwitchPreference(application);
         mHelper = new PreferenceControllerTestHelper<>(application,
                 AccountAutoSyncPreferenceController.class, mSwitchPreference);

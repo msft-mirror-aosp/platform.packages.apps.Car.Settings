@@ -35,6 +35,7 @@ import android.provider.Settings;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Lifecycle;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.common.FragmentController;
@@ -46,7 +47,6 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
 
 @RunWith(AndroidJUnit4.class)
@@ -92,7 +92,7 @@ public class DefaultAppsPickerEntryBasePreferenceControllerTest {
 
     @Before
     public void setUp() {
-        mContext = spy(RuntimeEnvironment.application);
+        mContext = spy(InstrumentationRegistry.getInstrumentation().getContext());
         mButtonPreference = new CarUiTwoActionIconPreference(mContext);
         mControllerHelper = new PreferenceControllerTestHelper<>(mContext,
                 TestDefaultAppsPickerEntryBasePreferenceController.class, mButtonPreference);

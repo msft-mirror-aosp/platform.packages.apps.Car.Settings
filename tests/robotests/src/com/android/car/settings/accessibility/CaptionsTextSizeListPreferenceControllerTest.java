@@ -23,6 +23,7 @@ import android.provider.Settings;
 
 import androidx.lifecycle.Lifecycle;
 import androidx.preference.ListPreference;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.common.PreferenceControllerTestHelper;
@@ -31,7 +32,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RuntimeEnvironment;
 
 import java.util.Arrays;
 
@@ -46,7 +46,7 @@ public class CaptionsTextSizeListPreferenceControllerTest {
 
     @Before
     public void setup() {
-        mContext = RuntimeEnvironment.application;
+        mContext = InstrumentationRegistry.getInstrumentation().getContext();
         mListPreference = new ListPreference(mContext);
         mPreferenceControllerHelper =
                 new PreferenceControllerTestHelper<>(mContext,

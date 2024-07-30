@@ -26,6 +26,7 @@ import android.content.pm.ApplicationInfo;
 import android.os.storage.VolumeInfo;
 
 import androidx.lifecycle.Lifecycle;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.R;
@@ -36,7 +37,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.RuntimeEnvironment;
 import org.robolectric.shadows.ShadowLooper;
 
 import java.util.ArrayList;
@@ -70,7 +70,7 @@ public class ApplicationListItemManagerTest {
     @Before
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
-        mContext = RuntimeEnvironment.application;
+        mContext = InstrumentationRegistry.getInstrumentation().getContext();
         mApplicationListItemManager = new ApplicationListItemManager(mVolumeInfo, mLifecycle,
                 mAppState, MILLISECOND_UPDATE_INTERVAL, MILLISECOND_MAX_APP_LOAD_WAIT_INTERVAL);
     }

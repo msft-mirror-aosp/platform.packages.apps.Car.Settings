@@ -23,6 +23,7 @@ import android.provider.Settings;
 
 import androidx.lifecycle.Lifecycle;
 import androidx.preference.Preference;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.R;
@@ -32,7 +33,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RuntimeEnvironment;
 
 @RunWith(AndroidJUnit4.class)
 public class CaptionSettingsPreferenceControllerTest {
@@ -45,7 +45,7 @@ public class CaptionSettingsPreferenceControllerTest {
 
     @Before
     public void setup() {
-        mContext = RuntimeEnvironment.application;
+        mContext = InstrumentationRegistry.getInstrumentation().getContext();
         mPreference = new Preference(mContext);
         mPreferenceControllerHelper =
                 new PreferenceControllerTestHelper<>(mContext,

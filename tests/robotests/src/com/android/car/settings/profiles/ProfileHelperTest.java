@@ -40,6 +40,7 @@ import android.content.res.Resources;
 import android.os.UserHandle;
 import android.os.UserManager;
 
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.testutils.ShadowActivityManager;
@@ -51,7 +52,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowProcess;
 
@@ -73,7 +73,7 @@ public class ProfileHelperTest {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        mContext = RuntimeEnvironment.application;
+        mContext = InstrumentationRegistry.getInstrumentation().getContext();
         mProfileHelper =
                 new ProfileHelper(
                         mMockUserManager,

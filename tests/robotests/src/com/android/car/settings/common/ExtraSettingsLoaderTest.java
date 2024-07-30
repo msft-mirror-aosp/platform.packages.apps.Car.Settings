@@ -30,6 +30,7 @@ import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 
 import androidx.preference.Preference;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.R;
@@ -41,7 +42,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.RuntimeEnvironment;
 import org.robolectric.shadow.api.Shadow;
 
 import java.util.Map;
@@ -59,7 +59,7 @@ public class ExtraSettingsLoaderTest {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        mContext = RuntimeEnvironment.application;
+        mContext = InstrumentationRegistry.getInstrumentation().getContext();
         ShadowApplicationPackageManager.setResources(mContext.getResources());
         mExtraSettingsLoader = new ExtraSettingsLoader(mContext);
     }

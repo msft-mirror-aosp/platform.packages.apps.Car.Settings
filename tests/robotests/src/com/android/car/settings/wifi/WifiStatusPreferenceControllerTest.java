@@ -28,6 +28,7 @@ import android.net.wifi.WifiManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.Lifecycle.Event;
 import androidx.preference.Preference;
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.R;
@@ -38,7 +39,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
 
 import java.util.Arrays;
@@ -60,7 +60,7 @@ public class WifiStatusPreferenceControllerTest {
 
     @Before
     public void setUp() {
-        mContext = RuntimeEnvironment.application;
+        mContext = InstrumentationRegistry.getInstrumentation().getContext();
         Shadows.shadowOf(mContext.getPackageManager()).setSystemFeature(
                 PackageManager.FEATURE_WIFI, true);
         mPreference = new Preference(mContext);

@@ -24,6 +24,7 @@ import android.content.ContextWrapper;
 import android.content.Intent;
 import android.os.RemoteException;
 
+import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.android.car.settings.setupservice.InitialLockSetupService;
@@ -42,7 +43,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
 import org.robolectric.shadows.ShadowContextWrapper;
 
@@ -67,7 +67,7 @@ public class InitialLockSetupServiceTest {
         mInitialLockSetupService = Robolectric.buildService(InitialLockSetupService.class)
                 .create()
                 .get();
-        mContext = RuntimeEnvironment.application;
+        mContext = InstrumentationRegistry.getInstrumentation().getContext();
         ShadowContextWrapper shadowContextWrapper = Shadows.shadowOf((ContextWrapper) mContext);
         shadowContextWrapper.grantPermissions(LOCK_PERMISSION);
     }
