@@ -61,7 +61,9 @@ android_library {
     // TODO(b/319708040): re-enable use_resource_processor
     use_resource_processor: false,
     lint: {
-        baseline_filename: "lint-baseline.xml",
+        warning_checks: [
+            "FlaggedApi",
+        ],
     },
 }
 
@@ -93,6 +95,8 @@ android_app {
     required: ["allowed_privapp_com.android.car.settings"],
 
     dxflags: ["--multi-dex"],
+    // TODO(b/319708040): re-enable use_resource_processor
+    use_resource_processor: false,
 }
 
 // Duplicate of CarSettings which includes testing only resources for Robolectric
@@ -111,6 +115,7 @@ android_app {
 
     libs: [
         "android.car",
+        "car-ui-lib-oem-apis",
     ],
 
     static_libs: [
@@ -139,7 +144,9 @@ android_app {
     // TODO(b/319708040): re-enable use_resource_processor
     use_resource_processor: false,
     lint: {
-        baseline_filename: "lint-baseline.xml",
+        warning_checks: [
+            "FlaggedApi",
+        ],
     },
 }
 
@@ -201,7 +208,9 @@ android_library {
     // TODO(b/319708040): re-enable use_resource_processor
     use_resource_processor: false,
     lint: {
-        baseline_filename: "lint-baseline.xml",
+        warning_checks: [
+            "FlaggedApi",
+        ],
     },
 }
 
