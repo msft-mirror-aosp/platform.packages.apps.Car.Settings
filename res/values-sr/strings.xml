@@ -160,8 +160,7 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Предност има опсег од 5,0 GHz"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5,0 GHz"</string>
-    <!-- no translation found for wifi_ap_2G_5G (5526758464441623079) -->
-    <skip />
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 и 5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Одаберите бар један опсег за Wi‑Fi хотспот:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"WiFi хотспот"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Хотспот"</string>
@@ -748,7 +747,7 @@
     <string name="lockpassword_password_too_long" msgid="1709616257350671045">"{count,plural, =1{Мора да садржи мање од # знака}one{Мора да садржи мање од # знака}few{Мора да садржи мање од # знака}other{Мора да садржи мање од # знакова}}"</string>
     <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{Мора да садржи мање од # цифре}one{Мора да садржи мање од # цифре}few{Мора да садржи мање од # цифре}other{Мора да садржи мање од # цифара}}"</string>
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"Растући, опадајући или поновљени низ цифара није дозвољен"</string>
-    <string name="setup_lock_settings_options_button_label" msgid="3337845811029780896">"Опције закључавања екрана"</string>
+    <string name="setup_lock_settings_options_button_label" msgid="3337845811029780896">"Опције откључавања екрана"</string>
     <string name="credentials_reset" msgid="873900550885788639">"Обриши акредитиве"</string>
     <string name="credentials_reset_summary" msgid="6067911547500459637">"Уклoните све сертификате"</string>
     <string name="credentials_reset_hint" msgid="3459271621754137661">"Желите ли да уклоните сав садржај?"</string>
@@ -933,6 +932,5 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"Погледајте пакете"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"Интернет пакет је истекао"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Погледајте пакете"</string>
-    <!-- no translation found for audio_route_dialog_neutral_button_text (3303313405283478327) -->
-    <skip />
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Готово"</string>
 </resources>
