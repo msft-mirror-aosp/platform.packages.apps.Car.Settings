@@ -658,7 +658,7 @@
     <string name="camera_access_radio_helpful_required_apps_summary" msgid="1388997613007479738">"Les applications qui vous aident, par exemple, en vous montrant l\'environnement dans lequel vous vous trouvez lors du stationnement, et les applications requises"</string>
     <string name="camera_helpful_apps_list_title" msgid="3384154135315115240">"Applications qui vous aident à conduire"</string>
     <string name="camera_helpful_apps_list_summary" msgid="4070939811052295258">"Ces applications peuvent accéder à votre caméra pour vous aider à conduire"</string>
-    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Applications requises"</string>
+    <string name="camera_required_apps_list_title" msgid="4751978669779838763">"Applis requises"</string>
     <string name="camera_required_apps_list_summary" msgid="7445661688832040704">"Ces applications sont requises pour permettre à votre voiture de fonctionner en toute sécurité"</string>
     <string name="camera_privacy_policy_button_text" msgid="6845099817069101132">"Politique"</string>
     <string name="camera_access_disclaimer_summary" msgid="6648007542393315155">"Il se peut que le constructeur automobile ait encore accès à la caméra de votre voiture. Vous pouvez consulter ses politiques pour en savoir plus."</string>
@@ -688,7 +688,7 @@
     <string name="lockpattern_recording_intro_header" msgid="7864149726033694408">"Dessinez un schéma de déverrouillage"</string>
     <string name="lockpattern_recording_inprogress" msgid="1575019990484725964">"Retirez le doigt lorsque vous avez terminé"</string>
     <string name="lockpattern_pattern_entered" msgid="6103071005285320575">"Schéma enregistré"</string>
-    <string name="lockpattern_need_to_confirm" msgid="4648070076022940382">"Redessinez le schéma pour confirmer"</string>
+    <string name="lockpattern_need_to_confirm" msgid="4648070076022940382">"Retracez le schéma pour confirmer"</string>
     <string name="lockpattern_recording_incorrect_too_short" msgid="2417932185815083082">"Reliez au moins 4 points. Réessayez."</string>
     <string name="lockpattern_pattern_wrong" msgid="929223969555399363">"Schéma incorrect"</string>
     <string name="lockpattern_settings_help_how_to_record" msgid="4436556875843192284">"Comment dessiner un schéma de déverr."</string>
