@@ -160,6 +160,7 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"يفضّل نطاق بتردد 5.0 غيغاهرتز"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"٢٫٤ غيغاهرتز"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0 غيغاهرتز"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"‫2.4 و5 غيغاهرتز"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"اختر نطاقًا واحدًا على الأقل لنقطة اتصال Wi‑Fi:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"نقطة اتصال Wi‑Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"نقطة الاتصال"</string>
@@ -429,8 +430,6 @@
     <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"لا يمكن تغيير هذا الإعداد وقد أوقفته الشركة المصنّعة لسيارتك."</string>
     <string name="adas_location_toggle_title" msgid="6131739109988811006">"ميزات تساعدك في القيادة"</string>
     <string name="adas_location_toggle_summary" msgid="7055141074159770928">"يمكنك السماح للميزات المدمَجة، المعتمدة من الشركة المصنّعة لسيارتك، بالوصول إلى الموقع الجغرافي لسيارتك."</string>
-    <string name="location_required_apps_group_title" msgid="5672632286858280618">"التطبيقات المطلوبة"</string>
-    <string name="location_required_apps_group_summary" msgid="5760731893677945737">"تتطلّب الشركة المصنِّعة لسيارتك استخدام هذه التطبيقات للمساعدة في القيادة"</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"المواقع الجغرافية التي تم الوصول إليها مؤخرًا"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"المواقع الجغرافية التي تم الوصول إليها مؤخرًا"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"عرض الكل"</string>
@@ -540,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"تنسيق ٢٤ ساعة"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"استخدام تنسيق ٢٤ ساعة"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"الوقت"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"ضبط الوقت"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"ضبط الساعة"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"المنطقة الزمنية"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"اختيار المنطقة الزمنية"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"التاريخ"</string>
@@ -549,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"ترتيب بحسب المنطقة الزمنية"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"التاريخ"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"الوقت"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"قد تستخدم ميزة التعرّف التلقائي على التاريخ والوقت مصادر، مثل الموقع الجغرافي وشبكات الجوّال لتحديد التاريخ والوقت والمنطقة الزمنية."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"استخدِم الموقع الجغرافي لسيارتك من أجل ضبط التاريخ والوقت تلقائيًا. لا تعمل هذه الميزة إلا إذا كانت خدمة الموقع الجغرافي مفعَّلة."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"متابعة"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"التغيير من \"الإعدادات\""</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"خدمة الموقع الجغرافي غير مفعَّلة. قد لا تعمل ميزة التعرّف التلقائي على الوقت."</string>
     <string name="user_admin" msgid="1535484812908584809">"المشرف"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"تمّ تسجيل الدخول كمشرف."</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"هل تريد منح المستخدم أذونات المشرف؟"</string>
@@ -660,10 +664,8 @@
     <string name="camera_access_settings_title" msgid="1841809323727456945">"الوصول إلى الكاميرا"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"اختَر ما إذا كان يمكن للتطبيقات الوصول إلى كاميرا سيارتك"</string>
     <string name="required_apps_group_title" msgid="8607608579973985786">"التطبيقات المطلوبة"</string>
-    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
-    <skip />
-    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
-    <skip />
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"التطبيقات التي تطلبها الشركة المصنّعة لسيارتك من أجل مساعدتك في القيادة"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"السياسة"</string>
     <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"قد تظل الشركة المصنِّعة لسيارتك قادرة على الوصول إلى كاميرا سيارتك"</string>
     <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"تطبيقات نظام الترفيه والمعلومات"</string>
     <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"السماح لتطبيقات نظام الترفيه والمعلومات بالتقاط الصور وتسجيل الفيديوهات"</string>
@@ -953,4 +955,5 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"الاطّلاع على الخطط"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"انتهت صلاحية خطط الإنترنت الخاصة بك"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"الاطّلاع على الخطط"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"تم"</string>
 </resources>

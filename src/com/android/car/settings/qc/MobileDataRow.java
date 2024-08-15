@@ -30,6 +30,7 @@ import android.content.Intent;
 import android.graphics.drawable.Icon;
 import android.net.Uri;
 import android.os.UserManager;
+import android.text.TextUtils;
 
 import androidx.annotation.VisibleForTesting;
 
@@ -62,12 +63,10 @@ public class MobileDataRow extends SettingsQCItem {
     }
     @Override
     QCItem getQCItem() {
-        if (isHiddenForZone()) {
+        if (!mDataUsageController.isMobileDataSupported() || isHiddenForZone()) {
             return null;
         }
-        if (!isDataSubscriptionFlagEnable() && !mDataUsageController.isMobileDataSupported()) {
-            return null;
-        }
+
         boolean dataEnabled = mDataUsageController.isMobileDataEnabled();
         Icon icon = MobileNetworkQCUtils.getMobileNetworkSignalIcon(getContext());
 
@@ -129,30 +128,32 @@ public class MobileDataRow extends SettingsQCItem {
     }
 
     String getSubtitle(boolean dataEnabled) {
-        if (isDataSubscriptionFlagEnable()
+        String subtitle = MobileNetworkQCUtils.getMobileNetworkSummary(
+                getContext(), dataEnabled);
+        if (TextUtils.isEmpty(subtitle)
+                && isDataSubscriptionFlagEnable()
                 && dataEnabled
-                && mSubscription.isDataSubscriptionInactiveOrTrial()) {
+                && mSubscription.isDataSubscriptionInactive()) {
             return getContext().getString(
                     R.string.connectivity_inactive_prompt);
         }
-        return MobileNetworkQCUtils.getMobileNetworkSummary(
-                getContext(), dataEnabled);
+        return subtitle;
     }
 
     String getActionText(boolean dataEnabled) {
         if (isDataSubscriptionFlagEnable()
                 && dataEnabled
-                && mSubscription.isDataSubscriptionInactiveOrTrial()
+                && mSubscription.isDataSubscriptionInactive()
                 && !mIsDistractionOptimizationRequired) {
             return getContext().getString(
                     R.string.connectivity_inactive_action_text);
         }
-        return "";
+        return null;
     }
 
     int getCategory() {
         if (isDataSubscriptionFlagEnable()
-                && mSubscription.isDataSubscriptionInactiveOrTrial()) {
+                && mSubscription.isDataSubscriptionInactive()) {
             return QCCategory.WARNING;
         }
         return QCCategory.NORMAL;
@@ -175,7 +176,7 @@ public class MobileDataRow extends SettingsQCItem {
         if (!isDataSubscriptionFlagEnable()) {
             return null;
         }
-        if (!mSubscription.isDataSubscriptionInactiveOrTrial()
+        if (!mSubscription.isDataSubscriptionInactive()
                 || mIsDistractionOptimizationRequired) {
             return null;
         }

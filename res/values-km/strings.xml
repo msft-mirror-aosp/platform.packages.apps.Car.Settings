@@ -160,6 +160,7 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"ប្រើ​កម្រិតបញ្ជូន 5.0 GHz ជា​អាទិភាព"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2.4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2.4 និង 5.0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"សូម​ជ្រើសរើស​កម្រិតបញ្ជូន​យ៉ាង​ហោចណាស់​មួយសម្រាប់​ហតស្ប៉ត Wi‑Fi៖"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"ហតស្ប៉ត Wi-Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"ហតស្ប៉ត"</string>
@@ -429,8 +430,6 @@
     <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"មិនអាចផ្លាស់ប្ដូរការកំណត់នេះបានទេ និងត្រូវបានបិទដោយក្រុមហ៊ុនផលិតរថយន្តរបស់អ្នក។"</string>
     <string name="adas_location_toggle_title" msgid="6131739109988811006">"មុខងារដែលជួយអ្នកក្នុងការបើកបរ"</string>
     <string name="adas_location_toggle_summary" msgid="7055141074159770928">"អនុញ្ញាតឱ្យមុខងារដែលមានភ្ជាប់មកជាមួយស្រាប់ ដែលត្រូវបានអនុញ្ញាតដោយក្រុមហ៊ុនផលិតរថយន្តរបស់អ្នក ចូលប្រើប្រាស់ទីតាំងរថយន្តរបស់អ្នក។"</string>
-    <string name="location_required_apps_group_title" msgid="5672632286858280618">"កម្មវិធីដែលតម្រូវឱ្យមាន"</string>
-    <string name="location_required_apps_group_summary" msgid="5760731893677945737">"កម្មវិធីដែលតម្រូវឱ្យមានដោយក្រុមហ៊ុនផលិតរថយន្តរបស់អ្នក ដើម្បីជួយពាក់ព័ន្ធនឹងការបើកបរ។"</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"បានចូលប្រើ​កាលពីថ្មីៗនេះ"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"បានចូលប្រើ​កាលពីថ្មីៗនេះ"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"មើលទាំងអស់"</string>
@@ -540,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"ទម្រង់ 24 ម៉ោង"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"ប្រើ​ទម្រង់ 24 ម៉ោង"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"ម៉ោង"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"កំណត់​ម៉ោង"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"កំណត់នាឡិកា"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"ល្វែងម៉ោង"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"ជ្រើសរើស​ល្វែង​ម៉ោង"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"កាលបរិច្ឆេទ"</string>
@@ -549,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"តម្រៀប​តាម​ល្វែងម៉ោង"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"កាលបរិច្ឆេទ"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"ម៉ោង"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"ម៉ោង និងកាលបរិច្ឆេទស្វ័យប្រវត្តិអាចនឹងប្រើប្រភពដូចជា ទីតាំង និងបណ្ដាញ​ទូរសព្ទ​ចល័តជាដើម ដើម្បីកំណត់កាលបរិច្ឆេទ ម៉ោង និងល្វែងម៉ោង។"</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"ប្រើទីតាំងរបស់រថយន្តអ្នក ដើម្បីកំណត់កាលបរិច្ឆេទ និងម៉ោងដោយស្វ័យប្រវត្តិ។ ដំណើរការ លុះត្រាតែទីតាំងត្រូវបានបើក។"</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"បន្ត"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"ការផ្លាស់ប្ដូរក្នុងការកំណត់"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"ទីតាំងរបស់អ្នកត្រូវបានបិទ។ ម៉ោងស្វ័យប្រវត្តិអាចនឹងមិនដំណើរការទេ។"</string>
     <string name="user_admin" msgid="1535484812908584809">"អ្នកគ្រប់គ្រង"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"បាន​ចូលជា​អ្នក​គ្រប់គ្រង"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"ផ្តល់​ការអនុញ្ញាតជាលក្ខណៈអ្នកគ្រប់គ្រងឬ?"</string>
@@ -660,10 +664,8 @@
     <string name="camera_access_settings_title" msgid="1841809323727456945">"សិទ្ធិចូលប្រើ​កាមេរ៉ា"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"ជ្រើសរើសថាតើកម្មវិធីអាចចូលប្រើកាមេរ៉ារថយន្តរបស់អ្នកបានឬអត់"</string>
     <string name="required_apps_group_title" msgid="8607608579973985786">"កម្មវិធីដែលតម្រូវឱ្យមាន"</string>
-    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
-    <skip />
-    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
-    <skip />
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"កម្មវិធីដែលត្រូវបានតម្រូវដោយក្រុមហ៊ុនផលិតរថយន្តរបស់អ្នក ដើម្បីជួយអ្នកក្នុងការបើកបរ"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"គោលការណ៍"</string>
     <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"ក្រុមហ៊ុនផលិតរថយន្តរបស់អ្នកអាចនៅតែមានសិទ្ធិចូលប្រើកាមេរ៉ារថយន្តរបស់អ្នក"</string>
     <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"កម្មវិធីព័ត៌មាននិងកម្សាន្ត"</string>
     <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"អនុញ្ញាតឱ្យកម្មវិធីព័ត៌មាននិងកម្សាន្តថតរូបភាព និងថតវីដេអូ"</string>
@@ -929,4 +931,5 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"មើល​គម្រោង"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"គម្រោងអ៊ីនធឺណិតរបស់អ្នកបានផុតកំណត់"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"មើល​គម្រោង"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"រួចរាល់"</string>
 </resources>

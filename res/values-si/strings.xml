@@ -160,6 +160,7 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"5.0 GHz කලාපය වඩාත් කැමතිය"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2.4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5.0 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2.4 සහ 5.0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Wi‑Fi හොට්ස්පොට් සඳහා අවම වශයෙන් එක් කලාපයක් තෝරන්න:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi-Fi හොට්ස්පොට්"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"හොට්ස්පොට්"</string>
@@ -429,8 +430,6 @@
     <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"මෙම සැකසීම වෙනස් කළ නොහැකි අතර ඔබේ මෝටර් රථ නිෂ්පාදකයා විසින් අබල කර ඇත."</string>
     <string name="adas_location_toggle_title" msgid="6131739109988811006">"ඔබට ධාවනය කිරීමට උදවු වන විශේෂාංග"</string>
     <string name="adas_location_toggle_summary" msgid="7055141074159770928">"ඔබේ මෝටර් රථයේ ස්ථානයට ප්‍රවේශ වීමට, ඔබේ මෝටර් රථයේ නිෂ්පාදකයා විසින් අනුමත කරන ලද, එක්ව තැනූ විශේෂාංගවලට ඉඩ දෙන්න."</string>
-    <string name="location_required_apps_group_title" msgid="5672632286858280618">"අවශ්‍ය යෙදුම්"</string>
-    <string name="location_required_apps_group_summary" msgid="5760731893677945737">"රිය පැදවීමට සහාය වීමට ඔබේ මෝටර් රථයේ නිෂ්පාදකයාට අවශ්‍ය යෙදුම්."</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"මෑතක දී ප්‍රවේශ වූ"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"මෑතක දී ප්‍රවේශ වූ"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"සියල්ල බලන්න"</string>
@@ -540,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"පැය 24 ආකෘතිය"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"පැය 24 ආකෘතිය භාවිතා කරන්න"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"වේලාව"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"වේලාව සකසන්න"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"ඔරලෝසුව සකසන්න"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"වේලා කලාපය"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"වේලා කලාපය තෝරන්න"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"දිනය"</string>
@@ -549,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"වේලා කලාපය අනුව පෙළගස්වන්න"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"දිනය"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"වේලාව"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"ස්වයංක්‍රීය දිනය සහ වේලාව දිනය, වේලාව සහ වේලා කලාපය තීරණය කිරීමට ස්ථානය සහ ජංගම ජාල වැනි මූලාශ්‍ර භාවිත කළ හැක."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"ස්වයංක්‍රීයව දිනය සහ වේලාව සැකසීමට ඔබේ මෝටර් රථයේ ස්ථානය භාවිත කරන්න. ස්ථානය ක්‍රියාත්මක නම් පමණක් ක්‍රියා කරයි."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"ඉදිරියට යන්න"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"සැකසීම් තුළ වෙනස් කරන්න"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"ඔබේ ස්ථානය ක්‍රියාවිරහිතයි. ස්වයංක්‍රීය කාලය ක්‍රියා නොකරනු ඇත."</string>
     <string name="user_admin" msgid="1535484812908584809">"පරිපාලක"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"පරිපාලක ලෙස පුරනය වී ඇත"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"පරිපාලක අවසර ලබා දෙන්නද?"</string>
@@ -660,10 +664,8 @@
     <string name="camera_access_settings_title" msgid="1841809323727456945">"කැමරා ප්‍රවේශය"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"යෙදුම් හට ඔබේ මෝටර් රථයේ කැමරා වෙත ප්‍රවේශ විය හැකි ද යන්න තෝරා ගන්න"</string>
     <string name="required_apps_group_title" msgid="8607608579973985786">"අවශ්‍ය යෙදුම්"</string>
-    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
-    <skip />
-    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
-    <skip />
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"ඔබට ධාවනය කිරීමට උදවු කිරීමට ඔබේ මෝටර් රථයේ නිෂ්පාදකයාට අවශ්‍ය යෙදුම්"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"ප්‍රතිපත්තිය"</string>
     <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"ඔබේ මෝටර් රථ නිෂ්පාදකයාට තවමත් ඔබේ මෝටර් රථයේ කැමරාවට ප්‍රවේශය තිබිය හැක"</string>
     <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"තොරතුරු විනෝදාස්වාද යෙදුම්"</string>
     <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"ඡායාරූප ගැනීමට සහ වීඩියෝ පටිගත කිරීමට තොරතුරු රසාස්වාදය යෙදුම්වලට ඉඩ දෙන්න"</string>
@@ -929,4 +931,5 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"සැලසුම් බලන්න"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"ඔබේ අන්තර්ජාල සැලසුම් කල් ඉකුත් විය"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"සැලසුම් බලන්න"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"නිමයි"</string>
 </resources>

@@ -160,6 +160,7 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"Banda a 5 GHz preferita"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"2,4 GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"5 GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"2,4 e 5,0 GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Scegli almeno una banda per l\'hotspot Wi‑Fi:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Hotspot Wi‑Fi"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"Hotspot"</string>
@@ -429,8 +430,6 @@
     <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"Questa impostazione non può essere modificata ed è stata disattivata dal produttore del veicolo."</string>
     <string name="adas_location_toggle_title" msgid="6131739109988811006">"Funzionalità di assistenza alla guida"</string>
     <string name="adas_location_toggle_summary" msgid="7055141074159770928">"Consenti alle funzionalità integrate, approvate dal produttore del veicolo, di accedere alla posizione dell\'auto."</string>
-    <string name="location_required_apps_group_title" msgid="5672632286858280618">"App obbligatorie"</string>
-    <string name="location_required_apps_group_summary" msgid="5760731893677945737">"App richieste dal produttore dell\'auto per aiutarti durante la guida"</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"Usi recenti"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"Usi recenti"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"Mostra tutte"</string>
@@ -540,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"Formato 24 ore"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Usa il formato 24 ore"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"Ora"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"Imposta ora"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"Imposta orologio"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"Fuso orario"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"Seleziona fuso orario"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"Data"</string>
@@ -549,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"Ordina per fuso orario"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"Data"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"Ora"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"La funzionalità di rilevamento automatico di data e fuso orario può utilizzare fonti come la posizione e le reti mobile per determinare la data, l\'ora e il fuso orario."</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"Utilizza la posizione della tua auto per impostare automaticamente data e ora. Funziona solo se la posizione è attiva."</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"Continua"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"Modifica nelle impostazioni"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"La tua posizione è disattivata. Il rilevamento automatico del fuso orario potrebbe non funzionare."</string>
     <string name="user_admin" msgid="1535484812908584809">"Amministratore"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"Accesso come amministratore"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"Concedere le autorizzazioni di amministratore?"</string>
@@ -660,10 +664,8 @@
     <string name="camera_access_settings_title" msgid="1841809323727456945">"Accesso alla videocamera"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"Scegli se le app possono accedere alle videocamere dell\'auto"</string>
     <string name="required_apps_group_title" msgid="8607608579973985786">"App obbligatorie"</string>
-    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
-    <skip />
-    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
-    <skip />
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"App richieste dal produttore della tua auto per aiutarti a guidare"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"Norme"</string>
     <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"Il produttore del veicolo potrebbe avere ancora accesso alla videocamera dell\'auto"</string>
     <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"App di infotainment"</string>
     <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"Consenti alle app di infotainment di scattare foto e registrare video"</string>
@@ -929,4 +931,5 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"Vedi i piani"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"I tuoi piani internet sono scaduti"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"Vedi i piani"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"Fine"</string>
 </resources>

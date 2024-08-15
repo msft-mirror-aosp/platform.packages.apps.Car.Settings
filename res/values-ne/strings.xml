@@ -38,7 +38,7 @@
     <string name="mobile_network_mobile_network_toggle_title" msgid="3087288149339116597">"मोबाइल नेटवर्क"</string>
     <string name="mobile_network_mobile_network_toggle_summary" msgid="1679917666306941420">"मोबाइल डेटा प्रयोग गर्नुहोस्"</string>
     <string name="mobile_network_state_off" msgid="471795861420831748">"अफ छ"</string>
-    <string name="confirm_mobile_data_disable" msgid="826493998804496639">"मोबाइल डेटा निष्क्रिय पार्ने हो?"</string>
+    <string name="confirm_mobile_data_disable" msgid="826493998804496639">"मोबाइल डेटा अफ गर्ने हो?"</string>
     <string name="sim_selection_required_pref" msgid="6599562910262785784">"चयन गर्न आवश्यक छ"</string>
     <string name="sim_change_data_title" msgid="6677115745127365131">"मोबाइल डेटाका लागि <xliff:g id="CARRIER">%1$s</xliff:g> प्रयोग गर्ने हो?"</string>
     <string name="sim_change_data_message" msgid="4669775284395549069">"तपाईं मोबाइल डेटाका लागि <xliff:g id="CARRIER2_0">%2$s</xliff:g> प्रयोग गर्दै हुनुहुन्छ। तपाईं <xliff:g id="CARRIER1">%1$s</xliff:g> मा जानुभयो भने मोबाइल डेटाका लागि अब उप्रान्त <xliff:g id="CARRIER2_1">%2$s</xliff:g> को प्रयोग गरिने छैन।"</string>
@@ -160,6 +160,7 @@
     <string name="wifi_ap_prefer_5G" msgid="8252845223773871750">"५.० GHz ब्यान्ड भए राम्रो"</string>
     <string name="wifi_ap_2G" msgid="5364135697314262014">"२.४ GHz"</string>
     <string name="wifi_ap_5G" msgid="4945574428537860279">"५.० GHz"</string>
+    <string name="wifi_ap_2G_5G" msgid="5526758464441623079">"२.४ र ५.० GHz"</string>
     <string name="wifi_ap_band_select_one" msgid="615578175244067396">"Wi‑Fi हटस्पटका लागि कम्तीमा एक ब्यान्ड छनौट गर्नुहोस्:"</string>
     <string name="tether_settings_title_all" msgid="6076625733772210734">"Wi-Fi हटस्पट"</string>
     <string name="hotspot_settings_title" msgid="8220814387592756713">"हटस्पट"</string>
@@ -209,7 +210,7 @@
     <string name="bluetooth_ask_enablement_and_discovery_no_name" msgid="907153034209916282">"एउटा एप ब्लुटुथ सक्रिय गर्न र <xliff:g id="TIMEOUT">%1$d</xliff:g> सेकेन्डसम्म अन्य यन्त्रहरूले तपाईंको हेडयुनिट देख्न सक्ने बनाउन चाहन्छ।"</string>
     <string name="bluetooth_state_switch_summary" msgid="171929910916432266">"अन्य यन्त्रमा %1$s का रूपमा देखिन्छ"</string>
     <string name="bluetooth_my_devices" msgid="6352010339607939612">"मेरा यन्त्रहरू"</string>
-    <string name="bluetooth_previously_connected" msgid="5206229557831180323">"यसअघि कनेक्ट गरिएका यन्त्रहरू"</string>
+    <string name="bluetooth_previously_connected" msgid="5206229557831180323">"यसअघि कनेक्ट गरिएका डिभाइसहरू"</string>
     <string name="bluetooth_device_connected_toast" msgid="4614765282582494488">"%1$s कनेक्ट गरिएको छ"</string>
     <string name="bluetooth_device_disconnected_toast" msgid="8889122688851623920">"%1$s डिस्कनेक्ट गरिएको छ"</string>
     <string name="device_connections_category_title" msgid="1753729363581927505">"तपाईंको कारमा उपलब्ध डिभाइस कनेक्सनहरू"</string>
@@ -429,8 +430,6 @@
     <string name="adas_location_toggle_popup_summary" msgid="4918613528063160563">"तपाईंको कारको उत्पादकले यो सेटिङ अफ गरेको हुनाले यसलाई परिवर्तन गर्न मिल्दैन।"</string>
     <string name="adas_location_toggle_title" msgid="6131739109988811006">"तपाईंलाई ड्राइभ गर्न सघाउने सुविधाहरू"</string>
     <string name="adas_location_toggle_summary" msgid="7055141074159770928">"तपाईंको कारका निर्माताले अनुमोदन गरेका अन्तर्निर्मित सुविधाहरूलाई तपाईंको कारको लोकेसन प्रयोग गर्ने अनुमति दिनुहोस्।"</string>
-    <string name="location_required_apps_group_title" msgid="5672632286858280618">"अनिवार्य रूपमा इन्स्टल गर्नु पर्ने एपहरू"</string>
-    <string name="location_required_apps_group_summary" msgid="5760731893677945737">"तपाईंको कारको उत्पादकले व्यवस्था गरेबमोजिम गाडी चलाउन मद्दत गर्न अनिवार्य रूपमा इन्स्टल गर्नु पर्ने एपहरू।"</string>
     <string name="location_recently_accessed" msgid="522888989582110975">"हालसालै लोकेसन प्रयोग गरेका एपहरू"</string>
     <string name="location_settings_recently_accessed_title" msgid="6016264778609426382">"हालसालै लोकेसन प्रयोग गरेका एपहरू"</string>
     <string name="location_settings_recently_accessed_view_all_title" msgid="6344830628885781448">"सबै हेर्नुहोस्"</string>
@@ -540,7 +539,7 @@
     <string name="date_time_24hour_title" msgid="3025576547136168692">"२४ घन्टे ढाँचा"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"२४-घन्टे ढाँचा प्रयोग गर्नुहोस्"</string>
     <string name="date_time_set_time_title" msgid="5884883050656937853">"समय"</string>
-    <string name="date_time_set_time" msgid="6449555153906058248">"समय सेट गर्नुहोस्"</string>
+    <string name="date_time_set_time" msgid="3684135432529445165">"घडी मिलाउनुहोस्"</string>
     <string name="date_time_set_timezone_title" msgid="3001779256157093425">"प्रामाणिक समय"</string>
     <string name="date_time_set_timezone" msgid="4759353576185916944">"प्रामाणिक समय चयन गर्नुहोस्"</string>
     <string name="date_time_set_date_title" msgid="6834785820357051138">"मिति"</string>
@@ -549,6 +548,11 @@
     <string name="zone_list_menu_sort_by_timezone" msgid="4944880536057914136">"प्रामाणिक समयका आधारमा क्रमबद्ध गर्नुहोस्"</string>
     <string name="date_picker_title" msgid="1533614225273770178">"मिति"</string>
     <string name="time_picker_title" msgid="7436045944320504639">"समय"</string>
+    <string name="auto_local_time_disclaimer_summary" msgid="5965459676137313463">"मिति र समय स्वतः पत्ता लगाउने सुविधाले मिति, समय र प्रामाणिक समय निर्धारण गर्न लोकेसन र मोबाइल नेटवर्क जस्ता स्रोतहरू प्रयोग गर्न सक्छ।"</string>
+    <string name="auto_local_time_toggle_summary" msgid="6617503441738434427">"मिति र समय स्वतः मि‌लाउन आफ्नो कारको लोकेसन प्रयोग गर्नुहोस्। लोकेसन अन छ भने मात्र यो सुविधाले काम गर्छ।"</string>
+    <string name="auto_local_time_dialog_negative_button_text" msgid="6594888186816335207">"जारी राख्नुहोस्"</string>
+    <string name="auto_local_time_dialog_positive_button_text" msgid="4078408719499933410">"सेटिङमा गई परिवर्तन गर्नुहोस्"</string>
+    <string name="auto_local_time_dialog_msg" msgid="1692514715620573896">"तपाईंको लोकेसन अफ छ। समय स्वतः पत्ता लगाउने सुविधाले काम नगर्न सक्छ।"</string>
     <string name="user_admin" msgid="1535484812908584809">"प्रशासक"</string>
     <string name="signed_in_admin_user" msgid="1267225622818673274">"प्रशासकका रूपमा साइन इन गरियो"</string>
     <string name="grant_admin_permissions_title" msgid="4496239754512028468">"एड्मिनसँग सम्बन्धित अनुमतिहरू दिने हो?"</string>
@@ -659,11 +663,9 @@
     <string name="microphone_infotainment_apps_toggle_summary" msgid="5967713909533492475">"इन्फोटेनमेन्ट एपहरूलाई अडियो रेकर्ड गर्ने अनुमति दिनुहोस्"</string>
     <string name="camera_access_settings_title" msgid="1841809323727456945">"क्यामेरा एक्सेस"</string>
     <string name="camera_access_settings_summary" msgid="8820488359585532496">"एपहरूलाई तपाईंको कारको क्यामेरा एक्सेस गर्न दिने कि नदिने भन्ने कुरा छनौट गर्नुहोस्"</string>
-    <string name="required_apps_group_title" msgid="8607608579973985786">"अनिवार्य रूपमा इन्स्टल गर्नु पर्ने एपहरू"</string>
-    <!-- no translation found for required_apps_group_summary (5026442309718220831) -->
-    <skip />
-    <!-- no translation found for required_apps_privacy_policy_button_text (960364076891996263) -->
-    <skip />
+    <string name="required_apps_group_title" msgid="8607608579973985786">"आवश्यक एपहरू"</string>
+    <string name="required_apps_group_summary" msgid="5026442309718220831">"तपाईंको कार उत्पादकका अनुसार तपाईंलाई गाडी चलाउन मद्दत गर्ने आवश्यक एपहरू"</string>
+    <string name="required_apps_privacy_policy_button_text" msgid="960364076891996263">"नीति"</string>
     <string name="camera_access_disclaimer_summary" msgid="442467418242962647">"तपाईंको कारको उत्पादकसँग अझै पनि तपाईंको कारको क्यामेराको एक्सेस हुन सक्छ"</string>
     <string name="camera_infotainment_apps_toggle_title" msgid="6628966732265022536">"इन्फोटेनमेन्ट एपहरू"</string>
     <string name="camera_infotainment_apps_toggle_summary" msgid="2422476957183039039">"इन्फोटेनमेन्ट एपहरूलाई फोटो खिच्ने र भिडियो रेकर्ड गर्ने अनुमति दिनुहोस्"</string>
@@ -749,7 +751,7 @@
     <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{अनिवार्य रूपमा कम्तीमा पनि # अङ्क समावेश हुनु पर्छ}other{अनिवार्य रूपमा कम्तीमा पनि # वटा अङ्क समावेश हुनु पर्छ}}"</string>
     <string name="lockpassword_password_too_long" msgid="1709616257350671045">"{count,plural, =1{अनिवार्य रूपमा # भन्दा कम वर्ण हुनु पर्छ}other{अनिवार्य रूपमा # भन्दा कम वर्ण हुनु पर्छ}}"</string>
     <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{अनिवार्य रूपमा # भन्दा कम अङ्क हुनु पर्छ}other{अनिवार्य रूपमा # भन्दा कम अङ्क हुनु पर्छ}}"</string>
-    <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"बढ्दो, घट्दो वा दोहोरिएका अङ्कहरूको अनुक्रमलाई निषेध गरिएको छ"</string>
+    <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"बढ्दो, घट्दो क्रममा वा दोहोरिएका अङ्क हाल्न मिल्दैन"</string>
     <string name="setup_lock_settings_options_button_label" msgid="3337845811029780896">"स्क्रिन लकका विकल्पहरू"</string>
     <string name="credentials_reset" msgid="873900550885788639">"प्रमाणहरू मेट्नुहोस्"</string>
     <string name="credentials_reset_summary" msgid="6067911547500459637">"सबै प्रमाणहरू हटाउनुहोस्"</string>
@@ -929,4 +931,5 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"योजनाहरू हेर्नुहोस्"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"तपाईंको इन्टरनेट योजनाको म्याद सकिएको छ"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"योजनाहरू हेर्नुहोस्"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"पूरा भयो"</string>
 </resources>
