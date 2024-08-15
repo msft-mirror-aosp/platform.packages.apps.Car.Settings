@@ -205,6 +205,10 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="dimen" name="choose_pin_title_text_margin_bottom"/>
       <item type="dimen" name="choose_title_text_margin_bottom"/>
       <item type="dimen" name="circle_ripple_bg_radius"/>
+      <item type="dimen" name="colored_two_action_switch_preference_divider_vertical_padding"/>
+      <item type="dimen" name="colored_two_action_switch_preference_margin_end"/>
+      <item type="dimen" name="colored_two_action_switch_preference_vertical_margin"/>
+      <item type="dimen" name="colored_two_action_switch_preference_vertical_padding"/>
       <item type="dimen" name="confirm_lock_message_vertical_spacing"/>
       <item type="dimen" name="confirm_pattern_dimension"/>
       <item type="dimen" name="data_usage_summary_preference_button_height"/>
@@ -370,6 +374,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="drawable" name="ic_qc_restricted_wifi_signal_2"/>
       <item type="drawable" name="ic_qc_restricted_wifi_signal_3"/>
       <item type="drawable" name="ic_qc_restricted_wifi_signal_4"/>
+      <item type="drawable" name="ic_qc_speaker_group"/>
       <item type="drawable" name="ic_qc_ui_mode_auto"/>
       <item type="drawable" name="ic_qc_ui_mode_day"/>
       <item type="drawable" name="ic_qc_ui_mode_night"/>
@@ -728,6 +733,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="assistant_and_voice_use_text_from_screen_summary"/>
       <item type="string" name="assistant_and_voice_use_text_from_screen_title"/>
       <item type="string" name="assistant_security_warning"/>
+      <item type="string" name="audio_route_dialog_neutral_button_text"/>
       <item type="string" name="audio_route_selector_title"/>
       <item type="string" name="audio_route_selector_toast"/>
       <item type="string" name="auto_brightness_summary"/>
@@ -735,6 +741,11 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="auto_launch_disable_text"/>
       <item type="string" name="auto_launch_enable_text"/>
       <item type="string" name="auto_launch_reset_text"/>
+      <item type="string" name="auto_local_time_dialog_msg"/>
+      <item type="string" name="auto_local_time_dialog_negative_button_text"/>
+      <item type="string" name="auto_local_time_dialog_positive_button_text"/>
+      <item type="string" name="auto_local_time_disclaimer_summary"/>
+      <item type="string" name="auto_local_time_toggle_summary"/>
       <item type="string" name="autofill_add_service"/>
       <item type="string" name="autofill_confirmation_message"/>
       <item type="string" name="autofill_settings_title"/>
@@ -1553,6 +1564,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="wallpaper_attributions_values"/>
       <item type="string" name="webview_license_title"/>
       <item type="string" name="wifi_ap_2G"/>
+      <item type="string" name="wifi_ap_2G_5G"/>
       <item type="string" name="wifi_ap_5G"/>
       <item type="string" name="wifi_ap_band_config"/>
       <item type="string" name="wifi_ap_band_select_one"/>
@@ -1632,6 +1644,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="zone_list_menu_sort_alphabetically"/>
       <item type="string" name="zone_list_menu_sort_by_timezone"/>
       <item type="style" name="ActionDialogTheme"/>
+      <item type="style" name="AlertDialogTheme"/>
       <item type="style" name="CarSettingTheme"/>
       <item type="style" name="CarSettingsActivityDividerStyle"/>
       <item type="style" name="CarSettingsFragmentContainerStyle"/>
@@ -1680,6 +1693,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="xml" name="data_usage_set_threshold_fragment"/>
       <item type="xml" name="data_warning_and_limit_fragment"/>
       <item type="xml" name="datetime_settings_fragment"/>
+      <item type="xml" name="datetime_settings_fragment_v2"/>
       <item type="xml" name="default_autofill_picker_fragment"/>
       <item type="xml" name="default_voice_input_picker_fragment"/>
       <item type="xml" name="developer_options_fragment"/>
