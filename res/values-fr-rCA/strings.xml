@@ -534,7 +534,7 @@
     <string name="factory_reset_progress_text" msgid="7704636573522634757">"Veuillez patienter…"</string>
     <string name="date_and_time_settings_title" msgid="4058492663544475485">"Date et heure"</string>
     <string name="date_and_time_settings_summary" msgid="7669856855390804666">"Configurer la date, l\'heure, le fuseau horaire et les formats"</string>
-    <string name="date_time_auto" msgid="6018635902717385962">"Régler l\'heure automatiquement"</string>
+    <string name="date_time_auto" msgid="6018635902717385962">"Définir l\'heure automatiquement"</string>
     <string name="zone_auto" msgid="4174874778459184605">"Régler le fuseau horaire auto."</string>
     <string name="date_time_24hour_title" msgid="3025576547136168692">"Format 24 heures"</string>
     <string name="date_time_24hour" msgid="1137618702556486913">"Utiliser le format 24 heures"</string>
@@ -699,7 +699,7 @@
     <string name="lockpattern_recording_intro_header" msgid="7864149726033694408">"Dessinez un schéma de déverrouillage"</string>
     <string name="lockpattern_recording_inprogress" msgid="1575019990484725964">"Retirez le doigt lorsque vous avez terminé"</string>
     <string name="lockpattern_pattern_entered" msgid="6103071005285320575">"Schéma enregistré"</string>
-    <string name="lockpattern_need_to_confirm" msgid="4648070076022940382">"Redessinez le schéma pour confirmer"</string>
+    <string name="lockpattern_need_to_confirm" msgid="4648070076022940382">"Retracez le schéma pour confirmer"</string>
     <string name="lockpattern_recording_incorrect_too_short" msgid="2417932185815083082">"Reliez au moins 4 points. Réessayez."</string>
     <string name="lockpattern_pattern_wrong" msgid="929223969555399363">"Schéma incorrect"</string>
     <string name="lockpattern_settings_help_how_to_record" msgid="4436556875843192284">"Comment dessiner un schéma de déverr."</string>
