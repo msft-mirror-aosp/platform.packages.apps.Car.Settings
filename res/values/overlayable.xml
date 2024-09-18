@@ -891,7 +891,8 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="config_default_screen_reader"/>
       <item type="string" name="config_dev_options_module"/>
       <item type="string" name="config_homepage_activity_alias_name"/>
-      <item type="string" name="config_homepage_fragment_class"/>
+      <item type="string" name="config_homepage_placeholder_class"/>
+      <item type="string" name="config_homepage_placeholder_preference_key"/>
       <item type="string" name="config_package_installer_package_name"/>
       <item type="string" name="config_settingsintelligence_package_name"/>
       <item type="string" name="confirm_grant_admin"/>

@@ -21,7 +21,6 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.provider.Settings;
-import android.util.Log;
 
 import androidx.window.embedding.ActivityFilter;
 import androidx.window.embedding.ActivityRule;
@@ -35,7 +34,9 @@ import androidx.window.embedding.SplitRule;
 
 import com.android.car.settings.applications.managedomainurls.ManageDomainUrlsActivity;
 import com.android.car.settings.common.CarSettingActivities;
+import com.android.car.settings.common.Logger;
 import com.android.car.settings.common.SubSettingsActivity;
+import com.android.car.settings.deeplink.DeepLinkHomepageActivity;
 import com.android.car.settings.enterprise.DeviceAdminAddActivity;
 import com.android.car.settings.enterprise.EnterprisePrivacySettingsActivity;
 import com.android.car.settings.profiles.ProfileSwitcherActivity;
@@ -53,11 +54,9 @@ import java.util.Set;
  * Main controller class for registering and updating rules for pane split before launching another
  * settings activity. */
 public class ActivityEmbeddingRulesController {
-
-    private static final String TAG = "ActivityEmbeddingRulesController";
-
     private final Context mContext;
     private final RuleController mRuleController;
+    private static final Logger LOG = new Logger(ActivityEmbeddingRulesController.class);
     private static final ComponentName COMPONENT_NAME_WILDCARD = new ComponentName(
             /* pkg */ "*", /* cls */ "*");
 
@@ -79,6 +78,10 @@ public class ActivityEmbeddingRulesController {
             SplitRule.FinishBehavior finishPrimaryWithSecondary,
             SplitRule.FinishBehavior finishSecondaryWithPrimary,
             boolean clearTop) {
+        if (!ActivityEmbeddingUtils.isEmbeddingActivityEnabled(context)) {
+            LOG.d("Embedding is not enabled for Settings.");
+            return;
+        }
         final Set<SplitPairFilter> filters = new HashSet<>();
         filters.add(new SplitPairFilter(primaryComponent, secondaryComponent,
                 secondaryIntentAction));
@@ -117,6 +120,13 @@ public class ActivityEmbeddingRulesController {
                 /* finishSecondaryWithPrimary= */ SplitRule.FinishBehavior.ALWAYS,
                 /* clearTop= */ clearTop);
         registerDualPaneSplitRule(/* context= */ context,
+                /* primaryComponent= */ getComponentName(context, DeepLinkHomepageActivity.class),
+                /* secondaryComponent= */ secondaryComponent,
+                /* secondaryIntentAction= */ secondaryIntentAction,
+                /* finishPrimaryWithSecondary= */ SplitRule.FinishBehavior.ALWAYS,
+                /* finishSecondaryWithPrimary= */ SplitRule.FinishBehavior.ALWAYS,
+                /* clearTop= */ clearTop);
+        registerDualPaneSplitRule(/* context= */ context,
                 /* primaryComponent= */ getComponentName(context,
                         ActivityEmbeddingUtils.getHomepageActivityAliasName(context)),
                 /* secondaryComponent= */ secondaryComponent,
@@ -131,13 +141,13 @@ public class ActivityEmbeddingRulesController {
      */
     public void initActivityEmbeddingRules() {
         if (!ActivityEmbeddingUtils.isEmbeddingActivityEnabled(mContext)) {
-            Log.d(TAG, "Embedding is not enabled for Settings.");
+            LOG.d("Embedding is not enabled for Settings.");
             return;
         }
         mRuleController.clearRules();
+        registerDefaultAlwaysExpandRules();
         registerHomepagePlaceholderRule();
         registerSubSettingsActivityPairRule();
-        registerDefaultAlwaysExpandRules();
     }
 
     private void registerDefaultAlwaysExpandRules() {
@@ -166,11 +176,11 @@ public class ActivityEmbeddingRulesController {
     private void registerHomepagePlaceholderRule() {
         final Set<ActivityFilter> activityFilters = new HashSet<>();
         addActivityClassFilter(activityFilters, CarSettingActivities.HomepageActivity.class);
+        addActivityClassFilter(activityFilters, DeepLinkHomepageActivity.class);
         activityFilters.add(new ActivityFilter(new ComponentName(mContext,
                 ActivityEmbeddingUtils.getHomepageActivityAliasName(mContext)), null));
 
-        final Intent startUpIntent = new Intent(mContext,
-                CarSettingActivities.BluetoothSettingsActivity.class);
+        final Intent startUpIntent = ActivityEmbeddingUtils.getPlaceholderIntent(mContext);
         SplitAttributes attributes = new SplitAttributes.Builder()
                 .setSplitType(SplitAttributes.SplitType.ratio(
                         ActivityEmbeddingUtils.getSplitRatio(mContext)))

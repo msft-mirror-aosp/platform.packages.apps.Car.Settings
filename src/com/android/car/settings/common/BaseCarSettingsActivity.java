@@ -18,7 +18,9 @@ package com.android.car.settings.common;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 
-import android.app.Activity;
+import static com.android.car.settings.deeplink.DeepLinkHomepageActivity.EXTRA_TARGET_SECONDARY_CONTAINER;
+import static com.android.car.settings.deeplink.DeepLinkHomepageActivity.convertToDeepLinkHomepageIntent;
+
 import android.car.drivingstate.CarUxRestrictions;
 import android.car.drivingstate.CarUxRestrictionsManager.OnUxRestrictionsChangedListener;
 import android.content.ComponentName;
@@ -31,7 +33,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
@@ -75,9 +76,6 @@ public abstract class BaseCarSettingsActivity extends FragmentActivity implement
     public static final String META_DATA_KEY_SINGLE_PANE = "com.android.car.settings.SINGLE_PANE";
 
     private static final Logger LOG = new Logger(BaseCarSettingsActivity.class);
-    private static final String KEY_HAS_NEW_INTENT = "key_has_new_intent";
-
-    private boolean mHasNewIntent = true;
 
     private String mTopLevelHeaderKey;
     private boolean mIsSinglePane;
@@ -96,11 +94,17 @@ public abstract class BaseCarSettingsActivity extends FragmentActivity implement
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
-        if (savedInstanceState != null) {
-            mHasNewIntent = savedInstanceState.getBoolean(KEY_HAS_NEW_INTENT, mHasNewIntent);
-        }
         populateMetaData();
+        // When dual-pane is enabled, all activity-filter Intents into Settings should be relaunched
+        // into the secondary container with the exception of HomepageActivity.
+        // For any instance of BaseCarSettingsActivity, if its start-up Intent meets the conditions
+        // for deep link, trampoline it and restart the activity on the secondary container.
+        if (shouldUseSecondaryPaneForActivity()) {
+            startActivity(convertToDeepLinkHomepageIntent(getIntent()));
+            finish();
+            return;
+        }
+        getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
         setContentView(this instanceof CarSettingActivities.HomepageActivity
                 ? R.layout.homepage_activity : R.layout.car_setting_activity);
 
@@ -111,24 +115,78 @@ public abstract class BaseCarSettingsActivity extends FragmentActivity implement
         setUpToolbarAndDivider();
         getSupportFragmentManager().addOnBackStackChangedListener(this);
         mRestrictedMessage = findViewById(R.id.restricted_message);
-
-        if (mHasNewIntent) {
-            launchIfDifferent(getInitialFragment());
-            mHasNewIntent = false;
-        }
         mUxRestrictionsHelper = new CarUxRestrictionsHelper(/* context= */ this, /* listener= */
                 this);
+
+        handleNewIntent(getIntent());
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        handleNewIntent(intent);
+    }
+
+    /**
+     * Handles when an intent being processed by this class, and should be called every time a new
+     * {@code Intent} is received by this Activity, including during {@link #onCreate(Bundle)}
+     * when this Activity first starts, and during subsequent calls to {@link #onNewIntent(Intent)}.
+     */
+    protected void handleNewIntent(Intent intent) {
+        launchIfDifferent(getInitialFragment());
+    }
+
+    private boolean shouldUseSecondaryPaneForActivity() {
+        if (!ActivityEmbeddingUtils.isEmbeddingActivityEnabled(this)) {
+            return false;
+        }
+        // Homepage and deeplink activity should never be hosted on the secondary pane.
+        if (this instanceof CarSettingActivities.HomepageActivity) {
+            return false;
+        }
+        // All deeplink intents are received via intent-filter so getAction must not be null.
+        // Only starts trampoline for deep link intents. Should return false for all the cases that
+        // CarSettings app starts a SubSettingsActivity.
+        if (getIntent().getAction() == null) {
+            return false;
+        }
+        // If the activity's launch mode is "singleInstance", it can't be embedded in Settings since
+        // it will always be created in a new task.
+        ActivityInfo info = getIntent().resolveActivityInfo(getPackageManager(),
+                PackageManager.MATCH_DEFAULT_ONLY);
+        if (info.launchMode == ActivityInfo.LAUNCH_SINGLE_INSTANCE) {
+            return false;
+        }
+        // If the activity metadata is configured to be single pane, it should be directly shown.
+        info = getActivityInfo(getPackageManager(), getComponentName());
+        if (info != null && info.metaData != null
+                && info.metaData.getBoolean(META_DATA_KEY_SINGLE_PANE, false)) {
+            return false;
+        }
+        // This intent has already been restarted as deeplink intent, or was launched by another
+        // activity already embedded on the secondary pane.
+        if (getIntent().getBooleanExtra(EXTRA_TARGET_SECONDARY_CONTAINER, false)) {
+            return false;
+        }
+        return true;
     }
 
     private void populateMetaData() {
-        ActivityInfo ai = getActivityInfo(getComponentName());
+        ActivityInfo ai = getActivityInfo(getPackageManager(), getComponentName());
         mIsSinglePane = !ActivityEmbeddingUtils.isEmbeddingSplitActivated(this);
         if (ai != null && ai.metaData != null) {
-            mTopLevelHeaderKey = ai.metaData.getString(META_DATA_KEY_HEADER_KEY);
+            setTopLevelHeaderKey(ai.metaData.getString(META_DATA_KEY_HEADER_KEY));
             mIsSinglePane = ai.metaData.getBoolean(META_DATA_KEY_SINGLE_PANE, mIsSinglePane);
         }
     }
 
+    protected String getTopLevelHeaderKey() {
+        return mTopLevelHeaderKey;
+    }
+
+    protected void setTopLevelHeaderKey(@Nullable String key) {
+        mTopLevelHeaderKey = key;
+    }
 
     private void launchIfDifferent(Fragment newFragment) {
         Fragment currentFragment = getCurrentFragment();
@@ -143,15 +201,11 @@ public abstract class BaseCarSettingsActivity extends FragmentActivity implement
     }
 
     @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putBoolean(KEY_HAS_NEW_INTENT, mHasNewIntent);
-    }
-
-    @Override
     public void onDestroy() {
-        mUxRestrictionsHelper.destroy();
-        mUxRestrictionsHelper = null;
+        if (mUxRestrictionsHelper != null) {
+            mUxRestrictionsHelper.destroy();
+            mUxRestrictionsHelper = null;
+        }
         super.onDestroy();
     }
 
@@ -184,7 +238,9 @@ public abstract class BaseCarSettingsActivity extends FragmentActivity implement
         if (mIsSinglePane || this instanceof SubSettingsActivity) {
             updateFragmentContainer(fragment);
         } else {
-            startActivity(SubSettingsActivity.newInstance(this, fragment));
+            Intent intent = SubSettingsActivity.newInstance(this, fragment);
+            setIntent(intent);
+            startActivity(intent);
         }
     }
 
@@ -295,16 +351,6 @@ public abstract class BaseCarSettingsActivity extends FragmentActivity implement
         imm.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), 0);
     }
 
-    @Nullable
-    private ActivityInfo getActivityInfo(ComponentName componentName) {
-        try {
-            return getPackageManager().getActivityInfo(componentName, PackageManager.GET_META_DATA);
-        } catch (PackageManager.NameNotFoundException e) {
-            LOG.w("Unable to find package", e);
-        }
-        return null;
-    }
-
     private void setUpToolbarAndDivider() {
         boolean isHomepageActivity = this instanceof CarSettingActivities.HomepageActivity;
         if (isHomepageActivity && !ActivityEmbeddingUtils.isEmbeddingSplitActivated(this)) {
@@ -322,7 +368,16 @@ public abstract class BaseCarSettingsActivity extends FragmentActivity implement
         mToolbar.setNavButtonMode(NavButtonMode.BACK);
     }
 
-    private ComponentName getComponentName(Class<? extends Activity> activityClass) {
-        return new ComponentName(this.getPackageName(), activityClass.getName());
+    /**
+     * Returns the ActivityInfo of the given componentName.
+     */
+    @Nullable
+    public ActivityInfo getActivityInfo(PackageManager pm, ComponentName componentName) {
+        try {
+            return pm.getActivityInfo(componentName, PackageManager.GET_META_DATA);
+        } catch (PackageManager.NameNotFoundException e) {
+            LOG.w("Unable to find package", e);
+        }
+        return null;
     }
 }

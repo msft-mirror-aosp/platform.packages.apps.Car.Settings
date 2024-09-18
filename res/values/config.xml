@@ -18,9 +18,12 @@
 <resources>
     <!-- Whether all activities should be single pane views or not. -->
     <bool name="config_global_force_single_pane">false</bool>
-    <!-- Fully qualified class name for the homepage fragment. -->
-    <string name="config_homepage_fragment_class" translatable="false">
-        com.android.car.settings.common.TopLevelMenuFragment</string>
+    <!-- Class name for the dual pane homepage placeholder activity class. -->
+    <string name="config_homepage_placeholder_class" translatable="false">
+        com.android.car.settings.common.CarSettingActivities$BluetoothSettingsActivity</string>
+    <!-- Top-level preference key for config_homepage_placeholder_class -->
+    <string name="config_homepage_placeholder_preference_key" translatable="false">
+        @string/pk_bluetooth_settings_entry</string>
     <!-- Whether to show the launcher icon for settings home or not. -->
     <bool name="config_enable_home_settings_icon">true</bool>
     <!-- Whether system_update_settings should be shown or not. -->

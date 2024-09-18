@@ -18,14 +18,14 @@ package com.android.car.settings.activityembedding;
 
 import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
+import android.content.Intent;
 import android.view.WindowManager;
 
 import androidx.window.embedding.ActivityEmbeddingController;
 import androidx.window.embedding.SplitController;
 
 import com.android.car.settings.R;
-
+import com.android.car.settings.common.Logger;
 /**
  * Utility class for retrieving Activity Embedding configurations to handle dual-pane layout.
  */
@@ -35,7 +35,7 @@ public class ActivityEmbeddingUtils {
     // Without rotation enabled, it is safe to set this number to 0dp;
     private static final int MIN_SMALLEST_SCREEN_SPLIT_WIDTH_DP = 0;
 
-    private static final String TAG = "ActivityEmbeddingUtils";
+    private static final Logger LOG = new Logger(ActivityEmbeddingUtils.class);
 
     private static float sSplitRatio;
 
@@ -46,7 +46,7 @@ public class ActivityEmbeddingUtils {
     public static boolean isEmbeddingActivityEnabled(Context context) {
         boolean isSplitAvailable = SplitController.getInstance(context).getSplitSupportStatus()
                 == SplitController.SplitSupportStatus.SPLIT_AVAILABLE;
-        Log.d(TAG, "Is activity split enabled on this device: " + isSplitAvailable);
+        LOG.d("Is activity split enabled on this device: " + isSplitAvailable);
         boolean configForceSinglePane = context.getResources().getBoolean(
                 R.bool.config_global_force_single_pane);
         return isSplitAvailable && !configForceSinglePane;
@@ -89,6 +89,22 @@ public class ActivityEmbeddingUtils {
     }
 
     /**
+     * Returns the Intent to launch the default activity in dual-pane settings.
+     */
+    public static Intent getPlaceholderIntent(Context context) {
+        return new Intent().setClassName(context.getPackageName(),
+                context.getString(R.string.config_homepage_placeholder_class));
+    }
+
+    /**
+     * Returns the preference key of the default activity dual-pane settings.
+     */
+    public static String getPlaceholderPreferenceHighlightKey(Context context) {
+        return context.getResources().getString(
+                R.string.config_homepage_placeholder_preference_key);
+    }
+
+    /**
      * Returns the well-formed ComponentName String for the activity-alias for
      * {@link com.android.car.settings.common.CarSettingActivities.HomepageActivity}.
      */
@@ -96,7 +112,7 @@ public class ActivityEmbeddingUtils {
         return context.getResources().getString(R.string.config_homepage_activity_alias_name);
     }
 
-    static int getTaskAreaMaxWindowWidth(Context context) {
+    private static int getTaskAreaMaxWindowWidth(Context context) {
         WindowManager wm = context.getSystemService(WindowManager.class);
         return wm.getMaximumWindowMetrics().getBounds().width();
     }

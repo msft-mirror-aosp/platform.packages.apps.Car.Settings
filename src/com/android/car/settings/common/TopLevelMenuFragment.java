@@ -16,8 +16,7 @@
 
 package com.android.car.settings.common;
 
-import static
-        com.android.car.settings.common.ExtraSettingsLoader.META_DATA_IS_TOP_LEVEL_EXTRA_SETTINGS;
+import static com.android.car.settings.common.ExtraSettingsLoader.META_DATA_IS_TOP_LEVEL_EXTRA_SETTINGS;
 
 import android.car.drivingstate.CarUxRestrictions;
 import android.content.Context;
@@ -39,6 +38,7 @@ import androidx.preference.PreferenceScreen;
 
 import com.android.car.settings.R;
 import com.android.car.settings.activityembedding.ActivityEmbeddingUtils;
+import com.android.car.settings.common.CarSettingActivities.HomepageActivity;
 import com.android.car.ui.recyclerview.CarUiRecyclerView;
 import com.android.car.ui.toolbar.MenuItem;
 import com.android.car.ui.toolbar.NavButtonMode;
@@ -86,6 +86,12 @@ public class TopLevelMenuFragment extends SettingsFragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        updatePreferenceHighlight(getHeaderKeyFromActivity());
+    }
+
+    @Override
     protected void setupToolbar(@NonNull ToolbarController toolbar) {
         super.setupToolbar(toolbar);
         toolbar.setTitle(R.string.settings_label);
@@ -112,15 +118,30 @@ public class TopLevelMenuFragment extends SettingsFragment {
             if (mSelectedPreferenceKey != null) {
                 updatePreferenceHighlight(mSelectedPreferenceKey);
             } else {
-                updatePreferenceHighlight(getActivity().getIntent()
-                        .getStringExtra(BaseCarSettingsActivity.META_DATA_KEY_HEADER_KEY));
+                updatePreferenceHighlight(getHeaderKeyFromActivity());
             }
+        }
+    }
+
+    @Nullable
+    private String getHeaderKeyFromActivity() {
+        if (getActivity() == null || !(getActivity() instanceof HomepageActivity)) {
+            return null;
+        }
+        return ((HomepageActivity) getActivity()).getTopLevelHeaderKey();
+    }
+
+    private void setSelectedPreferenceKey(@Nullable String key) {
+        mSelectedPreferenceKey = key;
+        if (getActivity() != null && getActivity() instanceof HomepageActivity) {
+            ((HomepageActivity) getActivity()).setTopLevelHeaderKey(key);
         }
     }
 
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
+        setSelectedPreferenceKey(mSelectedPreferenceKey);
         outState.putString(KEY_SAVED_SELECTED_PREFERENCE_KEY, mSelectedPreferenceKey);
     }
 
@@ -154,7 +175,6 @@ public class TopLevelMenuFragment extends SettingsFragment {
         updatePreferenceHighlight(preference.getKey());
         return super.onPreferenceTreeClick(preference);
     }
-
     @Override
     protected HighlightablePreferenceGroupAdapter createHighlightableAdapter(
             PreferenceScreen preferenceScreen) {
@@ -164,7 +184,7 @@ public class TopLevelMenuFragment extends SettingsFragment {
     }
 
     private void updatePreferenceHighlight(String key) {
-        mSelectedPreferenceKey = key;
+        setSelectedPreferenceKey(key);
         if (!TextUtils.isEmpty(mSelectedPreferenceKey)) {
             requestPreferenceHighlight(mSelectedPreferenceKey);
         } else {
