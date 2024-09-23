@@ -145,6 +145,12 @@ public class SettingsQCRegistry {
             .appendPath("debug_layout_bounds_toggle")
             .build();
 
+    public static final Uri DEBUG_FORCE_RTL_URI = new Uri.Builder()
+            .scheme(ContentResolver.SCHEME_CONTENT)
+            .authority(AUTHORITY)
+            .appendPath("debug_force_rtl_toggle")
+            .build();
+
     // End Uris
 
     @VisibleForTesting
@@ -172,6 +178,7 @@ public class SettingsQCRegistry {
         map.put(CALL_VOLUME_SLIDER_URI, CallVolumeSlider.class);
         map.put(NAVIGATION_VOLUME_SLIDER_URI, NavigationVolumeSlider.class);
         map.put(DEBUG_LAYOUT_BOUNDS_URI, DebugLayoutBoundsRow.class);
+        map.put(DEBUG_FORCE_RTL_URI, DebugForceRTLRow.class);
 
         return map;
     }
