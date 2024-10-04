@@ -291,7 +291,6 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="dimen" name="top_level_menu_width"/>
       <item type="dimen" name="top_level_preference_corner_radius"/>
       <item type="dimen" name="top_level_preference_min_height"/>
-      <item type="dimen" name="top_level_preference_title_margin_horizontal"/>
       <item type="dimen" name="top_level_recyclerview_margin_right"/>
       <item type="dimen" name="touch_target_size"/>
       <item type="dimen" name="two_action_preference_divider_width"/>
@@ -598,7 +597,6 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="integer" name="audio_route_toast_duration"/>
       <item type="integer" name="button_max_ems"/>
       <item type="integer" name="clear_content_timeout_ms"/>
-      <item type="integer" name="config_activity_embed_split_min_cur_dp"/>
       <item type="integer" name="config_networkAvoidBadWifi"/>
       <item type="integer" name="config_preference_onclick_debounce_ms"/>
       <item type="integer" name="config_qc_bluetooth_device_limit"/>
@@ -1578,6 +1576,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="units_unit_name_watt_hour"/>
       <item type="string" name="units_unit_name_year"/>
       <item type="string" name="units_volume_title"/>
+      <item type="string" name="unsupported_intents_toast_text"/>
       <item type="string" name="unused_apps"/>
       <item type="string" name="unused_apps_summary"/>
       <item type="string" name="unused_apps_switch"/>
