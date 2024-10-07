@@ -315,7 +315,7 @@
     <string name="all_applications" msgid="7798210477486822168">"Wys alle programme"</string>
     <string name="default_applications" msgid="1558183275638697087">"Verstekapps"</string>
     <string name="performance_impacting_apps" msgid="3439260699394720569">"Apps wat werkverrigting beïnvloed"</string>
-    <string name="app_permissions" msgid="32799922508313948">"Programtoestemmings"</string>
+    <string name="app_permissions" msgid="32799922508313948">"Apptoestemmings"</string>
     <string name="app_permissions_summary" msgid="5402214755935368418">"Beheer apptoegang tot jou data"</string>
     <string name="applications_settings" msgid="794261395191035632">"Appinligting"</string>
     <string name="force_stop" msgid="1616958676171167028">"Stop app"</string>
@@ -797,6 +797,7 @@
     <string name="qc_bluetooth_off_devices_info" msgid="8420985279976892700">"Skakel Bluetooth aan om jou toestelle te sien"</string>
     <string name="qc_bluetooth_on_no_devices_info" msgid="7573736950041887300">"Maak Bluetooth-instellings oop om \'n toestel saam te bind"</string>
     <string name="qc_ui_mode_title" msgid="2425571805732530923">"Tema"</string>
+    <string name="show_layout_bounds_title" msgid="8590148405645027755">"Wys uitleg se grense"</string>
     <string name="device_admin_add_title" msgid="1294399588284546811">"Inligtingvermaakstelseladmin"</string>
     <string name="device_admin_activated_apps" msgid="568075063362271751">"Geaktiveerde programme"</string>
     <string name="device_admin_deactivated_apps" msgid="3797263682500122872">"Gedeaktiveerde programme"</string>
