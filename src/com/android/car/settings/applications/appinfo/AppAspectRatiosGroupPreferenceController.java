@@ -22,7 +22,6 @@ import android.content.pm.PackageManager;
 import android.os.RemoteException;
 import android.os.UserHandle;
 
-import androidx.annotation.NonNull;
 import androidx.preference.PreferenceGroup;
 
 import com.android.car.settings.common.FragmentController;
@@ -32,7 +31,9 @@ import com.android.car.settings.common.RadioWithImagePreference;
 import com.android.internal.annotations.VisibleForTesting;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * A PreferenceController handling the logic for selecting an aspect ratio.
@@ -47,6 +48,21 @@ public class AppAspectRatiosGroupPreferenceController extends
     private static final String KEY_PREF_16_9 = "16_9_pref";
     private static final String KEY_PREF_4_3 = "4_3_pref";
     private static final String KEY_PREF_3_2 = "3_2_pref";
+    private static Map<String, Integer> sKeyToAspectRatioMap = new HashMap<>();
+
+    static {
+        sKeyToAspectRatioMap = new HashMap<>();
+        sKeyToAspectRatioMap.put(KEY_PREF_DEFAULT, PackageManager.USER_MIN_ASPECT_RATIO_UNSET);
+        sKeyToAspectRatioMap.put(KEY_PREF_FULLSCREEN,
+                PackageManager.USER_MIN_ASPECT_RATIO_FULLSCREEN);
+        sKeyToAspectRatioMap.put(KEY_PREF_HALF_SCREEN,
+                PackageManager.USER_MIN_ASPECT_RATIO_SPLIT_SCREEN);
+        sKeyToAspectRatioMap.put(KEY_PREF_DISPLAY_SIZE,
+                PackageManager.USER_MIN_ASPECT_RATIO_DISPLAY_SIZE);
+        sKeyToAspectRatioMap.put(KEY_PREF_4_3, PackageManager.USER_MIN_ASPECT_RATIO_4_3);
+        sKeyToAspectRatioMap.put(KEY_PREF_16_9, PackageManager.USER_MIN_ASPECT_RATIO_16_9);
+        sKeyToAspectRatioMap.put(KEY_PREF_3_2, PackageManager.USER_MIN_ASPECT_RATIO_3_2);
+    }
     private List<RadioWithImagePreference> mPreferenceList;
     private String mSelectedKey = KEY_PREF_DEFAULT;
     private String mPackageName;
@@ -76,8 +92,16 @@ public class AppAspectRatiosGroupPreferenceController extends
 
     @Override
     protected void onCreateInternal() {
+        int currentAspectRatio = PackageManager.USER_MIN_ASPECT_RATIO_UNSET;
+        try {
+            currentAspectRatio = mAspectRatioManager.getUserMinAspectRatioValue(mPackageName,
+                    mUserId);
+        } catch (RemoteException e) {
+            LOG.d("There is an exception when trying to get the current aspect ratio: " + e);
+        }
+
+        mSelectedKey = getSelectedAspectRatioKey(currentAspectRatio);
         for (int i = 0; i < getPreference().getPreferenceCount(); i++) {
-            // TODO(b/375471891): Add more conditions when setting up.
             RadioWithImagePreference child =
                     (RadioWithImagePreference) getPreference().getPreference(i);
             mPreferenceList.add(child);
@@ -99,7 +123,9 @@ public class AppAspectRatiosGroupPreferenceController extends
         if (selectedKey.equals(mSelectedKey)) {
             return;
         }
-        int userAspectRatio = getSelectedAspectRatioAction(selectedKey);
+
+        int userAspectRatio = sKeyToAspectRatioMap.getOrDefault(selectedKey,
+                PackageManager.USER_MIN_ASPECT_RATIO_UNSET);
 
         try {
             getAspectRatioManager().setUserMinAspectRatio(mPackageName, mUserId, userAspectRatio);
@@ -111,28 +137,28 @@ public class AppAspectRatiosGroupPreferenceController extends
         updateState(getPreference());
     }
 
-    private static int getSelectedAspectRatioAction(@NonNull String selectedKey) {
-        switch (selectedKey) {
-            case KEY_PREF_FULLSCREEN:
-                return PackageManager.USER_MIN_ASPECT_RATIO_FULLSCREEN;
-            case KEY_PREF_HALF_SCREEN:
-                return PackageManager.USER_MIN_ASPECT_RATIO_SPLIT_SCREEN;
-            case KEY_PREF_4_3:
-                return PackageManager.USER_MIN_ASPECT_RATIO_4_3;
-            case KEY_PREF_16_9:
-                return PackageManager.USER_MIN_ASPECT_RATIO_16_9;
-            case KEY_PREF_3_2:
-                return PackageManager.USER_MIN_ASPECT_RATIO_3_2;
-            case KEY_PREF_DISPLAY_SIZE:
-                return PackageManager.USER_MIN_ASPECT_RATIO_DISPLAY_SIZE;
-            case KEY_PREF_DEFAULT:
-            default:
-                return PackageManager.USER_MIN_ASPECT_RATIO_UNSET;
-        }
-    }
-
     @VisibleForTesting
     AspectRatioManager getAspectRatioManager() {
         return mAspectRatioManager;
+    }
+
+    private static String getSelectedAspectRatioKey(int selectedKey) {
+        switch (selectedKey) {
+            case PackageManager.USER_MIN_ASPECT_RATIO_FULLSCREEN:
+                return KEY_PREF_FULLSCREEN;
+            case PackageManager.USER_MIN_ASPECT_RATIO_SPLIT_SCREEN:
+                return KEY_PREF_HALF_SCREEN;
+            case PackageManager.USER_MIN_ASPECT_RATIO_4_3:
+                return KEY_PREF_4_3;
+            case PackageManager.USER_MIN_ASPECT_RATIO_16_9:
+                return KEY_PREF_16_9;
+            case PackageManager.USER_MIN_ASPECT_RATIO_3_2:
+                return KEY_PREF_3_2;
+            case PackageManager.USER_MIN_ASPECT_RATIO_DISPLAY_SIZE:
+                return KEY_PREF_DISPLAY_SIZE;
+            case PackageManager.USER_MIN_ASPECT_RATIO_UNSET:
+            default:
+                return KEY_PREF_DEFAULT;
+        }
     }
 }
