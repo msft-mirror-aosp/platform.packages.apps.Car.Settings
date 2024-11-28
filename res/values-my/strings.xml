@@ -947,5 +947,5 @@
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"သင့်အင်တာနက်အစီအစဉ်များ သက်တမ်းကုန်သွားပါပြီ"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"အစီအစဉ်များ ကြည့်ရန်"</string>
     <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"ပြီးပြီ"</string>
-    <string name="unsupported_intents_toast_text" msgid="3112314947877145848">"ဤဝန်ဆောင်မှုကို သင့်ယာဉ်က မပံ့ပိုးပါ"</string>
+    <string name="unsupported_intents_toast_text" msgid="3112314947877145848">"ဤလုပ်ဆောင်ချက်ကို သင့်ယာဉ်တွင် မရနိုင်ပါ"</string>
 </resources>

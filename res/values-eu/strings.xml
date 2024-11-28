@@ -317,7 +317,7 @@
     <string name="performance_impacting_apps" msgid="3439260699394720569">"Errendimendua okertzen duten aplikazioak"</string>
     <string name="app_permissions" msgid="32799922508313948">"Aplikazio-baimenak"</string>
     <string name="app_permissions_summary" msgid="5402214755935368418">"Kontrolatu aplikazioek datuak atzitzeko duten baimena"</string>
-    <string name="applications_settings" msgid="794261395191035632">"Aplikazioaren informazioa"</string>
+    <string name="applications_settings" msgid="794261395191035632">"Aplikazioei buruzko informazioa"</string>
     <string name="force_stop" msgid="1616958676171167028">"Gelditu aplikazioa"</string>
     <string name="force_stop_dialog_title" msgid="4481858344628934971">"Aplikazioa gelditu nahi duzu?"</string>
     <string name="force_stop_dialog_text" msgid="4354954014318432599">"Aplikazioak gelditzera behartzen badituzu, baliteke behar bezala ez funtzionatzea."</string>
@@ -411,7 +411,7 @@
     <string name="show_system" msgid="4401355756969485287">"Erakutsi sistemaren prozesuak"</string>
     <string name="hide_system" msgid="8845453295584638040">"Ezkutatu sistemaren prozesuak"</string>
     <string name="hide_system_apps" msgid="6583947381056154020">"Ezkutatu sistemaren aplikazioak"</string>
-    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Alarmak eta abisuak"</string>
+    <string name="alarms_and_reminders_title" msgid="5201073616071479075">"Alarmak eta gogorarazpenak"</string>
     <string name="modify_system_settings_title" msgid="4596320571562433972">"Aldatu sistemaren ezarpenak"</string>
     <string name="modify_system_settings_description" msgid="5295023124419592452">"Baimen honekin, sistemaren ezarpenak alda ditzakete aplikazioek."</string>
     <string name="notification_access_title" msgid="1467340098885813473">"Jakinarazpenetarako sarbidea"</string>
