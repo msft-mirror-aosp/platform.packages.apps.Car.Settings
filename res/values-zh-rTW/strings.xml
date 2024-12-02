@@ -758,7 +758,7 @@
     <string name="lockpassword_password_requires_nonletter" msgid="3089186186422638926">"{count,plural, =1{至少要有 # 個非字母半形字元}other{至少要有 # 個非字母半形字元}}"</string>
     <string name="lockpassword_password_requires_nonnumerical" msgid="1677123573552379526">"{count,plural, =1{至少要有 # 個非數值半形字元}other{至少要有 # 個非數值半形字元}}"</string>
     <string name="lockpassword_password_too_short" msgid="3898753131694105832">"{count,plural, =1{至少要有 # 個半形字元}other{至少要有 # 個半形字元}}"</string>
-    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{至少要有 # 位數}other{至少要有 # 位數}}"</string>
+    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{至少要有 # 個數字}other{至少要有 # 個數字}}"</string>
     <string name="lockpassword_password_too_long" msgid="1709616257350671045">"{count,plural, =1{必須少於 # 個半形字元}other{必須少於 # 個半形字元}}"</string>
     <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{必須少於 # 位數}other{必須少於 # 位數}}"</string>
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"不允許使用依遞增或遞減順序排列或是重複的一串數字"</string>
