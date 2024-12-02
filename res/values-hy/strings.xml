@@ -627,7 +627,7 @@
     <string name="accounts_settings_title" msgid="436190037084293471">"Հաշիվներ"</string>
     <string name="user_add_account_menu" msgid="6625351983590713721">"Ավելացնել հաշիվ"</string>
     <string name="no_accounts_added" msgid="5148163140691096055">"Հաշիվներ չեն ավելացվել"</string>
-    <string name="account_list_title" msgid="7631588514613843065">"<xliff:g id="CURRENT_USER_NAME">%1$s</xliff:g>-ի հաշիվներ"</string>
+    <string name="account_list_title" msgid="7631588514613843065">"<xliff:g id="CURRENT_USER_NAME">%1$s</xliff:g>ի հաշիվներ"</string>
     <string name="account_auto_sync_title" msgid="3238816995364191432">"Ավտոմատ համաժամացնել տվյալները"</string>
     <string name="account_auto_sync_summary" msgid="6963837893148304128">"Թույլ տալ հավելվածներին ավտոմատ թարմացնել տվյալները"</string>
     <string name="data_usage_auto_sync_on_dialog_title" msgid="8068513213445588532">"Թույլատրե՞լ տվյալների ավտոմատ համաժամացումը"</string>
