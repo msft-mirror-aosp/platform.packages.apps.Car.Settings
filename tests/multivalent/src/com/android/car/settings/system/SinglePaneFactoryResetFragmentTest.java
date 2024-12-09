@@ -20,12 +20,9 @@ import static android.app.Activity.RESULT_OK;
 
 import static com.android.car.settings.system.FactoryResetFragment.CHECK_LOCK_REQUEST_CODE;
 
-import static com.google.common.truth.Truth.assertThat;
-
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
 
-import com.android.car.settings.R;
 import com.android.car.settings.testutils.SinglePaneTestActivity;
 
 import org.junit.Rule;
@@ -44,14 +41,13 @@ public class SinglePaneFactoryResetFragmentTest
     }
 
     @Test
-    public void processActivityResult_resultOk_updatesFragmentContainer()
+    public void processActivityResult_resultOk_launchesActivity()
             throws Throwable {
         getActivityTestRule().runOnUiThread(() -> {
             mFragment.processActivityResult(CHECK_LOCK_REQUEST_CODE, RESULT_OK, /* data= */ null);
         });
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
 
-        assertThat(mFragmentManager.findFragmentById(R.id.fragment_container))
-                .isInstanceOf(FactoryResetConfirmFragment.class);
+        mActivity.getStartActivityListener().assertCalled();
     }
 }

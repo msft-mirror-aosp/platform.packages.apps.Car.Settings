@@ -18,18 +18,15 @@ package com.android.car.settings.system;
 
 import static android.app.Activity.RESULT_OK;
 
-import static com.android.car.settings.common.SubSettingsActivity.KEY_SUB_SETTINGS_FRAGMENT;
 import static com.android.car.settings.system.FactoryResetFragment.CHECK_LOCK_REQUEST_CODE;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import static org.junit.Assert.assertNotNull;
-
-import android.content.Intent;
-
+import androidx.fragment.app.Fragment;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
 
+import com.android.car.settings.R;
 import com.android.car.settings.testutils.DualPaneTestActivity;
 
 import org.junit.Rule;
@@ -48,17 +45,15 @@ public class DualPaneFactoryResetFragmentTest
     }
 
     @Test
-    public void processActivityResult_resultOk_launchesFactoryResetConfirmActivity()
+    public void processActivityResult_resultOk_launchesFactoryResetConfirmFragment()
             throws Throwable {
         getActivityTestRule().runOnUiThread(() -> {
             mFragment.processActivityResult(CHECK_LOCK_REQUEST_CODE, RESULT_OK, /* data= */ null);
         });
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
 
-        Intent intent = mActivity.getStartActivityListener().getLastValue();
-        assertNotNull(intent);
-        String fragmentClass = intent.getStringExtra(KEY_SUB_SETTINGS_FRAGMENT);
-        assertNotNull(fragmentClass);
-        assertThat(fragmentClass).isEqualTo(FactoryResetConfirmFragment.class.getName());
+        Fragment launchedFragment = mFragmentManager.findFragmentById(R.id.fragment_container);
+
+        assertThat(launchedFragment).isInstanceOf(FactoryResetConfirmFragment.class);
     }
 }

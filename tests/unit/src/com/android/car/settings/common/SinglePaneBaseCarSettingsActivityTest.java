@@ -23,6 +23,7 @@ import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 
 import android.car.drivingstate.CarUxRestrictions;
+import android.content.Intent;
 
 import androidx.preference.Preference;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -48,7 +49,7 @@ public class SinglePaneBaseCarSettingsActivityTest
     }
 
     @Test
-    public void onPreferenceStartFragment_updateFragmentContainer() throws Throwable {
+    public void onPreferenceStartFragment_launchesActivity() throws Throwable {
         Preference pref = new Preference(mContext);
         pref.setFragment(BaseTestSettingsFragment.class.getName());
 
@@ -58,7 +59,7 @@ public class SinglePaneBaseCarSettingsActivityTest
                 spiedActivity.onPreferenceStartFragment(/* caller= */ null, pref));
         InstrumentationRegistry.getInstrumentation().waitForIdleSync();
 
-        verify(spiedActivity).updateFragmentContainer(any(BaseTestSettingsFragment.class));
+        verify(spiedActivity).startActivity(any(Intent.class));
     }
 
     @Test
