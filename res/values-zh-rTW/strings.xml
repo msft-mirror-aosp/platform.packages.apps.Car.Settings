@@ -180,6 +180,9 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"連線成功"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"全部顯示"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"搜尋中"</string>
+    <string name="wifi_detail_share" msgid="3765487472190563802">"分享"</string>
+    <string name="wifi_detail_share_description" msgid="1417559695973326762">"掃描這個 QR code 即可連線至 Wi-Fi"</string>
+    <string name="wifi_detail_share_toast" msgid="9106513465439393280">"Wi‑Fi 分享功能不適用於此 Wi‑Fi。"</string>
     <string name="connected_settings_title" msgid="8868738903280658151">"已連結的裝置"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"藍牙"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"使用藍牙"</string>
@@ -758,7 +761,7 @@
     <string name="lockpassword_password_requires_nonletter" msgid="3089186186422638926">"{count,plural, =1{至少要有 # 個非字母半形字元}other{至少要有 # 個非字母半形字元}}"</string>
     <string name="lockpassword_password_requires_nonnumerical" msgid="1677123573552379526">"{count,plural, =1{至少要有 # 個非數值半形字元}other{至少要有 # 個非數值半形字元}}"</string>
     <string name="lockpassword_password_too_short" msgid="3898753131694105832">"{count,plural, =1{至少要有 # 個半形字元}other{至少要有 # 個半形字元}}"</string>
-    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{至少要有 # 位數}other{至少要有 # 位數}}"</string>
+    <string name="lockpassword_pin_too_short" msgid="3671037384464545169">"{count,plural, =1{至少要有 # 個數字}other{至少要有 # 個數字}}"</string>
     <string name="lockpassword_password_too_long" msgid="1709616257350671045">"{count,plural, =1{必須少於 # 個半形字元}other{必須少於 # 個半形字元}}"</string>
     <string name="lockpassword_pin_too_long" msgid="8315542764465856288">"{count,plural, =1{必須少於 # 位數}other{必須少於 # 位數}}"</string>
     <string name="lockpassword_pin_no_sequential_digits" msgid="6511579896796310956">"不允許使用依遞增或遞減順序排列或是重複的一串數字"</string>

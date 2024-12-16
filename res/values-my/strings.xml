@@ -180,6 +180,9 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"ချိတ်ဆက်ပြီးပါပြီ"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"အားလုံးပြရန်"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"ရှာဖွေနေသည်…"</string>
+    <string name="wifi_detail_share" msgid="3765487472190563802">"မျှဝေရန်"</string>
+    <string name="wifi_detail_share_description" msgid="1417559695973326762">"Wi‑Fi ချိတ်ဆက်ရန် ဤ QR ကုဒ်ကို စကင်ဖတ်ပါ"</string>
+    <string name="wifi_detail_share_toast" msgid="9106513465439393280">"Wi‑Fi မျှဝေမှုကို ဤ Wi‑Fi အတွက် မရနိုင်ပါ။"</string>
     <string name="connected_settings_title" msgid="8868738903280658151">"ချိတ်ဆက်ကိရိယာများ"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"ဘလူးတုသ်"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"ဘလူးတုသ် သုံးခြင်း"</string>
@@ -947,5 +950,5 @@
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"သင့်အင်တာနက်အစီအစဉ်များ သက်တမ်းကုန်သွားပါပြီ"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"အစီအစဉ်များ ကြည့်ရန်"</string>
     <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"ပြီးပြီ"</string>
-    <string name="unsupported_intents_toast_text" msgid="3112314947877145848">"ဤဝန်ဆောင်မှုကို သင့်ယာဉ်က မပံ့ပိုးပါ"</string>
+    <string name="unsupported_intents_toast_text" msgid="3112314947877145848">"ဤလုပ်ဆောင်ချက်ကို သင့်ယာဉ်တွင် မရနိုင်ပါ"</string>
 </resources>

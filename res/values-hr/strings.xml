@@ -86,7 +86,7 @@
     <string name="network_and_internet_oem_network_dialog_confirm_label" msgid="2630033932472996255">"Ipak isključi"</string>
     <string name="network_and_internet_oem_network_disabled_footer" msgid="3529208167627034245">"Internet u vozilu je isključen. To može onemogućiti rad nekih značajki ili aplikacija vozila. Kritični podaci potrebni za rad vozila i dalje će se dijeliti s proizvođačem."</string>
     <string name="network_and_internet_data_usage_time_range_summary" msgid="1792995626433410056">"%1$s iskorišteno od %2$s do %3$s"</string>
-    <string name="network_and_internet_join_other_network_title" msgid="7126831320010062712">"Pridruživanje drugoj mreži"</string>
+    <string name="network_and_internet_join_other_network_title" msgid="7126831320010062712">"Povežite se s drugom mrežom"</string>
     <string name="network_and_internet_network_preferences_title" msgid="2983548049081168876">"Postavke mreže"</string>
     <string name="wifi_settings" msgid="7701477685273103841">"Wi-Fi"</string>
     <string name="wifi_starting" msgid="473253087503153167">"Uključivanje Wi-Fija…"</string>
@@ -180,6 +180,9 @@
     <string name="network_connection_connect_successful" msgid="7893957133113302365">"Povezivanje je uspjelo"</string>
     <string name="network_connection_request_dialog_showall" msgid="776613149566461487">"Prikaži sve"</string>
     <string name="progress_scanning" msgid="7191583064717479795">"Pretraživanje"</string>
+    <string name="wifi_detail_share" msgid="3765487472190563802">"Dijeljenje"</string>
+    <string name="wifi_detail_share_description" msgid="1417559695973326762">"Skenirajte ovaj QR kôd da biste se povezali s Wi‑Fijem"</string>
+    <string name="wifi_detail_share_toast" msgid="9106513465439393280">"Dijeljenje Wi-Fija nije dostupno za ovu Wi-Fi mrežu."</string>
     <string name="connected_settings_title" msgid="8868738903280658151">"Povezani uređaji"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"Bluetooth"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"Koristi Bluetooth"</string>
