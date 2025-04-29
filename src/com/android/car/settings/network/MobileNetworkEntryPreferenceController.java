@@ -242,7 +242,7 @@ public class MobileNetworkEntryPreferenceController extends
     }
 
     @Override
-    public void onChange(int value) {
+    public void onStatusChanged(int value) {
         refreshUi();
     }
 }
