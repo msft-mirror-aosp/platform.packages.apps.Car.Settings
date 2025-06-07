@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- Copyright (C) 2024 The Android Open Source Project
+<!-- Copyright (C) 2025 The Android Open Source Project
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -313,6 +313,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="dimen" name="user_disclaimer_action_button_text_size"/>
       <item type="dimen" name="user_disclaimer_action_button_top_margin"/>
       <item type="dimen" name="user_disclaimer_text_size"/>
+      <item type="dimen" name="wifi_share_page_margin"/>
       <item type="drawable" name="bluetooth_bonded_device_rotary_background"/>
       <item type="drawable" name="brightness_seekbar_background"/>
       <item type="drawable" name="brightness_seekbar_track"/>
@@ -404,6 +405,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="drawable" name="ic_qc_wifi_level_2"/>
       <item type="drawable" name="ic_qc_wifi_level_3"/>
       <item type="drawable" name="ic_qc_wifi_level_4"/>
+      <item type="drawable" name="ic_qr"/>
       <item type="drawable" name="ic_remove_circle"/>
       <item type="drawable" name="ic_restore"/>
       <item type="drawable" name="ic_restricted_wifi_signal_0"/>
@@ -588,6 +590,9 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="id" name="up_arrow_container"/>
       <item type="id" name="vertical_guideline"/>
       <item type="id" name="widget_summary"/>
+      <item type="id" name="wifi_share_instruction"/>
+      <item type="id" name="wifi_share_qr_code"/>
+      <item type="id" name="wifi_share_qr_code_container"/>
       <item type="integer" name="audio_route_selector_usage"/>
       <item type="integer" name="audio_route_toast_duration"/>
       <item type="integer" name="button_max_ems"/>
@@ -659,6 +664,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="layout" name="usage_bytes_threshold_picker"/>
       <item type="layout" name="usage_cycle_reset_day_of_month_picker"/>
       <item type="layout" name="usage_indicator_preference"/>
+      <item type="layout" name="wifi_detail_share_fragment"/>
       <item type="layout" name="wifi_tether_qr_code_preference"/>
       <item type="plurals" name="default_camera_app_title"/>
       <item type="plurals" name="default_email_app_title"/>
@@ -722,6 +728,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="app_disable_dialog_text"/>
       <item type="string" name="app_info_all_services_label"/>
       <item type="string" name="app_launch_domain_links_title"/>
+      <item type="string" name="app_launch_footer"/>
       <item type="string" name="app_launch_open_domain_urls_title"/>
       <item type="string" name="app_launch_other_defaults_title"/>
       <item type="string" name="app_launch_supported_domain_urls_title"/>
@@ -732,6 +739,8 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="app_list_preference_none"/>
       <item type="string" name="app_names_concatenation_template_2"/>
       <item type="string" name="app_names_concatenation_template_3"/>
+      <item type="string" name="app_open_by_default_summary"/>
+      <item type="string" name="app_open_by_default_title"/>
       <item type="string" name="app_permissions"/>
       <item type="string" name="app_permissions_summary"/>
       <item type="string" name="app_usage_cycle"/>
@@ -1305,6 +1314,12 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="number_of_device_admins_none"/>
       <item type="string" name="okay"/>
       <item type="string" name="one"/>
+      <item type="string" name="opening_links_add_links_summary"/>
+      <item type="string" name="opening_links_add_links_title"/>
+      <item type="string" name="opening_links_supported_links_summary"/>
+      <item type="string" name="opening_links_supported_links_title"/>
+      <item type="string" name="opening_links_verified_links_summary"/>
+      <item type="string" name="opening_links_verified_links_title"/>
       <item type="string" name="outgoing_calls_permission_title"/>
       <item type="string" name="performance_impacting_apps"/>
       <item type="string" name="performance_impacting_apps_button_label"/>
@@ -1561,6 +1576,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="units_unit_name_watt_hour"/>
       <item type="string" name="units_unit_name_year"/>
       <item type="string" name="units_volume_title"/>
+      <item type="string" name="unsupported_intents_toast_text"/>
       <item type="string" name="unused_apps"/>
       <item type="string" name="unused_apps_summary"/>
       <item type="string" name="unused_apps_switch"/>
@@ -1617,6 +1633,9 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="string" name="wifi_connecting"/>
       <item type="string" name="wifi_control_description"/>
       <item type="string" name="wifi_control_title"/>
+      <item type="string" name="wifi_detail_share"/>
+      <item type="string" name="wifi_detail_share_description"/>
+      <item type="string" name="wifi_detail_share_toast"/>
       <item type="string" name="wifi_details_ipv6_address_header"/>
       <item type="string" name="wifi_disabled"/>
       <item type="string" name="wifi_disconnected"/>
@@ -1712,6 +1731,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="xml" name="app_storage_settings_details_fragment"/>
       <item type="xml" name="application_details_fragment"/>
       <item type="xml" name="application_launch_settings_fragment"/>
+      <item type="xml" name="application_launch_settings_fragment_updated"/>
       <item type="xml" name="applications_settings_fragment"/>
       <item type="xml" name="apps_fragment"/>
       <item type="xml" name="assistant_and_voice_fragment"/>
@@ -1795,6 +1815,7 @@ REGENERATE USING packages/apps/Car/libs/tools/rro/generate-overlayable.py
       <item type="xml" name="units_fragment"/>
       <item type="xml" name="usage_access_fragment"/>
       <item type="xml" name="vehicle_data_fragment"/>
+      <item type="xml" name="verified_links_fragment"/>
       <item type="xml" name="wifi_control_fragment"/>
       <item type="xml" name="wifi_detail_fragment"/>
       <item type="xml" name="wifi_list_fragment"/>
