@@ -183,7 +183,7 @@
     <string name="wifi_detail_share" msgid="3765487472190563802">"هم‌رسانی"</string>
     <string name="wifi_detail_share_description" msgid="1417559695973326762">"برای اتصال به Wi-Fi، این رمزینه پاسخ‌سریع را اسکن کنید"</string>
     <string name="wifi_detail_share_toast" msgid="9106513465439393280">"هم‌رسانی Wi-Fi برای این Wi-Fi دردسترس نیست."</string>
-    <string name="connected_settings_title" msgid="8868738903280658151">"دستگاه‌های متصل"</string>
+    <string name="connected_settings_title" msgid="8868738903280658151">"دستگاه‌های متصل‌شده"</string>
     <string name="bluetooth_settings_title" msgid="3794688574569688649">"بلوتوث"</string>
     <string name="bluetooth_toggle_title" msgid="1431803611346881088">"استفاده از بلوتوث"</string>
     <string name="bluetooth_device" msgid="3178478829314083240">"دستگاه بی‌نام"</string>
