@@ -784,7 +784,7 @@
     <string name="connect" msgid="5861699594602380150">"اتصال"</string>
     <string name="disconnect" msgid="6140789953324820336">"قطع اتصال"</string>
     <string name="delete_button" msgid="5840500432614610850">"حذف"</string>
-    <string name="remove_button" msgid="6664656962868194178">"حذف"</string>
+    <string name="remove_button" msgid="6664656962868194178">"برداشتن"</string>
     <string name="cancel" msgid="750286395700355455">"لغو"</string>
     <string name="allow" msgid="7519431342750394402">"اجازه دادن"</string>
     <string name="do_not_allow" msgid="3157082400084747525">"اجازه ندادن"</string>
