@@ -954,6 +954,6 @@
     <string name="data_subscription_explore_options" msgid="4089747156447849054">"योजनाहरू हेर्नुहोस्"</string>
     <string name="connectivity_inactive_prompt" msgid="2325831357510029165">"तपाईंको इन्टरनेट योजनाको म्याद सकिएको छ"</string>
     <string name="connectivity_inactive_action_text" msgid="1200295991890069311">"योजनाहरू हेर्नुहोस्"</string>
-    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"पूरा भयो"</string>
+    <string name="audio_route_dialog_neutral_button_text" msgid="3303313405283478327">"भयो"</string>
     <string name="unsupported_intents_toast_text" msgid="3112314947877145848">"तपाईंको कारमा यो सुविधा प्रयोग गर्न मिल्दैन"</string>
 </resources>
