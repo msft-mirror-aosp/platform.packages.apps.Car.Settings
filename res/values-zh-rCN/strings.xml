@@ -881,7 +881,7 @@
     <string name="enterprise_privacy_input_method" msgid="5062395693747004531">"默认键盘"</string>
     <string name="enterprise_privacy_input_method_name" msgid="2027313786295077607">"已设为<xliff:g id="APP_LABEL">%s</xliff:g>"</string>
     <string name="enterprise_privacy_global_http_proxy" msgid="1366593928008294049">"已设置全局 HTTP 代理"</string>
-    <string name="enterprise_privacy_ca_certs_personal" msgid="5677098981429650665">"您个人资料中的可信凭据"</string>
+    <string name="enterprise_privacy_ca_certs_personal" msgid="5677098981429650665">"您个人资料中的可信凭证"</string>
     <string name="enterprise_privacy_device_access_desc" msgid="3442555102576036038">" "<li>"管理员可以锁定信息娱乐系统并重置密码"</li>\n" "<li>"管理员可以删除信息娱乐系统中的数据"</li></string>
     <string name="enterprise_privacy_failed_password_wipe_device" msgid="4768743631260876559">"输入错误密码的尝试次数上限（如果超过此上限，系统将删除信息娱乐系统中的所有数据）"</string>
     <string name="enterprise_privacy_failed_password_wipe_current_user" msgid="786246192213446835">"输入错误密码的尝试次数上限（如果超过此上限，系统将删除个人资料数据）"</string>
