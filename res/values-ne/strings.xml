@@ -195,9 +195,9 @@
     <string name="bluetooth_vehicle_mac_address" msgid="7069234636525805937">"सवारी साधनको ब्लुटुथ एड्रेस: <xliff:g id="ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_device_mac_address" msgid="3949829271575045069">"यन्त्रको ब्लुटुथ एड्रेस: <xliff:g id="ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_name" msgid="2609869978821094114">"गाडीको नाम"</string>
-    <string name="bluetooth_rename_vehicle" msgid="5769424875066563154">"यो सवारी साधनको पुनः नामकरण गर्नुहोस्"</string>
-    <string name="bluetooth_rename_device" msgid="8406868875363878712">"यन्त्रको पुनः नामकरण गर्नुहोस्"</string>
-    <string name="bluetooth_rename_button" msgid="2397892174725986383">"पुनः नामकरण गर्नुहोस्"</string>
+    <string name="bluetooth_rename_vehicle" msgid="5769424875066563154">"यो सवारी साधनको नाम बदल्नुहोस्"</string>
+    <string name="bluetooth_rename_device" msgid="8406868875363878712">"डिभाइसको नाम बदल्नुहोस्"</string>
+    <string name="bluetooth_rename_button" msgid="2397892174725986383">"नाम बदल्नुहोस्"</string>
     <string name="bluetooth_available_devices" msgid="1854446368146061448">"उपलब्ध डिभाइस"</string>
     <string name="bluetooth_profiles" msgid="5580372290862835951">"प्रोफाइलहरू"</string>
     <string name="bluetooth_error_title" msgid="2341600997536511742"></string>
