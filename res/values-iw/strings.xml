@@ -745,7 +745,7 @@
     <string name="lockscreen_wrong_password" msgid="5757087577162231825">"סיסמה שגויה"</string>
     <string name="choose_lock_password_message" msgid="6124341145027370784">"לשיפור האבטחה, מומלץ להגדיר סיסמה"</string>
     <string name="confirm_your_password_header" msgid="7052891840366724938">"יש להזין את הסיסמה שוב"</string>
-    <string name="confirm_passwords_dont_match" msgid="7300229965206501753">"הסיסמאות לא תואמות"</string>
+    <string name="confirm_passwords_dont_match" msgid="7300229965206501753">"הסיסמאות לא זהות"</string>
     <string name="lockpassword_clear_label" msgid="6363680971025188064">"ניקוי"</string>
     <string name="lockpassword_cancel_label" msgid="5791237697404166450">"ביטול"</string>
     <string name="lockpassword_confirm_label" msgid="5918463281546146953">"אישור"</string>

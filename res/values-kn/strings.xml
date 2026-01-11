@@ -804,9 +804,9 @@
     <string name="assistant_and_voice_setting_title" msgid="737733881661819853">"Assistant ಮತ್ತು ಧ್ವನಿ"</string>
     <string name="assistant_and_voice_assistant_app_title" msgid="5981647244625171285">"ಡಿಜಿಟಲ್ ಅಸಿಸ್ಟೆಂಟ್ ಆ್ಯಪ್"</string>
     <string name="assistant_and_voice_use_text_from_screen_title" msgid="5851460943413795599">"ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿರುವ ಪಠ್ಯವನ್ನು ಬಳಸಿ"</string>
-    <string name="assistant_and_voice_use_text_from_screen_summary" msgid="4161751708121301541">"ಸ್ಕ್ರೀನ್‌ನ ವಿಷಯಗಳನ್ನು ಪ್ರವೇಶಿಸಲು Assistant ಗೆ ಅನುಮತಿಸಿ"</string>
+    <string name="assistant_and_voice_use_text_from_screen_summary" msgid="4161751708121301541">"ಸ್ಕ್ರೀನ್‌ನ ಕಂಟೆಂಟ್‌ಗಳನ್ನು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಲು Assistant ಗೆ ಅನುಮತಿಸಿ"</string>
     <string name="assistant_and_voice_use_screenshot_title" msgid="1930735578425470046">"ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅನ್ನು ಬಳಸಿ"</string>
-    <string name="assistant_and_voice_use_screenshot_summary" msgid="3738474919393817950">"Assistant ಗೆ ಸ್ಕ್ರೀನ್ ಚಿತ್ರವನ್ನು ಪ್ರವೇಶಿಸಲು ಅನುಮತಿಸಿ"</string>
+    <string name="assistant_and_voice_use_screenshot_summary" msgid="3738474919393817950">"Assistant ಗೆ ಸ್ಕ್ರೀನ್ ಚಿತ್ರವನ್ನುಆ್ಯಕ್ಸೆಸ್ ಮಾಡಲು ಅನುಮತಿಸಿ"</string>
     <string name="notifications_recently_sent" msgid="9051696542615302799">"ಇತ್ತೀಚೆಗೆ ಕಳುಹಿಸಿರುವುದು"</string>
     <string name="notifications_all_apps" msgid="3557079551048958846">"ಎಲ್ಲಾ ಆ್ಯಪ್‌ಗಳು"</string>
     <string name="profiles_and_accounts_settings_title" msgid="2672643892127659812">"ಪ್ರೊಫೈಲ್‌ಗಳು ಮತ್ತು ಖಾತೆಗಳು"</string>
